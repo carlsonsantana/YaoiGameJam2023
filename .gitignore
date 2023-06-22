@@ -1,0 +1,38 @@
+# General .gitignore from: https://www.reddit.com/r/RenPy/comments/y71sle/comment/istirqm/
+
+# macOS-related files
+.DS_Store 
+.AppleDouble 
+.LSOverride
+
+# Windows-related files 
+Thumbs.db 
+Thumbs.db:encryptable 
+ehthumbs.db 
+ehthumbs_vista.db 
+[Dd]esktop.ini
+
+# renpy specific from: https://gitlab.com/Leonhart231/eisai/-/blob/master/.gitignore
+**/*~
+**/*.rpyc
+**/*.rpymc
+game/cache
+game/saves
+game/tmp
+game/cache
+log.txt
+traceback.txt
+errors.txt
+text_overflow.txt
+lint.txt
+
+# personal additions
+# editor stuff
+.vscode/
+
+# if you use an virtual environment
+env/
+tmp/
+
+# python 3 specific gitignore
+**/__pycache__/

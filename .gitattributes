@@ -1,0 +1,3 @@
+# by default \n or LF endings
+# if there are files that require \r\n or CRLF endings, we need to specify that
+* text=auto 
