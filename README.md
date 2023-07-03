@@ -18,3 +18,9 @@ NOTION_API_KEY=secret_here_do_not_put_in_git
 ```bash
 python dev/notion_extractor/notion_extractor.py 
 ```
+
+### How to run the local file to renpy converter
+
+```bash
+python dev/renpy_converter/renpy_converter.py 
+```
