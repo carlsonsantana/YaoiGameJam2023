@@ -37,3 +37,6 @@ tmp/
 
 # python 3 specific gitignore
 **/__pycache__/
+
+# secrets!
+.env

@@ -1,0 +1,9 @@
+{
+  "root": "./dev/notion_extractor/output/",
+  "files": [
+    {
+      "id": "dcd4a36bf42a4625a7ac8f7a11cdf846",
+      "destination": "test.txt"
+    }
+  ]
+}
