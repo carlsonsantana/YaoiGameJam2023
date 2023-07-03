@@ -11,7 +11,7 @@ class NotionMeta:
 
         # todo: remove hardcode below or make it optional
         # not really necessary lol
-        with open("./dev/notion_extractor/notion_to_local.json", "r") as f:
+        with open("./dev/notion_to_local.json", "r") as f:
             self.meta = json.loads(f.read())
 
         # todo: add more robust error checking
