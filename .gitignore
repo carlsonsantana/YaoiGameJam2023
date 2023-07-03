@@ -29,6 +29,7 @@ lint.txt
 # personal additions
 # editor stuff
 .vscode/
+.idea/
 
 # if you use an virtual environment
 env/
