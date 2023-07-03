@@ -17,9 +17,8 @@ class NotionResponseParser:
                     c = b["rich_text"]
                     for rich_text in c:
                         if "plain_text" in rich_text:
-                            result += f"{indent}{rich_text['plain_text']}\n"
-                    if len(c) == 0:
-                        result += "\n"
+                            result += f"{indent}{rich_text['plain_text']}"
+                    result += "\n"
 
             if "has_children" in block and block["has_children"]:
                 if NotionResponseParser.LOG_ON:

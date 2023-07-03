@@ -26,5 +26,5 @@ class NotionToLocal:
                 print(f"Error! Treating file as directory: {dir_test}")
 
         # save
-        with open(destination, "w") as file:
+        with open(destination, "w", encoding="utf-8") as file:
             file.write(to_rpy)
