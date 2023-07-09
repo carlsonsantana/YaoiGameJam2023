@@ -34,7 +34,7 @@ class RenpyConverter:
             f.write(f"label {label}:\n")
 
             for line in file_content.split("\n"):
-                # ignore empty lines
+                # guard clause: ignore empty lines
                 if line == "":
                     continue
 
@@ -73,8 +73,11 @@ class RenpyConverter:
                 if self.character_exists[character] == RenpyConverter.CHAR_NOT_EXIST:
                     character = f"\"{character}\""
 
-                # todo: escape double quote
+                # region possible location of code generation
+                # todo: escape double quote?
+                # todo: add show character here?
                 f.write(f"{RenpyConverter.INDENT}{character} \"{left_tag}\"\n\n")
+                # endregion possible location of code generation
 
 
 if __name__ == "__main__":
