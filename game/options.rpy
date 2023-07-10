@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("test_project")
+define config.name = _("Love Amidst the Timeless Rift")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -37,7 +37,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "test_project"
+define build.name = "love_amidst_the_timeless_rift"
 
 
 ## Sounds and music ############################################################
@@ -143,7 +143,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "test_project-1687376810"
+define config.save_directory = "love_amidst_the_timeless_rift-1687376810"
 
 
 ## Icon ########################################################################
@@ -206,4 +206,4 @@ init python:
 ## The username and project name associated with an itch.io project, separated
 ## by a slash.
 
-# define build.itch_project = "renpytom/test-project"
+# define build.itch_project = "renpytom/love-amidst-the-timeless-rift"

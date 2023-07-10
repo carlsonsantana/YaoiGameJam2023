@@ -12,15 +12,22 @@
 NOTION_API_KEY=secret_here_do_not_put_in_git
 
 ```
+### Scripts ro run from root
 
-### How to run the Notion to local file extractor
+#### Notion to local file
 
 ```bash
 python dev/notion_extractor/notion_extractor.py 
 ```
 
-### How to run the local file to renpy converter
+#### Local file to renpy
 
 ```bash
 python dev/renpy_converter/renpy_converter.py 
+```
+
+#### Publish web build
+
+```bash
+dev/build/build.sh 
 ```
