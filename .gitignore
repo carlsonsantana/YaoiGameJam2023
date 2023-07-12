@@ -40,3 +40,5 @@ tmp/
 
 # secrets!
 .env
+secrets/
+token.json
