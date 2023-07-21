@@ -26,6 +26,19 @@ python dev/notion_extractor/notion_extractor.py
 python dev/renpy_converter/renpy_converter.py 
 ```
 
+### Google to Local
+
+```bash
+python dev/google_to_local/google_to_local.py
+```
+
+### Google Local to renpy
+
+```bash
+python dev/google_to_local/google_to_renpy.py
+```
+
+
 #### Publish web build
 
 ```bash

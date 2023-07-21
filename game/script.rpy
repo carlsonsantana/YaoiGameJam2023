@@ -2,4 +2,4 @@
 
 # The game starts here.
 label start:
-    call notion_test
+    call google_test
