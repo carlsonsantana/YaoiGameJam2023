@@ -2,4 +2,4 @@
 
 # The game starts here.
 label start:
-    call google_test
+    call google_test_1

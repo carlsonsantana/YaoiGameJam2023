@@ -12,7 +12,10 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
 # If modifying these scopes, delete the file token.json.
-SCOPES = ['https://www.googleapis.com/auth/documents.readonly']
+SCOPES = [
+    'https://www.googleapis.com/auth/documents.readonly',
+    'https://www.googleapis.com/auth/drive.readonly'
+]
 
 # The ID of a sample document.
 # DOCUMENT_ID = '195j9eDD3ccgjQRttHhJPymLJUCOUjs-jmwTrekvdjFE'
@@ -28,12 +31,15 @@ class GoogleService:
         # created automatically when the authorization flow completes for the first
         # time.
         if os.path.exists('token.json'):
+            print("Token found")
             creds = Credentials.from_authorized_user_file('token.json', SCOPES)
         # If there are no (valid) credentials available, let the user log in.
         if not creds or not creds.valid:
             if creds and creds.expired and creds.refresh_token:
+                print("Refreshing token")
                 creds.refresh(Request())
             else:
+                print("Installing new token")
                 flow = InstalledAppFlow.from_client_secrets_file(
                     'secrets/credentials.json', SCOPES)
                 creds = flow.run_local_server(port=0)
@@ -47,7 +53,6 @@ class GoogleService:
             print(err)
 
     def obtain_document(self, document_id):
-
         try:
             # Retrieve the documents contents from the Docs service.
             document = self.service.documents().get(documentId=document_id).execute()
