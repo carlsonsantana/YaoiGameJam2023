@@ -11,6 +11,8 @@ default selection_2_answer = 0
 default selection_1_answer = 0
 
 label google_test_1:
+    scene bg default at bg_size
+
     Lars "Discere, cogitare, agere- the triad of wisdom."
 
     Lars "Learning enriches the mind, and thinking sharpens it, but it is through action that we truly manifest our knowledge and shape our reality."
@@ -21,7 +23,12 @@ label google_test_1:
 
     Lars "But then again, we wouldn’t be embarking on guild-members only artifact hunts and historical expeditions if the sole purpose of ‘Custodes Sylvae’ was commerce."
 
+    show claude at char_size, center
+
     "Unknown" "My dearest Captain Lars! Are you mumbling to yourself again?"
+
+    hide claude
+    show lars
 
     Lars "I steal a glance from my perch atop the dragon ship and it looks like one, or should I say, the only passenger has woken up."
 

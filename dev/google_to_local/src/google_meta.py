@@ -91,6 +91,12 @@ class GoogleMeta:
         left_tag = left_tag.replace('"', '\\"')
         return f"{indent}{character} \"{left_tag}\"\n\n"
 
+    @staticmethod
+    def transform_to_indented_list(line_list, indent):
+        for i in range(len(line_list)):
+            line_list[i] = f"{indent}{line_list[i]}\n\n"
+        return line_list
+
     def parse_file(self, file_content, dest):
         # get the file name and set as label
         label = dest.split("/")[-1]  # get final item
@@ -105,6 +111,12 @@ class GoogleMeta:
         skip_index = -1
 
         renpy_lines.append(f"label {label}_{partition_count}:\n")
+
+        # setup
+        renpy_lines.extend(GoogleMeta.transform_to_indented_list([
+            "scene bg default at bg_size",
+        ], GoogleMeta.INDENT))
+
         for index, entry in enumerate(google_json):
 
             if index <= skip_index:
