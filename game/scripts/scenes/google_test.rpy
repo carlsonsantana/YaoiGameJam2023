@@ -1,3 +1,15 @@
+default selection_6_answer = 0
+
+default selection_5_answer = 0
+
+default selection_4_answer = 0
+
+default selection_3_answer = 0
+
+default selection_2_answer = 0
+
+default selection_1_answer = 0
+
 label google_test_1:
     Lars "Discere, cogitare, agere- the triad of wisdom."
 
@@ -123,14 +135,16 @@ label google_test_1:
         Lars "As he speaks, I can't help but notice the subtle vulnerability in his eyes. It's as if each word he utters carries a touch of his inner world, a realm seldom revealed to others. I should choose my words carefully."
 
         "Poke further and ask why he’s feeling that way":
-            jump Selection_1_0
+            $ selection_1_answer = 1
+            jump selection_1_1
 
         "Pass over his statement and steer the conversation":
-            jump Selection_1_1
+            $ selection_1_answer = 2
+            jump selection_1_2
 
     return
 
-label Selection_1_0:
+label selection_1_0:
 
     Lars "Curiosity grips me, urging me to decipher the hidden meaning behind Sir Claude's recent comment. Although renowned for his penchant for humor and jest, this time, his response carries an unmistakable air of sincerity."
 
@@ -154,7 +168,7 @@ label Selection_1_0:
 
     return
 
-label Selection_1_1:
+label selection_1_1:
 
     Lars "Sir Claude may not be ready to discuss his personal matters, I should steer the conversation away from the sensitive topic. He’ll tell me about it when he’s ready, I suppose."
 
@@ -314,14 +328,16 @@ label google_test_2:
         "Sylvian" "Aren’t you tired from guiding our new dragon, Lars? I could easily fly and grab it for you."
 
         "Ask Master Sylvian to grab the cargo for you":
-            jump Selection_2_0
+            $ selection_2_answer = 1
+            jump selection_2_1
 
         "Tell Sir Claude to grab the cargo himself":
-            jump Selection_2_1
+            $ selection_2_answer = 2
+            jump selection_2_2
 
     return
 
-label Selection_2_0:
+label selection_2_0:
 
     Lars "Would that be alright with you master? I’d like to spend some time with Sir Claude."
 
@@ -391,7 +407,7 @@ label Selection_2_0:
 
     return
 
-label Selection_2_1:
+label selection_2_1:
 
     Lars "Sir Claude, can you bring the artifact yourself? I’d like to spend some time with Master Sylvian."
 
@@ -470,6 +486,13 @@ label Selection_2_1:
     return
 
 label google_test_3:
+
+    if selection_1_answer == 1:
+        Lars "I think I can take it from here, Sir Claude."
+
+        Claude "Anxious for the reveal. Aren’t you, Captain?"
+
+        Claude "Don’t worry, I’m not a fan of breaking promises. Especially, for one I made with you."
 
     Lars "I think I can take it from here, Sir Claude."
 
@@ -609,14 +632,16 @@ label google_test_3:
         Lars "What are you talking about, Master?"
 
         "Poke further and ask why he’s feeling that way":
-            jump Selection_3_0
+            $ selection_3_answer = 1
+            jump selection_3_1
 
         "Joke about his statement and steer the conversation":
-            jump Selection_3_1
+            $ selection_3_answer = 2
+            jump selection_3_2
 
     return
 
-label Selection_3_0:
+label selection_3_0:
 
     Lars "It's not like Master to feel this way, and seeing him slightly melancholic leaves me with a sense of concern. Maybe our time spent apart during our adventures has taken a toll on him, I wonder."
 
@@ -648,7 +673,7 @@ label Selection_3_0:
 
     return
 
-label Selection_3_1:
+label selection_3_1:
 
     Lars "Don't worry about it, Master!"
 
@@ -774,14 +799,16 @@ label google_test_4:
         Lars "Now then, whose clothing style should I imagine next?"
 
         "Master Sylvian":
-            jump Selection_4_0
+            $ selection_4_answer = 1
+            jump selection_4_1
 
         "Sir Claude":
-            jump Selection_4_1
+            $ selection_4_answer = 2
+            jump selection_4_2
 
     return
 
-label Selection_4_0:
+label selection_4_0:
 
     Lars "Master Sylvian himself, as a flower magician, could effortlessly conjure his clothing using floral magic. Whereby, every thread is spun with enchanting intentions, and each stitch is softly whispered with an incantation."
 
@@ -799,7 +826,7 @@ label Selection_4_0:
 
     return
 
-label Selection_4_1:
+label selection_4_1:
 
     Lars "Sir Claude always holds his appearance with unparalleled pride. I can envision him draped in a new style of opulent faux fur and leather clothing, masterfully curated from exotic lands."
 
@@ -881,14 +908,16 @@ label google_test_5:
         Lars "Who should I question about the intentions behind their gifts?"
 
         "Ask Master Sylvian about his poems and flowers":
-            jump Selection_5_0
+            $ selection_5_answer = 1
+            jump selection_5_1
 
         "Ask Sir Claude about his keepsake ring":
-            jump Selection_5_1
+            $ selection_5_answer = 2
+            jump selection_5_2
 
     return
 
-label Selection_5_0:
+label selection_5_0:
 
     Lars "I decide that it's best to approach Master Sylvian first, as he tends to take my words more seriously than Sir Claude does. With Sir Claude still lost in his own daydream, this seems like a better choice."
 
@@ -942,7 +971,7 @@ label Selection_5_0:
 
     return
 
-label Selection_5_1:
+label selection_5_1:
 
     Lars "I decide it's best to approach Sir Claude first since Master's not currently in a state to discuss the matter. Sir Claude tends to be more forthright with his answers, and I believe this is the better choice."
 
@@ -1272,14 +1301,16 @@ label google_test_6:
         "Sylvian" "Pay him no mind, he’s just upset for himself."
 
         "Agree with Master Sylvian about valuing our current contentment":
-            jump Selection_6_0
+            $ selection_6_answer = 1
+            jump selection_6_1
 
         "Agree with Sir Claude about the positive value of ambition":
-            jump Selection_6_1
+            $ selection_6_answer = 2
+            jump selection_6_2
 
     return
 
-label Selection_6_0:
+label selection_6_0:
 
     Lars "I agree with Master Sylvian."
 
@@ -1313,7 +1344,7 @@ label Selection_6_0:
 
     return
 
-label Selection_6_1:
+label selection_6_1:
 
     Lars "I agree with what Sir Claude says."
 

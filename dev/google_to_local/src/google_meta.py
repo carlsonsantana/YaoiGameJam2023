@@ -111,11 +111,12 @@ class GoogleMeta:
                 continue
 
             # todo: support styled text and convert on the spot
+            # todo: when a selection is detected, remember the answer
+            # todo: addd default at start for option variables
             if "paragraph" in entry:
                 paragraph = entry["paragraph"]
 
                 # region detect selection
-                # detect selection
                 if paragraph["paragraphStyle"]["namedStyleType"].startswith("HEADING_2"):
                     # this is a menu!
 
@@ -144,12 +145,14 @@ class GoogleMeta:
                             break
 
                     # write down our options
-                    selection_title = selection_title.replace(" ", "_").strip()
+                    selection_title = selection_title.replace(" ", "_").strip().lower()
+                    renpy_lines.insert(0, f"default {selection_title}_answer = 0\n\n")
                     for index, option_index in enumerate(option_start_index_list):
                         option_entry = google_json[option_index]
                         option_text = GoogleMeta.extract_element(option_entry)
                         renpy_lines.append(f"{GoogleMeta.INDENT*2}\"{option_text.strip()}\":\n")
-                        renpy_lines.append(f"{GoogleMeta.INDENT*3}jump {selection_title}_{index}\n\n")
+                        renpy_lines.append(f"{GoogleMeta.INDENT*3}$ {selection_title}_answer = {index+1}\n")
+                        renpy_lines.append(f"{GoogleMeta.INDENT*3}jump {selection_title}_{index+1}\n\n")
 
                     # end the current block
                     partition_count += 1
@@ -181,18 +184,44 @@ class GoogleMeta:
 
                     # todo: create options
                     continue
-                # endregion
+                # endregion detect selection
+
+
+                # region detect if block
+                if paragraph["paragraphStyle"]["namedStyleType"].startswith("HEADING_6"):
+                    # check if if statement
+                    lcase = GoogleMeta.extract_element(entry).lower()
+                    print("Heading 6 found", lcase)
+                    if lcase.startswith("if "):
+                        print("IF:", lcase)
+                        if_indent = GoogleMeta.INDENT*2
+                        renpy_lines.append(f"{GoogleMeta.INDENT}{lcase}")
+
+                        # run until we find endif
+                        for if_index in range(index + 1, len(google_json)):
+                            if_entry = google_json[if_index]
+                            if_text = GoogleMeta.extract_element(if_entry)
+
+                            if if_entry["paragraph"]["paragraphStyle"]["namedStyleType"].startswith("HEADING_6") \
+                                    and if_text.lower().startswith("endif"):
+                                skip_index = option_index
+                                break
+
+                            text_content = self.extract_renpy_line(if_entry, if_indent)
+                            if text_content == "":
+                                continue
+                            renpy_lines.append(text_content)
+
+                    continue
+                # endregion detect if block
 
                 if paragraph["paragraphStyle"]["namedStyleType"].startswith("HEADING_"):
                     # if header, ignore
                     continue
 
-                # put all elements into one text
                 text_content = self.extract_renpy_line(entry, GoogleMeta.INDENT)
-
                 if text_content == "":
                     continue
-
                 renpy_lines.append(text_content)
 
         # todo: replace
