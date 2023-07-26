@@ -9,6 +9,10 @@ class GoogleMeta:
     CHAR_EXISTS = 1
     CHAR_NOT_EXIST = 0
 
+    LARS_UNKNOWN = 0
+    LARS_NORMAL = 1
+    LARS_NARRATION = 2
+
     def __init__(self):
         # todo: remove hardcode below or make it optional
         # not really necessary lol
@@ -21,6 +25,7 @@ class GoogleMeta:
         self.files = self.meta["files"]
 
         self.character_exists = {}
+        self.lars_mode = GoogleMeta.LARS_UNKNOWN
 
     def run_to_local(self):
         service = GoogleService()
@@ -48,25 +53,27 @@ class GoogleMeta:
     def extract_renpy_line(self, entry, indent):
         # put all elements into one text
         text_content = GoogleMeta.extract_element(entry)
+        result = []
 
         if text_content.strip() == "":
             # ignore empty texts
-            return ""
+            return result
 
         # detect character
         colon_split = text_content.split(":")
         if len(colon_split) < 2:
             print("Skipping...", text_content)
-            return ""
+            return result
 
         # split properly
-        right_tag = colon_split[0]
-        left_tag = ":".join(colon_split[1:]).strip()
+        char_tag = colon_split[0]
+        dialog_tag = ":".join(colon_split[1:]).strip()
 
         # determine character
         # todo: determine if emotion exists
         # todo: determine if speaker exists and warn user if doesn't
-        character = right_tag.split(" ")[0]
+        character = char_tag.split(" ")[0]
+        char_details = " ".join(char_tag.split(" ")[1:]).lower()
 
         if character not in self.character_exists:
             exists = False
@@ -85,11 +92,28 @@ class GoogleMeta:
         if self.character_exists[character] == GoogleMeta.CHAR_NOT_EXIST:
             character = f"\"{character}\""
 
+        if "narration" in char_details:
+            if self.lars_mode in [GoogleMeta.LARS_UNKNOWN, GoogleMeta.LARS_NORMAL]:
+                result.append(f"{indent}hide lars\n")
+                self.lars_mode = GoogleMeta.LARS_NARRATION
+        else:
+            if self.lars_mode in [GoogleMeta.LARS_UNKNOWN, GoogleMeta.LARS_NARRATION]:
+                result.append(f"{indent}show lars at left\n")
+                self.lars_mode = GoogleMeta.LARS_NORMAL
+
+        # todo: bad!
+        if self.lars_mode == GoogleMeta.LARS_NARRATION:
+            character = "\"Lars (Head Voice)\""
+
         # region possible location of code generation
         # todo: escape double quote?
         # todo: add show character here?
-        left_tag = left_tag.replace('"', '\\"')
-        return f"{indent}{character} \"{left_tag}\"\n\n"
+        dialog_tag = dialog_tag.replace('"', '\\"')
+        if self.lars_mode == GoogleMeta.LARS_NARRATION:
+            dialog_tag = f"({dialog_tag})"
+
+        result.append(f"{indent}{character} \"{dialog_tag}\"\n\n")
+        return result
 
     @staticmethod
     def transform_to_indented_list(line_list, indent):
@@ -168,12 +192,13 @@ class GoogleMeta:
 
                     # end the current block
                     partition_count += 1
+                    self.lars_mode = GoogleMeta.LARS_UNKNOWN
                     renpy_lines.append(f"{GoogleMeta.INDENT}return\n\n")
 
                     # write down the dialogs until we a heading (might be a bad idea)
                     # todo: now
                     for index, option_start_index in enumerate(option_start_index_list):
-                        renpy_lines.append(f"label {selection_title}_{index}:\n\n")
+                        renpy_lines.append(f"label {selection_title}_{index+1}:\n\n")
 
                         for dialog_index in range(option_start_index + 1, len(google_json)):
                             dialog_entry = google_json[dialog_index]
@@ -184,11 +209,12 @@ class GoogleMeta:
 
                             text_content = self.extract_renpy_line(dialog_entry, GoogleMeta.INDENT)
 
-                            if text_content == "":
+                            if len(text_content) == 0:
                                 continue
 
-                            renpy_lines.append(text_content)
+                            renpy_lines.extend(text_content)
                         renpy_lines.append(f"{GoogleMeta.INDENT}jump {label}_{partition_count}\n\n")
+                        self.lars_mode = GoogleMeta.LARS_UNKNOWN
                         renpy_lines.append(f"{GoogleMeta.INDENT}return\n\n")
 
                     # add the next partition part 2
@@ -220,9 +246,9 @@ class GoogleMeta:
                                 break
 
                             text_content = self.extract_renpy_line(if_entry, if_indent)
-                            if text_content == "":
+                            if len(text_content) == 0:
                                 continue
-                            renpy_lines.append(text_content)
+                            renpy_lines.extend(text_content)
 
                     continue
                 # endregion detect if block
@@ -232,9 +258,9 @@ class GoogleMeta:
                     continue
 
                 text_content = self.extract_renpy_line(entry, GoogleMeta.INDENT)
-                if text_content == "":
+                if len(text_content) == 0:
                     continue
-                renpy_lines.append(text_content)
+                renpy_lines.extend(text_content)
 
         # todo: replace
         with open(dest, "w", encoding="utf-8") as f:
