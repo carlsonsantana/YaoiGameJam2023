@@ -44,3 +44,9 @@ python dev/google_to_local/google_to_renpy.py
 ```bash
 dev/build/build.sh 
 ```
+
+## Remote to local to renpy
+
+```bash
+python dev/google_to_local/google_to_local.py && python dev/google_to_local/google_to_renpy.py
+```

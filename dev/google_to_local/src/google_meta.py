@@ -26,6 +26,7 @@ class GoogleMeta:
 
         self.character_exists = {}
         self.lars_mode = GoogleMeta.LARS_UNKNOWN
+        self.auto = True
 
     def run_to_local(self):
         service = GoogleService()
@@ -78,9 +79,9 @@ class GoogleMeta:
         if character not in self.character_exists:
             exists = False
             with os.scandir('./game/scripts/characters') as entries:
-                for entry in entries:
+                for file_entry in entries:
                     # todo look for character
-                    curr_path = entry.name
+                    curr_path = file_entry.name
                     if curr_path.endswith(".rpy"):
                         exists = curr_path.split(".")[0] == character.lower()
                         if exists:
@@ -92,23 +93,24 @@ class GoogleMeta:
         if self.character_exists[character] == GoogleMeta.CHAR_NOT_EXIST:
             character = f"\"{character}\""
 
-        if "narration" in char_details:
-            if self.lars_mode in [GoogleMeta.LARS_UNKNOWN, GoogleMeta.LARS_NORMAL]:
-                result.append(f"{indent}hide lars\n")
-                self.lars_mode = GoogleMeta.LARS_NARRATION
-        else:
-            if self.lars_mode in [GoogleMeta.LARS_UNKNOWN, GoogleMeta.LARS_NARRATION]:
-                result.append(f"{indent}show lars at left\n")
-                self.lars_mode = GoogleMeta.LARS_NORMAL
+        dialog_tag = dialog_tag.replace('"', '\\"')
+        if self.auto:
+            if "narration" in char_details:
+                if self.lars_mode in [GoogleMeta.LARS_UNKNOWN, GoogleMeta.LARS_NORMAL]:
+                    result.append(f"{indent}hide lars\n")
+                    self.lars_mode = GoogleMeta.LARS_NARRATION
+            else:
+                if self.lars_mode in [GoogleMeta.LARS_UNKNOWN, GoogleMeta.LARS_NARRATION]:
+                    result.append(f"{indent}show lars at left\n")
+                    self.lars_mode = GoogleMeta.LARS_NORMAL
 
-        # todo: bad!
-        if self.lars_mode == GoogleMeta.LARS_NARRATION:
-            character = "\"Lars (Head Voice)\""
+            # todo: bad!
+            if self.lars_mode == GoogleMeta.LARS_NARRATION:
+                character = "\"Lars\""
 
         # region possible location of code generation
         # todo: escape double quote?
         # todo: add show character here?
-        dialog_tag = dialog_tag.replace('"', '\\"')
         if self.lars_mode == GoogleMeta.LARS_NARRATION:
             dialog_tag = f"({dialog_tag})"
 
@@ -186,9 +188,9 @@ class GoogleMeta:
                     for index, option_index in enumerate(option_start_index_list):
                         option_entry = google_json[option_index]
                         option_text = GoogleMeta.extract_element(option_entry)
-                        renpy_lines.append(f"{GoogleMeta.INDENT*2}\"{option_text.strip()}\":\n")
-                        renpy_lines.append(f"{GoogleMeta.INDENT*3}$ {selection_title}_answer = {index+1}\n")
-                        renpy_lines.append(f"{GoogleMeta.INDENT*3}jump {selection_title}_{index+1}\n\n")
+                        renpy_lines.append(f"{GoogleMeta.INDENT * 2}\"{option_text.strip()}\":\n")
+                        renpy_lines.append(f"{GoogleMeta.INDENT * 3}$ {selection_title}_answer = {index + 1}\n")
+                        renpy_lines.append(f"{GoogleMeta.INDENT * 3}jump {selection_title}_{index + 1}\n\n")
 
                     # end the current block
                     partition_count += 1
@@ -198,7 +200,7 @@ class GoogleMeta:
                     # write down the dialogs until we a heading (might be a bad idea)
                     # todo: now
                     for index, option_start_index in enumerate(option_start_index_list):
-                        renpy_lines.append(f"label {selection_title}_{index+1}:\n\n")
+                        renpy_lines.append(f"label {selection_title}_{index + 1}:\n\n")
 
                         for dialog_index in range(option_start_index + 1, len(google_json)):
                             dialog_entry = google_json[dialog_index]
@@ -224,7 +226,6 @@ class GoogleMeta:
                     continue
                 # endregion detect selection
 
-
                 # region detect if block
                 if paragraph["paragraphStyle"]["namedStyleType"].startswith("HEADING_6"):
                     # check if if statement
@@ -232,7 +233,7 @@ class GoogleMeta:
                     print("Heading 6 found", lcase)
                     if lcase.startswith("if "):
                         print("IF:", lcase)
-                        if_indent = GoogleMeta.INDENT*2
+                        if_indent = GoogleMeta.INDENT * 2
                         renpy_lines.append(f"{GoogleMeta.INDENT}{lcase}")
 
                         # run until we find endif
@@ -242,13 +243,28 @@ class GoogleMeta:
 
                             if if_entry["paragraph"]["paragraphStyle"]["namedStyleType"].startswith("HEADING_6") \
                                     and if_text.lower().startswith("endif"):
-                                skip_index = option_index
+                                skip_index = if_index
                                 break
 
                             text_content = self.extract_renpy_line(if_entry, if_indent)
                             if len(text_content) == 0:
                                 continue
                             renpy_lines.extend(text_content)
+                    elif lcase.startswith("endif"):
+                        pass # ignore
+                    else:
+                        command = lcase.strip()
+                        if "bg" in command:
+                            # ignore
+                            pass
+                        elif "show" in command:
+                            if "at" in command:
+                                command = command.replace("at", "at char_size,")
+                            elif "with" in command:
+                                command = command.replace("with", "at char_size with")
+                            else:
+                                command += " at char_size"
+                        renpy_lines.append(f"{GoogleMeta.INDENT}{command}\n")
 
                     continue
                 # endregion detect if block
