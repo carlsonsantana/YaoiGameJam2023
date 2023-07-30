@@ -8,7 +8,21 @@ This documentation is for building the game into a playable application.
 
 - [Butler](https://itch.io/docs/butler/installing.html)
   - Follow the install process for your OS
-  - Log in! You'll need to have an itch.io account and access to the game project
+  - Log in! You'll need to have an itch.io account
+  - Make sure your account has access to the game project. @turnip to get access
+- You must have the renpy builds adjacent to this project! For example:
+```
+- random_folder
+    - love_amidst_the_timeless_rift-1.0-dists (the builds)
+        - love_amidst_the_timeless_rift-1.0-web
+        - love_amidst_the_timeless_rift-1.0-web.zip
+    - YaoiGameJam2023 (the project)
+        - games
+        - README.md
+        - (you are currently here!!!)
+    - renpy-8.1.1-sdk (your renpy SDK or exe here but it can work even if it's not here)
+        - renpy.exe
+```
 
 ### Process
 

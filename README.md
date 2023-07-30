@@ -9,13 +9,39 @@
 3. Run `python dev/google_to_local/complete_google_to_renpy.py`
 4. A browser should pop up and you choose that email
 5. Press Continue on the left and not Back to safety
-   - ![perm1.png](docs%2Fperm1.png)
+    - ![perm1.png](docs%2Fperm1.png)
 6. Select all and then Continue
     - ![perm2.png](docs%2Fperm2.png)
 
+### How to use
+
+If you did everything above and there were no issues, just run:
+
+```bash
+python dev/google_to_local/complete_google_to_renpy.py
+```
+
+This should:
+
+1. Get the latest stuff in our Google Doc
+2. Convert that into renpy. The location is at `game/scripts/google_test.py`. Take note that every time you run this
+   script, all the changes in `google_test.rpy` will be overwritten, or all the changes made are gonna be removed.
+
+### Troubleshooting
+
+#### Access blocked: ToRenpy has not completed the Google verification process
+
+![img.png](docs%2Fperm3.png)
+
+@turnip with the email you're using so you could get access to ToRenpy
+
+##### Token expired
+
+I don't have an exact error detail here but you might encounter a 401 error. The solution would be to delete a `token.`
+
 ### Scripts to run from root
 
-### Google Docs to Local file
+#### Google Docs to Local file
 
 This is needed to get the Google Docs file back to your computer.
 
@@ -23,7 +49,7 @@ This is needed to get the Google Docs file back to your computer.
 python dev/google_to_local/google_to_local.py
 ```
 
-### Google Local file to renpy
+#### Google Local file to renpy
 
 This is the script to run to convert Google Docs to
 
@@ -31,22 +57,27 @@ This is the script to run to convert Google Docs to
 python dev/google_to_local/google_to_renpy.py
 ```
 
-#### Publish web build
-
-```bash
-dev/build/build.sh 
-```
-
 ## Remote to local to renpy
 
 This gets the Google Doc and converts it to renpy. The entire process.
 
 **Option 1**
+
 ```bash
 python dev/google_to_local/complete_google_to_renpy.py
 ```
 
 **Option 2**
+
 ```bash
 python dev/google_to_local/google_to_local.py && python dev/google_to_local/google_to_renpy.py
+```
+
+
+#### Publish web build
+
+For more details, check out [build.md](dev%2Fbuild%2Fbuild.md)
+
+```bash
+dev/build/build.sh 
 ```
