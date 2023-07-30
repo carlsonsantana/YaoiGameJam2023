@@ -1,0 +1,11 @@
+{
+  "root": "./dev/google_local/",
+  "renpy_root": "./game/scripts/scenes/",
+  "files": [
+    {
+      "id": "1nkhOEwAbUw3FvXb2hpZo-nAnSgTT8B9A_D2Bw5-iBQE",
+      "destination": "google_test.json",
+      "renpy": "google_test.rpy"
+    }
+  ]
+}

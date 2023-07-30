@@ -2,4 +2,4 @@
 
 # The game starts here.
 label start:
-    call test_scene
+    call google_test_1

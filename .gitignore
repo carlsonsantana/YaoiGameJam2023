@@ -29,6 +29,7 @@ lint.txt
 # personal additions
 # editor stuff
 .vscode/
+.idea/
 
 # if you use an virtual environment
 env/
@@ -36,3 +37,8 @@ tmp/
 
 # python 3 specific gitignore
 **/__pycache__/
+
+# secrets!
+.env
+secrets/
+token.json
