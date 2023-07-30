@@ -70,7 +70,6 @@ label google_test_1:
     "Lars" "(Seeing both descendants and humans smile while under my care fills me with joy. It reminds me of my parents' philosophy of being the bridge between dragons and passengers, a legacy I'm honored to uphold.)"
 
     show bg default at bg_size with vpunch
-    hide bg default
     scene bg default at bg_size
     show claude at char_size, center
     show lars at left
@@ -87,7 +86,6 @@ label google_test_1:
 
     "Lars" "(Maybe it was something he personally enjoyed and took pride in because no matter the protest I made for him to take back the mat to rest on, he would masterfully steer the conversation in a way hat I’d end up embarrassed with making the request.)"
 
-    show claude at char_size with slideleft
     show claude at char_size, center with slideleft
     show lars at left
     Lars "Shhh Sir Claude! You’re going to hurt Spotsy’s feelings. Not to mention, she’ll get confused and make a false move if you don’t stop bothering me."
