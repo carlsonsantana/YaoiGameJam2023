@@ -27,6 +27,7 @@ class GoogleMeta:
         self.character_exists = {}
         self.lars_mode = GoogleMeta.LARS_UNKNOWN
         self.auto = True
+        self.force_hide_lars = False
 
     def run_to_local(self):
         service = GoogleService()
@@ -106,7 +107,7 @@ class GoogleMeta:
 
             # todo: bad!
             if self.lars_mode == GoogleMeta.LARS_NARRATION:
-                character = "\"Lars\""
+                character = "Lars"
 
         # region possible location of code generation
         # todo: escape double quote?
@@ -140,7 +141,7 @@ class GoogleMeta:
 
         # setup
         renpy_lines.extend(GoogleMeta.transform_to_indented_list([
-            "scene bg default at bg_size",
+            "call game_setup",
         ], GoogleMeta.INDENT))
 
         for index, entry in enumerate(google_json):
@@ -226,7 +227,7 @@ class GoogleMeta:
                     continue
                 # endregion detect selection
 
-                # region detect if block
+                # region detect other heading 6
                 if paragraph["paragraphStyle"]["namedStyleType"].startswith("HEADING_6"):
                     # check if if statement
                     lcase = GoogleMeta.extract_element(entry).lower()
@@ -252,6 +253,10 @@ class GoogleMeta:
                             renpy_lines.extend(text_content)
                     elif lcase.startswith("endif"):
                         pass # ignore
+                    elif lcase.startswith("auto on"):
+                        self.auto = True
+                    elif lcase.startswith("auto off"):
+                        self.auto = False
                     else:
                         command = lcase.strip()
                         if "bg" in command:

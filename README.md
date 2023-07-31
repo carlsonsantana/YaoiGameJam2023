@@ -53,7 +53,8 @@ other way around also applies.
 
 #### Token expired
 
-I don't have an exact error detail here but you might encounter a 401 error. The solution would be to delete a `token.`
+I don't have an exact error detail here but you might encounter a 401 error. The solution would be to delete
+a `token.json`.
 
 ### Scripts to run from root
 
