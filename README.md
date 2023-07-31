@@ -27,6 +27,22 @@ This should:
 2. Convert that into renpy. The location is at `game/scripts/google_test.py`. Take note that every time you run this
    script, all the changes in `google_test.rpy` will be overwritten, or all the changes made are gonna be removed.
 
+### Typical workflow loop
+
+This is how we want to update our files and see the latest changes.
+
+1. Run `python dev/google_to_local/complete_google_to_renpy.py` to obtain latest Google Doc changes.
+2. Run Renpy project or reload using **Shift + R**.
+3. Make changes on the **Google Doc** and not on **\*.rpy* since the changes on the latter will be overwritten by step
+    1.
+4. Repeat step 1 to see changes made during Step 3.
+
+**Rationale: Why do we do this?**
+
+We want one location or one source of truth, not spread out on different files. All our info is in the Google Doc. There
+might be some programming stuff in the project repository, but they are independent of the writing in Google Doc. The
+other way around also applies.
+
 ### Troubleshooting
 
 #### Access blocked: ToRenpy has not completed the Google verification process
@@ -35,7 +51,7 @@ This should:
 
 @turnip with the email you're using so you could get access to ToRenpy
 
-##### Token expired
+#### Token expired
 
 I don't have an exact error detail here but you might encounter a 401 error. The solution would be to delete a `token.`
 
@@ -72,7 +88,6 @@ python dev/google_to_local/complete_google_to_renpy.py
 ```bash
 python dev/google_to_local/google_to_local.py && python dev/google_to_local/google_to_renpy.py
 ```
-
 
 #### Publish web build
 
