@@ -28,6 +28,7 @@ class GoogleMeta:
         self.lars_mode = GoogleMeta.LARS_UNKNOWN
         self.auto = True
         self.force_hide_lars = False
+        self.ignore = False
 
     def run_to_local(self):
         service = GoogleService()
@@ -95,6 +96,7 @@ class GoogleMeta:
             character = f"\"{character}\""
 
         dialog_tag = dialog_tag.replace('"', '\\"')
+        dialog_tag = dialog_tag.replace('%', '\%')
         if self.auto:
             if "narration" in char_details:
                 if self.lars_mode in [GoogleMeta.LARS_UNKNOWN, GoogleMeta.LARS_NORMAL]:
@@ -146,6 +148,14 @@ class GoogleMeta:
 
         for index, entry in enumerate(google_json):
 
+            if self.ignore:
+
+                lcase = GoogleMeta.extract_element(entry).lower()
+                if lcase.startswith("ignore off"):
+                    self.ignore = False
+
+                continue
+
             if index <= skip_index:
                 continue
 
@@ -168,6 +178,21 @@ class GoogleMeta:
 
                     # insert a menu tag before the last line
                     renpy_lines.insert(last_index, f"{GoogleMeta.INDENT}menu:\n")
+                    target_text = selection_title
+                    selection_title = selection_title.replace(" ", "_").strip().lower()
+
+                    # special case
+                    special_loop_case = False
+                    special_loop_var_list = []
+                    if selection_title.startswith("selection_7"):
+                        special_loop_case = True
+
+                        # todo: fix hard code
+                        renpy_lines.insert(last_index, """    jump selection_7_loop
+    return
+    
+label selection_7_loop:\n""")
+
 
                     # todo: find all options until we hit selection ending
                     option_start_index_list = []
@@ -179,19 +204,38 @@ class GoogleMeta:
                             option_start_index_list.append(option_index)
                             # print("Options", GoogleMeta.extract_element(google_json[option_index]))
 
-                        if option_text.startswith(selection_title):
+                        if option_text.startswith(target_text):
                             skip_index = option_index
                             break
 
                     # write down our options
-                    selection_title = selection_title.replace(" ", "_").strip().lower()
+
+
                     renpy_lines.insert(0, f"default {selection_title}_answer = 0\n\n")
                     for index, option_index in enumerate(option_start_index_list):
                         option_entry = google_json[option_index]
                         option_text = GoogleMeta.extract_element(option_entry)
-                        renpy_lines.append(f"{GoogleMeta.INDENT * 2}\"{option_text.strip()}\":\n")
+
+                        if special_loop_case:
+                            renpy_lines.append(f"{GoogleMeta.INDENT * 2}\"{option_text.strip()}\" if not selection_7_{index + 1}_done:\n")
+
+                            selection_check = f"{selection_title}_{index + 1}_done"
+                            special_loop_var_list.append(selection_check)
+                            renpy_lines.insert(0, f"default {selection_check} = False\n\n")
+                            renpy_lines.append(f"{GoogleMeta.INDENT * 3}$ {selection_check} = True\n")
+                        else:
+                            renpy_lines.append(f"{GoogleMeta.INDENT * 2}\"{option_text.strip()}\":\n")
+
+
                         renpy_lines.append(f"{GoogleMeta.INDENT * 3}$ {selection_title}_answer = {index + 1}\n")
-                        renpy_lines.append(f"{GoogleMeta.INDENT * 3}jump {selection_title}_{index + 1}\n\n")
+
+
+                        renpy_lines.append(f"{GoogleMeta.INDENT * 3}jump {selection_title}_{index + 1}\n")
+                        renpy_lines.append(f"{GoogleMeta.INDENT * 3}return\n\n")
+
+                    # at special_last_index
+                    if special_loop_case:
+                        renpy_lines.append(f"{GoogleMeta.INDENT}jump google_test_8\n\n")
 
                     # end the current block
                     partition_count += 1
@@ -216,7 +260,13 @@ class GoogleMeta:
                                 continue
 
                             renpy_lines.extend(text_content)
-                        renpy_lines.append(f"{GoogleMeta.INDENT}jump {label}_{partition_count}\n\n")
+
+                        # todo: jump to label instead
+                        if special_loop_case:
+                            renpy_lines.append(f"{GoogleMeta.INDENT}jump selection_7_loop\n\n")
+                        else:
+                            renpy_lines.append(f"{GoogleMeta.INDENT}jump {label}_{partition_count}\n\n")
+
                         self.lars_mode = GoogleMeta.LARS_UNKNOWN
                         renpy_lines.append(f"{GoogleMeta.INDENT}return\n\n")
 
@@ -257,6 +307,8 @@ class GoogleMeta:
                         self.auto = True
                     elif lcase.startswith("auto off"):
                         self.auto = False
+                    elif lcase.startswith("ignore on"):
+                        self.ignore = True
                     else:
                         command = lcase.strip()
                         if "bg" in command:

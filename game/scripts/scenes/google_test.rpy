@@ -1,3 +1,13 @@
+default selection_7_4_done = False
+
+default selection_7_3_done = False
+
+default selection_7_2_done = False
+
+default selection_7_1_done = False
+
+default selection_7_answer = 0
+
 default selection_6_answer = 0
 
 default selection_5_answer = 0
@@ -25,8 +35,18 @@ label google_test_1:
     Lars "(But then again, we wouldn’t be embarking on guild-members only artifact hunts and historical expeditions if the sole purpose of ‘Custodes Sylvae’ was commerce.)"
 
     show claude at char_size, center
-    "Unknown" "(My dearest Captain Lars! Are you mumbling to yourself again?)"
+    "Unknown" "(Who on Luceania is mumbling this loud to themselves early in the morning? I’m losing my beauty sleep over here.)"
 
+    Lars "(As I observe my companion, I notice the faint sound of a yawn escaping him. It’s a rare moment of vulnerability, and I can’t resist the urge to playfully surprise him.)"
+
+    show lars at left
+    Lars "It’s me Sir Claude. Did you already forget my name after a few hours of sleep?"
+
+    Claude "Ah, My dearest Captain! I thought I was dreaming of a nightingale song waking me up from my slumber and it seems to have been your voice indeed."
+
+    Lars "Ever the charmer, aren’t you Sir Claude?"
+
+    hide lars
     Lars "(I steal a glance from my perch atop the dragon ship and it looks like one, or should I say, the only passenger has woken up.)"
 
     Lars "(It's truly a wonder how he managed to stay asleep throughout our entire journey, considering the lack of proper seat arrangements or resting areas on our new ship.)"
@@ -114,9 +134,9 @@ label google_test_1:
     Lars "(In a realm where courage and determination were paramount, it was inspiring to witness someone like him fearlessly chasing after his dreams, and it motivated me to do the same.)"
 
     show lars at left
-    Lars "{shiver}{cps=*1.3}Really? I didn’t know our young master liked being the center of attention. You always seem to be hiding that you’re the only heir of the infamous Dupont merchant family. At first, I thought it was so there wouldn’t be any rumors of our Guild being associated with your family name, but you’ve always been acting suspiciously about it. You never seem to give out your last name during our expeditions or client meetings and{/shiver}{/cps}-{nw}"
+    Lars "{sc}{cps=*1.3}Really? I didn’t know our young master liked being the center of attention. You always seem to be hiding that you’re the only heir of the infamous Dupont merchant family. At first, I thought it was so there wouldn’t be any rumors of our Guild being associated with your family name, but you’ve always been acting suspiciously about it. You never seem to give out your last name during our expeditions or client meetings and{/cps}{/sc}-{nw}"
 
-    show claude at char_size with zoom
+    show claude at char_size with zoomout
     Claude "Captain, I didn’t think that you were interested in my personal life all that much."
 
     hide lars
@@ -137,7 +157,6 @@ label google_test_1:
     Lars "(My mind races, searching for a way to divert his attention. The line between his teasing and genuine flirtation is blurry, and I find myself defenseless against his charm, even when he playfully passes it off as a joke. Succumbing to his allure is something I'd rather avoid, as I've seen how easily others have fallen under his spell.)"
 
     show claude at char_size with zoomout
-    show claude at char_size with hop
     show lars at left
     Lars "THEN I SUPPOSE you’d have no problem if the headlines were to go like this-"
 
@@ -171,10 +190,12 @@ label google_test_1:
         "Poke further and ask why he’s feeling that way":
             $ selection_1_answer = 1
             jump selection_1_1
+            return
 
         "Pass over his statement and steer the conversation":
             $ selection_1_answer = 2
             jump selection_1_2
+            return
 
     return
 
@@ -403,10 +424,12 @@ label google_test_2:
         "Ask Master Sylvian to grab the cargo for you":
             $ selection_2_answer = 1
             jump selection_2_1
+            return
 
         "Tell Sir Claude to grab the cargo himself":
             $ selection_2_answer = 2
             jump selection_2_2
+            return
 
     return
 
@@ -750,10 +773,12 @@ label google_test_3:
         "Poke further and ask why he’s feeling that way":
             $ selection_3_answer = 1
             jump selection_3_1
+            return
 
         "Joke about his statement and steer the conversation":
             $ selection_3_answer = 2
             jump selection_3_2
+            return
 
     return
 
@@ -939,10 +964,12 @@ label google_test_4:
         "Master Sylvian":
             $ selection_4_answer = 1
             jump selection_4_1
+            return
 
         "Sir Claude":
             $ selection_4_answer = 2
             jump selection_4_2
+            return
 
     return
 
@@ -1059,10 +1086,12 @@ label google_test_5:
         "Ask Master Sylvian about his poems and flowers":
             $ selection_5_answer = 1
             jump selection_5_1
+            return
 
         "Ask Sir Claude about his keepsake ring":
             $ selection_5_answer = 2
             jump selection_5_2
+            return
 
     return
 
@@ -1511,10 +1540,12 @@ label google_test_6:
         "Agree with Master Sylvian about valuing our current contentment":
             $ selection_6_answer = 1
             jump selection_6_1
+            return
 
         "Agree with Sir Claude about the positive value of ambition":
             $ selection_6_answer = 2
             jump selection_6_2
+            return
 
     return
 
@@ -1668,4 +1699,603 @@ label google_test_7:
 
     hide lars
     Lars "(As the tension in the air grows, I sense the presence of an unknown observer. It sends a chill down my spine, but with my three trusted companions by my side, I know we'll face this new challenge together.)"
+
+    Lars "(The unknown figure’s approach sends shivers down my spine, and I can feel my heart pounding like a wild stampede within my chest. The shadowy presence seems to emanate an aura of foreboding, leaving us all on edge.)"
+
+    Lars "(A bead of sweat rolls down my forehead, and my ginger fur seems to prickle, almost as if it senses the imminent danger and excitement that lay ahead.)"
+
+    show lars at left
+    "Unknown" "Looks like some interesting humans have entered my domain while I was occupied."
+
+    "Unknown" "I was frozen in anticipation for what would come next, but I have work to do after this. My castle isn’t going to clean up after itself."
+
+    "Unknown" "Get it? frozen in anticipation. Haha!"
+
+    hide lars
+    Lars "(In an instant, Master Sylvian’s incantation casts a protective shield around us, shimmering with the combined energies of Potentilla and crystalline flowery dews. A testament to his mastery of magic, and I feel a surge of reassurance knowing that we are shielded from whatever tricks the newcomer might have up their sleeve.)"
+
+    Lars "(Despite the shield’s presence, my fox instincts remain on high alert. The tension in the air is palpable, and I am keenly aware of the figure’s every movement. It’s as if time has slowed down, and I focus intently on their enigmatic presence, ready to react at a moment’s notice should any threat arise.)"
+
+    Lars "(With Rory by my side, her cutting tools poised for self-defense, we form a united front against the unknown creature.)"
+
+    Lars "(Sir Claude, ever bold and quick-witted, leaps forward to question the puzzling figure.)"
+
+    show lars at left
+    Claude "Who’s there? Are you the person behind this? What’s-"
+
+    "Unknown" "Slow doooown there."
+
+    "Unknown" "Times not running away after all. You know?"
+
+    "Sylvian" "…"
+
+    Lars "…"
+
+    Claude "…"
+
+    "Rory" "Heh-"
+
+    "Unknown" "DON’T JUDGE ME!"
+
+    "Unknown" "It’s been some time since I could speak with someone without them being brainwashed or stuck in time."
+
+    Lars "What do you mean by brainwashed or stuck in time?"
+
+    "Unknown" "Ah, the inquisitive human speaks. Hmm, I’ll call you Snoopy from now on, then."
+
+    Lars "But my name is Lars-"
+
+    "Unknown" "My brain cells will only acknowledge you as Snoopy from here on out, you’re all going to be new additions of my army anyway so it’s not worth my time too much."
+
+    "Unknown" "You may wonder why Snoopy though, “I am a firm believer in the power of curiosity-"
+
+    "Sylvian" "“-But it should never be allowed to run wild; for, if it does, we risk becoming lost in a maze of endless questions”."
+
+    "Unknown" "You, the one with the flowery hat, must be the smart one the group, you’ll be Smarty from now on."
+
+    "Unknown" "Since you’re intelligent enough to know ancient writings like this, you should know better than to interject like Snoopy."
+
+    Lars "But how is that even related to what I asked-"
+
+    "Unknown" "Snoopy, I need my main character moment over here, stop interrupting so much."
+
+    hide lars
+    Lars "(I take a deep breath, frustration bubbling up within me as I watch the scene unfold. The figure’s words are becoming increasingly difficult to make sense of anything.)"
+
+    Lars "(I glance at my companions, hoping someone will step up and challenge their nonsensical monologue. We can’t afford to let them dominate the conversation.)"
+
+    show lars at left
+    Lars "Come on, someone has to say something."
+
+    "Unknown" "As I was saying-"
+
+    hide lars
+    Lars "(Relief washes over me as, almost miraculously, Master Sylvian speaks up.)"
+
+    show lars at left
+    "Sylvian" "Enough banter, who exactly are you?"
+
+    hide lars
+    Lars "(Like a conductor orchestrating an intricate symphony, the enigmatic figure’s particles move in an obtuse direction.)"
+
+    Lars "(Suddenly, the sound of a single clap pierces through the stillness. It’s a sharp and commanding sound, one that demands our attention.)"
+
+    show lars at left
+    "Unknown" "It seems that it’s time for the cliché introduction séance, the kind they do for video games and TV shows."
+
+    "Unknown" "Hopefully they had the budget to make me prettier than the rest of you."
+
+    "Unknown" "Anyway, you can address me as the “Omniscient Lord of Bankruptcy” or if it’s easier on the tongue, the “Malevolent Architect of Debt”. I’m actually more of a fan of the second title since it matches my goals more."
+
+    Lars "Uhm, does that mean that you cause bankruptcy or that you’re the literal embodiment of bankruptcy?"
+
+    "Rory" "Do you design dept plans to bankrupt others or are you so bankrupt that you’re already knee-dip in the debt plan already?"
+
+    "Rory" "But then again, I can’t see if you have knees or not. Are you a talking dog by any chance?"
+
+    Claude "I don’t think that’s an issue we need to be discussing right now-"
+
+    "Malevolent" "Ahhh, keep quiet for a second! I’m not used to this much talking. If it weren’t for you meddling humans, I would have gotten away with my grandiose plan already."
+
+    "Rory" "Somehow, I really doubt that you’d be capable of doing something like that."
+
+    "Malevolent" "Hmph, I could even wipe your minds right now since you’ve already heard my voice, and even learnt of my grandiose plan -though not completely-, and what else…"
+
+    "Malevolent" "…you’re probably going to learn of my real name which is Zephyr but anyway-"
+
+    "Rory" "Isn’t this the same case of yelling out your attack name before it’s your turn to fight?"
+
+    hide lars
+    jump selection_7_loop
+    return
+    
+label selection_7_loop:
+    menu:
+        Lars "(We’re wasting too much time here; I need to take a proactive approach and try asking him some questions myself before anything bad happens to anyone else.)"
+
+        "Are you responsible for freezing the time for everyone except us?" if not selection_7_1_done:
+            $ selection_7_1_done = True
+            $ selection_7_answer = 1
+            jump selection_7_1
+            return
+
+        "How come you’re freezing people for a castle renovation?" if not selection_7_2_done:
+            $ selection_7_2_done = True
+            $ selection_7_answer = 2
+            jump selection_7_2
+            return
+
+        "Why did you say that we’re humans and not descendants?" if not selection_7_3_done:
+            $ selection_7_3_done = True
+            $ selection_7_answer = 3
+            jump selection_7_3
+            return
+
+        "What’s up with giving yourself weird titles in third person?" if not selection_7_4_done:
+            $ selection_7_4_done = True
+            $ selection_7_answer = 4
+            jump selection_7_4
+            return
+
+    jump google_test_8
+
+    return
+
+label selection_7_1:
+
+    show lars at left
+    Lars "I’m curious about this time suspension phenomenon, are you the person responsible for this?"
+
+    "Rory" "Come one, Larsy, he can’t actually lack that many braincells to spell out his plan like that-"
+
+    "Zephyr" "Exactly, what do I get in exchange for all this talking and sharing my top-secret agenda? Huh?"
+
+    hide lars
+    Lars "(From the corner of my eye, I notice Sir Claude preparing himself to jump into our conversation.)"
+
+    Lars "(His body language exudes a readiness to respond, like a poised predator ready to pounce on its prey. I can see the gears turning in his mind, calculating the best approach to fight off our dilemma.)"
+
+    show lars at left
+    Claude "I'm sure we can reach a compromise if we settle this down like proper negotiators. Threatening someone won't get you on their side, after all. It will only provoke them to attack."
+
+    "Zephyr" "Hmph, you're quite the smooth talker, aren't you? Lizard-like qualities…"
+
+    "Zephyr" "I'll call you \"Slicky\" from now on since you think you are so-"
+
+    Claude "Shadowy figure, calls himself weird titles for attention, keeps talking about freezing time and washing other’s minds. I think it’s fairly obvious we have a villain on our hands. Unless you’re not actually the person behind this."
+
+    "Zephyr" "Of course, I am! I wouldn’t brandish my family name with such buffoonery if I didn’t have a grandiose endgame in mind."
+
+    Claude "Are you sure about that? Maybe you’re just a random kid messing with a weird spell?"
+
+    "Zephyr" "K-K-Kid?! I’m older than all of you combined! I mean, I’ve been sleeping for a few centuries but ugh that’s not the point! Let me start from the beginning since you’re so quick to make me out to be a villain, Slicky."
+
+    hide lars
+    Lars "(Seems like baiting them was indeed the correct option.)"
+
+    Lars "(I can't help but admire Sir Claude's instinct, like a masterful negotiator, for choosing the right tactic and probing Zephyr to give us more information. His ability to read people and discern their intentions is truly a sight to behold.)"
+
+    show lars at left
+    "Zephyr" "You see, my family has had this unique time freezing artifact for quite a few generations now."
+
+    "Zephyr" "We’d have the responsibility of using it to maintain order and peace in the land as noble dragon descendants of the house of-"
+
+    "Rory" "Seem like we have a delusional con-artist here."
+
+    "Zephyr" "I’m not lying!"
+
+    "Rory" "You’re clearly not using it responsibly, now, are you?"
+
+    "Zephyr" "Hold on there, bull woman, unless you want to be called Speedy or-"
+
+    "Claudy" "I insist you call her Smally, since she fits the size standard."
+
+    "Rory" "Somewhere in Luceania, a tree is tirelessly producing oxygen for you."
+
+    "Rory" "I think you owe it an apology because of all the air pollution you’re creating with that mouth."
+
+    "Zephyr" "Quit trying to shadow my lore explanation, you two., I need to entertain the sub-celestial readers who are watching me after all."
+
+    "Rory" "Hehe, shadow…"
+
+    hide lars
+    Lars "(Sub-celestial readers? What is he talking about? Is someone reading what’s happening to us right now?)"
+
+    show lars at left
+    "Zephyr" "I’ve decided to use the artifact for my personal gain since my present situation calls for it. But it’ll all be worth it when my castle is renovated for the arrival of someone special."
+
+    Lars "Someone special?"
+
+    "Sylvian" "Were there never any countermeasure set up in the case of someone misusing the artifact?"
+
+    hide lars
+    Lars "(Master's crucial interjection couldn't have come at a more opportune moment.)"
+
+    Lars "(It’s like watching a seasoned philosopher in action, seeking to understand the depths of the puzzling figure's words and probing for deeper meanings.)"
+
+    show lars at left
+    "Rory" "Mentor, shouldn’t we use some discretion here? What if decides to cross us-"
+
+    "Zephyr" "If we ever strayed from our path and misused it, it’s couple artifact would counteract the effects of curse. Anyone who touched it, would be immune to the effects of the artifact."
+
+    "Zephyr" "Basically, the same necklace but with a different colored gemstone and the opposite ability-"
+
+    "Sylvian" "…Did you say, it was a necklace with a gemstone?"
+
+    "Zephyr" "Hmm, yeah, what about it?"
+
+    "Sylvian" "Out of curiosity, where is that artifact now?"
+
+    "Zephyr" "I’m not an all-knowing encyclopedia now, am I? I don’t have any clue as to where it is now since he was the last person who took it."
+
+    "Zephyr" "Leaving me to my current state, that cold-hearted bastard."
+
+    "Rory" "Petition to make this guy our story antagonist, we’ll have a 99.9\% chance of winning when he spills everything after a little nudge."
+
+    Lars "Come on, we’re listening to your story right now. Might as well, share the ending with us as well."
+
+    "Sylvian" "The ending awaits, a revelation in your voice."
+
+    "Sylvian" "Guiding us to contemplate, to make our choice."
+
+    "Zephyr" "What’s with the sudden poem, is this the humor that descendants use nowadays?"
+
+    "Zephyr" "Well, whatever, I don’t know. I’ve already told you guys so much and you lot look like you don’t believe me."
+
+    "Zephyr" "I’ve tried to convince so many people till now, humans and descendent alike."
+
+    "Zephyr" "What makes your group so special that I shouldn’t instantly freeze right now?"
+
+    hide lars
+    Lars "(I have a better grasp of our situation but I need to question him more before I reach the final conclusion.)"
+
+    jump selection_7_loop
+
+    return
+
+label selection_7_2:
+
+    show lars at left
+    "Zephyr" "Well, I’ve been sleeping for a few centuries now."
+
+    "" "However, once I woke up, neither of my parents were home and I was still in the body of a young adult."
+
+    "Zephyr" "You should’ve seen what a wreck my castle had become, and there was no gold either!"
+
+    "Zephyr" "Many species of descendants have been our faithful servants for the decades that I was awake, however, once I opened my eyes no one was there."
+
+    Claude "Is that why you settled on the title of “Omniscient Lord of Bankruptcy”? Then why would you need two titles like “Malevolent Architect of Debt”?"
+
+    "Zephyr" "Shh, you can’t cut in while I’m laying down my sob story."
+
+    "Zephyr" "Like I said, I couldn’t find anyone, especially him, the castle was completely empty."
+
+    Lars "Who are you talking about?"
+
+    "Zephyr" "…that’s a story better left for later."
+
+    "Zephyr" "I searched for so many days but to no avail, I thought that instead of searching, I should start waiting instead. But who could even recognize our family castle with its broken-down state?"
+
+    "Zephyr" "Eventually I decided to hire some descendants to work for me but they asked for compensation after a few days."
+
+    "Zephyr" "But how could I? No money, no family, not even a proper place to sleep in! I was knee-deep in debt by this point, since I owed them all gold."
+
+    "Zephyr" "They didn’t believe me when I said I was a noble dragon descendent so it was no use appealing to their loyalty."
+
+    "Rory" "I mean, hardly blame them at this point."
+
+    Claude "Long story short, you just wanted free labor."
+
+    Claude "We’re past the stage of paying others with exposure and influencer points, you know?"
+
+    Claude "Unless it’s me that does it, because they’re getting their gold’s worth and so much more."
+
+    "Zephyr" "Stop cutting in!"
+
+    "Rory" "How much longer is this going to take? Can we skip this?"
+
+    "Rory" "Look, the icon is right there in the textbox, I’m sure you can click it quickly. It would be really embarrassing if you couldn’t."
+
+    "Zephyr" "DON’T! PLEASE! I’m reaching the good part of the story after all."
+
+    "Zephyr" "Ahem! So, instead of finding descendants looking for compensation, I decided to hire newly reincarnated humans!"
+
+    "Zephyr" "Genuis idea, I know. They wouldn’t have any qualms for gold either since they don’t understand the mechanics of this realm yet."
+
+    "Zephyr" "Bonus points, they also accepted the tale of how I am a noble and that I could gift them positions in my castle as soon as it was renovated."
+
+    "Zephyr" "I need a proper place to rest after all and a castle of that size needs regular maintenance."
+
+    "Zephyr" "Who knows, when he’s going to get back either? I need to keep our home clean and well-organized."
+
+    "Sylvian" "You keep mentioning your castle and innocently slaving away unknowing humans, but how does that even result in your usage of an artifact to freeze time? Who is he in this story?"
+
+    Claude "That’s right! We’ve been walking around this issue for some time now and we haven’t learnt one single coherent thing from you. Just bits and pieces that aren’t helping us get out of this mess. Maybe you’re just a minion for someone else’s plan-"
+
+    "Zephyr" "I think you’re undermining my generosity here; I gave you so much information for nothing. I could even wipe your brains clean."
+
+    "Zephyr" "After all, I’m only mentioning these because I haven’t had the chance to properly speak with someone for a few weeks now so don’t think that I enjoy talking people, okay? OKAY?"
+
+    "Everyone" "He definitely enjoys talking with people."
+
+    Lars "So, let me summarize, you’re a noble dragon descendent whose been sleeping for centuries and BOOM!"
+
+    Lars "You woke up, broke and homeless. You decided to use free labor from the descendants to clean up the mess in your castle. However, you couldn’t pay their wages properly. You then decided to slave away unsuspecting humans since they were ignorant about the rules of the realm."
+
+    Lars "But why did you decide to use the time freeze artifact in the first place?"
+
+    "Zephyr" "How could I bring them back to my castle without explaining the situation to them? They would get suspicious and run away from now. You know how hard I've worked to manually capture the humans and brainwash them to fix up my home?"
+
+    Claude "You’re obviously lacking a certain moral regard to be paying your employees so poorly and even-"
+
+    "Zephyr" "I didn’t want to, okay? But what other choice did I have?"
+
+    "Rory" "Literally, anything besides making a house renovating army of human zombie slaves."
+
+    "Zephyr" "I couldn’t win them over with my title and I couldn’t make them work with the little money either."
+
+    "Zephyr" "The time freeze did help me in relocating them and making sure I was the first one I spoke too so I could make my situation clear so it was the easier solution for me. I’d pay them back once he comes back anyways."
+
+    "Zephyr" "The mind control was always a last measure for me and even now I’m just left with an army of zombies and eternally doomed to be bored out of my mind."
+
+    Claude "Weren’t you the same person who tried to threaten us with brainwashing before you-"
+
+    "Zephyr" "It wasn’t like I was bluffing to make you spill what info you had. I’m not that forgetful, okay? OKAY?"
+
+    "Everyone" "He’s definitely that forgetful."
+
+    hide lars
+    Lars "(I have a better grasp of our situation but I need to question him more before I reach the final conclusion.)"
+
+    jump selection_7_loop
+
+    return
+
+label selection_7_3:
+
+    hide lars
+    Lars "(My instincts urge me to stay cautious, but curiosity bubbles up like a spring of sparkling water, impossible to contain. As the words escape my lips, I can't help but ask-)"
+
+    show lars at left
+    Lars "Why’d you call us human? Can’t you see my tail and –"
+
+    hide lars
+    Lars "(The sound of the enigmatic shadow's laughter ripples through the air like a cascade of silver bells. It's a laughter that seems to contain the wisdom of ages, yet also holds an air of playfulness.)"
+
+    Lars "(I can't help but feel a bit foolish, as if I have indeed asked the most absurd question on earth. Embarrassment flushes my cheeks, and my fox ears droop slightly, betraying my unease.)"
+
+    show lars at left
+    "Zephyr" "Because that’s what you all obviously are?"
+
+    "Zephyr" "All the descendants in this region have been under time suspension for the few months that I’ve been playing around with my artifact and I never had any of them move freely during the process."
+
+    "Zephyr" "That’s why…"
+
+    "Zephyr" "…you must be one of the NEWLY REINCARNATED HUMANS!"
+
+    hide lars
+    Lars "(As the figure continued to speak, I couldn’t shake the feeling that his words were indeed a maze of confusion. Despite the air of wisdom that surrounded him, it was clear that his conclusions were leading him astray.)"
+
+    Lars "(His insistence on calling us humans, despite our obvious animal features, left me perplexed. It was as if he was trying to fit us into a narrative that didn’t align with our reality.)"
+
+    show lars at left
+    Lars "But how would that make us the exception to your plan to freeze everyone in time?"
+
+    "Zephyr" "It’s quite simple, Snoopy. Let me break it for you."
+
+    "Zephyr" "I’ve actually never seen any of the reincarnated humans escaping from my time freeze till now. Hence, I’m chucking it up to that you lot have some special powers that I haven’t seen yet."
+
+    "Zephyr" "Why would some random descendants suddenly be able to escape my artifact’s influence?"
+
+    "Zephyr" "The descendants here never got passed the effects of my artifact so far and if they go to the earth realm, then there’d be no need for me to worry."
+
+    "Zephyr" "What does pose a risk for my plan are the unknown variables that enter Luceania ergo-"
+
+    Lars "Humans…"
+
+    "Zephyr" "Exactly! You’re getting the hand of this journalism business Snoopy. But it’s time for me to ask the questions this time."
+
+    "Zephyr" "Why would some random descendants suddenly be able to escape my artifact’s influence?"
+
+    "Zephyr" "Another thing that I can’t make sense of is why you’re dressed up like that? you some unique human entertainers? probably showmen or something, aren’t you?"
+
+    hide lars
+    Lars "(Being bombarded by so many questions stuns me, as I am also clueless about how I should answer them.)"
+
+    Lars "(It's obvious that the Zephyr here is making up misconceptions as he goes on, but the more important matter is his comment about variables.)"
+
+    Lars "(What variable could it be?)"
+
+    show lars at left
+    "Zephyr" "Cat got your tongue? No problem, I’ll find it out for myself soon enough."
+
+    hide lars
+    Lars "(I have a better grasp of our situation but I need to question him more before I reach the final conclusion.)"
+
+    jump selection_7_loop
+
+    return
+
+label selection_7_4:
+
+    show lars at left
+    "Zephyr" "You just lack the understanding. I was, in fact, the lord of one of the noble houses during the previous dynasty and held much longer titles."
+
+    "Zephyr" "In fact, you should be thankful that I'm allowing you to call me 'Young Lord' or 'Lord Zephyr' once your questioning session is over."
+
+    Lars "But I didn't agree to it..."
+
+    "Zephyr" "What as that?"
+
+    Lars "Nothing, I was thinking what if I call you by the wrong title?"
+
+    "Zephyr" "I suppose it's been a few centuries since someone last called me that, so I will pardon you if you accidentally call me by my first name. It’s because I’m so benevolent and not because I like being interviewed like a celebrity, okay? OKAY?"
+
+    "Everyone" "He definitely likes being interviewed like a celebrity."
+
+    Lars "Centuries? Did you come back from the dead, or are you just a joking vampire?"
+
+    "Zephyr" "Neither, actually. I was just asleep."
+
+    "Zephyr" "It was with the help of the very same artifact I'm using now."
+
+    Lars "So, you froze time for yourself and simply slept through the centuries? Why on Luceania would you do that?"
+
+    "Zephyr" "I was waiting for him to arrive, but he never did, so I just froze time to forget..."
+
+    "Zephyr" "He even took the countermeasure artifact with him, that sly little..."
+
+    Lars "Who is he?"
+
+    hide lars
+    Lars "(But it seemed like my question was to no avail because he simply wouldn't talk about it anymore.)"
+
+    Lars "(I have a better grasp of our situation but I need to question him more before I reach the final conclusion.)"
+
+    jump selection_7_loop
+
+    return
+
+label google_test_8:
+
+    show lars at left
+    Lars "I think we’re done with the questions for now."
+
+    Claude "Claude: You say that, Captain, but I have a question to ask our mystery person."
+
+    "Zephyr" "I'd prefer the term mystery man; you're taking my shadow form too literally, Slicky."
+
+    Claude "Where's the proof that you haven’t been speaking gibberish so far? Artifact for stopping time? Trying to brand us as humans and making awkward jokes. To me, it seems like we have a delusional con-artist here."
+
+    Claude "Merchants always need to showcase their credibility, same goes for someone who's exchanging our time with childish bluffs."
+
+    "Rory" "In the first place, why do we have some random kid trying to play mind tricks on us?"
+
+    "Zephyr" "I'm already centuries older than each one of you, ugh!"
+
+    "Zephyr" "I'm going to block you guys out for a minute so I can calm myself down."
+
+    hide lars
+    Lars "(As if on cue, Zephyr’s shadow disperses around us, leaving us in a momentary respite from his his presence. Seizing this opportunity, we huddle together, away from his prying ears, to discuss what we have learned.)"
+
+    Lars "(Time is of the essence, and we must be quick in our deliberations.)"
+
+    show lars at left
+    Lars "Sir Claude, were you being serious when you said you didn’t believe him?"
+
+    Claude "I do believe what he’s saying, or more so I want his story to be true. I’ve been waiting for a thrilling adventure  like this for quite a long time now and the opportunity is now within my grasp."
+
+    Lars "But you said-"
+
+    Claude "Don’t worry yourself, Captain. I just said that so his lordship would give us a little break from his watchful look. A little timeout for a not so little kid."
+
+    "Sylvian" "I think we’ll have to believe what he says. His story seems plausible to me, especially what he mentioned about the necklace."
+
+    "Rory" "But he didn’t even know that we have his so-called counter artifact with us."
+
+    "Sylvian" "I do think that part of his story is dubious but I think Lars would have a better picture of our dilemma after his questioning."
+
+    Lars "I could do that Master; however, one part of his story seems out of place to me…"
+
+    "Sylvian" "Let us help you out then."
+
+    "Sylvian" "From what I understood, that shadowy figure is a noble dragon descendent from the previous dynasty of Luceania,"
+
+    "Sylvian" "Allegedly, he’s been sleeping throughout the centuries by using his family’s time freeze artifact on himself-"
+
+    Claude "Because of a certain someone who he refuses to disclose. I don’t think he’s traded that info with us either given how tight-lipped he was about it. My instinct is telling me we have to fish that info in another way."
+
+    Lars "I’m still confused about was his mention of a special person. Who could that be?"
+
+    "Sylvian" "Looks like we’ll have to save that question for later."
+
+    "Sylvian" "After all, man is not what he thinks he is, he is what he hides."
+
+    "Sylvian" "This mysterious person can easily be related to us as well when you consider how the artifact fell into our hands in the first place."
+
+    Claude "I did think it was suspicious how the seller was trying to get rid of the box so quickly. No merchant would try to sell something to the Dupont family at a loss in profits. I should have seen this coming."
+
+    "Sylvian" "Don't be too hard on yourself, Claude. We were all caught up in the excitement of a mysterious artifact. It's easy to overlook the finer details in such situations. But now that we know, we can approach this with caution and ensure we don't fall for any more tricks."
+
+    Claude "Speaking of tricks, I’ve never heard of a historical event mentioning a missing noble descendant, not even from my tutor, the Archmage of Luceania. What do you make of that, Boss?"
+
+    "Sylvian" "I’m not all too sure, there are many secrets in the academic realm that are being hidden from the masses from my experience. However, this does not seem to be the case, maybe his brainwashing powers had a role in this story as well…"
+
+    "Sylvian" "But that’s not what we’re going to discuss right now. Before, our young lord arrives, we need to gather our information."
+
+    hide lars
+    Lars "(That’s right, it’s time for me to get started.)"
+
+    Lars "(I take a deep breath as if to compensate for all the rambling that I’m about to do)"
+
+    show lars at left
+    Lars "To summarize, he’s using the legacy necklace to suspend time for everyone, and it’s supposedly structurally identical to the artifact we have albeit with a different gemstone and contrasting ability. I also believe that the reason we escaped from his spells affects was because of this necklace right here."
+
+    hide lars
+    Lars "(I glance down at the necklace I've carefully concealed beneath my dragon pilot equipment, and my heart skips a beat when I see that it's still shining brightly with a vivid red glow.)"
+
+    Lars "(The heat it emitted during our earlier encounter with Zephyr may have subsided, but its enchanting radiance remains.)"
+
+    show lars at left
+    Lars "Thinking about it, he mentioned that he doesn’t know where this artifact was, even though the two couple necklaces were supposed to be under his care this entire time. Could this be related to our mystery person? If so, why did this variable suddenly cause us to be the exception?"
+
+    "Rory" "…"
+
+    "Rory" "Maybe it’s related to touching the artifact."
+
+    "Rory" "Think about it."
+
+    "Rory" "We all experienced this phenomenon after holding the necklace, and we were the only people who touched it after unboxing the entire thing."
+
+    "Rory" "If it was related to the presence of the artifact in a known area, then why weren’t anyone else near the seashore also affected by its counteracting abilities?"
+
+    Claude "Wow, didn’t know little Rory could meticulously deduce all this info for us. I’m impressed."
+
+    "Rory" "Quite calling me-"
+
+    "Sylvian" "I trust my juniors’ capabilities."
+
+    Claude "However, his plan to renovate his castle seems ludicrous to me."
+
+    Claude "Hiring descendants only to realize he can’t pay his way through. Going for humans and not even offering to inform them of the reincarnation process. It’s both malicious and strangely naive at the same time."
+
+    Lars "What about the people who are currently captured by him? How do we convince him to let them go?"
+
+    "Sylvian" "“To lose patience is to lose the battle.”"
+
+    "Sylvian" "Let’s take this one step at a time."
+
+    "Sylvian" "We have to figure out who the mystery person is and how they're related to the noble descendant."
+
+    "Sylvian" "We also have to find out the connection between the couple artifacts."
+
+    "Sylvian" "After our deck is complete and we have the ace in our hands, we can find a way to free the people under his spell and put a stop to this time suspension phenomenon."
+
+    Lars "But how are we supposed to do that? He already wants to stop us by adding us to his zombie human army since he believes we’ll spoil his plans."
+
+    "Rory" "Aside from that Larsy, I can’t figure out why he’s giving all this info to us, knowing it’s going to work against him. Does he have another plan in mind?"
+
+    Claude "Like I said, he’s probably just a naive kid. But we can use that to our advantage."
+
+    "Sylvian" "Fortunately for us, a threatening tongue reveals a wayward start."
+
+    "Sylvian" "For in loose words, a tale unfolds, of inner battles and stories untold."
+
+    "Rory" "I’d like to think that one of his screws is missing especially how he confused us with humans in the first place ."
+
+    "Rory" "But I’m assuming we’re going to keep up with that lie?"
+
+    Lars "I think it’s best that we do, otherwise, we’ll be spilling the reason as to why we’re not influenced by his artifact descendants which is because of the countermeasure necklace that has fallen into the palm of our hands."
+
+    Claude "If he catches notice, we'll lose the ace up our sleeves for the negotiation deal and rescue mission."
+
+    "Rory" "But what should be our excuse for our appearance? We can’t keep up the lie for too long! He’ll eventually notice."
+
+    hide lars
+    Lars "(All at once, Zephyr's black particles coalesce once more. His sudden reappearance sends a shiver down my spine, but I steady myself, drawing strength from the unwavering determination of my companions.)"
+
+    Lars "(There is no time for fear; we must press on.)"
+
+    show lars at left
+    "Zephyr" "Finished with the banter and jokes?"
 
