@@ -5,12 +5,33 @@ transform char_size:
     zoom 0.75
 
 label game_setup:
-    call name_mc
-    $ Lars = player_name
     scene bg default at bg_size
     return
 
-label name_mc:
+label name_mc(name_dialog="What is your name?"):
+    $ player_name = renpy.input(name_dialog)
+    $ player_name = player_name.strip()
+
+    if player_name == "":
+        $ player_name = "Lars"
+
+    $ Lars = player_name
+    return
+
+
+
+
+
+
+
+
+
+
+
+
+
+# old things ignore
+label name_mc_v1:
     menu:
         "Name selection process begins."
 

@@ -97,6 +97,13 @@ class GoogleMeta:
 
         dialog_tag = dialog_tag.replace('"', '\\"')
         dialog_tag = dialog_tag.replace('%', '\%')
+
+        # region name selection
+        char_lcase = character.lower()
+        if "name_selection" in char_lcase:
+            return [f"{indent}call name_mc(\"{dialog_tag}\")\n\n"]
+        # endregion
+
         if self.auto:
             if "narration" in char_details:
                 if self.lars_mode in [GoogleMeta.LARS_UNKNOWN, GoogleMeta.LARS_NORMAL]:
@@ -109,13 +116,14 @@ class GoogleMeta:
 
             # todo: bad!
             if self.lars_mode == GoogleMeta.LARS_NARRATION:
-                character = "Lars"
+                if "mc" not in character.lower():
+                    character = "Lars"
 
         # region possible location of code generation
         # todo: escape double quote?
         # todo: add show character here?
         if self.lars_mode == GoogleMeta.LARS_NARRATION:
-            dialog_tag = f"({dialog_tag})"
+            dialog_tag = f"{dialog_tag}"
 
         result.append(f"{indent}{character} \"{dialog_tag}\"\n\n")
         return result
@@ -193,7 +201,6 @@ class GoogleMeta:
     
 label selection_8_loop:\n""")
 
-
                     # todo: find all options until we hit selection ending
                     option_start_index_list = []
                     for option_index in range(index + 1, len(google_json)):
@@ -210,14 +217,14 @@ label selection_8_loop:\n""")
 
                     # write down our options
 
-
                     renpy_lines.insert(0, f"default {selection_title}_answer = 0\n\n")
                     for index, option_index in enumerate(option_start_index_list):
                         option_entry = google_json[option_index]
                         option_text = GoogleMeta.extract_element(option_entry)
 
                         if special_loop_case:
-                            renpy_lines.append(f"{GoogleMeta.INDENT * 2}\"{option_text.strip()}\" if not selection_8_{index + 1}_done:\n")
+                            renpy_lines.append(
+                                f"{GoogleMeta.INDENT * 2}\"{option_text.strip()}\" if not selection_8_{index + 1}_done:\n")
 
                             selection_check = f"{selection_title}_{index + 1}_done"
                             special_loop_var_list.append(selection_check)
@@ -226,9 +233,7 @@ label selection_8_loop:\n""")
                         else:
                             renpy_lines.append(f"{GoogleMeta.INDENT * 2}\"{option_text.strip()}\":\n")
 
-
                         renpy_lines.append(f"{GoogleMeta.INDENT * 3}$ {selection_title}_answer = {index + 1}\n")
-
 
                         renpy_lines.append(f"{GoogleMeta.INDENT * 3}jump {selection_title}_{index + 1}\n")
                         renpy_lines.append(f"{GoogleMeta.INDENT * 3}return\n\n")
@@ -302,7 +307,7 @@ label selection_8_loop:\n""")
                                 continue
                             renpy_lines.extend(text_content)
                     elif lcase.startswith("endif"):
-                        pass # ignore
+                        pass  # ignore
                     elif lcase.startswith("auto on"):
                         self.auto = True
                     elif lcase.startswith("auto off"):
@@ -314,13 +319,16 @@ label selection_8_loop:\n""")
                         if "bg" in command:
                             # ignore
                             pass
-                        elif "show" in command:
+                        elif "show" in command and "lars" not in command:
                             if "at" in command:
                                 command = command.replace("at", "at char_size,")
                             elif "with" in command:
                                 command = command.replace("with", "at char_size with")
                             else:
                                 command += " at char_size"
+
+                            if "with" not in command:
+                                command += " with moveinright"
                         renpy_lines.append(f"{GoogleMeta.INDENT}{command}\n")
 
                     continue
