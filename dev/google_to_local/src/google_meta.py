@@ -184,14 +184,14 @@ class GoogleMeta:
                     # special case
                     special_loop_case = False
                     special_loop_var_list = []
-                    if selection_title.startswith("selection_7"):
+                    if selection_title.startswith("selection_8"):
                         special_loop_case = True
 
                         # todo: fix hard code
-                        renpy_lines.insert(last_index, """    jump selection_7_loop
+                        renpy_lines.insert(last_index, """    jump selection_8_loop
     return
     
-label selection_7_loop:\n""")
+label selection_8_loop:\n""")
 
 
                     # todo: find all options until we hit selection ending
@@ -217,7 +217,7 @@ label selection_7_loop:\n""")
                         option_text = GoogleMeta.extract_element(option_entry)
 
                         if special_loop_case:
-                            renpy_lines.append(f"{GoogleMeta.INDENT * 2}\"{option_text.strip()}\" if not selection_7_{index + 1}_done:\n")
+                            renpy_lines.append(f"{GoogleMeta.INDENT * 2}\"{option_text.strip()}\" if not selection_8_{index + 1}_done:\n")
 
                             selection_check = f"{selection_title}_{index + 1}_done"
                             special_loop_var_list.append(selection_check)
@@ -263,7 +263,7 @@ label selection_7_loop:\n""")
 
                         # todo: jump to label instead
                         if special_loop_case:
-                            renpy_lines.append(f"{GoogleMeta.INDENT}jump selection_7_loop\n\n")
+                            renpy_lines.append(f"{GoogleMeta.INDENT}jump selection_8_loop\n\n")
                         else:
                             renpy_lines.append(f"{GoogleMeta.INDENT}jump {label}_{partition_count}\n\n")
 
