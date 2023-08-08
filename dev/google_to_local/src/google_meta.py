@@ -116,8 +116,9 @@ class GoogleMeta:
 
             # todo: bad!
             if self.lars_mode == GoogleMeta.LARS_NARRATION:
-                if "mc" not in character.lower():
-                    character = "Lars"
+                # if "mc" not in character.lower():
+                #     character = "Lars"
+                character = "Lars"
 
         # region possible location of code generation
         # todo: escape double quote?
@@ -327,8 +328,8 @@ label selection_8_loop:\n""")
                             else:
                                 command += " at char_size"
 
-                            if "with" not in command:
-                                command += " with moveinright"
+                            # if "with" not in command:
+                            #     command += " with moveinright"
                         renpy_lines.append(f"{GoogleMeta.INDENT}{command}\n")
 
                     continue

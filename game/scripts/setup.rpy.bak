@@ -79,7 +79,7 @@ label name_mc_v1:
     $ lcase_name = player_name.lower()
     if lcase_name in ["claude", "rory", "sylvian"]:
         "Unknown" "Sorry, that was an invalid name."
-        call name_mc from _call_name_mc_1
+        call name_mc
         return
 
     menu:
@@ -89,4 +89,4 @@ label name_mc_v1:
             return
 
         "No":
-            call name_mc from _call_name_mc_2
+            call name_mc
