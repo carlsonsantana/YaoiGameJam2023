@@ -4,6 +4,9 @@ transform bg_size:
 transform char_size:
     zoom 0.75
 
+transform normal_size:
+    zoom 1.0
+
 label game_setup:
     scene bg default at bg_size
     return
