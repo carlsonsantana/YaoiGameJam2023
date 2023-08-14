@@ -316,18 +316,22 @@ label selection_2_1:
     hide lars
     Lars "Curiosity grips me, urging me to decipher the hidden meaning behind Sir Claude’s recent comment. Although renowned for his penchant for humor and jest, this time, his response carries an unmistakable air of sincerity."
 
-    show lars  at left
+    show lars blush at left
+    show claude at char_size
+    show lars blush at left
     Lars "Sir Claude, we all experience moments of loneliness, but it’s essential to remember that you’re not alone in this journey. We’re here for you, {i}I’m{/i} here for you as your friend."
 
     hide lars
     Lars "To my surprise, a concealed glimmer of sadness flickers in Claude’s expressive eyes. His typically upward-curving lips now curve downward, betraying a vulnerability he seldom reveals."
 
-    show lars  at left
+    show claude serious at char_size
+    show lars blush at left
     Claude "Ah, just as a friend, is that right? Well, I suppose it’s my fault too since I never settled down on what I wanted to be with you… that’s precisely why I hesitated to speak of it."
 
     hide lars
     Lars "Observing his reaction, I realize that my attempt to offer support may have unintentionally touched upon a sensitive subject."
 
+    show lars  at left
     show lars  at left
     Lars "Sir Claude, I didn’t mean to pry or burden you with anything. I only wanted you to know that I’m here for you as friend and fellow guild member, should you ever want to share your thoughts or feelings-"
 

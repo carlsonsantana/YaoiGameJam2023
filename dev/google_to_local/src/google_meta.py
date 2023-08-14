@@ -382,8 +382,10 @@ label selection_8_loop:\n""")
                                 # if end, stop!
                                 break
 
-
                             dialog_entry = google_json[dialog_index]
+                            dialog_paragraph = dialog_entry["paragraph"]
+                            if self.detect_command(dialog_paragraph, dialog_entry, renpy_lines):
+                                continue
 
                             text_content = self.extract_renpy_line(dialog_entry, GoogleMeta.INDENT)
 
