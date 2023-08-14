@@ -59,74 +59,6 @@ class GoogleMeta:
             text_content += new_content
         return text_content
 
-    def detect_command(self, paragraph, entry, renpy_lines, google_json, index):
-        '''
-
-        :return: if command side effect was activated, return True
-        :rtype: bool
-        '''
-
-        if paragraph["paragraphStyle"]["namedStyleType"].startswith("HEADING_6"):
-            # check if if statement
-            lcase = GoogleMeta.extract_element(entry).lower()
-            print("Heading 6 found", lcase)
-            if lcase.startswith("if "):
-                print("IF:", lcase)
-                if_indent = GoogleMeta.INDENT * 2
-                renpy_lines.append(f"{GoogleMeta.INDENT}{lcase}")
-
-                # run until we find endif
-                for if_index in range(index + 1, len(google_json)):
-                    if_entry = google_json[if_index]
-                    if_text = GoogleMeta.extract_element(if_entry)
-
-                    if if_entry["paragraph"]["paragraphStyle"]["namedStyleType"].startswith("HEADING_6") \
-                            and if_text.lower().startswith("endif"):
-                        skip_index = if_index
-                        break
-
-                    text_content = self.extract_renpy_line(if_entry, if_indent)
-                    if len(text_content) == 0:
-                        return True
-                    renpy_lines.extend(text_content)
-            elif lcase.startswith("endif"):
-                pass  # ignore
-            elif lcase.startswith("auto on"):
-                self.auto = True
-            elif lcase.startswith("auto off"):
-                self.auto = False
-            elif lcase.startswith("ignore on"):
-                self.ignore = True
-            elif lcase.startswith("emote"):
-                lars_emote = lcase.split(" ")[-1].strip()
-                if lars_emote == "default":
-                    self.emote = ""
-                else:
-                    self.emote = lars_emote
-                renpy_lines.append(f"{GoogleMeta.INDENT}show lars {self.emote} at left\n")
-            else:
-                command = lcase.strip()
-                if "bg" in command:
-                    # ignore
-                    pass
-                elif "show" in command and "lars" not in command:
-                    if "normal_size" in command:
-                        pass
-                    elif "at" in command:
-                        command = command.replace("at", "at char_size,")
-                    elif "with" in command:
-                        command = command.replace("with", "at char_size with")
-                    else:
-                        command += " at char_size"
-
-                    # if "with" not in command:
-                    #     command += " with moveinright"
-                renpy_lines.append(f"{GoogleMeta.INDENT}{command}\n")
-
-            return True
-
-        return False
-
     def extract_renpy_line(self, entry, indent):
         # put all elements into one text
         text_content = GoogleMeta.extract_element(entry)
@@ -237,7 +169,7 @@ class GoogleMeta:
             renpy_lines.append(f"{GoogleMeta.INDENT}show lars {self.emote} at left\n")
         else:
             command = lcase.strip()
-            if "bg" in command:
+            if "bg" in command or "time" in command:
                 # ignore
                 pass
             elif "show" in command and "lars" not in command:
@@ -252,7 +184,7 @@ class GoogleMeta:
 
                 # if "with" not in command:
                 #     command += " with moveinright"
-                renpy_lines.append(f"{GoogleMeta.INDENT}{command}\n")
+            renpy_lines.append(f"{GoogleMeta.INDENT}{command}\n")
         return True
 
     def parse_file(self, file_content, dest):

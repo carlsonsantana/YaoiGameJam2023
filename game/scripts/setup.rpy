@@ -1,3 +1,15 @@
+transform flip:
+    linear 0.1 xzoom -1.0
+
+transform slight_left:
+    xalign 0.15
+
+transform slight_down:
+    yalign 1.15
+
+transform slight_right:
+    xalign 0.85
+
 transform bg_size:
     zoom 0.75
 
