@@ -2,7 +2,7 @@
 
 # for convenience, this assumes that the SDK, this project, and the build directory are all adjacent
 # this is run from root! do not run adjacent!
-butler push ../love_amidst_the_timeless_rift-1.0-dists/love_amidst_the_timeless_rift-1.0-web.zip deniz-gm/love-amidst-the-timeless-rift:web
+butler push ../love_amidst_the_timeless_rift-1.0-dists/love_amidst_the_timeless_rift-1.0-web.zip deniz-g-lerosi/love-amidst-the-timeless-rift:web
 
 # give everyone else access to the game
 #VER_NUM=`cat dev/build/next_version_num.txt`

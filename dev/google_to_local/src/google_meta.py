@@ -174,7 +174,8 @@ class GoogleMeta:
                 pass
             elif "show" in command and "lars" not in command:
                 if "normal_size" in command:
-                    pass
+                    command = command.replace("normal_size,", "")
+                    command = command.replace("normal_size", "")
                 elif "at" in command:
                     command = command.replace("at", "at char_size,")
                 elif "with" in command:

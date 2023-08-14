@@ -237,7 +237,7 @@ label google_test_1:
     Lars "In a realm where courage and determination were paramount, it was inspiring to witness someone like him fearlessly chasing after his dreams, and it motivated me to do the same."
 
     show lars serious at left
-    Lars "{cps=*2.5}{size=-10}Really? I didn’t know our young master liked being the center of attention. You always seem to be hiding that you’re the only heir of the infamous Dupont merchant family. At first, I thought it was so there wouldn’t be any rumors of our Guild being associated with your family name, but you’ve always been acting suspiciously about it. You never seem to give out your last name during our expeditions or client meetings and-{/size}{/cps}"
+    Lars "{cps=*8}{size=-10}Really? I didn’t know our young master liked being the center of attention. You always seem to be hiding that you’re the only heir of the infamous Dupont merchant family. At first, I thought it was so there wouldn’t be any rumors of our Guild being associated with your family name, but you’ve always been acting suspiciously about it. You never seem to give out your last name during our expeditions or client meetings and-{/size}{/cps}"
 
     show claude at char_size
     Claude "Captain, I didn’t think that you were interested in my personal life all that much."
@@ -283,7 +283,7 @@ label google_test_1:
 
     Lars "It’s all in good fun, my friend."
 
-    show claude at normal_size, right with move
+    show claude at  right with move
     hide lars
     Lars "As Sir Claude walks away, I can’t shake the sense of nostalgia and loneliness that lingers in his eyes. It leaves me with a mix of curiosity and concern, wondering about the emotions hidden behind his confident demeanor."
 
@@ -399,7 +399,7 @@ label selection_2_2:
 
 label google_test_2:
 
-    show claude serious at normal_size, center with move
+    show claude serious at  center with move
     show claude at char_size
     show lars  at left
     Claude "Speaking of Master Sylvian, I’ve been wondering how to approach him about our recent artifact negotiations."
@@ -543,7 +543,7 @@ label google_test_2:
 
     Lars "As the petals fall all over me, a mesmerizing kaleidoscope of colors engulfs my surroundings. The soft fragrance of the pink-red carnations fills the air, intermingled with a refreshing spell that makes me feel as if a weight has been lifted off my shoulders."
 
-    show claude at normal_size, slight_left with move
+    show claude at  slight_left with move
     show sylvian at char_size, slight_right, slight_down with moveinright
     show lars  at left
     "Unknown" "Welcome back, dear members of “Custodes Sylvae”. I’m happy to see that you both landed safely."
@@ -613,30 +613,39 @@ label selection_3_1:
 
     Claude "Before worrying about Captain over here, you should head on to where Spotsy is resting, Boss. We wouldn’t want her to accidentally drop our cargo to the depths of the sea."
 
-    show sylvian at flip, normal_size, slight_down
+    show sylvian at flip,  slight_down
     pause 0.2
-    show sylvian at normal_size, slight_down, offscreenright with move
+    show sylvian at  slight_down, offscreenright with move
     pause 0.1
     hide lars
     Lars "As Master Sylvian takes flight, his swan-like wings seem to catch every ray of sunlight, causing them to shimmer and gleam like ethereal jewels. The sight is truly breathtaking, and I find myself in awe of the beauty before me."
 
-    Lars "As he rises into the sky, petals cascade from his magician’s hat, creating a trail of delicate grace as he departs. The air is filled with the sweet fragrance of the roses with subtle hints of freshness, reminiscent of dewy mornings and lush gardens. You could say that Master Sylvian resembled a garden himself in some way."
+    Lars "As he rises into the sky, petals cascade from his magician’s hat, creating a trail of delicate grace as he departs."
 
-    Lars "I remember that his hat was one of his personal crafts, a magical creation that bloomed flowers according to his mood. It’s unfortunate that I’m not well-versed in flower languages; otherwise, I would be able to decipher the heartfelt messages he wishes to convey through these enchanting floral gifts."
+    Lars "The air is filled with the sweet fragrance of the roses with subtle hints of freshness, reminiscent of dewy mornings and lush gardens. You could say that Master Sylvian resembled a garden himself in some way."
 
-    Lars "However, I can’t help but feel special whenever he gifts me a bouquet. Perhaps it’s because of my reaction to it once, or maybe he simply cherishes the moments we share. After all, I’ve noticed that he hasn’t given this kind of gift to anyone else, and the thought warms my heart."
+    Lars "I remember that his hat was one of his personal crafts, a magical creation that bloomed flowers according to his mood."
+
+    Lars "It’s unfortunate that I’m not well-versed in flower languages; otherwise, I would be able to decipher the heartfelt messages he wishes to convey through these enchanting floral gifts."
+
+    Lars "However, I can’t help but feel special whenever he gifts me a bouquet. Perhaps it’s because of my reaction to it once, or maybe he simply cherishes the moments we share."
+
+    Lars "After all, I’ve noticed that he hasn’t given this kind of gift to anyone else, and the thought warms my heart."
 
     show lars  at left
-    "Unknown" "Clauuudy~"
+    "Unknown" "{size=+30}Clauuudy~{/size}"
 
     Claude "Roryyy~"
 
+    show rory at char_size, slight_right, slight_down with moveinright
     "Rory" "I believe I mentioned that if I ever catch you bossing Larsy around, I’d pluck out your lizard eyes to adorn my newest puppet, Agatha."
 
     "Rory" "You should know that my threats work quite effectively, especially with how Brittina’s puppet dress is shimmering with the scales you’ve kindly donated... in your sleep, of course."
 
     hide lars
-    Lars "A figure emerges from where Master Sylvian stood just a few second ago, and to my pleasant surprise, it is none other than Rory, my childhood best friend. True to her lineage as a bull descendent, Rory possesses a fiery temperament and is quick to charge at those who annoy her."
+    Lars "A figure emerges from where Master Sylvian stood just a few second ago, and to my pleasant surprise, it is none other than Rory, my childhood best friend."
+
+    Lars "True to her lineage as a bull descendent, Rory possesses a fiery temperament and is quick to charge at those who annoy her."
 
     Lars "The Kyoko blacksmiths and the Dupont merchants have been locked in a spirited rivalry for generations. Both families have passed down their competitive natures to their heirs, adding fuel to the fire."
 
@@ -649,6 +658,7 @@ label selection_3_1:
 
     Lars "Rory, it’s so nice to see you-"
 
+    show claude serious at char_size
     Claude "If it isn’t our hot-tempered bull, breathing fire as soon as she lays eyes on me. It’s a pleasure to see you again, little Rory. Or should I say, a curse to behold?"
 
     "Rory" "Hoy! I told you never to call me that again! And doesn’t your receding hairline remind you that half your hair now belongs to Puppet Alex because you called me a midget last time?!"
@@ -661,6 +671,8 @@ label selection_3_1:
 
     "Rory" "For the sake of compensation, it’s time to say goodbye to Claude Junior with my nifty scissor too-"
 
+    show rory at char_size, center, slight_down with move
+    show sylvian at  right, slight_down with moveinright
     hide lars
     Lars "Thankfully, Master Sylvian swiftly intervenes, diffusing the tension with his timely return."
 
@@ -669,7 +681,7 @@ label selection_3_1:
     Lars "The weight of anticipation fills the air as all eyes turn to the box, momentarily diverting attention from the conflict."
 
     show lars  at left
-    "Sylvian" "I’m back with the cargo!"
+    "Sylvian" "{size=+30}I’m back with the cargo!{/size}"
 
     jump google_test_3
 
@@ -680,18 +692,25 @@ label selection_3_2:
     show lars  at left
     Lars "Sir Claude, can you bring the artifact yourself? I’d like to spend some time with Master Sylvian."
 
+    show claude shocked at char_size
     Claude "I’m shocked Captain, choosing Boss Sylvian over me? I wouldn’t have imagined."
 
+    show sylvian blush at char_size
     "Sylvian" "I am grateful that you wish to share your time with me, Lars, even if you’re tired from your journey."
 
+    show sylvian at char_size
     "Sylvian" "Rory will arrive soon as well so we can spend some time altogether."
 
     hide lars
     Lars "Master Sylvian gently touches the brim of his hat and a magnificent bouquet bloom forth. Sunflowers rise proudly, while lavender blossoms intertwine. Brilliant marigolds and clusters of white lilies sprout forth."
 
-    Lars "I remember that his hat was one of his personal crafts, a magical creation that bloomed flowers according to his mood. It’s unfortunate that I’m not well-versed in flower languages; otherwise, I would be able to decipher the heartfelt messages he wishes to convey through these enchanting floral gifts."
+    Lars "I remember that his hat was one of his personal crafts, a magical creation that bloomed flowers according to his mood."
 
-    Lars "Nonetheless, I can’t help but feel special whenever he gifts me a bouquet. Perhaps it’s because of my reaction to it once, or maybe he simply cherishes the moments we share. After all, I’ve noticed that he hasn’t given this kind of gift to anyone else, and the thought warms my heart."
+    Lars "It’s unfortunate that I’m not well-versed in flower languages; otherwise, I would be able to decipher the heartfelt messages he wishes to convey through these enchanting floral gifts."
+
+    Lars "Nonetheless, I can’t help but feel special whenever he gifts me a bouquet. Perhaps it’s because of my reaction to it once, or maybe he simply cherishes the moments we share."
+
+    Lars "After all, I’ve noticed that he hasn’t given this kind of gift to anyone else, and the thought warms my heart."
 
     Lars "Master Sylvian presents me with the bouquet, throwing a smile at Claude."
 
@@ -700,14 +719,21 @@ label selection_3_2:
 
     "Sylvian" "It might be best for you take care of your task, Claude. We’re still not sure of the origins of the artifact you brought and time is of the essence in situations like this."
 
+    show claude at flip, 
+    pause 0.2
+    show claude at  offscreenleft with move
+    pause 0.1
     hide lars
-    Lars "As Sir Claude takes his leave, his silver lizard tail gracefully sways behind him, reminiscent of the rhythmic movements of the sea. His scales, resembling those of the majestic dragons I often encounter in my journeys, captivate my gaze with their intricate detailing, despite their diminutive size."
+    Lars "As Sir Claude takes his leave, his silver lizard tail gracefully sways behind him, reminiscent of the rhythmic movements of the sea."
+
+    Lars "His scales, resembling those of the majestic dragons I often encounter in my journeys, captivate my gaze with their intricate detailing, despite their diminutive size."
 
     Lars "However, before I can fully immerse myself in the enchanting display, a sudden voice slices through the air with an excited tone."
 
     show lars  at left
-    "Rory" "Larsyyy~"
+    "Rory" "{size=+30}Larsyyy~{/size}"
 
+    show rory at char_size, slight_left, slight_down with moveinleft
     Lars "Rory, it’s so good to see you again!"
 
     "Rory" "I almost caught that lizard Claude but he slithered away before I could scold him for teasing you."
@@ -754,6 +780,9 @@ label selection_3_2:
 
     "Rory" "Yay~ Thank you Mentor!"
 
+    show sylvian at right,  with move
+    show rory at char_size, center, slight_down with move
+    show claude at  slight_left, slight_down, flip_instant with moveinleft
     hide lars
     Lars "As if summoned by Rory’s statement, Claude makes his entrance with the ornate box cradled in his arms. His eyes glimmer with a mixture of anticipation and excitement as he gazes at the artifact."
 
@@ -768,7 +797,7 @@ label selection_3_2:
 
 label google_test_3:
 
-    if selection_2_answer == 1:
+    if selection_3_answer == 1:
         show lars  at left
         Lars "I think I can take it from here, Sir Claude."
 
@@ -776,11 +805,12 @@ label google_test_3:
 
         Claude "Don’t worry, I’m not a fan of breaking promises. Especially, for one I made with you."
 
-    Lars "I think I can take it from here, Master Sylvian."
+    if selection_3_answer == 2:
+        Lars "I think I can take it from here, Master Sylvian."
 
-    "Sylvian" "Carrying such things after your tiring journey might affect your health after all though."
+        "Sylvian" "Carrying such things after your tiring journey might affect your health after all though."
 
-    "Sylvian" "That was one of the main things my academic years taught me aside from all the other … {i}unique experiences{/i}."
+        "Sylvian" "That was one of the main things my academic years taught me aside from all the other … {i}unique experiences{/i}."
 
     "Sylvian" "Let me cast an energizing spell for you just in case, Lars."
 
@@ -789,13 +819,17 @@ label google_test_3:
 
     Lars "A sense of liveliness washes over me, like the exhilaration that follows after completing a marathon, the adrenaline still coursing through my veins."
 
-    show lars  at left
-    Lars "It’s okay master, I need to get in my daily dose of exercise too. I don’t want you to think that I’m too weak for one box! More than that, what would our passengers think if their pilot wasn’t able to pick up their luggage or equipment. My parents wouldn’t let me live this down if they ever heard such rumors since they raised me to give my all to take care of those around me especially-"
+    show lars serious at left
+    show lars serious at left
+    Lars "It’s okay master, I need to get in my daily dose of exercise too. I don’t want you to think that I’m too weak for one box! More than that, what would our passengers think if their pilot wasn’t able to pick up their luggage or equipment."
 
+    Lars "My parents wouldn’t let me live this down if they ever heard such rumors since they raised me to give my all to take care of those around me especially-"
+
+    show claude serious at char_size
     hide lars
     Lars "The energizing spell must have worked a little too well, for my mind seems to race ahead of my tongue, and the words spill out of my mouth before I can process them correctly. Master seems to pick up on it as well."
 
-    show lars  at left
+    show lars serious at left
     "Sylvian" "I think the spell might have been too much for your current state."
 
     "Sylvian" "Let’s use that breathing technique that the humans thought us last time. You remember?"
@@ -805,16 +839,19 @@ label google_test_3:
     hide lars
     Lars "Obediently, I follow Master’s instructions and feel my breathing gradually slowing down. Just as I am about to launch into another round of ramblings, Sylvian, ever the kind mentor, steps in to guide the situation."
 
-    show lars  at left
+    show lars serious at left
     "Sylvian" "No one is going to think those things of you, Lars."
 
+    show lars  at left
     "Sylvian" "For their safety, you would give your all. A protector, a guardian, answering their call."
 
+    show sylvian blush at char_size
     "Sylvian" "If I were a dragon, I wouldn’t want any other handler than you to take care of me."
 
     hide lars
-    Lars "Master Sylvian suddenly takes hold of the tips of my fingers, as if he’s shying away from holding my hand fully. His gesture is tender and filled with a subtle intimacy"
+    Lars "Master Sylvian suddenly takes hold of the tips of my fingers, as if he’s shying away from holding my hand fully. His gesture is tender and filled with a subtle intimacy."
 
+    show sylvian at char_size
     Lars "Yet, it also carries an air of vulnerability, as if he’s unsure of how to express his emotions openly."
 
     show lars  at left
@@ -822,6 +859,9 @@ label google_test_3:
 
     "Rory" "Claudy, even if Mentor did like Lars that way, it’s not as if he would wait years in an unrequited crush just being satisfied with singing little poetry and blooming flower out of thin air."
 
+    show sylvian at flip, 
+    pause 0.2
+    show sylvian blush at more_right,  with move
     hide lars
     Lars "I notice Master Sylvian’s demeanor change in an instant; he quickly turns his head away, as if he’s trying to hide something from me. However, even from behind, I can see his ears reddening a bit."
 
@@ -832,8 +872,11 @@ label google_test_3:
 
     Claude "I can see fumes exiting her head as we speak. Oh! ****** I think they got even bigger."
 
-    "Rory" "Ugh, I can’t deal with this again."
+    "Rory" "{size=+30}Ugh, I can’t deal with this again.{/size}"
 
+    show sylvian at unflip, 
+    pause 0.2
+    show sylvian at slight_right,  with move
     "Sylvian" "Alright everyone, settle down."
 
     "Sylvian" "Let me cast a safety spell over the box first, you can never be sure if there are any hidden traps inside{i}.
@@ -842,17 +885,23 @@ label google_test_3:
     hide lars
     Lars "Master Sylvian waves his hands gracefully around the box, a display of his magical prowess. However, after a few seconds of sparking light and anticipation, the box remains unresponsive, devoid of any notable reactions."
 
+    show claude at char_size
     show lars  at left
     "Sylvian" "No traps or enchantments detected. It seems we’re in the clear. Let’s unveil the treasure within."
 
     hide lars
-    Lars "He carefully opens the ornate box, unveiling a mesmerizing sight. Inside rests a long necklace adorned with an array of thick bands and intricate chains, all nestled within a plush cloth. However, the centerpiece of the necklace steals everyone’s attention—the stunning red gem that emanates a captivating ruby hue."
+    Lars "He carefully opens the ornate box, unveiling a mesmerizing sight. Inside rests a long necklace adorned with an array of thick bands and intricate chains, all nestled within a plush cloth."
 
-    Lars "Its allure is so powerful that everyone was momentarily enchanted by its beauty, completely overlooking the intricate engravings etched along the sides of the chains. Engravings bearing an ancient language, harkening back to the time of the original descendants."
+    Lars "However, the centerpiece of the necklace steals everyone’s attention—the stunning red gem that emanates a captivating ruby hue."
+
+    Lars "Its allure is so powerful that everyone was momentarily enchanted by its beauty, completely overlooking the intricate engravings etched along the sides of the chains."
+
+    Lars "Engravings bearing an ancient language, harkening back to the time of the original descendants."
 
     show lars  at left
     Claude "Before anyone starts their inspection, I promised our dear captain he’d be the first person to hold it."
 
+    show lars blush at left
     Lars "Thanks, Sir Claude."
 
     hide lars
@@ -860,18 +909,24 @@ label google_test_3:
 
     Lars "As I hold it in my hands, all eyes remain fixed upon me."
 
-    show lars  at left
+    show lars happy at left
+    show lars happy at left
     Lars "Wow! Look at the detailing on this artifact. It’s truly a work of art."
 
     Claude "Indeed, it’s a testament to the skill and craftsmanship of the ancient civilization that created it. {i}But who exactly? {/i}we have no idea about its origins yet."
 
     Claude "Not to mention, I could never let go of such a mysterious prize, I need to uncover its secrets all for myself…"
 
+    show claude serious at char_size
     hide lars
     Lars "Sir Claude’s expression undergoes a striking transformation, shifting from one of casual curiosity and playful mirth to that of intense obsession. His eyes fixate unwaveringly on the artifact, a glimmer of determination and fervor dancing within them."
 
-    Lars "It is no secret that Claude possesses a deep-seated fascination with challenges and trials, often drawn to the enigmatic and mysterious. Though he seldom shares the reasons behind his unwavering obsession, his eyes betray his inner excitement whenever faced with such an opportunity."
+    Lars "It is no secret that Claude possesses a deep-seated fascination with challenges and trials, often drawn to the enigmatic and mysterious."
 
+    Lars "Though he seldom shares the reasons behind his unwavering obsession, his eyes betray his inner excitement whenever faced with such an opportunity."
+
+    show claude shocked at char_size
+    show lars  at left
     show lars  at left
     Claude "…Ahem, with the help of our prestigious scholar as well of course!"
 
@@ -879,6 +934,7 @@ label google_test_3:
 
     Claude "If someone were to understand the potential behind this artifact, it would be none other than you."
 
+    show claude serious at char_size
     "Rory" "Ugh, quit trying to suck up and get close to my Mentor with your scale-rotten face."
 
     Claude "Weren’t these the very same scales you took for your dolls? Admit it, you just don’t measure up to scale. Specifically, {i}my scales{/i}!"
@@ -887,15 +943,18 @@ label google_test_3:
 
     Claude "Hmm, what was it called again? Boring-ina? Boorish-ina? Banal-ina? -"
 
-    "Rory" "It was BRITTINA, you dagger-mouthed, bark-bellied, algae-breathing gullet on legs-"
+    "Rory" "{size=+15}It was BRITTINA, you dagger-mouthed, bark-bellied, algae-breathing gullet on legs-{/size}"
 
+    show lars serious at left
     Lars "Come on guys, it’s time to stop. We’re losing daylight over here."
 
     hide lars
     Lars "However, neither side showed any signs of stopping their retort. After all, the first to stop would be the first to lose and their competitive nature wouldn’t allow them this leeway."
 
-    show lars  at left
-    Claude "It’s no wonder that your family legacy is going to die with you. I wouldn’t put myself in the low position of insulting you, though it’s a huge plus if I do, but whoever told you to \"just be yourself\" gave you awful advice."
+    show lars serious at left
+    Claude "It’s no wonder that your family legacy is going to die with you."
+
+    Claude "I wouldn’t put myself in the low position of insulting you, though it’s a huge plus if I do, but whoever told you to \"just be yourself\" gave you awful advice."
 
     Lars "Claude, that’s not like you to-"
 
@@ -903,13 +962,17 @@ label google_test_3:
 
     Lars "Come on Rory, you don’t really mean that-"
 
-    "Sylvian" "Both of you, it’s time to stop."
+    "Sylvian" "{size=+20}Both of you, it’s time to stop.{/size}"
 
     hide lars
-    Lars "Master Sylvian’s commanding voice reverberates through the air, instantly commanding the attention and quieting the bustling atmosphere. Though his usual demeanor is one of calm and collected composure, there are moments when he employs his authoritative voice to instill a sense of tranquility and order among those around him."
+    Lars "Master Sylvian’s commanding voice reverberates through the air, instantly commanding the attention and quieting the bustling atmosphere."
+
+    Lars "Though his usual demeanor is one of calm and collected composure, there are moments when he employs his authoritative voice to instill a sense of tranquility and order among those around him."
 
     Lars "It is a fascinating contrast to witness, as his typically serene nature aligns seamlessly with his position as the guild leader to command respect and bring about a sense of calm."
 
+    show lars  at left
+    show claude at char_size
     show lars  at left
     "Sylvian" "Let us embrace empathy’s grace and refrain from jesting, for each soul carries its own unique beauty. Whether it be lizards, foxes, swans, or bulls."
 
@@ -923,14 +986,18 @@ label google_test_3:
     show lars  at left
     Lars "Thanks for easing off the tension, Master. It gets out of hand when they start bickering."
 
+    show sylvian blush at char_size
     hide lars
     Lars "A shy smile graces Master Sylvian’s lips as he gently rests his hands on my shoulders. The feathers of his swan wings delicately brush against my back, imbuing me with a profound sense of tranquility and ease."
 
-    show lars  at left
+    show lars blush at left
+    show sylvian at char_size
+    show lars blush at left
     "Sylvian" "No problem at all, Lars. I might not understand your relationship with Rory well as you both are best friends from a young age. But I would hate to see a rift between us as guild members."
 
     "Sylvian" "Your bond with Rory holds a treasure untold. A childhood’s embrace worth more than gold. I wish I could have that kind of equal friendship too-"
 
+    show lars  at left
     menu:
         Lars "What are you talking about, Master?"
 
@@ -960,13 +1027,20 @@ label selection_4_1:
     show lars  at left
     "Sylvian" "… we are friends Lars, it’s just that as your superior, I don’t have the equal relationship that you have with-"
 
-    Lars "You know, even if I’m just your junior. You’re my cherished friend, though I value you first and foremost as the boss, I still enjoy how you are kind to everyone and share your poetry with, even if I’m the only one who you give gifts to even if I’m a bit unsure why exactly."
+    Lars "You know, even if I’m just your junior. You’re my cherished friend, though I value you first and foremost as the boss, I still enjoy how you are kind to everyone and share your poetry with, even if I’m the only one who you give gifts to {size=-10}even if I’m a bit unsure why exactly.{/size}"
 
+    show sylvian blush at char_size
     hide lars
     Lars "Summoning all my courage, I move closer and grasp Master Sylvian’s hands, locking my gaze with his. The initial shock on his face gives way to a warm and genuine smile, a flicker of happiness illuminating his eyes."
 
-    show lars  at left
-    Lars "Sorry if that sounds like I’m sucking up to you or asking you for something, which I’m not in any way! It’s just that my mom always told me to be straightforward when taming wild dragon species, especially the ones with thorns on their lateral muscles. Their venom comes from there, and it really hurts when they start dangling your legs off the side, which even caused me to have a scar on this part of my right leg, and-"
+    show claude serious at char_size
+    show lars blush at left
+    show lars blush at left
+    Lars "Sorry if that sounds like I’m sucking up to you or asking you for something, which I’m not in any way!"
+
+    Lars "It’s just that my mom always told me to be straightforward when taming wild dragon species, especially the ones with thorns on their lateral muscles."
+
+    Lars "Their venom comes from there, and it really hurts when they start dangling your legs off the side, which even caused me to have a scar on this part of my right leg, and-"
 
     "Sylvian" "Hahahaha!"
 
@@ -977,11 +1051,14 @@ label selection_4_1:
 
     Lars "As if understanding my need for reassurance, he gently pets me on the head, softly rubbing my ears in the process. The sensitivity of my ears amplifies the affectionate gestures, creating a moment of intimate connection."
 
-    show lars  at left
+    show lars blush at left
     "Sylvian" "Don’t worry about it, it’s just that It’s hard to bring out the words that bubble up in your throat sometimes."
 
     "Sylvian" "But I do appreciate your efforts, I just hope that I can be the recipient of your more {i}endearing{/i} efforts as well."
 
+    show sylvian at char_size
+    show claude at char_size
+    show lars  at left
     jump google_test_4
 
     return
@@ -1043,18 +1120,20 @@ label google_test_4:
     show lars  at left
     Lars "Uhm, Mast-"
 
-    "Sylvian" "EVERYONE! Steadfast now."
+    "Sylvian" "{size=+30}EVERYONE! Steadfast now.{/size}"
 
+    show lars serious at left
+    show claude serious at char_size
     hide lars
     Lars "As the environment settles under Sylvian’s gentle yet authoritative command, he takes hold of the artifact, his eyes filled with a mix of curiosity and determination."
 
-    show lars  at left
+    show lars serious at left
     "Sylvian" "It’s time to get back to business. We need to give our dear dragon, Spotsy, a break as well."
 
     hide lars
     Lars "Seems like Master is awry of the significance and potential of this mysterious item."
 
-    show lars  at left
+    show lars serious at left
     "Sylvian" "I’d like to observe this a bit more in my lab."
 
     "Sylvian" "A curious trinket, its secrets untold. An odd accessory with immense power. To shape time’s fragments, to weave its essence."
@@ -1065,6 +1144,8 @@ label google_test_4:
 
     "Sylvian" "Speaking of which, how much did you exchange for it, Claude? We need to see if the funds from Rory’s recent puppet show will be able to cover the costs."
 
+    show lars  at left
+    show claude at char_size
     Claude "Well, a merchant may only exchange for what they’re willing to offer."
 
     Claude "However, the infamous Claude can overcome any trial as long as he wishes for it."
@@ -1081,6 +1162,7 @@ label google_test_4:
     show lars  at left
     "Rory" "Ovid left a voicemail saying he’s issuing the world a mental refund for the amount of narcissism you’re breathing into the world."
 
+    show claude serious at char_size
     Claude "Getting real creative with the insults, aren’t you? Make up another absurd statement now won’t you?"
 
     "Rory" "Come to think about it, mentor, can I take this artifact for a spin before you put it in your lab?"
@@ -1095,6 +1177,7 @@ label google_test_4:
 
     Lars "That’s a great idea! We could even visit your puppet show stall and see what magic you will create. It’s been some time since I last played with the kids as well."
 
+    show claude at char_size
     Claude "Why don’t you wear the necklace instead of little Rory for now, Captain. It’s color suits you after all, reminds of the red string of fate-"
 
     "Rory" "Not with the little Rory comment again-"
@@ -1102,12 +1185,17 @@ label google_test_4:
     hide lars
     Lars "I take this moment to put on the necklace, the gemstone’s ruby color captures my attention and I marvel at the curious glow that emits from it. Almost as if…it’s shining or signaling something."
 
+    show claude serious at char_size
     Lars "Soon enough though, my name is called and the four of us make our way towards the open area adorned with numerous stalls. Sylvian deliberately slows his steps, keeping a watchful eye over the rest of us as we go ahead."
 
+    show sylvian at offscreenright,  with move
+    show rory at char_size, slight_right with move
     Lars "Meanwhile, Claude and Rory pick up their pace, engaging in a competition to see who can reach the stall first. Their banter fills the air as they exchange witty remarks, not holding back on their rivalry."
 
     Lars "Hopefully, it’ll be another day without any troubles here in Divonia and ‘Custodes Sylvae’."
 
+    show claude at char_size
+    show sylvian at char_size
     Lars "The town square pulsates with vibrant energy, a captivating tapestry of stalls adorning the cobblestone pathway."
 
     Lars "As I walk through this bustling scene, my attention is drawn to the medley of merchants enticing passersby with their wares, creating an atmosphere of enchantment and wonder."
@@ -1139,6 +1227,9 @@ label google_test_4:
 
 label selection_5_1:
 
+    show claude at  offscreenleft with move
+    show rory at char_size, offscreenleft with move
+    show sylvian at center,  with move
     hide lars
     Lars "Master Sylvian himself, as a flower magician, could effortlessly conjure his clothing using floral magic. Whereby, every thread is spun with enchanting intentions, and each stitch is softly whispered with an incantation."
 
@@ -1150,14 +1241,22 @@ label selection_5_1:
 
     Lars "He once revealed that this unique tool stabilizes the emotional energy he channels, transforming it into an array of different blooms. Yet, I have never tried to delve into learning them."
 
-    Lars "My focus has been on mastering the names of plants and herbs that dragons can consume safely, as avoiding poisoning oneself is no small feat. Nevertheless, my familiarity with the flowers has grown to the extent that I can remember their names even if my academic knowledge is nowhere near Master Sylvian."
+    Lars "My focus has been on mastering the names of plants and herbs that dragons can consume safely, as avoiding poisoning oneself is no small feat."
 
+    Lars "Nevertheless, my familiarity with the flowers has grown to the extent that I can remember their names even if my academic knowledge is nowhere near Master Sylvian."
+
+    show sylvian at right,  with move
+    show rory at char_size, center with move
+    show claude at slight_left,  with move
     jump google_test_5
 
     return
 
 label selection_5_2:
 
+    show sylvian at char_size, offscreenright with move
+    show rory at char_size, offscreenright with move
+    show claude at center,  with move
     hide lars
     Lars "Sir Claude always holds his appearance with unparalleled pride. I can envision him draped in a new style of opulent faux fur and leather clothing, masterfully curated from exotic lands."
 
@@ -1171,6 +1270,9 @@ label selection_5_2:
 
     Lars "Even now, as I observe him, his cascading braids of shimmering silver gracefully flow down his back, a sight that serves as a reminder for me to attend to my own unkempt fox fur and strive to neaten my unruly ponytail."
 
+    show claude at slight_left,  with move
+    show rory at char_size, center with move
+    show sylvian at right,  with move
     jump google_test_5
 
     return
@@ -1192,9 +1294,11 @@ label google_test_5:
 
     Lars "It’s no surprise that if anyone were to harness the shimmering blazes of the {i}Spotted Azurflame{/i}, it would be them, for they embody the spirit of the forge and the indomitable strength of their bull lineage."
 
+    show claude serious at char_size
     show lars  at left
     Claude "Let it be known that I’m only helping out because of Captain over here. Otherwise, I’d be indulging in the cool shade of my family’s own shop."
 
+    show claude shocked at char_size
     hide lars
     Lars "The glint in his eyes hinted at the allure of the treasures that awaited him. After all, the Dupont family are merchants notorious for their array of foreign trinkets, enticing visitors with the allure of distant lands and cultures."
 
@@ -1205,6 +1309,7 @@ label google_test_5:
 
     Lars "Thanks for the offer, Sir Claude, but what use would I have for them? They’ll only get lost during dragon riding."
 
+    show claude shocked at char_size
     hide lars
     Lars "Ever the showman, he raises his eyebrows in mock shock, pausing dramatically for effect."
 
@@ -1213,6 +1318,7 @@ label google_test_5:
 
     Lars "I guess so but I don’t want to force-"
 
+    show claude at char_size
     Claude "Alright then! Let’s turn this into a friendly competition. What would be the ultimate gift here that I could match with Captain? Any ideas to share, Rory? May the best one win."
 
     "Rory" "Well, Claudy, let me think."
@@ -1223,10 +1329,12 @@ label google_test_5:
 
     "Rory" "Bracelets or anklets would be a disaster around the dragons too. They’ve got those sharp pikes and claws that could easily tangle things up. We either need to go bigger as in armor size or go smaller like a-"
 
+    show claude shocked at char_size
     Claude "How about a ring then? It could be the perfect accessory to keep on without it getting in the way!"
 
     Claude "What about it, Captain? Are you up for it?"
 
+    show lars blush at left
     Lars "W-w-what are you talking about? That’s basically a proposal, isn’t it?"
 
     Claude "Not so much a proposal, but more of a heartfelt promise that you’ll keep me in mind whenever you look at it. After all, you always accept Boss’s crafted bouquets and poems. Don’t they count as gifts too?"
@@ -1266,19 +1374,19 @@ label selection_6_1:
 
     Lars "I take a deep breath and gather my courage."
 
-    show lars  at left
+    show lars blush at left
     Lars "Master, why didn’t you answer my question earlier? Did you have a different intention behind all the gifts you’ve given me?"
 
     hide lars
     Lars "I steal a glance at Master’s concealed face, and if it were possible, I swear his cheeks would’ve flushed directly into the hue of a blooming rose, considering how red he already was."
 
-    show lars  at left
+    show lars blush at left
     "Sylvian" "Uhm…How do I put it…it’s j-just that-"
 
     hide lars
     Lars "This is the first time I’ve seen him so flustered. Although he possesses a kind and gentle disposition, Master is usually composed and confident in his mannerisms. Right now, he seems like a blubbering mess."
 
-    show lars  at left
+    show lars blush at left
     "Sylvian" "W-w-well, I … I don’t think this is the best time to, you know, uhm, explain my reasoning, but-"
 
     Lars "So, did you have a reason aside from our friendship for all the poems and bouquets you’ve given me?"
@@ -1286,7 +1394,7 @@ label selection_6_1:
     hide lars
     Lars "As if drawn in by the gravity of my serious question, he takes a deep breath and looks me directly in the eyes. Slowly, his face regains its natural color, and he begins to speak."
 
-    show lars  at left
+    show lars blush at left
     "Sylvian" "\"He who lifts up his neck with false pretension, falls himself downward on his neck.\""
 
     Lars "What does that mean?"
@@ -1327,7 +1435,7 @@ label selection_6_2:
     hide lars
     Lars "I decide it’s best to approach Sir Claude first since Master’s not currently in a state to discuss the matter. Sir Claude tends to be more forthright with his answers, and I believe this is the better choice."
 
-    show lars  at left
+    show lars blush at left
     Lars "Why did you mention a ring, Sir Claude? I feel like you might be taking the teasing a bit too far today"
 
     Claude "Oh, Captain, why would you ever think that? After all, you did say you could wear it, didn’t you?"
@@ -1347,7 +1455,7 @@ label selection_6_2:
     hide lars
     Lars "Claude takes a brief moment to brush his hand through his hair, his intense gaze never leaving me. It’s as if he’s sending a signal for me to pay close attention to what he’s about to reveal."
 
-    show lars  at left
+    show lars blush at left
     Claude "I don’t like the thought of losing what I’ve set my sights on to someone else, especially when I’ve been showing my intentions to you all this time."
 
     Lars "So, it’s just a competition to you? A rivalry to see who can get closest to me and then revel in the feeling of winning?"
@@ -1355,13 +1463,13 @@ label selection_6_2:
     hide lars
     Lars "I notice that my statement catches Claude off guard, causing his next sentence to come out in a stammer."
 
-    show lars  at left
+    show lars blush at left
     Claude "T-that’s not what I meant…"
 
     hide lars
     Lars "He takes a deep breath, preparing himself as if he’s about to reveal a significant secret."
 
-    show lars  at left
+    show lars blush at left
     Claude "I do have {i}special{/i} feelings for you, Captain. But you know how I’ve always been hesitant about settling down. It’s a personal struggle that I’m trying to come to terms with, but I can’t openly share all of it here with {i}everyone else{/i}."
 
     Lars "What do you mean by special feelings-"
@@ -1375,7 +1483,7 @@ label selection_6_2:
 
     Lars "I nod, silently agreeing to have this crucial conversation in a more intimate setting."
 
-    show lars  at left
+    show lars blush at left
     Lars "…"
 
     Lars "Understood, Sir Claude. While I can’t say I’m entirely satisfied, I won’t press you further."
@@ -1393,7 +1501,7 @@ label selection_6_2:
     hide lars
     Lars "Suddenly, Claude closes in, giving me a quick but warm hug. I catch a glimpse of what can only be a light blush on his cheeks as he holds me closer."
 
-    show lars  at left
+    show lars blush at left
     Claude "You mean a lot to me, Captain, and I don’t want to rush or pressure you. When the time is right, I’ll share everything with you, and I hope you’ll understand."
 
     hide lars
@@ -1405,7 +1513,7 @@ label selection_6_2:
 
 label google_test_6:
 
-    show lars  at left
+    show lars blush at left
     "Rory" "Let’s keep moving on, shall we?"
 
     hide lars
@@ -1413,7 +1521,7 @@ label google_test_6:
 
     Lars "Yet, after riding countless dragons and growing accustomed to their scales, a few feathers or fur proved to be manageable obstacles. Speaking of obstacles…"
 
-    show lars  at left
+    show lars blush at left
     Lars "By the way Rory, what’s our plan for today?"
 
     hide lars
@@ -1421,13 +1529,13 @@ label google_test_6:
 
     Lars "The well-being of our guild dragons heavily relied on those funds, and I cannot bear the thought of them going hungry or enduring any discomfort. I would willingly starve myself before allowing such a situation to come up."
 
-    show lars  at left
+    show lars blush at left
     "Rory" "I was thinking we could focus on a kids show for today Larsy, you guys can gather the kids up ahead."
 
     hide lars
     Lars "Before long, the collective footsteps of our group came to a halt, a unanimous signal that we had arrived at our destination."
 
-    show lars  at left
+    show lars blush at left
     "Rory" "Here we go! A special stall for special puppets who actually have a purpose in life unlike a {i}certain someone{/i}."
 
     "Rory" "Not to mention, Brittina and Alex were very{i}, enthusiastic {/i}to enhance their looks with the help of Claudy over here."
@@ -1451,7 +1559,7 @@ label google_test_6:
 
     Lars "He reaches out and gently rubs my ears, soothing my embarrassment as my ears must have perked up."
 
-    show lars  at left
+    show lars blush at left
     Lars "That’s right, listen to Master. He is far better at understanding my cues and emotions than you."
 
     hide lars
@@ -1459,7 +1567,7 @@ label google_test_6:
 
     Lars "Maybe my previous choice is what caused him to react so ambiguously."
 
-    show lars  at left
+    show lars blush at left
     Claude "…fine, I suppose. Can’t go against out esteemed Captain’s wishes."
 
     Claude "But you can’t be serious when saying that Master Sylvian reads you better than I do."
@@ -1469,7 +1577,7 @@ label google_test_6:
     hide lars
     Lars "As if prompted by my sudden outburst, Master Sylvian steps in with his own words of support."
 
-    show lars  at left
+    show lars blush at left
     "Sylvian" "Claude, it’s time to stop with the teasing. Lars and I have made a promise, and I don’t want you to interfere in a way that jeopardizes our relationship, especially if it goes in a direction you may not be prepared for."
 
     Claude "Fine, fine. I’ll back off for now. Just know that I’m not giving up."
@@ -1489,7 +1597,7 @@ label google_test_6:
     hide lars
     Lars "…{i}my{/i} Captain???"
 
-    show lars  at left
+    show lars blush at left
     Claude "Yet, you only ever have your flowers to bear your secrets with."
 
     Claude "I think it’s about time for your head to equally start fuming like little Rory over here."
@@ -1501,7 +1609,7 @@ label google_test_6:
     hide lars
     Lars "But before he has a chance to finish his sentence, Master Sylvian’s voice cuts through."
 
-    show lars  at left
+    show lars blush at left
     "Sylvian" "Claude."
 
     "Sylvian" "I treasure you as a guild member of “Custodes Sylvae,” but even still, your mouth resembles that of a snapdragon during moments like this."
@@ -1539,13 +1647,13 @@ label google_test_6:
 
     Lars "Maybe my previous choice is what caused him to react so ambiguously."
 
-    show lars  at left
+    show lars blush at left
     Claude "Whether it’s the way your cute tail wags around when you start rambling or how your ears perk up while listening to human’s tales, I can tell each and every one of them apart."
 
     hide lars
     Lars "He reaches out with his scaly hand and gently traces his fingers along the contours of my ears. I could feel myself slowly heating up, my ears and tail were more sensitive that I wished for."
 
-    show lars  at left
+    show lars blush at left
     Claude "I don’t need magical gimicks to understand you, Captain. Though, I still enjoy teasing and playfully tugging on the line between us."
 
     Claude "But rest assured, this line will soon enough turn into a strong thread of destiny, binding us together in ways we never imagined. Maybe, I wouldn’t even mind if we were tied together with it."
@@ -1553,7 +1661,7 @@ label google_test_6:
     hide lars
     Lars "His words hold a mix of charm and intrigue, leaving me both flustered and curious about what the future holds. There’s an undeniable allure to his confidence, and I can’t help but wonder where this journey will lead us."
 
-    show lars  at left
+    show lars blush at left
     "Rory" "Sorry to break up your {i}moment{/i}, but in the meanwhile…"
 
     "Rory" "Try to gather the kids while I set everything up."
@@ -1563,7 +1671,7 @@ label google_test_6:
 
     Lars "With a deep breath, I project my voice, shouting out an announcement that echoes through the crowd."
 
-    show lars  at left
+    show lars blush at left
     Lars "HEY EVERYONE, I’M BACK! THE PUPPET SHOW IS GOING TO START SOON!"
 
     hide lars
@@ -1573,7 +1681,7 @@ label google_test_6:
 
     Lars "Amidst the joyful chaos, I can see Sir Claude and Master Sylvian observing from afar, their watchful eyes filled with amusement and a glint of … something else that I can’t quite put my finger on."
 
-    show lars  at left
+    show lars blush at left
     "Random" "Yay! Lars is back from his trip."
 
     "Random" "I missed you, Lars; my dragon has been messing with my toys recently. You definitely have to help!"
@@ -1595,7 +1703,7 @@ label google_test_6:
 
     Lars "Meanwhile, Master Sylvian, despite his current focus on flower magic, mesmerized the children with his expertly performed magic tricks."
 
-    show lars  at left
+    show lars blush at left
     Claude "Awe, I’ll pretend to be hurt but while I’m still here, take my advice. You have to challenge yourself more."
 
     Claude "You won’t be able to show off your talents to anyone when you spend your time with these childish competitions. How will you be able to prove yourself to the elite if you only ever rival with kids?"
@@ -1615,7 +1723,7 @@ label google_test_6:
 
     Lars "However, he had the notion of removing them from his character from time to time, as if he were born from a nameless hermaphrodite and all he ever existed as was as ‘Claude’ and not ‘Claude Dupont’."
 
-    show lars  at left
+    show lars blush at left
     "Sylvian" "If you merely pursue rivalry to prove your self-worth to unknown faces, it will only be a matter of time, before the present escapes your reach for the past left behind."
 
     Claude "Forgive the insolence, {i}Boss{/i}. But, isn’t that lack of ambition precisely why you’re here with us today instead of boasting around the academia halls?"
@@ -1643,7 +1751,7 @@ label google_test_6:
 
     Lars "The formation of our guild seemed to be a deliberate decision he made in response to his experiences as an academician, though he seldom delved into the specifics."
 
-    show lars  at left
+    show lars blush at left
     Claude "It’s in the very motto of ‘Custodes Sylvae’ after all."
 
     Claude "{i}Discere, cogitare, agere{/i}- the triad of wisdom. Learning enriches the mind, and thinking sharpens it, but it is through action that we truly manifest our knowledge and shape our reality."
@@ -1679,7 +1787,7 @@ label google_test_6:
     hide lars
     Lars "I feel my fur stand on edge at the sudden statement, and I’m not confident that I managed to hide my expression well."
 
-    show lars  at left
+    show lars blush at left
     Lars "What’s he talking about, Master?"
 
     Lars "You’re in love with someone? Is that part of the secret you wanted to mention to me?"
@@ -1687,7 +1795,7 @@ label google_test_6:
     hide lars
     Lars "The sudden statement surprises me, but I aim to not let it show."
 
-    show lars  at left
+    show lars blush at left
     Lars "I’ve been so busy with Sir Claude that I didn’t even notice. You’ve fallen for someone, Master?"
 
     Lars "That’s exciting! When are you going to introduce us?"
@@ -1715,7 +1823,7 @@ label google_test_6:
 
 label selection_7_1:
 
-    show lars  at left
+    show lars blush at left
     Lars "I agree with Master Sylvian."
 
     Lars "I think what Master says is true about enjoying what we want instead of simply going after it for the challenge."
@@ -1743,7 +1851,7 @@ label selection_7_1:
     hide lars
     Lars "I let out a little laugh. Maybe my mind needed a bit of humor to escape the deeper side of the abyss that I was looking at to find my answer."
 
-    show lars  at left
+    show lars blush at left
     Lars "No copying jokes from Sir Claude, Master. It’s best if we call a truce with everyone for now."
 
     jump google_test_7
@@ -1752,7 +1860,7 @@ label selection_7_1:
 
 label selection_7_2:
 
-    show lars  at left
+    show lars blush at left
     Lars "I agree with what Sir Claude says."
 
     Lars "It’s not fair to not fight for what you love and desire."
@@ -1774,7 +1882,7 @@ label selection_7_2:
     hide lars
     Lars "I let out a little laugh. Maybe my mind needed a bit of humor to escape the deeper side of the abyss that I was looking at to find my answer."
 
-    show lars  at left
+    show lars blush at left
     Lars "No teasing for now, Sir Claude. It’s best if we call a truce with everyone for now."
 
     jump google_test_7
@@ -1786,7 +1894,7 @@ label google_test_7:
     hide lars
     Lars "While I was engrossed in our conversation, Rory approaches us with a somewhat worried expression etched on her face."
 
-    show lars  at left
+    show lars blush at left
     "Rory" "Guys, why isn’t anyone coming, where are the kids?"
 
     Lars "Ah, I gathered them all here! …see?"
@@ -1794,7 +1902,7 @@ label google_test_7:
     hide lars
     Lars "However, all that stood in front of us were unmoving statues, each frozen in time."
 
-    show lars  at left
+    show lars blush at left
     "Rory" "Is this a joke? Was there a surprise flash mob that I wasn’t aware of?"
 
     "Rory" "Clauuudy, did you bribe people again to pull a prank on me?"
@@ -1808,7 +1916,7 @@ label google_test_7:
     hide lars
     Lars "I instinctively reach out and begin shaking a few of the figures resembling frozen children."
 
-    show lars  at left
+    show lars blush at left
     Lars "Kids, come on, the joke isn’t funny anymore. We’re getting really worried over here."
 
     Claude "What could have suddenly happened here?"
@@ -1820,13 +1928,13 @@ label google_test_7:
 
     Lars "Intrigued and compelled, I shifted my attention towards it. It seems like Rory noticed it as well."
 
-    show lars  at left
+    show lars blush at left
     "Rory" "Hold up! What’s happening to the artifact right now? Take a look everyone. It’s as if it’s shining…"
 
     hide lars
     Lars "Instantly, everyone’s gaze fixates on me."
 
-    show lars  at left
+    show lars blush at left
     "Rory" "Are we under a weird spell right now? It’s as if we’re the only people moving and everyone else is frozen in time."
 
     "Rory" "Is it related to Larsy’s necklace? What’s going on Mentor?"
@@ -1856,7 +1964,7 @@ label google_test_7:
     hide lars
     Lars "It seems that Sir Claude had caught sight of an approaching figure before any of us did."
 
-    show lars  at left
+    show lars blush at left
     "Sylvian" "I recognize that too. However, it’s unlike anything I’ve seen before…"
 
     Claude "I think we’re being watched by someone."
@@ -1868,7 +1976,7 @@ label google_test_7:
 
     Lars "A bead of sweat rolls down my forehead, and my ginger fur seems to prickle, almost as if it senses the imminent danger and excitement that lay ahead."
 
-    show lars  at left
+    show lars blush at left
     "Unknown" "Looks like some {i}interesting{/i} humans have entered my domain while I was occupied."
 
     "Unknown" "I was frozen in anticipation for what would come next, but I have work to do after this. My castle isn’t going to clean up after itself."
@@ -1884,7 +1992,7 @@ label google_test_7:
 
     Lars "Sir Claude, ever bold and quick-witted, leaps forward to question the puzzling figure."
 
-    show lars  at left
+    show lars blush at left
     Claude "Who’s there? Are you the person behind this? What’s-"
 
     "Unknown" "Slow doooown there."
@@ -1928,7 +2036,7 @@ label google_test_7:
 
     Lars "I glance at my companions, hoping someone will step up and challenge their nonsensical monologue. We can’t afford to let them dominate the conversation."
 
-    show lars  at left
+    show lars blush at left
     Lars "Come on, someone has to say something."
 
     "Unknown" "As I was saying-"
@@ -1936,7 +2044,7 @@ label google_test_7:
     hide lars
     Lars "Relief washes over me as, almost miraculously, Master Sylvian speaks up."
 
-    show lars  at left
+    show lars blush at left
     "Sylvian" "Enough banter, who exactly are you?"
 
     hide lars
@@ -1944,7 +2052,7 @@ label google_test_7:
 
     Lars "Suddenly, the sound of a single clap pierces through the stillness. It’s a sharp and commanding sound, one that demands our attention."
 
-    show lars  at left
+    show lars blush at left
     "Unknown" "It seems that it’s time for the cliché introduction séance, the kind they do for video games and TV shows."
 
     "Unknown" "Hopefully they had the budget to make me prettier than the rest of you."
@@ -2007,7 +2115,7 @@ label selection_8_loop:
 
 label selection_8_1:
 
-    show lars  at left
+    show lars blush at left
     Lars "I’m curious about this time suspension phenomenon, are you the person responsible for this?"
 
     "Rory" "Come one, Larsy, he can’t actually lack that many braincells to spell out his plan like that-"
@@ -2019,7 +2127,7 @@ label selection_8_1:
 
     Lars "His body language exudes a readiness to respond, like a poised predator ready to pounce on its prey. I can see the gears turning in his mind, calculating the best approach to fight off our dilemma."
 
-    show lars  at left
+    show lars blush at left
     Claude "I'm sure we can reach a compromise if we settle this down like proper negotiators. Threatening someone won't get you on their side, after all. It will only provoke them to attack."
 
     "Zephyr" "Hmph, you're quite the smooth talker, aren't you? Lizard-like qualities…"
@@ -2039,7 +2147,7 @@ label selection_8_1:
 
     Lars "I can't help but admire Sir Claude's instinct, like a masterful negotiator, for choosing the right tactic and probing Zephyr to give us more information. His ability to read people and discern their intentions is truly a sight to behold."
 
-    show lars  at left
+    show lars blush at left
     "Zephyr" "You see, my family has had this unique time freezing artifact for quite a few generations now."
 
     "Zephyr" "We’d have the responsibility of using it to maintain order and peace in the land as noble dragon descendants of the house of- well, never mind that for now. It’s not necessary for you to know."
@@ -2073,7 +2181,7 @@ label selection_8_1:
 
     Lars "It’s like watching a seasoned philosopher in action, seeking to understand the depths of the puzzling figure's words and probing for deeper meanings."
 
-    show lars  at left
+    show lars blush at left
     "Rory" "Mentor, shouldn’t we use some discretion here? What if decides to cross us-"
 
     "Zephyr" "If we ever strayed from our path and misused it, it’s couple artifact would counteract the effects of curse. Anyone who touched it, would be immune to the effects of the artifact."
@@ -2115,7 +2223,7 @@ label selection_8_1:
 
 label selection_8_2:
 
-    show lars  at left
+    show lars blush at left
     "Zephyr" "Well, I’ve been sleeping for a few centuries now."
 
     "" "However, once I woke up, neither of my parents were home and I was still in the body of a young adult."
@@ -2214,7 +2322,7 @@ label selection_8_3:
     hide lars
     Lars "My instincts urge me to stay cautious, but curiosity bubbles up like a spring of sparkling water, impossible to contain. As the words escape my lips, I can't help but ask-"
 
-    show lars  at left
+    show lars blush at left
     Lars "Why’d you call us human? Can’t you see my tail and –"
 
     hide lars
@@ -2222,7 +2330,7 @@ label selection_8_3:
 
     Lars "I can't help but feel a bit foolish, as if I have indeed asked the most absurd question on earth. Embarrassment flushes my cheeks, and my fox ears droop slightly, betraying my unease."
 
-    show lars  at left
+    show lars blush at left
     "Zephyr" "Because that’s what you all obviously are?"
 
     "Zephyr" "All the descendants in this region have been under time suspension for the few months that I’ve been playing around with my artifact and I never had any of them move freely during the process."
@@ -2236,7 +2344,7 @@ label selection_8_3:
 
     Lars "His insistence on calling us humans, despite our obvious animal features, left me perplexed. It was as if he was trying to fit us into a narrative that didn’t align with our reality."
 
-    show lars  at left
+    show lars blush at left
     Lars "But how would that make us the exception to your plan to freeze everyone in time?"
 
     "Zephyr" "It’s quite simple, Snoopy. Let me break it for you."
@@ -2264,7 +2372,7 @@ label selection_8_3:
 
     Lars "What variable could it be?"
 
-    show lars  at left
+    show lars blush at left
     "Zephyr" "Cat got your tongue? No problem, I’ll find it out for myself soon enough."
 
     hide lars
@@ -2276,7 +2384,7 @@ label selection_8_3:
 
 label selection_8_4:
 
-    show lars  at left
+    show lars blush at left
     "Zephyr" "You just lack the understanding. I was, in fact, the lord of one of the noble houses during the previous dynasty and held much longer titles."
 
     "Zephyr" "In fact, you should be thankful that I'm allowing you to call me 'Young Lord' or 'Lord Zephyr' once your questioning session is over."
@@ -2316,7 +2424,7 @@ label selection_8_4:
 
 label google_test_8:
 
-    show lars  at left
+    show lars blush at left
     Lars "I think we’re done with the questions for now."
 
     Claude "You say that, Captain, but I have a question to ask our mystery person."
@@ -2338,7 +2446,7 @@ label google_test_8:
 
     Lars "Time is of the essence, and we must be quick in our deliberations."
 
-    show lars  at left
+    show lars blush at left
     Lars "Sir Claude, were you being serious when you said you didn’t believe him?"
 
     Claude "I do believe what he’s saying, or more so I {i}want{/i} his story to be true. I’ve been waiting for a thrilling adventure  like this for quite a long time now and the opportunity is now within my grasp."
@@ -2386,7 +2494,7 @@ label google_test_8:
 
     Lars "I take a deep breath as if to compensate for all the rambling that I’m about to do"
 
-    show lars  at left
+    show lars blush at left
     Lars "To summarize, he’s using the legacy necklace to suspend time for everyone, and it’s supposedly structurally identical to the artifact we have albeit with a different gemstone and contrasting ability. I also believe that the reason we escaped from his spells affects was because of this necklace right here."
 
     hide lars
@@ -2394,7 +2502,7 @@ label google_test_8:
 
     Lars "The heat it emitted during our earlier encounter with Zephyr may have subsided, but its enchanting radiance remains."
 
-    show lars  at left
+    show lars blush at left
     Lars "Thinking about it, he mentioned that he doesn’t know where this artifact was, even though the two couple necklaces were supposed to be under his care this entire time. Could this be related to our mystery person? If so, why did this variable suddenly cause us to be the exception?"
 
     "Rory" "…"
@@ -2454,13 +2562,13 @@ label google_test_8:
 
     Lars "There is no time for fear; we must press on."
 
-    show lars  at left
+    show lars blush at left
     "Zephyr" "Finished with the banter and jokes?"
 
     hide lars
     Lars "Master Sylvian's steady voice resonates with unwavering conviction as he prepares to address Zephyr."
 
-    show lars  at left
+    show lars blush at left
     "Sylvian" "Noble descendent, it’s clear that you’re manipulating a fundamental fabric of time for your personal gain."
 
     "Sylvian" "However, we cannot remain in this state too long. Not to mention the physical and mental consequences-"
@@ -2470,7 +2578,7 @@ label google_test_8:
 
     Lars "Revealing everything we know at this moment could potentially tip the balance of power in an unfavorable direction."
 
-    show lars  at left
+    show lars blush at left
     "Zephyr" "Here’s the fact, Smarty. I don’t understand the mechanics of it either and I don’t really have to."
 
     "Zephyr" "What I do know is that, you guys can escape the effects of my family heirloom either because you’re special in some way or there’s a variable that I’m not aware of, like the counter artifact."
@@ -2482,7 +2590,7 @@ label google_test_8:
 
     Lars "Glancing over my shoulder, I catch sight of my tail wagging at full speed. The rhythmic swaying is almost involuntary, a physical manifestation of the heightened anxiety that Zephyr's comments have stirred within me."
 
-    show lars  at left
+    show lars blush at left
     "Zephyr" "{i} But{/i}…that’s impossible."
 
     "Zephyr" "{i} He{/i} was the last person to have the counter measure artifact so it’s probably impossible for you guys to have found it. He would have come back to me first, even if it was for mere payback."
@@ -2490,7 +2598,7 @@ label google_test_8:
     hide lars
     Lars "But we already have it with us, how could this be?"
 
-    show lars  at left
+    show lars blush at left
     "Zephyr" "That’s why, when I take you all back to my castle, you’ll join my army and I’ll be able to continue my renovation plans without any worries of someone trying to ruin it."
 
     "Zephyr" "Keyword being {i}try{/i}."
@@ -2514,13 +2622,13 @@ label google_test_8:
 
     Lars "Another possibility lingers in my mind – could it be a lover; someone he holds close to his heart?"
 
-    show lars  at left
+    show lars blush at left
     "Zephyr" "What I’m sure of is that you guys are unique reincarnated humans who are able to move in this limbo."
 
     hide lars
     Lars "But even that assumption is wrong! So, we really have nothing to move forward with."
 
-    show lars  at left
+    show lars blush at left
     "Zephyr" "However, I can’t keep the time frozen forever, since I need to teach my new minions what they need to do."
 
     Claude "Your concerns are unwarranted since we can’t negotiate a deal without one party being absent, now can we?"
@@ -2540,7 +2648,7 @@ label google_test_8:
     hide lars
     Lars "Rory's sudden outburst catches him completely off guard. The room falls into a brief hush before Zephyr's voice breaks the silence once more."
 
-    show lars  at left
+    show lars blush at left
     "Zephyr" "In fact, there’s a lot of problematic things about what you guys have been telling me so far."
 
     "Zephyr" "That’s why, why don’t you answer some of my questions this time?"
@@ -2570,13 +2678,13 @@ label google_test_8:
 
     Lars "But even if I lie, what’s going to come next?"
 
-    show lars  at left
+    show lars blush at left
     "Zephyr" "Well? Hurry up, Scouty. Or I’ll end up changing your nickname to Slowy or something."
 
     hide lars
     Lars "Yet, before I can make up my mind, Master Sylvian jumps in to the rescue."
 
-    show lars  at left
+    show lars blush at left
     "Sylvian" "We’re unsure of that for now as we’ve newly reincarnated and don’t know much…"
 
     "Zephyr" "Hmm, but you seem a little too experienced to be newly reincarnated humans."
@@ -2588,7 +2696,7 @@ label google_test_8:
     hide lars
     Lars "Well, we’re certainly four members and new but for different reasons altogether!"
 
-    show lars  at left
+    show lars blush at left
     "Zephyr" "I'm not entirely convinced, but I’m not going to waste valuable time that could be spent on training humans."
 
     "Zephyr" "Let's proceed to the next question – what's the deal with those tails and ears? Is this an attempt at being cute?"
@@ -2604,13 +2712,13 @@ label google_test_8:
     hide lars
     Lars "Looks like Sir Claude is following Master Sylvian's plan of lying to get out of this. I guess they're trying to make the situation less suspicious, but it seems to be backfiring."
 
-    show lars  at left
+    show lars blush at left
     "Sylvian" "U-uhm…E-Exactly, we put on puppet shows for a living. I’m sure my junior and ou puppet master over here will be able to explain it in detail for you."
 
     hide lars
     Lars "Rory's expression turns to one of shock, and it's clear she's scrambling to come up with a response. However, before she can say anything, Zephyr interjects."
 
-    show lars  at left
+    show lars blush at left
     "Zephyr" "I have no need for puppet shows."
 
     "Zephyr" "I'm essentially a puppet master myself when it comes to dealing with my humans."
@@ -2618,7 +2726,7 @@ label google_test_8:
     hide lars
     Lars "Phew, crisis averted."
 
-    show lars  at left
+    show lars blush at left
     "Zephyr" "{i}But{/i}…I’ve been surrounded by so many brainwashed humans during the castle renovations that my brain cells are rotting by the lack of creativity and putrid repeated phrases."
 
     "Zephyr" "Next question, how can you convince me that you won’t be an obstacle to my plan until my castle is restored?"
@@ -2636,7 +2744,7 @@ label google_test_8:
 
     Lars "I have a responsibility to protect my comrades."
 
-    show lars  at left
+    show lars blush at left
     Lars "We’ll earn your trust."
 
     "Zephyr" "Somehow, I really doubt-"
@@ -2705,7 +2813,7 @@ label google_test_8:
 
 label selection_9_1:
 
-    show lars  at left
+    show lars blush at left
     Lars "I don’t understand which plan we’re supposed to follow, Master."
 
     "Sylvian" "You have to understand, Lars. We need to show how powerless we are in front of him so he loses interest."
@@ -2749,7 +2857,7 @@ label selection_9_1:
     hide lars
     Lars "As I move away to speak with the other members, I can hear a faint whisper escape Master’s mouth but I don’t catch it in time."
 
-    show lars  at left
+    show lars blush at left
     "Sylvian" "It's been so long that I've reached out for a piece of my own accord that I’ve forgotten how to clench what's already in the palm of my hand."
 
     hide lars
@@ -2761,7 +2869,7 @@ label selection_9_1:
 
 label selection_9_2:
 
-    show lars  at left
+    show lars blush at left
     Claude "My dearest Captain Lars, I adore your stubbornness at times like this, so it’s only right that I offer my support."
 
     Claude "I believe it's wiser to pique our new lord's interest in us rather than dismiss it."
@@ -2773,7 +2881,7 @@ label selection_9_2:
     hide lars
     Lars "He raises his hands and uses gestures as if trying to visually explain his idea."
 
-    show lars  at left
+    show lars blush at left
     Claude "What’s the aim here? We take out the brainwashed reincarnates and stop the effects of the time freeze artifact."
 
     Claude "That's why taking direct action is imperative."
@@ -2795,7 +2903,7 @@ label selection_9_2:
 
     Lars "His conviction has been laid bare in his words, and it's only fitting that I match his level of enthusiasm in this pivotal moment."
 
-    show lars  at left
+    show lars blush at left
     Lars "I understand!"
 
     Lars "{i}Discere, cogitare, agere{/i}- the triad of wisdom."
@@ -2807,7 +2915,7 @@ label selection_9_2:
     hide lars
     Lars "Perhaps it was the surge of my newfound conviction or the palpable anticipation of an impending challenge that sent my adrenaline levels soaring."
 
-    show lars  at left
+    show lars blush at left
     Lars "I can’t leave you all by yourself and I won’t have you take all the fun for yourself."
 
     Claude "That’s what I wanted to hear."
@@ -2821,7 +2929,7 @@ label selection_9_2:
     hide lars
     Lars "As I move away to speak with the other members, I can hear a faint whisper escape Sir Claude’s mouth but I don’t catch it in time."
 
-    show lars  at left
+    show lars blush at left
     Claude "I already used up a great portion of my luck to be have this opportunity with you so I won’t give up on any chances."
 
     hide lars
@@ -2833,7 +2941,7 @@ label selection_9_2:
 
 label google_test_9:
 
-    show lars  at left
+    show lars blush at left
     Lars "Alright everyone, if he truly is as dangerous as we all think, then we should try to get to the root of this issue and make sure he doesn’t use the time freeze artifact again."
 
     "Zephyr" "Hurry up now, I don’t have all day."
@@ -2849,7 +2957,7 @@ label google_test_9:
 
     Lars "I hold my tail straight as a sign of readiness, while my fur bristles on edge."
 
-    show lars  at left
+    show lars blush at left
     Claude "Captain, you can’t stop now."
 
     "Sylvian" "You have to make him listen well, Lars."
@@ -2861,7 +2969,7 @@ label google_test_9:
     hide lars
     Lars "I shared a meaningful look with my fellow guild members, and it was clear that they were equally puzzled. This was confirmed by their silence in response to my suggestion."
 
-    show lars  at left
+    show lars blush at left
     "Rory" "I don’t think it’s too late to come back just as confidently, Lars…"
 
     "Zephyr" "What’re you trying to scheme human? Are you trying to trick me with this sudden suggestion?"
@@ -2925,7 +3033,7 @@ label google_test_9:
     hide lars
     Lars "If he does go after the other two, he’ll notice that we they don’t have any special powers to counteract the artifacts time suspension affect. We could all get caught!"
 
-    show lars  at left
+    show lars blush at left
     Claude "Don’t get aggravated now, Captain. I’m not going to let you go down this route by yourself-"
 
     "Sylvian" "Forget the plan, we didn’t discuss this self-sacrificing scenario, Lars! You mustn’t risk-"
@@ -2945,7 +3053,7 @@ label google_test_9:
     hide lars
     Lars "Master Sylvian gazes at me with a begging look in his eyes as if he were pleading for something. His glazed look showed signs of worry and distress."
 
-    show lars  at left
+    show lars blush at left
     "Sylvian" "Lars, I can’t leave you alone like this otherwise…"
 
     "Sylvian" "I’d lose a piece in my heart where I can find solace and peace."
@@ -2975,7 +3083,7 @@ label google_test_9:
 
     Lars "Soon enough, Sir Claude speaks up as well.  His eyes show me a flicker of excitement and he looks at me with an anticipative gaze as if he wants me to choose him"
 
-    show lars  at left
+    show lars blush at left
     Claude "Captain, didn’t we talk about our reincarnations plans together? What kind of a duo would we be if one left the other behind?"
 
     Claude "In a world of limitless horizons and uncharted trails, I am a wanderer at heart, forever seeking new thrills and adventures."
