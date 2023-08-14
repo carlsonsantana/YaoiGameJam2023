@@ -148,8 +148,6 @@ label google_test_1:
 
     Lars "They would attempt to exploit their naivety, coercing them into labor or other unfavorable situations, exploiting their unfamiliarity with Div customs and culture."
 
-    show bg default at bg_size with vpunch
-    scene bg default at bg_size
     show claude serious at char_size, center
     show lars serious at left
     show lars serious at left

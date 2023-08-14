@@ -209,6 +209,52 @@ class GoogleMeta:
             line_list[i] = f"{indent}{line_list[i]}\n\n"
         return line_list
 
+    def detect_command(self, paragraph, entry, renpy_lines):
+        """
+        Side effect with renpy_lines
+        :return: True if skip
+        :rtype: bool
+        """
+        if not paragraph["paragraphStyle"]["namedStyleType"].startswith("HEADING_6"):
+            return False
+
+        lcase = GoogleMeta.extract_element(entry).lower()
+
+        if lcase.startswith("endif"):
+            pass  # ignore
+        elif lcase.startswith("auto on"):
+            self.auto = True
+        elif lcase.startswith("auto off"):
+            self.auto = False
+        elif lcase.startswith("ignore on"):
+            self.ignore = True
+        elif lcase.startswith("emote"):
+            lars_emote = lcase.split(" ")[-1].strip()
+            if lars_emote == "default":
+                self.emote = ""
+            else:
+                self.emote = lars_emote
+            renpy_lines.append(f"{GoogleMeta.INDENT}show lars {self.emote} at left\n")
+        else:
+            command = lcase.strip()
+            if "bg" in command:
+                # ignore
+                pass
+            elif "show" in command and "lars" not in command:
+                if "normal_size" in command:
+                    pass
+                elif "at" in command:
+                    command = command.replace("at", "at char_size,")
+                elif "with" in command:
+                    command = command.replace("with", "at char_size with")
+                else:
+                    command += " at char_size"
+
+                # if "with" not in command:
+                #     command += " with moveinright"
+                renpy_lines.append(f"{GoogleMeta.INDENT}{command}\n")
+        return True
+
     def parse_file(self, file_content, dest):
         # get the file name and set as label
         label = dest.split("/")[-1]  # get final item
@@ -386,40 +432,8 @@ label selection_8_loop:\n""")
                             if len(text_content) == 0:
                                 continue
                             renpy_lines.extend(text_content)
-                    elif lcase.startswith("endif"):
-                        pass  # ignore
-                    elif lcase.startswith("auto on"):
-                        self.auto = True
-                    elif lcase.startswith("auto off"):
-                        self.auto = False
-                    elif lcase.startswith("ignore on"):
-                        self.ignore = True
-                    elif lcase.startswith("emote"):
-                        lars_emote = lcase.split(" ")[-1].strip()
-                        if lars_emote == "default":
-                            self.emote = ""
-                        else:
-                            self.emote = lars_emote
-                        renpy_lines.append(f"{GoogleMeta.INDENT}show lars {self.emote} at left\n")
                     else:
-                        command = lcase.strip()
-                        if "bg" in command:
-                            # ignore
-                            pass
-                        elif "show" in command and "lars" not in command:
-                            if "normal_size" in command:
-                                pass
-                            elif "at" in command:
-                                command = command.replace("at", "at char_size,")
-                            elif "with" in command:
-                                command = command.replace("with", "at char_size with")
-                            else:
-                                command += " at char_size"
-
-                            # if "with" not in command:
-                            #     command += " with moveinright"
-                        renpy_lines.append(f"{GoogleMeta.INDENT}{command}\n")
-
+                        self.detect_command(paragraph, entry, renpy_lines)
                     continue
                 # endregion detect if block
 
