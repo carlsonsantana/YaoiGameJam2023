@@ -204,13 +204,26 @@ style input:
 ## and action fields.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#choice
+##
+## Additional reference: Niwens at https://www.reddit.com/r/RenPy/comments/tvq82x/is_there_a_way_to_change_the_choice_button_at/i3bbe5x/
 
 screen choice(items):
     style_prefix "choice"
 
     vbox:
+        $ idx = 0
+        $ choice_len = len(items)
         for i in items:
-            textbutton i.caption action i.action
+            $ idx = idx + 1
+            textbutton i.caption:
+                action i.action
+                xsize 1290
+                if idx > choice_len - 1:
+                    # last
+                    idle_background "gui/button/choice_idle_background_last.png"
+                    hover_background "gui/button/choice_hover_background_last.png"
+                else:
+                    yminimum 140
 
 
 style choice_vbox is vbox
