@@ -218,12 +218,13 @@ screen choice(items):
             textbutton i.caption:
                 action i.action
                 xsize 1290
-                if idx > choice_len - 1:
-                    # last
-                    idle_background "gui/button/choice_idle_background_last.png"
-                    hover_background "gui/button/choice_hover_background_last.png"
-                else:
-                    yminimum 140
+                # if idx > choice_len - 1:
+                #     # last
+                #     idle_background "gui/button/choice_idle_background_last.png"
+                #     hover_background "gui/button/choice_hover_background_last.png"
+                # else:
+                yminimum 93
+                ypadding 26
 
 
 style choice_vbox is vbox
