@@ -531,6 +531,8 @@ label google_test_2:
     hide lars
     Lars "As the sole passengers aboard the dragon ship, guiding Spotsy in her safe descent is a seamless task."
 
+    scene bg flowers
+    show claude at char_size, center
     Lars "The proximity to the water offers a perfect opportunity for Spotsy to release some pent-up energy, allowing her to gracefully ease off steam and find solace in the calming embrace of the sea."
 
     Lars "Once we disembark, our attention turns to a figure approaching us. Emerging from the surroundings, a tall and slender magician makes their way towards our position."
@@ -543,7 +545,7 @@ label google_test_2:
 
     Lars "As the petals fall all over me, a mesmerizing kaleidoscope of colors engulfs my surroundings. The soft fragrance of the pink-red carnations fills the air, intermingled with a refreshing spell that makes me feel as if a weight has been lifted off my shoulders."
 
-    show claude at  slight_left with move
+    show claude at char_size, slight_left with move
     show sylvian at char_size, slight_right, slight_down with moveinright
     show lars  at left, char_size
     "Unknown" "Welcome back, dear members of “Custodes Sylvae”. I’m happy to see that you both landed safely."
@@ -837,7 +839,7 @@ label google_test_3:
     "Sylvian" "Breathe for 3 seconds, hold it for 6, and then release it for 9 seconds."
 
     hide lars
-    Lars "Obediently, I follow Master’s instructions and feel my breathing gradually slowing down. Just as I am about to launch into another round of ramblings, Sylvian, ever the kind mentor, steps in to guide the situation."
+    Lars "Obediently, I follow Master’s instructions and feel my breathing gradually slowing down. Just as I am about to launch into another round of ramblings, Master Sylvian, ever the kind mentor, steps in once again."
 
     show lars serious at left, char_size
     "Sylvian" "No one is going to think those things of you, Lars."
@@ -1194,8 +1196,10 @@ label google_test_4:
 
     Lars "Hopefully, it’ll be another day without any troubles here in Divonia and ‘Custodes Sylvae’."
 
-    show claude at char_size
-    show sylvian at char_size
+    scene bg market
+    show claude at char_size, slight_left, slight_down
+    show rory at char_size, slight_right, slight_down
+    show sylvian at char_size, offscreenright
     Lars "The town square pulsates with vibrant energy, a captivating tapestry of stalls adorning the cobblestone pathway."
 
     Lars "As I walk through this bustling scene, my attention is drawn to the medley of merchants enticing passersby with their wares, creating an atmosphere of enchantment and wonder."
@@ -1227,7 +1231,7 @@ label google_test_4:
 
 label selection_5_1:
 
-    show claude at  offscreenleft with move
+    show claude at char_size, offscreenleft with move
     show rory at char_size, offscreenleft with move
     show sylvian at center,  with move
     hide lars
