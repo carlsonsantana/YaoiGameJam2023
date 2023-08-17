@@ -370,15 +370,15 @@ screen main_menu():
     add gui.main_menu_background
 
     ## This empty frame darkens the main menu.
-    frame:
-        style "main_menu_frame"
+    #frame:
+    #    style "main_menu_frame"
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
-    use navigation
+    # use navigation
 
     if gui.show_name:
-
+        
         vbox:
             style "main_menu_vbox"
 
@@ -387,6 +387,25 @@ screen main_menu():
 
             text "[config.version]":
                 style "main_menu_version"
+    
+    # Based on TellerFarsight at https://lemmasoft.renai.us/forums/viewtopic.php?t=44710
+    style_prefix "main_menu"
+    hbox:
+        xpos 20
+        ypos 817
+
+        textbutton _(""):
+            background "gui/button/start.png"
+            xsize 386
+            ysize 210
+            action Start()
+        
+        
+        textbutton _(""):
+            background "gui/button/load.png"
+            xsize 460
+            ysize 281
+            action Start()
 
 
 style main_menu_frame is empty
