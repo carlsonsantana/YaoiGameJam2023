@@ -400,12 +400,25 @@ screen main_menu():
             ysize 210
             action Start()
         
+        # textbutton _(""):
+        #     background "gui/button/load.png"
+        #     xsize 460
+        #     ysize 281
+        #     action ShowMenu("load")
         
-        textbutton _(""):
-            background "gui/button/load.png"
-            xsize 460
-            ysize 281
-            action Start()
+        # textbutton _(""):
+        #     background "gui/button/preferences.png"
+        #     xsize 460
+        #     ysize 281
+        #     # todo: preferences here in action!
+        #     action ShowMenu("load")
+        
+        # textbutton _(""):
+        #     background "gui/button/help.png"
+        #     xsize 460
+        #     ysize 281
+        #     # todo: help?
+        #     action ShowMenu("load")
 
 
 style main_menu_frame is empty

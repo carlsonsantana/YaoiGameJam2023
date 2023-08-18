@@ -118,7 +118,7 @@ class GoogleMeta:
             else:
                 if self.lars_mode in [GoogleMeta.LARS_UNKNOWN, GoogleMeta.LARS_NARRATION]:
                     # todo: figure out scaling
-                    result.append(f"{indent}show lars {self.emote} at left, char_size\n")
+                    result.append(f"{indent}show lars {self.emote} at left\n")
                     self.lars_mode = GoogleMeta.LARS_NORMAL
 
             # todo: bad!
@@ -167,26 +167,14 @@ class GoogleMeta:
                 self.emote = ""
             else:
                 self.emote = lars_emote
-            renpy_lines.append(f"{GoogleMeta.INDENT}show lars {self.emote} at left, char_size\n")
+            renpy_lines.append(f"{GoogleMeta.INDENT}show lars {self.emote} at left\n")
         else:
             command = lcase.strip()
             if "bg" in command or "time" in command:
                 # ignore
                 pass
             elif "show" in command and "lars" not in command:
-                if "normal_size" in command:
-                    if "force_normal_size" not in command:
-                        command = command.replace("normal_size,", "")
-                        command = command.replace("normal_size", "")
-                elif "at" in command:
-                    command = command.replace("at", "at char_size,")
-                elif "with" in command:
-                    command = command.replace("with", "at char_size with")
-                else:
-                    command += " at char_size"
-
-                # if "with" not in command:
-                #     command += " with moveinright"
+                pass
             renpy_lines.append(f"{GoogleMeta.INDENT}{command}\n")
         return True
 
