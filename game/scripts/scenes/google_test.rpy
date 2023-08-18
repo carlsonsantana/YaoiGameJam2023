@@ -39,7 +39,7 @@ label google_test_1:
     Lars "But then again, we wouldn’t be embarking on guild-members only artifact hunts and historical expeditions if the sole purpose of ‘Custodes Sylvae’ was commerce."
 
     show claude serious at char_size, center with moveinright
-    "Unknown" "Who on Divonia is mumbling this loud to themselves early in the morning? I’m losing my beauty sleep over here."
+    "Unknown" "Who on Divonia is mumbling this loud to themselves this early in the morning? I’m losing my beauty sleep over here."
 
     Lars "As I observe my companion, I notice the faint sound of a yawn escaping him. It’s a rare moment of vulnerability, and I can’t resist the urge to playfully surprise him."
 
@@ -49,11 +49,15 @@ label google_test_1:
 
     show lars  at left, char_size
     show claude shocked at char_size
-    Claude "Ah, my dearest Captain Lars!"
+    Claude "Ah, my dearest Captain Lars! How could I ever get that nightingale-like voice of yours out of my head? It's like my personal alarm clock."
 
-    Claude "Seems like I mistook your voice for a nightingale song waking me up from my slumber."
+    hide lars
+    Lars "There's a subtle hint of sarcasm in his voice as he gazes at me, an almost palpable challenge to address his thinly veiled and ambiguous remark."
 
     show claude at char_size
+    show lars  at left, char_size
+    Lars "I’m glad you appreciate my vocal talents. But you know, I can’t take all the credit. You’re the one who inspires me to mumble so loudly during our journeys, Sir Claude. It’s the only way to drown out your snoring."
+
     hide lars
     Lars "I steal a glance from my perch atop the dragon ship and it looks like one, or should I say, the {i}only{/i} passenger has woken up."
 
@@ -63,19 +67,16 @@ label google_test_1:
 
     Lars "Despite his {i}comfortable{/i} upbringings, he’s capable of sleeping like a koala descendent without any complaints."
 
-    show lars blush at left, char_size
-    show lars blush at left, char_size
-    Lars "Ever the charmer, aren’t you Sir Claude?"
-
     show lars  at left, char_size
     show claude serious at char_size
+    show lars  at left, char_size
     Claude "Didn’t I already tell you to drop the ‘Sir’ for the umpteenth time, Captain?"
 
     show claude at char_size
-    Lars "I promised I’d do it if you stopped insisting on Captain this and Captain that."
+    Lars "Do we have to go over this cliche back and forth as well? I promised I’d do it if you stopped insisting on Captain this and Captain that."
 
     show claude shocked at char_size
-    Claude "But the nickname makes us seem more of an adventurous pair, don’t you think so?"
+    Claude "But the nickname makes us seem more of an adventurous pair, don’t you think so? I’ll have to save the name ‘Lars’ for more … {i}auspicious {/i}occasions."
 
     show claude at char_size
     hide lars
@@ -446,7 +447,7 @@ label google_test_2:
 
     Lars "If you tease me again, I really won’t be able to guarantee your safety…"
 
-    Lars "{size=*0.5}…so, s-stop it.{/stop}"
+    Lars "{size=*0.5}…so, s-stop it.f{/stop}"
 
     show claude at char_size
     Claude "Awe, is our captain getting shy all of a sudden? Did you know your ears get red when your embarrassed?"
@@ -531,8 +532,9 @@ label google_test_2:
     hide lars
     Lars "As the sole passengers aboard the dragon ship, guiding Spotsy in her safe descent is a seamless task."
 
-    scene bg flowers
-    show claude at char_size, center
+    scene bg white with dissolve
+    scene bg flowers with dissolve
+    show claude at char_size, center with dissolve
     Lars "The proximity to the water offers a perfect opportunity for Spotsy to release some pent-up energy, allowing her to gracefully ease off steam and find solace in the calming embrace of the sea."
 
     Lars "Once we disembark, our attention turns to a figure approaching us. Emerging from the surroundings, a tall and slender magician makes their way towards our position."
@@ -1196,9 +1198,10 @@ label google_test_4:
 
     Lars "Hopefully, it’ll be another day without any troubles here in Divonia and ‘Custodes Sylvae’."
 
-    scene bg market
-    show claude at char_size, slight_left, slight_down
-    show rory at char_size, slight_right, slight_down
+    scene bg white with dissolve
+    scene bg market with dissolve
+    show claude at char_size, slight_left, slight_down with dissolve
+    show rory at char_size, slight_right, slight_down with dissolve
     show sylvian at char_size, offscreenright
     Lars "The town square pulsates with vibrant energy, a captivating tapestry of stalls adorning the cobblestone pathway."
 
@@ -2300,7 +2303,7 @@ label selection_8_2:
 
     "Zephyr" "I didn’t want to, okay? But what other choice did I have?"
 
-    "Rory" "Literally, anything besides making a house renovating army of human zombie slaves."
+    "Rory" "Literally, anything besides making a house renovating army of human zombie servants."
 
     "Zephyr" "I couldn’t win them over with my title and I couldn’t make them work with the little money either."
 
