@@ -3,12 +3,23 @@ transform flip:
 
 transform unflip:
     linear 0.1 xzoom 1.0
+    pause 0.15
 
 transform flip_instant:
     xzoom -1.0
 
+transform zephyr_intro:
+    xalign 0.95
+    yalign 0.5
+
 transform slight_left:
     xalign 0.2
+
+transform sylvian_at_zephyr_intro:
+    xalign 0.65
+
+transform rory_at_zephyr_intro:
+    xalign 0.25
 
 transform slight_down:
     yalign 1.15

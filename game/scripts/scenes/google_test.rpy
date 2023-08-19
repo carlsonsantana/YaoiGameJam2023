@@ -1888,19 +1888,17 @@ label google_test_6:
         show lars  at left
         Lars "What’s he talking about, Master?"
 
+        show lars blush at left
         Lars "You’re in love with someone? Is that part of the secret you wanted to mention to me?"
 
+        show lars  at left
     if selection_5_answer == 2:
         hide lars
         Lars "The sudden statement surprises me, but I aim to not let it show."
 
         show lars  at left
-        Lars "I’ve been so busy with Sir Claude that I didn’t even notice. You’ve fallen for someone, Master?"
+        Lars "I’ve been so busy with Sir Claude that I didn’t even notice. You’ve fallen for someone, Master?Lars: That’s exciting! When are you going to introduce us?"
 
-        show lars blush at left
-        Lars "That’s exciting! When are you going to introduce us?"
-
-        show lars  at left
     show claude serious
     Claude "Focus here Captain, we can talk about that later. Unless you’ve already taken someone’s side?"
 
@@ -1929,6 +1927,7 @@ label selection_7_1:
     show lars  at left
     Lars "I agree with Master Sylvian."
 
+    show claude serious
     Lars "I think what Master says is true about enjoying what we want instead of simply going after it for the challenge."
 
     Lars "I like hanging out with my dragons even if we weren’t in the middle of an expedition or mission and I wouldn’t change my relationship with them for the world."
@@ -1945,8 +1944,10 @@ label selection_7_1:
 
     Lars "She’s had a long flight after all."
 
+    show claude
     "Sylvian" "I can’t deny that I’m bit disappointed…"
 
+    show sylvian blush
     "Sylvian" "However, it’s one of the things that I like seeing you do Lars."
 
     "Sylvian" "It’s amongst my wishes to someday be a recipient of the same adoration you hold for your dragons."
@@ -1954,6 +1955,7 @@ label selection_7_1:
     hide lars
     Lars "I let out a little laugh. Maybe my mind needed a bit of humor to escape the deeper side of the abyss that I was looking at to find my answer."
 
+    show sylvian
     show lars  at left
     Lars "No copying jokes from Sir Claude, Master. It’s best if we call a truce with everyone for now."
 
@@ -1966,6 +1968,7 @@ label selection_7_2:
     show lars  at left
     Lars "I agree with what Sir Claude says."
 
+    show claude happy
     Lars "It’s not fair to not fight for what you love and desire."
 
     Lars "I could admire my dragons all day and night but if I never take that leap of fate to touch them and show them my feelings directly, then I’ll only ever be walking in a circle."
@@ -1974,14 +1977,17 @@ label selection_7_2:
 
     Claude "Glad to see that you’ve learnt a few things about my motto of life, Captain. It’s not complete, but I’ll teach more later, {i}in private{/i}."
 
+    show claude
     Lars "Haha, I would love to spend time with you but Spotsy needs me most, don’t you think so?"
 
     Lars "She’s had a long flight after all."
 
+    show claude happy
     Claude "At this rate, I don’t think I’ll ever be able to compete with your love for dragons, Captain."
 
     Claude "But I’ll do my best to win you over, and spoil you rotten the same way you do for your dragons."
 
+    show claude
     hide lars
     Lars "I let out a little laugh. Maybe my mind needed a bit of humor to escape the deeper side of the abyss that I was looking at to find my answer."
 
@@ -2008,18 +2014,24 @@ label google_test_7:
     show lars  at left
     "Rory" "Is this a joke? Was there a surprise flash mob that I wasn’t aware of?"
 
+    show rory angry
     "Rory" "Clauuudy, did you bribe people again to pull a prank on me?"
 
+    show claude shocked
     Claude "As much as I would love to take credit for such an event, I have no clue what’s happening either."
 
+    show rory
+    show sylvian serious
     "Sylvian" "A strange phenomena is happening, it seems."
 
+    show claude serious
+    show lars serious at left
     Lars "What does that mean, Master? What’s going on with everyone?"
 
     hide lars
     Lars "I instinctively reach out and begin shaking a few of the figures resembling frozen children."
 
-    show lars  at left
+    show lars serious at left
     Lars "Kids, come on, the joke isn’t funny anymore. We’re getting really worried over here."
 
     Claude "What could have suddenly happened here?"
@@ -2031,13 +2043,13 @@ label google_test_7:
 
     Lars "Intrigued and compelled, I shifted my attention towards it. It seems like Rory noticed it as well."
 
-    show lars  at left
+    show lars serious at left
     "Rory" "Hold up! What’s happening to the artifact right now? Take a look everyone. It’s as if it’s shining…"
 
     hide lars
     Lars "Instantly, everyone’s gaze fixates on me."
 
-    show lars  at left
+    show lars serious at left
     "Rory" "Are we under a weird spell right now? It’s as if we’re the only people moving and everyone else is frozen in time."
 
     "Rory" "Is it related to Larsy’s necklace? What’s going on Mentor?"
@@ -2067,7 +2079,7 @@ label google_test_7:
     hide lars
     Lars "It seems that Sir Claude had caught sight of an approaching figure before any of us did."
 
-    show lars  at left
+    show lars serious at left
     "Sylvian" "I recognize that too. However, it’s unlike anything I’ve seen before…"
 
     Claude "I think we’re being watched by someone."
@@ -2079,7 +2091,7 @@ label google_test_7:
 
     Lars "A bead of sweat rolls down my forehead, and my ginger fur seems to prickle, almost as if it senses the imminent danger and excitement that lay ahead."
 
-    show lars  at left
+    show lars serious at left
     "Unknown" "Looks like some {i}interesting{/i} humans have entered my domain while I was occupied."
 
     "Unknown" "I was frozen in anticipation for what would come next, but I have work to do after this. My castle isn’t going to clean up after itself."
@@ -2095,17 +2107,22 @@ label google_test_7:
 
     Lars "Sir Claude, ever bold and quick-witted, leaps forward to question the puzzling figure."
 
-    show lars  at left
+    show claude
+    show lars serious at left
     Claude "Who’s there? Are you the person behind this? What’s-"
 
+    show claude serious
     "Unknown" "Slow doooown there."
 
     "Unknown" "Times not running away after all. You know?"
 
+    show sylvian
     "Sylvian" "…"
 
+    show lars  at left
     Lars "…"
 
+    show claude
     Claude "…"
 
     "Rory" "Heh-"
@@ -2114,8 +2131,10 @@ label google_test_7:
 
     "Unknown" "It’s been some time since I could speak with someone without them being brainwashed or stuck in time."
 
+    show lars serious at left
     Lars "What do you mean by brainwashed or stuck in time?"
 
+    show lars  at left
     "Unknown" "Ah, the inquisitive human speaks. Hmm, I’ll call you Snoopy from now on, then."
 
     Lars "But my name is Lars-"
@@ -2126,6 +2145,7 @@ label google_test_7:
 
     "Sylvian" "“-But it should never be allowed to run wild; for, if it does, we risk becoming lost in a maze of endless questions”."
 
+    show sylvian serious
     "Unknown" "You, the one with the flowery hat, must be the smart one the group, you’ll be Smarty from now on."
 
     "Unknown" "Since you’re intelligent enough to know ancient writings like this, you should know better than to interject like Snoopy."
@@ -2134,27 +2154,38 @@ label google_test_7:
 
     "Unknown" "Snoopy, I need my main character moment over here, stop interrupting so much."
 
+    show sylvian
     hide lars
     Lars "I take a deep breath, frustration bubbling up within me as I watch the scene unfold. The figure’s words are becoming increasingly difficult to make sense of anything."
 
     Lars "I glance at my companions, hoping someone will step up and challenge their nonsensical monologue. We can’t afford to let them dominate the conversation."
 
-    show lars  at left
-    Lars "Come on, someone has to say something."
+    show lars serious at left
+    show lars serious at left
+    Lars "{size=-10}Come on, someone has to say something."
 
     "Unknown" "As I was saying-"
 
+    show lars  at left
     hide lars
     Lars "Relief washes over me as, almost miraculously, Master Sylvian speaks up."
 
+    show sylvian serious
     show lars  at left
     "Sylvian" "Enough banter, who exactly are you?"
 
+    show claude at left with move
+    show rory at rory_at_zephyr_intro with move
+    show sylvian at flip
+    pause 0.2
+    show sylvian at sylvian_at_zephyr_intro with move
+    show zephyr at zephyr_intro, flip with moveinright
     hide lars
     Lars "Like a conductor orchestrating an intricate symphony, the enigmatic figure’s particles move in an obtuse direction."
 
     Lars "Suddenly, the sound of a single clap pierces through the stillness. It’s a sharp and commanding sound, one that demands our attention."
 
+    show sylvian
     show lars  at left
     "Unknown" "It seems that it’s time for the cliché introduction séance, the kind they do for video games and TV shows."
 
