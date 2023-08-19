@@ -223,7 +223,7 @@ screen choice(items):
                 #     idle_background "gui/button/choice_idle_background_last.png"
                 #     hover_background "gui/button/choice_hover_background_last.png"
                 # else:
-                yminimum 93
+                yminimum 134
                 ypadding 26
 
 
@@ -400,25 +400,31 @@ screen main_menu():
             ysize 210
             action Start()
         
-        # textbutton _(""):
-        #     background "gui/button/load.png"
-        #     xsize 460
-        #     ysize 281
-        #     action ShowMenu("load")
+        textbutton _(""):
+            background "gui/button/load.png"
+            xpos 28
+            ypos -60
+            xsize 460
+            ysize 281
+            action ShowMenu("load")
         
-        # textbutton _(""):
-        #     background "gui/button/preferences.png"
-        #     xsize 460
-        #     ysize 281
-        #     # todo: preferences here in action!
-        #     action ShowMenu("load")
+        textbutton _(""):
+            background "gui/button/preferences.png"
+            xpos 132
+            ypos -22
+            xsize 460
+            ysize 281
+            # todo: preferences here in action!
+            action ShowMenu("load")
         
-        # textbutton _(""):
-        #     background "gui/button/help.png"
-        #     xsize 460
-        #     ysize 281
-        #     # todo: help?
-        #     action ShowMenu("load")
+        textbutton _(""):
+            background "gui/button/help.png"
+            xpos 204
+            ypos 18
+            xsize 460
+            ysize 281
+            # todo: help?
+            action ShowMenu("load")
 
 
 style main_menu_frame is empty

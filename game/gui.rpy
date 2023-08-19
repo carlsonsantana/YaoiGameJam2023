@@ -57,13 +57,13 @@ define gui.interface_text_color = '#ffffff'
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.text_font = "fonts/GeorgiaPro-SemiBold.ttf"
+define gui.text_font = "fonts/GeorgiaPro-CondRegular.ttf"
 
 ## The font used for character names.
 define gui.name_text_font = "fonts/Nickainley-Normal.otf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "fonts/GeorgiaPro-SemiBold.ttf"
+define gui.interface_text_font = "fonts/GeorgiaPro-CondRegular.ttf"
 
 ## The size of normal dialogue text.
 define gui.text_size = 33
@@ -106,8 +106,8 @@ define gui.textbox_yalign = 1.0
 
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
-define gui.name_xpos = 550
-define gui.name_ypos = -62
+define gui.name_xpos = 558
+define gui.name_ypos = -50
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
@@ -142,6 +142,7 @@ define gui.dialogue_width = 1300
 ## The horizontal alignment of the dialogue text. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
 define gui.dialogue_text_xalign = 0.0
+define gui.dialogue_text_size = 32
 
 
 ## Buttons #####################################################################
@@ -211,10 +212,11 @@ define gui.choice_button_width = 1185
 define gui.choice_button_height = None
 define gui.choice_button_tile = False
 define gui.choice_button_borders = Borders(150, 8, 150, 8)
-define gui.choice_button_text_font = gui.text_font
-define gui.choice_button_text_size = gui.text_size
+define gui.choice_button_text_font = "fonts/Nickainley-Normal.otf"
+define gui.choice_button_text_size = 40
+define gui.choice_button_text_ypos = 12
 define gui.choice_button_text_xalign = 0.5
-define gui.choice_button_text_idle_color = '#888888'
+define gui.choice_button_text_idle_color = '#000000'
 define gui.choice_button_text_hover_color = "#ffffff"
 define gui.choice_button_text_insensitive_color = '#8888887f'
 
