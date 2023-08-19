@@ -183,6 +183,14 @@ init python:
     build.classify('**/.**', None)
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
+    build.classify('secrets/**', None)
+    build.classify('dev/**', None)
+    build.classify('env/**', None)
+    build.classify('docs/**', None)
+    build.classify('game/**.rpy', None)
+    build.classify('game/cache/**', None)
+    build.classify('token.json', None)
+    build.classify('README.md', None)
 
     ## To archive files, classify them as 'archive'.
 
