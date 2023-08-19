@@ -25,12 +25,16 @@ default selection_3_answer = 0
 default selection_2_answer = 0
 
 label google_test_1:
-    call game_setup from _call_game_setup
+    call game_setup
+
+    $ quick_menu = False
 
     scene bg black
     pause 1
     scene bg white with dissolve
     scene bg default at bg_size with dissolve
+    $ quick_menu = True
+
     hide lars
     Lars "{i}Discere, cogitare, agere{/i}- the triad of wisdom."
 

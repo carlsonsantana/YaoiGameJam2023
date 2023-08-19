@@ -151,7 +151,8 @@ class GoogleMeta:
         if not paragraph["paragraphStyle"]["namedStyleType"].startswith("HEADING_6"):
             return False
 
-        lcase = GoogleMeta.extract_element(entry).lower()
+        og = GoogleMeta.extract_element(entry)
+        lcase = og.lower()
 
         if lcase.startswith("endif"):
             pass  # ignore
@@ -168,6 +169,9 @@ class GoogleMeta:
             else:
                 self.emote = lars_emote
             renpy_lines.append(f"{GoogleMeta.INDENT}show lars {self.emote} at left\n")
+        elif lcase.startswith("$"):
+            # preserve literal code casing
+            renpy_lines.append(f"{GoogleMeta.INDENT}{og}\n")
         else:
             command = lcase.strip()
             if "bg" in command or "time" in command:
@@ -337,7 +341,6 @@ label selection_8_loop:\n""")
                 if paragraph["paragraphStyle"]["namedStyleType"].startswith("HEADING_6"):
                     # check if if statement
                     lcase = GoogleMeta.extract_element(entry).lower()
-                    print("Heading 6 found", lcase)
                     if lcase.startswith("if "):
                         print("IF:", lcase)
                         if_indent = GoogleMeta.INDENT * 2
