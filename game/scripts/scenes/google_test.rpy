@@ -27,6 +27,10 @@ default selection_2_answer = 0
 label google_test_1:
     call game_setup
 
+    scene bg black
+    pause 1
+    scene bg white with dissolve
+    scene bg default at bg_size with dissolve
     hide lars
     Lars "{i}Discere, cogitare, agere{/i}- the triad of wisdom."
 
@@ -284,7 +288,7 @@ label google_test_1:
 
     Lars "It’s all in good fun, my friend."
 
-    show claude at normal_size, right with move
+    show claude at right with move
     hide lars
     Lars "As Sir Claude walks away, I can’t shake the sense of nostalgia and loneliness that lingers in his eyes. It leaves me with a mix of curiosity and concern, wondering about the emotions hidden behind his confident demeanor."
 
@@ -400,7 +404,7 @@ label selection_2_2:
 
 label google_test_2:
 
-    show claude serious at normal_size, center with move
+    show claude serious at center with move
     show claude
     show lars  at left
     Claude "Speaking of Master Sylvian, I’ve been wondering how to approach him about our recent artifact negotiations."
@@ -533,7 +537,7 @@ label google_test_2:
     Lars "As the sole passengers aboard the dragon ship, guiding Spotsy in her safe descent is a seamless task."
 
     scene bg white with dissolve
-    scene bg flowers with dissolve
+    scene bg flowers at bg_size with dissolve
     show claude at center with dissolve
     Lars "The proximity to the water offers a perfect opportunity for Spotsy to release some pent-up energy, allowing her to gracefully ease off steam and find solace in the calming embrace of the sea."
 
@@ -617,9 +621,9 @@ label selection_3_1:
 
     Claude "Before worrying about Captain over here, you should head on to where Spotsy is resting, Boss. We wouldn’t want her to accidentally drop our cargo to the depths of the sea."
 
-    show sylvian at flip, normal_size, slight_down
+    show sylvian at flip, slight_down
     pause 0.2
-    show sylvian at normal_size, slight_down, offscreenright with move
+    show sylvian at slight_down, offscreenright with move
     pause 0.1
     hide lars
     Lars "As Master Sylvian takes flight, his swan-like wings seem to catch every ray of sunlight, causing them to shimmer and gleam like ethereal jewels. The sight is truly breathtaking, and I find myself in awe of the beauty before me."
@@ -676,7 +680,7 @@ label selection_3_1:
     "Rory" "For the sake of compensation, it’s time to say goodbye to Claude Junior with my nifty scissor too-"
 
     show rory at center, slight_down with move
-    show sylvian at normal_size, right, slight_down with moveinright
+    show sylvian at right, slight_down with moveinright
     hide lars
     Lars "Thankfully, Master Sylvian swiftly intervenes, diffusing the tension with his timely return."
 
@@ -723,9 +727,9 @@ label selection_3_2:
 
     "Sylvian" "It might be best for you take care of your task, Claude. We’re still not sure of the origins of the artifact you brought and time is of the essence in situations like this."
 
-    show claude at flip, normal_size
+    show claude at flip
     pause 0.2
-    show claude at normal_size, offscreenleft with move
+    show claude at offscreenleft with move
     pause 0.1
     hide lars
     Lars "As Sir Claude takes his leave, his silver lizard tail gracefully sways behind him, reminiscent of the rhythmic movements of the sea."
@@ -784,9 +788,9 @@ label selection_3_2:
 
     "Rory" "Yay~ Thank you Mentor!"
 
-    show sylvian at right, normal_size with move
+    show sylvian at right with move
     show rory at center, slight_down with move
-    show claude at normal_size, slight_left, slight_down, flip_instant with moveinleft
+    show claude at slight_left, slight_down, flip_instant with moveinleft
     hide lars
     Lars "As if summoned by Rory’s statement, Claude makes his entrance with the ornate box cradled in his arms. His eyes glimmer with a mixture of anticipation and excitement as he gazes at the artifact."
 
@@ -863,9 +867,9 @@ label google_test_3:
 
     "Rory" "Claudy, even if Mentor did like Lars that way, it’s not as if he would wait years in an unrequited crush just being satisfied with singing little poetry and blooming flower out of thin air."
 
-    show sylvian at flip, normal_size
+    show sylvian at flip
     pause 0.2
-    show sylvian blush at more_right, normal_size with move
+    show sylvian blush at more_right with move
     hide lars
     Lars "I notice Master Sylvian’s demeanor change in an instant; he quickly turns his head away, as if he’s trying to hide something from me. However, even from behind, I can see his ears reddening a bit."
 
@@ -878,9 +882,9 @@ label google_test_3:
 
     "Rory" "{size=+30}Ugh, I can’t deal with this again.{/size}"
 
-    show sylvian at unflip, normal_size
+    show sylvian at unflip
     pause 0.2
-    show sylvian at slight_right, normal_size with move
+    show sylvian at slight_right with move
     "Sylvian" "Alright everyone, settle down."
 
     "Sylvian" "Let me cast a safety spell over the box first, you can never be sure if there are any hidden traps inside{i}.
@@ -1192,14 +1196,14 @@ label google_test_4:
     show claude serious
     Lars "Soon enough though, my name is called and the four of us make our way towards the open area adorned with numerous stalls. Sylvian deliberately slows his steps, keeping a watchful eye over the rest of us as we go ahead."
 
-    show sylvian at offscreenright, normal_size with move
+    show sylvian at offscreenright with move
     show rory at slight_right with move
     Lars "Meanwhile, Claude and Rory pick up their pace, engaging in a competition to see who can reach the stall first. Their banter fills the air as they exchange witty remarks, not holding back on their rivalry."
 
     Lars "Hopefully, it’ll be another day without any troubles here in Divonia and ‘Custodes Sylvae’."
 
     scene bg white with dissolve
-    scene bg market with dissolve
+    scene bg market at bg_size with dissolve
     show claude at slight_left, slight_down with dissolve
     show rory at slight_right, slight_down with dissolve
     show sylvian at offscreenright
@@ -1236,7 +1240,7 @@ label selection_5_1:
 
     show claude at offscreenleft with move
     show rory at offscreenleft with move
-    show sylvian at center, normal_size with move
+    show sylvian at center with move
     hide lars
     Lars "Master Sylvian himself, as a flower magician, could effortlessly conjure his clothing using floral magic. Whereby, every thread is spun with enchanting intentions, and each stitch is softly whispered with an incantation."
 
@@ -1252,9 +1256,9 @@ label selection_5_1:
 
     Lars "Nevertheless, my familiarity with the flowers has grown to the extent that I can remember their names even if my academic knowledge is nowhere near Master Sylvian."
 
-    show sylvian at right, normal_size with move
+    show sylvian at right with move
     show rory at center with move
-    show claude at slight_left, normal_size with move
+    show claude at slight_left with move
     jump google_test_5
 
     return
@@ -1263,7 +1267,7 @@ label selection_5_2:
 
     show sylvian at offscreenright with move
     show rory at offscreenright with move
-    show claude at center, normal_size with move
+    show claude at center with move
     hide lars
     Lars "Sir Claude always holds his appearance with unparalleled pride. I can envision him draped in a new style of opulent faux fur and leather clothing, masterfully curated from exotic lands."
 
@@ -1277,9 +1281,9 @@ label selection_5_2:
 
     Lars "Even now, as I observe him, his cascading braids of shimmering silver gracefully flow down his back, a sight that serves as a reminder for me to attend to my own unkempt fox fur and strive to neaten my unruly ponytail."
 
-    show claude at slight_left, normal_size with move
+    show claude at slight_left with move
     show rory at center with move
-    show sylvian at right, normal_size with move
+    show sylvian at right with move
     jump google_test_5
 
     return

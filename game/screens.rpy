@@ -415,7 +415,7 @@ screen main_menu():
             xsize 460
             ysize 281
             # todo: preferences here in action!
-            action ShowMenu("load")
+            action ShowMenu("preferences")
         
         textbutton _(""):
             background "gui/button/help.png"
@@ -424,7 +424,7 @@ screen main_menu():
             xsize 460
             ysize 281
             # todo: help?
-            action ShowMenu("load")
+            action ShowMenu("Help")
 
 
 style main_menu_frame is empty
