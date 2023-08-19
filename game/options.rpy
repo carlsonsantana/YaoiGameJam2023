@@ -206,4 +206,4 @@ init python:
 ## The username and project name associated with an itch.io project, separated
 ## by a slash.
 
-# define build.itch_project = "renpytom/love-amidst-the-timeless-rift"
+define build.itch_project = "deniz-g-lerosi/love-amidst-the-timeless-rift"

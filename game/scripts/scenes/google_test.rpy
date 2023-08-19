@@ -25,7 +25,7 @@ default selection_3_answer = 0
 default selection_2_answer = 0
 
 label google_test_1:
-    call game_setup
+    call game_setup from _call_game_setup
 
     scene bg black
     pause 1
