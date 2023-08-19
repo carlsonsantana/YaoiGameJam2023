@@ -1203,7 +1203,7 @@ label google_test_4:
     Lars "Hopefully, it’ll be another day without any troubles here in Divonia and ‘Custodes Sylvae’."
 
     scene bg white with dissolve
-    scene bg market at bg_size with dissolve
+    scene bg market with dissolve
     show claude at slight_left, slight_down with dissolve
     show rory at slight_right, slight_down with dissolve
     show sylvian at offscreenright
@@ -1309,7 +1309,7 @@ label google_test_5:
     show lars  at left
     Claude "Let it be known that I’m only helping out because of Captain over here. Otherwise, I’d be indulging in the cool shade of my family’s own shop."
 
-    show claude shocked
+    show claude blush
     hide lars
     Lars "The glint in his eyes hinted at the allure of the treasures that awaited him. After all, the Dupont family are merchants notorious for their array of foreign trinkets, enticing visitors with the allure of distant lands and cultures."
 
@@ -1340,7 +1340,7 @@ label google_test_5:
 
     "Rory" "Bracelets or anklets would be a disaster around the dragons too. They’ve got those sharp pikes and claws that could easily tangle things up. We either need to go bigger as in armor size or go smaller like a-"
 
-    show claude shocked
+    show claude happy
     Claude "How about a ring then? It could be the perfect accessory to keep on without it getting in the way!"
 
     Claude "What about it, Captain? Are you up for it?"
@@ -1348,6 +1348,7 @@ label google_test_5:
     show lars blush at left
     Lars "W-w-what are you talking about? That’s basically a proposal, isn’t it?"
 
+    show claude blush
     Claude "Not so much a proposal, but more of a heartfelt promise that you’ll keep me in mind whenever you look at it. After all, you always accept Boss’s crafted bouquets and poems. Don’t they count as gifts too?"
 
     Lars "Well, they do count as gifts, but I find it more convenient to keep notes in my pockets. Also, flowers have a way different meaning than a literal RING!"
@@ -1356,6 +1357,7 @@ label google_test_5:
 
     Lars "The same goes for you, Sir Claude; you’re my friend, not my romantic partner."
 
+    show sylvian blush
     hide lars
     Lars "However, all I was met with was silence."
 
@@ -1388,6 +1390,7 @@ label selection_6_1:
     show lars blush at left
     Lars "Master, why didn’t you answer my question earlier? Did you have a different intention behind all the gifts you’ve given me?"
 
+    show claude serious
     hide lars
     Lars "I steal a glance at Master’s concealed face, and if it were possible, I swear his cheeks would’ve flushed directly into the hue of a blooming rose, considering how red he already was."
 
@@ -1402,6 +1405,7 @@ label selection_6_1:
 
     Lars "So, did you have a reason aside from our friendship for all the poems and bouquets you’ve given me?"
 
+    show sylvian
     hide lars
     Lars "As if drawn in by the gravity of my serious question, he takes a deep breath and looks me directly in the eyes. Slowly, his face regains its natural color, and he begins to speak."
 
@@ -1418,6 +1422,7 @@ label selection_6_1:
 
     Lars "…"
 
+    show lars  at left
     Lars "Understood, Master. I’m not too satisfied but I won’t press you further, especially since I’m not entirely sure if you’re referring to a personal secret or something more {i}romance{/i} connected."
 
     "Sylvian" "As for the bouquets, I’ll hold back as you requested, but I confess that abstaining from the poems might prove to be a more difficult task."
@@ -1432,8 +1437,10 @@ label selection_6_1:
 
     Lars "Let’s save that talk for later, per your wish then. Whenever you feel ready to share, I’ll be here to listen."
 
+    show sylvian blush
     "Sylvian" "You have my thanks, Lars."
 
+    show sylvian
     hide lars
     Lars "His sincerity and genuine care touch my heart, leaving me with a mix of emotions and questions that I know will find answers in due time. For now, I’ll cherish this moment and the promise he’s made."
 
@@ -1446,47 +1453,60 @@ label selection_6_2:
     hide lars
     Lars "I decide it’s best to approach Sir Claude first since Master’s not currently in a state to discuss the matter. Sir Claude tends to be more forthright with his answers, and I believe this is the better choice."
 
-    show lars blush at left
+    show lars  at left
     Lars "Why did you mention a ring, Sir Claude? I feel like you might be taking the teasing a bit too far today"
 
+    show claude happy
     Claude "Oh, Captain, why would you ever think that? After all, you did say you could wear it, didn’t you?"
 
     Lars "I didn’t exactly say that but-"
 
+    show claude
     Claude "Need I remind you about Master Sylvian’s gifts?"
 
+    show lars  at left
     Lars "Master Sylvian’s gifts are purely gestures of appreciation though. Nevertheless, I can’t deny my suspicions about a matching set of rings. After all, they’re mostly for proposals or offering them to a significant other."
 
+    show lars blush at left
     Lars "Although… some human passengers mentioned gifting rings as accessories, is that what you meant? Then-"
 
     Claude "Maybe it’s too soon for you to understand me, Captain, but you should know this…"
 
+    show claude serious
     Claude "You could say the reason I’m suddenly giving you these rings is because of Boss Sylvian over there. I’ve noticed that he’s been getting {i}too close{/i} to you recently, and it’s making me-"
 
+    show claude blush
+    show sylvian serious
     hide lars
     Lars "Claude takes a brief moment to brush his hand through his hair, his intense gaze never leaving me. It’s as if he’s sending a signal for me to pay close attention to what he’s about to reveal."
 
+    show claude happy
     show lars blush at left
     Claude "I don’t like the thought of losing what I’ve set my sights on to someone else, especially when I’ve been showing my intentions to you all this time."
 
+    show lars  at left
     Lars "So, it’s just a competition to you? A rivalry to see who can get closest to me and then revel in the feeling of winning?"
 
+    show claude shocked
     hide lars
     Lars "I notice that my statement catches Claude off guard, causing his next sentence to come out in a stammer."
 
-    show lars blush at left
+    show lars  at left
     Claude "T-that’s not what I meant…"
 
     hide lars
     Lars "He takes a deep breath, preparing himself as if he’s about to reveal a significant secret."
 
-    show lars blush at left
+    show claude blush
+    show lars  at left
     Claude "I do have {i}special{/i} feelings for you, Captain. But you know how I’ve always been hesitant about settling down. It’s a personal struggle that I’m trying to come to terms with, but I can’t openly share all of it here with {i}everyone else{/i}."
 
     Lars "What do you mean by special feelings-"
 
+    show claude happy
     Claude "Why don’t we continue this conversation somewhere private, just the two of us? I’ll truly open up and explain my intentions. Please believe me when I say I have no plans to play with your feelings."
 
+    show claude blush
     Claude "My interest in you is genuine, but it’s …. difficult for me to express myself and keep my emotions anchored when my heart always yearns for new adventures and distant horizons. Not to mention, Boss Sylvian…"
 
     hide lars
@@ -1494,24 +1514,29 @@ label selection_6_2:
 
     Lars "I nod, silently agreeing to have this crucial conversation in a more intimate setting."
 
-    show lars blush at left
+    show lars  at left
     Lars "…"
 
     Lars "Understood, Sir Claude. While I can’t say I’m entirely satisfied, I won’t press you further."
 
     Lars "Just know that I’m open to hearing your explanations and understanding your feelings whenever you’re ready to share them whether personal or more {i}romance{/i} related."
 
+    show claude
     Claude "Thank you, Captain. I promise I’ll tell you later, and you can count on me to keep that promise. I might even add it to the keepsake I’ll give you later on."
 
+    show lars serious at left
     Lars "No rings! I don’t want to be burdened with uncertain feelings. I won’t let myself be strung along especially since I need to keep my mind sharp for the passengers. What would happen if I were to be distracted and-"
 
+    show lars  at left
     Claude "What about your necklace? Why don’t I promise on that instead?"
 
+    show lars blush at left
     Lars "Uhm…I guess that’s okay."
 
     hide lars
     Lars "Suddenly, Claude closes in, giving me a quick but warm hug. I catch a glimpse of what can only be a light blush on his cheeks as he holds me closer."
 
+    show claude happy
     show lars blush at left
     Claude "You mean a lot to me, Captain, and I don’t want to rush or pressure you. When the time is right, I’ll share everything with you, and I hope you’ll understand."
 
@@ -1524,6 +1549,8 @@ label selection_6_2:
 
 label google_test_6:
 
+    show sylvian
+    show claude
     show lars blush at left
     "Rory" "Let’s keep moving on, shall we?"
 

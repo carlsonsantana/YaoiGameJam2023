@@ -22,6 +22,9 @@ transform more_right:
 transform bg_size:
     zoom 0.75
 
+transform market_bg_size:
+    zoom 1.5
+
 transform char_size:
     zoom 0.75
 
