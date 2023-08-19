@@ -1563,7 +1563,7 @@ label selection_6_2:
 
 label google_test_6:
 
-    show sylvian
+    show sylvian behind rory
     show claude
     show lars  at left
     show lars  at left
@@ -1610,16 +1610,21 @@ label google_test_6:
         show claude
         "Sylvian" "I think it’s time to stop teasing Lars, Claude. Let’s give him some space and respect his feelings."
 
+        show claude shocked
         hide lars
         Lars "I can see Sir Claude making a stupefied face due to Master Sylvian’s interference."
 
         Lars "Meanwhile, Master Sylvian regards me with a kind look, silently assuring me that he has my back."
 
+        show sylvian blush
+        show lars blush at left
         Lars "He reaches out and gently rubs my ears, soothing my embarrassment as my ears must have perked up."
 
-        show lars  at left
+        show lars blush at left
         Lars "That’s right, listen to Master. He is far better at understanding my cues and emotions than you."
 
+        show claude happy
+        show lars  at left
         hide lars
         Lars "Sir Claude puts on an even brighter smile, and I can’t help but wonder if it’s a display of sarcasm or a mental competition to outwit us both. Soon enough, he lets out a light sigh, seemingly contemplating his actions."
 
@@ -1628,16 +1633,22 @@ label google_test_6:
         show lars  at left
         Claude "…fine, I suppose. Can’t go against out esteemed Captain’s wishes."
 
+        show claude
         Claude "But you can’t be serious when saying that Master Sylvian reads you better than I do."
 
+        show sylvian blush
+        show lars serious at left
         Lars "I am, Master Sylvian has shown genuine care and consideration for my feelings. However, with you, it often feels like everything is taken as a joke or a competition!"
 
+        show lars  at left
         hide lars
         Lars "As if prompted by my sudden outburst, Master Sylvian steps in with his own words of support."
 
+        show sylvian
         show lars  at left
         "Sylvian" "Claude, it’s time to stop with the teasing. Lars and I have made a promise, and I don’t want you to interfere in a way that jeopardizes our relationship, especially if it goes in a direction you may not be prepared for."
 
+        show claude serious
         Claude "Fine, fine. I’ll back off for now. Just know that I’m not giving up."
 
         "Sylvian" "I think it’s best to give up entirely, never use someone’s weaknesses as a weapon against them, for it reflects your own character more than theirs, Claude."
@@ -1655,21 +1666,27 @@ label google_test_6:
         hide lars
         Lars "…{i}my{/i} Captain???"
 
-        show lars  at left
+        show lars blush at left
+        show lars blush at left
         Claude "Yet, you only ever have your flowers to bear your secrets with."
 
         Claude "I think it’s about time for your head to equally start fuming like little Rory over here."
 
+        show rory angry
         "Rory" "Hmph!"
 
+        show rory
         Claude "Not to mention, isn’t it time for you to admit to Lars that you have a crush-"
 
+        show sylvian serious
+        show claude blush
         hide lars
         Lars "But before he has a chance to finish his sentence, Master Sylvian’s voice cuts through."
 
-        show lars  at left
+        show lars blush at left
         "Sylvian" "Claude."
 
+        show claude
         "Sylvian" "I treasure you as a guild member of “Custodes Sylvae,” but even still, your mouth resembles that of a snapdragon during moments like this."
 
         "Sylvian" "Gracefully deceptive petals that press together to bloom in beauty."
@@ -1682,6 +1699,10 @@ label google_test_6:
 
         "Sylvian" "-are overdue for the both of us."
 
+        show lars  at left
+        show claude
+        show sylvian
+        show rory
     if selection_5_answer == 2:
         show lars blush at left
         Claude "Who knows what stage our relationship will reach in the very near future, especially considering our promise."
@@ -1738,7 +1759,7 @@ label google_test_6:
     Lars "With a deep breath, I project my voice, shouting out an announcement that echoes through the crowd."
 
     show lars  at left
-    Lars "HEY EVERYONE, I’M BACK! THE PUPPET SHOW IS GOING TO START SOON!"
+    Lars "{size=+30}HEY EVERYONE, I’M BACK! THE PUPPET SHOW IS GOING TO START SOON!"
 
     hide lars
     Lars "The moment I finish my announcement, I am instantly bombarded by a swarm of enthusiastic children. They run towards me, their voices rising in a crescendo of excitement as they vie for my attention."
@@ -1754,14 +1775,16 @@ label google_test_6:
 
     "Random" "Lars! Don’t forget we still have our race for the afternoon. You have to help me win, please!"
 
-    Lars "Haha this all takes me back to the old days to back when I was a kid."
+    Lars "Haha this all takes me back to the old days back when I was a kid."
 
     "Sylvian" "I hope I’m not bothering you in the middle of your affairs, Lars."
 
     Lars "Of course, not Master, this would be the perfect time to show off my skills to you in person. I’m the fastest amongst everyone here after all."
 
+    show claude happy
     Claude "Hmm, how typical of our dear captain to compare himself with mere children."
 
+    show claude
     Lars "You could leave for all I care, Sir Claude. I’m still upset because of the way you teased me last time."
 
     hide lars
@@ -1774,10 +1797,13 @@ label google_test_6:
 
     Claude "You won’t be able to show off your talents to anyone when you spend your time with these childish competitions. How will you be able to prove yourself to the elite if you only ever rival with kids?"
 
+    show lars serious at left
     Lars "Not everything is a contest to prove oneself, Sir Claude."
 
+    show lars  at left
     Lars "Sometimes, I can be content with just playing around and enjoying the moment as is. Isn’t that right, Master?"
 
+    show claude serious
     "Sylvian" "Success without heart can be empty and hollow, Claude. I treasure you as a guild member of “Custodes Sylvae,” but even still, I worry for the sake of your dependence on wanting to carry yourself differently from your family legacy."
 
     hide lars
@@ -1796,14 +1822,17 @@ label google_test_6:
 
     Lars "Sir Claude, this is not the right time or place to delve into Master’s past."
 
+    show sylvian serious
     "Sylvian" "Hold on Lars, I want to hear the rest of what Claude has to say."
 
     Lars "If you say so…"
 
     Claude "Though I value your presence in our guild and your support of my endeavors {i}Boss{/i}, you have let go of all your desires and merely follow the direction that your flowery path takes you."
 
+    show claude happy
     Claude "But, you see, if you’re not determined about what you want, someone else could come and achieve your dream instead."
 
+    show claude
     hide lars
     Lars "I catch Sir Claude throwing a peek at me but he quickly switches his focus back to Master Sylvian."
 
@@ -1828,6 +1857,7 @@ label google_test_6:
 
     Lars "…"
 
+    show sylvian
     "Sylvian" "What you’re saying holds grains of truth, Claude."
 
     "Sylvian" "Without love or ambition, our lives languish in the shadows of mediocrity."
@@ -1844,34 +1874,41 @@ label google_test_6:
 
     "Sylvian" "In embracing simplicity, we find contentment, and in cherishing the ordinary, we discover the beauty of a life unburdened by the pressures of relentless ambition."
 
+    show claude serious
     Claude "Aren’t you saying that only because you were burnt out and having nothing else to pursue?"
 
     Claude "If you always treasured this so-called ‘contentment’ why did you decide to spread your name onto society as the top academic of Divonia?"
 
     Claude "You could have simply stuck to the bottom ranks and let your life aimlessly pass by without ever achieving something or {i}falling in love{/i}."
 
-    hide lars
-    Lars "I feel my fur stand on edge at the sudden statement, and I’m not confident that I managed to hide my expression well."
+    if selection_5_answer == 1:
+        hide lars
+        Lars "I feel my fur stand on edge at the sudden statement, and I’m not confident that I managed to hide my expression well."
 
-    show lars  at left
-    Lars "What’s he talking about, Master?"
+        show lars  at left
+        Lars "What’s he talking about, Master?"
 
-    Lars "You’re in love with someone? Is that part of the secret you wanted to mention to me?"
+        Lars "You’re in love with someone? Is that part of the secret you wanted to mention to me?"
 
-    hide lars
-    Lars "The sudden statement surprises me, but I aim to not let it show."
+    if selection_5_answer == 2:
+        hide lars
+        Lars "The sudden statement surprises me, but I aim to not let it show."
 
-    show lars  at left
-    Lars "I’ve been so busy with Sir Claude that I didn’t even notice. You’ve fallen for someone, Master?"
+        show lars  at left
+        Lars "I’ve been so busy with Sir Claude that I didn’t even notice. You’ve fallen for someone, Master?"
 
-    Lars "That’s exciting! When are you going to introduce us?"
+        show lars blush at left
+        Lars "That’s exciting! When are you going to introduce us?"
 
+        show lars  at left
+    show claude serious
     Claude "Focus here Captain, we can talk about that later. Unless you’ve already taken someone’s side?"
 
     Lars "Uhm, you’re both people that I deeply admire and I don’t really want to-"
 
     Claude "Don’t? or can’t think up of your personal opinion?"
 
+    show claude
     menu:
         "Sylvian" "Pay him no mind, he’s just upset for himself."
 
