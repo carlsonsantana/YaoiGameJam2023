@@ -257,20 +257,74 @@ screen quick_menu():
 
     if quick_menu:
 
-        hbox:
-            style_prefix "quick"
+        frame:
+            background None
 
-            xalign 0.5
             yalign 1.0
+            xpos 1264
 
-            textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+            hbox:
+                style_prefix "quick"
+                ypos -4
+
+                textbutton _(""):
+                    background "gui/textbox/save.png"
+                    xsize 79
+                    ysize 71
+                    action Rollback()
+                
+                textbutton _(""):
+                    background "gui/textbox/load.png"
+                    xsize 63
+                    ysize 71
+                    action ShowMenu("load")
+                
+                textbutton _(""):
+                    background "gui/textbox/auto.png"
+                    xsize 55
+                    ysize 71
+                    action Preference("auto-forward", "toggle")
+                
+                textbutton _(""):
+                    background "gui/textbox/skip.png"
+                    xsize 75
+                    ysize 71
+                    action Skip() alternate Skip(fast=True, confirm=True)
+                
+                textbutton _(""):
+                    background "gui/textbox/history.png"
+                    xsize 62
+                    ysize 71
+                    action ShowMenu('history')
+                
+                textbutton _(""):
+                    background "gui/textbox/prefs.png"
+                    xsize 78
+                    ysize 71
+                    action ShowMenu('preferences')
+                
+                textbutton _(""):
+                    background "gui/textbox/main_menu.png"
+                    xsize 55
+                    ysize 71
+                    action MainMenu()
+                
+            # textbutton _("History") action ShowMenu('history')
+            # textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
+            # textbutton _("Auto") action Preference("auto-forward", "toggle")
+            # textbutton _("Save") action ShowMenu('save')
+            # textbutton _("Q.Save") action QuickSave()
+            # textbutton _("Q.Load") action QuickLoad()
+            # textbutton _("Prefs") action ShowMenu('preferences')
+# action MainMenu()
+            # textbutton _("Back") action Rollback()
+            # textbutton _("History") action ShowMenu('history')
+            # textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
+            # textbutton _("Auto") action Preference("auto-forward", "toggle")
+            # textbutton _("Save") action ShowMenu('save')
+            # textbutton _("Q.Save") action QuickSave()
+            # textbutton _("Q.Load") action QuickLoad()
+            # textbutton _("Prefs") action ShowMenu('preferences')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
