@@ -142,7 +142,7 @@ class GoogleMeta:
             line_list[i] = f"{indent}{line_list[i]}\n\n"
         return line_list
 
-    def detect_command(self, paragraph, entry, renpy_lines):
+    def detect_command(self, paragraph, entry, renpy_lines, indent=INDENT):
         """
         Side effect with renpy_lines
         :return: True if skip
@@ -168,10 +168,10 @@ class GoogleMeta:
                 self.emote = ""
             else:
                 self.emote = lars_emote
-            renpy_lines.append(f"{GoogleMeta.INDENT}show lars {self.emote} at left\n")
+            renpy_lines.append(f"{indent}show lars {self.emote} at left\n")
         elif lcase.startswith("$"):
             # preserve literal code casing
-            renpy_lines.append(f"{GoogleMeta.INDENT}{og}\n")
+            renpy_lines.append(f"{indent}{og}\n")
         else:
             command = lcase.strip()
             if "bg" in command or "time" in command:
@@ -179,7 +179,7 @@ class GoogleMeta:
                 pass
             elif "show" in command and "lars" not in command:
                 pass
-            renpy_lines.append(f"{GoogleMeta.INDENT}{command}\n")
+            renpy_lines.append(f"{indent}{command}\n")
         return True
 
     def parse_file(self, file_content, dest):
@@ -269,7 +269,7 @@ label selection_8_loop:\n""")
 
                     # write down our options
 
-                    renpy_lines.insert(0, f"default {selection_title}_answer = 0\n\n")
+                    renpy_lines.insert(0, f"default {selection_title}_answer = 1\n\n")
                     for index, option_index in enumerate(option_start_index_list):
                         option_entry = google_json[option_index]
                         option_text = GoogleMeta.extract_element(option_entry)
@@ -349,6 +349,8 @@ label selection_8_loop:\n""")
                         # run until we find endif
                         for if_index in range(index + 1, len(google_json)):
                             if_entry = google_json[if_index]
+                            if_paragraph = if_entry["paragraph"]
+
                             if_text = GoogleMeta.extract_element(if_entry)
 
                             if if_entry["paragraph"]["paragraphStyle"]["namedStyleType"].startswith("HEADING_6") \
@@ -356,6 +358,8 @@ label selection_8_loop:\n""")
                                 skip_index = if_index
                                 break
 
+                            if self.detect_command(if_paragraph, if_entry, renpy_lines, if_indent):
+                                continue
                             text_content = self.extract_renpy_line(if_entry, if_indent)
                             if len(text_content) == 0:
                                 continue
