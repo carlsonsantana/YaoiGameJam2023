@@ -28,6 +28,8 @@ label google_test_1:
     $ quick_menu = False
 
     scene bg black
+    $ cf(3, "opening_scene.mp3")
+
     pause 1
     scene bg white with dissolve
     scene bg default at bg_size with dissolve
@@ -660,6 +662,8 @@ label google_test_2:
     Lars "As the sole passengers aboard the dragon ship, guiding Spotsy in her safe descent is a seamless task."
 
     $ quick_menu = False
+
+    $ cf(3, "bg2.mp3")
 
     scene bg white with dissolve
     scene bg flowers at bg_size with dissolve
@@ -1428,6 +1432,8 @@ label google_test_4:
     Lars "Hopefully, it’ll be another day without any troubles here in Divonia and ‘Custodes Sylvae’."
 
     $ quick_menu = False
+
+    $ cf(3, "bg3.mp3")
 
     scene bg white with dissolve
     scene bg market with dissolve
@@ -2323,6 +2329,8 @@ label selection_7_2:
 
 label google_test_7:
 
+    $ cf(3, "bg4.mp3")
+
     hide lars
     show lars  at left
     Lars "While I was engrossed in our conversation, Rory approaches us with a somewhat worried expression etched on her face."
@@ -2414,6 +2422,8 @@ label google_test_7:
     hide lars
     show lars serious at left
     Lars "As the tension in the air grows, I sense the presence of an unknown observer. It sends a chill down my spine, but with my three trusted companions by my side, I know we’ll face this new challenge together."
+
+    $ cf(3, "bg5.mp3")
 
     hide lars
     show lars serious at left
@@ -2556,6 +2566,8 @@ label google_test_7:
     "Rory" "Isn’t this the same case of yelling out your attack name before it’s your turn to fight?"
 
     show claude
+    $ cf(3, "bg6.mp3")
+
     hide lars
     show lars  at left
     jump selection_8_loop
@@ -2960,6 +2972,8 @@ label selection_8_4:
     return
 
 label google_test_8:
+
+    $ cf(3, "bg7.mp3")
 
     Lars "I think we’re done with the questions for now."
 
@@ -3629,6 +3643,8 @@ label selection_9_2:
 
 label google_test_9:
 
+    $ cf(3, "bg9.mp3")
+
     Lars "Alright everyone, if he truly is as dangerous as we all think, then we should try to get to the root of this issue and make sure he doesn’t use the time freeze artifact again."
 
     show zephyr at more_right with move
@@ -3863,12 +3879,14 @@ label google_test_9:
     show lars serious at left
     Lars "It looks like I’m stuck in a dilemma. Who will I choose as my partner?"
 
-    "" "To be continued..."
-    
+    $ cf(3, "bg11.mp3")
+
+    "" "To be continued…"
+
     pause 1
     $ quick_menu = False
+
     scene bg black with dissolve
     pause 1
     scene bg ending with dissolve
     call screen ending_screen
-

@@ -1728,4 +1728,4 @@ screen ending_screen:
             xpos 1118
             ypos 896
             foreground "gui/ending/ending_link.jpeg"
-            action OpenURL("https://deniz-g-lerosi.itch.io/love-amidst-the-timeless-rift")
+            action [OpenURL("https://deniz-g-lerosi.itch.io/love-amidst-the-timeless-rift"), MainMenu()]
