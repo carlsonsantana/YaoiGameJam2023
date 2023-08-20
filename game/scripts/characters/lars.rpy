@@ -1,4 +1,4 @@
-define Lars = Character("Lars", image="lars")
+define Lars = Character("Lars", color="#C82727")
 
 # image side lars = "lars.png"
 # image side lars blush = "lars blush.png"

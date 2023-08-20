@@ -117,6 +117,7 @@ class GoogleMeta:
                 if self.lars_mode in [GoogleMeta.LARS_UNKNOWN, GoogleMeta.LARS_NORMAL]:
                     result.append(f"{indent}hide lars\n")
                     self.lars_mode = GoogleMeta.LARS_NARRATION
+            else:
                 if self.lars_mode in [GoogleMeta.LARS_UNKNOWN, GoogleMeta.LARS_NARRATION]:
                     # todo: figure out scaling
                     result.append(f"{indent}show lars {self.emote} at left\n")

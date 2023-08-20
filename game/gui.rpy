@@ -61,6 +61,8 @@ define gui.text_font = "fonts/GeorgiaPro-CondRegular.ttf"
 
 ## The font used for character names.
 define gui.name_text_font = "fonts/Nickainley-Normal.otf"
+define default_name_text_color = "#38B6FF"
+define gui.name_text_color = default_name_text_color
 
 ## The font used for out-of-game text.
 define gui.interface_text_font = "fonts/GeorgiaPro-CondRegular.ttf"
