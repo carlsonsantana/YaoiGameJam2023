@@ -44,3 +44,5 @@ secrets/
 token.json
 
 *.kra
+*.kra~
+*.png~

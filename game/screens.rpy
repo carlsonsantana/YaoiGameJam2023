@@ -478,7 +478,7 @@ screen main_menu():
             xsize 460
             ysize 281
             # todo: help?
-            action ShowMenu("Help")
+            # action ShowMenu("Help")
 
 
 style main_menu_frame is empty
@@ -1711,3 +1711,21 @@ style slider_vbox:
 style slider_slider:
     variant "small"
     xsize 900
+
+## Custom screen
+
+## Ending screen
+
+screen ending_screen:
+
+    style_prefix "ending_screen"
+
+    frame:
+        background None
+        textbutton _(""):
+            xsize 146
+            ysize 66
+            xpos 1118
+            ypos 896
+            foreground "gui/ending/ending_link.jpeg"
+            action OpenURL("https://deniz-g-lerosi.itch.io/love-amidst-the-timeless-rift")

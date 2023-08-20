@@ -1,15 +1,17 @@
 transform flip:
-    linear 0.1 xzoom -1.0
+    linear 0.2 xzoom -1.0
 
 transform unflip:
-    linear 0.1 xzoom 1.0
-    pause 0.15
+    linear 0.2 xzoom 1.0
 
 transform flip_instant:
     xzoom -1.0
 
 transform zephyr_intro:
     xalign 0.95
+    yalign 0.5
+
+transform zephyr_lower:
     yalign 0.5
 
 transform slight_left:

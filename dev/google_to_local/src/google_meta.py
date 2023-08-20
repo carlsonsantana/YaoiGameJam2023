@@ -108,6 +108,8 @@ class GoogleMeta:
         char_lcase = character.lower()
         if "name_selection" in char_lcase:
             return [f"{indent}call name_mc(\"{dialog_tag}\")\n\n"]
+        if "story" in char_lcase:
+            character = '""'
         # endregion
 
         if self.auto:
@@ -115,7 +117,6 @@ class GoogleMeta:
                 if self.lars_mode in [GoogleMeta.LARS_UNKNOWN, GoogleMeta.LARS_NORMAL]:
                     result.append(f"{indent}hide lars\n")
                     self.lars_mode = GoogleMeta.LARS_NARRATION
-            else:
                 if self.lars_mode in [GoogleMeta.LARS_UNKNOWN, GoogleMeta.LARS_NARRATION]:
                     # todo: figure out scaling
                     result.append(f"{indent}show lars {self.emote} at left\n")
