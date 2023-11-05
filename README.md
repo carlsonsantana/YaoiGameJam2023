@@ -97,3 +97,9 @@ For more details, check out [build.md](dev%2Fbuild%2Fbuild.md)
 ```bash
 dev/build/build.sh 
 ```
+
+Delete build folder
+
+```bash
+rm -rf ../love_amidst_the_timeless_rift-1.0-dists/
+```

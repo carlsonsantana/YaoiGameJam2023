@@ -204,13 +204,27 @@ style input:
 ## and action fields.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#choice
+##
+## Additional reference: Niwens at https://www.reddit.com/r/RenPy/comments/tvq82x/is_there_a_way_to_change_the_choice_button_at/i3bbe5x/
 
 screen choice(items):
     style_prefix "choice"
 
     vbox:
+        $ idx = 0
+        $ choice_len = len(items)
         for i in items:
-            textbutton i.caption action i.action
+            $ idx = idx + 1
+            textbutton i.caption:
+                action i.action
+                xsize 1290
+                # if idx > choice_len - 1:
+                #     # last
+                #     idle_background "gui/button/choice_idle_background_last.png"
+                #     hover_background "gui/button/choice_hover_background_last.png"
+                # else:
+                yminimum 134
+                ypadding 26
 
 
 style choice_vbox is vbox
@@ -243,20 +257,74 @@ screen quick_menu():
 
     if quick_menu:
 
-        hbox:
-            style_prefix "quick"
+        frame:
+            background None
 
-            xalign 0.5
             yalign 1.0
+            xpos 1264
 
-            textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+            hbox:
+                style_prefix "quick"
+                ypos -4
+
+                textbutton _(""):
+                    background "gui/textbox/save.png"
+                    xsize 79
+                    ysize 71
+                    action Rollback()
+                
+                textbutton _(""):
+                    background "gui/textbox/load.png"
+                    xsize 63
+                    ysize 71
+                    action ShowMenu("load")
+                
+                textbutton _(""):
+                    background "gui/textbox/auto.png"
+                    xsize 55
+                    ysize 71
+                    action Preference("auto-forward", "toggle")
+                
+                textbutton _(""):
+                    background "gui/textbox/skip.png"
+                    xsize 75
+                    ysize 71
+                    action Skip() alternate Skip(fast=True, confirm=True)
+                
+                textbutton _(""):
+                    background "gui/textbox/history.png"
+                    xsize 62
+                    ysize 71
+                    action ShowMenu('history')
+                
+                textbutton _(""):
+                    background "gui/textbox/prefs.png"
+                    xsize 78
+                    ysize 71
+                    action ShowMenu('preferences')
+                
+                textbutton _(""):
+                    background "gui/textbox/main_menu.png"
+                    xsize 55
+                    ysize 71
+                    action MainMenu()
+                
+            # textbutton _("History") action ShowMenu('history')
+            # textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
+            # textbutton _("Auto") action Preference("auto-forward", "toggle")
+            # textbutton _("Save") action ShowMenu('save')
+            # textbutton _("Q.Save") action QuickSave()
+            # textbutton _("Q.Load") action QuickLoad()
+            # textbutton _("Prefs") action ShowMenu('preferences')
+# action MainMenu()
+            # textbutton _("Back") action Rollback()
+            # textbutton _("History") action ShowMenu('history')
+            # textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
+            # textbutton _("Auto") action Preference("auto-forward", "toggle")
+            # textbutton _("Save") action ShowMenu('save')
+            # textbutton _("Q.Save") action QuickSave()
+            # textbutton _("Q.Load") action QuickLoad()
+            # textbutton _("Prefs") action ShowMenu('preferences')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -356,15 +424,15 @@ screen main_menu():
     add gui.main_menu_background
 
     ## This empty frame darkens the main menu.
-    frame:
-        style "main_menu_frame"
+    #frame:
+    #    style "main_menu_frame"
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
-    use navigation
+    # use navigation
 
     if gui.show_name:
-
+        
         vbox:
             style "main_menu_vbox"
 
@@ -373,6 +441,44 @@ screen main_menu():
 
             text "[config.version]":
                 style "main_menu_version"
+    
+    # Based on TellerFarsight at https://lemmasoft.renai.us/forums/viewtopic.php?t=44710
+    style_prefix "main_menu"
+    hbox:
+        xpos 20
+        ypos 817
+
+        textbutton _(""):
+            background "gui/button/start.png"
+            xsize 386
+            ysize 210
+            action Start()
+        
+        textbutton _(""):
+            background "gui/button/load.png"
+            xpos 28
+            ypos -60
+            xsize 460
+            ysize 281
+            action ShowMenu("load")
+        
+        textbutton _(""):
+            background "gui/button/preferences.png"
+            xpos 132
+            ypos -22
+            xsize 460
+            ysize 281
+            # todo: preferences here in action!
+            action ShowMenu("preferences")
+        
+        textbutton _(""):
+            background "gui/button/help.png"
+            xpos 204
+            ypos 18
+            xsize 460
+            ysize 281
+            # todo: help?
+            # action ShowMenu("Help")
 
 
 style main_menu_frame is empty
@@ -1605,3 +1711,21 @@ style slider_vbox:
 style slider_slider:
     variant "small"
     xsize 900
+
+## Custom screen
+
+## Ending screen
+
+screen ending_screen:
+
+    style_prefix "ending_screen"
+
+    frame:
+        background None
+        textbutton _(""):
+            xsize 146
+            ysize 66
+            xpos 1118
+            ypos 896
+            foreground "gui/ending/ending_link.jpeg"
+            action [OpenURL("https://deniz-g-lerosi.itch.io/love-amidst-the-timeless-rift"), MainMenu()]

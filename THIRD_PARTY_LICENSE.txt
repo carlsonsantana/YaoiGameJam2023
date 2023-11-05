@@ -11,3 +11,69 @@
  Github: https://github.com/SoDaRa/Kinetic-Text-Tags
  itch.io: https://wattson.itch.io/kinetic-text-tags
  Forum Post: https://lemmasoft.renai.us/forums/viewtopic.php?f=51&t=60527&sid=75b4eb1aa5212a33cbfe9b0354e5376b
+
+============================================
+bg2.mp3
+Beautiful Classical Guitar Apreggio loop
+by Soundset [Creative Commons Music]
+Link: https://soundcloud.com/sound-set_com/beautiful-classical-guitar-arpeggio-loop-creative-commons-free-download?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
+
+============================================
+bg3.mp3
+Beautiful Classical Guitar Loop ( Creative Commons )
+by Soundset [Creative Commons Music]
+Link: https://soundcloud.com/sound-set_com/beautiful-classical-guitar-loop-creative-commons-free-download?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
+
+============================================
+bg4.mp3
+[Creative Commons Music] CLASSICAL MAJESTIC SYMPHONIC CHOIRS BACKGROUND MUSIC 001
+by Royalty Free Music (FREE DOWNLOAD)
+Link: https://soundcloud.com/royaltyfreebackgroundmusic/creative-commons-music-1930?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
+
+============================================
+bg5.mp3
+[Creative Commons Music] CINEMATIC MAGICAL SYMPHONIC CHOIRS ATMOSPHERE BACKGROUND MUSIC 010
+by Royalty Free Music (FREE DOWNLOAD)
+Link: https://soundcloud.com/royaltyfreebackgroundmusic/creative-commons-music-1881?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
+
+============================================
+bg6.mp3
+Mechanical Birds (Creative Commons) FREE chillout background
+by Unwritten Stories
+Link: https://soundcloud.com/unwritten-stories/mechanical-birds-creative-commons-free-ambientdrone-music?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
+
+============================================
+bg7.mp3
+[CREATIVE COMMONS MUSIC] CINEMATIC PEACEFUL FLUTE NATURE ANIMAL DOCUMENTARY SEQUENCE CUE 002
+by Royalty Free Music (FREE DOWNLOAD)
+Link: https://soundcloud.com/royaltyfreebackgroundmusic/creative-commons-music-4626?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
+
+============================================
+bg8.mp3
+[Creative Commons Music] CINEMATIC LAID BACK SYMPHONIC ORCHESTRA BACKGROUND MUSIC
+by Royalty Free Music (FREE DOWNLOAD)
+Link: https://soundcloud.com/royaltyfreebackgroundmusic/creative-commons-music-1871?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
+
+============================================
+bg9.mp3
+Edge of Remorse (CC-BY) 
+by Scott Buckley
+Link: https://soundcloud.com/scottbuckley/edge-of-remorse-creative-commons?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
+
+============================================
+bg10.mp3
+[Creative Commons Music] CINEMATIC A BEAUTIFUL SOUNDSCAPE ATMOSPHERE BACKGROUND MUSIC 
+by Royalty Free Music (FREE DOWNLOAD)
+Link: https://soundcloud.com/royaltyfreebackgroundmusic/creative-commons-music-3755?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
+
+============================================
+bg11.mp3
+Sad Classical Guitar Loop ( Creative Commons ) | Free Download
+by Soundset [Creative Commons Music] 
+Link: https://soundcloud.com/sound-set_com/sad-classical-guitar-loop-creative-commons-free-download?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
+
+============================================
+Crossfade utility function
+https://fuckyeahrenpy.tumblr.com/post/88995495811/moley-face-i-just-figured-id-post-some-code-i
+https://pastebin.com/Cn7xMcu0
+https://blog.argentgames.co/post/2020-11-16-renpy-crossfade-music/

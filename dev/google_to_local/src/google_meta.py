@@ -28,6 +28,8 @@ class GoogleMeta:
         self.lars_mode = GoogleMeta.LARS_UNKNOWN
         self.auto = True
         self.force_hide_lars = False
+        self.ignore = False
+        self.emote = ""
 
     def run_to_local(self):
         service = GoogleService()
@@ -49,7 +51,12 @@ class GoogleMeta:
 
         text_content = ""
         for element in entry["paragraph"]["elements"]:
-            text_content += element["textRun"]["content"]
+            new_content = element["textRun"]["content"]
+
+            if "italic" in element["textRun"]["textStyle"]:
+                new_content = f"{{i}}{new_content}{{/i}}"
+
+            text_content += new_content
         return text_content
 
     def extract_renpy_line(self, entry, indent):
@@ -95,6 +102,16 @@ class GoogleMeta:
             character = f"\"{character}\""
 
         dialog_tag = dialog_tag.replace('"', '\\"')
+        dialog_tag = dialog_tag.replace('%', '\%')
+
+        # region name selection
+        char_lcase = character.lower()
+        if "name_selection" in char_lcase:
+            return [f"{indent}call name_mc(\"{dialog_tag}\")\n\n"]
+        if "story" in char_lcase:
+            character = '""'
+        # endregion
+
         if self.auto:
             if "narration" in char_details:
                 if self.lars_mode in [GoogleMeta.LARS_UNKNOWN, GoogleMeta.LARS_NORMAL]:
@@ -102,18 +119,21 @@ class GoogleMeta:
                     self.lars_mode = GoogleMeta.LARS_NARRATION
             else:
                 if self.lars_mode in [GoogleMeta.LARS_UNKNOWN, GoogleMeta.LARS_NARRATION]:
-                    result.append(f"{indent}show lars at left\n")
+                    # todo: figure out scaling
+                    result.append(f"{indent}show lars {self.emote} at left\n")
                     self.lars_mode = GoogleMeta.LARS_NORMAL
 
             # todo: bad!
             if self.lars_mode == GoogleMeta.LARS_NARRATION:
+                # if "mc" not in character.lower():
+                #     character = "Lars"
                 character = "Lars"
 
         # region possible location of code generation
         # todo: escape double quote?
         # todo: add show character here?
         if self.lars_mode == GoogleMeta.LARS_NARRATION:
-            dialog_tag = f"({dialog_tag})"
+            dialog_tag = f"{dialog_tag}"
 
         result.append(f"{indent}{character} \"{dialog_tag}\"\n\n")
         return result
@@ -123,6 +143,46 @@ class GoogleMeta:
         for i in range(len(line_list)):
             line_list[i] = f"{indent}{line_list[i]}\n\n"
         return line_list
+
+    def detect_command(self, paragraph, entry, renpy_lines, indent=INDENT):
+        """
+        Side effect with renpy_lines
+        :return: True if skip
+        :rtype: bool
+        """
+        if not paragraph["paragraphStyle"]["namedStyleType"].startswith("HEADING_6"):
+            return False
+
+        og = GoogleMeta.extract_element(entry)
+        lcase = og.lower()
+
+        if lcase.startswith("endif"):
+            pass  # ignore
+        elif lcase.startswith("auto on"):
+            self.auto = True
+        elif lcase.startswith("auto off"):
+            self.auto = False
+        elif lcase.startswith("ignore on"):
+            self.ignore = True
+        elif lcase.startswith("emote"):
+            lars_emote = lcase.split(" ")[-1].strip()
+            if lars_emote == "default":
+                self.emote = ""
+            else:
+                self.emote = lars_emote
+            renpy_lines.append(f"{indent}show lars {self.emote} at left\n")
+        elif lcase.startswith("$"):
+            # preserve literal code casing
+            renpy_lines.append(f"{indent}{og}\n")
+        else:
+            command = lcase.strip()
+            if "bg" in command or "time" in command:
+                # ignore
+                pass
+            elif "show" in command and "lars" not in command:
+                pass
+            renpy_lines.append(f"{indent}{command}\n")
+        return True
 
     def parse_file(self, file_content, dest):
         # get the file name and set as label
@@ -146,6 +206,14 @@ class GoogleMeta:
 
         for index, entry in enumerate(google_json):
 
+            if self.ignore:
+
+                lcase = GoogleMeta.extract_element(entry).lower()
+                if lcase.startswith("ignore off"):
+                    self.ignore = False
+
+                continue
+
             if index <= skip_index:
                 continue
 
@@ -168,47 +236,85 @@ class GoogleMeta:
 
                     # insert a menu tag before the last line
                     renpy_lines.insert(last_index, f"{GoogleMeta.INDENT}menu:\n")
+                    target_text = selection_title
+                    selection_title = selection_title.replace(" ", "_").strip().lower()
+
+                    # special case
+                    special_loop_case = False
+                    special_loop_var_list = []
+                    if selection_title.startswith("selection_8"):
+                        special_loop_case = True
+
+                        # todo: fix hard code
+                        renpy_lines.insert(last_index, """    jump selection_8_loop
+    return
+    
+label selection_8_loop:\n""")
 
                     # todo: find all options until we hit selection ending
                     option_start_index_list = []
+                    option_end_index_list = []
                     for option_index in range(index + 1, len(google_json)):
                         option_entry = google_json[option_index]
                         option_text = GoogleMeta.extract_element(option_entry)
 
                         if option_entry["paragraph"]["paragraphStyle"]["namedStyleType"].startswith("HEADING_3"):
+                            if len(option_start_index_list) != 0:
+                                option_end_index_list.append(option_index)
                             option_start_index_list.append(option_index)
                             # print("Options", GoogleMeta.extract_element(google_json[option_index]))
 
-                        if option_text.startswith(selection_title):
+                        if option_text.startswith(target_text):
+                            option_end_index_list.append(option_index)
                             skip_index = option_index
                             break
 
                     # write down our options
-                    selection_title = selection_title.replace(" ", "_").strip().lower()
-                    renpy_lines.insert(0, f"default {selection_title}_answer = 0\n\n")
+
+                    renpy_lines.insert(0, f"default {selection_title}_answer = 1\n\n")
                     for index, option_index in enumerate(option_start_index_list):
                         option_entry = google_json[option_index]
                         option_text = GoogleMeta.extract_element(option_entry)
-                        renpy_lines.append(f"{GoogleMeta.INDENT * 2}\"{option_text.strip()}\":\n")
+
+                        if special_loop_case:
+                            renpy_lines.append(
+                                f"{GoogleMeta.INDENT * 2}\"{option_text.strip()}\" if not selection_8_{index + 1}_done:\n")
+
+                            selection_check = f"{selection_title}_{index + 1}_done"
+                            special_loop_var_list.append(selection_check)
+                            renpy_lines.insert(0, f"default {selection_check} = False\n\n")
+                            renpy_lines.append(f"{GoogleMeta.INDENT * 3}$ {selection_check} = True\n")
+                        else:
+                            renpy_lines.append(f"{GoogleMeta.INDENT * 2}\"{option_text.strip()}\":\n")
+
                         renpy_lines.append(f"{GoogleMeta.INDENT * 3}$ {selection_title}_answer = {index + 1}\n")
-                        renpy_lines.append(f"{GoogleMeta.INDENT * 3}jump {selection_title}_{index + 1}\n\n")
+
+                        renpy_lines.append(f"{GoogleMeta.INDENT * 3}jump {selection_title}_{index + 1}\n")
+                        renpy_lines.append(f"{GoogleMeta.INDENT * 3}return\n\n")
+
+                    # at special_last_index
+                    if special_loop_case:
+                        renpy_lines.append(f"{GoogleMeta.INDENT}jump google_test_8\n\n")
 
                     # end the current block
                     partition_count += 1
                     self.lars_mode = GoogleMeta.LARS_UNKNOWN
                     renpy_lines.append(f"{GoogleMeta.INDENT}return\n\n")
 
-                    # write down the dialogs until we a heading (might be a bad idea)
-                    # todo: now
+                    # write down the dialogs until we see the next index end index
                     for index, option_start_index in enumerate(option_start_index_list):
                         renpy_lines.append(f"label {selection_title}_{index + 1}:\n\n")
+                        end_index = option_end_index_list[index]
 
                         for dialog_index in range(option_start_index + 1, len(google_json)):
-                            dialog_entry = google_json[dialog_index]
-
-                            if dialog_entry["paragraph"]["paragraphStyle"]["namedStyleType"].startswith("HEADING_"):
-                                # if header, stop!
+                            if dialog_index >= end_index:
+                                # if end, stop!
                                 break
+
+                            dialog_entry = google_json[dialog_index]
+                            dialog_paragraph = dialog_entry["paragraph"]
+                            if self.detect_command(dialog_paragraph, dialog_entry, renpy_lines):
+                                continue
 
                             text_content = self.extract_renpy_line(dialog_entry, GoogleMeta.INDENT)
 
@@ -216,7 +322,13 @@ class GoogleMeta:
                                 continue
 
                             renpy_lines.extend(text_content)
-                        renpy_lines.append(f"{GoogleMeta.INDENT}jump {label}_{partition_count}\n\n")
+
+                        # todo: jump to label instead
+                        if special_loop_case:
+                            renpy_lines.append(f"{GoogleMeta.INDENT}jump selection_8_loop\n\n")
+                        else:
+                            renpy_lines.append(f"{GoogleMeta.INDENT}jump {label}_{partition_count}\n\n")
+
                         self.lars_mode = GoogleMeta.LARS_UNKNOWN
                         renpy_lines.append(f"{GoogleMeta.INDENT}return\n\n")
 
@@ -231,7 +343,6 @@ class GoogleMeta:
                 if paragraph["paragraphStyle"]["namedStyleType"].startswith("HEADING_6"):
                     # check if if statement
                     lcase = GoogleMeta.extract_element(entry).lower()
-                    print("Heading 6 found", lcase)
                     if lcase.startswith("if "):
                         print("IF:", lcase)
                         if_indent = GoogleMeta.INDENT * 2
@@ -240,6 +351,8 @@ class GoogleMeta:
                         # run until we find endif
                         for if_index in range(index + 1, len(google_json)):
                             if_entry = google_json[if_index]
+                            if_paragraph = if_entry["paragraph"]
+
                             if_text = GoogleMeta.extract_element(if_entry)
 
                             if if_entry["paragraph"]["paragraphStyle"]["namedStyleType"].startswith("HEADING_6") \
@@ -247,30 +360,14 @@ class GoogleMeta:
                                 skip_index = if_index
                                 break
 
+                            if self.detect_command(if_paragraph, if_entry, renpy_lines, if_indent):
+                                continue
                             text_content = self.extract_renpy_line(if_entry, if_indent)
                             if len(text_content) == 0:
                                 continue
                             renpy_lines.extend(text_content)
-                    elif lcase.startswith("endif"):
-                        pass # ignore
-                    elif lcase.startswith("auto on"):
-                        self.auto = True
-                    elif lcase.startswith("auto off"):
-                        self.auto = False
                     else:
-                        command = lcase.strip()
-                        if "bg" in command:
-                            # ignore
-                            pass
-                        elif "show" in command:
-                            if "at" in command:
-                                command = command.replace("at", "at char_size,")
-                            elif "with" in command:
-                                command = command.replace("with", "at char_size with")
-                            else:
-                                command += " at char_size"
-                        renpy_lines.append(f"{GoogleMeta.INDENT}{command}\n")
-
+                        self.detect_command(paragraph, entry, renpy_lines)
                     continue
                 # endregion detect if block
 

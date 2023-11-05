@@ -42,3 +42,7 @@ tmp/
 .env
 secrets/
 token.json
+
+*.kra
+*.kra~
+*.png~
