@@ -22,7 +22,10 @@ default selection_3_answer = 1
 
 default selection_2_answer = 1
 
-label google_test_1:
+label lattr:
+    $ config.rollback_enabled = False
+    scene bg black
+    call name_mc from _call_name_mc
     call game_setup from _call_game_setup
 
     $ quick_menu = False
@@ -34,6 +37,8 @@ label google_test_1:
     scene bg white with dissolve
     scene bg default at bg_size with dissolve
     $ quick_menu = True
+    $ renpy.block_rollback()
+    $ config.rollback_enabled = True
 
     hide lars
     Lars "{i}Discere, cogitare, agere{/i}- the triad of wisdom."
