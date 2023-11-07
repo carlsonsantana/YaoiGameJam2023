@@ -2,4 +2,4 @@
 
 # The game starts here.
 label start:
-    call google_test_1 from _call_google_test_1
+    call lattr from _call_lattr
