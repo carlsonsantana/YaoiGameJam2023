@@ -8,7 +8,7 @@ label part_1:
 #[starting with a pan view]
 #***** ERROR ***** Command not recognized
 #[scene bg BG 1]
-[with fade]
+#[with fade]
 #***** ERROR ***** Command not recognized
 #[lars enters]
     Lars default "‘Discere, cogitare, agere — the triad of wisdom.’"
@@ -324,7 +324,7 @@ label C_2_End:
 
 #***** ERROR ***** Command not recognized
 #[show bg BG 2]
-[with fade]
+#[with fade]
 #***** ERROR ***** Command not recognized
 #[start playing track 2-field of flowers]
 #***** ERROR ***** Command not recognized
@@ -1342,7 +1342,7 @@ label CS_4_End:
 
     Lars default "I can outrun you any time."
 
-    Claude "You think yourself soooo "fast", huh? I could leave you speechless If I wanted."
+    Claude "You think yourself soooo \"fast\", huh? I could leave you speechless If I wanted."
 
     Lars default "Well, Sir Claude, it's not a race if you're just jogging to the finish line."
 

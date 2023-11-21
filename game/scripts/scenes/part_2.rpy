@@ -206,7 +206,7 @@ label G_1_End:
 
     Zephyr "What are you talking about, Speedy?"
 
-    Rory "You mentioned that you wanted to be entertained, right? So why don't I keep you occupied—I mean, uh—keep you "strung along" for a private show."
+    Rory "You mentioned that you wanted to be entertained, right? So why don't I keep you occupied—I mean, uh—keep you \"strung along\" for a private show."
 
     Rory "I'm sure a person of your caliber is also familiar with these kinds of VIP events, aren't you? Because it would be totally embarrassing if you didn't."
 
@@ -791,5 +791,4 @@ else:
 label if_op_cs_6_end:
 
     Lars narration "It looks like I’m stuck in a dilemma. Who will I choose as my partner?"
-
-call part_2 from _call_part_2
+    
