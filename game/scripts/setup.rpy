@@ -47,17 +47,8 @@ transform normal_size:
 transform force_normal_size:
     zoom 1.0
 
-label game_setup:
-    scene bg default at bg_size
-    return
+transform same_transform(old, new):
+    old
+    new with Dissolve(0.2, alpha=True)
 
-label name_mc(old_name="Lars"):
-    python:
-        player_name = renpy.input("What is your name?", length=16, default=old_name)
-        player_name = player_name.strip()
-
-        if player_name == "":
-            player_name = "Lars"
-
-        Lars = player_name
-    return
+define config.side_image_same_transform = same_transform

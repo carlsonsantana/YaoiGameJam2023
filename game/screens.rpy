@@ -114,6 +114,7 @@ screen say(who, what):
     ## If there's a side image, display it above the text. Do not display on the
     ## phone variant - there's no room.
     if not renpy.variant("small"):
+        
         add SideImage() xalign 0.0 yalign 1.0
 
 
@@ -211,10 +212,10 @@ screen choice(items):
     style_prefix "choice"
 
     vbox:
-        $ idx = 0
-        $ choice_len = len(items)
+        #$ idx = 0
+        #$ choice_len = len(items)
         for i in items:
-            $ idx = idx + 1
+            #$ idx = idx + 1
             textbutton i.caption:
                 action i.action
                 xsize 1290
@@ -271,7 +272,8 @@ screen quick_menu():
                     background "gui/textbox/save.png"
                     xsize 79
                     ysize 71
-                    action Rollback()
+                    #action Rollback()
+                    action ShowMenu("save")
                 
                 textbutton _(""):
                     background "gui/textbox/load.png"
@@ -359,7 +361,7 @@ screen navigation():
         style_prefix "navigation"
 
         xpos gui.navigation_xpos
-        yalign 0.5
+        yalign 0.25
 
         spacing gui.navigation_spacing
 
@@ -606,7 +608,7 @@ style game_menu_outer_frame:
     background "gui/overlay/game_menu.png"
 
 style game_menu_navigation_frame:
-    xsize 420
+    xsize 620 #420
     yfill True
 
 style game_menu_content_frame:
@@ -615,7 +617,8 @@ style game_menu_content_frame:
     top_margin 15
 
 style game_menu_viewport:
-    xsize 1380
+    #xpos 210
+    xsize 1380 #1240 #1380
 
 style game_menu_vscrollbar:
     unscrollable gui.unscrollable
@@ -624,7 +627,7 @@ style game_menu_side:
     spacing 15
 
 style game_menu_label:
-    xpos 75
+    xpos 1000
     ysize 180
 
 style game_menu_label_text:
@@ -741,7 +744,8 @@ screen file_slots(title):
 
                         has vbox
 
-                        add FileScreenshot(slot) xalign 0.5
+                        #add FileScreenshot(slot) xalign 0.5
+                        add AlphaBlend("gui/button/slot_mask.png", Solid("#0000"),  FileScreenshot(slot), alpha=True) xpos 0 ypos 0
 
                         text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
                             style "slot_time_text"
@@ -836,10 +840,11 @@ screen preferences():
         vbox:
 
             hbox:
-                box_wrap True
+                box_wrap False
 
                 if renpy.variant("pc") or renpy.variant("web"):
-
+                    xalign 0.5
+                    yalign 0.5
                     vbox:
                         style_prefix "radio"
                         label _("Display")
