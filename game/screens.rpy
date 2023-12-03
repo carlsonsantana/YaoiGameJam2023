@@ -261,55 +261,65 @@ screen quick_menu():
         frame:
             background None
 
-            yalign 1.0
-            xpos 1264
+            #yalign 1.0
+            ypos 748
+            xpos 1217
 
             hbox:
                 style_prefix "quick"
-                ypos -4
+                #ypos -4
 
                 textbutton _(""):
                     background "gui/textbox/save.png"
-                    xsize 79
-                    ysize 71
+                    xsize 72
+                    ysize 64
                     #action Rollback()
                     action ShowMenu("save")
                 
                 textbutton _(""):
                     background "gui/textbox/load.png"
-                    xsize 63
-                    ysize 71
+                    xsize 72
+                    ysize 64
                     action ShowMenu("load")
                 
                 textbutton _(""):
                     background "gui/textbox/auto.png"
-                    xsize 55
-                    ysize 71
-                    action Preference("auto-forward", "toggle")
+                    xsize 72
+                    ysize 64
+                    #action Preference("auto-forward", "toggle")
+                    action Preference("auto-forward", "enable")
                 
                 textbutton _(""):
                     background "gui/textbox/skip.png"
-                    xsize 75
-                    ysize 71
+                    xsize 72
+                    ysize 64
                     action Skip() alternate Skip(fast=True, confirm=True)
+                    #action Skip(fast=True, confirm=True)
+                
+                textbutton _(""):
+                    background "gui/textbox/pause.png"
+                    xsize 72
+                    ysize 64
+                    #action [Preference("auto-forward", "disable"), Skip(fast=False, confirm=False)]
+                    action Preference("auto-forward", "disable")
                 
                 textbutton _(""):
                     background "gui/textbox/history.png"
-                    xsize 62
-                    ysize 71
+                    xsize 72
+                    ysize 64
                     action ShowMenu('history')
                 
                 textbutton _(""):
                     background "gui/textbox/prefs.png"
-                    xsize 78
-                    ysize 71
+                    xsize 72
+                    ysize 64
                     action ShowMenu('preferences')
                 
-                textbutton _(""):
-                    background "gui/textbox/main_menu.png"
-                    xsize 55
-                    ysize 71
-                    action MainMenu()
+                #textbutton _(""):
+                #    background "gui/textbox/main_menu.png"
+                #    xsize 72
+                #   ysize 64
+                #    action MainMenu()
                 
             # textbutton _("History") action ShowMenu('history')
             # textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
@@ -388,6 +398,10 @@ screen navigation():
             textbutton _("Main Menu") action MainMenu()
 
         textbutton _("About") action ShowMenu("about")
+
+        textbutton "Gallery" action ShowMenu("gallery")
+
+        textbutton "Ending list" action ShowMenu("lstend")
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
@@ -1734,3 +1748,83 @@ screen ending_screen:
             ypos 896
             foreground "gui/ending/ending_link.jpeg"
             action [OpenURL("https://deniz-g-lerosi.itch.io/love-amidst-the-timeless-rift"), MainMenu()]
+
+# Gallery
+
+init python:
+
+    # Create the gallery object.
+    gal = Gallery()
+    
+    gal_end = Gallery()
+    
+    gal_end.button("title")
+    gal_end.image("gui/button/choice_block_background.png")
+
+
+screen gallery:
+    # Ensure this replaces the main menu.
+    tag menu
+
+    # The background.
+    add "gui/game_menu.png"
+
+    grid 2 2:
+        xpos 320
+        ypos 200
+        xfill True
+        yfill False
+        yspacing 20
+
+    #add gal_end.make_button("title", "gui/button/choice_block_background.png", xalign=0.5, yalign=0.5)
+
+    use navigation
+
+    textbutton _("Return"):
+        style "return_button"
+
+        action Return()
+
+screen lstend:
+    # Ensure this replaces the main menu.
+    tag menu
+
+    # The background.
+    add "gui/game_menu.png"
+
+    # A grid of buttons.
+    style_prefix "about"
+    
+    label "Ending List":
+        xpos 1000
+        ypos 46
+        #text_style "gui_accent_text"
+        text_size 70
+        text_color '#b20202'
+    
+    grid 1 6:
+        xpos 220
+        ypos 200
+        xfill True
+        yfill False
+        yspacing 60
+
+        for i in range(6): #txt in lista_ending:
+            $ txt = lista_ending[i] if persistent.ending[i]==1 else ""
+            label txt:
+                xalign 0.5 
+                yalign 0.5
+                text_color '#000000'
+                if txt=="":
+                    background Image("gui/button/ending_block_background.png", xalign=0.5, yalign=0.5)
+                else:
+                    background Image("gui/button/ending_idle_background.png", xalign=0.5, yalign=0.5)
+
+
+
+    use navigation
+
+    textbutton _("Return"):
+        style "return_button"
+
+        action Return()

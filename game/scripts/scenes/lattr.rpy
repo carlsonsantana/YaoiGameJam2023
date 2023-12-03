@@ -14,16 +14,16 @@ label lattr:
 
         Lars_name = player_name
 
-    scene bg 1 at bg_size
+    #scene bg_1 #at bg_size
 
     $ quick_menu = False
 
-    scene bg black
-    #$ cf(3, "opening_scene.mp3")
+    #scene bg black
+    $ cf(3, "opening_scene.mp3")
 
     pause 1
-    scene bg white with dissolve
-    scene bg 1 at bg_size with dissolve
+    #scene bg white with dissolve
+    #scene bg_1 #at bg_size with dissolve
     $ quick_menu = True
     $ renpy.block_rollback()
     $ config.rollback_enabled = True

@@ -47,8 +47,12 @@ transform normal_size:
 transform force_normal_size:
     zoom 1.0
 
+transform bg_blur:
+    linear .25 blur 15
+
 transform same_transform(old, new):
     old
     new with Dissolve(0.2, alpha=True)
+
 
 define config.side_image_same_transform = same_transform
