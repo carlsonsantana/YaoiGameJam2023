@@ -110,7 +110,7 @@ define gui.textbox_yalign = 1.0
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
 define gui.name_xpos = 360
-define gui.name_ypos = -70
+define gui.name_ypos = -66
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
@@ -133,20 +133,19 @@ define gui.namebox_tile = False
 ## The placement of dialogue relative to the textbox. These can be a whole
 ## number of pixels relative to the left or top side of the textbox, or 0.5 to
 ## center.
-define gui.dialogue_xpos = 488
-define gui.dialogue_ypos = 56
+define gui.dialogue_xpos = 400
+define gui.dialogue_ypos = 70
 
 
 
 
 ## The maximum width of dialogue text, in pixels.
-define gui.dialogue_width = 1300
+define gui.dialogue_width = 1260
 
 ## The horizontal alignment of the dialogue text. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
 define gui.dialogue_text_xalign = 0.0
-define gui.dialogue_text_size = 32
-
+define gui.dialogue_text_size = 36
 
 ## Buttons #####################################################################
 ##
@@ -329,12 +328,12 @@ define gui.slider_tile = False
 
 ## Horizontal borders.
 define gui.bar_borders = Borders(6, 6, 6, 6)
-define gui.scrollbar_borders = None  #Borders(6, 6, 6, 6)
+define gui.scrollbar_borders =  Borders(6, 6, 6, 6)
 define gui.slider_borders = Borders(6, 6, 6, 6)
 
 ## Vertical borders.
 define gui.vbar_borders = Borders(6, 6, 6, 6)
-define gui.vscrollbar_borders = None #Borders(6, 6, 6, 6)
+define gui.vscrollbar_borders = Borders(6, 6, 6, 6)
 define gui.vslider_borders = Borders(6, 6, 6, 6)
 
 ## What to do with unscrollable scrollbars in the gui. "hide" hides them, while
