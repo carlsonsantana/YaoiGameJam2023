@@ -1,8 +1,15 @@
 define Lars = Character("[Lars_name]", color="#C82727", image="lars")
 
 # image lars = Transform("images/characters/lars.png", xalign=0.0)
-image side lars = "images/characters/lars.png"
-image side lars blush = "images/characters/lars blush.png"
+image side lars: 
+    "images/characters/lars.png"
+    zoom 0.75
+image side lars blush:
+    "images/characters/lars blush.png"
+    zoom 0.75
+image side lars narration:
+    "images/characters/lars narration.png"
+    zoom 0.75
 
 # # Reference: Black Cat 2412 (https://lemmasoft.renai.us/forums/viewtopic.php?p=465239#p465239)
 # # Declare characters here
