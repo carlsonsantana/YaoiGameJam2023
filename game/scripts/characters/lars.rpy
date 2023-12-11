@@ -1,11 +1,42 @@
 define Lars = Character("[Lars_name]", color="#C82727", image="lars")
 
 # image lars = Transform("images/characters/lars.png", xalign=0.0)
+image lars: 
+    "images/characters/lars.png"
+    zoom 0.75
+    xalign 0.0
+    #onlayer overlay
+
+image lars blush: 
+    "images/characters/lars blush.png"
+    zoom 0.75
+    xalign 0.0
+
+image lars serious:
+    "images/characters/lars serious.png"
+    zoom 0.75
+    xalign 0.0
+
+image lars happy:
+    "images/characters/lars happy.png"
+    zoom 0.75
+    xalign 0.0
+
+image lars narration:
+    "images/characters/none.png"
+#    zoom 0.75
+
 image side lars: 
     "images/characters/lars.png"
     zoom 0.75
 image side lars blush:
     "images/characters/lars blush.png"
+    zoom 0.75
+image side lars serious:
+    "images/characters/lars serious.png"
+    zoom 0.75
+image side lars happy:
+    "images/characters/lars happy.png"
     zoom 0.75
 image side lars narration:
     "images/characters/lars narration.png"

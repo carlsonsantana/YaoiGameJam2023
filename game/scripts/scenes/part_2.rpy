@@ -15,23 +15,23 @@ label select_route:
     show claude at center_left
     show sylvian at center_right
     show rory at right
-    
+    show lars
     Zephyr "Did you pick someone already? I need something big to spark my gossip debut if I plan to pay off my debt and renovation costs with your confession shenanigan."
 
-    
+    hide lars
     Lars narration "I grab Master Sylvian's hand in mine and interlace our fingers as I raise them up for Zephyr to see."
 
-    
+    show lars
     Lars "I choose him."
 
     #here the arrangement will change as claude gets turned into claude_sad during the last sentence and then he exits the scene. sylvian will move to the center, rory  and zephyr will be in the same position
     show sylvian blush at center
     Sylvian "Thank you [Lars]. I truly mean it."
 
-    
+    show lars blush
     Sylvian "Now my heart can rest at ease knowing I’m allowed to selfishly stay by your side."
 
-    
+    show lars
     show sylvian at center
     Zephyr "So, Smarty it is then!"
 
@@ -51,13 +51,13 @@ label select_route:
     show zephyr happy at left
     Zephyr "That does indeed sound like a juicy tale for the gossip mill — the renowned swan-tist of Divonia and his hidden discovery —  but it's missing something. Perhaps a love confession would…"
 
-    
+    show lars serious
     Lars "Before we get started on anything, didn't you promise that you'd unfreeze the others?"
 
-    
+    hide lars
     Lars narration "I don't want to risk getting the other guild members hurt, and more importantly, I don't want anyone else suffering from the time freeze's effects."
 
-    
+    show lars serious
     Zephyr "Fineeee, I wouldn't dishonor my family by breaking my oaths, but you better cough up a scoop worthy of my undivided attention!"
 
     Zephyr "Let's spice up the setting while we're at it; I wouldn't want someone else to hijack my headline when I finally release them from their frozen state. Scouty, pick a fancy locale, won't you?"
@@ -73,17 +73,17 @@ label select_route:
 
     Zephyr "I had to bring a dragon for the ride just to carry you two over here."
 
-    
+    show lars
     Lars "You wanted a place with few to no people, and here we are."
 
     show zephyr happy at left
     Zephyr "Whatever! I'm focused on keeping the coast clear, especially since I had to unfreeze everyone but I've got my eyes and ears on you two. Make it count while we're down here."
 
-    
+    hide lars
     #zephyr exits the scene, and sylvian stays in the center
     Lars narration "I shoot a glance at Master Sylvian and bite my lips in frustration. I chose him as my partner, but with Zephyr so close by, I'm unsure of our next move."
 
-    
+    show lars serious
     Lars "There’s not much time, we have to do something."
 
     show sylvian serious funny at center
@@ -104,57 +104,57 @@ label select_route:
     show sylvian at center
     Sylvian "Give me a moment."
 
-    
+    hide lars
     Lars narration "Master Sylvian's hands glide with practiced grace, weaving a spell that summons blossoms, enveloping him in an ethereal aura. My focus is momentarily entranced by the display, but it swiftly shifts to the vial of liquid he seemingly conjures from thin air."
 
     Lars narration "Caught in his scrutiny, his focus shifts from performing the magical spectacle to the vial in his hand."
 
-    
+    show lars
     Lars "…"
 
     show sylvian mad
     Sylvian "A slight tonic to ease my nerves. In Zephyr's company, there's a chance I might speak of rather personal matters during confessions."
 
-    
+    show lars blush
     show sylvian blush
     Lars "There's no need to be nervous, Master Sylvian. It's not like we'll be doing a love confession like what Zephyr said."
 
     show sylvian blush
-    
+    hide lars
     Lars narration "He bears a fake grin and begins to give out an awkward laugh as if he's trying to make up for what he's about to say. Today has shown me sides of him that I'd never imagined before."
 
-    
+    show lars
     Sylvian "Haha, of course not! I-I don’t know...what I would— or what I should do if you grew to despise —or even loathe— someone like me because of what I might say for a supposed confession."
 
     show sylvian at center
     Sylvian "But fret not, [Lars]. My tenure in academia provided access to restricted sections, and I'm confident in my ability to fashion a fitting gossip source for our young Lord. Particularly considering his apparent lack of discrimination when it comes to topics or specific requests."
 
-    
+    hide lars
     Lars narration "Feeling a sense of optimism at hearing the news, I enthusiastically chime in."
 
-    
+    show lars
     Lars "You're right. Why didn’t I think of that earlier? You could even use your connections to ask for extra help, can’t you? So, we can make sure nothing like this ever happens again."
 
     show sylvian sad at center
     Sylvian "That’s going to be a bit difficult."
 
-    
+    hide lars
     Lars narration "A haunting shadow descends over him, as if a storm cloud has eclipsed the sun. From the edges of his magician's hat, wilted flowers creep out, a stark contrast to their once vibrant bloom."
 
     Lars narration "His brows furrow and a warm flush of embarrassment tints his cheeks, like a delicate watercolor painting tainted by an unexpected hue."
 
-    
+    show lars sad
     Lars "But weren’t you one of the top academics in the past? Surely, there’s someone who can—"
 
     Sylvian "[Lars]!"
 
-    
+    hide lars
     Lars narration "Ah, that tone again— the one that resonates like a guild leader's command. The weight in his words is palpable, leaving me curious about the sudden shift in his demeanor. But perhaps it's better to divert the conversation for now."
 
-    
+    show lars sad
     Lars "Got it. I won't talk about it if you don't want to."
 
-    
+    hide lars
     Lars narration "I cross my arms, displaying my confusion. So, there really isn't a need for us to work together if Master Sylvian already has his plan set? He seems to have a better grasp of the situation, having planned this far ahead without informing me."
 
     Lars narration "I should at least avoid giving him any extra burdens to shoulder. Not to mention, I brought him along without discussing it first. It's true that he seemed enthusiastic enough to come along though, and the thought of that excites me."
@@ -164,20 +164,20 @@ label select_route:
     Lars narration "Ah, I wish Spotsy were near so I could soothe my nerves by caressing her or something. I feel really useless right now."
 
     show sylvian
-    
+    show lars
     Sylvian "Were you thinking of your dragons again, [Lars]?"
 
-    
+    show lars blush
     Lars "How on Divonia did you find that out? Was my tail wagging again? I swear it always keeps-"
 
     show sylvian blush
     #sylvian does a little up and down jum for the laughing part
     Sylvian "Hahaha! It's nothing of that sort. It's just that I've been observing you for such a long time that I can't help but pick up on your subtlest of gestures."
 
-    
+    hide lars
     Lars narration "Ah, hearing that is making me somewhat embarrassed. To think that I was being observed by him. Surely, he wanted to see if I was doing a good job or not, so I hope I haven't disappointed him."
 
-    
+    show lars
     Lars "Speaking of which, Master. I did bring you along like this, but to think you had a plan of your own…"
 
     Lars "What kind of academic gossip tale will you be telling him? Will you be needing my help—"
@@ -185,7 +185,7 @@ label select_route:
     show sylvian
     Sylvian "You needn't worry, [Lars]."
 
-    
+    show lars
     Lars "But I'd still like to have something to do."
 
     Sylvian "Are you searching for purpose? It can be a bit of a maze, and the answers you find might not be the ones you expect."
@@ -200,7 +200,7 @@ label select_route:
     show sylvian sad
     Sylvian "It’s not like you feel the same way I do…"
 
-    
+    hide lars
     Lars narration "It's rather unlikely of Master Sylvian to act in such a manner. My mind drifts to other instances where he displayed a hint of romance, only to revert to the role of a caring yet distant master."
 
     Lars narration "However, this time, his shaking hands and the glistening look in his eyes suggest it's not another session of false bravado but something else— something unknown yet exciting for the first time."
@@ -209,12 +209,12 @@ label select_route:
 #S 3; Start
 #***** ERROR ***** Command not recognized
 #Poke further about his comment	(Bad End)
-    play music “track_9_bad_ending.ogg”
+    play music "track_9_bad_ending.ogg"
     Lars narration "I should poke further about his comment."
 
     Lars narration "It might get him a bit ruffled up but I can’t contain my curiosity."
 
-    
+    show lars
     Lars "How long have you harbored these romantic thoughts, Master? I recall you mentioning that entertaining the idea of such a relationship between you and me was, as you put it, unethical."
 
     show sylvian sad
@@ -222,14 +222,14 @@ label select_route:
 
     Lars "Are you feeling alright? Did the tonic not calm your nerves like you wanted?"
 
-    
+    hide lars
     Lars narration "A snort escapes me, the sound cutting through the air like a fleeting burst of amusement. Yet, instead of joining in laughter, Master Sylvian abruptly falls silent, his features tightening as he begins to bite his lips."
 
     Sylvian "No, nothing of the sort. I-I was simply taken aback because I didn't anticipate your reaction. I suppose it's because I've become accustomed to how you always manage to say the right thing."
 
     Sylvian "It's a bit difficult for my heart when you openly point out the things I keep trying to keep concealed…"
 
-    
+    show lars
     Lars "There’s a limit to discretion, Master. I mean, not everyone is oblivious enough not to notice the difference in your treatment."
 
     Lars "When did it start? How did you feel when I took your hand in front of Zephyr? I always see dragons cuddling and playing around with their mate, do you also have such thoughts—"
@@ -241,7 +241,7 @@ label select_route:
     #sylvian’s sprite starts shaking a bit like he’s super nervous
     Sylvian "Y-you can’t -you m-musn’t- say such a thing out loud! Or better yet, why would y-you… or no, my mind can’t take this anymore-"
 
-    
+    hide lars
     Lars narration "Poor Master Sylvian looks like he's about to explode; his face is ablaze in varying shades of red. Upon closer examination, it's as if imaginary steam is wafting, suggesting his head might be on the verge of overheating. His delicate feathers appear tousled, as if on the brink of unraveling at any given moment."
 
     show sylvian sad
@@ -249,7 +249,7 @@ label select_route:
 
     Lars "I could say the same for you. You're usually the one guiding us as the leader, giving instructions on what to do and what to avoid."
 
-    
+    show lars
     Lars "Now, it seems like you've taken matters into your own hands for the first time."
 
     Sylvian "So, what you're saying is, this boldness doesn't quite align with my usual demeanor?"
@@ -258,36 +258,36 @@ label select_route:
 
     Sylvian "…for nothing?"
 
-    
+    hide lars
     Lars narration "If my eyes weren't mistaken, it almost seemed like Master Sylvian was pouting. His eyes squinted in contemplation, and his petite beard scrunched up. A subtle furrow creased his brow, casting an endearing yet troubled expression across his features."
 
-    
+    show lars
     Sylvian "Tell me [Lars], is that really what you mean?"
 
     Lars "Come on, Master. It’s really not that serious."
 
     Lars "You’ve already done what was needed and sorted out a secret scoop to share with Zephyr."
 
-    
+    hide lars
     Lars narration "That...didn’t seem to work. Instead of the anticipated joy, his pout deepens, and a tinge of sadness creeps into his eyes. The corners of his eyes seem to glisten, hinting at the possibility of tears welling up."
 
     Sylvian "I suppose…it was my mistake to have expected more, I shouldn’t have indulged in my greed."
 
-    
+    show lars
     Lars "Haha, what are you talking about, Master? Or were you planning on doing a secret confession since the beginning or something?"
 
-    
+    hide lars
     Lars narration "A heavy silence lingers, urging me to stick to my earlier strategy and poke him even further."
 
-    
+    show lars serious
     Lars "Or could it be- is that why you sorted the gossip deal beforehand?"
 
     Lars "Seems like we’re in quite an awkward situation…"
 
-    
+    hide lars
     Lars narration "All at once, his expression transforms into one of horror."
 
-    
+    hide lars_serious
     Sylvian "I-I-I…need to leave— I need to get out of here!"
 
     #after the last sentence, sylvian exits from either direction
@@ -315,26 +315,26 @@ label select_route:
     hide spotsy
     hide smoke
     show zephyr sad
-    
+    show lars serious
     Lars "I’m going to need your help, Spotsy."
 
     Zephyr "Hey! When did I allow you guys to leave without my permission?! I’m going to make you pay for-"
 
-    
+    hide lars
     #I want to time the ending of the last sentence with the upcoming sfx sound so it seems like he got caught off as spotsy smacks him. Effect-wise, once the sfx is played, he should do a slight jump and start to move downwards like he’s falling until he disappears out of the frame
     play sound sfx_smack
     Lars narration "A thwacking sound instantly rings in the air and I look back to see that our not-so-friendly ghost has been knocked to the ground looking completely unconscious."
 
-    
+    show lars
     Lars "Normally, I’d have to give you a scolding for smacking people like that, Spotsy. But there’s something more important at stake now."
 
-    
+    hide lars
     Lars narration "She murmurs and wags her tail back and forth- most likely the culprit behind Zephyr's unexpected tumble."
 
-    
+    show lars
     Lars "Can you please follow after Master Sylvian, Spotsy?"
 
-    
+    hide lars
     #black screen transition fade in/fade out
     show bg_4
     Lars narration "Spotsy instantly fluffs up her wings, taking flight. The ocean gradually shrinks beneath us as we ascend into the sky."
@@ -349,17 +349,17 @@ label select_route:
     Lars narration "Wilting flowers have blossomed around him, bowing down in a withering manner mirroring the posture of Master Sylvian himself."
 
     #panning ends
-    
+    show lars serious
     show sylvian sad at right
     #next line, the textbox does a little up and down jump
     Lars "MASTER SYLVIAN!"
 
     Lars "Can you hear me?"
 
-    
+    hide lars
     Lars narration "I could see his back shrivel up even more, but I couldn't hear a response while sitting on Spotsy’s back."
 
-    
+    show lars
     Lars "If you don't respond, I might just dive into the cloud you're lounging on the count of three!"
 
     #next 3 lines, the textbox does a little up and down jump
@@ -370,7 +370,7 @@ label select_route:
     Lars "THREE!"
 
     #After the last sentence, the screen does and up and down shake like he just jumped
-    
+    hide lars
     Lars narration "Determined, I leap off Spotsy's back, ready to embrace the uncertainty of landing on the cloud's flowery spots. Yet, before I can experience the leap of fate, a flurry of petals swirls beneath my dragon-riding boots, guiding my descent."
 
     Lars narration "The petals gracefully direct me towards Master Sylvian, aligning with my steps. As soon as he concludes his incantation, the petals disassemble, leaving me standing seamlessly on the cloud, unfazed by the unconventional landing."
@@ -380,10 +380,10 @@ label select_route:
 
     Sylvian "Why are you here, [Lars]?"
 
-    
+    show lars serious
     Lars "I was worried for you! Why did you fly off like that in the middle of our talk? Even that ghost-faced Zephyr got scared of what you were doing."
 
-    
+    show lars
     Lars "You didn't need to run away like that."
 
     Sylvian "You're right. I guess I simply wanted to have a moment for myself."
@@ -410,7 +410,7 @@ label select_route:
 
     Sylvian "I don’t think I’m ready to descend yet…"
 
-    
+    show lars sad
     Lars "Are you upset with me, Master? Did I do something wrong?"
 
     Sylvian "Certainly not; it’s just a product of your imagination."
@@ -421,7 +421,7 @@ label select_route:
 
     Sylvian "I'm just getting upset on my own."
 
-    
+    show lars
     Lars "No, it’s okay. Just tell me what you need me to do."
 
     show sylvian sad
@@ -433,7 +433,7 @@ label select_route:
 
     Sylvian "The once tumultuous dance of butterflies' wings within my soul has ceased, leaving only the remnants of a storm's aftermath—no longer the enchanting spectacle that sets off the intricate chaos of the butterfly effect."
 
-    
+    show lars
     Lars "It's never too late to share what's on your brilliant mind. After all, what good is intelligence if you keep it all to yourself?"
 
     Sylvian "…"
@@ -442,7 +442,7 @@ label select_route:
 
     Sylvian "It's a never-ending battle against the gnawing fear that I'll never quite measure up, never truly be enough for someone like you."
 
-    
+    show lars blush
     Lars "What are you talking about? I'm your confession partner, aren’t I? Share those pent-up emotions with me. I'm curious to know what my wise master has been hiding all this time."
 
     show sylvian blush
@@ -457,19 +457,19 @@ label select_route:
 
     Sylvian "That's...what held me back from loving you the way you deserve."
 
-    
+    show lars sad
     Lars "Why do your words sound so cruel…?"
 
     Sylvian "Amidst the certainty of truth, lies have found a sanctuary in the hearts of those who chose to believe, even when confronted with undeniable facts."
 
     Sylvian "There’s an undeniable truth that I’ve been deluding myself with, but I suppose seeing your bold approach and your general choices today really made me realize the gravity of the situation."
 
-    
+    show lars blush
     Lars "I figured you'd enjoy my response to your subtle flirting. Given the special treatment I've been receiving from you, it only makes sense for me to inquire more about your intentions."
 
     Sylvian "Do you…truly mean that?"
 
-    
+    show lars
     Lars "Of course, when push comes to shove, all you do is run away. It's quite frustrating I have to say, so I have to step in and handle things myself, or else nothing would get done."
 
     Sylvian "So that’s what this is all about."
@@ -492,7 +492,7 @@ label select_route:
 
     hide black_feather
     show sylvian sad at center
-    
+    show lars sad
     Lars "You can’t say something like that, Master! I’m not going to let anything happen to you. I’ll protect you-"
 
     Sylvian "Some things are just out of our control, [Lars]. Even my escape from the realm of academia was such a tale."
@@ -507,7 +507,7 @@ label select_route:
 
     Sylvian "It was the jealousy and looks of hatred from my fellow magicians and academics, those whom I yearned to share my thoughts with."
 
-    
+    hide lars
     Lars narration "His voice starts shaking a little, and I can sense a sob that he’s trying to hold down, but his attempts are futile as tears prickle in the corner of his eyes."
 
     Lars narration "Here was the descendent whom I had admired as a wise and poetic leader. Yet, all this time, he held such sorrows in his heart, hidden away from everyone."
@@ -526,7 +526,7 @@ label select_route:
 
     Sylvian "When I care for them, they bloom. They leave seeds and produce a new generation of plants. They don't concern themselves with my past and never leave my side. They reciprocate what I give them, and I revel in being spoiled by their unintentional kindness."
 
-    
+    show lars sad
     Lars "So all this time, you had lost your self-confidence because of a bunch of know-it-alls who couldn’t bear to see you succeed?!"
 
     Sylvian "That’s a unique way to phrase it indeed."
@@ -538,7 +538,7 @@ label select_route:
     show sylvian sad
     Sylvian "But there’s no point to it anymore…"
 
-    
+    show lars blush
     Lars "Awe, are you saying that because I teased you about your love confession idea earlier? I mean, I appreciate that you trusted me enough to share your thoughts, but I guess, seeing my choices today-"
 
     Sylvian "I don’t think I can bear to listen to you, [Lars]..."
@@ -547,7 +547,7 @@ label select_route:
 
     Sylvian "I'm feeling a bit embarrassed about what I just shared, and I think I'd prefer some time alone to gather my thoughts."
 
-    
+    show lars serious
     Lars "What’re you talking about? Who’s going to take care of the guild without you? What’s going to happen to Zephyr and the rest of the people captured by him?"
 
     show sylvian
@@ -568,17 +568,17 @@ label select_route:
     show sylvian sad
     Sylvian "Much better than their pathetic excuse of a guild leader…"
 
-    
+    show lars sad
     Lars "Master…"
 
     Sylvian "I suppose it was an unattainable goal to desire more. I dreamt of it and lost what was already in my grasp."
 
-    
+    hide lars
     Lars narration "His eyes drop. Everything happened so quickly, in a way I never saw coming. Maybe he'd made up his mind before I could react, or perhaps my choices led us here. I just stare at him, feeling utterly helpless."
 
     Lars narration "I wish for him to meet my gaze once more, but I fear he won't lift his head again."
 
-    
+    show lars sad
     Sylvian "Who knows…if this feeling will eventually pass or not."
 
     Sylvian "Who knows…if I’ll ever be worthy of love again."
@@ -588,12 +588,12 @@ label select_route:
 #Sylvian - Bad End Achieved
 #***** ERROR ***** Command not recognized
 #Pass over his comment	(Neutral End)
-    play music “track_8_neutral_ending.ogg”
+    play music "track_8_neutral_ending.ogg"
     Lars narration "I should move past his comment."
 
     Lars narration "There are more pressing matters at hand."
 
-    
+    show lars
     Lars "We can discuss that later, Master Sylvian."
 
     show sylvian blush
@@ -617,10 +617,10 @@ label select_route:
     show sylvian sad
     Sylvian "…for nothing?"
 
-    
+    hide lars
     Lars narration "If my eyes weren't mistaken, it almost seemed like Master Sylvian was pouting. His eyes squinted in contemplation, and his petite beard scrunched up. A subtle furrow creased his brow, casting an endearing yet troubled expression across his features."
 
-    
+    show lars
     Sylvian "Tell me [Lars], is that really what you mean?"
 
     Lars "Come on, Master. It’s really not that serious."
@@ -629,18 +629,18 @@ label select_route:
 
     Lars "Haha, what are you talking about, Master? Or were you planning on doing a secret confession since the beginning or something?"
 
-    
+    hide lars
     Lars narration "A heavy silence lingers, urging me to stick to my earlier strategy and pass over his comment once again."
 
-    
+    show lars serious
     Lars "Or could it be- is that why you sorted the gossip deal beforehand?"
 
     Lars "Seems like we’re in quite an awkward situation…"
 
-    
+    hide lars
     Lars narration "All at once, his expression transforms into one of horror."
 
-    
+    hide lars_serious
     Sylvian "I-I-I…need to leave— I need to get out of here!"
 
     #after the last sentence, sylvian exits from either direction
@@ -668,26 +668,26 @@ label select_route:
     hide spotsy
     hide smoke
     show zephyr sad
-    
+    show lars serious
     Lars "I’m going to need your help, Spotsy."
 
     Zephyr "Hey! When did I allow you guys to leave without my permission?! I’m going to make you pay for-"
 
-    
+    hide lars
     #I want to time the ending of the last sentence with the upcoming sfx sound so it seems like he got caught off as spotsy smacks him. Effect-wise, once the sfx is played, he should do a slight jump and start to move downwards like he’s falling until he disappears out of the frame
     play sound sfx_smack
     Lars narration "A thwacking sound instantly rings in the air and I look back to see that our not-so-friendly ghost has been knocked to the ground looking completely unconscious."
 
-    
+    show lars
     Lars "Normally, I’d have to give you a scolding for smacking people like that, Spotsy. But there’s something more important at stake now."
 
-    
+    hide lars
     Lars narration "She murmurs and wags her tail back and forth- most likely the culprit behind Zephyr's unexpected tumble."
 
-    
+    show lars
     Lars "Can you please follow after Master Sylvian, Spotsy?"
 
-    
+    hide lars
     #black screen transition fade in/fade out
     show bg_4
     Lars narration "Spotsy instantly fluffs up her wings, taking flight. The ocean gradually shrinks beneath us as we ascend into the sky."
@@ -702,17 +702,17 @@ label select_route:
     Lars narration "Wilting flowers have blossomed around him, bowing down in a withering manner mirroring the posture of Master Sylvian himself."
 
     #panning ends
-    
+    show lars serious
     show sylvian sad at right
     #next line, the textbox does a little up and down jump
     Lars "MASTER SYLVIAN!"
 
     Lars "Can you hear me?"
 
-    
+    hide lars
     Lars narration "I could see his back shrivel up even more, but I couldn't hear a response while sitting on Spotsy’s back."
 
-    
+    show lars
     Lars "If you don't respond, I might just dive into the cloud you're lounging on the count of three!"
 
     #next 3 lines, the textbox does a little up and down jump
@@ -723,7 +723,7 @@ label select_route:
     Lars "THREE!"
 
     #After the last sentence, the screen does and up and down shake like he just jumped
-    
+    hide lars
     Lars narration "Determined, I leap off Spotsy's back, ready to embrace the uncertainty of landing on the cloud's flowery spots. Yet, before I can experience the leap of fate, a flurry of petals swirls beneath my dragon-riding boots, guiding my descent."
 
     Lars narration "The petals gracefully direct me towards Master Sylvian, aligning with my steps. As soon as he concludes his incantation, the petals disassemble, leaving me standing seamlessly on the cloud, unfazed by the unconventional landing."
@@ -733,10 +733,10 @@ label select_route:
 
     Sylvian "Why are you here, [Lars]?"
 
-    
+    show lars serious
     Lars "I was worried for you! Why did you fly off like that in the middle of our talk? Even that ghost-faced Zephyr got scared of what you were doing."
 
-    
+    show lars
     Lars "You didn't need to run away like that."
 
     Sylvian "You're right. I guess I simply wanted to have a moment for myself."
@@ -759,7 +759,7 @@ label select_route:
 
 
 
-    
+    show lars
     Lars "Are you upset with me, Master? Did I do something wrong?"
 
     Sylvian "Certainly not; it’s just a product of your imagination."
@@ -770,7 +770,7 @@ label select_route:
 
     Sylvian "I'm just getting upset on my own."
 
-    
+    show lars
     Lars "No, it’s okay. Just tell me what you need me to do."
 
     show sylvian sad
@@ -782,7 +782,7 @@ label select_route:
 
     Sylvian "The once tumultuous dance of butterflies' wings within my soul has ceased, leaving only the remnants of a storm's aftermath—no longer the enchanting spectacle that sets off the intricate chaos of the butterfly effect."
 
-    
+    show lars
     Lars "It's never too late to share what's on your brilliant mind. After all, what good is intelligence if you keep it all to yourself?"
 
     Sylvian "…"
@@ -791,7 +791,7 @@ label select_route:
 
     Sylvian "It's a never-ending battle against the gnawing fear that I'll never quite measure up, never truly be enough for someone like you."
 
-    
+    show lars
     Lars "What are you talking about? I’m your friend, aren’t I? We already talked about this, didn’t we? You shouldn’t be undermining yourself like this."
 
     Sylvian "Ah, just as a friend, is that right…"
@@ -804,14 +804,14 @@ label select_route:
 
     Sylvian "There’s an undeniable truth that I’ve been deluding myself with, but I suppose having you pass over my comment and your general choices today really made me realize the gravity of the situation."
 
-    
+    show lars serious
     Lars "But I had a reason behind passing over what you said because there are more important things at stake here."
 
     Lars "I have a responsibility to uphold and need to take care of the people around me. Seeing both descendants and humans smile while under my care fills me with joy. It’s my philosophy of being the bridge between dragons and passengers, a legacy I’m honored to leave behind."
 
     Lars "That’s why, while I understand where your romantic intentions are coming from, I can’t give you a response right now amidst all this drama. I still–"
 
-    
+    show lars sad
     Sylvian "That’s enough, [Lars] ..."
 
     Sylvian "It appears that all that lies ahead for me is finding contentment in what's within my reach."
@@ -825,10 +825,10 @@ label select_route:
 
     Sylvian "“In the garden of solitude, I remain. A heart that longs for love’s sweet refrain. Oh, how I yearn for a friend so true. To end this solitude, to start anew.”"
 
-    
+    show lars blush
     Lars "That’s truly beautiful, Master."
 
-    
+    show lars
     Lars "But…what does it have to do with you?"
 
     show sylvian sad
@@ -838,7 +838,7 @@ label select_route:
 
     Sylvian "Such is the nature of existence, where I must accept what is, for I cannot alter the course of destiny. I should have simply valued what was in the palm of my hand instead of yearning for more."
 
-    
+    show lars sad
     Sylvian "This is the fate that I must accept for I am worthy of no other."
 
     hide all
@@ -855,7 +855,7 @@ label select_route:
 
     hide black_feather
     show sylvian sad at center
-    
+    show lars sad
     Lars "You can’t say something like that, Master! I’m not going to let anything happen to you. I’ll protect you-"
 
     Sylvian "Some things are just out of our control, [Lars]. Even my escape from the realm of academia was such a tale."
@@ -870,7 +870,7 @@ label select_route:
 
     Sylvian "It was the jealousy and looks of hatred from my fellow magicians and academics, those whom I yearned to share my thoughts with."
 
-    
+    hide lars
     Lars narration "His voice starts shaking a little, and I can sense a sob that he’s trying to hold down, but his attempts are futile as tears prickle in the corner of his eyes."
 
     Lars narration "Here was the descendent whom I had admired as a wise and poetic leader. Yet, all this time, he held such sorrows in his heart, hidden away from everyone."
@@ -889,7 +889,7 @@ label select_route:
 
     Sylvian "When I care for them, they bloom. They leave seeds and produce a new generation of plants. They don't concern themselves with my past and never leave my side. They reciprocate what I give them, and I revel in being spoiled by their unintentional kindness."
 
-    
+    show lars sad
     Lars "So all this time, you had lost your self-confidence because of a bunch of know-it-alls who couldn’t bear to see you succeed?!"
 
     Sylvian "That’s a unique way to phrase it indeed."
@@ -901,7 +901,7 @@ label select_route:
     show sylvian sad
     Sylvian "I suppose that marks my confession as null."
 
-    
+    show lars
     Lars "I wouldn't say that. I appreciate your trust in sharing your thoughts with me. However, considering my choices today, I don't think I'm ready to embrace the romantic aspect of your affection."
 
     Lars "For now, I believe it's best that we remain master and junior, and if you’ll let me continue, I’d want to remain as your friend."
@@ -912,7 +912,7 @@ label select_route:
 
     Sylvian "N-n-nothing of importance."
 
-    
+    show lars serious
     Lars "Now then, what do we do about Zephyr though?"
 
     show sylvian
@@ -943,18 +943,18 @@ label select_route:
 #Sylvian - Neutral End Achieved
 #***** ERROR ***** Command not recognized
 #Stay silent about his comment 	(Good End)
-    play music “track_7_good_ending.ogg”
+    play music "track_7_good_ending.ogg"
     Lars narration "I should stay silent for now."
 
-    
+    show lars
     Lars "…"
 
     Sylvian "Don’t you..wish to know more?"
 
-    
+    hide lars
     Lars narration "His words linger in the air while the wind stands still. A wistful sigh escapes his lips, followed by a subtle smile."
 
-    
+    show lars
     Lars "I didn’t want to pressure you into saying something you didn’t want to."
 
     show sylvian
@@ -981,7 +981,7 @@ label select_route:
     Sylvian "There’s still a certain component left for me to achieve — the action needed to manifest knowledge and wit. However, I failed to do that in many ways."
 
     show sylvian
-    
+    show lars
     Lars "You’ve already done so much, Master! You’ve always worked very hard for everyone in the guild."
 
     Lars "You don't need me to tell you this, but...none of the things we do would ever be possible without you."
@@ -989,7 +989,7 @@ label select_route:
     show sylvian sad
     Sylvian "Surely, it would. Once there's nothing more for me to do, I'll be left alone again, naturally."
 
-    
+    show lars sad
     Lars "You know that isn’t true."
 
     Sylvian "It is, though. I speak of cherishing our current contentment, but what value is there in doing so if I’m aimlessly wandering without purpose?"
@@ -997,7 +997,7 @@ label select_route:
     Lars "Please, Master, you should know better than to trust those negative thoughts which do you no good."
 
     show sylvian blush
-    
+    show lars blush
     Lars "You're the one who consistently leads us on our expeditions, the very leader who keeps our guild afloat."
 
     Lars "Not to mention, the warm welcome you give us whenever we return, that feeling of being home wouldn’t work with anyone else! Do you understand what I mean right now?"
@@ -1006,22 +1006,22 @@ label select_route:
 
     Sylvian "Makes me want you for myself even more…"
 
-    
+    show lars happy
     Lars "Master…I-I feel the same way—"
 
     Sylvian "I know I'm not worthy of your attention. You're probably saying those things because I’m your superior, am I right?"
 
     Lars "Why entertain such thoughts when I'm telling you myself? So, just listen to me, and don't let those negative thoughts confuse your mind!"
 
-    
+    hide lars
     Lars narration "It may be a tad late, but my ears are curling up from the embarrassment of it all."
 
-    
+    show lars happy
     Sylvian "[Lars]..."
 
     Lars narration "There's no turning back now. Despite his academic brilliance, he seems to struggle with recognizing his own worth. It's time for me to be straightforward with him."
 
-    
+    show lars
     Sylvian "The value of companionship, even in its simplest form, should not be dismissed."
 
     Sylvian "But…what if I told you I don’t want to be only your friend anymore? What if I want to reach out for something more?"
@@ -1035,7 +1035,7 @@ label select_route:
 
         Sylvian "It's time for me to show you what truly reflects in my heart."
 
-        
+        hide lars
         Lars narration "His hands are clenched tight, and the rhythmic rise and fall of his Adam's apple mirrors his palpable anxiety."
 
         show sylvian
@@ -1044,13 +1044,13 @@ label select_route:
         show sylvian blush
         Sylvian "That beautifully groomed tail of yours is so full of static [Lars], perhaps you’ve already picked on some of my clues."
 
-        
+        show lars blush
         Lars "I—I don't know when I started noticing your gifts and how they were specific to me."
 
         show sylvian sad
         Sylvian "That's to be expected, of course. It's my fault that—"
 
-        
+        show lars happy
         show sylvian blush
         Lars "But I always felt special when you gave them to me, as if we had this unbreakable bond that was only between the two of us."
 
@@ -1064,10 +1064,10 @@ label select_route:
 
         Sylvian "Yet, I fear you might see me as someone who has lost his mind."
 
-        
+        hide lars
         Lars narration "His unexpected boldness takes me by surprise. Whether it's the influence of the earlier drink or a newfound resolve, his declaration resonates within me. My heart pounds louder, with my tail mirroring its pulse."
 
-        
+        show lars happy
 
 
     if options["CS3"]==2:
@@ -1075,7 +1075,7 @@ label select_route:
         show sylvian sad
         Sylvian "The truth is, you inquired Claude about a potential gift, right? It pains me to realize that everything I've given so far may never measure up to what he could potentially offer."
 
-        
+        show lars
         Lars "You shouldn't bring yourself down like that."
 
         Lars "I asked Sir Claude because that's what I was curious about most at that moment."
@@ -1086,17 +1086,17 @@ label select_route:
 
 
 
-    
+    show lars
     show sylvian
     Lars narration "An awkward silence envelops the air. Even someone as clueless as Zephyr turns back to look at us and see what's going on. But before he has the chance to say anything, Master Sylvian speaks up again."
 
     show sylvian
     Sylvian "I suppose it’s time to share the secrets from my past if we are to follow through on this path of clarity."
 
-    
+    hide lars
     Lars narration "A sigh escapes him, and he slowly shakes his head, lifting his gaze to the expanse of the sky above."
 
-    
+    show lars
     Sylvian "You should know that I used to adore the academic world."
 
     Sylvian "It was the one place where I could marvel over the many intricacies of life without feeling overwhelmed by my lack of knowledge. I would read the many scrolls, books, journals, and whatever I could get my hands on, even in the private library of the Archmage of Divonia who seldom grants people his audience."
@@ -1107,7 +1107,7 @@ label select_route:
 
     Sylvian "It was the jealousy and looks of hatred from my fellow magicians and academics, those whom I yearned to share my thoughts with."
 
-    
+    hide lars
     Lars narration "His voice starts shaking a little, and I can sense a sob that he’s trying to hold down, but his attempts are futile as tears prickle in the corner of his eyes."
 
     Lars narration "Here was the descendent whom I had admired as a wise and poetic leader. Yet, all this time, he held such sorrows in his heart, hidden away from everyone."
@@ -1126,15 +1126,15 @@ label select_route:
 
     Sylvian "When I care for them, they bloom. They leave seeds and produce a new generation of plants. They don't concern themselves with my past and never leave my side. They reciprocate what I give them, and I revel in being spoiled by their unintentional kindness."
 
-    
+    show lars sad
     Lars "So all this time, you had lost your self-confidence because of a bunch of know-it-alls who couldn’t bear to see you succeed?!"
 
     Sylvian "That’s a unique way to phrase it indeed."
 
-    
+    show lars serious
     Lars "You should have told me this sooner, Master; I would have given them a piece of my mind. Or better yet, a torching session with Spotsy’s help would have done the job perfectly."
 
-    
+    show lars
     #textbox shake for the next line + sylvian’s sprite does an up and down jump a few times
     Sylvian "Hahahaha!"
 
@@ -1152,7 +1152,7 @@ label select_route:
 
     Lars "But the key is to overcome those doubts. You're the one who spends the entire day with... well, yourself. So, finding your self-worth from within just makes sense."
 
-    
+    show lars blush
     Lars "We'll obviously take care of you whenever we can. Especially me, of course! I'm not dense enough not to pick up on your little shows of affection, especially with how much time we spend together."
 
     Lars "But…you have to make the final decision yourself on what you want us to be."
@@ -1160,7 +1160,7 @@ label select_route:
     show sylvian blush
     Sylvian "I-I…"
 
-    
+    hide lars
     Lars narration "I hold my breath in anticipation when suddenly, he wraps me in a solid embrace."
 
     hide all
@@ -1237,7 +1237,7 @@ label select_route:
     hide zephyr
     Lars narration "I lift Master Sylvian's chin, fixing him with a somewhat serious gaze."
 
-    
+    show lars blush
     Lars "But won’t that tarnish your reputation?"
 
     Sylvian "No need to worry. The Archmage will have silenced him long before any reputable gossip columns consider his story. He doesn't tolerate his academics engaging in such activities."
@@ -1265,13 +1265,13 @@ label select_route:
     show claude at center_left
     show sylvian at center_right
     show rory at right
-    
+    show lars
     Zephyr "Did you pick someone already? I need something big to spark my gossip debut if I plan to pay off my debt and renovation costs with your confession shenanigan."
 
-    
+    hide lars
     Lars narration "I grab Sir Claude's hand in mine and interlace our fingers as I raise them up for Zephyr to see."
 
-    
+    show lars
     Lars "I choose him."
 
     #here the arrangement will change as sylvian gets turned into sylvian_sad during the last sentence and then he exits the scene. Claude will move to the center, rory  and zephyr will be in the same position
@@ -1305,13 +1305,13 @@ label select_route:
     show rory angry at right
     Rory "Hmph, It was about time I gave you a taste of your own medicine!"
 
-    
+    show lars serious
     Lars "Before we get started on anything, didn't you promise that you'd unfreeze the others?"
 
-    
+    hide lars
     Lars narration "I don't want to risk getting the other guild members hurt, and more importantly, I don't want anyone else suffering from the time freeze's effects."
 
-    
+    show lars serious
     Zephyr "Fineeee, I wouldn't dishonor my family by breaking my oaths, but you better cough up a scoop worthy of my undivided attention!"
 
     Zephyr "Let's spice up the setting while we're at it; I wouldn't want someone else to hijack my headline when I finally release them from their frozen state. Scouty, pick a fancy locale, won't you?"
@@ -1325,29 +1325,29 @@ label select_route:
     show claude at center
     Zephyr "Whose brilliant idea was it to ride a dragon for a confession scene?"
 
-    
+    show lars serious
     Lars "You wanted a place with few to no people, and here we are."
 
     show zephyr happy at left
     Zephyr "Whatever! I'm focusing on steering this ship but I've got my eyes and ears on you two. Make it count while we're down here."
 
-    
+    hide lars
     #zephyr exits the scene, and claude stays in the center
     Lars narration "I shoot a glance at Sir Claude and bite my lips in frustration. I chose him as my partner, but with Zephyr so close by, I'm unsure of our next move."
 
     hide zephyr
-    
+    show lars
     Lars "There’s not much time, we have to do something."
 
     show claude smile
     Claude "I could do a skydiving trick from up here. The tabloids would have a field day if I were to fall off under these conditions."
 
-    
+    hide lars
     Lars narration "I cross my arms, determined to make Sir Claude understand the gravity of the situation. However, the more serious I try to be, the more my anxiety seems to rise."
 
     Lars narration "I should at least avoid giving him any more ammunition for teasing me. Best to keep my tail perfectly still. As for my fox ears, well, I can only hope they won’t start drooping and betray my inner turmoil."
 
-    
+    show lars
     Lars "Zephyr would be quite upset if we only got noticed for your publicity stunt rather than a confession or comedy routine."
 
     Claude "I doubt we can do comedy under these conditions. So a confession it is then!"
@@ -1362,24 +1362,24 @@ label select_route:
 
     Lars "Imagine what would become of your family legacy if word got out about our current dilemma…"
 
-    
+    hide lars
     show claude shocked
     Lars narration "Sir Claude, as he always does, theatrically places a hand on his chest, feigning deep offense at my comments. Despite my attempt to maintain seriousness, I couldn't help but crack a smile at his playful antics."
 
-    
+    show lars blush
     Claude "Tsk, tsk, Captain, you should know that all publicity is good publicity, it’s the standard industry cliché."
 
     show claude smile
     Claude "It’s because I only ever seek to be the greatest merchant there is that I will use every tool at my disposal to achieve it."
 
-    
+    hide lars
     Lars narration "Hmph, the same audacious statements, as always. Even under pressure, Sir Claude remains the unwavering bold merchant and adventurer that he is."
 
     Lars  narration "It was a quality of his that I deeply admired and aspired to learn from."
 
     Lars narration "In a realm where courage and determination were paramount, witnessing someone like him fearlessly chasing after his dreams was truly inspiring, and it ignited a fire within me to pursue my own aspirations with equal fervor."
 
-    
+    show lars
     Lars "Really? I didn’t know our noble scion liked being the center of attention. You always seem to be hiding that you’re the only heir of the infamous Dupont merchant family."
 
     Lars "At first, I thought it was so there wouldn’t be any rumors of our Guild being associated with your family name, but you’ve always been acting suspiciously about it."
@@ -1391,12 +1391,12 @@ label select_route:
 
     show claude smile
     #claude’s sprite comes closer to the screen a little
-    
+    hide lars
     Lars narration "Wow, his voice is so close...I can't believe how quickly he closed the gap between us. Did he do it while I was lost in my rambling? Now, his forehead is almost touching mine, and his eyes…"
 
     Lars narration "His  piercing golden eyes are fixed directly on me. Why’s he looking at me like that? Ugh, this isn’t good for my heart."
 
-    
+    show lars blush
     Claude "I could satisfy your curiosity by merely saying that I enjoy the challenge of forging my own legacy."
 
     #claude’s sprite goes back to original position
@@ -1406,7 +1406,7 @@ label select_route:
 
     Lars narration "The line blurs between his teasing and genuine flirtation, leaving me defenseless against his charm, even when he playfully passes it off as a joke. Succumbing to his allure is something I’d rather avoid, having witnessed how easily others have fallen for him."
 
-    
+    show lars blush
     #textbox jumps and down for next sentence
     Lars "THEN I SUPPOSE...you wouldn't mind if the headlines read something like this–"
 
@@ -1420,22 +1420,22 @@ label select_route:
     #claude’s sprite does an up and down jump for the laughing part of the next sentence
     Claude "Haha, are you getting shy Captain? Or did you pick up those catchy headline titles from your human passengers again?"
 
-    
+    show lars serious
     #textbox jumps and down for next sentence
     Lars "Firstly, NO I WASN’T!"
 
-    
+    show lars
     Lars "Secondly, you have to admit, it does carry a certain dramatic flair."
 
     Claude "Ah, my dear Captain, I’ll oblige to your lie. You always know how to spin an intriguing tale, after all."
 
-    
+    hide lars
     Lars narration "In the blink of an eye, Sir Claude's hand cups one side of my cheek, and a rush of self-consciousness floods my senses. His touch, though cold and scaly, carries an irresistible sensation."
 
     show claude blush
     Claude "I've missed talking with you like this, Captain. I've been occupying myself with so many tasks that I haven't had the chance to appreciate our time together like this."
 
-    
+    show lars blush
     Lars "You could always skip them, you know? Taking some time to settle down might do you good."
 
     Claude "Ah, you see, I’m just too restless for that. I’d rather bask in the glory of achieving a dream, rather than the journey towards attaining it."
@@ -1448,36 +1448,36 @@ label select_route:
 
     Claude "Haha that’s right. Maybe…it’s time to confess my secret after all, better seize the moment while it lasts before my antics become too much for you."
 
-    
+    hide lars
     Lars narration "Though well-known for his love of humor and jest, this time, his response carries an unmistakable sincerity. What could he possibly mean, though?"
 
 #***** ERROR ***** Command not recognized
 #C 3; Start
 #***** ERROR ***** Command not recognized
 #Poke further about his comment 	(Good End)
-    play music “track_7_good_ending.ogg”
+    play music "track_7_good_ending.ogg"
     Lars narration "I should poke further about his comment."
 
     show claude serious
-    
+    show lars
     Lars "What do you mean, Sir Claude?"
 
-    
+    hide lars
     Lars narration "To my astonishment, a subtle shadow of melancholy dances in his eyes, and the corners of his lips, usually curved upwards, now descend."
 
-    
+    show lars blush
     Claude "Admit it, you were barely containing your curiosity about my secret confession, weren't you? My darling little fox."
 
     if options["CS3"]==1:
 
-        
+        show lars
         Lars "I remember asking about Master Sylvian’s during our talk about gifts , but not about yours, so—"
 
         show claude serious
         #for the next line, claude does a side to side shake + a jump. Preferably, he does a shake to the left from ‘It’s always Sylvian this’ and does another shake from ‘and Sylvian that’, then does a jump from ‘Why can't I ever catch a break from him?’
         Claude "It’s always Sylvian this and Sylvian that. Why can't I ever catch a break from him?"
 
-        
+        show lars serious
         Lars "What's going on? Why the sudden—"
 
         Claude "You know what? I can't take this anymore."
@@ -1489,37 +1489,37 @@ label select_route:
         show claude smile
         Claude "Recall that promise I made about sharing everything once we're alone? If memory serves me right, you were quite eager to unravel my secrets at the time, weren’t you?"
 
-        
+        show lars blulsh
         Lars "That's not true! I only wanted you to know that I'm here for you as a friend and fellow guild member, should you ever want to share—"
 
         Claude "Haha, I'm just joking, [Lars]. I understand your intentions well enough. Your close bond with dragons is the reason behind your sincere way of talking, isn’t that right? I’ve admired that for some time now…"
 
-        
+        hide lars
         Lars narration "He admires something about me? He's certainly teased me so much till now that I've grown accustomed to not receiving any honest praise from him."
 
-        
+        show lars
         Lars "Well, yes, you’re right. My parents would always tell me to be direct with my words, as dragons can have trouble reading your intentions if you're not straightforward or heartfelt in your interactions."
 
         Lars "So, it would be best to just say what’s on your mind, which is kind of what I’m doing. But then again, I’m supposed to be the dragon trainer here, not you—"
 
-        
+        show lars sad
         Lars "Ugh, forget it. You were probably just teasing me again."
 
-        
+        show lars blush
         Claude "I didn't say I had special feelings for you just for the sake of it, I was quite serious. To show my resolve, I'll fulfill my promise right here and now, just as I swore on that necklace I gave you."
 
 
 
-    
+    show lars
     show claude
     Claude "[Lars]."
 
     Claude "I need you to listen to me carefully."
 
-    
+    hide lars
     Lars narration "He rarely ever shows his vulnerability, so witnessing this side of him is…"
 
-    
+    show lars
     Claude "You remember how I've always skirted around the fact that I'm a Dupont heir?"
 
     Lars "Yes, it's been a constant mystery to me."
@@ -1527,56 +1527,56 @@ label select_route:
     show claude sad
     Claude "Well, the truth is, I've avoided mentioning it because...I didn't want to be defined by that name."
 
-    
+    show lars sad
     Claude "I've always struggled with titles and appearances growing up."
 
     Claude "The burden of being the Dupont family heir, with its myriad of expectations,  it all felt like a shallow act that I had to uphold, and I...I felt imprisoned in that superficial world."
 
-    
+    hide lars
     Lars narration "His voice quivers with emotion, and I'm completely engrossed, giving him unwavering attention, determined not to shatter the fragile flow of his confession."
 
     Lars narration "His furrowed brows reveal the burden of unpleasant memories, and as much as I long to unravel the tangled threads, he begins to shake his head in dismay."
 
     show claude smile
-    
+    show lars blush
     Claude "Spending time with you, [Lars], offered me a respite from all of that. It was a rare chance to shed the mask and simply be myself, the playful companion who loved to tease his partner in crime."
 
     show claude blush
     Claude "But, over time, my feelings changed…"
 
     #claude moves closer
-    
+    hide lars
     Lars narration "Drawing closer, he delicately runs his fingers through my hair with a tender touch. The scabrous texture of his fingernails traces a deliberate path downward, following the curve of my ear. In its wake, a lingering tingle persists, imprinting the sensation on my skin."
 
-    
+    show lars happy
     Claude "I stopped seeing you as just the guild's pilot or my work partner…"
 
-    
+    hide lars
     Lars narration "A tightening sensation grips my chest, each heartbeat resonating like the rhythmic murmur of a dragon. A flush of warmth colors my cheeks, and my tingling ears gently droop under the weight of his words."
 
     Lars narration "I'm hesitant to raise my head, yet, the same hand that had been tenderly caressing my hair and tracing my ear gently takes my chin, coaxing it upwards."
 
-    
+    show lars happy
     Lars "Are you saying what I think you're saying?"
 
     Claude "Relationships have always come easily to me, but you...you're the only person who's made me feel this way."
 
     show claude sad
-    
+    hide lars
     #claude moves to original position
     Lars narration "He releases my chin and retreats, leaving behind a noticeable chill in his departure."
 
-    
+    show lars sad
     Claude "Yet, I fear that settling down would dilute my ambition, the only thing that has allowed me to distance myself from the façade I've grown up with."
 
     Claude "All the efforts I've put into building my own legacy as a merchant, the bravado and arrogance...it would all be meaningless if I realized I had let slip the chance to build something meaningful with you."
 
     show claude smile
-    
+    show lars
     Claude "I teased you about it as well even though it was just my lingering feelings trying to surface. You could say that my candid lizard–like tongue was more honest than its faux owner."
 
     show claude sad
-    
+    show lars sad
     Claude "I argued with Boss Sylvian about the importance of seeking challenges and not embracing contentment without a fight. But, in reality, I'm the one ensnared by fear, unwilling to relinquish even a fraction of my ambition to battle for what truly matters."
 
     Claude "When push comes to shove, I'm addicted to the concept of competition. I can't break free, can't even take the time to savor the joys of life and the people around me."
@@ -1588,39 +1588,39 @@ label select_route:
     show claude
     Claude "Close. There’s one thing you’re missing though…"
 
-    
+    show lars
     show claude
     Claude "You were never mine from the start, so I lacked the courage to let go of my aspirations."
 
     show claude smile
-    
+    show lars happy
     Claude "You've always been your own strong-willed individual, adorned with that clever, fox-like charm, courageously taking a stand without voicing your fears, all in the name of protecting others."
 
     Claude "Today's events have only served to highlight this matter."
 
-    
+    hide lars
     Lars narration "My heart leaps with excitement at his words. The prospect of being with him is undeniably thrilling, and the uncertainty of what lies ahead fills me with a delightful, if somewhat anxious, anticipation."
 
-    
+    show lars happy
     Lars "…"
 
     show claude smile
     Claude "Perhaps it's time for me to stand here with you, to stop constantly reaching out to the future. Maybe cherishing the present with you is the ultimate challenge that will truly fulfill me—"
 
-    
+    show lars
     Lars "But that's not entirely what you want either, is it?"
 
     show claude
     Claude "What do you mean?"
 
-    
+    show lars happy
     Lars "You've always been the adventurous type, haven’t you? Just being content with the present, while wonderful, doesn't seem entirely like you. Are you sure you're ready to let go of all those grand aspirations?"
 
-    
+    hide lars
     show claude shocked
     Lars narration "His face registers a stunned expression, his mouth hanging open as if he can't quite believe the words I'm saying. Perhaps he was in the process of firming up his resolve to let go of his goals, but I can’t allow him to have his way that easily."
 
-    
+    show lars blush
     show claude blush
     Lars "Regardless of your status as the heir to a prominent family or my unwavering partner who never spared me in teasing, you've always been Claude to me."
 
@@ -1639,7 +1639,7 @@ label select_route:
 
     Claude "You always have a way of making me question my perspective, my ambitions..."
 
-    
+    show lars blush
     Lars "It's not just about having you question them, Sir Claude. It's about cherishing every layer, every facet of who you are, without expecting you to change for me or anyone else."
 
     Lars "There's certainly room for improvement if you want to better yourself, but don't abandon what you've yearned for so long just because there are other dreams you want to attain."
@@ -1653,7 +1653,7 @@ label select_route:
 
     Claude "That's what I love about you..."
 
-    
+    show lars happy
     Lars "Hey, I wanted to say it first—"
 
     Claude "The first person gets to savor the real taste of discovery, not the second or anyone who comes after. But then again, we're both confessing our feelings for the first time, so I suppose it's a unique experience for the both of us."
@@ -1672,7 +1672,7 @@ label select_route:
 
     Claude "Then tell me, should I follow my desire to make you mine? Or do you want me to treat you gently?"
 
-    
+    hide lars
     Lars narration "Before I can respond, he takes my hand and pulls me closer to him."
 
     hide all
@@ -1728,13 +1728,13 @@ label select_route:
 #Claude - Happy End Achieved
 #***** ERROR ***** Command not recognized
 #Pass over his comment	(Neutral End)
-    play music “track_8_neutral_ending.ogg”
+    play music "track_8_neutral_ending.ogg"
     Lars narration "I should move past his comment."
 
     Lars narration "He probably meant it as a joke, like always. I should steer the conversation before I get swept up in his flirty act."
 
     show claude
-    
+    show lars
     Lars "Look, we'll have to prepare a confession for Zephyr, or else he'll carry out his plan to enslave people. Don't you have any gossip-worthy news from all the galas you go to?"
 
     show claude
@@ -1757,14 +1757,14 @@ label select_route:
 
     Claude "Leaving something in an ambiguous state or surrendering to simple pleasures doesn't sit well with me; it feels like I'm betraying the very essence of who I am."
 
-    
+    hide lars
     Lars narration "He chuckles, his eyes holding a playful hint of competition. I didn't realize they had a friendly rivalry going on. I'll have to ask about it later; I don't want to feel left out."
 
-    
+    show lars
     show claude serious
     Lars narration "Without much thought, a sudden question crosses my mind. Perhaps it was a subconscious desire to seek wisdom from someone I admired for his ambition and boldness."
 
-    
+    show lars
     Lars "What happens when you fall in love with someone? Will you end up leaving them for the next person who catches your interest? Or the next adventure that you come across?"
 
     show claude sad
@@ -1772,30 +1772,30 @@ label select_route:
 
     Claude "Our relationship hasn't reached the level where I feel comfortable sharing my story."
 
-    
+    show lars serious
     Lars "And what intriguing story could that be? I already know you're—"
 
     show claude serious
     Claude "Yes, I know. I come from a well-off family that arranges everything for me. Some might say I'm just a thrill-seeker, chasing the undiscovered future for my own amusement. You could say it’s my calling from nature."
 
-    
+    hide lars
     Lars narration "The air around us feels different. Claude isn't usually someone who starts talking about his family out of nowhere."
 
-    
+    show lars
     show claude
     Claude "[Lars]."
 
     Claude "I need you to listen to me carefully."
 
-    
+    hide lars
     Lars narration "He rarely ever shows his vulnerability, so witnessing this side of him is…"
 
-    
+    show lars
     Claude "…"
 
     Claude "You know what? I don’t think I’m ready to share my secret with you yet, Captain."
 
-    
+    show lars serious
     Lars "What do you mean? What’s wrong—"
 
     show claude sad
@@ -1805,7 +1805,7 @@ label select_route:
 
     Claude "Well, if you don't understand it yourself, perhaps we're not on the same page yet when it comes to our feelings."
 
-    
+    hide lars
     Lars narration "His expression shifts to a melancholic tone, accompanied by a wistful sigh. A few strands of hair lose their perfect arrangement as his fingers comb through them."
 
     Lars narration "I've never witnessed him so troubled before."
@@ -1819,7 +1819,7 @@ label select_route:
 
 
     show claude
-    
+    show lars serious
     Claude "You know what would be riskier than what I had planned to tell you?"
 
     Claude "Skydiving right off Spotsy at this very moment."
@@ -1836,7 +1836,7 @@ label select_route:
 
     Claude "I wouldn't mind starting over as long as there's something new to conquer. Perhaps it's a chance to begin with my genuine feelings, leaving behind the pretentious grandeur that my wealth and name affords me."
 
-    
+    show lars serious
     Lars "Let's not jinx the journey when we're so close to our destination."
 
     show claude smile
@@ -1849,10 +1849,10 @@ label select_route:
     Claude "Too late, catch me if you can Captain!"
 
     #for the next scene, claude exits the scene as if he jumped off, perhaps a frame shake could better illustrate this
-    
+    hide lars
     Lars narration "Before I can ask any more questions, he jumps off Spotsy's back into the sea below."
 
-    
+    show lars
     #textbox shake for the next two lines
     Lars "SIR CLAUUUUDE!!!"
 
@@ -1866,7 +1866,7 @@ label select_route:
     Zephyr "MUAHAHAHAHA!"
 
     #zephyr exits the scene while jumping up and down
-    
+    hide lars
     Lars narration "Panic surges through me as Zephyr's heartless laughter echoes in my ears. Ignoring the unsettling sound, I quickly seize the reins from him and spur Spotsy toward Sir Claude's descending form, determined to reach him in time."
 
     #bg starts blurring
@@ -1894,7 +1894,7 @@ label select_route:
     show claude sad at center
     Lars narration "Amidst the chaos of the waves, I catch a glimpse of his eyes—those yellow orbs that resemble the sun breaking through stormy clouds."
 
-    
+    show lars sad
     #zoom in on claude a bit and for the ‘You'll...only...make me...fall...even...harder…’ part, have him gradually zoom out for each word until he’s back in his original position for the last part.
     Lars  "Claude…"
 
@@ -1921,31 +1921,31 @@ label select_route:
 
     Lars narration "Come to think of it, that was probably his plan all along, indulging in an impulsive leap for the sake of some gossip material, and I didn't even see through it!"
 
-    
+    show lars serious
     Lars "Why in Divonia's name would you pull such a stunt? Have you lost your mind? You could have—"
 
     show claude blush
     Claude "I knew I could trust you with my life, Captain. After all, we make the best work couple in the guild."
 
-    
+    show lars sad
     Lars "You nearly gave me a heart attack. What kind of partner does that?"
 
     Claude "A partner for life, obviously. We've just solidified our bond as a duo for eternity, though I'll always hold hope in my heart for more."
 
-    
+    show lars serious
     Lars "Don't give me that kind of lip service."
 
     show claude sad
     Claude "Come on, humor me a bit. Share some of the excitement about our future as, you know, friends."
 
-    
+    hide lars
     Lars narration "He extends his hand toward me, a subtle invitation for a fist bump. It's an odd shift from the usual playful flirtations and spontaneous embraces he's known for."
 
     Lars narration "Perhaps it's the coolness of his hand or the way his eyes glisten under the soft, setting sun that makes me realize he's barely holding it together."
 
     Lars narration "Perhaps one final question will bring me peace of mind…"
 
-    
+    show lars
     Lars "Sir Claude, are you truly satisfied with how things have become between us?"
 
     Lars "I just want to be sure I'm not misunderstanding."
@@ -1955,10 +1955,10 @@ label select_route:
 
     Claude "For now, my only ambition is to remain friends with you, because straining our relationship would be too painful."
 
-    
+    hide lars
     Lars narration "He appears quite determined, and I can't help but feel a tinge of sadness. My actions today seem to have influenced this outcome, and I have no choice but to accept it with a heavy heart."
 
-    
+    show lars
     Lars "Same here, Sir Claude. But no more antics like that."
 
     Claude "Haha, as much as I'd love to, my tail is still recovering from that little splash earlier."
@@ -1968,13 +1968,13 @@ label select_route:
 #Claude - Neutral End Achieved
 #***** ERROR ***** Command not recognized
 #Stay silent about his comment 	(Bad End)
-    play music “track_9_bad_ending.ogg”
+    play music "track_9_bad_ending.ogg"
     Lars narration "I should stay silent for now."
 
     Lars narration "Master Sylvian and Rory might get in trouble if we stall for too long."
 
     show claude at center
-    
+    show lars
     Lars "Look, we'll have to prepare a confession for Zephyr, or else he'll carry out his plan to enslave people. Don't you have any gossip-worthy news from all the galas you go to?"
 
     show claude
@@ -1987,14 +1987,14 @@ label select_route:
 
     Claude "Maybe I just want to spend more time with you—"
 
-    
+    show lars serious
     show claude shocked
     Lars "Ugh, enough of this. You only ever know how to flirt and act like a showman."
 
-    
+    hide lars
     Lars narration "I'm a dragon pilot for Div's sake, a responsible person who is supposed to take care of the people around him. I can't just sit back and watch innocent people get dragged into this mess."
 
-    
+    show lars serious
     Lars "If you don't start acting seriously about this, we'll never be able to save the enslaved humans, and Zephyr is going to continue suspending time for who knows how long."
 
     Claude "Come on, Captain, I know you value your duties, but no one said we couldn't have a little fun on the journey!"
@@ -2004,17 +2004,17 @@ label select_route:
     show claude serious
     Claude "Hmm? Is that what this is? A ploy to show me that you wanted Sylvian to come along instead?"
 
-    
+    hide lars
     Lars narration "Tension tightens his expression, a silent storm brewing in his golden eyes. As his fingers thread through tightly braided silver hair, unraveling a few strands, the disheveled tendrils mirror the chaos within— a poignant departure from his usual confidence."
 
-    
+    show lars serious
     #for the next line, claude does a side to side shake + a jump. Preferably, he does a shake to the left from ‘It’s always Sylvian this’ and does another shake from ‘and Sylvian that’, then does a jump from ‘Why can't I ever catch a break from him?’
     Claude "It’s always Sylvian this and Sylvian that. Why can't I ever catch a break from him?"
 
-    
+    hide lars
     Lars narration "Venom drips from his words with each mention of the Master, catching me off guard. I never expected such a strong undercurrent of negative feelings from someone usually so charismatic and positive."
 
-    
+    show lars serious
     Lars "I only mentioned him as an example, Sir Claude. What's going on with you? Why are you so riled up?"
 
     show claude sad
@@ -2027,7 +2027,7 @@ label select_route:
     show claude serious
     Claude "Frankly, I don't care about saving others and whatnot."
 
-    
+    show lars sad
     Lars "Sir Claude, you've got it all wrong—"
 
     Claude "Drop the 'Sir' once and for all! It's clear you don't even bother to hear me out, do you?"
@@ -2036,7 +2036,7 @@ label select_route:
 
     Claude "You certainly did a 'fantastic' job with that."
 
-    
+    show lars serious
     Lars "Ugh, you really outdid yourself with that, didn't you? Let's just put this misunderstanding aside for now and focus on the mission."
 
     Lars "We'll talk about this later when our heads are less clouded."
@@ -2044,10 +2044,10 @@ label select_route:
     show claude serious
     Claude "Oh, so now my head is clouded? So you think my brain is lost on its own little adventure, don't you?"
 
-    
+    hide lars
     Lars narration "My fur unruffles, and an electric charge courses through my body. A ringing sensation pounds in my head, and it's difficult to restrain the words that spill from my mouth."
 
-    
+    show lars serious
     Lars "Do you always have to act like such a spoiled kid? Didn't your parents give you enough affection as is? Why do you have to cling to me so much?"
 
     Lars "Not to mention, did I ask for your hugs, embraces, or your attention? I didn't, so why are you now having a problem with me staying silent about it?"
@@ -2061,7 +2061,7 @@ label select_route:
 
     Claude "I don't like people bringing up my family name; you should know that better than anyone else—"
 
-    
+    hide lars
     Lars narration "Why is he looking at me with such a pitiful gaze?"
 
     show claude serious
@@ -2069,40 +2069,40 @@ label select_route:
 
     Claude "You remember how I've always skirted around the fact that I'm a Dupont heir?"
 
-    
+    show lars serious
     Lars "What does that have to do with anything right now?"
 
     show claude sad
     Claude "Well, the truth is, I've avoided mentioning it because...I didn't want to be defined by that name."
 
-    
+    show lars serious
     Claude "I've always struggled with titles and appearances growing up."
 
     Claude "The burden of being the Dupont family heir, with its myriad of expectations,  it all felt like a shallow act that I had to uphold, and I...I felt imprisoned in that superficial world."
 
-    
+    hide lars
     Lars narration "His furrowed brows reveal the burden of unpleasant memories, and as much as I long to unravel the tangled threads, he begins to shake his head in dismay."
 
     show claude sad
-    
+    show lars serious
     Claude "Spending time with you, [Lars], offered me a respite from all of that. It was a rare chance to shed the mask and simply be myself, the playful companion who loved to tease his partner in crime."
 
     Claude "But, over time, my feelings changed…"
 
-    
+    hide lars
     Lars narration "My heart quickens its pace, a sense of dread sparking through every fiber of my being as I prepare for what lies ahead. Will we finally be able to get over this hurdle and be done with the confession?"
 
     Lars narration "He starts to absentmindedly stroke his hair, an irritating habit I've grown weary of. With a frustrated sigh, he looks up, as if lost in some memory, before reluctantly shifting his gaze to the horizon and continuing his speech."
 
-    
+    show lars serious
     Claude "I stopped seeing you as just the guild's pilot or my work partner…"
 
-    
+    hide lars
     Lars narration "A heavy weight settles on my chest, and my heart races, each beat echoing my growing unease. Weariness seeps into my bones as I find myself in an awkward role – the unwilling recipient of Sir Claude’s love confession."
 
     Lars narration "I really don’t want to look at his eyes right now."
 
-    
+    show lars serious
     Lars "Are you saying what I think you're saying?"
 
     Claude "Relationships have always come easily to me, but you...you're the only person who's made me feel this way."
@@ -2126,7 +2126,7 @@ label select_route:
     show claude serious
     Claude "I don't want you to analyze it any further than I've told you. If we were on the same wavelength, there would have been no need to explain it more than that."
 
-    
+    show lars
     Lars "Sir Claude, I appreciate your feelings, but—"
 
     Claude "Still calling me that obnoxious title even in this situation. Won't you humor me and call me by my name for once?"
@@ -2136,12 +2136,12 @@ label select_route:
     show claude sad
     Claude "Well, at least I'll have the chance to put these feelings behind me once and for all."
 
-    
+    hide lars
     Lars narration "In an attempt to offer some comfort, my hand tentatively reaches out to him. Yet, he gently but firmly pushes it away, and the gravity of the situation bears down on me. Here I am, standing with someone I truly admire -despite our recent clash- who has just confessed his feelings."
 
     Lars narration "However, I know deep down that I can't reciprocate those feelings."
 
-    
+    show lars sad
     Lars "I’m sorry…"
 
     show claude serious
@@ -2185,10 +2185,10 @@ label select_route:
     Claude "Don't catch me."
 
     #for the next scene, claude exits the scene as if he jumped off, perhaps a frame shake could better illustrate this
-    
+    hide lars
     Lars narration "Before I can ask any more questions, he jumps off Spotsy's back into the sea below."
 
-    
+    show lars
     #textbox shake for the next two lines
     Lars "SIR CLAUUUUDE!!!"
 
@@ -2202,7 +2202,7 @@ label select_route:
     Zephyr "MUAHAHAHAHA!"
 
     #zephyr exits the scene while jumping up and down
-    
+    hide lars
     Lars narration "Panic surges through me as Zephyr's heartless laughter echoes in my ears. Ignoring the unsettling sound, I quickly seize the reins from him and spur Spotsy toward Sir Claude's descending form, determined to reach him in time."
 
     #bg starts blurring
@@ -2231,7 +2231,7 @@ label select_route:
     show claude sad at center
     Lars narration "Amidst the chaos of the waves, I catch a glimpse of his eyes—those yellow orbs that resemble the sun breaking through stormy clouds."
 
-    
+    show lars sad
     #zoom in on claude a bit
     Lars  "Claude…"
 
@@ -2259,12 +2259,12 @@ label select_route:
 
     Lars narration "Come to think of it, that was probably his plan all along, indulging in an impulsive leap for the sake of some gossip material, and I didn't even see through it!"
 
-    
+    show lars serious
     Lars "Why in Divonia's name would you pull such a stunt? Have you lost your mind? You could have—"
 
     Claude "I told you not to catch me, didn't I?"
 
-    
+    show lars sad
     Lars "You nearly gave me a heart attack. What kind of partner does that?"
 
     show claude sad
@@ -2272,7 +2272,7 @@ label select_route:
 
     Claude "I may trust you with my life in the future as a fellow guild member, but I can no longer trust you with my heart as a  friend or my partner in crime."
 
-    
+    hide lars
     Lars narration "He breaks away from his stagnant position and slowly begins to walk away. Is this how it all ends?"
 
     Lars narration "The partner I've worked alongside for so long, my dearest friend, the person whose ambition I've admired, just walking away without a word or challenge?"
@@ -2283,7 +2283,7 @@ label select_route:
 
     Lars narration "Perhaps one final question will bring me peace of mind…"
 
-    
+    show lars sad
     Lars "Sir Claude, are you truly satisfied with how things have become between us?"
 
     Lars "I just want to be sure I'm not misunderstanding."
@@ -2299,7 +2299,7 @@ label select_route:
 
     Lars "I might as well claim the victory of having the last word since I didn't succeed in having the best one."
 
-    
+    hide lars
     Lars narration "Looks like he had achieved what he sought after all – another victory in his competitive mind."
 
     Claude "Goodbye, [Lars] ...take care of yourself."

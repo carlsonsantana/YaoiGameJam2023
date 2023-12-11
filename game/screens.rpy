@@ -849,37 +849,38 @@ screen preferences():
 
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
-
+    #use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu(_("Preferences")):
         vbox:
-
-            hbox:
-                box_wrap False
-
+            xpos 20
+            grid 2 2:
+                xalign 0
+                xsize 450
+                xspacing 80
                 if renpy.variant("pc") or renpy.variant("web"):
-                    xalign 0.5
-                    yalign 0.5
-                    vbox:
-                        style_prefix "radio"
-                        label _("Display")
-                        textbutton _("Window") action Preference("display", "window")
-                        textbutton _("Fullscreen") action Preference("display", "fullscreen")
+                        #xalign 0.5
+                        #yalign 0.5
+                        vbox:
+                            style_prefix "radio"
+                            label _("Display")
+                            textbutton _("Window") action Preference("display", "window")
+                            textbutton _("Fullscreen") action Preference("display", "fullscreen")
+                else:
+                    null height (4 * gui.pref_spacing)
 
                 vbox:
-                    style_prefix "check"
-                    label _("Skip")
-                    textbutton _("Unseen Text") action Preference("skip", "toggle")
-                    textbutton _("After Choices") action Preference("after choices", "toggle")
-                    textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
+                    #style_prefix "slider"
+                    #box_wrap False
 
-                ## Additional vboxes of type "radio_pref" or "check_pref" can be
-                ## added here, to add additional creator-defined preferences.
+                    vbox:
+                        style_prefix "check"
+                        label _("Skip")
+                        textbutton _("Unseen Text") action Preference("skip", "toggle")
+                        textbutton _("After Choices") action Preference("after choices", "toggle")
+                        textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
 
-            null height (4 * gui.pref_spacing)
-
-            hbox:
-                style_prefix "slider"
-                box_wrap True
+                    ## Additional vboxes of type "radio_pref" or "check_pref" can be
+                    ## added here, to add additional creator-defined preferences.
 
                 vbox:
 
@@ -892,7 +893,6 @@ screen preferences():
                     bar value Preference("auto-forward time")
 
                 vbox:
-
                     if config.has_music:
                         label _("Music Volume")
 
@@ -961,7 +961,7 @@ style pref_label_text:
     yalign 1.0
 
 style pref_vbox:
-    xsize 338
+    xsize 450
 
 style radio_vbox:
     spacing gui.pref_button_spacing
@@ -979,9 +979,11 @@ style check_vbox:
 style check_button:
     properties gui.button_properties("check_button")
     foreground "gui/button/check_[prefix_]foreground.png"
+    
 
 style check_button_text:
     properties gui.button_text_properties("check_button")
+    xoffset 25
 
 style slider_slider:
     xsize 525
@@ -1628,7 +1630,7 @@ define bubble.expand_area = {
 
 style pref_vbox:
     variant "medium"
-    xsize 675
+    #xsize 675
 
 ## Since a mouse may not be present, we replace the quick menu with a version
 ## that uses fewer and bigger buttons that are easier to touch.
@@ -1729,7 +1731,7 @@ style slider_vbox:
 
 style slider_slider:
     variant "small"
-    xsize 900
+    xsize 800
 
 ## Custom screen
 
