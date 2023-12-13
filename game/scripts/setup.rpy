@@ -7,51 +7,44 @@ transform unflip:
 transform flip_instant:
     xzoom -1.0
 
-#transform zephyr_intro:
-#    xalign 0.95
-#    yalign 0.5
+transform jp:
+    yoffset 0
+    easein 0.25 yoffset -100
+    easeout 0.25 yoffset 0
+    easein 0.2 yoffset -30
+    easeout 0.2 yoffset 0
+    easein 0.15 yoffset -10
+    easeout 0.15 yoffset 0
+    easein 0.1 yoffset -4
+    easeout 0.1 yoffset 0
 
-#transform zephyr_lower:
-#    yalign 0.5
+transform shake:
+    xoffset 0
+    easein 0.25 xoffset -100
+    easeout 0.25 xoffset 0
+    easein 0.2 xoffset -30
+    easeout 0.2 xoffset 0
+    easein 0.15 xoffset -10
+    easeout 0.15 xoffset 0
+    easein 0.1 xoffset -4
+    easeout 0.1 xoffset 0
 
-#transform slight_left:
-#    xalign 0.2
-
-#transform sylvian_at_zephyr_intro:
-#    xalign 0.65
-
-#transform rory_at_zephyr_intro:
-#    xalign 0.25
-
-#transform slight_down:
-#    yalign 1.15
-
-#transform slight_right:
-#    xalign 0.8
-
-#transform more_right:
-#    xalign 1.2
-
-#transform bg_size:
-#    zoom 0.75
-
-#transform market_bg_size:
-#    zoom 1.5
-
-#transform char_size:
-#    zoom 0.75
-
-#transform normal_size:
-#    zoom 1.0
-
-#transform force_normal_size:
-#    zoom 1.0
 transform bg_blur:
-    linear .25 blur 15
+    linear 2.0 blur 15
 
 transform same_transform(old, new):
     old
     new with Dissolve(0.2, alpha=True)
+
+transform enter_right:
+    yalign 1.0
+    xalign 2.0
+    linear 0.5 xalign 1.0
+
+transform enter_left:
+    yalign 1.0
+    xalign -1.0
+    linear 0.5 xalign 0.0
 
 
 define config.side_image_same_transform = same_transform

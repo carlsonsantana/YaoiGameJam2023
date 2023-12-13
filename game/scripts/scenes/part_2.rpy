@@ -1,16 +1,18 @@
 #linear 0.5 xalign 0.5
 label select_route: 
 
-#***** ERROR ***** Command not recognized
-#Route Selection; Start
-#***** ERROR ***** Command not recognized
-#Select Claude route
-#***** ERROR ***** Command not recognized
-#Select Sylvian route
-#***** ERROR ***** Command not recognized
-#Route Selection; End
-#***** ERROR ***** Command not recognized
-#Sylvian Route
+    $ calc_relations()
+    
+    menu:
+        Lars " "
+
+        "Select Claude route":
+            jump claude_route
+
+        "Select Sylvian route":
+            jump sylvian_route
+
+label sylvian_route:
     show zephyr happy at left
     show claude at center_left
     show sylvian at center_right
@@ -205,10 +207,26 @@ label select_route:
 
     Lars narration "However, this time, his shaking hands and the glistening look in his eyes suggest it's not another session of false bravado but something else— something unknown yet exciting for the first time."
 
-#***** ERROR ***** Command not recognized
-#S 3; Start
-#***** ERROR ***** Command not recognized
-#Poke further about his comment	(Bad End)
+label menu_s3:
+    menu:
+        Lars " "
+
+        "Poke further about his comment":
+            jump S3_sylvian_bad_end
+        
+        " " (blocked=True) if relations["sylvian"]<5:
+            jump menu_s3
+
+        "Pass over his comment" if relations["sylvian"]>=5:
+            jump S3_sylvian_neutral_end
+ 
+        " " (blocked=True) if relations["sylvian"]<7:
+            jump menu_s3
+
+        "Stay silent about his comment " if relations["sylvian"]>=7:
+            jump S3_sylvian_good_end
+
+label S3_sylvian_bad_end:
     play music "track_9_bad_ending.ogg"
     Lars narration "I should poke further about his comment."
 
@@ -479,7 +497,7 @@ label select_route:
     Sylvian "I don’t think I have the heart to accept your pity, [Lars]. It would be devastating to know that you're wasting your time on someone like me."
 
     hide all
-    show black feather
+    show black_feather
     Lars narration "He gracefully pulls a single feather from the folds of his wings, idly twirling it between his fingers as if lost in thought."
 
     Sylvian "Did you know, [Lars]? Swans form a lifelong bond with a single mate, remaining together until the bond is broken, either by death or if one of them is preyed upon."
@@ -583,11 +601,14 @@ label select_route:
 
     Sylvian "Who knows…if I’ll ever be worthy of love again."
 
-    #screen fades to black and the next line appears in the textbox, music also fades into silence
-#***** ERROR ***** Command not recognized
-#Sylvian - Bad End Achieved
-#***** ERROR ***** Command not recognized
-#Pass over his comment	(Neutral End)
+    #Sylvian - Bad End Achieved
+    $ renpy.choice_for_skipping()
+    $ persistent.ending[2] = 1
+    "" "Sylvian - Bad End Achieved"
+    jump end
+
+label S3_sylvian_neutral_end:
+
     play music "track_8_neutral_ending.ogg"
     Lars narration "I should move past his comment."
 
@@ -938,11 +959,12 @@ label select_route:
 
     Sylvian "Indeed, what an outcome…"
 
-    #screen fades to black and the next line appears in the textbox, music also fades into silence
-#***** ERROR ***** Command not recognized
-#Sylvian - Neutral End Achieved
-#***** ERROR ***** Command not recognized
-#Stay silent about his comment 	(Good End)
+    $ renpy.choice_for_skipping()
+    $ persistent.ending[1] = 1
+    " " "Sylvian - Neutral End Achieved"
+    jump end
+
+label S3_sylvian_good_end:
     play music "track_7_good_ending.ogg"
     Lars narration "I should stay silent for now."
 
@@ -1257,10 +1279,12 @@ label select_route:
     Sylvian "I…I love you, my everlasting bloom."
 
     #screen fades to black and the next line appears in the textbox, music also fades into silence
-#***** ERROR ***** Command not recognized
-#Sylvian - Good End Achieved
-#***** ERROR ***** Command not recognized
-#Claude Route
+    $ renpy.choice_for_skipping()
+    $ persistent.ending[0] = 1
+    " " "Sylvian - Good End Achieved"
+    jump end
+
+label claude_route:
     show zephyr happy at left
     show claude at center_left
     show sylvian at center_right
@@ -1451,10 +1475,26 @@ label select_route:
     hide lars
     Lars narration "Though well-known for his love of humor and jest, this time, his response carries an unmistakable sincerity. What could he possibly mean, though?"
 
-#***** ERROR ***** Command not recognized
-#C 3; Start
-#***** ERROR ***** Command not recognized
-#Poke further about his comment 	(Good End)
+label menu_c3:
+    menu:
+        Lars " "
+
+        " " (blocked=True) if relations["claude"]<7:
+            jump menu_c3
+
+        "Poke further about his comment" if relations["claude"]>=7:
+            jump C3_claude_good_end
+        
+        " " (blocked=True) if relations["claude"]<5:
+            jump menu_c3
+
+        "Pass over his comment" if relations["claude"]>=5:
+            jump C3_claude_neutral_end
+        
+        "Stay silent about his comment":
+            jump C3_claude_bad_end
+
+label C3_claude_good_end:
     play music "track_7_good_ending.ogg"
     Lars narration "I should poke further about his comment."
 
@@ -1489,7 +1529,7 @@ label select_route:
         show claude smile
         Claude "Recall that promise I made about sharing everything once we're alone? If memory serves me right, you were quite eager to unravel my secrets at the time, weren’t you?"
 
-        show lars blulsh
+        show lars blush
         Lars "That's not true! I only wanted you to know that I'm here for you as a friend and fellow guild member, should you ever want to share—"
 
         Claude "Haha, I'm just joking, [Lars]. I understand your intentions well enough. Your close bond with dragons is the reason behind your sincere way of talking, isn’t that right? I’ve admired that for some time now…"
@@ -1724,10 +1764,12 @@ label select_route:
     Claude "I love you, [Lars], and no amount of exotic treasures in the world will ever change how precious you are to me."
 
     #screen fades to black and the next line appears in the textbox, music also fades into silence
-#***** ERROR ***** Command not recognized
-#Claude - Happy End Achieved
-#***** ERROR ***** Command not recognized
-#Pass over his comment	(Neutral End)
+    $ renpy.choice_for_skipping()
+    $ persistent.ending[3] = 1
+    " " "Claude - Good End Achieved"
+    jump end
+
+label C3_claude_neutral_end:
     play music "track_8_neutral_ending.ogg"
     Lars narration "I should move past his comment."
 
@@ -1964,10 +2006,12 @@ label select_route:
     Claude "Haha, as much as I'd love to, my tail is still recovering from that little splash earlier."
 
     #screen fades to black and the next line appears in the textbox, music also fades into silence
-#***** ERROR ***** Command not recognized
-#Claude - Neutral End Achieved
-#***** ERROR ***** Command not recognized
-#Stay silent about his comment 	(Bad End)
+    $ renpy.choice_for_skipping()
+    $ persistent.ending[4] = 1
+    " " "Claude - Neutral End Achieved"
+    jump end
+    
+label C3_claude_bad_end:
     play music "track_9_bad_ending.ogg"
     Lars narration "I should stay silent for now."
 
@@ -2305,5 +2349,12 @@ label select_route:
     Claude "Goodbye, [Lars] ...take care of yourself."
 
     #screen fades to black and the next line appears in the textbox, music also fades into silence
-#***** ERROR ***** Command not recognized
-#Claude - Bad End Achieved
+    $ renpy.choice_for_skipping()
+
+    $ persistent.ending[5] = 1
+    " " "Claude - Bad End Achieved"
+    jump end
+
+label end:
+    #screen fades to black and the next line appears in the textbox, music also fades into silence
+    pass

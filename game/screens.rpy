@@ -215,15 +215,13 @@ screen choice(items):
         #$ idx = 0
         #$ choice_len = len(items)
         for i in items:
-            #$ idx = idx + 1
+            $ blocked = i.kwargs.get("blocked", False)
             textbutton i.caption:
                 action i.action
                 xsize 1290
-                # if idx > choice_len - 1:
-                #     # last
-                #     idle_background "gui/button/choice_idle_background_last.png"
-                #     hover_background "gui/button/choice_hover_background_last.png"
-                # else:
+                if blocked:
+                    idle_background im.Scale("gui/button/choice_block_background.png", 1290, 114)
+                    hover_background im.Scale("gui/button/choice_block_background.png", 1290, 114)
                 yminimum 134
                 ypadding 26
 
@@ -416,7 +414,9 @@ screen navigation():
 
 
 style navigation_button is gui_button
-style navigation_button_text is gui_button_text
+
+style navigation_button_text is gui_button_text:
+    xalign 0.5
 
 style navigation_button:
     size_group "navigation"
