@@ -1757,11 +1757,25 @@ init python:
 
     # Create the gallery object.
     gal = Gallery()
-    
-    gal_end = Gallery()
-    
-    gal_end.button("title")
-    gal_end.image("gui/button/choice_block_background.png")
+
+    gal.button("claude_good")
+    gal.image("images/cg/cg_lars_claude_ge.png")
+    gal.condition("persistent.ending[3]")
+
+    gal.button("sylvian_good")
+    gal.image("images/cg/cg_lars_sylvian_ge.png")
+    gal.condition("persistent.ending[0]")
+
+    gal.button("opening")
+    gal.image("images/cg/opening_screen.png")
+    gal.condition("True")
+
+    gal.button("art")
+    gal.image("images/cg/cg_1.png")
+    gal.image("images/background/bg_1.png")
+    gal.image("images/background/bg_2.png")
+    gal.image("images/background/bg_3.png")
+    gal.condition("True")
 
 
 screen gallery:
@@ -1771,14 +1785,47 @@ screen gallery:
     # The background.
     add "gui/game_menu.png"
 
-    grid 2 2:
-        xpos 320
-        ypos 200
-        xfill True
-        yfill False
-        yspacing 20
+    label "Gallery":
+        xpos 1000
+        ypos 46
+        #text_style "gui_accent_text"
+        text_size 70
+        text_color '#b20202'
 
-    #add gal_end.make_button("title", "gui/button/choice_block_background.png", xalign=0.5, yalign=0.5)
+    grid 2 2:
+        xpos 740
+        #xsize 1000
+        ypos 200
+        xfill False
+        yfill False
+        yspacing 140
+        xspacing 120
+
+        vbox:
+            if persistent.ending[3]:
+                add gal.make_button("claude_good", "gui/gallery_idle.png", xalign=0.5, yalign=0.5)
+            else:
+                add gal.make_button("claude_good", "gui/gallery_locked.png", xalign=0.5, yalign=0.5)
+            text "Claude good end":
+                xalign 0.5
+        
+        vbox:
+            if persistent.ending[0]:
+                add gal.make_button("sylvian_good", "gui/gallery_idle.png", xalign=0.5, yalign=0.5)
+            else:
+                add gal.make_button("sylvian_good", "gui/gallery_locked.png", xalign=0.5, yalign=0.5)
+            text "Sylvian good end":
+                xalign 0.5
+        
+        vbox:
+            add gal.make_button("opening", "gui/gallery_idle.png", xalign=0.5, yalign=0.5)
+            text "Opening Screen":
+                xalign 0.5
+        
+        vbox:
+            add gal.make_button("art", "gui/gallery_idle.png", xalign=0.5, yalign=0.5)
+            text "Art":
+                xalign 0.5
 
     use navigation
 
