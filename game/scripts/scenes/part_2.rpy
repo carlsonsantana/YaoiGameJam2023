@@ -2,10 +2,12 @@
 label select_route: 
 
     $ calc_relations()
+    #$ txt_temp = f'{options["C1"]}-{options["C2"]}-{options["CS1"]}-{options["S1"]}-{options["S2"]}-{options["CS2"]}-{options["CS3"]}-{options["CS4"]}-{options["CS5"]}-{options["CS6"]}'
+    #$ txt_temp2 = f'c:{relations["claude"]} s:{relations["sylvian"]}'
     
     menu:
         Lars " "
-
+        
         "Select Claude route":
             jump claude_route
 
@@ -26,8 +28,12 @@ label sylvian_route:
     show lars
     Lars "I choose him."
 
-    #here the arrangement will change as claude gets turned into claude_sad during the last sentence and then he exits the scene. sylvian will move to the center, rory  and zephyr will be in the same position
-    show sylvian blush at center
+    #here the arrangement will change as claude gets turned into claude_sad during the last sentence and then he exits the scene. 
+    #sylvian will move to the center, rory  and zephyr will be in the same position
+    $ renpy.choice_for_skipping()
+    show claude sad:
+        linear 0.5 xalign -1.0
+    show sylvian blush at center with move
     Sylvian "Thank you [Lars]. I truly mean it."
 
     show lars blush
@@ -64,9 +70,15 @@ label sylvian_route:
 
     Zephyr "Let's spice up the setting while we're at it; I wouldn't want someone else to hijack my headline when I finally release them from their frozen state. Scouty, pick a fancy locale, won't you?"
 
-    hide all
+    hide zephyr
+    hide claude
+    hide zylvian
+    hide rory
+    $ renpy.choice_for_skipping()
     #black screen transition fade in/fade out
-    show bg_5
+    #scene bg black
+    show bg_5 with fade
+
     Lars narration "The sun is gradually sinking towards the horizon, casting cold hues across the sky as late afternoon approaches."
 
     show zephyr sad at left
@@ -83,6 +95,10 @@ label sylvian_route:
 
     hide lars
     #zephyr exits the scene, and sylvian stays in the center
+    $ renpy.choice_for_skipping()
+    show zephyr:
+        linear 0.5 xalign 2.0
+    show sylvian blush at center
     Lars narration "I shoot a glance at Master Sylvian and bite my lips in frustration. I chose him as my partner, but with Zephyr so close by, I'm unsure of our next move."
 
     show lars serious
@@ -96,11 +112,15 @@ label sylvian_route:
     Lars "Perhaps Zephyr should have taken up the role of the prime content for his beloved gossip column with all the antics he's pulling. Exploiting the humans' unfamiliarity with Div customs and culture would certainly add a mysterious twist for everyone once they learn what's been happening under their noses."
 
     #zephyr_happy suddenly comes in from the right and zooms in super close to MC, almost as if his sprite is covering up everything behind the textbox
+    show zephyr:
+        linear 0.5 xalign 1.0
     Zephyr "I HEARD THAT!"
 
     Zephyr "Enough with the chatter, spill the icy confessions instead!"
 
     #zephyr_happy exits the scene from the right
+    show zephyr:
+        linear 0.5 xalign 2.0
     Lars "How do you suggest we proceed, Master? I'm worried more people will get caught up in this mess if we don’t act swiftly."
 
     show sylvian at center
@@ -172,7 +192,7 @@ label sylvian_route:
     show lars blush
     Lars "How on Divonia did you find that out? Was my tail wagging again? I swear it always keeps-"
 
-    show sylvian blush
+    show sylvian blush at jp
     #sylvian does a little up and down jum for the laughing part
     Sylvian "Hahaha! It's nothing of that sort. It's just that I've been observing you for such a long time that I can't help but pick up on your subtlest of gestures."
 
@@ -208,6 +228,8 @@ label sylvian_route:
     Lars narration "However, this time, his shaking hands and the glistening look in his eyes suggest it's not another session of false bravado but something else— something unknown yet exciting for the first time."
 
 label menu_s3:
+    $ calc_relations()
+    
     menu:
         Lars " "
 
@@ -254,15 +276,18 @@ label S3_sylvian_bad_end:
 
     show sylvian blush
     #textbox shake for the next line
-    Sylvian "[Lars]!"
+    Sylvian "{sc}[Lars]!{/sc}"
 
     #sylvian’s sprite starts shaking a bit like he’s super nervous
+    show sylvian blush at shake
     Sylvian "Y-you can’t -you m-musn’t- say such a thing out loud! Or better yet, why would y-you… or no, my mind can’t take this anymore-"
 
     hide lars
     Lars narration "Poor Master Sylvian looks like he's about to explode; his face is ablaze in varying shades of red. Upon closer examination, it's as if imaginary steam is wafting, suggesting his head might be on the verge of overheating. His delicate feathers appear tousled, as if on the brink of unraveling at any given moment."
 
-    show sylvian sad
+    show sylvian sad:
+        xoffset 0.0
+        yoffset 0.0
     Sylvian "You’ve never acted like this before."
 
     Lars "I could say the same for you. You're usually the one guiding us as the leader, giving instructions on what to do and what to avoid."
@@ -305,12 +330,15 @@ label S3_sylvian_bad_end:
     hide lars
     Lars narration "All at once, his expression transforms into one of horror."
 
-    hide lars_serious
+    hide lars
     Sylvian "I-I-I…need to leave— I need to get out of here!"
 
     #after the last sentence, sylvian exits from either direction
+    show sylvian:
+        linear 0.5 xalign 2.0
     Lars narration "He flutters his large swan wings open causing his feathers to ruffle. They catch the cold hues of the afternoon sun as he lifts off the ground and soars into the sky. The sudden display captures Zephyr's attention, prompting him to shout out."
 
+    hide sylvian
     show zephyr sad
     Zephyr "SMARTY!"
 
@@ -318,7 +346,8 @@ label S3_sylvian_bad_end:
 
     Zephyr "I’m not letting you get away!"
 
-    hide all
+    hide sylvian
+    hide zephyr
     show spotsy
     Lars narration "But before he has the chance to grumble any further, I swiftly move to the spot where Spotsy is resting. I climb onto her back and feel the afternoon air bristling against my fur."
 
@@ -354,11 +383,14 @@ label S3_sylvian_bad_end:
 
     hide lars
     #black screen transition fade in/fade out
-    show bg_4
+    show bg_4 with fade:
+        zoom 1.5
+        xalign 0.0
+        yalign 0.5
     Lars narration "Spotsy instantly fluffs up her wings, taking flight. The ocean gradually shrinks beneath us as we ascend into the sky."
 
     #black screen transition fade in/fade out
-    show bg_7
+    show bg_7 at pan with fade:
     #panning effect - sample in drive
     Lars narration "We glide through billowy clouds, soft as cotton candy, as the world below turns into a distant patchwork of greens and blues. The air feels crisp, the wind hums gently, and the sun bathes the clouds in hues of pink and blue, creating a tranquil haven above the world."
 
@@ -366,34 +398,38 @@ label S3_sylvian_bad_end:
 
     Lars narration "Wilting flowers have blossomed around him, bowing down in a withering manner mirroring the posture of Master Sylvian himself."
 
-    #panning ends
+    show bg_7 at end_pan
     show lars serious
     show sylvian sad at right
     #next line, the textbox does a little up and down jump
-    Lars "MASTER SYLVIAN!"
+    Lars "{bt}MASTER SYLVIAN!{/bt}"
 
     Lars "Can you hear me?"
 
-    hide lars
+    
     Lars narration "I could see his back shrivel up even more, but I couldn't hear a response while sitting on Spotsy’s back."
 
-    show lars
     Lars "If you don't respond, I might just dive into the cloud you're lounging on the count of three!"
 
     #next 3 lines, the textbox does a little up and down jump
-    Lars "ONE!"
+    Lars "{bt}ONE!{/bt}"
 
-    Lars "TWO!"
+    Lars "{bt}TWO!{/bt}"
 
-    Lars "THREE!"
+    Lars "{bt}THREE!{/bt}"
 
     #After the last sentence, the screen does and up and down shake like he just jumped
-    hide lars
+    show bg_7:
+        easein 0.2 yoffset -10
+        easeout 0.2 yoffset 0
+        easein 0.2 yoffset 10
+        easeout 0.2 yoffset 0
     Lars narration "Determined, I leap off Spotsy's back, ready to embrace the uncertainty of landing on the cloud's flowery spots. Yet, before I can experience the leap of fate, a flurry of petals swirls beneath my dragon-riding boots, guiding my descent."
 
     Lars narration "The petals gracefully direct me towards Master Sylvian, aligning with my steps. As soon as he concludes his incantation, the petals disassemble, leaving me standing seamlessly on the cloud, unfazed by the unconventional landing."
 
     #sylvian moves to the center
+    show sylvian at center with move
     Sylvian "Why…"
 
     Sylvian "Why are you here, [Lars]?"
@@ -496,7 +532,8 @@ label S3_sylvian_bad_end:
 
     Sylvian "I don’t think I have the heart to accept your pity, [Lars]. It would be devastating to know that you're wasting your time on someone like me."
 
-    hide all
+    hide sylvian
+
     show black_feather
     Lars narration "He gracefully pulls a single feather from the folds of his wings, idly twirling it between his fingers as if lost in thought."
 
@@ -665,6 +702,8 @@ label S3_sylvian_neutral_end:
     Sylvian "I-I-I…need to leave— I need to get out of here!"
 
     #after the last sentence, sylvian exits from either direction
+    show sylvian:
+        linear 0.5 xalign 2.0
     Lars narration "He flutters his large swan wings open causing his feathers to ruffle. They catch the cold hues of the afternoon sun as he lifts off the ground and soars into the sky. The sudden display captures Zephyr's attention, prompting him to shout out."
 
     show zephyr sad
@@ -710,11 +749,11 @@ label S3_sylvian_neutral_end:
 
     hide lars
     #black screen transition fade in/fade out
-    show bg_4
+    show bg_4 with fade
     Lars narration "Spotsy instantly fluffs up her wings, taking flight. The ocean gradually shrinks beneath us as we ascend into the sky."
 
     #black screen transition fade in/fade out
-    show bg_7
+    show bg_7 at pan with fade
     #panning effect - sample in drive
     Lars narration "We glide through billowy clouds, soft as cotton candy, as the world below turns into a distant patchwork of greens and blues. The air feels crisp, the wind hums gently, and the sun bathes the clouds in hues of pink and blue, creating a tranquil haven above the world."
 
@@ -723,6 +762,7 @@ label S3_sylvian_neutral_end:
     Lars narration "Wilting flowers have blossomed around him, bowing down in a withering manner mirroring the posture of Master Sylvian himself."
 
     #panning ends
+    show bg_7 at end_pan
     show lars serious
     show sylvian sad at right
     #next line, the textbox does a little up and down jump
@@ -737,11 +777,11 @@ label S3_sylvian_neutral_end:
     Lars "If you don't respond, I might just dive into the cloud you're lounging on the count of three!"
 
     #next 3 lines, the textbox does a little up and down jump
-    Lars "ONE!"
+    Lars "{bt}ONE!{/bt}"
 
-    Lars "TWO!"
+    Lars "{bt}TWO!{/bt}"
 
-    Lars "THREE!"
+    Lars "{bt}THREE!{/bt}"
 
     #After the last sentence, the screen does and up and down shake like he just jumped
     hide lars
@@ -750,6 +790,7 @@ label S3_sylvian_neutral_end:
     Lars narration "The petals gracefully direct me towards Master Sylvian, aligning with my steps. As soon as he concludes his incantation, the petals disassemble, leaving me standing seamlessly on the cloud, unfazed by the unconventional landing."
 
     #sylvian moves to the center
+    show sylvian at center with move
     Sylvian "Why…"
 
     Sylvian "Why are you here, [Lars]?"
@@ -862,8 +903,9 @@ label S3_sylvian_neutral_end:
     show lars sad
     Sylvian "This is the fate that I must accept for I am worthy of no other."
 
-    hide all
-    show black feather
+    
+    show black_feather
+    hide sylvian
     Lars narration "He gracefully pulls a single feather from the folds of his wings, idly twirling it between his fingers as if lost in thought."
 
     Sylvian "Did you know, [Lars]? Swans form a lifelong bond with a single mate, remaining together until the bond is broken, either by death or if one of them is preyed upon."
@@ -1089,7 +1131,7 @@ label S3_sylvian_good_end:
         hide lars
         Lars narration "His unexpected boldness takes me by surprise. Whether it's the influence of the earlier drink or a newfound resolve, his declaration resonates within me. My heart pounds louder, with my tail mirroring its pulse."
 
-        show lars happy
+        #show lars happy
 
 
     if options["CS3"]==2:
@@ -1108,7 +1150,7 @@ label S3_sylvian_good_end:
 
 
 
-    show lars
+
     show sylvian
     Lars narration "An awkward silence envelops the air. Even someone as clueless as Zephyr turns back to look at us and see what's going on. But before he has the chance to say anything, Master Sylvian speaks up again."
 
@@ -1158,7 +1200,7 @@ label S3_sylvian_good_end:
 
     show lars
     #textbox shake for the next line + sylvian’s sprite does an up and down jump a few times
-    Sylvian "Hahahaha!"
+    Sylvian "{sc}Hahahaha!{/sc}"
 
     show sylvian blush
     Sylvian "Ah, [Lars], what would I do without you…"
@@ -1183,11 +1225,19 @@ label S3_sylvian_good_end:
     Sylvian "I-I…"
 
     hide lars
+    hide sylvian
     Lars narration "I hold my breath in anticipation when suddenly, he wraps me in a solid embrace."
 
-    hide all
+    
     #Do a little fade and insert cg_slyvian_good + some cinematography effect
-    #camera focuses on Sylvian -does a little pan - right to left
+    #camera foScuses on Sylvian -does a little pan - right to left
+    
+    show cg_lars_sylvian_ge:
+        xalign 0.5
+        yalign 0.5
+        zoom 2.0
+        linear 6.0 zoom 1.0
+
     Lars narration "His touch, though sweaty and trembling, carries an irresistible loveliness. The subtle bump on his middle finger from his days in academia and the grazings and minor calluses of his palm from his magical experiments all seem to capture my attention."
 
     Lars narration "As our fingers entwine, he bestows upon them a gentle kiss, his eyes closing in reverence."
@@ -1228,6 +1278,7 @@ label S3_sylvian_good_end:
     Sylvian "Seems like I have to start liking myself more then."
 
     #zoom out to the entire scene
+    show bg_5
     show sylvian blush
     Lars narration "He leans in and rests his head on my chest, seeing as how I was taller than him.  I want to ruffle those wings of his. I wonder how that would feel."
 
@@ -1252,6 +1303,7 @@ label S3_sylvian_good_end:
     Lars "What do we do about Zephyr, then?"
 
     #zephyr’s happy sprite appears where lars’s side sprite usually is because I don’t want to ruin the CG
+    show zephyr happy at left
     Zephyr "I’ve been acting like a third wheel all this time, hehe. You guys just focus on your lovey-dovey confession scene. I’m gathering gossip material as is."
 
     Zephyr "“The renowned scientist —or should I say, swan-tist— and his ice-pectacle love confession”. The gossip mill will have a field day with this!"
@@ -1299,7 +1351,9 @@ label claude_route:
     Lars "I choose him."
 
     #here the arrangement will change as sylvian gets turned into sylvian_sad during the last sentence and then he exits the scene. Claude will move to the center, rory  and zephyr will be in the same position
-    show claude smile at center
+    show sylvian sad:
+        linear 1.0 xalign 2.0
+    show claude smile at center with move
     Claude "It appears that the Captain [Lars] has quite the discerning eye. I’m honored to be beheld by it."
 
     Zephyr "So, Slicky it is then!"
@@ -1342,7 +1396,7 @@ label claude_route:
 
     hide all
     #black screen transition fade in/fade out
-    show bg_4
+    show bg_4 with fade
     Lars narration "The sun is gradually sinking towards the horizon, casting cold hues across the sky as late afternoon approaches."
 
     show zephyr sad at left
@@ -1413,7 +1467,8 @@ label claude_route:
     show claude shocked
     Claude "Captain, I didn’t think you were interested in my personal life all that much."
 
-    show claude smile
+    show claude smile:
+        linear 1.0 zoom 1.1
     #claude’s sprite comes closer to the screen a little
     hide lars
     Lars narration "Wow, his voice is so close...I can't believe how quickly he closed the gap between us. Did he do it while I was lost in my rambling? Now, his forehead is almost touching mine, and his eyes…"
@@ -2357,4 +2412,4 @@ label C3_claude_bad_end:
 
 label end:
     #screen fades to black and the next line appears in the textbox, music also fades into silence
-    pass
+    scene bg black with fade

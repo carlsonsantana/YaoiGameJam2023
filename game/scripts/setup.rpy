@@ -1,3 +1,13 @@
+transform pan:
+    zoom 1.5
+    subpixel True
+    xalign 0.0
+    yalign 0.5
+    linear 10.0 xalign 1.0
+
+transform end_pan:
+    linear 2.0 zoom 1.0
+
 transform flip:
     linear 0.2 xzoom -1.0
 
@@ -17,6 +27,7 @@ transform jp:
     easeout 0.15 yoffset 0
     easein 0.1 yoffset -4
     easeout 0.1 yoffset 0
+    yoffset 0
 
 transform shake:
     xoffset 0
@@ -28,6 +39,7 @@ transform shake:
     easeout 0.15 xoffset 0
     easein 0.1 xoffset -4
     easeout 0.1 xoffset 0
+    xoffset 0
 
 transform bg_blur:
     linear 2.0 blur 15
@@ -49,9 +61,9 @@ transform enter_left:
 
 define config.side_image_same_transform = same_transform
 
-define center_left = Position(aling=0.4)
+define center_left = Position(xaling=0.4, yalign = 1.0)
 
-define center_right = Position(aling=0.6)
+define center_right = Position(xaling=0.6, yalign = 1.0)
 
 #define config.layers = [ 'master', 'transient', 'screens', 'overlay', 'overall']
 define config.tag_layer['lars'] = 'overlay'
@@ -74,3 +86,6 @@ image smoke:
     easein 1.0 alpha 0.00
     pause 0.5
     repeat
+
+image cg_lars_sylvian_ge:
+    "images/cg/cg_lars_sylvian_ge.png"

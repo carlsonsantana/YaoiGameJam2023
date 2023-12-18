@@ -2,46 +2,58 @@ define Lars = Character("[Lars_name]", color="#C82727", image="lars")
 
 # image lars = Transform("images/characters/lars.png", xalign=0.0)
 image lars: 
-    "images/characters/lars.png"
+    "images/characters/lars_default.png"
     xalign 0.0
+    zoom 0.75
     #onlayer overlay
 
 image lars blush: 
-    "images/characters/lars blush.png"
+    "images/characters/lars_blush.png"
     xalign 0.0
+    zoom 0.75
 
 image lars serious:
-    "images/characters/lars serious.png"
+    "images/characters/lars_serious.png"
     xalign 0.0
+    zoom 0.75
 
 image lars happy:
-    "images/characters/lars happy.png"
+    "images/characters/lars_happy.png"
     xalign 0.0
+    zoom 0.75
 
 image lars sad: 
-    "images/characters/lars.png"
+    "images/characters/lars_sad.png"
     xalign 0.0
+    zoom 0.75
 
 image lars narration:
     "images/characters/none.png"
+    zoom 0.75
 
 image side lars: 
-    "images/characters/lars.png"
+    "images/characters/lars_default.png"
+    zoom 0.75
 
 image side lars blush:
-    "images/characters/lars blush.png"
+    "images/characters/lars_blush.png"
+    zoom 0.75
 
 image side lars serious:
-    "images/characters/lars serious.png"
+    "images/characters/lars_serious.png"
+    zoom 0.75
 
 image side lars happy:
-    "images/characters/lars happy.png"
+    "images/characters/lars_happy.png"
+    zoom 0.75
 
 image side lars narration:
     "images/characters/lars narration.png"
+    zoom 0.75
 
 image side lars sad: 
-    "images/characters/lars.png"
+    "images/characters/lars_sad.png"
+    zoom 0.75
 
 # # Reference: Black Cat 2412 (https://lemmasoft.renai.us/forums/viewtopic.php?p=465239#p465239)
 # # Declare characters here

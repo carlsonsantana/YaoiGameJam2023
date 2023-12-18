@@ -9,12 +9,7 @@ label part_1:
     #show lars #onlayer overall
     #panning effect - sample in drive
     Lars "‘Discere, cogitare, agere— the triad of wisdom.’"
-    show bg_1:
-        zoom 1.5
-        subpixel True
-        xalign 0.0
-        yalign 0.5
-        linear 3.0 xalign 1.0
+    show bg_1 at pan
     Lars "‘Learning enriches the mind, and thinking sharpens it, but it is through action that we truly manifest our knowledge and shape our reality.’"
 
     #panning ends
@@ -24,8 +19,7 @@ label part_1:
 
     Lars narration "We could even offer complementary earthling-made meals by the human chefs who were transported to our realm upon their death."
     
-    show bg_1:
-        linear 0.5 zoom 1.0
+    show bg_1 at end_pan
 
     Lars narration "But then again, embarking on artifact hunts and historical expeditions wouldn’t make sense if the sole purpose of our guild, ‘Custodes Sylvae’, was commerce."
    
@@ -395,27 +389,25 @@ label C_2_End:
     hide claude
     hide sylvian
     hide rory
+
     Lars narration "I glance downward, and our destination near the sea comes into view."
 
+    $ renpy.choice_for_skipping()
     play music "track_2_field_of_flowers.ogg"
-    scene bg_2 with fade:
-        zoom 1.5
-        subpixel True
-        xalign 0.0
-        yalign 0.5
+    scene bg black with fade
+    show bg_2 at pan with fade
     #panning effect - sample in drive
+    
     Lars narration "Like an artist painting delicate strokes on a canvas, Master Sylvian has already lined up the location with an array of enchanting flowers."
-    show bg_2:
-        zoom 1.5
-        subpixel True
-        xalign 0.0
-        yalign 0.5
-        linear 4.0 xalign 1.0
+    
+    #show bg_2 at pan
+
     Lars narration "Each bloom carefully chosen to mark our path with a vibrant array of sunflowers and roses. Their vivid colors stand out, captivating the eye and creating a striking contrast against the backdrop of the serene oceanic landscape."
 
     Lars narration "The gentle breeze carries the sweet fragrance of the flowers, adding to the enchanting ambiance"
-    show bg_2:
-        linear 2.0 zoom 1.0
+    
+    show bg_2 at end_pan
+
     #panning ends
     show lars
     Lars "Ah, we arrived so early. I have to reward Spotsy well when we get back."
@@ -1368,20 +1360,16 @@ label S_2_End:
 
     stop sound fadeout 2.0
     #adding this in, let’s make sure to have the sfx fade out instead of suddenly stopping it
+    $ renpy.choice_for_skipping()
     play music "track_3_the_town.ogg"
-    scene bg_3 with fade:
-        zoom 1.5
-        xalign 0.0
-        yalign 0.5
+    scene bg black with fade
+    show bg_3 at pan with fade
+
     play sound sfx_people_talking
     #panning effect - sample in drive
     Lars narration "The town square pulsates with vibrant energy with the captivating tapestry of stalls embellishing the grassy pathway."
 
-    show bg_3:
-        zoom 1.5
-        xalign 0.0
-        yalign 0.5
-        linear 3.0 xalign 1.0
+    show bg_3 at end_pan
     
     Lars narration "As I walk through this bustling scene, my attention is drawn to the medley of merchants enticing passersby with their wares, creating an atmosphere of enchantment and wonder."
 
@@ -1438,7 +1426,16 @@ label master_Sylvian:
 
     Lars narration "That's one of the many things I admire about him—being so knowledgeable yet never shying away from wanting to discover more about the world and the people around him."
 
-    hide sylvian
+    show bg_3:
+        linear 0.5 zoom 1.0
+    show sylvian:
+        parallel:
+            linear 0.5 zoom 1.0
+        parallel:
+            linear 0.5 xalign 0.0
+    show rory at right with dissolve
+    show claude at center with dissolve
+    show lars
 
     jump CS_2_End
 
@@ -1458,18 +1455,25 @@ label sir_Claude:
 
     Lars narration "That's one of the many things I admire about him—being his own source of inspiration without having to make a conscious effort to appeal to others or impress them."
 
-    hide claude
+    show bg_3:
+        linear 0.5 zoom 1.0
+    show claude at center:
+        parallel:
+            linear 0.5 zoom 1.0
+        parallel:
+            linear 0.5 xalign 0.5
+    show rory at right with dissolve
+    show sylvian at left with dissolve
+    show lars
 
 label CS_2_End:
-    scene bg_3:
-    show rory at right
+    
+    Rory "I don’t think I need to mention this, but if any of you happen to spot my parents, could you...convince them to attend the show?"
+
     show claude at center:
         zoom 1.0
     show sylvian at left:
         zoom 1.0
-    show lars
-    Rory "I don’t think I need to mention this, but if any of you happen to spot my parents, could you...convince them to attend the show?"
-
     Rory "I’ve tried inviting them countless times, but they always manage to find an excuse. Maybe…if someone else were to extend the invitation, they might feel too embarrassed to decline."
 
     hide lars
@@ -2044,7 +2048,7 @@ label CS_4_End:
     Sylvian "Pursuing rivalry solely to prove your self-worth to unfamiliar faces is a fleeting pursuit. In time, the present will slip away from your grasp."
 
     show claude serious at left
-    show sylvian mad at right
+    show sylvian mad at right with move
     Claude "With all due respect Boss, but, isn’t that lack of ambition precisely why you’re here with us today instead of boasting around the academia halls?"
 
     Claude "While I appreciate your presence in our guild and your support for my endeavors, it seems you've relinquished all your desires, merely allowing yourself to be carried along by the whims of your flowery path."
@@ -2343,6 +2347,7 @@ label CS_5_End:
     #for the previous line, Zephyr doesn’t show up yet, but for the next, he comes in from the left side. 
     #All the characters turn their heads towards him and then huddle up together on the right, their sprite can be somewhat squashed. 
     #There’s supposed to be a little difference as Zephyr stays on the left, the center empty, and the three other characters squished on the right.
+    $ renpy.choice_for_skipping()
     show rory:
         linear 0.5 xalign 1.1
     show claude at flip:
@@ -2963,6 +2968,7 @@ label G_1_End:
     Lars narration "Speaking of the devil, Zephyr’s black particles coalesce once more and he and Rory appear side-by-side. My initial worry dissipates as they emerge with grins plastered across their faces."
 
     #during the last sentence, zephyr and rory fade in and they take on their previous position. From left to right, zephyr, claude, sylvian, and rory
+    $ renpy.choice_for_skipping()
     show sylvian zorder 1:
         linear 0.5 xalign 0.6
     show claude zorder 2:
@@ -3271,11 +3277,13 @@ label speak_with_Sir_Claude:
 
 label CS_6_End:
 
-    #once the player finishes with either of the two previous choice selections, we have the position change where rory and zephyr enter the scene. From left to right, it’s going to zephyr, claude, sylvian, rory
+    #once the player finishes with either of the two previous choice selections, we have the position change where rory and zephyr enter the scene. 
+    #From left to right, it’s going to zephyr, claude, sylvian, rory
     play music "track_1_intro.ogg"
     show claude zorder 2:
         xalign 0.4
-    show sylvian zorder 1:
+        yalign 1.0
+    show sylvian:
         xalign 0.6
     show rory at right
     show zephyr happy at left
@@ -3355,6 +3363,12 @@ label CS_6_End:
     show sylvian at jp
     "Everyone" "{sc}WHAAAAT????{/sc}"
 
+    show rory:
+        yoffset 0.0
+    show claude:
+        yoffset 0.0
+    show sylvian:
+        yoffset 0.0
     Lars "After all, I'm a dragon pilot, so we already share quite a few common interests, especially considering that you’re a supposed dragon descendent."
 
     hide lars
@@ -3363,14 +3377,16 @@ label CS_6_End:
     show lars
     Zephyr "…"
 
+    show lars
     Zephyr "…two."
 
     Lars "Hmm?"
 
+    show lars
     Zephyr "I'd like two of you to take on the role of my personal  entertainers."
 
-    show claude serious at center_left
-    show sylvian mad at center_right
+    show sylvian mad
+    show claude serious
     show lars serious
     Zephyr "I’ll take you to my castle and the rest of you can prance around as it."
 

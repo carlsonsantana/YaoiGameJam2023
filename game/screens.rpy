@@ -268,47 +268,47 @@ screen quick_menu():
                 #ypos -4
 
                 textbutton _(""):
-                    background "gui/textbox/save.png"
+                    #background "gui/textbox/save.png"
                     xsize 72
                     ysize 64
                     #action Rollback()
                     action ShowMenu("save")
                 
                 textbutton _(""):
-                    background "gui/textbox/load.png"
+                    #background "gui/textbox/load.png"
                     xsize 72
                     ysize 64
                     action ShowMenu("load")
                 
                 textbutton _(""):
-                    background "gui/textbox/auto.png"
+                    #background "gui/textbox/auto.png"
                     xsize 72
                     ysize 64
                     #action Preference("auto-forward", "toggle")
                     action Preference("auto-forward", "enable")
                 
                 textbutton _(""):
-                    background "gui/textbox/skip.png"
+                    #background "gui/textbox/skip.png"
                     xsize 72
                     ysize 64
                     action Skip() alternate Skip(fast=True, confirm=True)
                     #action Skip(fast=True, confirm=True)
                 
                 textbutton _(""):
-                    background "gui/textbox/pause.png"
+                    #background "gui/textbox/pause.png"
                     xsize 72
                     ysize 64
                     #action [Preference("auto-forward", "disable"), Skip(fast=False, confirm=False)]
                     action Preference("auto-forward", "disable")
                 
                 textbutton _(""):
-                    background "gui/textbox/history.png"
+                    #background "gui/textbox/history.png"
                     xsize 72
                     ysize 64
                     action ShowMenu('history')
                 
                 textbutton _(""):
-                    background "gui/textbox/prefs.png"
+                    #background "gui/textbox/prefs.png"
                     xsize 72
                     ysize 64
                     action ShowMenu('preferences')
@@ -460,41 +460,46 @@ screen main_menu():
     
     # Based on TellerFarsight at https://lemmasoft.renai.us/forums/viewtopic.php?t=44710
     style_prefix "main_menu"
-    hbox:
-        xpos 20
-        ypos 817
 
-        textbutton _(""):
-            background "gui/button/start.png"
-            xsize 386
-            ysize 210
-            action Start()
-        
-        textbutton _(""):
-            background "gui/button/load.png"
-            xpos 28
-            ypos -60
-            xsize 460
-            ysize 281
-            action ShowMenu("load")
-        
-        textbutton _(""):
-            background "gui/button/preferences.png"
-            xpos 132
-            ypos -22
-            xsize 460
-            ysize 281
-            # todo: preferences here in action!
-            action ShowMenu("preferences")
-        
-        textbutton _(""):
-            background "gui/button/help.png"
-            xpos 204
-            ypos 18
-            xsize 460
-            ysize 281
-            # todo: help?
-            # action ShowMenu("Help")
+    imagebutton:
+        xpos 1300
+        ypos 120
+        #background "gui/btn_start.png"
+        hover "gui/btn_start_hover.png"
+        idle "gui/btn_start.png"
+        action Start()
+    
+    imagebutton:
+        xpos 0
+        ypos 840
+        #background "gui/btn_start.png"
+        hover "gui/btn_load_hover.png"
+        idle "gui/btn_load.png"
+        action ShowMenu("load")
+    
+    imagebutton:
+        xpos 500
+        ypos 840
+        #background "gui/btn_start.png"
+        hover "gui/btn_extras_hover.png"
+        idle "gui/btn_extras.png"
+        action ShowMenu("gallery")
+    
+    imagebutton:
+        xpos 1010
+        ypos 840
+        #background "gui/btn_start.png"
+        hover "gui/btn_options_hover.png"
+        idle "gui/btn_options.png"
+        action ShowMenu("preferences")
+
+    imagebutton:
+        xpos 1500
+        ypos 840
+        #background "gui/btn_start.png"
+        hover "gui/btn_exit_hover.png"
+        idle "gui/btn_exit.png"
+        action Quit()
 
 
 style main_menu_frame is empty
