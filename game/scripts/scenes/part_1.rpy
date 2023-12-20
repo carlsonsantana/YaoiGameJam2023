@@ -24,15 +24,16 @@ label part_1:
     Lars narration "But then again, embarking on artifact hunts and historical expeditions wouldn’t make sense if the sole purpose of our guild, ‘Custodes Sylvae’, was commerce."
    
     show claude serious at right
-    "Unknown" "Who on Divonia is mumbling this loud to themselves early in the morning?"
+    #"Unknown" "Who on Divonia is mumbling this loud to themselves early in the morning?"
+    Claude "Who on Divonia is mumbling this loud to themselves early in the morning?"
 
-    "Unknown" "I’m losing my beauty sleep over here."
+    #"Unknown" "I’m losing my beauty sleep over here."
+    Claude "I’m losing my beauty sleep over here."
 
     Lars narration "I steal a glance from my perch atop the dragon ship and it looks like one, or should I say, the only passenger, has woken up in quite a grumpy manner."
 
     menu:
-        Lars " "
-
+        " " " "
         "Playfully surprise him":
             $ options["C1"]=1
             jump playfully_surprise_him
@@ -268,8 +269,7 @@ label C_1_End:
     Claude "Your sarcasm is showing Captain, might want to hide it under a thin layer of worry or, Divs forbid, concern for your partner."
 
     menu:
-        Lars " "
-
+        " " " "
         "Apologize for teasing him":
             $ options["C2"]=1
             jump apologize_for_teasing_him
@@ -452,9 +452,11 @@ label C_2_End:
 
     Lars narration "With a hushed incantation, the brim of his hat blossoms into a vibrant tapestry of roses and sunflowers, their delicate petals unfurling in a mesmerizing display. The air is instantly infused with their soft fragrance, which mingles with a refreshment spell."
 
-    "Unknown" "Welcome back, dear members of ‘Custodes Sylvae’. I’m happy to see that you both landed safely."
+    #"Unknown" "Welcome back, dear members of ‘Custodes Sylvae’. I’m happy to see that you both landed safely."
+    Sylvian "Welcome back, dear members of ‘Custodes Sylvae’. I’m happy to see that you both landed safely."
 
-    "Unknown" "[Lars], your piloting was truly magnificent as always. It’s a sight that I’m honored to witness every time."
+    #"Unknown" "[Lars], your piloting was truly magnificent as always. It’s a sight that I’m honored to witness every time."
+    Sylvian "[Lars], your piloting was truly magnificent as always. It’s a sight that I’m honored to witness every time."
 
     
     #move sylvian to the right
@@ -505,8 +507,7 @@ label C_2_End:
     Sylvian "Aren’t you tired from guiding our new dragon, [Lars]? I could easily fly and grab it for you. It’s no trouble at all."
 
     menu:
-        Lars serious " "
-
+        " " " "
         "Ask Master Sylvian to grab the cargo for you":
             $ options["CS1"]=1
             jump ask_Sylvian_grab_cargo
@@ -599,7 +600,8 @@ label ask_Sylvian_grab_cargo:
     show claude at right with move
     show rory at left with move
     #Word wave effect - sample in drive
-    "Unknown" "{bt}Clauuuuuuuuuuuuudy~{/bt}"
+    #"Unknown" "{bt}Clauuuuuuuuuuuuudy~{/bt}"
+    Rory "{bt}Clauuuuuuuuuuuuudy~{/bt}"
 
     show claude smile at right
     #Word wave effect - sample in drive
@@ -864,8 +866,7 @@ label CS_1_End:
     Sylvian "No one will truly appreciate your effort if you're the sole person assigning value to it…"
 
     menu:
-        Lars " "
-
+        " " " "
         "Accept his offer":
             $ options["S1"]=1
             jump accept_his_offer
@@ -1155,9 +1156,8 @@ label S_1_End:
     Lars narration "What should I do now?"
 
     menu:
-        Lars " "
-
-        "Poke further and ask why he’s feeling that way'":
+        " " " "
+        "Poke further and ask why he’s feeling that way":
             $ options["S2"]=1
             jump poke_further_and_ask
 
@@ -1398,8 +1398,7 @@ label S_2_End:
     Lars narration "Hmm...who else comes to mind?"
 
     menu:
-        Lars " "
-
+        " " " "
         "Master Sylvian’s academic outfit":
             $ options["CS2"]=1
             jump master_Sylvian
@@ -1412,7 +1411,12 @@ label master_Sylvian:
     show bg_3 at bg_blur:
         linear 0.5 zoom 1.5
     show sylvian at center:
-        linear 0.5 zoom 1.1
+        parallel:
+            linear 0.5 zoom 2.0
+        parallel:
+            linear 0.5 yoffset 600
+            linear 9.0 yoffset 200
+
     #maybe we could do bottom to top zoom on the sprite here (with a blurred bg), as if we’re showcasing the clothing and then zoom out when finished. However, we have to make sure that we move section by section so if the player doesn’t progress through the text, the animation doesn’t end early
     Lars narration "As a flower magician, Master Sylvian weaves his clothing with delicate floral spells, each stitch carrying the soft whisper of his incantations."
 
@@ -1430,6 +1434,8 @@ label master_Sylvian:
         linear 0.5 zoom 1.0
     show sylvian:
         parallel:
+            linear 0.5 yoffset 0
+        parallel:
             linear 0.5 zoom 1.0
         parallel:
             linear 0.5 xalign 0.0
@@ -1443,7 +1449,11 @@ label sir_Claude:
     show bg_3 at bg_blur:
         linear 0.5 zoom 1.5
     show claude at center:
-        linear 0.5 zoom 1.1
+        parallel:
+            linear 0.5 zoom 2.0
+        parallel:
+            linear 0.5 yoffset 600
+            linear 9.0 yoffset 200
     #maybe we could do bottom to top zoom on the sprite here (with a blurred bg), as if we’re showcasing the clothing and then zoom out when finished. However, we have to make sure that we move section by section so if the player doesn’t progress through the text, the animation doesn’t end early
     Lars narration "Sir Claude always holds his appearance with unparalleled pride. I can envision him draped in a new style of opulent faux fur and leather clothing curated from exotic lands courtesy of his family, and even his own, well-established connections."
 
@@ -1459,6 +1469,8 @@ label sir_Claude:
         linear 0.5 zoom 1.0
     show claude at center:
         parallel:
+            linear 0.5 yoffset 0
+        parallel:
             linear 0.5 zoom 1.0
         parallel:
             linear 0.5 xalign 0.5
@@ -1471,8 +1483,10 @@ label CS_2_End:
     Rory "I don’t think I need to mention this, but if any of you happen to spot my parents, could you...convince them to attend the show?"
 
     show claude at center:
+        yoffset 0
         zoom 1.0
     show sylvian at left:
+        yoffset 0
         zoom 1.0
     Rory "I’ve tried inviting them countless times, but they always manage to find an excuse. Maybe…if someone else were to extend the invitation, they might feel too embarrassed to decline."
 
@@ -1556,8 +1570,7 @@ label CS_2_End:
     Lars narration "Who should I question about the intentions behind their gifts?"
 
     menu:
-        Lars " "
-
+        " " " "
         "Ask Master Sylvian about his poems and flowers":
             $ options["CS3"]=1
             jump ask_Master_Sylvian_about
@@ -1802,8 +1815,7 @@ label CS_3_End:
     Lars narration "Sir Claude’s comment certainly came out of the blue, now they’re both looking at me. What should I do now?"
 
     menu:
-        Lars " "
-
+        " " " "
         "Look back at Master Sylvian":
             $ options["CS4"]=1
             jump look_back_at_Master_Sylvian
@@ -2152,13 +2164,12 @@ label CS_4_End:
 
     hide lars
     menu:
-        Lars " "
-
-        "Agree with Master Sylvian about valuing our current contentment":
+        " " " "
+        "{size=*0.75}Agree with Master Sylvian about valuing our current contentment{/size}":
             $ options["CS5"]=1
             jump agree_with_Master_Sylvian
 
-        "Agree with Sir Claude about the positive value of ambition":
+        "{size=*0.75}Agree with Sir Claude about the positive value of ambition{/size}":
             $ options["CS5"]=2
             jump agree_with_Sir_Claude
 
@@ -2342,7 +2353,8 @@ label CS_5_End:
     show lars serious
     show claude shocked at left
     show rory angry at right
-    "Unknown" "Looks like some interesting Divs have entered my domain while I was occupied."
+    #"Unknown" "Looks like some interesting Divs have entered my domain while I was occupied."
+    Zephyr "Looks like some interesting Divs have entered my domain while I was occupied."
 
     #for the previous line, Zephyr doesn’t show up yet, but for the next, he comes in from the left side. 
     #All the characters turn their heads towards him and then huddle up together on the right, their sprite can be somewhat squashed. 
@@ -2356,9 +2368,11 @@ label CS_5_End:
         linear 0.5 xalign 0.7
     
     show zephyr happy at enter_left
-    "Unknown" "I was frozen in anticipation for what would come next, but I have work to do after this. My castle isn’t going to clean up after itself!"
+    #"Unknown" "I was frozen in anticipation for what would come next, but I have work to do after this. My castle isn’t going to clean up after itself!"
+    Zephyr "I was frozen in anticipation for what would come next, but I have work to do after this. My castle isn’t going to clean up after itself!"
 
-    "Unknown" "Get it? frozen in anticipation. Hehehehehe~"
+    #"Unknown" "Get it? frozen in anticipation. Hehehehehe~"
+    Zephyr "Get it? frozen in anticipation. Hehehehehe~"
 
     show sylvian:
         linear 0.5 xalign 0.4
@@ -2392,9 +2406,11 @@ label CS_5_End:
     show lars serious
     Claude "Who’s there? Are you the person behind this? What’s—"
 
-    "Unknown" "Slow doooown there."
+    #"Unknown" "Slow doooown there."
+    Zephyr "Slow doooown there."
 
-    "Unknown" "Times not running away after all. You know?"
+    #"Unknown" "Times not running away after all. You know?"
+    Zephyr "Times not running away after all. You know?"
 
     Sylvian "…"
 
@@ -2406,33 +2422,41 @@ label CS_5_End:
 
     show zephyr sad at jp
     #zephyr sprite jumps up and down for the next sentence. Textbox could do a shake as well.
-    "Unknown" "DON’T JUDGE ME!"
+    #"Unknown" "DON’T JUDGE ME!"
+    Zephyr "DON’T JUDGE ME!"
 
     Rory "Too late for that now."
 
     show zephyr happy at left
-    "Unknown" "It’s been some time since I could speak with someone without them being brainwashed or stuck in time."
+    #"Unknown" "It’s been some time since I could speak with someone without them being brainwashed or stuck in time."
+    Zephyr "It’s been some time since I could speak with someone without them being brainwashed or stuck in time."
 
     Lars "Huh? What’re you talking about?"
 
     #zephyr does a small side to side shake for the next sentence
     show zephyr happy at shake
-    "Unknown" "Ah, the inquisitive one speaks. Hmm, I’ll call you Scouty from now on since you look the part as well."
+    #"Unknown" "Ah, the inquisitive one speaks. Hmm, I’ll call you Scouty from now on since you look the part as well."
+    Zephyr "Ah, the inquisitive one speaks. Hmm, I’ll call you Scouty from now on since you look the part as well."
 
     Lars "My name is [Lars], not Scouty!"
 
-    "Unknown" "My brain cells will only acknowledge you as Scouty from here on out."
+    #"Unknown" "My brain cells will only acknowledge you as Scouty from here on out."
+    Zephyr "My brain cells will only acknowledge you as Scouty from here on out."
 
-    "Unknown" "You're all destined to be new additions to my castle renovation army, so sparing the effort of using two names at once seems reasonable."
+    #"Unknown" "You're all destined to be new additions to my castle renovation army, so sparing the effort of using two names at once seems reasonable."
+    Zephyr "You're all destined to be new additions to my castle renovation army, so sparing the effort of using two names at once seems reasonable."
 
     show lars
     Lars "But you only have to remember one, which is ‘[Lars]’—"
 
-    "Unknown" "Well, let's see who else we have in this riveting cohort. I'm sure your names are all yawn-inducing, but let's make this roll call fun, shall we?"
+    #"Unknown" "Well, let's see who else we have in this riveting cohort. I'm sure your names are all yawn-inducing, but let's make this roll call fun, shall we?"
+    Zephyr "Well, let's see who else we have in this riveting cohort. I'm sure your names are all yawn-inducing, but let's make this roll call fun, shall we?"
 
-    "Unknown" "You, the one with the flowery hat, must be the smart one in the group since you haven’t interrupted me so far. I’ll call you Smarty from now on."
+    #"Unknown" "You, the one with the flowery hat, must be the smart one in the group since you haven’t interrupted me so far. I’ll call you Smarty from now on."
+    Zephyr "You, the one with the flowery hat, must be the smart one in the group since you haven’t interrupted me so far. I’ll call you Smarty from now on."
 
-    "Unknown" "But be careful not to interject too much like Scouty."
+    #"Unknown" "But be careful not to interject too much like Scouty."
+    Zephyr "But be careful not to interject too much like Scouty."
 
     Lars "But how is that even related to what I asked—"
 
@@ -2441,7 +2465,8 @@ label CS_5_End:
 
     Rory "—ever interrupt you?"
 
-    "Unknown" "Scouty, and the other two, I need my main character moment over here, stop blabbering so much."
+    #"Unknown" "Scouty, and the other two, I need my main character moment over here, stop blabbering so much."
+    Zephyr "Scouty, and the other two, I need my main character moment over here, stop blabbering so much."
 
     hide lars
     Lars narration "I take a deep breath, frustration bubbling up within me as I watch the scene unfold. The figure’s words are becoming increasingly difficult to make sense of."
@@ -2451,7 +2476,8 @@ label CS_5_End:
     Lars narration "Come on, someone has to say something."
 
     show lars serious
-    "Unknown" "As I was saying—"
+    #"Unknown" "As I was saying—"
+    Zephyr "As I was saying—"
 
     show sylvian serious funny at center_right
     Sylvian "Enough banter, who exactly are you?"
@@ -2466,13 +2492,17 @@ label CS_5_End:
     play sound sfx_clap
     Lars narration "Suddenly, the sound of a single clap pierces through the stillness. It’s a sharp and commanding sound, one that demands our attention."
 
-    "Unknown" "Impressive words, especially considering your current disadvantage but I’ll humor you this time."
+    #"Unknown" "Impressive words, especially considering your current disadvantage but I’ll humor you this time."
+    Zephyr "Impressive words, especially considering your current disadvantage but I’ll humor you this time."
 
-    "Unknown" "Since Smarty asked, it’s time for the cliché introduction séance, the kind they do for video games and TV shows."
+    #"Unknown" "Since Smarty asked, it’s time for the cliché introduction séance, the kind they do for video games and TV shows."
+    Zephyr "Since Smarty asked, it’s time for the cliché introduction séance, the kind they do for video games and TV shows."
 
-    "Unknown" "Hopefully, they spared no expense in making me the fairest of them all. A little extra villainous charm never hurt anyone~"
+    #"Unknown" "Hopefully, they spared no expense in making me the fairest of them all. A little extra villainous charm never hurt anyone~"
+    Zephyr "Hopefully, they spared no expense in making me the fairest of them all. A little extra villainous charm never hurt anyone~"
 
-    "Unknown" "But before that, you’d better cease all your magical theatrics and weapon brandishing if you don't want me to lose interest in this little charade."
+    #"Unknown" "But before that, you’d better cease all your magical theatrics and weapon brandishing if you don't want me to lose interest in this little charade."
+    Zephyr "But before that, you’d better cease all your magical theatrics and weapon brandishing if you don't want me to lose interest in this little charade."
 
     hide lars
     Lars narration "Gradually, Master Sylvian begins to dismantle the defensive walls he had erected, and Rory and I, in sync, follow suit. Hopefully, that’s the right choice to make for now."
@@ -2481,7 +2511,9 @@ label CS_5_End:
     show rory at right
     show sylvian at center_right
     show claude at center_left
-    "Unknown" "Anyway, you can address me as the “Omniscient Lord of Bankruptcy” or if it’s easier on the tongue, the “Malevolent Architect of Debt”. Personally, I'm partial to the latter title—it aligns better with my aspirations."
+    #"Unknown" "Anyway, you can address me as the “Omniscient Lord of Bankruptcy” or if it’s easier on the tongue, the “Malevolent Architect of Debt”. Personally, I'm partial to the latter title—it aligns better with my aspirations."
+    Zephyr "Anyway, you can address me as the “Omniscient Lord of Bankruptcy” or if it’s easier on the tongue, the “Malevolent Architect of Debt”. Personally, I'm partial to the latter title—it aligns better with my aspirations."
+
 
     show lars serious
     Lars "Uhm, does that mean that you cause bankruptcy or that you’re the literal embodiment of bankruptcy?"
@@ -2492,13 +2524,13 @@ label CS_5_End:
 
     Sylvian "I don’t think that’s an issue we need to be discussing right now, my dear juniors."
 
-    "{size=36}Malevolent Architect of Debt{/size}" "Ahhh, keep quiet for a second! I’m not used to talking this much. If it weren’t for you meddling Divs, I would have gotten away with my grandiose plan already."
+    "{size=36}{color=#CD4EDD}Malevolent Architect of Debt{/size}" "Ahhh, keep quiet for a second! I’m not used to talking this much. If it weren’t for you meddling Divs, I would have gotten away with my grandiose plan already."
 
     Rory "Somehow, I really doubt that you’d be capable of doing something like that."
 
-    "{size=36}Malevolent Architect of Debt{/size}" "Hmph, don't underestimate me. I could wipe your minds clean right now since you’ve already heard my voice, and even learnt of my grandiose plan —though not completely— and what else…"
+    "{size=36}{color=#CD4EDD}Malevolent Architect of Debt{/size}" "Hmph, don't underestimate me. I could wipe your minds clean right now since you’ve already heard my voice, and even learnt of my grandiose plan —though not completely— and what else…"
 
-    "{size=36}Malevolent Architect of Debt{/size}" "…You’re probably going to learn of my real name which is Zephyr but anyway—"
+    "{size=36}{color=#CD4EDD}Malevolent Architect of Debt{/size}" "…You’re probably going to learn of my real name which is Zephyr but anyway—"
 
     Rory "Isn’t this the same case of yelling out your attack name before it’s your turn to fight?"
 
@@ -2507,13 +2539,12 @@ label CS_5_End:
 
     play sound track_5_zephyr_theme
     menu:
-        Lars " "
-
-        "Are you the person responsible for freezing everyone?":
+        " " " "
+        "{size=*0.75}Are you the person responsible for freezing everyone?{/size}":
             $ options["G1"]=1
             jump are_you_the_person
 
-        "How come you’re freezing everyone for a castle renovation?":
+        "{size=*0.75}How come you’re freezing everyone for a castle renovation?{/size}":
             $ options["G1"]=2
             jump how_come_you
 
@@ -3129,8 +3160,7 @@ label G_1_End:
     Lars narration "As for me, I’m still uncertain about my own stance. Who should I confide in to discuss my decision?"
 
     menu:
-        Lars " "
-
+        " " " "
         "Speak with Master Sylvian":
             $ options["CS6"]=1
             jump speak_with_Master_Sylvian

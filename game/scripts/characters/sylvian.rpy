@@ -1,4 +1,4 @@
-define Sylvian = Character("Sylvian", color="#00BF63", image="sylvian")
+define Sylvian = Character("Sylvian", color="#026c45", image="sylvian")
 
 image sylvian:
     "images/characters/sylvian_default.png"

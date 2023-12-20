@@ -6,8 +6,7 @@ label select_route:
     #$ txt_temp2 = f'c:{relations["claude"]} s:{relations["sylvian"]}'
     
     menu:
-        Lars " "
-        
+        " " " "    
         "Select Claude route":
             jump claude_route
 
@@ -231,8 +230,7 @@ label menu_s3:
     $ calc_relations()
     
     menu:
-        Lars " "
-
+        " " " "
         "Poke further about his comment":
             jump S3_sylvian_bad_end
         
@@ -1532,8 +1530,7 @@ label claude_route:
 
 label menu_c3:
     menu:
-        Lars " "
-
+        " " " "
         " " (blocked=True) if relations["claude"]<7:
             jump menu_c3
 

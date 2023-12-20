@@ -144,7 +144,9 @@ style namebox:
     xanchor gui.name_xalign
     xsize gui.namebox_width
     ypos gui.name_ypos
+    yanchor gui.name_yalign
     ysize gui.namebox_height
+
 
     background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
