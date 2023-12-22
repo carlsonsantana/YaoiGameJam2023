@@ -347,20 +347,23 @@ label S3_sylvian_bad_end:
     hide sylvian
     hide zephyr
     show spotsy
-    Lars narration "But before he has the chance to grumble any further, I swiftly move to the spot where Spotsy is resting. I climb onto her back and feel the afternoon air bristling against my fur."
+    with dissolve
+    Lars "But before he has the chance to grumble any further, I swiftly move to the spot where Spotsy is resting. I climb onto her back and feel the afternoon air bristling against my fur."
 
     #the smoke is supposed to show on top of the spotsy insertion
     show smoke
-    Lars narration "Spotsy responds with a subtle shiver and releases a puff of smoke as if bracing herself for the impending journey."
+    Lars "Spotsy responds with a subtle shiver and releases a puff of smoke as if bracing herself for the impending journey."
 
+    show lars
     Zephyr "Ouch, were you planning on blinding me with that glitter-bomb breath of yours?!"
 
-    Lars narration "Now’s not the time to humor him, unfortunately."
+    Lars "Now’s not the time to humor him, unfortunately."
 
-    hide spotsy
     hide smoke
+    hide spotsy
     show zephyr sad
     show lars serious
+    with dissolve
     Lars "I’m going to need your help, Spotsy."
 
     Zephyr "Hey! When did I allow you guys to leave without my permission?! I’m going to make you pay for-"
@@ -442,7 +445,7 @@ label S3_sylvian_bad_end:
 
     Lars "What’s going on, Master? This isn’t like you at all."
 
-    Sylvian "‘Discere, cogitare, agere— the triad of wisdom’."
+    Sylvian "{i}Discere, cogitare, agere— the triad of wisdom{/i}."
 
     Sylvian "I made that our guild motto while thinking of someone who I had yet to meet."
 
@@ -711,22 +714,26 @@ label S3_sylvian_neutral_end:
 
     Zephyr "I’m not letting you get away!"
 
-    hide all
+    hide sylvian
+    hide zephyr
     show spotsy
-    Lars narration "But before he has the chance to grumble any further, I swiftly move to the spot where Spotsy is resting. I climb onto her back and feel the afternoon air bristling against my fur."
+    with dissolve
+    Lars "But before he has the chance to grumble any further, I swiftly move to the spot where Spotsy is resting. I climb onto her back and feel the afternoon air bristling against my fur."
 
     #the smoke is supposed to show on top of the spotsy insertion
     show smoke
-    Lars narration "Spotsy responds with a subtle shiver and releases a puff of smoke as if bracing herself for the impending journey."
+    Lars "Spotsy responds with a subtle shiver and releases a puff of smoke as if bracing herself for the impending journey."
 
+    show lars
     Zephyr "Ouch, were you planning on blinding me with that glitter-bomb breath of yours?!"
 
-    Lars narration "Now’s not the time to humor him, unfortunately."
+    Lars "Now’s not the time to humor him, unfortunately."
 
-    hide spotsy
     hide smoke
-    show zephyr sad
+    hide spotsy
+    show zephyr sad 
     show lars serious
+    with dissolve
     Lars "I’m going to need your help, Spotsy."
 
     Zephyr "Hey! When did I allow you guys to leave without my permission?! I’m going to make you pay for-"
@@ -803,7 +810,7 @@ label S3_sylvian_neutral_end:
 
     Lars "What’s going on, Master? This isn’t like you at all."
 
-    Sylvian "‘Discere, cogitare, agere— the triad of wisdom’."
+    Sylvian "{i}Discere, cogitare, agere— the triad of wisdom{/i}."
 
     Sylvian "I made that our guild motto while thinking of someone who I had yet to meet."
 
@@ -1028,7 +1035,7 @@ label S3_sylvian_good_end:
     Sylvian "—how you effortlessly make me feel at ease, even in silence."
 
     show sylvian
-    Sylvian "‘Discere, cogitare, agere— the triad of wisdom’."
+    Sylvian "{i}Discere, cogitare, agere— the triad of wisdom{/i}."
 
     Sylvian "I made that our guild motto while thinking of someone who I had yet to meet."
 
@@ -1803,7 +1810,7 @@ label C3_claude_good_end:
 
     Claude "Awe, leave the worrying to big Boss Sylvian and our little Rory back at the guild. I'm sure they're orchestrating a plan to aid the trapped individuals, all the while scheming my punishment for spiriting you away."
 
-    Lars "‘Spiriting me away’, didn't I choose you first when asking Zephyr to let me bring you along?"
+    Lars "{i}Spiriting me away{/i}, didn't I choose you first when asking Zephyr to let me bring you along?"
 
     Claude "Only because I made myself irresistibly pickable."
 

@@ -224,8 +224,11 @@ screen choice(items):
                 if blocked:
                     idle_background im.Scale("gui/button/choice_block_background.png", 1290, 114)
                     hover_background im.Scale("gui/button/choice_block_background.png", 1290, 114)
+                else:
+                    hover_sound "audio/sfx_cursorhover.ogg"
                 yminimum 134
                 ypadding 26
+                
 
 
 style choice_vbox is vbox
@@ -271,6 +274,7 @@ screen quick_menu():
 
                 textbutton _(""):
                     #background "gui/textbox/save.png"
+                    hover_background "gui/textbox/save_hover.png"
                     xsize 72
                     ysize 64
                     #action Rollback()
@@ -278,12 +282,14 @@ screen quick_menu():
                 
                 textbutton _(""):
                     #background "gui/textbox/load.png"
+                    hover_background "gui/textbox/load_hover.png"
                     xsize 72
                     ysize 64
                     action ShowMenu("load")
                 
                 textbutton _(""):
                     #background "gui/textbox/auto.png"
+                    hover_background "gui/textbox/auto_hover.png"
                     xsize 72
                     ysize 64
                     #action Preference("auto-forward", "toggle")
@@ -291,6 +297,7 @@ screen quick_menu():
                 
                 textbutton _(""):
                     #background "gui/textbox/skip.png"
+                    hover_background "gui/textbox/skip_hover.png"
                     xsize 72
                     ysize 64
                     action Skip() alternate Skip(fast=True, confirm=True)
@@ -298,6 +305,7 @@ screen quick_menu():
                 
                 textbutton _(""):
                     #background "gui/textbox/pause.png"
+                    hover_background "gui/textbox/pause_hover.png"
                     xsize 72
                     ysize 64
                     #action [Preference("auto-forward", "disable"), Skip(fast=False, confirm=False)]
@@ -305,12 +313,14 @@ screen quick_menu():
                 
                 textbutton _(""):
                     #background "gui/textbox/history.png"
+                    hover_background "gui/textbox/history_hover.png"
                     xsize 72
                     ysize 64
                     action ShowMenu('history')
                 
                 textbutton _(""):
                     #background "gui/textbox/prefs.png"
+                    hover_background "gui/textbox/prefs_hover.png"
                     xsize 72
                     ysize 64
                     action ShowMenu('preferences')
@@ -1799,10 +1809,10 @@ screen gallery:
         text_size 70
         text_color '#b20202'
 
-    grid 2 2:
+    grid 2 1:
         xpos 740
         #xsize 1000
-        ypos 200
+        ypos 450
         xfill False
         yfill False
         yspacing 140
@@ -1824,15 +1834,15 @@ screen gallery:
             text "Sylvian good end":
                 xalign 0.5
         
-        vbox:
-            add gal.make_button("opening", "gui/gallery_idle.png", xalign=0.5, yalign=0.5)
-            text "Opening Screen":
-                xalign 0.5
+        #vbox:
+        #    add gal.make_button("opening", "gui/gallery_idle.png", xalign=0.5, yalign=0.5)
+        #    text "Opening Screen":
+        #        xalign 0.5
         
-        vbox:
-            add gal.make_button("art", "gui/gallery_idle.png", xalign=0.5, yalign=0.5)
-            text "Art":
-                xalign 0.5
+        #vbox:
+        #    add gal.make_button("art", "gui/gallery_idle.png", xalign=0.5, yalign=0.5)
+        #    text "Art":
+        #        xalign 0.5
 
     use navigation
 

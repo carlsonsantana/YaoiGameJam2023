@@ -1,6 +1,6 @@
 label part_1:
 
-    play music "track_1_intro.ogg"
+    
     scene bg_1 with fade:
         zoom 1.5
         xalign 0.0
@@ -8,27 +8,25 @@ label part_1:
     
     #show lars #onlayer overall
     #panning effect - sample in drive
-    Lars "‘Discere, cogitare, agere— the triad of wisdom.’"
+    Lars "{i}Discere, cogitare, agere— the triad of wisdom.{/i}"
     show bg_1 at pan
-    Lars "‘Learning enriches the mind, and thinking sharpens it, but it is through action that we truly manifest our knowledge and shape our reality.’"
+    Lars "{i}Learning enriches the mind, and thinking sharpens it, but it is through action that we truly manifest our knowledge and shape our reality.{/i}"
 
     #panning ends
     hide lars
 
-    Lars narration "One would think that a merchant guild wouldn’t bother creating such a philosophical motto and instead advertise ‘buy one, get one’ dragon ship seats every holiday season."
+    Lars narration "One would think that a merchant guild wouldn’t bother creating such a philosophical motto and instead advertise {i}buy one, get one{/i} dragon ship seats every holiday season."
 
     Lars narration "We could even offer complementary earthling-made meals by the human chefs who were transported to our realm upon their death."
     
     show bg_1 at end_pan
 
-    Lars narration "But then again, embarking on artifact hunts and historical expeditions wouldn’t make sense if the sole purpose of our guild, ‘Custodes Sylvae’, was commerce."
+    Lars narration "But then again, embarking on artifact hunts and historical expeditions wouldn’t make sense if the sole purpose of our guild, {i}Custodes Sylvae{/i}, was commerce."
    
     show claude serious at right
-    #"Unknown" "Who on Divonia is mumbling this loud to themselves early in the morning?"
-    Claude "Who on Divonia is mumbling this loud to themselves early in the morning?"
+    "Unknown" "Who on Divonia is mumbling this loud to themselves early in the morning?"
 
-    #"Unknown" "I’m losing my beauty sleep over here."
-    Claude "I’m losing my beauty sleep over here."
+    "Unknown" "I’m losing my beauty sleep over here."
 
     Lars narration "I steal a glance from my perch atop the dragon ship and it looks like one, or should I say, the only passenger, has woken up in quite a grumpy manner."
 
@@ -69,10 +67,13 @@ label playfully_surprise_him:
     Lars "It’s the only way I can drown out your attention-seeking snores."
 
     show claude at center
+    show lars
     Claude "You always find a way to turn the tables, don't you?"
 
+    show lars
     Claude "Although…"
 
+    show lars
     Claude "I can unfailingly capture your attention through other means, if I choose to."
 
     jump C_1_End
@@ -87,13 +88,14 @@ label resist_the_urge_to_surprise_him:
 
     show claude shocked at center:
         linear 0.5 xalign 0.5
+    show lars
     Claude "What a boring reaction. I expected more spunk from you…"
 
     Lars "Nevermind then. Hmph!"
 
 label C_1_End:
 
-    hide lars
+    #hide lars
     show claude at center
     Lars narration "It’s truly a wonder how he managed to stay asleep throughout our entire journey, considering the lack of proper seat arrangements or resting areas on our new dragon ship."
 
@@ -102,7 +104,8 @@ label C_1_End:
     show lars
     Lars "I will return to my duties, then, Sir—"
 
-    Claude "Didn’t I already tell you to drop the ‘Sir’ for the umpteenth time, Captain?"
+    show lars
+    Claude "Didn’t I already tell you to drop the {i}Sir{/i} for the umpteenth time, Captain?"
 
     Lars "Do we have to go over this cliche back and forth as well?"
 
@@ -138,26 +141,32 @@ label C_1_End:
     Claude "Who knows, maybe one day, I'll surprise you with a confession that will leave you speechless."
 
     hide lars
+    Lars narration "Once he begins, there's no stopping his relentless flirting. Might as well shift my focus to something else...like our very new dragon!"
+
     hide claude
     show spotsy
-    Lars narration "I reach out, my hand confidently caressing the head of our newest guild member who I hope I’m taking good care of."
+    with dissolve
+    Lars "I reach out, my hand confidently caressing the head of our newest guild member who I hope I’m taking good care of."
 
-    Lars narration "Her eyes meet mine in and in a show of trust, her scale’s part open, revealing mesmerizing roseate flames simmering underneath."
+    Lars  "Her eyes meet mine in and in a show of trust, her scale’s part open, revealing mesmerizing roseate flames simmering underneath."
 
+    show lars
     Claude "Don’t let your attention wander off too much, Captain."
 
-    Lars narration "Sir Claude's voice carries a subtle touch of displeasure as he observes me caressing Spotsy's head."
+    Lars "Sir Claude's voice carries a subtle touch of displeasure as he observes me caressing Spotsy's head."
 
-    Lars narration "Maybe the uncomfortable seating arrangement is getting to him."
+    Lars "Maybe the uncomfortable seating arrangement is getting to him."
 
     show smoke
+    show lars
     Claude "Spare the royal treatment. She’s just a glorified lizard that could use a few mint leaves."
 
-    Lars narration "As if to express her annoyance, Spotsy lets out a flushed, puffy plume of smoke from her nostrils. A low rumbling note resonates from her throat, a clear indication of her irritation."
+    Lars "As if to express her annoyance, Spotsy lets out a flushed, puffy plume of smoke from her nostrils. A low rumbling note resonates from her throat, a clear indication of her irritation."
 
     hide smoke
     hide spotsy
-    show claude at center
+    show claude at center 
+    with dissolve
     show lars
     Lars "You're starting to irritate her, Sir-"
     Lars narration "Another intrusive cough."
@@ -176,6 +185,7 @@ label C_1_End:
     hide lars
     Lars narration "His sudden change of topic leaves me slightly bewildered. I withdraw my hand from Spotsy's head, and she shakes her head as if still searching for my comforting touch."
 
+    show claude smile
     Lars narration "In contrast, a mischievous grin adorns Sir Claude's face."
 
     Lars narration "Maybe the problem wasn’t the seats after all…"
@@ -203,7 +213,7 @@ label C_1_End:
     hide lars
     Lars narration "A muffled chuckle escapes him."
 
-    Lars narration "Claude is always the most spirited one when faced with adversity and adventure."
+    Lars narration "Sir claude is always the most spirited one when faced with adversity and adventure."
 
     Lars narration "Must feel great to not have any worries and be nonchalant about everything."
 
@@ -323,9 +333,9 @@ label continue_teasing_him_even_more:
     Lars "The infamous Claude Dupont, not checking the items he negotiates for?"
 
     show claude serious at center
-    Claude "Please, [Lars], you should know better than blabbering ‘Dupont’ recklessly."
+    Claude "Please, [Lars], you should know better than blabbering {i}Dupont{/i} recklessly."
 
-    Lars "Weren’t you going to stop calling me ‘Captain’ as well? Or are you going to change the topic again?"
+    Lars "Weren’t you going to stop calling me {i}Captain{/i} as well? Or are you going to change the topic again?"
 
     show bg_1:
         linear 2.0 blur 15
@@ -413,18 +423,23 @@ label C_2_End:
     Lars "Ah, we arrived so early. I have to reward Spotsy well when we get back."
 
     show claude smile at center
+    show lars
     Claude "I’d be inclined to say that you didn’t manage to tap into our dragon’s full potential Captain. Owning up to how I stole your attention for more than half, or better yet, the entire ride."
 
+    show lars
     Claude "However, since you managed to get us here without any dangerous maneuvers, I’ll allow you to be the first person to touch our newest artifact."
 
+    show lars
     Claude "I tend to appreciate and reward my companions well, especially if they’re my lover—"
 
     show lars serious
     Lars "Being the first person to touch a suspicious artifact is the last thing I’d prefer to do."
 
+    show lars serious
     Claude "It’s the first time it’s made its way to our side of the realm, hence the occasion is quite momentous."
 
     show claude blush at center
+    show lars serious
     Claude "You could say the thrill is irresistible."
 
     hide lars
@@ -447,18 +462,15 @@ label C_2_End:
     show sylvian at right with move:
         xpos 1.2
         linear 0.5 xalign 1.0
-    show claude at left with move
+    show claude at center_left with move
     Lars narration "A warm smile graces his lips, accompanied by the graceful flutter of his obsidian wings."
 
     Lars narration "With a hushed incantation, the brim of his hat blossoms into a vibrant tapestry of roses and sunflowers, their delicate petals unfurling in a mesmerizing display. The air is instantly infused with their soft fragrance, which mingles with a refreshment spell."
 
-    #"Unknown" "Welcome back, dear members of ‘Custodes Sylvae’. I’m happy to see that you both landed safely."
-    Sylvian "Welcome back, dear members of ‘Custodes Sylvae’. I’m happy to see that you both landed safely."
+    "Unknown" "Welcome back, dear members of {i}Custodes Sylvae{/i}. I’m happy to see that you both landed safely."
 
-    #"Unknown" "[Lars], your piloting was truly magnificent as always. It’s a sight that I’m honored to witness every time."
-    Sylvian "[Lars], your piloting was truly magnificent as always. It’s a sight that I’m honored to witness every time."
+    "Unknown" "[Lars], your piloting was truly magnificent as always. It’s a sight that I’m honored to witness every time."
 
-    
     #move sylvian to the right
     Claude "Feel free to skip the cliché warm welcome, Boss Sylvian."
 
@@ -480,7 +492,7 @@ label C_2_End:
 
     Lars "Thank you, Master. I wish you could have joined us on the ride too. Sir Claude here almost caused us to plummet to our doom...multiple times I must say."
 
-    show claude shocked at left
+    show claude shocked at center_left
     show lars
     Claude "Eh, I did promise to reward you later, didn’t I? Drum roll please ~"
 
@@ -496,7 +508,7 @@ label C_2_End:
     show lars
     Lars "Should I go get it, then?"
 
-    show claude smile at left
+    show claude smile at center_left
     show lars
     Claude "No need, my dear Captain. Boss Sylvian can handle it just fine. You and I have been quite busy, and the artifact box is heavy enough to demand a touch of fresh energy."
 
@@ -529,7 +541,7 @@ label ask_Sylvian_grab_cargo:
 
     Sylvian "But uhm, never mind, I suggested it in the first place after all."
 
-    show claude serious at left
+    show claude serious at center_left
     Claude "Awe, you chose to stay with me instead of Boss Sylvian. I’m touched, Captain."
 
     Claude "I’ll have to give you a special reward later in private."
@@ -565,7 +577,7 @@ label ask_Sylvian_grab_cargo:
             linear 1.0 zoom 1.0
     show claude smile:
         parallel:
-            linear 0.5 xalign 0.0
+            linear 0.5 xalign 4.0
         parallel:
             linear 0.5 zoom 1.0
     show sylvian mad:
@@ -580,7 +592,7 @@ label ask_Sylvian_grab_cargo:
 
     Sylvian "As for you, Claude, remember what I said about teasing him too much?"
 
-    show claude at left
+    show claude at center_left
     Claude "Before worrying about Captain over here, you should head on to where our new dragon is resting, Boss."
 
     Claude "We wouldn’t want her to accidentally drop our cargo to the depths of the sea."
@@ -600,8 +612,7 @@ label ask_Sylvian_grab_cargo:
     show claude at right with move
     show rory at left with move
     #Word wave effect - sample in drive
-    #"Unknown" "{bt}Clauuuuuuuuuuuuudy~{/bt}"
-    Rory "{bt}Clauuuuuuuuuuuuudy~{/bt}"
+    "Unknown" "{bt}Clauuuuuuuuuuuuudy~{/bt}"
 
     show claude smile at right
     #Word wave effect - sample in drive
@@ -672,14 +683,14 @@ label tell_Claude_grab_cargo:
     show lars
     Lars "Sir Claude, can you bring the artifact yourself? I’d like to spend some time with Master Sylvian."
 
-    show claude shocked at center with move
     show lars
+    show claude shocked at jp
     Claude "I’m shocked, Captain. Choosing Boss Sylvian over me?! I wouldn’t have imagined."
     
     show lars
-    Claude "You even ignored my request about dropping the ‘Sir’ part."
+    Claude "You even ignored my request about dropping the {i}Sir{/i} part."
 
-    show sylvian at left with move
+    show sylvian
     show lars
     Sylvian "I am grateful that you wish to share your time with me, [Lars], even if you’re tired from your journey."
 
@@ -692,11 +703,12 @@ label tell_Claude_grab_cargo:
     hide sylvian
     hide claude
     show sylvian_bouquet
+    with dissolve
     Lars narration "Sunflowers rise proudly, while lavender blossoms intertwine. Brilliant clusters of marigolds sprout forth as well."
 
     Lars narration "I remember that his hat was one of his personal crafts, a magical creation that bloomed flowers according to his mood."
 
-    Lars narration "It’s unfortunate that I’m not well—versed in flower languages; otherwise, I would be able to decipher the heartfelt messages he wishes to convey through these enchanting floral gifts."
+    Lars narration "It’s unfortunate that I’m not well-versed in flower languages; otherwise, I would be able to decipher the heartfelt messages he wishes to convey through these enchanting floral gifts."
 
     Lars narration "Nonetheless, I can’t help but feel treasured whenever he gives me gifts. After all, I’ve noticed that he hasn’t given this kind of gift to anyone else, and the thought warms my heart for some reason…"
 
@@ -704,9 +716,11 @@ label tell_Claude_grab_cargo:
     show claude serious at right
     show sylvian at left
     show lars
+    with dissolve
     Claude "Quite the showmanship, Boss."
 
     show sylvian mad at left
+    show lars
     Claude "Though I wonder if Captain over here got the message in your subtle gesture."
 
     show sylvian blush at left
@@ -815,16 +829,21 @@ label tell_Claude_grab_cargo:
     Lars "Haha! That’s right, Rory, it’s not about the size of the bull, it’s about the size of its determination!"
 
     show rory angry at right
+    show lars happy
     Rory "Come on, [Lars]. No shorty jokes. A certain someone spews enough of them already."
 
+    show lars happy
     Lars "Alright, alright. I’ll make it up to you by helping you out for the show."
 
     show rory at right
+    show lars happy
     Rory "Yay~ Thank you!"
 
+    show lars happy
     Claude "I have arrived with our mystery artifact."
 
     #claude comes in from the right and moves to the center, sylvian is still on the left and rory on the right
+    show lars happy
     show claude at center with move
     hide lars
     Lars narration "Speaking of the devil, Sir Claude makes his entrance with the grande and ornate box held tightly by his tail. His eyes glimmer with a mixture of anticipation and excitement."
@@ -1037,11 +1056,13 @@ label S_1_End:
     hide rory
     hide claude
     hide sylvian
-    show normal_necklace
-    Lars narration "As I carefully open the ornate box, I discover a beautiful necklace inside. It features a simple leather band and a captivating centerpiece-a stunning red gem with a mesmerizing ruby hue."
+    show normal_necklace 
+    with dissolve
+    Lars "As I carefully open the ornate box, I discover a beautiful necklace inside. It features a simple leather band and a captivating centerpiece-a stunning red gem with a mesmerizing ruby hue."
 
-    Lars narration "The longer I gaze at it, the more an unsettling feeling creeps in, as if it could ensnare my focus. Shivers run down my spine, and my fur stands on end, reacting to some unseen energy."
+    Lars "The longer I gaze at it, the more an unsettling feeling creeps in, as if it could ensnare my focus. Shivers run down my spine, and my fur stands on end, reacting to some unseen energy."
 
+    show lars
     Claude "Before anyone starts their inspection, I promised our dear Captain he’d be the first person to hold it."
 
     hide normal_necklace
@@ -1049,6 +1070,7 @@ label S_1_End:
     show claude at center
     show sylvian at left
     show rory at right
+    with dissolve
     Lars "Thanks, but no thanks, Sir Claude. My instincts are warning me about this artifact, something seems off about it."
 
     Claude "It wouldn’t hurt to at least hold it in your hand, would it?"
@@ -1237,7 +1259,7 @@ label joke_about_his_statement:
 
     Sylvian "We used to have a lot of rivalry back in the Tower of Magicians. Your comment reminds me of those days where we would try and use every trick up our sleeves to get ahead."
 
-    Sylvian "I wish to never go back to those days if possible. After all, ‘Custodes Sylvae’ is my current solace."
+    Sylvian "I wish to never go back to those days if possible. After all, {i}Custodes Sylvae{/i} is my current solace."
 
     hide lars
     Lars narration "In an instant, the atmosphere shifts, and a wave of melancholy washes over Master Sylian. His hands, once tranquil, now tremble slightly, and the furrow on his brow deepens as if he's grappling with memories etched on his face."
@@ -1266,6 +1288,7 @@ label S_2_End:
 
     hide sylvian
     show normal_necklace
+    with dissolve
     Sylvian "It eerily resembles an artifact that I had previously seen in the Archmage's tower. A one-of-a-kind necklace with a similar gemstone belonging to a family of dragons with our very own half-human, half-animal traits as descendants."
 
     Sylvian "I haven’t heard of them in quite some time, and though the color of its gem contrasts the descriptions I’ve heard and read, the artistry is quite similar."
@@ -1275,6 +1298,7 @@ label S_2_End:
     show sylvian at left
     show claude at center
     show rory at right
+    with dissolve
     Sylvian "Speaking of which, how much did you exchange for it, Claude? We need to see if the funds from Rory’s recent puppet show will be able to cover the costs."
 
     show claude smile at center
@@ -1330,21 +1354,23 @@ label S_2_End:
     Lars "These confession jokes are getting really out of hand."
 
     hide lars
-    hide rory
-    hide claude
-    hide sylvian
-    show normal_necklace
-    Lars narration "Alas, disregarding Sir Claude’s comment, I take the moment to put on the necklace, the gemstone’s ruby color captures my attention and I marvel at the curious glow that emits from it."
+    hide rory 
+    hide claude 
+    hide sylvian 
+    show normal_necklace 
+    with dissolve
+    Lars "Alas, disregarding Sir Claude’s comment, I take the moment to put on the necklace, the gemstone’s ruby color captures my attention and I marvel at the curious glow that emits from it."
     
     hide normal_necklace
     show shining_necklace
-    Lars narration "It’s strange though, I don't recall the color being so vibrant. It’s almost as if it’s shining or signaling something."
+    Lars "It’s strange though, I don't recall the color being so vibrant. It’s almost as if it’s shining or signaling something."
 
     hide shining_necklace
     show rory at center
+    with dissolve
     Rory "Let’s go [Lars], or you’ll get left behind~"
 
-    show lars
+    show lars with Dissolve
     Lars "I’m coming, wait for me!"
 
     play sound sfx_grassy_walk
@@ -1356,7 +1382,7 @@ label S_2_End:
     #claude comes to the center but I want there to be a little distance between sylvian and rory+claude here, like a gap in the center to make it seems like the two are walking further ahead
     Lars narration "Meanwhile, Claude and Rory pick up their pace, engaging in a competition to see who can reach the puppet stall first. Their banter fills the air as they exchange witty remarks, not holding back on their rivalry."
 
-    Lars narration "Hopefully, it’ll be another day without any troubles here in Divonia and ‘Custodes Sylvae’."
+    Lars narration "Hopefully, it’ll be another day without any troubles here in Divonia and {i}Custodes Sylvae{/i}."
 
     stop sound fadeout 2.0
     #adding this in, let’s make sure to have the sfx fade out instead of suddenly stopping it
@@ -1865,7 +1891,7 @@ label look_back_at_Master_Sylvian:
     Lars "I am, Master Sylvian has shown genuine care and consideration for my feelings. However, with you, it feels like everything is either taken as a joke or a competition!"
 
     show sylvian mad at left
-    Sylvian "Claude, it’s time to stop with the teasing. As the leader of ‘Custodes Sylvae’, I don’t want you to do anything that jeopardizes our bond as fellow guild members."
+    Sylvian "Claude, it’s time to stop with the teasing. As the leader of {i}Custodes Sylvae{/i}, I don’t want you to do anything that jeopardizes our bond as fellow guild members."
 
     show claude serious at center
     Claude "Hmph, suit yourself Boss. I’ll back off for now."
@@ -1898,12 +1924,12 @@ label look_back_at_Master_Sylvian:
 
     Sylvian "THAT’S ENOUGH CLAUDE!"
 
-    Sylvian "I treasure you as a guild member of ‘Custodes Sylvae,’ but your snapdragon of a mouth is intolerable."
+    Sylvian "I treasure you as a guild member of {i}Custodes Sylvae,{/i} but your snapdragon of a mouth is intolerable."
 
     Sylvian "Gracefully deceptive petals that press together to bloom in deceit. You certainly have a lot to say, but when it comes to revealing things about yourself, you remain as enigmatic as ever."
 
     show claude serious at center
-    Sylvian "How about revealing the reason behind why you adopted that ‘ambitious’ persona of yours? You certainly try to show it off at every occasion, now don’t you?"
+    Sylvian "How about revealing the reason behind why you adopted that {i}ambitious{/i} persona of yours? You certainly try to show it off at every occasion, now don’t you?"
 
     Claude "Tsk tsk, outing me like this just because you couldn't handle what I said?"
 
@@ -2071,7 +2097,7 @@ label CS_4_End:
     hide lars
     Lars narration "I catch Sir Claude throwing a peek at me but he quickly switches his focus back to Master Sylvian."
 
-    Lars narration "When it came to dreams, Master Sylvian had garnered quite the reputation as the ‘Genius of the Century’ during his tenure at the Tower of Magicians in Divonia."
+    Lars narration "When it came to dreams, Master Sylvian had garnered quite the reputation as the {i}Genius of the Century{/i} during his tenure at the Tower of Magicians in Divonia."
 
     Lars narration "Although he rarely spoke about his past experiences, a glimpse into his emotions could be seen in the way his feathers drooped and his shoulders slumped with a sense of dejection whenever the topic came up."
 
@@ -2082,9 +2108,9 @@ label CS_4_End:
     Lars narration "Not to mention, the formation of our guild seemed to be a deliberate decision he made in response to his experiences as an academician, though he seldom delves into the specifics."
 
     show lars
-    Claude "It’s in the very motto of ‘Custodes Sylvae’ after all."
+    Claude "It’s in the very motto of {i}Custodes Sylvae{/i} after all."
 
-    Claude "‘Discere, cogitare, agere— the triad of wisdom. Learning enriches the mind, and thinking sharpens it, but it is through action that we truly manifest our knowledge and shape our reality’."
+    Claude "{i}Discere, cogitare, agere— the triad of wisdom. Learning enriches the mind, and thinking sharpens it, but it is through action that we truly manifest our knowledge and shape our reality{/i}."
 
     Claude "Looks like you're stumbling on that third step."
 
@@ -2115,7 +2141,7 @@ label CS_4_End:
     show claude serious at left
     Claude "Aren’t you only saying that because you were burnt out and having nothing else to pursue?"
 
-    Claude "If you always treasured this so-called ‘contentment’ why did you decide to spread your name onto society as the top academic of Divonia?"
+    Claude "If you always treasured this so-called {i}contentment{/i} why did you decide to spread your name onto society as the top academic of Divonia?"
 
     Claude "You could have simply stuck to the bottom ranks and let your life aimlessly pass by without ever achieving something or dare I say - fall in love."
 
@@ -2290,29 +2316,38 @@ label CS_5_End:
     hide sylvian
     hide claude
     show shining_necklace
-    Lars narration "The necklace I'm wearing grows warmer, its temperature gradually rising. Intrigued and compelled, I shift my attention towards it. It appears Rory has noticed it too."
+    with Dissolve
+    Lars "The necklace I'm wearing grows warmer, its temperature gradually rising. Intrigued and compelled, I shift my attention towards it. It appears Rory has noticed it too."
 
+    show lars
     Rory "Hold up! What’s happening to the artifact right now? Take a look everyone."
 
-    Lars narration "Instantly, everyone’s gaze fixates on me."
+    Lars "Instantly, everyone’s gaze fixates on me."
 
+    show lars
     Rory "It’s shining like crazy! Do you think it has something to do with what’s going on? Maybe a weird spell that suddenly got activated?"
 
+    show lars
     Rory "It’s as if we’re the only people moving and everyone else is frozen in time. Don’t you find it weird?"
 
+    show lars
     Rory "What’s going on, Mentor? Can’t you do something about this?"
 
+    show lars
     Claude "Calm down little Rory—"
 
+    show lars
     Rory "Claude, what the heck did you bring with yourself?! If anything goes wrong, I’m holding you responsible!"
 
+    show lars
     Claude "…"
 
     hide shining_necklace
-    show sylvian serious funny at center
+    show sylvian serious funny at center 
     show rory angry at right
-    show claude serious at left
+    show claude serious at left 
     show lars serious
+    with Dissolve
     Sylvian "I have only ever heard of one artifact having the ability to do such a thing. Remember the one we talked about when we first opened the box?"
 
     Sylvian "However, the color of the gem in our necklace is different from that I remember."
@@ -2353,8 +2388,7 @@ label CS_5_End:
     show lars serious
     show claude shocked at left
     show rory angry at right
-    #"Unknown" "Looks like some interesting Divs have entered my domain while I was occupied."
-    Zephyr "Looks like some interesting Divs have entered my domain while I was occupied."
+    "Unknown" "Looks like some interesting Divs have entered my domain while I was occupied."
 
     #for the previous line, Zephyr doesn’t show up yet, but for the next, he comes in from the left side. 
     #All the characters turn their heads towards him and then huddle up together on the right, their sprite can be somewhat squashed. 
@@ -2368,11 +2402,9 @@ label CS_5_End:
         linear 0.5 xalign 0.7
     
     show zephyr happy at enter_left
-    #"Unknown" "I was frozen in anticipation for what would come next, but I have work to do after this. My castle isn’t going to clean up after itself!"
-    Zephyr "I was frozen in anticipation for what would come next, but I have work to do after this. My castle isn’t going to clean up after itself!"
+    "Unknown" "I was frozen in anticipation for what would come next, but I have work to do after this. My castle isn’t going to clean up after itself!"
 
-    #"Unknown" "Get it? frozen in anticipation. Hehehehehe~"
-    Zephyr "Get it? frozen in anticipation. Hehehehehe~"
+    "Unknown" "Get it? frozen in anticipation. Hehehehehe~"
 
     show sylvian:
         linear 0.5 xalign 0.4
@@ -2406,11 +2438,9 @@ label CS_5_End:
     show lars serious
     Claude "Who’s there? Are you the person behind this? What’s—"
 
-    #"Unknown" "Slow doooown there."
-    Zephyr "Slow doooown there."
+    "Unknown" "Slow doooown there."
 
-    #"Unknown" "Times not running away after all. You know?"
-    Zephyr "Times not running away after all. You know?"
+    "Unknown" "Times not running away after all. You know?"
 
     Sylvian "…"
 
@@ -2422,41 +2452,33 @@ label CS_5_End:
 
     show zephyr sad at jp
     #zephyr sprite jumps up and down for the next sentence. Textbox could do a shake as well.
-    #"Unknown" "DON’T JUDGE ME!"
-    Zephyr "DON’T JUDGE ME!"
+    "Unknown" "DON’T JUDGE ME!"
 
     Rory "Too late for that now."
 
     show zephyr happy at left
-    #"Unknown" "It’s been some time since I could speak with someone without them being brainwashed or stuck in time."
-    Zephyr "It’s been some time since I could speak with someone without them being brainwashed or stuck in time."
+    "Unknown" "It’s been some time since I could speak with someone without them being brainwashed or stuck in time."
 
     Lars "Huh? What’re you talking about?"
 
     #zephyr does a small side to side shake for the next sentence
     show zephyr happy at shake
-    #"Unknown" "Ah, the inquisitive one speaks. Hmm, I’ll call you Scouty from now on since you look the part as well."
-    Zephyr "Ah, the inquisitive one speaks. Hmm, I’ll call you Scouty from now on since you look the part as well."
+    "Unknown" "Ah, the inquisitive one speaks. Hmm, I’ll call you Scouty from now on since you look the part as well."
 
     Lars "My name is [Lars], not Scouty!"
 
-    #"Unknown" "My brain cells will only acknowledge you as Scouty from here on out."
-    Zephyr "My brain cells will only acknowledge you as Scouty from here on out."
+    "Unknown" "My brain cells will only acknowledge you as Scouty from here on out."
 
-    #"Unknown" "You're all destined to be new additions to my castle renovation army, so sparing the effort of using two names at once seems reasonable."
-    Zephyr "You're all destined to be new additions to my castle renovation army, so sparing the effort of using two names at once seems reasonable."
+    "Unknown" "You're all destined to be new additions to my castle renovation army, so sparing the effort of using two names at once seems reasonable."
 
     show lars
-    Lars "But you only have to remember one, which is ‘[Lars]’—"
+    Lars "But you only have to remember one, which is {i}[Lars]{/i}—"
 
-    #"Unknown" "Well, let's see who else we have in this riveting cohort. I'm sure your names are all yawn-inducing, but let's make this roll call fun, shall we?"
-    Zephyr "Well, let's see who else we have in this riveting cohort. I'm sure your names are all yawn-inducing, but let's make this roll call fun, shall we?"
+    "Unknown" "Well, let's see who else we have in this riveting cohort. I'm sure your names are all yawn-inducing, but let's make this roll call fun, shall we?"
 
-    #"Unknown" "You, the one with the flowery hat, must be the smart one in the group since you haven’t interrupted me so far. I’ll call you Smarty from now on."
-    Zephyr "You, the one with the flowery hat, must be the smart one in the group since you haven’t interrupted me so far. I’ll call you Smarty from now on."
+    "Unknown" "You, the one with the flowery hat, must be the smart one in the group since you haven’t interrupted me so far. I’ll call you Smarty from now on."
 
-    #"Unknown" "But be careful not to interject too much like Scouty."
-    Zephyr "But be careful not to interject too much like Scouty."
+    "Unknown" "But be careful not to interject too much like Scouty."
 
     Lars "But how is that even related to what I asked—"
 
@@ -2465,8 +2487,7 @@ label CS_5_End:
 
     Rory "—ever interrupt you?"
 
-    #"Unknown" "Scouty, and the other two, I need my main character moment over here, stop blabbering so much."
-    Zephyr "Scouty, and the other two, I need my main character moment over here, stop blabbering so much."
+    "Unknown" "Scouty, and the other two, I need my main character moment over here, stop blabbering so much."
 
     hide lars
     Lars narration "I take a deep breath, frustration bubbling up within me as I watch the scene unfold. The figure’s words are becoming increasingly difficult to make sense of."
@@ -2476,8 +2497,7 @@ label CS_5_End:
     Lars narration "Come on, someone has to say something."
 
     show lars serious
-    #"Unknown" "As I was saying—"
-    Zephyr "As I was saying—"
+    "Unknown" "As I was saying—"
 
     show sylvian serious funny at center_right
     Sylvian "Enough banter, who exactly are you?"
@@ -2492,17 +2512,13 @@ label CS_5_End:
     play sound sfx_clap
     Lars narration "Suddenly, the sound of a single clap pierces through the stillness. It’s a sharp and commanding sound, one that demands our attention."
 
-    #"Unknown" "Impressive words, especially considering your current disadvantage but I’ll humor you this time."
-    Zephyr "Impressive words, especially considering your current disadvantage but I’ll humor you this time."
+    "Unknown" "Impressive words, especially considering your current disadvantage but I’ll humor you this time."
 
-    #"Unknown" "Since Smarty asked, it’s time for the cliché introduction séance, the kind they do for video games and TV shows."
-    Zephyr "Since Smarty asked, it’s time for the cliché introduction séance, the kind they do for video games and TV shows."
+    "Unknown" "Since Smarty asked, it’s time for the cliché introduction séance, the kind they do for video games and TV shows."
 
-    #"Unknown" "Hopefully, they spared no expense in making me the fairest of them all. A little extra villainous charm never hurt anyone~"
-    Zephyr "Hopefully, they spared no expense in making me the fairest of them all. A little extra villainous charm never hurt anyone~"
+    "Unknown" "Hopefully, they spared no expense in making me the fairest of them all. A little extra villainous charm never hurt anyone~"
 
-    #"Unknown" "But before that, you’d better cease all your magical theatrics and weapon brandishing if you don't want me to lose interest in this little charade."
-    Zephyr "But before that, you’d better cease all your magical theatrics and weapon brandishing if you don't want me to lose interest in this little charade."
+    "Unknown" "But before that, you’d better cease all your magical theatrics and weapon brandishing if you don't want me to lose interest in this little charade."
 
     hide lars
     Lars narration "Gradually, Master Sylvian begins to dismantle the defensive walls he had erected, and Rory and I, in sync, follow suit. Hopefully, that’s the right choice to make for now."
@@ -2512,8 +2528,6 @@ label CS_5_End:
     show sylvian at center_right
     show claude at center_left
     #"Unknown" "Anyway, you can address me as the “Omniscient Lord of Bankruptcy” or if it’s easier on the tongue, the “Malevolent Architect of Debt”. Personally, I'm partial to the latter title—it aligns better with my aspirations."
-    Zephyr "Anyway, you can address me as the “Omniscient Lord of Bankruptcy” or if it’s easier on the tongue, the “Malevolent Architect of Debt”. Personally, I'm partial to the latter title—it aligns better with my aspirations."
-
 
     show lars serious
     Lars "Uhm, does that mean that you cause bankruptcy or that you’re the literal embodiment of bankruptcy?"
@@ -2928,24 +2942,30 @@ label G_1_End:
 
     Lars narration "I glance down at the accessory that I’ve carefully concealed beneath my dragon pilot equipment, and my heart skips a beat when I see that it’s still shining brightly with a vivid red glow."
 
-    hide sylvian
-    hide claude
-    show shining_necklace
-    Lars narration "The heat it emitted during our earlier encounter with Zephyr may have subsided, but its enchanting radiance remains."
+    hide sylvian 
+    hide claude 
+    show shining_necklace 
+    with Dissolve
+    Lars "The heat it emitted during our earlier encounter with Zephyr may have subsided, but its enchanting radiance remains."
 
     Lars "Now that I think about it, he mentioned not knowing the whereabouts of the artifact, despite being in charge of the two couple necklaces all this time. My question is, why did this variable suddenly exempt us from the time freeze effect? Could it be related to the artifact?"
 
+    show lars
     Sylvian "If it was related to the presence of the artifact in a known area, then why wasn’t anyone else near the seashore also affected by its counteracting abilities? The weird shadow also said something similar."
 
+    show lars
     Claude "Perhaps…it’s related to touching the artifact."
 
+    show lars
     Claude "Think about it, we all experienced this phenomenon after holding the necklace."
 
+    show lars
     Claude "Not to mention, we were the only people who touched the artifact after opening the box."
 
     hide shining_necklace
-    show claude smile at left
-    show sylvian serious funny at right
+    show claude smile at left 
+    show sylvian serious funny at right 
+    with Dissolve
     show lars
     Lars "Quite the detective, aren't you? I didn't realize I had a master of deduction by my side."
 
@@ -3192,7 +3212,7 @@ label speak_with_Master_Sylvian:
     show lars serious
     Lars "No, but shouldn’t we aim to ruin his plan for the same reason?"
 
-    Lars "He’s robbing unsuspecting humans of their freedom. As members of ‘Custodes Sylvae,’ our duty is to rescue them—"
+    Lars "He’s robbing unsuspecting humans of their freedom. As members of {i}Custodes Sylvae,{/i} our duty is to rescue them—"
 
     show sylvian sad at center
     Sylvian "We’re just a merchant guild, [Lars]. I understand your sentiments, but we can’t rush into things like this."

@@ -61,21 +61,21 @@ transform enter_left:
 
 define config.side_image_same_transform = same_transform
 
-define center_left = Position(xaling=0.4, yalign = 1.0)
+define center_left = Position(xalign=0.4, yalign = 1.0)
 
-define center_right = Position(xaling=0.6, yalign = 1.0)
+define center_right = Position(xalign=0.6, yalign = 1.0)
 
 #define config.layers = [ 'master', 'transient', 'screens', 'overlay', 'overall']
 define config.tag_layer['lars'] = 'overlay'
 
 #Audios
-define audio.sfx_drum_roll = "sfx_drum_roll.mp3"
-define audio.sfx_grassy_walk = "sfx_grassy_walk.mp3"
-define audio.sfx_people_talking = "sfx_people_talking.mp3"
-define audio.sfx_children_playing = "sfx_children_playing.mp3"
-define audio.sfx_clap = "sfx_clap.mp3"
-define audio.sfx_smack = "sfx_smack.mp3"
-define audio.sfx_splash = "sfx_splash.mp3"
+define audio.sfx_drum_roll = "sfx_drum_roll.ogg"
+define audio.sfx_grassy_walk = "sfx_grassy_walk.ogg"
+define audio.sfx_people_talking = "sfx_people_talking.ogg"
+define audio.sfx_children_playing = "sfx_children_playing.ogg"
+define audio.sfx_clap = "sfx_clap.ogg"
+define audio.sfx_smack = "sfx_smack.ogg"
+define audio.sfx_splash = "sfx_splash.ogg"
 
 #Otras imagenes
 image smoke:
