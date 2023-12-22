@@ -228,8 +228,6 @@ screen choice(items):
                     hover_sound "audio/sfx_cursorhover.ogg"
                 yminimum 134
                 ypadding 26
-                
-
 
 style choice_vbox is vbox
 style choice_button is button

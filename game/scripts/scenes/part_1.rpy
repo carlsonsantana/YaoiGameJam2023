@@ -1370,7 +1370,7 @@ label S_2_End:
     with dissolve
     Rory "Let’s go [Lars], or you’ll get left behind~"
 
-    show lars with Dissolve
+    #show lars with dissolve
     Lars "I’m coming, wait for me!"
 
     play sound sfx_grassy_walk
