@@ -15,9 +15,9 @@ transform flip:
     linear 0.2 xzoom -1.0
 
 transform flip_fade:
+    linear 0.2 alpha 0.0
     xzoom -1.0 # Flip the image horizontally
-    alpha 0.0 # Make the image transparent
-    linear 0.5 alpha 1.0 # Fade in the image in 0.5 seconds
+    linear 0.2 alpha 1.0 # Fade in the image in 0.5 seconds
 
 transform jp:
     yoffset 0
