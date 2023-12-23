@@ -6,7 +6,10 @@ transform pan:
     linear 10.0 xalign 1.0
 
 transform end_pan:
-    linear 2.0 zoom 1.0
+    parallel:
+        linear 2.0 zoom 1.0
+    parallel:
+        linear 2.0 xalign 0.5
 
 transform flip:
     linear 0.2 xzoom -1.0
@@ -61,9 +64,13 @@ transform enter_left:
 
 define config.side_image_same_transform = same_transform
 
+define left_far = Position(xalign= -2.0, yalign = 1.0)
+define center_2left = Position(xalign=0.2, yalign = 1.0)
 define center_left = Position(xalign=0.4, yalign = 1.0)
 
 define center_right = Position(xalign=0.6, yalign = 1.0)
+define center_2right = Position(xalign=0.8, yalign = 1.0)
+define right_far = Position(xalign=2.0, yalign = 1.0)
 
 #define config.layers = [ 'master', 'transient', 'screens', 'overlay', 'overall']
 define config.tag_layer['lars'] = 'overlay'
@@ -85,6 +92,15 @@ image smoke:
     pause 1.0
     easein 1.0 alpha 0.00
     pause 0.5
+    repeat
+
+image blink_necklace:
+    "images/shining_necklace.png" #with dissolve(0.5, alpha=True)
+    alpha 0.00
+    easein 0.5 alpha 1.00
+    pause 0.1
+    easein 0.5 alpha 0.00
+    pause 0.1
     repeat
 
 image cg_lars_sylvian_ge:
