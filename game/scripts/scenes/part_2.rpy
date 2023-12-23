@@ -247,7 +247,8 @@ label menu_s3:
             jump S3_sylvian_good_end
 
 label S3_sylvian_bad_end:
-    play music "track_9_bad_ending.ogg"
+    stop music fadeout 1.0
+    play music "track_9_bad_ending.ogg" fadein 1.0
     Lars narration "I should poke further about his comment."
 
     Lars narration "It might get him a bit ruffled up but I can’t contain my curiosity."
@@ -647,7 +648,8 @@ label S3_sylvian_bad_end:
 
 label S3_sylvian_neutral_end:
 
-    play music "track_8_neutral_ending.ogg"
+    stop music fadeout 1.0
+    play music "track_8_neutral_ending.ogg" fadein 1.0
     Lars narration "I should move past his comment."
 
     Lars narration "There are more pressing matters at hand."
@@ -1012,7 +1014,8 @@ label S3_sylvian_neutral_end:
     jump end
 
 label S3_sylvian_good_end:
-    play music "track_7_good_ending.ogg"
+    stop music fadeout 1.0
+    play music "track_7_good_ending.ogg" fadein 1.0
     Lars narration "I should stay silent for now."
 
     show lars
@@ -1554,7 +1557,8 @@ label menu_c3:
             jump C3_claude_bad_end
 
 label C3_claude_good_end:
-    play music "track_7_good_ending.ogg"
+    stop music fadeout 1.0
+    play music "track_7_good_ending.ogg" fadein 1.0
     Lars narration "I should poke further about his comment."
 
     show claude serious
@@ -1829,7 +1833,8 @@ label C3_claude_good_end:
     jump end
 
 label C3_claude_neutral_end:
-    play music "track_8_neutral_ending.ogg"
+    stop music fadeout 1.0
+    play music "track_8_neutral_ending.ogg" fadein 1.0
     Lars narration "I should move past his comment."
 
     Lars narration "He probably meant it as a joke, like always. I should steer the conversation before I get swept up in his flirty act."
@@ -2071,7 +2076,8 @@ label C3_claude_neutral_end:
     jump end
     
 label C3_claude_bad_end:
-    play music "track_9_bad_ending.ogg"
+    stop music fadeout 1.0
+    play music "track_9_bad_ending.ogg" fadein 1.0
     Lars narration "I should stay silent for now."
 
     Lars narration "Master Sylvian and Rory might get in trouble if we stall for too long."

@@ -417,7 +417,8 @@ label C_2_End:
     Lars narration "I glance downward, and our destination near the sea comes into view."
 
     $ renpy.choice_for_skipping()
-    play music "track_2_field_of_flowers.ogg"
+    stop music fadeout 1.0
+    play music "track_2_field_of_flowers.ogg" fadein 1.0
     scene bg black with fade
     show bg_2 at pan with fade
     #panning effect - sample in drive
@@ -1533,7 +1534,8 @@ label S_2_End:
     stop sound fadeout 2.0
     #adding this in, let’s make sure to have the sfx fade out instead of suddenly stopping it
     $ renpy.choice_for_skipping()
-    play music "track_3_the_town.ogg"
+    stop music fadeout 1.0
+    play music "track_3_the_town.ogg" fadein 1.0
     scene bg black with fade
     show bg_3 at pan with fade
 
@@ -1777,7 +1779,7 @@ label CS_2_End:
             jump ask_Sir_Claude_about
 
 label ask_Master_Sylvian_about:
-
+    stop music fadeout 1.0
     play music "track_6_romance_scene.ogg" fadein 1.0
     show rory at right_far
     show claude at right_far
@@ -1838,7 +1840,7 @@ label ask_Master_Sylvian_about:
     jump CS_3_End
 
 label ask_Sir_Claude_about:
-
+    stop music fadeout 1.0
     play music "track_6_romance_scene.ogg" fadein 1.0
     show rory at right_far
     show sylvian at left_far
@@ -1957,14 +1959,41 @@ label ask_Sir_Claude_about:
 
     Lars "Uhm…I guess that’s okay."
 
+    show bg_3 at bg_blur:
+        xalign 0.5
+        yalign 0.5
+        linear 2.0 zoom 1.25
+    show claude:
+        parallel:
+            linear 2.0 xalign 0.5
+        parallel:
+            linear 2.0 zoom 1.25
+        parallel:
+            linear 2.0 yoffset 150
     Lars narration "Suddenly, he closes in, giving me a quick but strong hug. I catch a glimpse of what can only be a light blush on his cheeks as he holds me closer."
 
     show lars
     Claude "You mean a lot to me, Captain, and I don’t want to rush my secret. When the time is right, I’ll share everything with you."
+    
+    show bg_3:
+        
+        blur 15
+        parallel:
+            linear 1.0 blur 0
+        parallel:
+            linear 1.0 zoom 1.0
+    show claude:
+        parallel:
+            linear 1.0 yoffset 0
+        parallel:
+            linear 1.0 zoom 1.0
+        parallel:
+            linear 1.0 xalign 0.6
+    pause(1)
 
 label CS_3_End:
-
-    play music "track_3_the_town.ogg"
+    stop music fadeout 1.0
+    play music "track_3_the_town.ogg" fadein 1.0
     show rory at right
     show claude at center_right
     show sylvian at left
@@ -1997,7 +2026,7 @@ label CS_3_End:
     #Word wave effect for ‘Claudyyyy ‘ - sample in drive
     Rory "Not to mention, Brittina and Alex were very excited to enhance their looks with the help of {bt}Claudyyyy{/bt} over here."
 
-    show claude shocked at center
+    show claude shocked
     Rory "I did want to pluck out the lizard’s eyes for Agatha, but it’s very hard to do that in his sleep especially since he’s such a light sleeper."
 
     Lars "He’s the heaviest sleeper I know, what’re you talking about?"
@@ -2006,12 +2035,12 @@ label CS_3_End:
 
     Claude "Ehhh, you’ve been watching over me in my sleep, little Rory?"
 
-    show claude smile at center
+    show claude smile
     Claude "I could excuse the scale stealing incident and the hair cutting fiasco because I’m so benevolent."
 
     Claude "However, night peeking is a no-no."
 
-    show sylvian mad at left
+    show sylvian mad
     Claude "Unless…it’s my lovely Captain who does it."
 
     Sylvian "That’s enough Claude, you’re making [Lars] uncomfortable."
@@ -2033,7 +2062,7 @@ label look_back_at_Master_Sylvian:
 
     Lars narration "I glance at Master Sylvian, silently seeking his assistance."
 
-    show claude shocked at center
+    show claude shocked
     show lars
     Sylvian "Let’s give [Lars] some space and respect his feelings, Claude."
 
@@ -2041,24 +2070,47 @@ label look_back_at_Master_Sylvian:
     Lars narration "I can see him making quite a stupefied face due to the sudden interference. He probably didn’t expect to be scolded like that."
 
     #maybe we could zoom in a little on sylvian for the next sentence like he’s  leaning for lars from his position on the right
-    show sylvian:
-        zoom 1.05
+    show bg_3:
+        xalign 0.5
+        yalign 0.5
+        parallel:
+            linear 2.0 zoom 1.25
+        parallel:
+            linear 2.0 blur 15
     show claude:
-        zoom 0.95
+        linear 2.0 xalign 2.0
     show rory:
-        zoom 0.95
+        linear 2.0 xalign 2.0
+    show sylvian blush:
+        parallel:
+            linear 2.0 xalign 0.5
+        parallel:
+            linear 2.0 zoom 1.25
+        parallel:
+            linear 2.0 yoffset 150
     Lars narration "Meanwhile, Master Sylvian regards me with a kind look as  he reaches out and gently rubs my ears, soothing my embarrassment as my ears perk up."
 
     #zooming out if we do the previous camera trick
-    show claude serious:
-        zoom 1.0
-    show sylvian blush:
-        zoom 1.0
-    show rory:
-        zoom 1.0
     Lars "That’s right, listen to Master Sylvian. He's practically a mind reader when it comes to picking up on my cues and emotions—way ahead of you!"
 
-    show claude sad at center
+    show bg_3:
+        xalign 0.5
+        yalign 0.5
+        parallel:
+            linear 1.0 zoom 1.0
+        parallel:
+            linear 1.0 blur 0
+    show claude sad :
+        linear 1.0 xalign 0.6
+    show rory:
+        linear 1.0 xalign 1.0
+    show sylvian blush:
+        parallel:
+            linear 1.0 xalign 0.0
+        parallel:
+            linear 1.0 zoom 1.0
+        parallel:
+            linear 1.0 yoffset 0
     Lars narration "He lets out a light sigh, seemingly contemplating his actions."
 
     Claude "…I suppose. Can’t go against our esteemed Captain’s wishes."
@@ -2066,13 +2118,13 @@ label look_back_at_Master_Sylvian:
     Claude "But you can’t be serious about Master Sylvian reading you better than I do."
 
     show lars blush
-    show claude shocked at center
+    show claude shocked
     Lars "I am, Master Sylvian has shown genuine care and consideration for my feelings. However, with you, it feels like everything is either taken as a joke or a competition!"
 
-    show sylvian mad at left
+    show sylvian mad
     Sylvian "Claude, it’s time to stop with the teasing. As the leader of {i}Custodes Sylvae{/i}, I don’t want you to do anything that jeopardizes our bond as fellow guild members."
 
-    show claude serious at center
+    show claude serious
     Claude "Hmph, suit yourself Boss. I’ll back off for now."
 
     Claude "But I’ll have you know that I’m not giving up anytime soon."
@@ -2081,7 +2133,7 @@ label look_back_at_Master_Sylvian:
 
     Claude "As much as I adore your poetry and philosophical quotes, I’ll stand my ground when it comes to teasing Captain over here."
 
-    show claude smile at center
+    show claude smile
     Claude "You see, it’s fun for me to see which of his buttons I can push."
 
     Claude "Anyone attempting to be a goody two shoes all the time, like you, is destined for downfall unless they find a way to unleash their deepest desires, Boss. Maybe even share a secret or two!"
@@ -2096,7 +2148,7 @@ label look_back_at_Master_Sylvian:
     Lars narration "…my Captain?"
 
     show lars
-    show sylvian mad at left
+    show sylvian mad
     Claude "Yet, it seems like flowers are the only companions you can trust your secrets with."
 
     Claude "Not to mention, isn’t it time for you to admit to [Lars] that you’ve loved—"
@@ -2107,7 +2159,7 @@ label look_back_at_Master_Sylvian:
 
     Sylvian "Gracefully deceptive petals that press together to bloom in deceit. You certainly have a lot to say, but when it comes to revealing things about yourself, you remain as enigmatic as ever."
 
-    show claude serious at center
+    show claude serious
     Sylvian "How about revealing the reason behind why you adopted that {i}ambitious{/i} persona of yours? You certainly try to show it off at every occasion, now don’t you?"
 
     Claude "Tsk tsk, outing me like this just because you couldn't handle what I said?"
@@ -2126,42 +2178,64 @@ label look_back_at_Sir_Claude:
 
     Lars narration "I glance at Sir Claude, silently seeking his assistance."
 
-    show claude smile at center
+    show claude smile
     hide lars
     Lars narration "He playfully winks, a certain charm in his eyes that's hard to ignore. I'm pretty sure my tail is all ruffled up by the gesture, and who knows what state my cheeks are in right now—they always seem to be in a world of their own."
 
     #maybe we could zoom in a little on claude for the next sentence like he’s  leaning for lars from his position on the right
+    show bg_3:
+        xalign 0.5
+        yalign 0.5
+        parallel:
+            linear 2.0 zoom 1.25
+        parallel:
+            linear 2.0 blur 15
     show sylvian:
-        zoom 0.95
-    show claude:
-        zoom 1.05
+        linear 2.0 xalign -1.0
     show rory:
-        zoom 0.95
+        linear 2.0 xalign 2.0
+    show claude:
+        parallel:
+            linear 2.0 xalign 0.5
+        parallel:
+            linear 2.0 zoom 1.25
+        parallel:
+            linear 2.0 yoffset 150
     Lars narration "He stretches his hand in my direction, entwining our fingers and pulling me closer until we're touching shoulder to shoulder."
 
-    show claude serious:
-        zoom 1.0
-    show sylvian blush:
-        zoom 1.0
-    show rory:
-        zoom 1.0
-    show lars blush
     Claude "Who knows what stage our relationship will reach in the very near future? Am I right, Captain?"
 
     #zooming out if we do the previous camera trick
 
-    show sylvian mad at left
+    show bg_3:
+        xalign 0.5
+        yalign 0.5
+        parallel:
+            linear 1.0 zoom 1.0
+        parallel:
+            linear 1.0 blur 0
+    show sylvian sad:
+        linear 1.0 xalign 0.0
+    show rory:
+        linear 1.0 xalign 1.0
+    show claude:
+        parallel:
+            linear 1.0 xalign 0.6
+        parallel:
+            linear 1.0 zoom 1.0
+        parallel:
+            linear 1.0 yoffset 0
     Lars narration "As Sir Claude pulls away, releasing my hand, my attention shifts to the impending storm gathering above Master Sylvian’s silhouette. His furrowed brows and crossed arms betray a sense of bitterness."
 
     Lars narration "To emphasize the point further, delicate hyacinth blossoms, donned in their regal purple hues, frame the brim of his hat. Each subtle shake of his head becomes a silent decree, causing the once-graceful petals to wilt and wither, perfectly reflecting the disappointment etched on his face."
 
-    Lars  "But why is he looking at me like that?"
+    Lars  "{size=*0.75}But why is he looking at me like that?{/size}"
 
     Lars narration "I’m not always on board with Sir Claude’s shenanigans, yet, it’s often easier to go along with his wishes. He enjoys the challenge, and the excitement of competition makes resisting him seem pointless."
 
     Lars narration "Master Sylvian knows that as well, so why would he show such an expression?"
 
-    show claude blush at center
+    show claude blush
     show lars blush
     Claude "Whether it’s the way your cute tail wags around when you start rambling or how your ears perk up while listening to human’s tales, I can tell each and every one of them apart."
 
@@ -2175,6 +2249,8 @@ label look_back_at_Sir_Claude:
 
 label CS_4_End:
 
+    show sylvian at left
+    show claude at center_right
     show rory at right
     Rory "Sorry to break up your moment guys, but we have more important things to do right now."
 
@@ -2184,6 +2260,7 @@ label CS_4_End:
     hide rory
     hide claude
     hide sylvian
+    with dissolve
     Lars narration "I make my way through the bustling groups of children, intent on grabbing their attention. The excitement in the air is palpable as their laughter and chatter fills the space."
 
     Lars narration "It’s best that I tuck the artifact beneath my equipment for now. Children are easily captivated by shiny objects, and I wouldn't want them accidentally pulling and damaging the necklace."
@@ -2451,10 +2528,10 @@ label CS_5_End:
     Lars "Ah, I gathered them all here!"
 
     #the music music fades to silence and the next track starts
-    stop music fadeout 1.0
     Lars "…see?"
 
-    play music "track_4_time_stop.ogg"
+    stop music fadeout 1.0
+    play music "track_4_time_stop.ogg" fadein 1.0
     hide lars
     Lars narration "It’s such an eerie scene…the children, once animated, have now come to an abrupt standstill, their vibrant expressions frozen in unnatural stillness."
 
@@ -2567,33 +2644,33 @@ label CS_5_End:
     show lars serious
     show claude shocked at left
     show rory angry at right
-    "Unknown" "Looks like some interesting Divs have entered my domain while I was occupied."
+    "{color=#CD4EDD}Unknown" "Looks like some interesting Divs have entered my domain while I was occupied."
 
     #for the previous line, Zephyr doesn’t show up yet, but for the next, he comes in from the left side. 
     #All the characters turn their heads towards him and then huddle up together on the right, their sprite can be somewhat squashed. 
     #There’s supposed to be a little difference as Zephyr stays on the left, the center empty, and the three other characters squished on the right.
     $ renpy.choice_for_skipping()
     show rory:
-        linear 0.5 xalign 1.1
-    show claude at flip:
-        linear 0.5 xalign 0.9
+        linear 1.5 xalign 1.1
+    show claude at flip_fade:
+        linear 1.5 xalign 0.5
     show sylvian:
-        linear 0.5 xalign 0.7
+        linear 1.5 xalign 0.8
     
-    show zephyr happy at enter_left
-    "Unknown" "I was frozen in anticipation for what would come next, but I have work to do after this. My castle isn’t going to clean up after itself!"
-
-    "Unknown" "Get it? frozen in anticipation. Hehehehehe~"
-
-    show sylvian:
-        linear 0.5 xalign 0.4
-    show claude:
-        linear 1.0 xalign 0.8
-    show rory:
-        linear 1.0 xalign 1.0
     show zephyr happy:
-        linear 0.25 xalign -0.2
-        linear 0.75 xalign 0.0
+        xalign -1.0
+        linear 1.5 xalign 0.0
+    "{color=#CD4EDD}Unknown" "I was frozen in anticipation for what would come next, but I have work to do after this. My castle isn’t going to clean up after itself!"
+
+    show zephyr happy at jp
+    "{color=#CD4EDD}Unknown" "Get it? frozen in anticipation. {bt}Hehehehehe~{/bt}"
+
+    show sylvian at center_left with move
+    show claude at center_2right with move
+
+    show zephyr happy:
+        linear 0.5 xalign -0.2
+        linear 1.75 xalign 0.0
     #for the next sentence, sylvian moves towards the center (the right side becomes less cluttered) and zephyr moves to the left a little before coming back to his original position. 
     #I want to make it seem like he was startled for a sec before he goes back to normal
     Lars narration "In an instant, Master Sylvian’s incantation casts a protective shield of varying blooms and plants around us, shimmering with the combined energies of crystalline dews."
@@ -2617,9 +2694,9 @@ label CS_5_End:
     show lars serious
     Claude "Who’s there? Are you the person behind this? What’s—"
 
-    "Unknown" "Slow doooown there."
+    "{color=#CD4EDD}Unknown" "Slow doooown there."
 
-    "Unknown" "Times not running away after all. You know?"
+    "{color=#CD4EDD}Unknown" "Times not running away after all. You know?"
 
     Sylvian "…"
 
@@ -2631,33 +2708,33 @@ label CS_5_End:
 
     show zephyr sad at jp
     #zephyr sprite jumps up and down for the next sentence. Textbox could do a shake as well.
-    "Unknown" "DON’T JUDGE ME!"
+    "{color=#CD4EDD}Unknown" "DON’T JUDGE ME!"
 
     Rory "Too late for that now."
 
     show zephyr happy at left
-    "Unknown" "It’s been some time since I could speak with someone without them being brainwashed or stuck in time."
+    "{color=#CD4EDD}Unknown" "It’s been some time since I could speak with someone without them being brainwashed or stuck in time."
 
     Lars "Huh? What’re you talking about?"
 
     #zephyr does a small side to side shake for the next sentence
     show zephyr happy at shake
-    "Unknown" "Ah, the inquisitive one speaks. Hmm, I’ll call you Scouty from now on since you look the part as well."
+    "{color=#CD4EDD}Unknown" "Ah, the inquisitive one speaks. Hmm, I’ll call you Scouty from now on since you look the part as well."
 
     Lars "My name is [Lars], not Scouty!"
 
-    "Unknown" "My brain cells will only acknowledge you as Scouty from here on out."
+    "{color=#CD4EDD}Unknown" "My brain cells will only acknowledge you as Scouty from here on out."
 
-    "Unknown" "You're all destined to be new additions to my castle renovation army, so sparing the effort of using two names at once seems reasonable."
+    "{color=#CD4EDD}Unknown" "You're all destined to be new additions to my castle renovation army, so sparing the effort of using two names at once seems reasonable."
 
     show lars
     Lars "But you only have to remember one, which is {i}[Lars]{/i}—"
 
-    "Unknown" "Well, let's see who else we have in this riveting cohort. I'm sure your names are all yawn-inducing, but let's make this roll call fun, shall we?"
+    "{color=#CD4EDD}Unknown" "Well, let's see who else we have in this riveting cohort. I'm sure your names are all yawn-inducing, but let's make this roll call fun, shall we?"
 
-    "Unknown" "You, the one with the flowery hat, must be the smart one in the group since you haven’t interrupted me so far. I’ll call you Smarty from now on."
+    "{color=#CD4EDD}Unknown" "You, the one with the flowery hat, must be the smart one in the group since you haven’t interrupted me so far. I’ll call you Smarty from now on."
 
-    "Unknown" "But be careful not to interject too much like Scouty."
+    "{color=#CD4EDD}Unknown" "But be careful not to interject too much like Scouty."
 
     Lars "But how is that even related to what I asked—"
 
@@ -2666,7 +2743,7 @@ label CS_5_End:
 
     Rory "—ever interrupt you?"
 
-    "Unknown" "Scouty, and the other two, I need my main character moment over here, stop blabbering so much."
+    "{color=#CD4EDD}Unknown" "Scouty, and the other two, I need my main character moment over here, stop blabbering so much."
 
     hide lars
     Lars narration "I take a deep breath, frustration bubbling up within me as I watch the scene unfold. The figure’s words are becoming increasingly difficult to make sense of."
@@ -2676,7 +2753,7 @@ label CS_5_End:
     Lars narration "Come on, someone has to say something."
 
     show lars serious
-    "Unknown" "As I was saying—"
+    "{color=#CD4EDD}Unknown" "As I was saying—"
 
     show sylvian serious funny at center_right
     Sylvian "Enough banter, who exactly are you?"
@@ -2691,13 +2768,13 @@ label CS_5_End:
     play sound sfx_clap
     Lars narration "Suddenly, the sound of a single clap pierces through the stillness. It’s a sharp and commanding sound, one that demands our attention."
 
-    "Unknown" "Impressive words, especially considering your current disadvantage but I’ll humor you this time."
+    "{color=#CD4EDD}Unknown" "Impressive words, especially considering your current disadvantage but I’ll humor you this time."
 
-    "Unknown" "Since Smarty asked, it’s time for the cliché introduction séance, the kind they do for video games and TV shows."
+    "{color=#CD4EDD}Unknown" "Since Smarty asked, it’s time for the cliché introduction séance, the kind they do for video games and TV shows."
 
-    "Unknown" "Hopefully, they spared no expense in making me the fairest of them all. A little extra villainous charm never hurt anyone~"
+    "{color=#CD4EDD}Unknown" "Hopefully, they spared no expense in making me the fairest of them all. A little extra villainous charm never hurt anyone~"
 
-    "Unknown" "But before that, you’d better cease all your magical theatrics and weapon brandishing if you don't want me to lose interest in this little charade."
+    "{color=#CD4EDD}Unknown" "But before that, you’d better cease all your magical theatrics and weapon brandishing if you don't want me to lose interest in this little charade."
 
     hide lars
     Lars narration "Gradually, Master Sylvian begins to dismantle the defensive walls he had erected, and Rory and I, in sync, follow suit. Hopefully, that’s the right choice to make for now."
@@ -2706,7 +2783,7 @@ label CS_5_End:
     show rory at right
     show sylvian at center_right
     show claude at center_left
-    #"Unknown" "Anyway, you can address me as the “Omniscient Lord of Bankruptcy” or if it’s easier on the tongue, the “Malevolent Architect of Debt”. Personally, I'm partial to the latter title—it aligns better with my aspirations."
+    "{color=#CD4EDD}Unknown" "Anyway, you can address me as the “Omniscient Lord of Bankruptcy” or if it’s easier on the tongue, the “Malevolent Architect of Debt”. Personally, I'm partial to the latter title—it aligns better with my aspirations."
 
     show lars serious
     Lars "Uhm, does that mean that you cause bankruptcy or that you’re the literal embodiment of bankruptcy?"
@@ -2730,15 +2807,24 @@ label CS_5_End:
     hide lars
     Lars narration "We're spending too much time here; I need to take a proactive approach and ask him some questions myself before anything bad happens to everyone else who's been frozen."
 
-    play sound track_5_zephyr_theme
+    stop music fadeout 1.0
+    play music "track_5_zephyr_theme.ogg" fadein 1.0
+
+    $ choice_g1[0] = 0
+label menu_g1:
+    if (choice_g1[0] and choice_g1[1]):
+        jump G_1_End
+    
     menu:
         " " " "
-        "{size=*0.75}Are you the person responsible for freezing everyone?{/size}":
+        "{size=*0.75}Are you the person responsible for freezing everyone?{/size}" if choice_g1[0]==0:
             $ options["G1"]=1
+            $ choice_g1[0] = 1
             jump are_you_the_person
 
-        "{size=*0.75}How come you’re freezing everyone for a castle renovation?{/size}":
+        "{size=*0.75}How come you’re freezing everyone for a castle renovation?{/size}" if choice_g1[1]==0:
             $ options["G1"]=2
+            $ choice_g1[1] = 1
             jump how_come_you
 
 
@@ -2839,7 +2925,7 @@ label are_you_the_person:
 
     Zephyr "You know what? Forget it."
 
-    jump G_1_End
+    jump menu_g1
 
 label how_come_you:
 
@@ -2851,7 +2937,7 @@ label how_come_you:
 
     Zephyr "Countless generations of descendants faithfully served us during my decades of wakefulness. However, upon reopening my eyes, not a single soul lingered."
 
-    show rory at center_left
+    show rory at jp
     Rory "Is that why you settled on the title of “Omniscient Lord of Bankruptcy”? Then why would you need two titles like “Malevolent Architect of Debt”?"
 
     show zephyr happy at left
@@ -2953,9 +3039,12 @@ label how_come_you:
 
     "Everyone" "He’s definitely that forgetful."
 
+    jump menu_g1
+
 label G_1_End:
 
-    play music "track_1_intro.ogg"
+    stop music fadeout 1.0
+    play music "track_1_intro.ogg" fadein 1.0
     show lars
     Lars "I don’t need to ask anymore questions for now."
 
@@ -3371,7 +3460,8 @@ label G_1_End:
 
 label speak_with_Master_Sylvian:
 
-    play music "track_6_romance_scene.ogg"
+    stop music fadeout 1.0
+    play music "track_6_romance_scene.ogg" fadein 1.0
     #have everyone exit the scene and bring sylvian to the center
     hide claude
     hide rory
@@ -3442,7 +3532,8 @@ label speak_with_Master_Sylvian:
 
 label speak_with_Sir_Claude:
 
-    play music "track_6_romance_scene.ogg"
+    stop music fadeout 1.0
+    play music "track_6_romance_scene.ogg" fadein 1.0
     #have everyone exit the scene and bring claude to the center
     hide sylvian
     hide rory
@@ -3508,7 +3599,8 @@ label CS_6_End:
 
     #once the player finishes with either of the two previous choice selections, we have the position change where rory and zephyr enter the scene. 
     #From left to right, it’s going to zephyr, claude, sylvian, rory
-    play music "track_1_intro.ogg"
+    stop music fadeout 1.0
+    play music "track_1_intro.ogg" fadein 1.0
     show claude zorder 2:
         xalign 0.4
         yalign 1.0
