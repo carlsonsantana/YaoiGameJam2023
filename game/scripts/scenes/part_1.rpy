@@ -2292,13 +2292,17 @@ label CS_4_End:
 
     stop sound fadeout 1.0
     #adding this in, let’s make sure to have the sfx fade out instead of suddenly stopping it
-    show sylvian at center
+    show sylvian at center with dissolve
+    show claude:
+        xalign -1.0
     Sylvian "I hope I’m not bothering you in the middle of your task, [Lars]."
 
     Lars "Of course not Master, this would be the perfect time to show off my skills to you in person. I’m the fastest amongst everyone here after all."
 
     #move sylvian to the right and have claude come to the left
-    show claude at left
+    show claude at center_2left
+    show sylvian at right
+    with move
     Claude "Hmm, how typical of our dear Captain to compare himself with mere children."
 
     Lars "Just a friendly reminder – I can outrun you anytime. It might be a tad embarrassing for someone who sees themselves as the pioneer of all the competitions and challenges in Divonia, wouldn't you say?"
@@ -2319,7 +2323,7 @@ label CS_4_End:
 
     Lars narration "Both guild members stand by my side. Sir Claude, with his innate charisma, effortlessly charms the children surrounding us. Meanwhile, Master Sylvian, mesmerizes them with his expertly performed flower magic."
 
-    show claude at left
+    show claude
     Claude "Awe, I’ll pretend to be hurt, but while we’re on the topic, I believe that you have to challenge yourself more."
 
     Claude "You won’t be able to show off your talents to anyone when you spend your time with these childish competitions. How will you be able to prove yourself to the elite if you only ever rival with kids?"
@@ -2341,8 +2345,8 @@ label CS_4_End:
     show lars
     Sylvian "Pursuing rivalry solely to prove your self-worth to unfamiliar faces is a fleeting pursuit. In time, the present will slip away from your grasp."
 
-    show claude serious at left
-    show sylvian mad at right with move
+    show claude serious
+    show sylvian mad
     Claude "With all due respect Boss, but, isn’t that lack of ambition precisely why you’re here with us today instead of boasting around the academia halls?"
 
     Claude "While I appreciate your presence in our guild and your support for my endeavors, it seems you've relinquished all your desires, merely allowing yourself to be carried along by the whims of your flowery path."
@@ -2377,7 +2381,7 @@ label CS_4_End:
 
     Sylvian "Your statements hold grains of truth, Claude."
 
-    show sylvian sad at right
+    show sylvian sad
     Sylvian "Without love or ambition, our lives languish in the shadows of mediocrity."
 
     Sylvian "They ignite the fire within, propelling us to venture beyond our limits, to dream and to create, shaping a life of purpose and fulfillment."
@@ -2386,7 +2390,7 @@ label CS_4_End:
 
     Sylvian "However…"
 
-    show sylvian mad at right
+    show sylvian mad
     show claude shocked
     Sylvian "Amidst our pursuit of them, let us not overlook the tranquility of mediocrity."
 
@@ -2394,7 +2398,7 @@ label CS_4_End:
 
     Sylvian "In embracing simplicity, we find contentment, and in cherishing the ordinary, we discover the beauty of a life unburdened by the pressures of relentless ambition."
 
-    show claude serious at left
+    show claude serious
     Claude "Aren’t you only saying that because you were burnt out and having nothing else to pursue?"
 
     Claude "If you always treasured this so-called {i}contentment{/i} why did you decide to spread your name onto society as the top academic of Divonia?"
@@ -2408,14 +2412,14 @@ label CS_4_End:
 
         Lars "Is that part of the secret you wanted to tell me? That you were in love with someone else? Then, what about the mixed signals that I’ve been receiving from you thus far?"
 
-        show sylvian blush at right
+        show sylvian blush
         Sylvian "N-no, you’re misunderstanding something here— I-I mean, not you. It’s probably my fault here, but—"
 
         Lars "I don’t want to sound conceited, but if I were the person you're in love with, I’d like to think that you would have told me about it by now."
 
         Lars "But then again, you're secretive about your history as well…"
 
-        show sylvian sad at right
+        show sylvian sad
         Sylvian "I’m sorry but I can’t tell you any more about it with Claude here."
 
 
@@ -2429,14 +2433,14 @@ label CS_4_End:
 
 
 
-    show claude serious at left
-    show sylvian mad at right
+    show claude serious
+    show sylvian mad
     Claude "Focus here Captain, we can talk about that later. Unless you’ve already taken someone’s side in this discussion?"
 
     show lars
     Lars "Uhm, you’re both people that I deeply admire and I don’t really want to—"
 
-    show claude shocked at left
+    show claude shocked
     Claude "Don’t want to? I expect you to at least share your personal opinion if you share the sentiment of taking no side."
 
     Sylvian "Pay him no mind, [Lars], he’s just upset for himself."
@@ -2459,8 +2463,8 @@ label CS_4_End:
 label agree_with_Master_Sylvian:
 
     show lars
-    show sylvian at right
-    show claude serious at left
+    show sylvian
+    show claude serious
     Lars "I agree with Master Sylvian."
 
     Lars "I think what he says is true about enjoying what we want instead of simply going after something for the challenge."
@@ -2471,17 +2475,17 @@ label agree_with_Master_Sylvian:
 
     Sylvian "Thankfully, Claude’s influence hasn’t rubbed on you too much."
 
-    show sylvian blush at right
+    show sylvian blush
     Sylvian "I’m always impressed by how well you articulate your words, my dear junior. Perhaps we can delve into these philosophies and other matters when we find some time for ourselves later."
 
-    show sylvian sad at right
+    show sylvian sad
     Lars "I would love to spend time with you but Spotsy needs me more after we’re done with this, don’t you think so?"
 
     Lars "She’s had a long flight after all and I’m the only person who can take care of her."
 
     Sylvian "I can’t deny that I am a bit disappointed…"
 
-    show sylvian at right
+    show sylvian
     Sylvian "However, it’s one of the things that I like seeing you do, [Lars]."
 
     Sylvian "It’s amongst my wishes to someday be a recipient of the same adoration you hold for your dragons."
@@ -2494,7 +2498,7 @@ label agree_with_Sir_Claude:
 
     show lars
     show claude smile
-    show sylvian sad at right
+    show sylvian sad
     Lars "I agree with what Sir Claude says."
 
     Lars "It’s not fair to avoid fighting for what you love and letting it slip out of your reach."
@@ -2518,8 +2522,9 @@ label CS_5_End:
     hide lars
     #rory comes in from the right, claude stays on the left and sylvian moves to the center
     show claude at left 
-    show sylvian at center with move
+    show sylvian at center
     show rory at enter_right
+    with move
     Rory "Guys, why isn’t anyone coming? Where are the kids?"
 
     Lars narration "Rory suddenly approaches with a faint trace of concern etched on her face."

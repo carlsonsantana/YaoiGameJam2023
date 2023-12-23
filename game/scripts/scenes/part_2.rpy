@@ -228,9 +228,9 @@ label sylvian_route:
 
 label menu_s3:
     $ calc_relations()
-    
     menu:
         " " " "
+
         "Poke further about his comment":
             jump S3_sylvian_bad_end
         
@@ -1539,8 +1539,13 @@ label claude_route:
     Lars narration "Though well-known for his love of humor and jest, this time, his response carries an unmistakable sincerity. What could he possibly mean, though?"
 
 label menu_c3:
+    $ calc_relations()
+    $ txt_temp = f'{options["C1"]}-{options["C2"]}-{options["CS1"]}-{options["S1"]}-{options["S2"]}-{options["CS2"]}-{options["CS3"]}-{options["CS4"]}-{options["CS5"]}-{options["CS6"]}'
+    $ txt_temp2 = f'c:{relations["claude"]} s:{relations["sylvian"]}'
+    
     menu:
-        " " " "
+        " " " [txt_temp] \n [txt_temp2]"
+        
         " " (blocked=True) if relations["claude"]<7:
             jump menu_c3
 
