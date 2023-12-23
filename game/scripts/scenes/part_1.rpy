@@ -2572,7 +2572,7 @@ label CS_5_End:
     hide sylvian
     hide claude
     show shining_necklace
-    with Dissolve
+    with dissolve
     Lars "The necklace I'm wearing grows warmer, its temperature gradually rising. Intrigued and compelled, I shift my attention towards it. It appears Rory has noticed it too."
 
     show lars
@@ -2603,7 +2603,7 @@ label CS_5_End:
     show rory angry at right
     show claude serious at left 
     show lars serious
-    with Dissolve
+    with dissolve
     Sylvian "I have only ever heard of one artifact having the ability to do such a thing. Remember the one we talked about when we first opened the box?"
 
     Sylvian "However, the color of the gem in our necklace is different from that I remember."
