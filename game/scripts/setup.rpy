@@ -14,10 +14,10 @@ transform end_pan:
 transform flip:
     linear 0.2 xzoom -1.0
 
-transform flip_fade:
-    linear 0.2 alpha 0.0
-    xzoom -1.0 # Flip the image horizontally
-    linear 0.2 alpha 1.0 # Fade in the image in 0.5 seconds
+#transform flip_fade:
+#    linear 0.2 alpha 0.0
+#    xzoom -1.0 # Flip the image horizontally
+#    linear 0.2 alpha 1.0 # Fade in the image in 0.5 seconds
 
 transform jp:
     yoffset 0

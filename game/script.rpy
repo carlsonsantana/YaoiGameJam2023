@@ -13,14 +13,14 @@ init python:
         relations["sylvian"] = 0
 
         if options["C1"]==1:
-            relations["claude"]-=1
-        elif options["C1"]==2:
             relations["claude"]+=1
+        elif options["C1"]==2:
+            relations["claude"]-=1
         
         if options["C2"]==1:
-            relations["claude"]+=1
-        elif options["C2"]==2:
             relations["claude"]-=1
+        elif options["C2"]==2:
+            relations["claude"]+=1
         
         if options["CS1"]==1:
             relations["claude"]+=1

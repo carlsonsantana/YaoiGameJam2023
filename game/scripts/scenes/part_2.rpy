@@ -14,7 +14,8 @@ label select_route:
             jump sylvian_route
 
 label sylvian_route:
-    show zephyr happy at left
+    show zephyr happy at left:
+        yalign 0
     show claude at center_left
     show sylvian at center_right
     show rory at right
@@ -31,22 +32,24 @@ label sylvian_route:
     #sylvian will move to the center, rory  and zephyr will be in the same position
     $ renpy.choice_for_skipping()
     show claude sad:
-        linear 0.5 xalign -1.0
+        linear 2.0 xalign -1.0
     show sylvian blush at center with move
     Sylvian "Thank you [Lars]. I truly mean it."
 
+    show claude sad:
+        xalign -1.0
     show lars blush
     Sylvian "Now my heart can rest at ease knowing I’m allowed to selfishly stay by your side."
 
     show lars
-    show sylvian at center
+    show sylvian
     Zephyr "So, Smarty it is then!"
 
     Zephyr "Now tell me, what makes him so special? How's the scoop going to be different from all the other celebrity gossip columns and panels?"
 
     Sylvian "Well, he’s  a renowned magician—"
 
-    show zephyr sad at left
+    show zephyr sad 
     Zephyr "Boring! Anyone could just slap a make-shift title for themselves; that doesn't make you’re gossip-worthy."
 
     Rory "He's one of Divonia's brilliant minds, a leading researcher who uncovered the connection between human travelers from Earth and Divonia. Plus, he's a master of flower magic."
@@ -55,7 +58,7 @@ label sylvian_route:
 
     Rory "If I'm not going to vouch for my mentor, then who will?"
 
-    show zephyr happy at left
+    show zephyr happy
     Zephyr "That does indeed sound like a juicy tale for the gossip mill — the renowned swan-tist of Divonia and his hidden discovery —  but it's missing something. Perhaps a love confession would…"
 
     show lars serious
@@ -80,8 +83,9 @@ label sylvian_route:
 
     Lars narration "The sun is gradually sinking towards the horizon, casting cold hues across the sky as late afternoon approaches."
 
-    show zephyr sad at left
-    show sylvian at center
+    show zephyr sad at left:
+        yalign 0
+    show sylvian
     Zephyr "Whose brilliant idea was it to choose the seaside for a confession scene?"
 
     Zephyr "I had to bring a dragon for the ride just to carry you two over here."
@@ -89,7 +93,7 @@ label sylvian_route:
     show lars
     Lars "You wanted a place with few to no people, and here we are."
 
-    show zephyr happy at left
+    show zephyr happy
     Zephyr "Whatever! I'm focused on keeping the coast clear, especially since I had to unfreeze everyone but I've got my eyes and ears on you two. Make it count while we're down here."
 
     hide lars
@@ -97,13 +101,13 @@ label sylvian_route:
     $ renpy.choice_for_skipping()
     show zephyr:
         linear 0.5 xalign 2.0
-    show sylvian blush at center
+    show sylvian blush
     Lars narration "I shoot a glance at Master Sylvian and bite my lips in frustration. I chose him as my partner, but with Zephyr so close by, I'm unsure of our next move."
 
     show lars serious
     Lars "There’s not much time, we have to do something."
 
-    show sylvian serious funny at center
+    show sylvian serious funny
     Sylvian "It's indeed disheartening to witness such a scenario, where the transported humans' unique and sporadic presence is taken advantage of."
 
     Sylvian "Being a rarity, they can be subjected to exploitation due to their infrequent encounters. However, this is the first time I've witnessed such a situation up close."
@@ -122,7 +126,7 @@ label sylvian_route:
         linear 0.5 xalign 2.0
     Lars "How do you suggest we proceed, Master? I'm worried more people will get caught up in this mess if we don’t act swiftly."
 
-    show sylvian at center
+    show sylvian
     Sylvian "Give me a moment."
 
     hide lars
@@ -147,7 +151,7 @@ label sylvian_route:
     show lars
     Sylvian "Haha, of course not! I-I don’t know...what I would— or what I should do if you grew to despise —or even loathe— someone like me because of what I might say for a supposed confession."
 
-    show sylvian at center
+    show sylvian
     Sylvian "But fret not, [Lars]. My tenure in academia provided access to restricted sections, and I'm confident in my ability to fashion a fitting gossip source for our young Lord. Particularly considering his apparent lack of discrimination when it comes to topics or specific requests."
 
     hide lars
@@ -156,7 +160,7 @@ label sylvian_route:
     show lars
     Lars "You're right. Why didn’t I think of that earlier? You could even use your connections to ask for extra help, can’t you? So, we can make sure nothing like this ever happens again."
 
-    show sylvian sad at center
+    show sylvian sad
     Sylvian "That’s going to be a bit difficult."
 
     hide lars
@@ -1345,7 +1349,8 @@ label S3_sylvian_good_end:
     jump end
 
 label claude_route:
-    show zephyr happy at left
+    show zephyr happy at left:
+        yalign 0
     show claude at center_left
     show sylvian at center_right
     show rory at right
@@ -1360,7 +1365,7 @@ label claude_route:
 
     #here the arrangement will change as sylvian gets turned into sylvian_sad during the last sentence and then he exits the scene. Claude will move to the center, rory  and zephyr will be in the same position
     show sylvian sad:
-        linear 1.0 xalign 2.0
+        linear 1.0 xalign 2.5
     show claude smile at center with move
     Claude "It appears that the Captain [Lars] has quite the discerning eye. I’m honored to be beheld by it."
 
@@ -1371,12 +1376,12 @@ label claude_route:
     Sylvian "Well, he’s  a renowned merchant—"
 
     show sylvian serious funny
-    show zephyr sad at left
+    show zephyr sad
     Zephyr "Boring! Anyone could just slap a make-shift title for themselves; that doesn't make you’re gossip-worthy."
 
     Rory "Claude here is the heir of the infamous Dupont family, even though he might deny being a nepo baby. They're always globe-slithering, selling exotic trinkets for the price of a whole wing and tail."
 
-    show claude shocked at center
+    show claude shocked
     Claude "Little Rory, you could have at least tried a more subtle approach to throw me under the dragon ship."
 
     Rory "Payback time~"
@@ -1385,10 +1390,10 @@ label claude_route:
 
     Rory "Ah, he wouldn't be able to do that. After all, his name starts with a 'C' for conceited and ends with an 'E' for egotistical."
 
-    show claude smile at center
+    show claude smile
     Claude "You're having me in splits, little Rory; I might even consider doing a tail-shedding ceremony just to honor your sense of humor."
 
-    show rory angry at right
+    show rory angry
     Rory "Hmph, It was about time I gave you a taste of your own medicine!"
 
     show lars serious
@@ -1407,21 +1412,23 @@ label claude_route:
     show bg_4 with fade
     Lars narration "The sun is gradually sinking towards the horizon, casting cold hues across the sky as late afternoon approaches."
 
-    show zephyr sad at left
-    show claude at center
+    show zephyr sad at left:
+        yalign 0
+    show claude
     Zephyr "Whose brilliant idea was it to ride a dragon for a confession scene?"
 
     show lars serious
     Lars "You wanted a place with few to no people, and here we are."
 
-    show zephyr happy at left
+    show zephyr happy
     Zephyr "Whatever! I'm focusing on steering this ship but I've got my eyes and ears on you two. Make it count while we're down here."
 
     hide lars
     #zephyr exits the scene, and claude stays in the center
+    show zephyr at left_far with move
     Lars narration "I shoot a glance at Sir Claude and bite my lips in frustration. I chose him as my partner, but with Zephyr so close by, I'm unsure of our next move."
 
-    hide zephyr
+    
     show lars
     Lars "There’s not much time, we have to do something."
 
@@ -1540,12 +1547,13 @@ label claude_route:
 
 label menu_c3:
     $ calc_relations()
-    $ txt_temp = f'{options["C1"]}-{options["C2"]}-{options["CS1"]}-{options["S1"]}-{options["S2"]}-{options["CS2"]}-{options["CS3"]}-{options["CS4"]}-{options["CS5"]}-{options["CS6"]}'
-    $ txt_temp2 = f'c:{relations["claude"]} s:{relations["sylvian"]}'
+    #$ txt_temp = f'{options["C1"]}-{options["C2"]}-{options["CS1"]}-{options["S1"]}-{options["S2"]}-{options["CS2"]}-{options["CS3"]}-{options["CS4"]}-{options["CS5"]}-{options["CS6"]}'
+    #$ txt_temp2 = f'c:{relations["claude"]} s:{relations["sylvian"]}'
     
     menu:
-        " " " [txt_temp] \n [txt_temp2]"
-        
+        #" " " [txt_temp] \n [txt_temp2]"
+        " " " "
+
         " " (blocked=True) if relations["claude"]<7:
             jump menu_c3
 

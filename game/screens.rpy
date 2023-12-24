@@ -61,14 +61,17 @@ style vscrollbar:
     thumb Frame("gui/scrollbar/vertical_[prefix_]thumb.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
 
 style slider:
-    ysize gui.slider_size
+    #ysize gui.slider_size
+    ysize 50
     base_bar Frame("gui/slider/horizontal_[prefix_]bar.png", gui.slider_borders, tile=gui.slider_tile)
     thumb "gui/slider/horizontal_[prefix_]thumb.png"
+    thumb_offset 25
 
 style vslider:
     xsize gui.slider_size
     base_bar Frame("gui/slider/vertical_[prefix_]bar.png", gui.vslider_borders, tile=gui.slider_tile)
     thumb "gui/slider/vertical_[prefix_]thumb.png"
+    thumb_offset 25
 
 
 style frame:
@@ -872,6 +875,7 @@ screen preferences():
                 xalign 0
                 xsize 450
                 xspacing 80
+                yspacing 0
                 if renpy.variant("pc") or renpy.variant("web"):
                         #xalign 0.5
                         #yalign 0.5
@@ -898,7 +902,7 @@ screen preferences():
                     ## added here, to add additional creator-defined preferences.
 
                 vbox:
-
+                    align (0.5,0.5)
                     label _("Text Speed")
 
                     bar value Preference("text speed")
@@ -907,7 +911,6 @@ screen preferences():
 
                     bar value Preference("auto-forward time")
 
-                vbox:
                     if config.has_music:
                         label _("Music Volume")
 
@@ -924,7 +927,8 @@ screen preferences():
                             if config.sample_sound:
                                 textbutton _("Test") action Play("sound", config.sample_sound)
 
-
+                vbox:
+                    align (0.5,0.5)
                     if config.has_voice:
                         label _("Voice Volume")
 
@@ -1734,12 +1738,14 @@ style slider:
     ysize gui.slider_size
     base_bar Frame("gui/phone/slider/horizontal_[prefix_]bar.png", gui.slider_borders, tile=gui.slider_tile)
     thumb "gui/phone/slider/horizontal_[prefix_]thumb.png"
+    #offset 20
 
 style vslider:
     variant "small"
     xsize gui.slider_size
     base_bar Frame("gui/phone/slider/vertical_[prefix_]bar.png", gui.vslider_borders, tile=gui.slider_tile)
     thumb "gui/phone/slider/vertical_[prefix_]thumb.png"
+    #offset 20
 
 style slider_vbox:
     variant "small"
