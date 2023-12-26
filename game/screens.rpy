@@ -192,6 +192,8 @@ screen input(prompt):
             text prompt style "input_prompt"
             input id "input"
 
+        add "images/characters/lars_default.png" xalign 0.0 yalign 1.0 zoom 0.75
+
 style input_prompt is default
 
 style input_prompt:
@@ -480,6 +482,7 @@ screen main_menu():
         #background "gui/btn_start.png"
         hover "gui/btn_start_hover.png"
         idle "gui/btn_start.png"
+        hover_sound "audio/sfx_cursorhover4.ogg"
         action Start()
     
     imagebutton:
@@ -488,6 +491,7 @@ screen main_menu():
         #background "gui/btn_start.png"
         hover "gui/btn_load_hover.png"
         idle "gui/btn_load.png"
+        hover_sound "audio/sfx_cursorhover4.ogg"
         action ShowMenu("load")
     
     imagebutton:
@@ -496,6 +500,7 @@ screen main_menu():
         #background "gui/btn_start.png"
         hover "gui/btn_extras_hover.png"
         idle "gui/btn_extras.png"
+        hover_sound "audio/sfx_cursorhover4.ogg"
         action ShowMenu("gallery")
     
     imagebutton:
@@ -504,6 +509,7 @@ screen main_menu():
         #background "gui/btn_start.png"
         hover "gui/btn_options_hover.png"
         idle "gui/btn_options.png"
+        hover_sound "audio/sfx_cursorhover4.ogg"
         action ShowMenu("preferences")
 
     imagebutton:
@@ -512,6 +518,7 @@ screen main_menu():
         #background "gui/btn_start.png"
         hover "gui/btn_exit_hover.png"
         idle "gui/btn_exit.png"
+        hover_sound "audio/sfx_cursorhover4.ogg"
         action Quit()
 
 

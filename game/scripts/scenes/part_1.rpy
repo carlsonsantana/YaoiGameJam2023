@@ -1,33 +1,39 @@
 label part_1:
 
-    
     scene bg_1 with fade:
         zoom 1.5
         xalign 0.0
         yalign 0.5
-    
-    #show lars #onlayer overall
     #panning effect - sample in drive
-    Lars "{i}Discere, cogitare, agere— the triad of wisdom.{/i}"
+    #show lars #onlayer overall
+    
     show bg_1 at pan
-    Lars "{i}Learning enriches the mind, and thinking sharpens it, but it is through action that we truly manifest our knowledge and shape our reality.{/i}"
+    Lars "{i}Discere, cogitare, agere— {/i}the triad of wisdom."
+
+    Lars "\"Learning enriches the mind, and thinking sharpens it, but it is through action that we truly manifest our knowledge and shape our reality.\""
 
     #panning ends
-    hide lars
+    hide lars with dissolve
 
-    Lars narration "One would think that a merchant guild wouldn’t bother creating such a philosophical motto and instead advertise {i}buy one, get one{/i} dragon ship seats every holiday season."
+    Lars narration "You'd think that a merchant guild wouldn’t bother creating such a philosophical motto and instead advertise {i}'buy one, get one'{/i} dragon ship seats every holiday season."
 
     Lars narration "We could even offer complementary earthling-made meals by the human chefs who were transported to our realm upon their death."
     
     show bg_1 at end_pan
 
-    Lars narration "But then again, embarking on artifact hunts and historical expeditions wouldn’t make sense if the sole purpose of our guild, {i}Custodes Sylvae{/i}, was commerce."
+    Lars narration "But then again, embarking on artifact hunts and historical expeditions wouldn’t make sense if the sole purpose of our guild, {i}'Custodes Sylvae'{/i}, was commerce."
    
-    show claude serious at right
+    show claude serious at right with dissolve
+    
+    show claude serious at jp
+
+    show lars
     "Unknown" "Who on Divonia is mumbling this loud to themselves early in the morning?"
 
+    show lars
     "Unknown" "I’m losing my beauty sleep over here."
 
+    hide lars with dissolve
     Lars narration "I steal a glance from my perch atop the dragon ship and it looks like one, or should I say, the only passenger, has woken up in quite a grumpy manner."
 
     menu:
@@ -45,11 +51,11 @@ label playfully_surprise_him:
 
     Lars narration "Something tells me I should surprise him, just to cheer up the mood."
 
-    show lars
     Lars "It’s me, Sir Claude. Did you already forget about  your comrade after a few hours of sleep?"
 
-    show claude smile at center:
+    show claude shocked at center:
         linear 0.5 xalign 0.5
+
     show lars
     Claude "Ah, my dearest Captain [Lars]!"
 
@@ -74,7 +80,8 @@ label playfully_surprise_him:
     Claude "Although…"
 
     show lars
-    Claude "{i}I can unfailingly capture your attention through other means, if I choose to.{/i}"
+    show claude smile
+    Claude "I can unfailingly capture your attention through {i}other means{/i}, if I choose to."
 
     jump C_1_End
 
@@ -90,7 +97,8 @@ label resist_the_urge_to_surprise_him:
         linear 0.5 xalign 0.5
     show lars
     Claude "What a boring reaction. I expected more spunk from you…"
-
+   
+    show lars serious
     Lars "Nevermind then. Hmph!"
 
 label C_1_End:
@@ -99,19 +107,23 @@ label C_1_End:
     show claude at center
     Lars narration "It’s truly a wonder how he managed to stay asleep throughout our entire journey, considering the lack of proper seat arrangements or resting areas on our new dragon ship."
 
-    Lars narration "However, Sir Claude has always been notorious for his resourcefulness in such moments, owing to his history of travels and adventurous ordeals, despite his comfortable upbringings."
+    Lars narration "However, Sir Claude has always been notorious for his resourcefulness in such moments, owing to his history of travels and adventurous ordeals, despite his {i}comfortable{/i} upbringings."
 
     show lars
     Lars "I will return to my duties, then, Sir—"
 
     show lars
-    Claude "Didn’t I already tell you to drop the {i}Sir{/i} for the umpteenth time, Captain?"
-
+    show claude shocked at center
+    Claude "Didn’t I already tell you to drop the {i}'Sir'{/i} for the umpteenth time, Captain?"
+    
+    show lars serious
     Lars "Do we have to go over this cliche back and forth as well?"
 
-    Lars "{i}I promised I’d do it if you stopped insisting on “Captain” this and “Captain” that.{/i}"
+    show lars serious
+    Lars "I promised I’d do it if you stopped insisting on {i}“Captain”{/i} this and {i}“Captain”{/i} that."
 
-    show claude smile at center
+    show claude blush at center
+    show lars blush
     Claude "It makes us seem more of an adventurous pair, though, don’t you think so?"
 
     hide lars
@@ -121,24 +133,25 @@ label C_1_End:
 
     Lars narration "We always made an efficient team. Maybe even the best among all the guild members."
 
-    Lars narration "Well…at least, if you ignore that there are only four of us."
-
     show lars
+    show claude smile
     Claude "Now that I think about it, what were you talking to yourself about?"
 
     show lars
-    Claude "{i}Confiding trade-secrets to our dragon, Spotsy? Or even a secret confession for me—{/i}"
+    Claude "Confiding trade-secrets to our dragon, Spotsy? Or even a {i}secret confession for me—{/i}"
 
-    show lars
+    show lars serious
     Lars "She doesn’t even have any spots. You’re bad at naming as always, Sir-"
 
     hide lars
+    show claude serious
     Lars narration "He lets out an intrusive cough."
 
     show lars
+    show claude smile
     Lars "-Claude. Not to mention, the confession jokes won’t work if you keep repeating them over and over again."
 
-    show claude at center
+    show claude shocked at center
     show lars
     Claude "Who knows, maybe one day, I'll surprise you with a confession that will leave you speechless."
 
@@ -161,7 +174,7 @@ label C_1_End:
 
     show smoke
     show lars
-    Claude "Spare the royal treatment. She’s just a glorified lizard that could use a few mint leaves."
+    Claude "You can spare the royal treatment. She’s just a glorified lizard that could use a few mint leaves."
 
     Lars "As if to express her annoyance, Spotsy lets out a flushed, puffy plume of smoke from her nostrils. A low rumbling note resonates from her throat, a clear indication of her irritation."
 
@@ -169,18 +182,27 @@ label C_1_End:
     hide spotsy
     show claude at center 
     with dissolve
-    show lars
+    show lars serious
     Lars "You're starting to irritate her, Sir-"
+    
+    show claude serious
     Lars narration "Another intrusive cough."
 
+    show claude smile 
+    show lars serious
     Lars "-Claude, I think you should stop."
 
     show lars serious
     Claude "She doesn’t like it, hmm…that just makes me want to do it even more though."
+    
     show lars serious
+    show claude serious
     Claude "Stealing Captain’s attention away from me and not facing any consequences? Not on my watch."
+    
     show lars serious
+    show claude shocked
     Claude "I could also argue that I don't want to end up as some unfortunate passenger who prematurely expires and transports to the Earthly realm just because you were adoring our newest ship."
+    
     show lars serious
     Claude "There have been one too many incidents like that lately."
 
@@ -192,13 +214,14 @@ label C_1_End:
 
     Lars narration "Maybe the problem wasn’t the seats after all…"
 
-    show claude shocked at center
-    show lars
+    show claude at center
+    show lars sad
     Lars "The numbers of transported humans have certainly increased quite a bit these days."
 
+    show lars 
     Lars "Even still, they are a precious rarity. In all my years of flying travelers across the lands of Divonia, I have only ever met a handful of them."
 
-    show claude at center
+    show claude smile at center
     show lars
     Claude "Not many would want to undertake the journey of transitioning to a new realm they know nothing about, after all."
 
@@ -206,7 +229,7 @@ label C_1_End:
 
     Lars "All our guild members were born and raised here, so I don’t have the chance to closely work with one of those travelers either."
 
-    show claude smile
+    show claude shocked
     show lars
     Claude "Tsk, tsk, already thinking of replacing me with someone else, are you, Captain?"
 
@@ -215,41 +238,50 @@ label C_1_End:
     hide lars
     Lars narration "A muffled chuckle escapes him."
 
-    Lars narration "Sir claude is always the most spirited one when faced with adversity and adventure."
+    Lars narration "Sir Claude has always been the most spirited member in our guild when faced with adversity."
 
     Lars narration "Must feel great to not have any worries and be nonchalant about everything."
 
+    show claude sad
+    show lars
     Claude "Ah, how gladly I would take their place if I could…"
 
+    show lars 
     Claude "Life can get pretty boring when you have everything you need in the palm of your hand."
 
     show lars blush
+    show claude smile
     Lars "Always trying to satisfy your thirst for adventure, eh?"
 
     hide lars
     Lars narration "I could hardly recall a day when Sir Claude didn’t turn a simple task into a grand quest. He always was, and still is, on the lookout for opportunities to embark on new escapades."
 
-    show claude at center
+    show claude smile at center
+    show lars
     Claude "I’d advise you to concentrate on steering our ship for now, Captain, before you get even more distracted. Your gaze is practically burning my scales."
 
-    show lars
+    show lars blush
+    show claude shocked
     Lars "Oh, don’t flatter yourself, your scales are nothing compared to Spotsy’s."
 
-    hide lars
-    show claude serious at center
-    Lars narration "My playful grin is met with a sulky stare."
-
-    Claude "Well, I suppose it's my mistake for attempting to catch the attention of a certain dragon-obsessed pilot. What will become of my grandiose confession now?"
+    show lars
+    Claude "Well, I suppose it's my mistake for trying to catch the attention of a certain dragon-obsessed pilot. What will become of my grandiose confession now?"
 
     show lars
-    Lars "Don’t be so hard on yourself, Sir Claude."
+    Lars "Don’t be so hard on yourself, Sir Claude!"
 
+    show lars blush
     Lars "You know I appreciate you for more than your appearance, even if I rank you below Spotsy. Stopping the confession jokes could help though—"
+    
     show lars
+    show claude serious
     Claude "No need for the empty flattery."
+    
     show lars
-    Claude "{i}I've had my fill of it thanks to a certain family name.{/i}"
+    Claude "I've had my fill of it thanks to a {i}certain{/i}family name."
+    
     show lars
+    show claude smile
     Claude "However, you need to make sure to take care of her well since I did make quite the effort for her exchange."
 
     hide lars
@@ -260,25 +292,33 @@ label C_1_End:
     show lars
     Lars "What effort are you talking about? Hmm?"
 
-    Lars "The person we negotiated with today eagerly handed over all his prized possessions the moment he heard the 'Dupont' surname. It was hardly a fair \"exchange\" at that point."
+    show claude
+    Lars "The person we negotiated with today eagerly handed over all his prized possessions the moment he heard the {i}'Dupont'{/i} surname. It was hardly a fair \"exchange\" at that point."
+    
     show lars
-    Claude "Well, that's the con of having an outrageously high-class family name like mine, I suppose. Makes one’s trade prone to being disgustingly easy."
+    show claude sad
+    Claude "Well, that's the con of having an outrageously high-class family name like mine, I suppose. Makes one’s trade prone to being {i}disgustingly easy."
 
+    show lars serious
     Lars "And let's not forget about that one specific artifact. They were so adamant to wash their hands of it."
 
     show claude shocked at center
     show lars
     Claude "I’m not one to accept gifts without scrutiny. But there was something about it that piqued my interest. You’ll have a better idea once you take a look at it yourself."
 
+    show lars serious
     Lars "What if it turns out to be hazardous or a curse? Scrutiny would have been welcomed."
-    show lars
+    
+    show lars serious
+    show claude smile
     Claude "I was planning to spice things up a bit, so why not embrace the opportunity of a possible adventure?"
 
+    show lars serious
     Lars "Right…because who wouldn’t jump at the chance to receive an artifact with no known origins, suddenly materializing out of thin air, and with no apparent acquisition date?"
 
     show claude serious at center
     show lars
-    Claude "{i}Your sarcasm is showing Captain, might want to hide it under a thin layer of worry or, Divs forbid, concern for your partner.{/i}"
+    Claude "Your sarcasm is showing Captain, might want to hide it under a thin layer of worry or, Divs forbid, {i}concern for your partner{/i}."
 
     menu:
         " " " "
@@ -332,47 +372,50 @@ label apologize_for_teasing_him:
 label continue_teasing_him_even_more:
 
     show lars
-    Lars "{i}The infamous Claude Dupont, not checking the items he negotiates for?{/i}"
+    Lars "The infamous {i}Claude Dupont{/i}, not checking the items he negotiates for?"
 
-    show claude serious at center
+    show lars
+    show claude shocked at center
     Claude "Please, [Lars], you should know better than blabbering {i}Dupont{/i} recklessly."
 
     Lars "Weren’t you going to stop calling me {i}Captain{/i} as well? Or are you going to change the topic again?"
 
     show bg_1:
-        linear 2.0 blur 15
+        subpixel True
+        linear 2.0 blur 10
     show claude smile at center:
         parallel:
-            linear 2.0 zoom 1.25
+            linear 1.0 yalign -0.1
         parallel:
-            linear 2.0 yoffset 120
+            linear 3.0 zoom 1.50
+
     #zoom in a little on Claude and blur the background
     Lars narration "Leaning close, his fingertips gently brush against my cheek, leaving a trail of warmth. Golden eyes lock onto mine with unwavering intensity. As his lips draw near my ear, his voice deepens, resonating with a seductive allure that sends shivers down my spine."
 
     show claude smile
-    Claude "See? I used your name, so you have to call me by mine too...without the titles."
+    show lars blush
+    Claude "See? I used your name, so you have to call me by mine too...{i}without{/i} the titles."
 
+    show lars blush
+    show claude blush
     Claude "I prefer it when you say my name after all. It’s one of the tiny joys of my life."
 
     #slowly zoom to normal and unblur background
     show bg_1:
-        linear 1.0 blur 0
+        linear 2.0 blur 0
     show claude smile at center:
         parallel:
             linear 1.0 zoom 1.0
         parallel:
-            linear 1.0 yoffset 0
+            linear 2.0 yalign 0.5
+            linear 2.0 ypos 0.5
     Lars narration "The sudden remark takes me by surprise, even though it’s not the first time I’ve heard Sir Claude make such a comment. After all, he possesses a captivatingly flirtatious nature, effortlessly weaving his charm into every interaction."
-
-    Lars narration "However, a part of me hesitates, fearing that surrendering to his banter may lead to my own demise."
 
     show lars blush
     Lars "W-w-what are you saying all of a sudden?! Did you lose your mind?"
-
-    show claude blush:
-        zoom 1.0
-        yoffset 0
+    
     show lars blush
+    show claude smile at jp
     Claude "Awe, is our Captain getting shy all of a sudden? Did you know your ears get red when you're embarrassed?"
 
     hide lars
@@ -387,8 +430,7 @@ label continue_teasing_him_even_more:
     show lars blush
     Lars "My years of experience have honed my resilience and steeled my resolve. I cannot allow myself to be easily affected by the whimsical words of Sir Claude, no matter how charismatic he may be!"
 
-    show lars blush
-    show claude smile at center
+    show lars sad
     Claude "Awe, did I get under your skin, Captain? So much that you had to switch to third-person commentary?"
 
     hide lars
@@ -397,6 +439,7 @@ label continue_teasing_him_even_more:
     show lars blush
     Lars "He’s only joking to gauge my reaction—"
 
+    show lars blush
     Claude "Haha, look at you. Navigating the skies like a pro with those sharp fox eyes, yet somehow missing the obvious right in front of you."
 
     show lars
@@ -404,28 +447,29 @@ label continue_teasing_him_even_more:
 
 label C_2_End:
 
-    show claude at center
+    show claude smile
+    show lars
     Claude "Let’s continue this conversation later, shall we?"
 
-    Claude "Our dearest Guild Master is signaling our landing spot."
+    show claude
+    show lars
+    Claude "Our {i}dearest{/i} Guild Master is signaling our landing spot."
 
     #hide all
-    hide claude
-    hide sylvian
-    hide rory
+    hide claude with dissolve
 
     Lars narration "I glance downward, and our destination near the sea comes into view."
 
     $ renpy.choice_for_skipping()
-    stop music fadeout 1.0
-    play music "track_2_field_of_flowers.ogg" fadein 1.0
+
+    play music "track_2_field_of_flowers.ogg" fadeout 2.0 fadein 2.0
+    
     scene bg black with fade
-    show bg_2 at pan with fade
+    show bg_2 at pan
+
     #panning effect - sample in drive
     
     Lars narration "Like an artist painting delicate strokes on a canvas, Master Sylvian has already lined up the location with an array of enchanting flowers."
-    
-    #show bg_2 at pan
 
     Lars narration "Each bloom carefully chosen to mark our path with a vibrant array of sunflowers and roses. Their vivid colors stand out, captivating the eye and creating a striking contrast against the backdrop of the serene oceanic landscape."
 
@@ -439,13 +483,13 @@ label C_2_End:
 
     show claude smile at center
     show lars
-    Claude "{i}I’d be inclined to say that you didn’t manage to tap into our dragon’s full potential Captain. Owning up to how I stole your attention for more than half, or better yet, the entire ride{/i}."
+    Claude "I’d be inclined to say that you didn’t manage to tap into our dragon’s full potential Captain. Owning up to how I stole your attention for more than half, {i}or better yet{/i}, the entire ride."
 
     show lars
-    Claude "{i}However, since you managed to get us here without any dangerous maneuvers, I’ll allow you to be the first person to touch our newest artifact{/i}."
+    Claude "However, since you managed to get us here without any dangerous maneuvers, I’ll let you to be the first person to touch our newest artifact."
 
     show lars
-    Claude "{i}I tend to appreciate and reward my companions well, especially if they’re my lover—{/i}"
+    Claude "I tend to appreciate and reward my companions well, especially if they’re my {i}lover—{/i}"
 
     show lars serious
     Lars "Being the first person to touch a suspicious artifact is the last thing I’d prefer to do."
@@ -453,15 +497,16 @@ label C_2_End:
     show lars serious
     Claude "It’s the first time it’s made its way to our side of the realm, hence the occasion is quite momentous."
 
-    show claude blush at center
     show lars serious
-    Claude "{i}You could say the thrill is irresistible.{/i}"
+    Claude "You could say the thrill is {i}irresistible.{/i}"
 
     hide lars
     Lars narration "He locks eyes with me, and I can’t help feeling a tad self-conscious under the weight of his declaration, whether it was actually meant for me or not."
 
+    show lars
     Claude "Let's not forget, the true essence of a discovery is experienced by the first person who ascertains it and not those who come later. Be it the second or the last to follow."
 
+    show lars
     Claude "If you don’t seize this moment now, who knows when you’ll get another chance like this? It will certainly be a captivating story to delight your future passengers."
 
     show lars
@@ -470,14 +515,18 @@ label C_2_End:
     hide lars
     Lars narration "As the sole passengers aboard the dragon ship, guiding Spotsy in her safe descent was a seamless task."
 
-    Lars narration "The proximity to the water offers a perfect opportunity for her to release some pent-up energy too. Hopefully, she’s not too tired from the journey. I’d hate to burn her out from the get-go. First impressions matter for dragons as well, especially when it concerns their pilots."
+    Lars narration "The proximity to the water offers a perfect opportunity for her to release some pent-up energy too."
 
+    Lars narration "Hopefully, she’s not too tired from the journey. I’d hate to burn her out from the get-go. First impressions matter for dragons as well, especially when it concerns their pilots"
+
+    show claude 
     Lars narration "However, once we disembark, our attention turns to the tall and slender magician making his way towards us."
 
-    show sylvian at right with move:
+    show sylvian at center_3right with move:
         xpos 1.2
-        linear 0.5 xalign 1.0
+        linear 2.0 xalign 0.85
     show claude at center_2left with move
+    
     Lars narration "A warm smile graces his lips, accompanied by the graceful flutter of his obsidian wings."
 
     Lars narration "With a hushed incantation, the brim of his hat blossoms into a vibrant tapestry of roses and sunflowers, their delicate petals unfurling in a mesmerizing display. The air is instantly infused with their soft fragrance, which mingles with a refreshment spell."
@@ -488,37 +537,35 @@ label C_2_End:
     show lars
     "{color=#026C45}Unknown" "[Lars], your piloting was truly magnificent as always. It’s a sight that I’m honored to witness every time."
 
-    #move sylvian to the right
     show lars
     Claude "Feel free to skip the cliché warm welcome, Boss Sylvian."
 
     show lars serious
     Lars "Sir Claude!"
-
-    show sylvian mad at right
+    
     show lars serious
     Claude "I know you're probably itching to have [Lars] by your side, but—"
 
+    show lars serious
     Lars "That’s enough! You can’t talk to our mentor that way."
     
     show lars
     Claude "Tsk, butter him up more, will you?"
 
     show lars
-    show sylvian at right
     Sylvian "Nevermind him [Lars]. It's best to let the spotlight find its own stage rather than chasing after it."
 
     Lars "Thank you, Master. I wish you could have joined us on the ride too. Sir Claude here almost caused us to plummet to our doom...multiple times I must say."
 
-    show claude shocked at center_2left
+    show claude shocked
     show lars
     Claude "Eh, I did promise to reward you later, didn’t I? Drum roll please ~"
 
-    play sound sfx_drum_roll
+    play sound sfx_drum_roll fadein 2.0
     hide lars
     Lars narration "Tension fills the air as the anticipation builds up, drawing everyone’s attention. Then, in a dramatic display, he spreads his arms wide, showcasing a grand reveal which is…"
 
-    stop sound fadeout 1.0
+    stop sound fadeout 2.0
     Lars narration "…nothing?"
 
     show lars
@@ -535,6 +582,7 @@ label C_2_End:
     Lars serious "We can’t ask that from our senior, Sir Claude! Especially when I'm perfectly capable—"
 
     show lars serious
+    show sylvian sad
     Sylvian "Aren’t you tired from guiding our new dragon, [Lars]? I could easily fly and grab it for you. It’s no trouble at all."
 
     menu:
@@ -551,43 +599,40 @@ label C_2_End:
 label ask_Sylvian_grab_cargo:
 
     show lars
+    show sylvian
     Lars "Would that be alright with you Master? I’d like to spend some time with Sir Claude."
 
     show lars
     Sylvian "I respect your choice [Lars], even though—"
 
     show lars
-    show sylvian blush at right
+    show sylvian sad
     Sylvian "{size=*0.75}I also wanted to spend some time with you…"
 
     show lars
     show sylvian sad
-    Sylvian "{size=*0.75}But uhm, never mind, I suggested it in the first place after all."
+    Sylvian "But uhm, never mind, I suggested it in the first place after all."
 
     show lars
-    show claude smile at center_2left
+    show claude smile
+    show claude smile at jp
     Claude "Awe, you chose to stay with me instead of Boss Sylvian. I’m touched, Captain."
 
     show lars
-    Claude "{i}I’ll have to give you a special reward later in private{/i}."
+    Claude "I’ll have to give you a special reward later in {i}private{/i}."
 
     hide lars
-    show sylvian:
-        linear 1.0 xalign 2.5
+    hide sylvian with dissolve
+    
     show bg_2:
+        linear 3.0 blur 10
+    show claude smile at center with move:
+        linear 1.0
         parallel:
-            linear 2.0 blur 15
+            linear 1.0 yalign -0.1
         parallel:
-            linear 2.0 zoom 1.2
-    show claude smile:
-        parallel:
-            linear 2.0 xalign 0.5
-        parallel:
-            linear 2.0 zoom 1.25
-        parallel:
-            linear 2.0 yoffset 120
-    #move claude to the center
-    #zoom on claude and blur background
+            linear 3.0 zoom 1.50
+
     Lars narration "His hands gently encircle my waist, drawing me closer to him as he whispers the last part of his sentence."
 
     Lars narration "His eyes, akin to pools of molten sunlight, meet mine and a mischievous spark dances within them."
@@ -596,85 +641,81 @@ label ask_Sylvian_grab_cargo:
 
     Lars narration "Yet, beneath that playfulness, there lurked a subtle undertone of competition, evident in the way he regarded Master Sylvian. It was as if they shared a friendly rivalry, each vying to outdo the other in their unique way."
 
+    show lars blush
+    Sylvian "Ahem!"
+    
     #slowly zoom to normal and unblur background
     show bg_2:
         parallel:
             linear 1.0 blur 0
         parallel:
             linear 1.0 zoom 1.0
-    show claude smile:
+    
+    show claude serious at center:
         parallel:
-            linear 1.0 xalign 0.2
+            linear 1.0 yalign -0.1
         parallel:
             linear 1.0 zoom 1.0
-        parallel:
-            linear 1.0 yoffset 0
-    show sylvian mad:
-        linear 1.0 xalign 1.0
-    #move claude to left
-    show lars blush
-    Sylvian "Ahem!"
-
-    show sylvian at right
+    
+    show lars
+    Claude "Really appreciate you cutting in {i}Boss{/i}."
+    
+    
+    show claude serious at center_2left with move
+    show sylvian mad at center_3right with dissolve
+    
     show lars
     Sylvian "Not to interrupt but I’m sure Rory will arrive soon, so it’s best to prepare yourself, [Lars]."
 
     show lars
+    show sylvian serious funny
     Sylvian "As for you, Claude, remember what I said about teasing him too much?"
 
-    show claude at center_2left:
-        zoom 1.0
-        yoffset 0
+    show lars
     Claude "Before worrying about Captain over here, you should head on to where our new dragon is resting, Boss."
 
+    show lars
     Claude "We wouldn’t want her to accidentally drop our cargo to the depths of the sea."
 
+    show lars
+    show sylvian sad
     Sylvian "…"
 
-    #In this section, since sylvian is taking flight, it would make more sense to have him transition out of the left side of the scene instead of simply hiding him. His sprite does a turn to the opposite side and after he exits, claude will move to the center
-    show sylvian:
-        xanchor 0.5
-        xalign 0.8
-        parallel:
-            linear 0.2 xzoom -1.0
-        parallel:
-            linear 2.0 xalign 3.0
+    hide sylvian sad with dissolve
+    
     Lars narration "Master Sylvian, without uttering another word, gracefully takes flight, his wings resembling those of a majestic black swan. Each feather ruffles in the breeze, catching and refracting slivers of sunlight, creating a mesmerizing shimmer which I didn’t know was possible."
     
-    show sylvian:
-        xanchor 0
-        xalign 3.0
-        xzoom 1.0
-    show rory:
-        xalign -1.5
+    show rory at center_2right with dissolve
+    
     Lars narration "However, a familiar voice rings in the air before I can observe any further."
 
-    #claude moves to the right and rory comes in from the left
-    hide sylvian
-    show claude at center_2right with move
-    show rory at center_2left with move
     show lars
     #Word wave effect - sample in drive
     "{color=#004AAD}Unknown" "{bt}Clauuuuuuuuuuuuudy~{/bt}"
+    
+    show claude smile at center_3left with move
 
-    show claude smile at center_2right
     #Word wave effect - sample in drive
     show lars
     Claude "{bt}Roryyyyyyyyyyyyy~{/bt}"
 
-    Lars narration "A figure emerges from where Master Sylvian stood just a few seconds ago, and to my pleasant surprise, it is none other than Rory- my childhood best friend."
+    Lars narration "A figure emerges from where Master Sylvian stood just a few seconds ago, and to my pleasant surprise, it is none other than my childhood best friend. "
 
+    show lars 
+    show rory angry
     Rory "I believe I mentioned that if I ever catch you bossing [Lars] around, I’d pluck out your lizard eyes to adorn my newest puppet, Agatha."
 
+    show lars 
     Rory "You should know that my threats work quite effectively, especially with how Brittina’s dress is bedazzled with the scales you’ve kindly donated...in your sleep, of course."
 
     Lars narration "True to her lineage as a bull descendent, Rory possesses a fiery temperament and is quick to charge at those who annoy her."
 
-    Lars narration "The Kyoko blacksmiths and the Dupont merchants have been locked in a spirited rivalry for generations. Both families have passed down their competitive natures to their heirs, adding fuel to the fire."
+    Lars narration "Rory's family, the Kyoko blacksmiths, and the Dupont merchants have been locked in a spirited rivalry for generations. Both families have passed down their competitive natures to their heirs, adding fuel to the fire."
 
     Lars narration "However, Rory was an exception to the traditional path of the Kyoko family. While blacksmithing was the cornerstone of their legacy, Rory’s talents lay elsewhere. She found her passion in puppet shows and other forms of artistic expression."
 
     show lars happy
+    show rory
     show rory at jp
     Rory "[Lars], you’re here too!"
 
@@ -685,17 +726,18 @@ label ask_Sylvian_grab_cargo:
     Lars "Rory, it’s so nice to see you again. I missed you too."
 
     show lars happy
+    show claude shocked
     Claude "If it isn’t our hot-tempered bull, breathing fire as soon as she lays eyes on me."
 
     show lars happy
-    Claude "{i}It’s a pleasure to see you again, little Rory. Or should I say, a curse to behold?{/i}"
+    Claude "It’s a pleasure to see you again, little Rory. Or should I say, {i}a curse to behold?{/i}"
 
-    show lars
+    show lars serious
     Lars "Guys, stop bickering like two little kids for once—"
 
-    show rory angry at center_2left
+    show rory angry
     show lars
-    Rory "{i}It’s just RORY! Call me a midget again, and you'll find more of your receding hairline gracing puppet Alex…{/i}"
+    Rory "It’s just RORY! Call me a midget again, and you'll find more of your receding hairline gracing puppet Alex…"
 
     show lars
     Claude "Now, now, I would have to say these finely braided silver strands that I’ve so kindly donated to you are what’s bringing half the revenue for your puppet shows, aren’t they little Rory?"
@@ -706,33 +748,40 @@ label ask_Sylvian_grab_cargo:
     Rory "You really have the gall to talk to me like that, when all your travel funds are conveniently collected from my shows?!"
 
     show lars
+    show claude smile
     Rory "Such audacity doesn't appear out of nowhere unless the heat has really gotten to your head."
 
     show lars
-    show rory 
     Rory "How about a calming dip in the sea to cool off a bit? I could  help you out with a gentle push~"
 
+    show lars sad
     Lars "How about we all cool down for a sec—"
 
-    show lars
+    show lars sad
     Claude "I'm sure the hydro dragons would be delighted to have me amongst them."
 
     show lars
+    show rory
     Rory "Hmph, you could put your merchant skills to use there, too. Ten more seconds to live for a platter of rotten lizard meat."
     show sylvian:
         xalign 2.5
         xzoom 1.0
+    
     show lars
+    show claude
     Sylvian "I’m back with the cargo!"
 
     #sylvian comes in from the left side, rory stays on the right and claude is in the center
-    show claude at center_left
-    show rory at left
+    show claude at center_1left
+    show rory at center_left
     show sylvian at right
     with move
     hide lars
     Lars narration "Thankfully, Master Sylvian swiftly intervenes, diffusing the tension with his timely return. It's always a relief when he steps in; the two never listen to me when they start arguing, but his authority commands attention."
 
+    hide sylvian
+    hide claude
+    hide rory
     show box with dissolve
     Lars narration "The weight of anticipation fills the air, drawing all eyes toward the mysterious object, and momentarily, the conflict is forgotten."
 
@@ -741,6 +790,7 @@ label ask_Sylvian_grab_cargo:
 label tell_Claude_grab_cargo:
 
     show lars
+    show sylvian
     Lars "Sir Claude, can you bring the artifact yourself? I’d like to spend some time with Master Sylvian."
 
     show lars
@@ -750,11 +800,12 @@ label tell_Claude_grab_cargo:
     show lars
     Claude "You even ignored my request about dropping the {i}Sir{/i} part."
 
-    show sylvian
+    show sylvian blush
     show lars
     Sylvian "I am grateful that you wish to share your time with me, [Lars], even if you’re tired from your journey."
 
     show lars
+    show sylvian
     Sylvian "Rory will arrive soon as well, so we all can spend some time together."
 
     hide lars
@@ -774,12 +825,12 @@ label tell_Claude_grab_cargo:
 
     hide sylvian_bouquet
     show claude serious at center_2left
-    show sylvian at right
-    show lars
+    show sylvian at center_3right
     with dissolve
+    
+    show lars
     Claude "Quite the showmanship, Boss."
 
-    show sylvian mad
     show lars
     Claude "Though I wonder if Captain over here got the message in your subtle gesture."
 
@@ -787,7 +838,7 @@ label tell_Claude_grab_cargo:
     hide lars
     Lars narration "Without regarding his comment, Master Sylvian comes closer and presents me with the bouquet, throwing a smile at Sir Claude who promptly leaves with his back towards us."
 
-    #claude turns his back towards sylvian and exits the scene here from the right. Sylvian moves to the center and the camera zooms in on him with a blurred background
+    hide claude with dissolve
     show bg_2:
         xalign 0.5
         yalign 0.5
@@ -795,70 +846,78 @@ label tell_Claude_grab_cargo:
             linear 2.0 blur 15
         parallel:
             linear 2.0 zoom 1.2
-    show claude serious:
-        linear 1.0 xalign -1.5 
+    
+    show sylvian blush at center with move
     show sylvian blush:
         parallel:
-            linear 1.0 xalign 0.5 
+            linear 1.0 yalign 0.2
         parallel:
-            linear 2.0 zoom 1.1 
+            linear 3.0 zoom 1.50
     
+    show lars blush
     Sylvian "These are for you [Lars], I hope you like them. They may not resemble your brilliance the way they should."
 
+    show lars blush
     Sylvian "Even still, flowers are the silent poets of our emotions, conveying in colors and scents what words often struggle to express."
 
+    show lars blush
     Lars "Thank you, Master. Though I'm a bit uncertain about the sudden gesture, I appreciate it nonetheless."
 
+    show lars blush
     Sylvian "That’s more than enough for me."
 
-    #zoom out and unblur background
     show bg_2:
-        xalign 0.5
-        yalign 0.5
         parallel:
             linear 2.0 blur 0
         parallel:
             linear 2.0 zoom 1.0
     show sylvian:
-        linear 2.0 zoom 1.0
+        parallel:
+            linear 1.0 yalign -0.1
+        parallel:
+            linear 1.0 zoom 1.0
+
+    show lars
     Sylvian "Moving on, it might be best for you to take care of your task, Claude."
 
-    #claude comes in from the right and sylvian goes to the left
-    show sylvian at right with move
-    show claude at center_2left with move
+    show sylvian at center_3right with move
+    show claude serious at center_2left with dissolve
+
+    show lars serious
     Claude "So glad that nauseating scene was over."
 
-    show sylvian mad
+    show sylvian serious funny
+    show lars serious
     Sylvian "Be careful with your words Claude."
 
+    show lars serious
     Claude "Mhm, sure sure."
 
+    show lars serious
     Sylvian "Better yet, I believe it's best for you to leave for the moment. We’re still not sure of the origins of the artifact you brought and there needs to be a level of caution involved as well."
 
     show lars
     Lars "That’s exactly what I said!"
 
-    show sylvian
+    show lars
+    Claude "Hmph..."
+   
     hide lars
-    #claude turns his back towards sylvian and exits the scene here from the right, sylvian comes to the center
-    show claude serious:
-        linear 1.0 xalign 1.5 
-    show sylvian at center with move
+    hide claude serious with dissolve
+
+    show sylvian at center_3right with move
     Lars narration "As Sir Claude takes his leave, his silver lizard tail gracefully sways behind him, reminiscent of the rhythmic movements of the sea. His scales, resembling those of the majestic dragons I often encounter in my journeys, captivate my gaze with their intricate detailing, despite their diminutive size."
 
-    show rory:
-        xalign -1.0
+    show rory at center_2left with dissolve
     Lars narration "However, a familiar voice rings in the air before I can observe any further."
 
-    #sylvian goes to the left and rory comes in from the right
-    show sylvian at right
-    show rory at center_2left
-    with move
+    show lars happy
     Rory "[Lars]!"
 
     show lars happy
     Lars "Rory, it’s so nice to see you again!"
 
+    show lars happy
     Rory "You too! And good to see that slithering, slimy tail going away."
 
     hide lars
@@ -866,58 +925,84 @@ label tell_Claude_grab_cargo:
 
     Lars narration "Under Master Sylvian’s guidance, she apprenticed as the guild’s head of finance, helping us gather funds for every mission through her puppet shows."
 
+    show lars 
     Rory "Mentor, I was preparing my puppets for the afternoon show at the market square."
 
+    show lars 
     Rory "I feel like something is missing but I don’t know what exactly…"
 
+    show lars 
     Sylvian "Let’s work together to find something to inspire you before the show, shall we?"
 
+    show lars 
     Rory "Thank you, Mentor. I don’t know if my family will be there but I don’t want to disappoint them in case I miss the mark with the show later today."
 
+    hide lars
     Lars narration "Rory's family, the Kyoko blacksmiths, and the Dupont merchants have been locked in a spirited rivalry for generations. Both families have passed down their competitive natures to their heirs, adding fuel to the fire."
 
     Lars narration "However, Rory was an exception to the traditional path of the Kyoko family. While blacksmithing was the cornerstone of their legacy, Rory’s talents lay elsewhere. She found her passion in puppet shows and other forms of artistic expression."
 
+    show lars
+    show rory angry 
     Rory "They’re already giving me side glances for not working with them in the blacksmiths."
 
+    show lars 
+    show sylvian sad
     Sylvian "Do you need me to talk with them, Rory?"
 
+    hide lars
     Lars narration "Rory offers a faint smile, her thumbs anxiously twiddling together."
 
+    show lars 
+    show rory at jp
     Rory "There’s no need. They’re the type to be appeased with actions rather than words. The best I can do is prove that I was made for the puppeteer business."
 
+    show lars 
+    show sylvian 
     Rory "When life gets tough, I just have to remember to stay strong and keep charging!"
 
-    show lars happy
+    show lars
     Lars "Haha! That’s right, Rory, it’s not about the size of the bull, it’s about the size of its determination!"
 
     show rory angry
-    show lars happy
-    Rory "Come on, [Lars]. {i}No shorty jokes. A certain someone spews enough of them already{/i}."
+    show lars 
+    Rory "Come on, [Lars]. No shorty jokes. A certain {i}someone{/i} spews enough of them already."
 
-    show lars happy
+    show lars 
     Lars "Alright, alright. I’ll make it up to you by helping you out for the show."
 
     show rory 
-    show lars happy
+    show lars 
     Rory "Yay~ Thank you!"
 
-    show lars happy
+    show lars 
     Claude "I have arrived with our mystery artifact."
 
-    #claude comes in from the right and moves to the center, sylvian is still on the left and rory on the right
-    show lars happy
-    show claude at center_left 
-    show rory at left
+    show lars 
+    show claude smile at center_1left
+    show rory at center_left
+    show sylvian at right
     with move
     hide lars
-    Lars narration "Speaking of the devil, Sir Claude makes his entrance with the grande and ornate box held tightly by his tail. His eyes glimmer with a mixture of anticipation and excitement."
+    Lars narration "Speak of the devil, Sir Claude makes his entrance with the grande and ornate box held tightly by his tail. His eyes glimmer with a mixture of anticipation and excitement."
 
+    hide sylvian
+    hide claude
+    hide rory
+    with dissolve
+
+    show box with dissolve
     Lars narration "However, rather than keeping it for himself, he extends the box towards me."
 
 label CS_1_End:
 
-    hide box with  dissolve
+    hide box with dissolve
+
+    show claude smile at center_1left
+    show rory at center_left
+    show sylvian at right
+    with dissolve
+
     Lars narration "As the heavy weight of the artifact transfers to my hands, I feel a sense of responsibility settle in."
 
     if options["CS1"]==1:
@@ -925,19 +1010,21 @@ label CS_1_End:
         Lars "I think I can take it from here, Master."
 
         show lars
-        show sylvian
+        show sylvian sad
         Sylvian "Carrying such things after your tiring journey might affect your health, [Lars]."
 
         show lars
         show sylvian blush
+        show sylvian blush at jp
         Sylvian "But thank you for worrying about me…I really appreciate it coming from you."
 
     else:
         show lars
         Lars "I think I can take it from here, Sir Claude."
 
-        show claude smile
         show lars
+        show claude smile
+        show claude smile at jp
         Claude "Anxious for the reveal. Aren’t you?"
 
         show lars
@@ -1534,8 +1621,8 @@ label S_2_End:
     stop sound fadeout 2.0
     #adding this in, let’s make sure to have the sfx fade out instead of suddenly stopping it
     $ renpy.choice_for_skipping()
-    stop music fadeout 1.0
-    play music "track_3_the_town.ogg" fadein 1.0
+
+    play music "track_3_the_town.ogg" fadeout 2.0 fadein 2.0
     scene bg black with fade
     show bg_3 at pan with fade
 
@@ -1779,7 +1866,7 @@ label CS_2_End:
             jump ask_Sir_Claude_about
 
 label ask_Master_Sylvian_about:
-    stop music fadeout 1.0
+
     play music "track_6_romance_scene.ogg" fadein 1.0
     show rory at right_far
     show claude at right_far
@@ -1840,8 +1927,7 @@ label ask_Master_Sylvian_about:
     jump CS_3_End
 
 label ask_Sir_Claude_about:
-    stop music fadeout 1.0
-    play music "track_6_romance_scene.ogg" fadein 1.0
+    play music "track_6_romance_scene.ogg" fadeout 2.0 fadein 2.0
     show rory at right_far
     show sylvian at left_far
     show claude at center
@@ -1992,8 +2078,7 @@ label ask_Sir_Claude_about:
     pause(1)
 
 label CS_3_End:
-    stop music fadeout 1.0
-    play music "track_3_the_town.ogg" fadein 1.0
+    play music "track_3_the_town.ogg" fadeout 2.0 fadein 2.0
     show rory at right
     show claude at center_right
     show sylvian at left
@@ -2535,8 +2620,7 @@ label CS_5_End:
     #the music music fades to silence and the next track starts
     Lars "…see?"
 
-    stop music fadeout 1.0
-    play music "track_4_time_stop.ogg" fadein 1.0
+    play music "track_4_time_stop.ogg" fadeout 2.0 fadein 2.0
     hide lars
     Lars narration "It’s such an eerie scene…the children, once animated, have now come to an abrupt standstill, their vibrant expressions frozen in unnatural stillness."
 
@@ -2822,8 +2906,7 @@ label CS_5_End:
     hide lars
     Lars narration "We're spending too much time here; I need to take a proactive approach and ask him some questions myself before anything bad happens to everyone else who's been frozen."
 
-    stop music fadeout 1.0
-    play music "track_5_zephyr_theme.ogg" fadein 1.0
+    play music "track_5_zephyr_theme.ogg" fadeout 2.0 fadein 2.0
 
     $ choice_g1[0] = 0
 label menu_g1:
@@ -3069,8 +3152,7 @@ label how_come_you:
 
 label G_1_End:
 
-    stop music fadeout 1.0
-    play music "track_1_intro.ogg" fadein 1.0
+    play music "track_1_intro.ogg" fadeout 2.0 fadein 2.0
     show lars
     Lars "I don’t need to ask anymore questions for now."
 
@@ -3501,8 +3583,7 @@ label G_1_End:
 
 label speak_with_Master_Sylvian:
 
-    stop music fadeout 1.0
-    play music "track_6_romance_scene.ogg" fadein 1.0
+    play music "track_6_romance_scene.ogg" fadeout 2.0 fadein 2.0
     #have everyone exit the scene and bring sylvian to the center
     show claude at right_far
     show rory at right_far
@@ -3574,8 +3655,7 @@ label speak_with_Master_Sylvian:
 
 label speak_with_Sir_Claude:
 
-    stop music fadeout 1.0
-    play music "track_6_romance_scene.ogg" fadein 1.0
+    play music "track_6_romance_scene.ogg" fadeout 2.0 fadein 2.0
     #have everyone exit the scene and bring claude to the center
     show rory at right_far
     show sylvian at left_far
@@ -3642,8 +3722,7 @@ label CS_6_End:
 
     #once the player finishes with either of the two previous choice selections, we have the position change where rory and zephyr enter the scene. 
     #From left to right, it’s going to zephyr, claude, sylvian, rory
-    stop music fadeout 1.0
-    play music "track_1_intro.ogg" fadein 1.0
+    play music "track_1_intro.ogg" fadeout 2.0 fadein 2.0
     
     show claude at center_left
     show sylvian at center_right

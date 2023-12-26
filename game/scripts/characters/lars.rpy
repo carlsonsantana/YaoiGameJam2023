@@ -1,6 +1,13 @@
 define Lars = Character("[Lars_name]", color="#C82727", image="lars")
 
 # image lars = Transform("images/characters/lars.png", xalign=0.0)
+image lars hi: 
+    "images/characters/lars_default.png"
+    xalign 0.0
+    zoom 0.75
+    alpha 1.0
+    linear 0.2 alpha 0.0
+
 image lars: 
     "images/characters/lars_default.png"
     xalign 0.0
@@ -68,3 +75,4 @@ image side lars sad:
 #     def custom_command(what, **kwargs):
 #         # todo
 #         pass
+

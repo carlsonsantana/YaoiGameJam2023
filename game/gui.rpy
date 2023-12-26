@@ -257,7 +257,7 @@ define gui.file_slot_rows = 2
 
 ## The position of the left side of the navigation buttons, relative to the left
 ## side of the screen.
-define gui.navigation_xpos = 60
+define gui.navigation_xpos = 120
 
 ## The vertical position of the skip indicator.
 define gui.skip_ypos = 15
@@ -453,7 +453,7 @@ init python:
         gui.dialogue_width = 1650
 
         ## Change the size and spacing of various things.
-        gui.slider_size = 108
+        gui.slider_size = 54
 
         gui.choice_button_width = 1860
         gui.choice_button_text_size = 45

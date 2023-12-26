@@ -3,7 +3,7 @@ transform pan:
     subpixel True
     xalign 0.0
     yalign 0.5
-    linear 10.0 xalign 1.0
+    linear 20.0 xalign 1.0
 
 transform end_pan:
     parallel:
@@ -64,11 +64,14 @@ transform enter_left:
 define config.side_image_same_transform = same_transform
 
 define left_far = Position(xalign= -2.0, yalign = 1.0)
+define center_1left = Position(xalign=0.1, yalign = 1.0)
 define center_2left = Position(xalign=0.2, yalign = 1.0)
+define center_3left = Position(xalign=0.3, yalign = 1.0)
 define center_left = Position(xalign=0.4, yalign = 1.0)
 
 define center_right = Position(xalign=0.6, yalign = 1.0)
 define center_2right = Position(xalign=0.8, yalign = 1.0)
+define center_3right = Position(xalign=0.85, yalign = 1.0)
 define right_far = Position(xalign=2.0, yalign = 1.0)
 
 #define config.layers = [ 'master', 'transient', 'screens', 'overlay', 'overall']
