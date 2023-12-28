@@ -42,6 +42,8 @@ tmp/
 .env
 secrets/
 token.json
+android.keystore
+bundle.keystore
 
 *.kra
 *.kra~
