@@ -1483,13 +1483,14 @@ label joke_about_his_statement:
     hide lars
     Sylvian "It’s okay [Lars], I’m just getting upset on my own."
 
-    Lars narration "My words don’t seem to be reaching him anymore, it seems."
+    Lars narration "My words don’t seem to reach him anymore, it seems."
 
 label S_2_End:
 
     show lars
     show sylvian serious funny at center
-    Sylvian "EVERYONE! Steadfast now."
+    with vpunch
+    Sylvian "{size=*1.5}EVERYONE! {size=*1.0}Steadfast now."
 
     Lars "Nevermind, he was probably feeling sentimental."
 

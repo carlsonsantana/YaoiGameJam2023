@@ -407,7 +407,7 @@ label S3_sylvian_bad_end:
     show lars serious
     show sylvian sad at right
     #next line, the textbox does a little up and down jump
-    Lars "{bt}MASTER SYLVIAN!{/bt}"
+    Lars "{size=*2.0}MASTER SYLVIAN!"
 
     Lars "Can you hear me?"
 
@@ -417,11 +417,11 @@ label S3_sylvian_bad_end:
     Lars "If you don't respond, I might just dive into the cloud you're lounging on the count of three!"
 
     #next 3 lines, the textbox does a little up and down jump
-    Lars "{bt}ONE!{/bt}"
+    Lars "{size=*1.5}ONE!"
 
-    Lars "{bt}TWO!{/bt}"
+    Lars "{size=*1.75}TWO!"
 
-    Lars "{bt}THREE!{/bt}"
+    Lars "{size=*2.0}THREE!"
 
     #After the last sentence, the screen does and up and down shake like he just jumped
     show bg_7:
@@ -787,11 +787,11 @@ label S3_sylvian_neutral_end:
     Lars "If you don't respond, I might just dive into the cloud you're lounging on the count of three!"
 
     #next 3 lines, the textbox does a little up and down jump
-    Lars "{bt}ONE!{/bt}"
+    Lars "{size=*1.5}ONE!}"
 
-    Lars "{bt}TWO!{/bt}"
+    Lars "{size=*1.75}TWO!}"
 
-    Lars "{bt}THREE!{/bt}"
+    Lars "{size=*2.0}THREE!}"
 
     #After the last sentence, the screen does and up and down shake like he just jumped
     hide lars
@@ -1507,7 +1507,7 @@ label claude_route:
 
     show lars blush
     #textbox jumps and down for next sentence
-    Lars "{bt}THEN I SUPPOSE...you wouldn't mind if the headlines read something like this–{/bt}"
+    Lars "{size=*1.5}THEN I SUPPOSE...{size=*1.0}you wouldn't mind if the headlines read something like this–}"
 
     Lars "“Claude Dupont, the shining star of the Commerce Guild 'Custodes Sylvae’, scion of the infamous merchant family, tragically falls to his death.”"
 
@@ -1521,7 +1521,7 @@ label claude_route:
 
     show lars serious
     #textbox jumps and down for next sentence
-    Lars "{bt}Firstly, NO I WASN’T!{/bt}"
+    Lars "Firstly, {size=*1.5}NO I WASN’T!"
 
     show lars
     Lars "Secondly, you have to admit, it does carry a certain dramatic flair."
@@ -2033,17 +2033,17 @@ label C3_claude_neutral_end:
 
     hide claude
     show lars
-    #textbox shake for the next two lines
-    Lars "{sc}SIR CLAUUUUDE!!!{/sc}"
+    with vpunch
+    Lars "{size=*2.0}SIR CLAUUUUDE!!!"
 
-    Zephyr "{sc}SLICKYYYYY!!!!{/sc}"
+    Zephyr "{bt}{size=*1.75}SLICKYYYYY!!!!{/bt}"
 
     Zephyr "Oh wait, I should be happy instead~ Buckle up for the show, Scouty! I'm unleashing the scandal of the century to every gossip-hungry magazine and tabloid out there."
 
     Zephyr "Watch the gold and treasure roll in as the Duponts scramble to buy the news of their only heir dying first hand. Ah, the perks of having no moral compass!"
 
     #screen shake while he’s laughing
-    Zephyr "{sc}MUAHAHAHAHA!{/sc}"
+    Zephyr "{sc}{size=*1.75}MUAHAHAHAHA!{/sc}"
 
     #zephyr exits the scene while jumping up and down
     show zephyr at jp:
@@ -2091,7 +2091,7 @@ label C3_claude_neutral_end:
         yoffset 0.0
         xoffset 0.0
         alpha 0.0
-        blur 100
+        blur 5
         parallel:
             linear 1.0 alpha 1.0
         parallel:
