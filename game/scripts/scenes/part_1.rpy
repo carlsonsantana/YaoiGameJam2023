@@ -2741,9 +2741,15 @@ label CS_5_End:
     $ renpy.choice_for_skipping()
     show rory:
         linear 1.5 xalign 1.1
-    show claude with dissolve:
-        pause 0.25
+    show claude as clonclaude:
+        yalign 1.0
+        linear 0.25 alpha 0.0
+    show claude:
+        yalign 1.0
+        xalign 0.0 
         xzoom -1.0
+        alpha 0.0
+        linear 0.25 alpha 1.0
         pause 0.25
         linear 1.0 xalign 0.5
     show sylvian:

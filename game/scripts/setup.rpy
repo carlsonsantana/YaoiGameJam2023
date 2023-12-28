@@ -107,3 +107,9 @@ image blink_necklace:
 
 image cg_lars_sylvian_ge:
     "images/cg/cg_lars_sylvian_ge.png"
+
+image cg_lars_claude_ge:
+    "images/cg/cg_lars_claude_ge.png"
+
+image bg_black:
+    "images/background/bg black.png"
