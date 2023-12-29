@@ -677,7 +677,7 @@ style game_menu_label_text:
 style return_button:
     xpos gui.navigation_xpos
     yalign 1.0
-    yoffset -45
+    yoffset -105
 
 
 ## About screen ################################################################
@@ -825,10 +825,6 @@ screen file_slots(title):
                         textbutton _("Upload Sync"):
                             action UploadSync()
                             xalign 0.5
-                    else:
-                        textbutton _("Download Sync"):
-                            action DownloadSync()
-                            xalign 0.5
 
 
 style page_label is gui_label
@@ -877,22 +873,22 @@ screen preferences():
     #use game_menu(_("Preferences"), scroll="viewport"):
     use game_menu(_("Preferences")):
         vbox:
-            xpos 20
+            xpos 60
             grid 2 2:
-                xalign 0
-                xsize 450
+                xalign 100
+                xsize 400
                 xspacing 80
-                yspacing 0
+                yspacing -220
                 if renpy.variant("pc") or renpy.variant("web"):
                         #xalign 0.5
                         #yalign 0.5
                         vbox:
-                            style_prefix "radio"
+                            style_prefix "check"
                             label _("Display")
                             textbutton _("Window") action Preference("display", "window")
                             textbutton _("Fullscreen") action Preference("display", "fullscreen")
                 else:
-                    null height (4 * gui.pref_spacing)
+                    null height (5 * gui.pref_spacing)
 
                 vbox:
                     #style_prefix "slider"
@@ -909,20 +905,26 @@ screen preferences():
                     ## added here, to add additional creator-defined preferences.
 
                 vbox:
-                    align (0.5,0.5)
+                    align (0.0,0.0)
                     label _("Text Speed")
 
                     bar value Preference("text speed")
 
+                    null height 15
+
                     label _("Auto-Forward Time")
 
                     bar value Preference("auto-forward time")
+
+                    null height 15
 
                     if config.has_music:
                         label _("Music Volume")
 
                         hbox:
                             bar value Preference("music volume")
+
+                    null height 15
 
                     if config.has_sound:
 
@@ -935,18 +937,58 @@ screen preferences():
                                 textbutton _("Test") action Play("sound", config.sample_sound)
 
                 vbox:
-                    align (0.5,0.5)
+                    align (0.0, 0.5)
+
                     if config.has_voice:
                         label _("Voice Volume")
 
-                        hbox:
-                            bar value Preference("voice volume")
-
-                            if config.sample_voice:
-                                textbutton _("Test") action Play("voice", config.sample_voice)
+                        # Vertical spacing
+                        null height 40
 
                     if config.has_music or config.has_sound or config.has_voice:
-                        null height gui.pref_spacing
+                        # Lars
+                        hbox:
+                            label _("Lars")
+                            null width 40
+                            bar value Preference("lars_voice volume")
+
+                        # Vertical spacing
+                        null height 20
+
+                        # Sylvian
+                        hbox:
+                            label _("Sylvian")
+                            null width 40
+                            bar value Preference("sylvian_voice volume")
+
+                        # Vertical spacing
+                        null height 20
+
+                        # Rory
+                        hbox:
+                            label _("Rory")
+                            null width 40
+                            bar value Preference("rory_voice volume")
+
+                        # Vertical spacing
+                        null height 20
+
+                        # Zephyr
+                        hbox:
+                            label _("Zephyr")
+                            null width 40
+                            bar value Preference("zephyr_voice volume")
+
+                        # Vertical spacing
+                        null height 20
+
+                        # Claude
+                        hbox:
+                            label _("Claude")
+                            null width 40
+                            bar value Preference("claude_voice volume")
+
+                        null height 20
 
                         textbutton _("Mute All"):
                             action Preference("all mute", "toggle")
@@ -1835,7 +1877,7 @@ screen gallery:
                 add gal.make_button("claude_good", "gui/claude_idle.png", xalign=0.5, yalign=0.5)
             else:
                 add gal.make_button("claude_good", "gui/gallery_locked.png", xalign=0.5, yalign=0.5)
-            text "Claude good end":
+            text "Claude Good End":
                 xalign 0.5
         
         vbox:
@@ -1843,7 +1885,7 @@ screen gallery:
                 add gal.make_button("sylvian_good", "gui/sylvian_idle.png", xalign=0.5, yalign=0.5)
             else:
                 add gal.make_button("sylvian_good", "gui/gallery_locked.png", xalign=0.5, yalign=0.5)
-            text "Sylvian good end":
+            text "Sylvian Good End":
                 xalign 0.5
         
         #vbox:
