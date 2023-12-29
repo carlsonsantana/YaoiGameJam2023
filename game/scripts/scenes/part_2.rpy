@@ -407,7 +407,7 @@ label S3_sylvian_bad_end:
     show lars serious
     show sylvian sad at right
     #next line, the textbox does a little up and down jump
-    Lars "{bt}MASTER SYLVIAN!{/bt}"
+    Lars "{size=*2.0}MASTER SYLVIAN!"
 
     Lars "Can you hear me?"
 
@@ -417,11 +417,11 @@ label S3_sylvian_bad_end:
     Lars "If you don't respond, I might just dive into the cloud you're lounging on the count of three!"
 
     #next 3 lines, the textbox does a little up and down jump
-    Lars "{bt}ONE!{/bt}"
+    Lars "{size=*1.5}ONE!"
 
-    Lars "{bt}TWO!{/bt}"
+    Lars "{size=*1.75}TWO!"
 
-    Lars "{bt}THREE!{/bt}"
+    Lars "{size=*2.0}THREE!"
 
     #After the last sentence, the screen does and up and down shake like he just jumped
     show bg_7:
@@ -646,6 +646,7 @@ label S3_sylvian_bad_end:
     #Sylvian - Bad End Achieved
     $ renpy.choice_for_skipping()
     $ persistent.ending[2] = 1
+    scene bg black with fade
     "" "Sylvian - Bad End Achieved"
     jump end
 
@@ -786,11 +787,11 @@ label S3_sylvian_neutral_end:
     Lars "If you don't respond, I might just dive into the cloud you're lounging on the count of three!"
 
     #next 3 lines, the textbox does a little up and down jump
-    Lars "{bt}ONE!{/bt}"
+    Lars "{size=*1.5}ONE!}"
 
-    Lars "{bt}TWO!{/bt}"
+    Lars "{size=*1.75}TWO!}"
 
-    Lars "{bt}THREE!{/bt}"
+    Lars "{size=*2.0}THREE!}"
 
     #After the last sentence, the screen does and up and down shake like he just jumped
     hide lars
@@ -1012,6 +1013,7 @@ label S3_sylvian_neutral_end:
 
     $ renpy.choice_for_skipping()
     $ persistent.ending[1] = 1
+    scene bg black with fade
     " " "Sylvian - Neutral End Achieved"
     jump end
 
@@ -1342,6 +1344,7 @@ label S3_sylvian_good_end:
     #screen fades to black and the next line appears in the textbox, music also fades into silence
     $ renpy.choice_for_skipping()
     $ persistent.ending[0] = 1
+    scene bg black with fade
     " " "Sylvian - Good End Achieved"
     jump end
 
@@ -1404,7 +1407,10 @@ label claude_route:
 
     Zephyr "Let's spice up the setting while we're at it; I wouldn't want someone else to hijack my headline when I finally release them from their frozen state. Scouty, pick a fancy locale, won't you?"
 
-    hide all
+    hide zephyr
+    hide rory
+    hide claude
+    hide sylvian
     #black screen transition fade in/fade out
     show bg_4 with fade
     Lars narration "The sun is gradually sinking towards the horizon, casting cold hues across the sky as late afternoon approaches."
@@ -1491,6 +1497,8 @@ label claude_route:
     Claude "I could satisfy your curiosity by merely saying that I enjoy the challenge of forging my own legacy."
 
     #claude’s sprite goes back to original position
+    show claude smile:
+        linear 1.0 zoom 1.0
     Claude "But then, you'll have to satisfy my curiosity as well – what's the reason behind that little wagging tail you're trying to hide so adorably?"
 
     Lars narration "My embarrassment skyrockets as the heat rushes to my cheeks. A quick glance at my tail confirms my nerves, as it wags uncontrollably behind me. Desperately, I begin  searching for a way to divert his attention."
@@ -1499,7 +1507,7 @@ label claude_route:
 
     show lars blush
     #textbox jumps and down for next sentence
-    Lars "THEN I SUPPOSE...you wouldn't mind if the headlines read something like this–"
+    Lars "{size=*1.5}THEN I SUPPOSE...{size=*1.0}you wouldn't mind if the headlines read something like this–}"
 
     Lars "“Claude Dupont, the shining star of the Commerce Guild 'Custodes Sylvae’, scion of the infamous merchant family, tragically falls to his death.”"
 
@@ -1507,13 +1515,13 @@ label claude_route:
 
     Lars "“Aiming for the skies, only to plummet into the depths of the sea.”"
 
-    show claude smile
+    show claude smile at jp
     #claude’s sprite does an up and down jump for the laughing part of the next sentence
     Claude "Haha, are you getting shy Captain? Or did you pick up those catchy headline titles from your human passengers again?"
 
     show lars serious
     #textbox jumps and down for next sentence
-    Lars "Firstly, NO I WASN’T!"
+    Lars "Firstly, {size=*1.5}NO I WASN’T!"
 
     show lars
     Lars "Secondly, you have to admit, it does carry a certain dramatic flair."
@@ -1585,16 +1593,47 @@ label C3_claude_good_end:
         show lars
         Lars "I remember asking about Master Sylvian’s during our talk about gifts , but not about yours, so—"
 
-        show claude serious
+        
         #for the next line, claude does a side to side shake + a jump. Preferably, he does a shake to the left from ‘It’s always Sylvian this’ and does another shake from ‘and Sylvian that’, then does a jump from ‘Why can't I ever catch a break from him?’
+        show claude serious:
+            xoffset 0
+            yoffset 0
+            easein 0.25 xoffset -100
+            easeout 0.25 xoffset 0
+            easein 0.2 xoffset -30
+            easeout 0.2 xoffset 0
+            easein 0.15 xoffset -10
+            easeout 0.15 xoffset 0
+            easein 0.1 xoffset -4
+            easeout 0.1 xoffset 0
+            xoffset 0
+            easein 0.25 xoffset -100
+            easeout 0.25 xoffset 0
+            easein 0.2 xoffset -30
+            easeout 0.2 xoffset 0
+            easein 0.15 xoffset -10
+            easeout 0.15 xoffset 0
+            easein 0.1 xoffset -4
+            easeout 0.1 xoffset 0
+            xoffset 0
+            easein 0.25 yoffset -100
+            easeout 0.25 yoffset 0
+            easein 0.2 yoffset -30
+            easeout 0.2 yoffset 0
+            easein 0.15 yoffset -10
+            easeout 0.15 yoffset 0
+            easein 0.1 yoffset -4
+            easeout 0.1 yoffset 0
+            yoffset 0
+        
         Claude "It’s always Sylvian this and Sylvian that. Why can't I ever catch a break from him?"
 
         show lars serious
         Lars "What's going on? Why the sudden—"
-
+        show claude serious:
+            xoffset 0
+            yoffset 0
         Claude "You know what? I can't take this anymore."
-
-
 
     if options["CS3"]==2:
 
@@ -1619,8 +1658,6 @@ label C3_claude_good_end:
 
         show lars blush
         Claude "I didn't say I had special feelings for you just for the sake of it, I was quite serious. To show my resolve, I'll fulfill my promise right here and now, just as I swore on that necklace I gave you."
-
-
 
     show lars
     show claude
@@ -1657,6 +1694,8 @@ label C3_claude_good_end:
     Claude "But, over time, my feelings changed…"
 
     #claude moves closer
+    show claude blush:
+        linear 1.0 zoom 1.1
     hide lars
     Lars narration "Drawing closer, he delicately runs his fingers through my hair with a tender touch. The scabrous texture of his fingernails traces a deliberate path downward, following the curve of my ear. In its wake, a lingering tingle persists, imprinting the sensation on my skin."
 
@@ -1673,7 +1712,8 @@ label C3_claude_good_end:
 
     Claude "Relationships have always come easily to me, but you...you're the only person who's made me feel this way."
 
-    show claude sad
+    show claude sad:
+        linear 1.0 zoom 1.0
     hide lars
     #claude moves to original position
     Lars narration "He releases my chin and retreats, leaving behind a noticeable chill in his departure."
@@ -1787,9 +1827,15 @@ label C3_claude_good_end:
     hide lars
     Lars narration "Before I can respond, he takes my hand and pulls me closer to him."
 
-    hide all
+    hide claude
     #Do a little fade Insert cg_claude_good + some cinematography effect
     #camera does a little pan from left to right
+    $ renpy.choice_for_skipping()
+    show cg_lars_claude_ge with fade:
+        xalign 0.0
+        yalign 0.5
+        zoom 2.0
+        linear 20.0 xalign 1.0
     Claude "Call me Claude just like you did a little while ago, won't you, my darling fox?"
 
     Lars "Claude…"
@@ -1803,13 +1849,19 @@ label C3_claude_good_end:
     Claude "You're the one who challenged me. Might as well see this through to the end, so we can determine who wins."
 
     #zoom out to the entire scene
+    show cg_lars_claude_ge:
+        parallel:
+            linear 5.0 xalign 0.5
+        parallel:
+            linear 5.0 zoom 1.0
     Lars "Bring it on."
 
     #zephyr’s happy sprite appears where lars’s side sprite usually is because I don’t want to ruin the CG
+    show zephyr at left
     Zephyr "Ah, what a headline! “The infamous Slicky Dupont and his love affair with the dragon pilot, Scouty”. I'll have to work around the details later, but what a story it will be."
 
     #textbox shake while he’s laughing
-    Zephyr "I'll earn back the costs of my renovations plans tenfold, or maybe even a hundredfold! MUAHAHAHAHA!"
+    Zephyr "I'll earn back the costs of my renovations plans tenfold, or maybe even a hundredfold! {sc}MUAHAHAHAHA!{/sc}"
 
     Lars "Aren't you worried about what he might publish with your name?"
 
@@ -1838,6 +1890,7 @@ label C3_claude_good_end:
     #screen fades to black and the next line appears in the textbox, music also fades into silence
     $ renpy.choice_for_skipping()
     $ persistent.ending[3] = 1
+    scene bg black with fade
     " " "Claude - Good End Achieved"
     jump end
 
@@ -1930,8 +1983,6 @@ label C3_claude_neutral_end:
 
         Claude "I did make a promise to you, but I suppose I'm not as good at keeping my word as I believed I would be."
 
-
-
     show claude
     show lars serious
     Claude "You know what would be riskier than what I had planned to tell you?"
@@ -1943,6 +1994,15 @@ label C3_claude_neutral_end:
     Lars "What—"
 
     #for the next line, zephyr_sad anxiously comes in from the left and starts moving side to side
+    $ renpy.choice_for_skipping()
+    show zephyr:
+        yalign 0.0
+        xalign 0.0
+        linear 2.5 xalign 1.0
+        xzoom -1
+        linear 2.5 xalign 0.0
+        xzoom 1
+
     Zephyr "OI OI OI, I'm not looking to make my hands any messier; bloody theatrics tend to repel future fans, you know!"
 
     show claude smile
@@ -1963,27 +2023,37 @@ label C3_claude_neutral_end:
     Claude "Too late, catch me if you can Captain!"
 
     #for the next scene, claude exits the scene as if he jumped off, perhaps a frame shake could better illustrate this
+    $ renpy.choice_for_skipping()
+    show claude:
+        yoffset 0.0
+        easein 0.2 yoffset -120
+        easein 1.0 yoffset 1000
     hide lars
     Lars narration "Before I can ask any more questions, he jumps off Spotsy's back into the sea below."
 
+    hide claude
     show lars
-    #textbox shake for the next two lines
-    Lars "SIR CLAUUUUDE!!!"
+    with vpunch
+    Lars "{size=*2.0}SIR CLAUUUUDE!!!"
 
-    Zephyr "SLICKYYYYY!!!!"
+    Zephyr "{bt}{size=*1.75}SLICKYYYYY!!!!{/bt}"
 
     Zephyr "Oh wait, I should be happy instead~ Buckle up for the show, Scouty! I'm unleashing the scandal of the century to every gossip-hungry magazine and tabloid out there."
 
     Zephyr "Watch the gold and treasure roll in as the Duponts scramble to buy the news of their only heir dying first hand. Ah, the perks of having no moral compass!"
 
     #screen shake while he’s laughing
-    Zephyr "MUAHAHAHAHA!"
+    Zephyr "{sc}{size=*1.75}MUAHAHAHAHA!{/sc}"
 
     #zephyr exits the scene while jumping up and down
+    show zephyr at jp:
+        linear 1.0 xalign -1.0
     hide lars
     Lars narration "Panic surges through me as Zephyr's heartless laughter echoes in my ears. Ignoring the unsettling sound, I quickly seize the reins from him and spur Spotsy toward Sir Claude's descending form, determined to reach him in time."
 
     #bg starts blurring
+    show bg_4:
+        linear 10 blur 50
     Lars narration "The biting chill of the wind stings my face as I race to reach Sir Claude. Time seems to slow as his figure plummets downward, and desperation fuels my actions. My fingers claw at the air as I stretch out, desperately trying to catch him, but he's falling too fast."
 
     #bg blurs even more
@@ -1991,44 +2061,90 @@ label C3_claude_neutral_end:
 
     play sound sfx_splash
     #fade the blurred bg into black
+    show bg_black with fade
     Lars narration "The impact is brutal, the cold water envelops us in a merciless embrace. My fur becomes waterlogged, dragging me down as I struggle to keep both of us afloat. Sir Claude's weight pulls me deeper, and my lungs burn for air."
 
     #Screen fades to bg_6, from here on out, the screen will go black every once in a while to show that he’s fighting back drowning + blur effect - sample in drive-]
+    show bg_6 with fade:
+        blur 40
     Lars narration "My consciousness...is fading…"
 
     #fades to black
+    show bg black with fade
     Lars narration "I’m... slipping away..."
 
     #fades to bg_6 blurred
+    show bg_6 with fade:
+        linear 0.5 blur 20
     Lars narration "What’s that scaly tail…why’s it wrapping around me…?"
 
+    show bg black with fade
     Lars narration "Sir Claude's presence resurfaces in my fading awareness as he breathes life into me once more."
 
     #fades to bg_6
-    show claude sad at center
+    show bg_6 with fade:
+        linear 0.5 blur 0
+
+    show claude:
+        xalign 0.5
+        yalign 1.0
+        yoffset 0.0
+        xoffset 0.0
+        alpha 0.0
+        blur 5
+        parallel:
+            linear 1.0 alpha 1.0
+        parallel:
+            linear 1.0 blur 0.0
+
     Lars narration "Amidst the chaos of the waves, I catch a glimpse of his eyes—those yellow orbs that resemble the sun breaking through stormy clouds."
 
     show lars sad
     #zoom in on claude a bit and for the ‘You'll...only...make me...fall...even...harder…’ part, have him gradually zoom out for each word until he’s back in his original position for the last part.
+    show claude sad:
+        blur 0.0
+        alpha 1.0
+        parallel:
+            linear 1.0 zoom 1.2
+        parallel:
+            linear 1.0 yoffset 200
     Lars  "Claude…"
 
     Claude "What a joy to hear you call my name. Alas, I shouldn’t have asked you to jump after me, my dear fox. You'll...only...make me...fall...even...harder…"
 
     #zoom out on claude
     #fades to bg_6 blurred
+    show bg_6:
+        linear 2.0 blur 20
+    show claude sad:
+        parallel:
+            linear 1.0 zoom 1.0
+        parallel:
+            linear 1.0 yoffset 0
     Lars  narration "I can barely make out his words…"
 
     #fades to black
+    show bg_black with dissolve
+    pause 1.0
+
     Lars narration "With every ounce of strength left in me, I try to fight back the encroaching black spell that threatens to take me. My arms tighten around Sir Claude, and I hold onto him for dear life."
 
+    window hide
+    pause 1.0
+    
+    scene bg_5 with dissolve
+    pause 2.0
     #3 seconds without dialogue box
     #fade in bg_5
     #claude comes on to scene with a transition
-    show claude smile
+    #window show
+    show claude smile with dissolve
     Lars narration "We tumble ashore in a tangled mess of limbs, drenched in salty waves. My fur clings to his rough scales, and a turbulent mix of relief and exasperation engulfs me."
 
+    show claude smile
     Lars narration "What was I thinking? I had overlooked the fundamental fact that Sir Claude is a descendant of lizards, equally adept on land and in the sea. I should have reined in my impulsiveness before plunging us into potential disaster."
 
+    show claude smile
     Lars narration "It's embarrassing. While I'm thankful that we're both safe, the fear of losing him drove me to the edge."
 
     Lars narration "How could I save him? What should I do to save him? These thoughts raced through my mind before the realization hit me: he didn't need me to leap after him."
@@ -2080,6 +2196,7 @@ label C3_claude_neutral_end:
     #screen fades to black and the next line appears in the textbox, music also fades into silence
     $ renpy.choice_for_skipping()
     $ persistent.ending[4] = 1
+    scene bg black with fade
     " " "Claude - Neutral End Achieved"
     jump end
     
@@ -2125,6 +2242,36 @@ label C3_claude_bad_end:
 
     show lars serious
     #for the next line, claude does a side to side shake + a jump. Preferably, he does a shake to the left from ‘It’s always Sylvian this’ and does another shake from ‘and Sylvian that’, then does a jump from ‘Why can't I ever catch a break from him?’
+    show claude serious:
+            xoffset 0
+            yoffset 0
+            easein 0.25 xoffset -100
+            easeout 0.25 xoffset 0
+            easein 0.2 xoffset -30
+            easeout 0.2 xoffset 0
+            easein 0.15 xoffset -10
+            easeout 0.15 xoffset 0
+            easein 0.1 xoffset -4
+            easeout 0.1 xoffset 0
+            xoffset 0
+            easein 0.25 xoffset -100
+            easeout 0.25 xoffset 0
+            easein 0.2 xoffset -30
+            easeout 0.2 xoffset 0
+            easein 0.15 xoffset -10
+            easeout 0.15 xoffset 0
+            easein 0.1 xoffset -4
+            easeout 0.1 xoffset 0
+            xoffset 0
+            easein 0.25 yoffset -100
+            easeout 0.25 yoffset 0
+            easein 0.2 yoffset -30
+            easeout 0.2 yoffset 0
+            easein 0.15 yoffset -10
+            easeout 0.15 yoffset 0
+            easein 0.1 yoffset -4
+            easeout 0.1 yoffset 0
+            yoffset 0
     Claude "It’s always Sylvian this and Sylvian that. Why can't I ever catch a break from him?"
 
     hide lars
@@ -2133,7 +2280,9 @@ label C3_claude_bad_end:
     show lars serious
     Lars "I only mentioned him as an example, Sir Claude. What's going on with you? Why are you so riled up?"
 
-    show claude sad
+    show claude sad:
+        xoffset 0
+        yoffset 0
     Claude "You know what? I can't take this anymore."
 
     Claude "I've been trying to impress you and win your favor for such a long time, yet your gaze remains fixed on your cherished Master Sylvian."
@@ -2281,7 +2430,26 @@ label C3_claude_bad_end:
 
 
     #zephyr comes in from the left does a little jump at first
+    show zephyr:
+        yalign 0.0
+        xalign -1.0
+        yoffset 0
+        linear 0.5 xalign 0.0
+        easein 0.25 yoffset -100
+        easeout 0.25 yoffset 0
+        easein 0.2 yoffset -30
+        easeout 0.2 yoffset 0
+        easein 0.15 yoffset -10
+        easeout 0.15 yoffset 0
+        easein 0.1 yoffset -4
+        easeout 0.1 yoffset 0
+        yoffset 0
     Zephyr "Hey, I know you two had your heartfelt exchange, but I'm in the mood for a grand, dramatic confession. This subtle stuff won't cut it; it's barely a snack when I was hoping for a feast."
+
+    show zephyr:
+        yoffset 0
+        xoffset 0
+        xalign 0.0
 
     Zephyr "Honestly, if you're not up to the task, you might as well just leap off this dragon's back; you're just extra baggage right now. Come on, give me the theatrics, the flair! THE SCOOP!"
 
@@ -2293,6 +2461,14 @@ label C3_claude_bad_end:
     Lars "What—"
 
     #for the next line, zephyr_sad starts moving side to side
+    $ renpy.choice_for_skipping()
+    show zephyr sad:
+        yalign 0.0
+        xalign 0.0
+        linear 2.5 xalign 1.0
+        xzoom -1
+        linear 2.5 xalign 0.0
+        xzoom 1
     Zephyr "OI OI OI, I'm not looking to make my hands any messier; bloody theatrics tend to repel future fans, you know!"
 
     show claude serious
@@ -2300,28 +2476,39 @@ label C3_claude_bad_end:
 
     Claude "Don't catch me."
 
+    show zephyr sad:
+        yalign 0.0
+        xalign 0.0
+        xzoom 1
     #for the next scene, claude exits the scene as if he jumped off, perhaps a frame shake could better illustrate this
-    hide lars
+    show claude:
+        yoffset 0.0
+        easein 0.2 yoffset -120
+        easein 1.0 yoffset 1000
     Lars narration "Before I can ask any more questions, he jumps off Spotsy's back into the sea below."
 
     show lars
     #textbox shake for the next two lines
-    Lars "SIR CLAUUUUDE!!!"
+    Lars "{sc}SIR CLAUUUUDE!!!{/sc}"
 
-    Zephyr "SLICKYYYYY!!!!"
+    Zephyr "{sc}SLICKYYYYY!!!!{/sc}"
 
     Zephyr "Oh wait, I should be happy instead~ Buckle up for the show, Scouty! I'm unleashing the scandal of the century to every gossip-hungry magazine and tabloid out there."
 
     Zephyr "Watch the gold and treasure roll in as the Duponts scramble to buy the news of their only heir dying first hand. Ah, the perks of having no moral compass!"
 
     #screen shake while he’s laughing
-    Zephyr "MUAHAHAHAHA!"
+    Zephyr "{sc}MUAHAHAHAHA!{/sc}"
 
     #zephyr exits the scene while jumping up and down
     hide lars
+    show zephyr at jp:
+        linear 1.0 xalign -1.0
     Lars narration "Panic surges through me as Zephyr's heartless laughter echoes in my ears. Ignoring the unsettling sound, I quickly seize the reins from him and spur Spotsy toward Sir Claude's descending form, determined to reach him in time."
 
     #bg starts blurring
+    show bg_4:
+        linear 10 blur 50
     Lars narration "The biting chill of the wind stings my face as I race to reach Sir Claude. Time seems to slow as his figure plummets downward, and desperation fuels my actions. My fingers claw at the air as I stretch out, desperately trying to catch him, but he's falling too fast."
 
     #bg blurs even more
@@ -2330,23 +2517,48 @@ label C3_claude_bad_end:
     play sound sfx_splash
     #fade the blurred bg into black
     #fade the blurred bg into black
+    show bg_black with fade
     Lars narration "The impact is brutal, the cold water envelops us in a merciless embrace. My fur becomes waterlogged, dragging me down as I struggle to keep both of us afloat. Sir Claude's weight pulls me deeper, and my lungs burn for air."
 
     #Screen fades to bg_6, from here on out, the screen will go black every once in a while to show that he’s fighting back drowning + blur effect - sample in drive-]
+    show bg_6 with fade:
+        blur 40
     Lars narration "My consciousness...is fading…"
 
     #fades to black
+    show bg black with fade
     Lars narration "I’m... slipping away..."
 
     #fades to bg_6 blurred
+    show bg_6 with fade:
+        linear 0.5 blur 20
     Lars narration "What’s that scaly tail…why’s it wrapping around me…?"
 
     Lars narration "Sir Claude's presence resurfaces in my fading awareness as he breathes life into me once more."
 
     #fades to bg_6
-    show claude sad at center
+    scene bg_6 with fade:
+        linear 0.5 blur 0
+    show claude sad:
+        xalign 0.5
+        yalign 1.0
+        yoffset 0.0
+        xoffset 0.0
+        alpha 0.0
+        blur 100
+        parallel:
+            linear 1.0 alpha 1.0
+        parallel:
+            linear 1.0 blur 0.0
     Lars narration "Amidst the chaos of the waves, I catch a glimpse of his eyes—those yellow orbs that resemble the sun breaking through stormy clouds."
 
+    show claude sad:
+        blur 0.0
+        alpha 1.0
+        parallel:
+            linear 1.0 zoom 1.2
+        parallel:
+            linear 1.0 yoffset 200
     show lars sad
     #zoom in on claude a bit
     Lars  "Claude…"
@@ -2356,15 +2568,30 @@ label C3_claude_bad_end:
 
     #zoom out on claude
     #fades to bg_6 blurred
+    show bg_6:
+        linear 2.0 blur 20
+    show claude sad:
+        parallel:
+            linear 1.0 zoom 1.0
+        parallel:
+            linear 1.0 yoffset 0
     Lars  narration "I can barely make out his words…"
 
     #fades to black
+    show bg_black with dissolve
+    pause 1.0
     Lars narration "With every ounce of strength left in me, I try to fight back the encroaching black spell that threatens to take me. My arms tighten around Sir Claude, and I hold onto him for dear life."
 
     #3 seconds without dialogue box
     #fade in bg_5
     #claude comes on to scene with a transition
-    show claude serious
+    window hide
+    pause 1.0
+    
+    scene bg_5 with dissolve
+    pause 2.0
+
+    show claude serious with dissolve
     Lars narration "We tumble ashore in a tangled mess of limbs, drenched in salty waves. My fur clings to his rough scales, and a turbulent mix of relief and exasperation engulfs me."
 
     Lars narration "What was I thinking? I had overlooked the fundamental fact that Sir Claude is a descendant of lizards, equally adept on land and in the sea. I should have reined in my impulsiveness before plunging us into potential disaster."
@@ -2422,11 +2649,13 @@ label C3_claude_bad_end:
 
     #screen fades to black and the next line appears in the textbox, music also fades into silence
     $ renpy.choice_for_skipping()
-
     $ persistent.ending[5] = 1
+    scene bg black with fade
     " " "Claude - Bad End Achieved"
     jump end
 
 label end:
     #screen fades to black and the next line appears in the textbox, music also fades into silence
+    stop music fadeout 1.5
     scene bg black with fade
+    pause 1.5

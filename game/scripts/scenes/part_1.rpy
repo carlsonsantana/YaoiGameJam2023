@@ -1483,13 +1483,14 @@ label joke_about_his_statement:
     hide lars
     Sylvian "It’s okay [Lars], I’m just getting upset on my own."
 
-    Lars narration "My words don’t seem to be reaching him anymore, it seems."
+    Lars narration "My words don’t seem to reach him anymore, it seems."
 
 label S_2_End:
 
     show lars
     show sylvian serious funny at center
-    Sylvian "EVERYONE! Steadfast now."
+    with vpunch
+    Sylvian "{size=*1.5}EVERYONE! {size=*1.0}Steadfast now."
 
     Lars "Nevermind, he was probably feeling sentimental."
 
@@ -2741,9 +2742,15 @@ label CS_5_End:
     $ renpy.choice_for_skipping()
     show rory:
         linear 1.5 xalign 1.1
-    show claude with dissolve:
-        pause 0.25
+    show claude as clonclaude:
+        yalign 1.0
+        linear 0.25 alpha 0.0
+    show claude:
+        yalign 1.0
+        xalign 0.0 
         xzoom -1.0
+        alpha 0.0
+        linear 0.25 alpha 1.0
         pause 0.25
         linear 1.0 xalign 0.5
     show sylvian:

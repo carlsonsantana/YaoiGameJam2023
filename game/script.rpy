@@ -2,9 +2,9 @@
 default persistent.ending = [0,0,0,0,0,0]
 
 define lista_ending = ["Sylvian - Good End", "Sylvian - Neutral End", "Sylvian - Bad End", "Claude - Good End", "Claude - Neutral End", "Claude - Bad End"]
-define options = {"C1":0, "C2":0, "CS1":0, "S1":0, "S2":0, "CS2":0, "CS3":0, "CS4":0, "CS5":0, "G1":0, "CS6":0  }
-define relations = {"claude":0, "sylvian":0}
-define choice_g1 = [0,0]
+default options = {"C1":0, "C2":0, "CS1":0, "S1":0, "S2":0, "CS2":0, "CS3":0, "CS4":0, "CS5":0, "G1":0, "CS6":0  }
+default relations = {"claude":0, "sylvian":0}
+default choice_g1 = [0,0]
 
 init python:
     def calc_relations():

@@ -1832,7 +1832,7 @@ screen gallery:
 
         vbox:
             if persistent.ending[3]:
-                add gal.make_button("claude_good", "gui/gallery_idle.png", xalign=0.5, yalign=0.5)
+                add gal.make_button("claude_good", "gui/claude_idle.png", xalign=0.5, yalign=0.5)
             else:
                 add gal.make_button("claude_good", "gui/gallery_locked.png", xalign=0.5, yalign=0.5)
             text "Claude good end":
@@ -1840,7 +1840,7 @@ screen gallery:
         
         vbox:
             if persistent.ending[0]:
-                add gal.make_button("sylvian_good", "gui/gallery_idle.png", xalign=0.5, yalign=0.5)
+                add gal.make_button("sylvian_good", "gui/sylvian_idle.png", xalign=0.5, yalign=0.5)
             else:
                 add gal.make_button("sylvian_good", "gui/gallery_locked.png", xalign=0.5, yalign=0.5)
             text "Sylvian good end":
