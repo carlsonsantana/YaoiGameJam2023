@@ -86,3 +86,20 @@ label splashscreen:
 # The game starts here.
 label start:
     call lattr from _call_lattr
+
+    $ renpy.music.set_volume(0.5)  
+    $ renpy.voice.set_mixer("voice")  
+
+    $ renpy.voice.set_character_volume("lars_voice", 1.0)  
+    $ renpy.voice.set_character_volume("sylvian_voice", 1.0)  
+    $ renpy.voice.set_character_volume("rory_voice", 1.0)  
+    $ renpy.voice.set_character_volume("zephyr_voice", 1.0)  
+    $ renpy.voice.set_character_volume("claude_voice", 1.0)  
+
+    default persistent._voice_mute = False
+
+    if persistent._voice_mute:
+        $ renpy.voice.mute("lars_voice", "sylvian_voice", "rory_voice", "zephyr_voice", "claude_voice")
+    else:
+        $ renpy.voice.unmute("lars_voice", "sylvian_voice", "rory_voice", "zephyr_voice", "claude_voice")
+
