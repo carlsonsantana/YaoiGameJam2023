@@ -699,6 +699,9 @@ screen about():
         style_prefix "about"
 
         vbox:
+            if renpy.variant("small"):
+                xpos 125
+                xsize 1150
 
             label "[config.name!t]"
             text _("Version [config.version!t]\n")
@@ -874,6 +877,9 @@ screen preferences():
     use game_menu(_("Preferences")):
         vbox:
             xpos 60
+            if renpy.variant("small"):
+                xpos 175
+
             grid 2 2:
                 xalign 100
                 xsize 400
