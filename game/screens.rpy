@@ -62,10 +62,11 @@ style vscrollbar:
 
 style slider:
     #ysize gui.slider_size
-    ysize 50
+    ysize 60
+    xsize 325
     base_bar Frame("gui/slider/horizontal_[prefix_]bar.png", gui.slider_borders, tile=gui.slider_tile)
     thumb "gui/slider/horizontal_[prefix_]thumb.png"
-    thumb_offset 25
+    thumb_offset 20
 
 style vslider:
     xsize gui.slider_size
@@ -409,8 +410,6 @@ screen navigation():
         elif not main_menu:
 
             textbutton _("Main Menu") action MainMenu()
-
-        textbutton _("About") action ShowMenu("about")
 
         textbutton "Gallery" action ShowMenu("gallery")
 
@@ -811,20 +810,11 @@ screen file_slots(title):
                     if config.has_autosave:
                         textbutton _("{#auto_page}A") action FilePage("auto")
 
-                    if config.has_quicksave:
-                        textbutton _("{#quick_page}Q") action FilePage("quick")
-
                     ## range(1, 10) gives the numbers from 1 to 9.
                     for page in range(1, 10):
                         textbutton "[page]" action FilePage(page)
 
                     textbutton _(">") action FilePageNext()
-
-                if config.has_sync:
-                    if CurrentScreenName() == "save":
-                        textbutton _("Upload Sync"):
-                            action UploadSync()
-                            xalign 0.5
 
 
 style page_label is gui_label
@@ -878,7 +868,7 @@ screen preferences():
                 xalign 100
                 xsize 400
                 xspacing 80
-                yspacing -220
+                yspacing -250
                 if renpy.variant("pc") or renpy.variant("web"):
                         #xalign 0.5
                         #yalign 0.5
@@ -899,8 +889,7 @@ screen preferences():
                         label _("Skip")
                         textbutton _("Unseen Text") action Preference("skip", "toggle")
                         textbutton _("After Choices") action Preference("after choices", "toggle")
-                        textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
-
+                        
                     ## Additional vboxes of type "radio_pref" or "check_pref" can be
                     ## added here, to add additional creator-defined preferences.
 
@@ -910,13 +899,13 @@ screen preferences():
 
                     bar value Preference("text speed")
 
-                    null height 15
+                    null height 10
 
                     label _("Auto-Forward Time")
 
                     bar value Preference("auto-forward time")
 
-                    null height 15
+                    null height 10
 
                     if config.has_music:
                         label _("Music Volume")
@@ -924,7 +913,7 @@ screen preferences():
                         hbox:
                             bar value Preference("music volume")
 
-                    null height 15
+                    null height 10
 
                     if config.has_sound:
 
@@ -936,6 +925,7 @@ screen preferences():
                             if config.sample_sound:
                                 textbutton _("Test") action Play("sound", config.sample_sound)
 
+                        null height 70
                 vbox:
                     align (0.0, 0.5)
 
@@ -943,57 +933,61 @@ screen preferences():
                         label _("Voice Volume")
 
                         # Vertical spacing
-                        null height 40
+                        null height 10
 
                     if config.has_music or config.has_sound or config.has_voice:
                         # Lars
                         hbox:
+                            align (1.0, 0.5)
                             label _("Lars")
                             null width 40
-                            bar value Preference("lars_voice volume")
+                            bar value SetCharacterVolume("lars")
 
                         # Vertical spacing
                         null height 20
 
                         # Sylvian
                         hbox:
+                            align (0.0, 0.5)
                             label _("Sylvian")
                             null width 40
-                            bar value Preference("sylvian_voice volume")
-
-                        # Vertical spacing
-                        null height 20
-
-                        # Rory
-                        hbox:
-                            label _("Rory")
-                            null width 40
-                            bar value Preference("rory_voice volume")
-
-                        # Vertical spacing
-                        null height 20
-
-                        # Zephyr
-                        hbox:
-                            label _("Zephyr")
-                            null width 40
-                            bar value Preference("zephyr_voice volume")
+                            bar value SetCharacterVolume("sylvian")
 
                         # Vertical spacing
                         null height 20
 
                         # Claude
                         hbox:
+                            align (0.0, 0.5)
                             label _("Claude")
                             null width 40
-                            bar value Preference("claude_voice volume")
+                            bar value SetCharacterVolume("claude")
+
+                        # Vertical spacing
+                        null height 20
+
+                        # Zephyr
+                        hbox:
+                            align (0.0, 0.5)
+                            label _("Zephyr")
+                            null width 40
+                            bar value SetCharacterVolume("zephyr")
+
+                        # Vertical spacing
+                        null height 20
+
+                        # Rory
+                        hbox:
+                            align (1.0, 0.5)
+                            label _("Rory")
+                            null width 40
+                            bar value SetCharacterVolume("rory")
 
                         null height 20
 
                         textbutton _("Mute All"):
                             action Preference("all mute", "toggle")
                             style "mute_all_button"
-
 
 style pref_label is gui_label
 style pref_label_text is gui_label_text

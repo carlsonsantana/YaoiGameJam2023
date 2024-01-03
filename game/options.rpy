@@ -62,7 +62,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-define config.main_menu_music = "audio/main_menu.mp3"
+define config.main_menu_music = "audio/track_0_opening.ogg"
 
 
 ## Transitions #################################################################
@@ -143,7 +143,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "love_amidst_the_timeless_rift-1687376810"
+define config.save_directory = "Love_Amidst_the_Timeless_Rift"
 
 
 ## Icon ########################################################################

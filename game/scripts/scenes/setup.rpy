@@ -86,14 +86,7 @@ define audio.sfx_clap = "sfx_clap.ogg"
 define audio.sfx_smack = "sfx_smack.ogg"
 define audio.sfx_splash = "sfx_splash.ogg"
 
-#Voice
-define l = Character(_("Lars"), voice_tag= "lars")
-define s = Character(_("Sylvian"), voice_tag= "sylvian")
-define c = Character(_("Claude"), voice_tag= "claude")
-define z = Character(_("Zephyr"), voice_tag= "zephyr")
-define r = Character(_("Rory"), voice_tag= "rory")
-
-#Other Images
+#Otras imagenes
 image smoke:
     "images/smoke.png" #with dissolve(0.5, alpha=True)
     alpha 0.00
@@ -114,9 +107,3 @@ image blink_necklace:
 
 image cg_lars_sylvian_ge:
     "images/cg/cg_lars_sylvian_ge.png"
-
-image cg_lars_claude_ge:
-    "images/cg/cg_lars_claude_ge.png"
-
-image bg_black:
-    "images/background/bg black.png"
