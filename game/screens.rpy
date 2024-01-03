@@ -117,9 +117,7 @@ screen say(who, what):
 
     ## If there's a side image, display it above the text. Do not display on the
     ## phone variant - there's no room.
-    if not renpy.variant("small"):
-        
-        add SideImage() xalign 0.0 yalign 1.0
+    add SideImage() xalign 0.0 yalign 1.0
 
 
 ## Make the namebox available for styling through the Character object.
@@ -698,6 +696,9 @@ screen about():
         style_prefix "about"
 
         vbox:
+            if renpy.variant("small"):
+                xpos 125
+                xsize 1150
 
             label "[config.name!t]"
             text _("Version [config.version!t]\n")
@@ -864,6 +865,9 @@ screen preferences():
     use game_menu(_("Preferences")):
         vbox:
             xpos 60
+            if renpy.variant("small"):
+                xpos 175
+
             grid 2 2:
                 xalign 100
                 xsize 400
@@ -1697,23 +1701,23 @@ style pref_vbox:
 
 ## Since a mouse may not be present, we replace the quick menu with a version
 ## that uses fewer and bigger buttons that are easier to touch.
-screen quick_menu():
-    variant "touch"
-
-    zorder 100
-
-    if quick_menu:
-
-        hbox:
-            style_prefix "quick"
-
-            xalign 0.5
-            yalign 1.0
-
-            textbutton _("Back") action Rollback()
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Menu") action ShowMenu()
+#screen quick_menu():
+#    variant "touch"
+#
+#    zorder 100
+#
+#    if quick_menu:
+#
+#        hbox:
+#            style_prefix "quick"
+#
+#            xalign 0.5
+#            yalign 1.0
+#
+#            textbutton _("Back") action Rollback()
+#            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
+#            textbutton _("Auto") action Preference("auto-forward", "toggle")
+#            textbutton _("Menu") action ShowMenu()
 
 
 style window:
