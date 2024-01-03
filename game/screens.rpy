@@ -933,6 +933,8 @@ screen preferences():
                         null height 70
                 vbox:
                     align (0.0, 0.5)
+                    if renpy.variant("small"):
+                        align (-0.5, 0.5)
 
                     if config.has_voice:
                         label _("Voice Volume")
