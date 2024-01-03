@@ -4,10 +4,10 @@ label lattr:
     show bg black with dissolve
     with Pause(1)
     
-    play music "track_1_intro.ogg" fadein 2.0
+    play music "track_1_intro.ogg" fadeout 2.0 fadein 2.0
 
     python:
-        player_name = renpy.input("What is your name?", length=16, default="Lars")
+        player_name = renpy.input("Could you kindly tell us your name? If you don’t have a preference, we’d be delighted to use ‘Lars’ as the default.)", length=16, default="Lars")
         player_name = player_name.strip()
 
         if player_name == "":
@@ -20,7 +20,7 @@ label lattr:
     $ quick_menu = False
 
     #scene bg black
-    #$ cf(3, "opening_scene.mp3")
+    #$ cf(3, "track_0_opening.ogg")
 
     pause 1
     #scene bg white with dissolve

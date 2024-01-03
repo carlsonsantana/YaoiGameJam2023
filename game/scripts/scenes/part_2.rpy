@@ -1877,7 +1877,7 @@ label C3_claude_good_end:
 
     Lars "{i}Spiriting me away{/i}, didn't I choose you first when asking Zephyr to let me bring you along?"
 
-    Claude "Only because I made myself irresistibly pickable."
+    Claude "Only because I made myself irresistibly selectable."
 
     Claude "Anyway, they've got it all figured out, I'm sure. Now, how about a few more stolen kisses?"
 
