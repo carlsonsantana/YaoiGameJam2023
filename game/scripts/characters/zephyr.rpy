@@ -1,5 +1,6 @@
-define Zephyr = Character("Zephyr", color="#CD4EDD")
-define Malevolent = Character("Malevolent", color="#CD4EDD")
+default zephyr_name = "Zephyr"
+define Zephyr= Character("[zephyr_name]", color="#CD4EDD")
+define Malevolent= Character("Malevolent", color="#CD4EDD")
 
 image zephyr:
     "images/characters/zephyr_happy.png"

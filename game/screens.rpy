@@ -874,13 +874,15 @@ screen preferences():
                 xspacing 80
                 yspacing -250
                 if renpy.variant("pc") or renpy.variant("web"):
-                    #xalign 0.5
-                    #yalign 0.5
-                    vbox:
-                        style_prefix "check"
-                        label _("Display")
-                        textbutton _("Window") action Preference("display", "window")
-                        textbutton _("Fullscreen") action Preference("display", "fullscreen")
+                        #xalign 0.5
+                        #yalign 0.5
+                        vbox:
+                            style_prefix "check"
+                            label _("Display")
+                            textbutton _("Window") action Preference("display", "window")
+                            textbutton _("Fullscreen") action Preference("display", "fullscreen")
+                else:
+                    null height (5 * gui.pref_spacing)
 
                 vbox:
                     #style_prefix "slider"
@@ -894,9 +896,6 @@ screen preferences():
                         
                     ## Additional vboxes of type "radio_pref" or "check_pref" can be
                     ## added here, to add additional creator-defined preferences.
-
-                if not (renpy.variant("pc") or renpy.variant("web")):
-                    null height (5 * gui.pref_spacing)
 
                 vbox:
                     align (0.0,0.0)
@@ -933,8 +932,6 @@ screen preferences():
                         null height 70
                 vbox:
                     align (0.0, 0.5)
-                    if renpy.variant("small"):
-                        align (-0.5, 0.5)
 
                     if config.has_voice:
                         label _("Voice Volume")

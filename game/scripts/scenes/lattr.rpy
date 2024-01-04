@@ -7,7 +7,7 @@ label lattr:
     play music "track_1_intro.ogg" fadeout 2.0 fadein 2.0
 
     python:
-        player_name = renpy.input("Could you kindly tell us your name? If you don’t have a preference, we’d be delighted to use ‘Lars’ as the default.)", length=16, default="Lars")
+        player_name = renpy.input("Please enter your name. If you don’t have a preference, we’d be delighted to use ‘Lars’ as the default.)", length=16, default="Lars")
         player_name = player_name.strip()
 
         if player_name == "":

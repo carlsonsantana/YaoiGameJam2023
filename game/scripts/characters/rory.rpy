@@ -1,4 +1,5 @@
-define Rory = Character("Rory", color="#004AAD", image="rory")
+default rory_name = "Rory"
+define Rory = Character("[rory_name]", color="#004AAD", image="rory")
 
 image rory:
     "images/characters/rory_default.png"

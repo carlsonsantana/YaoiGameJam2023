@@ -18,21 +18,25 @@ label sylvian_route:
         yalign 0
     show claude at center_left
     show sylvian at center_right
-    show rory at right
+    show rory at right with dissolve:
+        xalign 1.05
+    
+    voice "audio/voice/zephyr/zephyr_077_take02.ogg"
     show lars
     Zephyr "Did you pick someone already? I need something big to spark my gossip debut if I plan to pay off my debt and renovation costs with your confession shenanigan."
 
-    hide lars
     Lars narration "I grab Master Sylvian's hand in mine and interlace our fingers as I raise them up for Zephyr to see."
 
-    show lars
+    show lars blush
     Lars "I choose him."
 
-    #here the arrangement will change as claude gets turned into claude_sad during the last sentence and then he exits the scene. 
-    #sylvian will move to the center, rory  and zephyr will be in the same position
     $ renpy.choice_for_skipping()
-    show claude sad:
-        linear 2.0 xalign -1.0
+    show claude sad with dissolve
+    
+    Lars narration "Sir Claude seems a bit off, but I can't worry about that now. I need to concentrate on Master Sylvian."
+    
+    hide claude sad with dissolve
+
     show sylvian blush at center with move
     Sylvian "Thank you [Lars]. I truly mean it."
 
@@ -41,14 +45,17 @@ label sylvian_route:
     show lars blush
     Sylvian "Now my heart can rest at ease knowing I’m allowed to selfishly stay by your side."
 
+    voice "audio/voice/zephyr/zephyr_078_take01.ogg"
     show lars
     show sylvian
     Zephyr "So, Smarty it is then!"
 
+    voice "audio/voice/zephyr/zephyr_079_take02.ogg"
     Zephyr "Now tell me, what makes him so special? How's the scoop going to be different from all the other celebrity gossip columns and panels?"
 
     Sylvian "Well, he’s  a renowned magician—"
 
+    voice "audio/voice/zephyr/zephyr_080_take02.ogg"
     show zephyr sad 
     Zephyr "Boring! Anyone could just slap a make-shift title for themselves; that doesn't make you’re gossip-worthy."
 
@@ -58,6 +65,7 @@ label sylvian_route:
 
     Rory "If I'm not going to vouch for my mentor, then who will?"
 
+    voice "audio/voice/zephyr/zephyr_081_take02.ogg"
     show zephyr happy
     Zephyr "That does indeed sound like a juicy tale for the gossip mill — the renowned swan-tist of Divonia and his hidden discovery —  but it's missing something. Perhaps a love confession would…"
 
@@ -67,9 +75,11 @@ label sylvian_route:
     hide lars
     Lars narration "I don't want to risk getting the other guild members hurt, and more importantly, I don't want anyone else suffering from the time freeze's effects."
 
+    voice "audio/voice/zephyr/zephyr_082_take02.ogg"
     show lars serious
-    Zephyr "Fineeee, I wouldn't dishonor my family by breaking my oaths, but you better cough up a scoop worthy of my undivided attention!"
+    Zephyr "Fine, I wouldn't dishonor my family by breaking my oaths, but you better cough up a scoop worthy of my undivided attention!"
 
+    voice "audio/voice/zephyr/zephyr_083_take02.ogg"
     Zephyr "Let's spice up the setting while we're at it; I wouldn't want someone else to hijack my headline when I finally release them from their frozen state. Scouty, pick a fancy locale, won't you?"
 
     hide zephyr
@@ -83,16 +93,19 @@ label sylvian_route:
 
     Lars narration "The sun is gradually sinking towards the horizon, casting cold hues across the sky as late afternoon approaches."
 
+    voice "audio/voice/zephyr/zephyr_087_take01.ogg"
     show zephyr sad at left:
         yalign 0
     show sylvian
     Zephyr "Whose brilliant idea was it to choose the seaside for a confession scene?"
 
+    voice "audio/voice/zephyr/zephyr_088_take02.ogg"
     Zephyr "I had to bring a dragon for the ride just to carry you two over here."
 
     show lars
     Lars "You wanted a place with few to no people, and here we are."
 
+    voice "audio/voice/zephyr/zephyr_089_take02.ogg"
     show zephyr happy
     Zephyr "Whatever! I'm focused on keeping the coast clear, especially since I had to unfreeze everyone but I've got my eyes and ears on you two. Make it count while we're down here."
 
@@ -114,11 +127,13 @@ label sylvian_route:
 
     Lars "Perhaps Zephyr should have taken up the role of the prime content for his beloved gossip column with all the antics he's pulling. Exploiting the humans' unfamiliarity with Div customs and culture would certainly add a mysterious twist for everyone once they learn what's been happening under their noses."
 
+    voice "audio/voice/zephyr/zephyr_092_take03.ogg"
     #zephyr_happy suddenly comes in from the right and zooms in super close to MC, almost as if his sprite is covering up everything behind the textbox
     show zephyr:
         linear 0.5 xalign 1.0
     Zephyr "I HEARD THAT!"
 
+    voice "audio/voice/zephyr/zephyr_093_take02.ogg"
     Zephyr "Enough with the chatter, spill the icy confessions instead!"
 
     #zephyr_happy exits the scene from the right
@@ -340,12 +355,15 @@ label S3_sylvian_bad_end:
         linear 0.5 xalign 2.0
     Lars narration "He flutters his large swan wings open causing his feathers to ruffle. They catch the cold hues of the afternoon sun as he lifts off the ground and soars into the sky. The sudden display captures Zephyr's attention, prompting him to shout out."
 
+    voice "audio/voice/zephyr/zephyr_094_take02.ogg"
     hide sylvian
     show zephyr sad
     Zephyr "SMARTY!"
 
+    voice "audio/voice/zephyr/zephyr_095_take02.ogg"
     Zephyr "Where do you think you’re going?! You have to give me some gossip material first!"
 
+    voice "audio/voice/zephyr/zephyr_096_take02.ogg"
     Zephyr "I’m not letting you get away!"
 
     hide sylvian
@@ -358,6 +376,7 @@ label S3_sylvian_bad_end:
     show smoke
     Lars "Spotsy responds with a subtle shiver and releases a puff of smoke as if bracing herself for the impending journey."
 
+    voice "audio/voice/zephyr/zephyr_097_take02.ogg"
     show lars
     Zephyr "Ouch, were you planning on blinding me with that glitter-bomb breath of yours?!"
 
@@ -370,6 +389,7 @@ label S3_sylvian_bad_end:
     with dissolve
     Lars "I’m going to need your help, Spotsy."
 
+    voice "audio/voice/zephyr/zephyr_098_take01.ogg"
     Zephyr "Hey! When did I allow you guys to leave without my permission?! I’m going to make you pay for-"
 
     hide lars
@@ -712,11 +732,14 @@ label S3_sylvian_neutral_end:
         linear 0.5 xalign 2.0
     Lars narration "He flutters his large swan wings open causing his feathers to ruffle. They catch the cold hues of the afternoon sun as he lifts off the ground and soars into the sky. The sudden display captures Zephyr's attention, prompting him to shout out."
 
+    voice "audio/voice/zephyr/zephyr_094_take02.ogg"
     show zephyr sad
     Zephyr "SMARTY!"
 
+    voice "audio/voice/zephyr/zephyr_095_take02.ogg"
     Zephyr "Where do you think you’re going?! You have to give me some gossip material first!"
 
+    voice "audio/voice/zephyr/zephyr_096_take02.ogg"
     Zephyr "I’m not letting you get away!"
 
     hide sylvian
@@ -729,6 +752,7 @@ label S3_sylvian_neutral_end:
     show smoke
     Lars "Spotsy responds with a subtle shiver and releases a puff of smoke as if bracing herself for the impending journey."
 
+    voice "audio/voice/zephyr/zephyr_097_take02.ogg"
     show lars
     Zephyr "Ouch, were you planning on blinding me with that glitter-bomb breath of yours?!"
 
@@ -741,6 +765,7 @@ label S3_sylvian_neutral_end:
     with dissolve
     Lars "I’m going to need your help, Spotsy."
 
+    voice "audio/voice/zephyr/zephyr_098_take01.ogg"
     Zephyr "Hey! When did I allow you guys to leave without my permission?! I’m going to make you pay for-"
 
     hide lars
@@ -1313,10 +1338,12 @@ label S3_sylvian_good_end:
 
     Lars "What do we do about Zephyr, then?"
 
+    voice "audio/voice/zephyr/zephyr_099_take02.ogg"
     #zephyr’s happy sprite appears where lars’s side sprite usually is because I don’t want to ruin the CG
     show zephyr happy at left
     Zephyr "I’ve been acting like a third wheel all this time, hehe. You guys just focus on your lovey-dovey confession scene. I’m gathering gossip material as is."
 
+    voice "audio/voice/zephyr/zephyr_100_take02.ogg"
     Zephyr "“The renowned scientist —or should I say, swan-tist— and his ice-pectacle love confession”. The gossip mill will have a field day with this!"
 
     hide zephyr
@@ -1354,6 +1381,8 @@ label claude_route:
     show claude at center_left
     show sylvian at center_right
     show rory at right
+    
+    voice "audio/voice/zephyr/zephyr_077_take02.ogg"
     show lars
     Zephyr "Did you pick someone already? I need something big to spark my gossip debut if I plan to pay off my debt and renovation costs with your confession shenanigan."
 
@@ -1369,12 +1398,15 @@ label claude_route:
     show claude smile at center with move
     Claude "It appears that the Captain [Lars] has quite the discerning eye. I’m honored to be beheld by it."
 
+    voice "audio/voice/zephyr/zephyr_084_take01.ogg"
     Zephyr "So, Slicky it is then!"
 
+    voice "audio/voice/zephyr/zephyr_085_take01.ogg"
     Zephyr "Now tell me, what makes him so special? How's the scoop going to be different from all the other celebrity gossip columns and panels?"
 
     Sylvian "Well, he’s  a renowned merchant—"
 
+    voice "audio/voice/zephyr/zephyr_080_take02.ogg"
     show sylvian serious funny
     show zephyr sad
     Zephyr "Boring! Anyone could just slap a make-shift title for themselves; that doesn't make you’re gossip-worthy."
@@ -1386,6 +1418,7 @@ label claude_route:
 
     Rory "Payback time~"
 
+    voice "audio/voice/zephyr/zephyr_086_take02.ogg"
     Zephyr "That does indeed sound like a juicy tale for the gossip mill — the tail-smacking adventures of Slicky — but it's missing something.  Perhaps a love confession would…"
 
     Rory "Ah, he wouldn't be able to do that. After all, his name starts with a 'C' for conceited and ends with an 'E' for egotistical."
@@ -1402,9 +1435,11 @@ label claude_route:
     hide lars
     Lars narration "I don't want to risk getting the other guild members hurt, and more importantly, I don't want anyone else suffering from the time freeze's effects."
 
+    voice "audio/voice/zephyr/zephyr_082_take02.ogg"
     show lars serious
-    Zephyr "Fineeee, I wouldn't dishonor my family by breaking my oaths, but you better cough up a scoop worthy of my undivided attention!"
+    Zephyr "Fine, I wouldn't dishonor my family by breaking my oaths, but you better cough up a scoop worthy of my undivided attention!"
 
+    voice "audio/voice/zephyr/zephyr_083_take02.ogg"
     Zephyr "Let's spice up the setting while we're at it; I wouldn't want someone else to hijack my headline when I finally release them from their frozen state. Scouty, pick a fancy locale, won't you?"
 
     hide zephyr
@@ -1417,12 +1452,14 @@ label claude_route:
 
     show zephyr sad at left:
         yalign 0
+    voice "audio/voice/zephyr/zephyr_090_take01.ogg"
     show claude
     Zephyr "Whose brilliant idea was it to ride a dragon for a confession scene?"
 
     show lars serious
     Lars "You wanted a place with few to no people, and here we are."
 
+    voice "audio/voice/zephyr/zephyr_091_take01.ogg"
     show zephyr happy
     Zephyr "Whatever! I'm focusing on steering this ship but I've got my eyes and ears on you two. Make it count while we're down here."
 
@@ -1856,10 +1893,12 @@ label C3_claude_good_end:
             linear 5.0 zoom 1.0
     Lars "Bring it on."
 
+    voice "audio/voice/zephyr/zephyr_108_take02.ogg"
     #zephyr’s happy sprite appears where lars’s side sprite usually is because I don’t want to ruin the CG
     show zephyr at left
     Zephyr "Ah, what a headline! “The infamous Slicky Dupont and his love affair with the dragon pilot, Scouty”. I'll have to work around the details later, but what a story it will be."
 
+    voice "audio/voice/zephyr/zephyr_109_take01.ogg"
     #textbox shake while he’s laughing
     Zephyr "I'll earn back the costs of my renovations plans tenfold, or maybe even a hundredfold! {sc}MUAHAHAHAHA!{/sc}"
 
@@ -2003,6 +2042,7 @@ label C3_claude_neutral_end:
         linear 2.5 xalign 0.0
         xzoom 1
 
+    voice "audio/voice/zephyr/zephyr_101_take01.ogg"
     Zephyr "OI OI OI, I'm not looking to make my hands any messier; bloody theatrics tend to repel future fans, you know!"
 
     show claude smile
@@ -2036,12 +2076,16 @@ label C3_claude_neutral_end:
     with vpunch
     Lars "{size=*2.0}SIR CLAUUUUDE!!!"
 
+    voice "audio/voice/zephyr/zephyr_102_take01.ogg"
     Zephyr "{bt}{size=*1.75}SLICKYYYYY!!!!{/bt}"
 
+    voice "audio/voice/zephyr/zephyr_103_take01.ogg"
     Zephyr "Oh wait, I should be happy instead~ Buckle up for the show, Scouty! I'm unleashing the scandal of the century to every gossip-hungry magazine and tabloid out there."
 
+    voice "audio/voice/zephyr/zephyr_104_take02.ogg"
     Zephyr "Watch the gold and treasure roll in as the Duponts scramble to buy the news of their only heir dying first hand. Ah, the perks of having no moral compass!"
 
+    voice "audio/voice/zephyr/zephyr_105_take01.ogg"
     #screen shake while he’s laughing
     Zephyr "{sc}{size=*1.75}MUAHAHAHAHA!{/sc}"
 
@@ -2428,7 +2472,7 @@ label C3_claude_bad_end:
         Claude "I did make a promise to you, but I suppose I'm not as good at keeping my word as I believed I would be."
 
 
-
+    voice "audio/voice/zephyr/zephyr_106_take02.ogg"
     #zephyr comes in from the left does a little jump at first
     show zephyr:
         yalign 0.0
@@ -2451,6 +2495,7 @@ label C3_claude_bad_end:
         xoffset 0
         xalign 0.0
 
+    voice "audio/voice/zephyr/zephyr_107_take01.ogg"
     Zephyr "Honestly, if you're not up to the task, you might as well just leap off this dragon's back; you're just extra baggage right now. Come on, give me the theatrics, the flair! THE SCOOP!"
 
     show claude
@@ -2469,6 +2514,7 @@ label C3_claude_bad_end:
         xzoom -1
         linear 2.5 xalign 0.0
         xzoom 1
+    voice "audio/voice/zephyr/zephyr_101_take01.ogg"
     Zephyr "OI OI OI, I'm not looking to make my hands any messier; bloody theatrics tend to repel future fans, you know!"
 
     show claude serious
@@ -2491,12 +2537,16 @@ label C3_claude_bad_end:
     #textbox shake for the next two lines
     Lars "{sc}SIR CLAUUUUDE!!!{/sc}"
 
+    voice "audio/voice/zephyr/zephyr_102_take01.ogg"
     Zephyr "{sc}SLICKYYYYY!!!!{/sc}"
 
+    voice "audio/voice/zephyr/zephyr_103_take01.ogg"
     Zephyr "Oh wait, I should be happy instead~ Buckle up for the show, Scouty! I'm unleashing the scandal of the century to every gossip-hungry magazine and tabloid out there."
 
+    voice "audio/voice/zephyr/zephyr_104_take02.ogg"
     Zephyr "Watch the gold and treasure roll in as the Duponts scramble to buy the news of their only heir dying first hand. Ah, the perks of having no moral compass!"
 
+    voice "audio/voice/zephyr/zephyr_105_take01.ogg"
     #screen shake while he’s laughing
     Zephyr "{sc}MUAHAHAHAHA!{/sc}"
 

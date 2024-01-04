@@ -70,6 +70,7 @@ define center_3left = Position(xalign=0.3, yalign = 1.0)
 define center_left = Position(xalign=0.4, yalign = 1.0)
 
 define center_right = Position(xalign=0.6, yalign = 1.0)
+define center_1right = Position(xalign=0.7, yalign = 1.0)
 define center_2right = Position(xalign=0.8, yalign = 1.0)
 define center_3right = Position(xalign=0.85, yalign = 1.0)
 define right_far = Position(xalign=2.0, yalign = 1.0)
@@ -86,7 +87,7 @@ define audio.sfx_clap = "sfx_clap.ogg"
 define audio.sfx_smack = "sfx_smack.ogg"
 define audio.sfx_splash = "sfx_splash.ogg"
 
-#Otras imagenes
+#Other images
 image smoke:
     "images/smoke.png" #with dissolve(0.5, alpha=True)
     alpha 0.00
