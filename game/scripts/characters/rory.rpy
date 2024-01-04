@@ -1,5 +1,5 @@
 default rory_name = "Rory"
-define Rory = Character("[rory_name]", color="#004AAD", image="rory")
+define Rory = Character("[rory_name]", color="#004AAD", image="rory", voice_tag= "rory")
 
 image rory:
     "images/characters/rory_default.png"

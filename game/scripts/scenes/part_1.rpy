@@ -1249,6 +1249,9 @@ label accept_his_offer:
     show lars blush
     Sylvian "{size=*1.25}OF COURSE I DO!" with vpunch
 
+    show sylvian:
+        zoom 1.0
+
     Lars narration "Wow, it’s not often that he raises his voice like that."
 
     show lars
@@ -1285,7 +1288,7 @@ label S_1_End:
 
     show claude serious at jp
     show lars
-    Claude "AHEM! I think we’re better off witnessing the artifact before the evening sets in and little Rory decides to pull something off for her puppets again."
+    Claude "{i}AHEM!{/i} I think we’re better off witnessing the artifact before the evening sets in and little Rory decides to pull something off for her puppets again."
 
     show rory angry with dissolve
     show claude smile with dissolve
@@ -1415,6 +1418,9 @@ label S_1_End:
     show sylvian serious funny at jp
     show lars serious
     Sylvian "{size=*1.25}Both of you, it’s time to stop." with vpunch
+
+    show sylvian:
+        zoom 1.0
 
     show claude shocked with dissolve
     show rory with dissolve
@@ -1825,8 +1831,10 @@ label master_Sylvian:
         parallel:
             linear 1.0 xalign 0.5
 
+    show sylvian:
+        zoom 1.0
 
-    Lars narration "That's one of the many things I admire about him—being so knowledgeable yet never shying away from wanting to discover more about the world and the people around him."
+    Lars narration "That's one of the many things I admire about him— being so knowledgeable yet never shying away from wanting to discover more about the world and the people around him."
 
     show sylvian at right with move
 
@@ -1855,7 +1863,6 @@ label sir_Claude:
 
     Lars narration "Just looking at him now, with those silver braids cascading down his back, I’m served a gentle reminder to do something about my own unruly fox fur and maybe tidy up my ponytail."
 
-
     show bg_3:
         linear 1.0 zoom 1.0
     show claude smile:
@@ -1866,8 +1873,10 @@ label sir_Claude:
         parallel:
             linear 1.0 xalign 0.5
 
+    show claude:
+        zoom 1.0
 
-    Lars narration "That's one of the many things I admire about him—being his own source of inspiration without having to make a conscious effort to appeal to others or impress them."
+    Lars narration "That's one of the many things I admire about him— being his own source of inspiration without having to make a conscious effort to appeal to others or impress them."
 
     show claude smile at center_1left with move
 
@@ -3007,8 +3016,7 @@ label CS_5_End:
     voice "audio/voice/zephyr/zephyr_001_take01.ogg"
     show lars serious
     $ zephyr_name = "Unknown"
-    Zephyr "Looks like some {i}interesting{/i} Divs have entered my domain while I was occupied."
-
+    Zephyr "Looks like some interesting Divs have entered my domain while I was occupied."
 
     $ renpy.choice_for_skipping()
     show rory:
@@ -3146,6 +3154,9 @@ label CS_5_End:
     $ zephyr_name = "Unknown"
     Zephyr "You, the one with the flowery hat, must be the smart one in the group since you haven’t interrupted me so far. I’ll call you Smarty from now on."
 
+    show zephyr:
+        zoom 1.0
+
     voice "audio/voice/zephyr/zephyr_013_take02.ogg"
     show lars serious
     $ zephyr_name = "Unknown"
@@ -3161,6 +3172,12 @@ label CS_5_End:
     show rory angry with dissolve
     show rory angry at jp
     show claude shocked at jp
+
+    show rory angry:
+        zoom 1.0
+
+    show claude shocked:
+        zoom 1.0
 
     show lars serious
     Rory "—ever interrupt you?" with vpunch
@@ -3326,7 +3343,7 @@ label are_you_the_person:
     show zephyr sad with dissolve
 
     show zephyr sad at jp
-    voice "audio/voice/zephyr/zephyr_028_take01"
+    voice "audio/voice/zephyr/zephyr_028_take01.ogg"
     show lars serious
     Zephyr "K-K-Kid?! I’m older than all of you combined! I mean, I’ve been sleeping for a few centuries but ugh that’s not the point! Let me start from the beginning since you’re so quick to make me out to be a low-class villain, Slicky." with vpunch
 
@@ -3354,6 +3371,9 @@ label are_you_the_person:
     voice "audio/voice/zephyr/zephyr_032_take02.ogg"
     show lars serious
     Zephyr "You don’t need to know the details."
+
+    show zephyr:
+        zoom 1.0
 
     show rory at shake
     show lars serious
@@ -3406,7 +3426,7 @@ label are_you_the_person:
     show lars serious
     Zephyr "Should we ever deviate from our path and misuse it, the paired artifact would counteract the spell. Anyone who touches it would be immune to the artifact's magic."
 
-    voice "audio/voice/zephyr/zephyr_038_take02"
+    voice "audio/voice/zephyr/zephyr_038_take02.ogg"
     show lars serious
     Zephyr "Basically, the same necklace but with a different colored gemstone and the opposite ability—"
 
@@ -3423,6 +3443,9 @@ label are_you_the_person:
     show zephyr at shake
     show lars serious
     Zephyr "Hmm, yeah, what about it?"
+
+    show zephyr:
+        zoom 1.0
 
     show lars serious
     Sylvian "Out of curiosity, where is that artifact now?"
@@ -4401,6 +4424,9 @@ label CS_6_End:
     show lars serious
     Zephyr "Yikes, are you attempting to blast a hole through my non-existent eardrums or something?"
 
+    show zephyr:
+        zoom 1.0
+
     Lars "We’ll be your private entertainers and provide the scoop you need for your renovation funds."
 
     Lars narration "I share a meaningful look with my fellow guild members, and it's clear that they are all equally puzzled. The silence that follows my suggestion serves as confirmation."
@@ -4516,6 +4542,9 @@ label CS_6_End:
     show lars serious
     Claude "Don’t get too excited now, Captain. I’m not going to let you go down this route by yourself—"
 
+    show claude:
+        zoom 1.0
+
     show sylvian sad with dissolve
     show lars serious
     Sylvian "Forget the plan, we didn’t discuss this self-sacrificing scenario, [Lars]! You mustn’t risk—"
@@ -4566,7 +4595,6 @@ label CS_6_End:
         Lars narration "Why he departed academia and how it caused him to abandon his past and establish the guild for us, alongside the rationale behind his motto of life to keep things uncomplicated and go with the flow."
 
         Lars narration "Most importantly, I wonder why he wants me to be safe within his sight…"
-
 
 
     show claude smile with dissolve

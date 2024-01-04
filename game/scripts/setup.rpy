@@ -86,12 +86,6 @@ define audio.sfx_clap = "sfx_clap.ogg"
 define audio.sfx_smack = "sfx_smack.ogg"
 define audio.sfx_splash = "sfx_splash.ogg"
 
-#Voice
-define l = Character(_("Lars"), voice_tag= "lars")
-define s = Character(_("Sylvian"), voice_tag= "sylvian")
-define c = Character(_("Claude"), voice_tag= "claude")
-define z = Character(_("Zephyr"), voice_tag= "zephyr")
-define r = Character(_("Rory"), voice_tag= "rory")
 
 #Other Images
 image smoke:
