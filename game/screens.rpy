@@ -872,7 +872,7 @@ screen preferences():
                 xalign 100
                 xsize 400
                 xspacing 80
-                yspacing -250
+                yspacing -290
                 if renpy.variant("pc") or renpy.variant("web"):
                         #xalign 0.5
                         #yalign 0.5
@@ -921,10 +921,10 @@ screen preferences():
 
                     if config.has_sound:
 
-                        label _("Voice Volume")
+                        label _("Sound Volume")
 
                         hbox:
-                            bar value Preference("voice volume")
+                            bar value Preference("sound volume")
 
                             if config.sample_sound:
                                 textbutton _("Test") action Play("sound", config.sample_sound)
@@ -987,7 +987,7 @@ screen preferences():
                             null width 40
                             bar value SetCharacterVolume("rory")
 
-                        null height 20
+                        null height 30
 
                         textbutton _("Mute All"):
                             action Preference("all mute", "toggle")

@@ -3,7 +3,14 @@ transform pan:
     subpixel True
     xalign 0.0
     yalign 0.5
-    linear 20.0 xalign 1.0
+    linear 25.0 xalign 1.0
+
+transform up_pan:
+    zoom 1.5
+    subpixel True
+    xalign 0.0
+    yalign 0.5
+    linear 15.0 yalign 0.0
 
 transform end_pan:
     parallel:
