@@ -281,14 +281,14 @@ screen quick_menu():
                     ysize 64
                     #action Rollback()
                     action ShowMenu("save")
-                
+
                 textbutton _(""):
                     #background "gui/textbox/load.png"
                     hover_background "gui/textbox/load_hover.png"
                     xsize 72
                     ysize 64
                     action ShowMenu("load")
-                
+
                 textbutton _(""):
                     #background "gui/textbox/auto.png"
                     hover_background "gui/textbox/auto_hover.png"
@@ -296,7 +296,7 @@ screen quick_menu():
                     ysize 64
                     #action Preference("auto-forward", "toggle")
                     action Preference("auto-forward", "enable")
-                
+
                 textbutton _(""):
                     #background "gui/textbox/skip.png"
                     hover_background "gui/textbox/skip_hover.png"
@@ -304,27 +304,27 @@ screen quick_menu():
                     ysize 64
                     action Skip() alternate Skip(fast=True, confirm=True)
                     #action Skip(fast=True, confirm=True)
-                
+
                 textbutton _(""):
                     #background "gui/textbox/history.png"
                     hover_background "gui/textbox/history_hover.png"
                     xsize 72
                     ysize 64
                     action ShowMenu('history')
-                
+
                 textbutton _(""):
                     #background "gui/textbox/prefs.png"
                     hover_background "gui/textbox/prefs_hover.png"
                     xsize 72
                     ysize 64
                     action ShowMenu('preferences')
-                
+
                 #textbutton _(""):
                 #    background "gui/textbox/main_menu.png"
                 #    xsize 72
                 #   ysize 64
                 #    action MainMenu()
-                
+
             # textbutton _("History") action ShowMenu('history')
             # textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             # textbutton _("Auto") action Preference("auto-forward", "toggle")
@@ -456,7 +456,7 @@ screen main_menu():
     # use navigation
 
     if gui.show_name:
-        
+
         vbox:
             style "main_menu_vbox"
 
@@ -465,7 +465,7 @@ screen main_menu():
 
             text "[config.version]":
                 style "main_menu_version"
-    
+
     # Based on TellerFarsight at https://lemmasoft.renai.us/forums/viewtopic.php?t=44710
     style_prefix "main_menu"
 
@@ -477,7 +477,7 @@ screen main_menu():
         idle "gui/btn_start.png"
         hover_sound "audio/sfx_cursorhover4.ogg"
         action Start()
-    
+
     imagebutton:
         xpos 0
         ypos 840
@@ -486,7 +486,7 @@ screen main_menu():
         idle "gui/btn_load.png"
         hover_sound "audio/sfx_cursorhover4.ogg"
         action ShowMenu("load")
-    
+
     imagebutton:
         xpos 500
         ypos 840
@@ -495,7 +495,7 @@ screen main_menu():
         idle "gui/btn_extras.png"
         hover_sound "audio/sfx_cursorhover4.ogg"
         action ShowMenu("gallery")
-    
+
     imagebutton:
         xpos 1010
         ypos 840
@@ -762,7 +762,7 @@ screen file_slots(title):
             order_reverse True
 
             ## The page name, which can be edited by clicking on a button.
-            
+
 
             ## The grid of file slots.
             grid gui.file_slot_cols gui.file_slot_rows:
@@ -873,15 +873,11 @@ screen preferences():
                 xspacing 80
                 yspacing -290
                 if renpy.variant("pc") or renpy.variant("web"):
-                        #xalign 0.5
-                        #yalign 0.5
-                        vbox:
-                            style_prefix "check"
-                            label _("Display")
-                            textbutton _("Window") action Preference("display", "window")
-                            textbutton _("Fullscreen") action Preference("display", "fullscreen")
-                else:
-                    null height (5 * gui.pref_spacing)
+                    vbox:
+                        style_prefix "check"
+                        label _("Display")
+                        textbutton _("Window") action Preference("display", "window")
+                        textbutton _("Fullscreen") action Preference("display", "fullscreen")
 
                 vbox:
                     #style_prefix "slider"
@@ -892,9 +888,11 @@ screen preferences():
                         label _("Skip")
                         textbutton _("Unseen Text") action Preference("skip", "toggle")
                         textbutton _("After Choices") action Preference("after choices", "toggle")
-                        
+
                     ## Additional vboxes of type "radio_pref" or "check_pref" can be
                     ## added here, to add additional creator-defined preferences.
+                if not (renpy.variant("pc") or renpy.variant("web")):
+                    null height (5 * gui.pref_spacing)
 
                 vbox:
                     align (0.0,0.0)
@@ -1044,7 +1042,7 @@ style check_vbox:
 style check_button:
     properties gui.button_properties("check_button")
     foreground "gui/button/check_[prefix_]foreground.png"
-    
+
 
 style check_button_text:
     properties gui.button_text_properties("check_button")
@@ -1854,7 +1852,7 @@ screen gallery:
                 add gal.make_button("claude_good", "gui/gallery_locked.png", xalign=0.5, yalign=0.5)
             text "Claude Good End":
                 xalign 0.5
-        
+
         vbox:
             if persistent.ending[0]:
                 add gal.make_button("sylvian_good", "gui/sylvian_idle.png", xalign=0.5, yalign=0.5)
@@ -1862,12 +1860,12 @@ screen gallery:
                 add gal.make_button("sylvian_good", "gui/gallery_locked.png", xalign=0.5, yalign=0.5)
             text "Sylvian Good End":
                 xalign 0.5
-        
+
         #vbox:
         #    add gal.make_button("opening", "gui/gallery_idle.png", xalign=0.5, yalign=0.5)
         #    text "Opening Screen":
         #        xalign 0.5
-        
+
         #vbox:
         #    add gal.make_button("art", "gui/gallery_idle.png", xalign=0.5, yalign=0.5)
         #    text "Art":
@@ -1889,14 +1887,14 @@ screen lstend:
 
     # A grid of buttons.
     style_prefix "about"
-    
+
     label "Ending List":
         xpos 1030
         ypos 46
         #text_style "gui_accent_text"
         text_size 70
         text_color '#b20202'
-    
+
     grid 1 6:
         xpos 250
         ypos 250
@@ -1907,7 +1905,7 @@ screen lstend:
         for i in range(6): #txt in lista_ending:
             $ txt = lista_ending[i] if persistent.ending[i]==1 else ""
             label txt:
-                xalign 0.5 
+                xalign 0.5
                 yalign 0.5
                 text_color '#000000'
                 if txt=="":
