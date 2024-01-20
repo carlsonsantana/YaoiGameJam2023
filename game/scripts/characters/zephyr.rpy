@@ -1,6 +1,5 @@
 default zephyr_name = "Zephyr"
-define Zephyr= Character("[zephyr_name]", color="#CD4EDD", voice_tag= "zephyr")
-define Malevolent= Character("Malevolent Architect of Debt", color="#CD4EDD", voice_tag= "zephyr")
+define Zephyr = Character("[zephyr_name]", color="#CD4EDD", image = "zephyr", voice_tag= "zephyr")
 
 image zephyr:
     "images/characters/zephyr_happy.png"

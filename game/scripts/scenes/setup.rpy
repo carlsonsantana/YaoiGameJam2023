@@ -1,9 +1,23 @@
+transform up_pan:
+    zoom 1.5
+    subpixel True
+    xalign 0.0
+    yalign 0.5
+    linear 15.0 yalign 0.0
+    
 transform pan:
     zoom 1.5
     subpixel True
     xalign 0.0
     yalign 0.5
     linear 20.0 xalign 1.0
+
+transform slow_pan:
+    zoom 1.2
+    subpixel True
+    xalign 0.0
+    yalign 0.5
+    linear 60.0 xalign 1.0
 
 transform end_pan:
     parallel:

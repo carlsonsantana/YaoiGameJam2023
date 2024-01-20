@@ -1,5 +1,6 @@
 ﻿# The script of the game goes in this file.
 default persistent.ending = [0,0,0,0,0,0]
+default persistent.set_volumes = False
 
 define lista_ending = ["Sylvian - Good End", "Sylvian - Neutral End", "Sylvian - Bad End", "Claude - Good End", "Claude - Neutral End", "Claude - Bad End"]
 default options = {"C1":0, "C2":0, "CS1":0, "S1":0, "S2":0, "CS2":0, "CS3":0, "CS4":0, "CS5":0, "G1":0, "CS6":0  }
@@ -81,6 +82,12 @@ label splashscreen:
     scene bg black with dissolve
     with Pause(1)
 
+    python:
+        if not persistent.set_volumes:
+            persistent.set_volumes = True
+        
+            preferences.set_mixer("music", 0.5)
+            preferences.set_mixer("sfx", 0.5)
     return
 
 # The game starts here.

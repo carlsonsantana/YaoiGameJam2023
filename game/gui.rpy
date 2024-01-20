@@ -28,11 +28,11 @@ define config.check_conflicting_properties = True
 define gui.accent_color = '#b20202'
 
 ## The color used for a text button when it is neither selected nor hovered.
-define gui.idle_color = '#302600'
+define gui.idle_color = '#000000'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
-define gui.idle_small_color = '#aaaaaa'
+define gui.idle_small_color = '#000000'
 
 ## The color that is used for buttons and bars that are hovered.
 #define gui.hover_color = '#d294af'
@@ -43,7 +43,7 @@ define gui.hover_color = '#ce4f48'
 define gui.selected_color = '#9e4d4d' # '#ffffff'
 
 ## The color used for a text button when it cannot be selected.
-define gui.insensitive_color = '#8888887f'
+define gui.insensitive_color = '#000000'
 
 ## Colors used for the portions of bars that are not filled in. These are not
 ## used directly, but are used when re-generating bar image files.
@@ -222,7 +222,7 @@ define gui.choice_button_text_xalign = 0.5
 define gui.choice_button_text_idle_color = '#000000'
 #define gui.choice_button_text_hover_color = "#ffffff"
 define gui.choice_button_text_hover_color = '#7A211D'
-define gui.choice_button_text_insensitive_color = '#8888887f'
+define gui.choice_button_text_insensitive_color = '#000000'
 
 
 ## File Slot Buttons ###########################################################

@@ -1,4 +1,5 @@
-define Lars = Character("[Lars_name]", color="#C82727", image="lars", voice_tag= "lars")
+default lars_name = "Lars"
+define Lars = Character("[lars_name]", color="#C82727", image="lars", voice_tag= "lars")
 
 # image lars = Transform("images/characters/lars.png", xalign=0.0)
 image lars hi: 

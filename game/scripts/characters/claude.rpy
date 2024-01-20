@@ -1,7 +1,6 @@
 default claude_name = "Claude"
 define Claude = Character("[claude_name]", color="#897A3C", image = "claude", voice_tag= "claude")
 
-# We can put character specific subroutines here
 image claude:
     "images/characters/claude_default.png"
     zoom 0.75

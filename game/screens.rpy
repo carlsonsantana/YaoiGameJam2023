@@ -267,8 +267,8 @@ screen quick_menu():
             background None
 
             #yalign 1.0
-            ypos 748
-            xpos 1217
+            ypos 747
+            xpos 1266
 
             hbox:
                 style_prefix "quick"
@@ -304,14 +304,6 @@ screen quick_menu():
                     ysize 64
                     action Skip() alternate Skip(fast=True, confirm=True)
                     #action Skip(fast=True, confirm=True)
-                
-                textbutton _(""):
-                    #background "gui/textbox/pause.png"
-                    hover_background "gui/textbox/pause_hover.png"
-                    xsize 72
-                    ysize 64
-                    #action [Preference("auto-forward", "disable"), Skip(fast=False, confirm=False)]
-                    action Preference("auto-forward", "disable")
                 
                 textbutton _(""):
                     #background "gui/textbox/history.png"
@@ -401,6 +393,15 @@ screen navigation():
 
         textbutton _("Preferences") action ShowMenu("preferences")
 
+        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+
+            ## Help isn't necessary or relevant to mobile devices.
+            textbutton _("Help") action ShowMenu("help")
+
+        textbutton "Gallery" action ShowMenu("gallery")
+
+        textbutton "Ending list" action ShowMenu("lstend")
+
         if _in_replay:
 
             textbutton _("End Replay") action EndReplay(confirm=True)
@@ -409,14 +410,9 @@ screen navigation():
 
             textbutton _("Main Menu") action MainMenu()
 
-        textbutton "Gallery" action ShowMenu("gallery")
 
-        textbutton "Ending list" action ShowMenu("lstend")
 
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
-            ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
 
         if renpy.variant("pc"):
 
@@ -731,14 +727,26 @@ screen save():
 
     tag menu
 
-    use file_slots(_("Save"))
+    use file_slots(_(""))
+    label "Save":
+        xpos 1210
+        ypos 46
+        #text_style "gui_accent_text"
+        text_size 70
+        text_color '#b20202'
 
 
 screen load():
 
     tag menu
 
-    use file_slots(_("Load"))
+    use file_slots(_(""))
+    label "Load":
+        xpos 1210
+        ypos 46
+        #text_style "gui_accent_text"
+        text_size 70
+        text_color '#b20202'
 
 
 screen file_slots(title):
@@ -754,16 +762,7 @@ screen file_slots(title):
             order_reverse True
 
             ## The page name, which can be edited by clicking on a button.
-            button:
-                style "page_label"
-
-                key_events True
-                xalign 0.5
-                action page_name_value.Toggle()
-
-                input:
-                    style "page_label_text"
-                    value page_name_value
+            
 
             ## The grid of file slots.
             grid gui.file_slot_cols gui.file_slot_rows:
@@ -1169,6 +1168,8 @@ screen help():
     default device = "keyboard"
 
     use game_menu(_("Help"), scroll="viewport"):
+        vbox:
+            xpos 200
 
         style_prefix "help"
 
@@ -1216,14 +1217,6 @@ screen keyboard_help():
     hbox:
         label _("Tab")
         text _("Toggles dialogue skipping.")
-
-    hbox:
-        label _("Page Up")
-        text _("Rolls back to earlier dialogue.")
-
-    hbox:
-        label _("Page Down")
-        text _("Rolls forward to later dialogue.")
 
     hbox:
         label "H"
@@ -1804,22 +1797,6 @@ style slider_slider:
 
 ## Custom screen
 
-## Ending screen
-
-screen ending_screen:
-
-    style_prefix "ending_screen"
-
-    frame:
-        background None
-        textbutton _(""):
-            xsize 146
-            ysize 66
-            xpos 1118
-            ypos 896
-            foreground "gui/ending/ending_link.jpeg"
-            action [OpenURL("https://deniz-g-lerosi.itch.io/love-amidst-the-timeless-rift"), MainMenu()]
-
 # Gallery
 
 init python:
@@ -1855,7 +1832,7 @@ screen gallery:
     add "gui/game_menu.png"
 
     label "Gallery":
-        xpos 1000
+        xpos 1100
         ypos 46
         #text_style "gui_accent_text"
         text_size 70
@@ -1914,18 +1891,18 @@ screen lstend:
     style_prefix "about"
     
     label "Ending List":
-        xpos 1000
+        xpos 1030
         ypos 46
         #text_style "gui_accent_text"
         text_size 70
         text_color '#b20202'
     
     grid 1 6:
-        xpos 220
-        ypos 200
+        xpos 250
+        ypos 250
         xfill True
         yfill False
-        yspacing 60
+        yspacing 70
 
         for i in range(6): #txt in lista_ending:
             $ txt = lista_ending[i] if persistent.ending[i]==1 else ""
