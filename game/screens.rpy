@@ -269,6 +269,8 @@ screen quick_menu():
             #yalign 1.0
             ypos 747
             xpos 1266
+            if renpy.variant("small"):
+                xpos 1276
 
             hbox:
                 style_prefix "quick"
