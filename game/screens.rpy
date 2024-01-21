@@ -732,6 +732,8 @@ screen save():
     use file_slots(_(""))
     label "Save":
         xpos 1210
+        if renpy.variant("small"):
+            xpos 1150
         ypos 46
         #text_style "gui_accent_text"
         text_size 70
@@ -745,6 +747,8 @@ screen load():
     use file_slots(_(""))
     label "Load":
         xpos 1210
+        if renpy.variant("small"):
+            xpos 1150
         ypos 46
         #text_style "gui_accent_text"
         text_size 70
