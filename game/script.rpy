@@ -86,7 +86,7 @@ label splashscreen:
         if not persistent.set_volumes:
             persistent.set_volumes = True
         
-            preferences.set_mixer("music", 0.5)
+            preferences.set_mixer("music", 0.4)
             preferences.set_mixer("sfx", 0.5)
     return
 

@@ -13,6 +13,7 @@ init python:
 
 ## Enable checks for invalid or unstable properties in screens or transforms
 define config.check_conflicting_properties = True
+define config.keymap['hide_windows'] = None
 
 
 ################################################################################
@@ -69,10 +70,10 @@ define gui.name_text_color = default_name_text_color
 define gui.interface_text_font = "fonts/Delius-Regular.ttf"
 
 ## The size of normal dialogue text.
-define gui.text_size = 33
+define gui.text_size = 42
 
 ## The size of character names.
-define gui.name_text_size = 60
+define gui.name_text_size = 70
 
 ## The size of text in the game's user interface.
 define gui.interface_text_size = 42

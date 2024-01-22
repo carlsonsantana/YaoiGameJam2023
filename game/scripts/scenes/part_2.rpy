@@ -28,7 +28,7 @@ label sylvian_route:
     show lars
     Zephyr "Did you pick someone already? I need something big to spark my gossip debut if I plan to pay off my debt and renovation costs with your confession shenanigan."
 
-    Lars narration "I grab Master Sylvian's hand in mine and interlace our fingers as I raise them up for Zephyr to see."
+    "I grab Master Sylvian's hand in mine and interlace our fingers as I raise them up for Zephyr to see."
 
     show lars blush
     Lars "I choose him."
@@ -36,7 +36,7 @@ label sylvian_route:
     $ renpy.choice_for_skipping()
     show claude sad with dissolve
     
-    Lars narration "Upon my declaration, Sir Claude's holds his hand on his chest, a sour expression etching on his face as he blankly stares ahead. But I can't worry about that now. I need to concentrate on Master Sylvian."
+    "Upon my declaration, Sir Claude's holds his hand on his chest, a sour expression etching on his face as he blankly stares ahead. But I can't worry about that now. I need to concentrate on Master Sylvian."
     
     hide claude sad with dissolve
 
@@ -102,7 +102,7 @@ label sylvian_route:
 
     play music "track_6_romance_scene.ogg" fadeout 2.0 fadein 2.0
 
-    Lars narration "The sun is gradually sinking towards the horizon, casting cold hues across the sky as late afternoon approaches."
+    "The sun is gradually sinking towards the horizon, casting cold hues across the sky as late afternoon approaches."
 
     show lars
     Zephyr "Whose brilliant idea was it to choose the seaside for a confession scene?"
@@ -135,7 +135,7 @@ label sylvian_route:
     show lars
     Lars "..."
     
-    Lars narration "I shoot a glance at Master Sylvian and bite my lips in frustration. I chose him as my partner, but with Zephyr so close by, I'm unsure of our next move."
+    "I shoot a glance at Master Sylvian and bite my lips in frustration. I chose him as my partner, but with Zephyr so close by, I'm unsure of our next move."
 
     show lars serious
     Lars "There's not much time, we have to do something."
@@ -191,11 +191,11 @@ label sylvian_route:
     hide sylvian with dissolve
     show vial with dissolve
     
-    Lars narration "Master Sylvian's hands glide with practiced grace, weaving a spell that envelops him in an ethereal aura of blossoms."
+    "Master Sylvian's hands glide with practiced grace, weaving a spell that envelops him in an ethereal aura of blossoms."
 
-    Lars narration "I'm momentarily entranced by the display, but my attention swiftly shifts to the vial he seemingly conjures from thin air."
+    "I'm momentarily entranced by the display, but my attention swiftly shifts to the vial he seemingly conjures from thin air."
 
-    Lars narration "As per his signature touch, the vial houses an arrangement of flowers, all sharing a captivating purplish hue. Though I can't discern the specific ingredients within. I wonder what he's planning on using it for..."
+    "As per his signature touch, the vial houses an arrangement of flowers, all sharing a captivating purplish hue. Though I can't discern the specific ingredients within. I wonder what he's planning on using it for..."
     
     hide vial with dissolve
     show sylvian with dissolve
@@ -208,7 +208,7 @@ label sylvian_route:
 
     show sylvian mad with dissolve
     show lars 
-    Lars narration "Wearing an awkward grin, he lets out a hesitant laugh. Today has shown me sides of him that I'd never imagined before."
+    "Wearing an awkward grin, he lets out a hesitant laugh. Today has shown me sides of him that I'd never imagined before."
 
     show lars
     Sylvian "Haha, of course not! I-I don't know...what I would— or what I should do if you grew to despise someone like me because of what I might say for a {i}supposed{/i} confession."
@@ -220,7 +220,7 @@ label sylvian_route:
     show lars
     Sylvian "Particularly considering his apparent lack of discrimination when it comes to topics or specific requests."
     
-    Lars narration "Feeling a sense of optimism at hearing the news, I enthusiastically chime in."
+    "Feeling a sense of optimism at hearing the news, I enthusiastically chime in."
 
     show lars
     Lars "You're right. Why didn't I think of that earlier? You could even use your connections to ask for extra help, can't you? So, we can make sure nothing like this ever happens again."
@@ -230,28 +230,28 @@ label sylvian_route:
     show lars
     Sylvian "That's going to be a bit difficult."
 
-    Lars narration "A haunting shadow descends over him, as if a storm cloud has eclipsed the sun. From the edges of his magician's hat, wilted flowers creep out, a stark contrast to their once vibrant bloom."
+    "A haunting shadow descends over him, as if a storm cloud has eclipsed the sun. From the edges of his magician's hat, wilted flowers creep out, a stark contrast to their once vibrant bloom."
 
-    Lars narration "His brows furrow and a warm flush of embarrassment tints his cheeks, like a delicate watercolor painting tainted by an unexpected hue."
+    "His brows furrow and a warm flush of embarrassment tints his cheeks, like a delicate watercolor painting tainted by an unexpected hue."
 
     Lars "But weren't you one of the top academics in the past? Surely, there's someone who can—"
 
     show lars
     Sylvian "{size=*1.25}[Lars]!" with vpunch
 
-    Lars narration "Ah, that tone again— the one that resonates like a guild leader's command. The weight in his words is palpable, leaving me curious about the sudden shift in his demeanor. But perhaps it's better to divert the conversation for now."
+    "Ah, that tone again— the one that resonates like a guild leader's command. The weight in his words is palpable, leaving me curious about the sudden shift in his demeanor. But perhaps it's better to divert the conversation for now."
 
     Lars "Got it. I won't talk about it if you don't want to."
 
-    Lars narration "I cross my arms in confusion. So, there really isn't a need for us to work together if Master Sylvian already has his plan set...he seems to have a better grasp of the situation, having planned this far ahead without informing me."
+    "I cross my arms in confusion. So, there really isn't a need for us to work together if Master Sylvian already has his plan set...he seems to have a better grasp of the situation, having planned this far ahead without informing me."
 
-    Lars narration "I should at least avoid giving him any extra burdens to shoulder. Not to mention, I brought him along without discussing it first. Good thing he seemed excited enough to come along though."
+    "I should at least avoid giving him any extra burdens to shoulder. Not to mention, I brought him along without discussing it first. Good thing he seemed excited enough to come along though."
 
-    Lars narration "Speaking of excitement, it's probably best to keep my tail perfectly still."
+    "Speaking of excitement, it's probably best to keep my tail perfectly still."
     
-    Lars narration "As for my ears, I delicately adjust them, trying to maintain an appearance of composure."
+    "As for my ears, I delicately adjust them, trying to maintain an appearance of composure."
 
-    Lars narration "Ah, I wish Spotsy were near so I could soothe my nerves by caressing her or something. I feel somewhat useless right now."
+    "Ah, I wish Spotsy were near so I could soothe my nerves by caressing her or something. I feel somewhat useless right now."
 
     show sylvian with dissolve
     show lars
@@ -265,7 +265,7 @@ label sylvian_route:
     show lars blush
     Sylvian "Hahaha! It's nothing of that sort. It's just that I've been observing you for such a long time that I can't help but pick up on your subtlest of gestures."
 
-    Lars narration "Hearing that is making me somewhat embarrassed. I'm sure he simply wanted to see if I was doing a good job or not, so I hope I haven't disappointed him."
+    "Hearing that is making me somewhat embarrassed. I'm sure he simply wanted to see if I was doing a good job or not, so I hope I haven't disappointed him."
 
     Lars "Speaking of which, Master. I did bring you along like this, but to think you had a plan of your own..."
 
@@ -303,12 +303,12 @@ label sylvian_route:
         parallel:
             linear 1.0 zoom 1.0 
 
-    Lars narration "It's rather unlikely of Master Sylvian to act in such a manner. My mind drifts to other instances where he displayed a hint of romance, only to revert to the role of a caring yet distant master."
+    "It's rather unlikely of Master Sylvian to act in such a manner. My mind drifts to other instances where he displayed a hint of romance, only to revert to the role of a caring yet distant master."
 
     show sylvian blush with dissolve:
         zoom 1.0    
 
-    Lars narration "However, this time, his shaking hands and the glistening look in his eyes suggest it's not another session of false bravado but something else— something unknown yet exciting for the first time."
+    "However, this time, his shaking hands and the glistening look in his eyes suggest it's not another session of false bravado but something else— something unknown yet exciting for the first time."
 
     hide sylvian blush with dissolve
     
@@ -338,9 +338,9 @@ label S3_sylvian_bad_end:
     
     show sylvian blush at center with dissolve
 
-    Lars narration "I should poke further about his comment."
+    "I should poke further about his comment."
 
-    Lars narration "It might get him a bit ruffled up but I can't contain my curiosity. It wouldn't hurt to tease him a little."
+    "It might get him a bit ruffled up but I can't contain my curiosity. It wouldn't hurt to tease him a little."
 
     show lars blush
     Lars "How long have you harbored these romantic thoughts, Master? I recall you mentioning that entertaining the idea of such a relationship between you and me was, as you put it...{i}unethical{/i}."
@@ -354,7 +354,7 @@ label S3_sylvian_bad_end:
     show lars blush
     Lars "Pfft, are you feeling alright? Did the concoction not calm your nerves like you wanted?"
 
-    Lars narration "A snort escapes me, the sound cutting through the air like a fleeting burst of amusement. Yet, instead of joining in laughter, Master Sylvian abruptly falls silent, his features tightening as he begins to bite his lips."
+    "A snort escapes me, the sound cutting through the air like a fleeting burst of amusement. Yet, instead of joining in laughter, Master Sylvian abruptly falls silent, his features tightening as he begins to bite his lips."
 
     show sylvian sad at shake
     show lars blush
@@ -381,7 +381,7 @@ label S3_sylvian_bad_end:
     show sylvian sad at shake
     pause 0.5
     show lars blush
-    Lars narration "Poor Master Sylvian, his delicate feathers appear tousled, as if on the brink of unraveling at any given moment."
+    "Poor Master Sylvian, his delicate feathers appear tousled, as if on the brink of unraveling at any given moment."
 
     show sylvian sad with dissolve:
         xzoom -1.0
@@ -401,9 +401,9 @@ label S3_sylvian_bad_end:
     show lars
     Sylvian "{size=*0.90}...for nothing?"
 
-    Lars narration "If my eyes weren't mistaken, it almost seemed like Master Sylvian was pouting. His eyes squinted in contemplation, and his petite beard scrunched up."
+    "If my eyes weren't mistaken, it almost seemed like Master Sylvian was pouting. His eyes squinted in contemplation, and his petite beard scrunched up."
 
-    Lars narration "A subtle furrow creased his brow, casting an endearing yet troubled expression across his features."
+    "A subtle furrow creased his brow, casting an endearing yet troubled expression across his features."
     
     show lars
     Sylvian "Tell me [Lars], is that really what you mean?"
@@ -412,27 +412,27 @@ label S3_sylvian_bad_end:
 
     Lars "You've already done what was needed and sorted out a secret scoop to share with Zephyr."
 
-    Lars narration "Contrary to my expectations, praising him doesn't seem to work. Instead of the anticipated joy, his pout deepens. The corners of his eyes seem to glisten as tears start to well up."
+    "Contrary to my expectations, praising him doesn't seem to work. Instead of the anticipated joy, his pout deepens. The corners of his eyes seem to glisten as tears start to well up."
 
     show lars
     Sylvian "I suppose...it was my mistake to have expected more, I shouldn't have indulged in my greed."
 
     Lars "Haha, what are you talking about, Master? Or were you planning on doing a secret confession since the beginning or something?"
 
-    Lars narration "The lack of a response urges me to stick to my earlier strategy and poke him even further."
+    "The lack of a response urges me to stick to my earlier strategy and poke him even further."
 
     Lars "Or could it be- is that why you sorted the gossip deal beforehand?"
 
-    Lars narration "A heavy silence lingers, seems like we're in quite an awkward situation..."
+    "A heavy silence lingers, seems like we're in quite an awkward situation..."
 
     show lars serious
     Sylvian "I-I-I...need to leave— I need to get out of here!"
 
     hide sylvian sad with moveoutright
     
-    Lars narration "He flutters his large swan wings open causing his feathers to ruffle. They catch the cold hues of the afternoon sun as he lifts off the ground, soaring into the sky."
+    "He flutters his large swan wings open causing his feathers to ruffle. They catch the cold hues of the afternoon sun as he lifts off the ground, soaring into the sky."
     
-    Lars narration "The sudden display captures Zephyr's attention, prompting him to shout out."
+    "The sudden display captures Zephyr's attention, prompting him to shout out."
 
     voice "audio/voice/zephyr/zephyr_094_take02.ogg"
     show zephyr sad with dissolve:
@@ -452,18 +452,18 @@ label S3_sylvian_bad_end:
     hide zephyr sad with dissolve
     show spotsy with dissolve
 
-    Lars narration "But before he has the chance to grumble any further, I swiftly move to the spot where Spotsy is resting."
+    "But before he has the chance to grumble any further, I swiftly move to the spot where Spotsy is resting."
     
-    Lars narration "Smoothly climbing onto her back, I feel the afternoon air gently bristling against my fur."
+    "Smoothly climbing onto her back, I feel the afternoon air gently bristling against my fur."
 
     show smoke
-    Lars narration "Spotsy responds with a subtle shiver and releases a puff of smoke as if bracing herself for the impending journey."
+    "Spotsy responds with a subtle shiver and releases a puff of smoke as if bracing herself for the impending journey."
 
     voice "audio/voice/zephyr/zephyr_097_take02.ogg"
     show lars serious
     Zephyr "Ouch, were you planning on blinding me with that glitter-bomb breath of yours?!"
 
-    Lars narration "Now's not the time to humor him, unfortunately."
+    "Now's not the time to humor him, unfortunately."
 
     hide smoke
     hide spotsy
@@ -481,14 +481,14 @@ label S3_sylvian_bad_end:
     hide zephyr sad with moveoutbottom
 
     play sound sfx_smack
-    Lars narration "A thwacking sound instantly rings in the air and I look back to see that our not-so-friendly ghost has been knocked to the ground looking completely unconscious."
+    "A thwacking sound instantly rings in the air and I look back to see that our not-so-friendly ghost has been knocked to the ground looking completely unconscious."
 
     show spotsy with dissolve
     show lars serious
     Lars "Normally, I'd have to give you a scolding for smacking people like that, Spotsy. But there's something more important at stake now."
 
     show smoke
-    Lars narration "She murmurs and wags her tail back and forth- most likely the instrument of the crime behind Zephyr's unexpected tumble."
+    "She murmurs and wags her tail back and forth- most likely the instrument of the crime behind Zephyr's unexpected tumble."
 
     show lars serious
     Lars "Can you please follow after Master Sylvian?"
@@ -503,20 +503,20 @@ label S3_sylvian_bad_end:
     scene bg black with fade
     show bg_4 at up_pan
 
-    Lars narration "Spotsy instantly fluffs up her wings, taking flight. The ocean gradually shrinks beneath us as we ascend into the sky."
+    "Spotsy instantly fluffs up her wings, taking flight. The ocean gradually shrinks beneath us as we ascend into the sky."
     
     show bg_4 at end_pan
 
     scene bg black with fade
     show bg_7 at pan
 
-    Lars narration "We glide through billowy clouds, soft as cotton candy, as the world below turns into a distant patchwork of greens and blues."
+    "We glide through billowy clouds, soft as cotton candy, as the world below turns into a distant patchwork of greens and blues."
 
-    Lars narration "The air feels crisp, the wind hums gently, and the sun bathes the clouds in hues of pink and blue, creating a tranquil haven above the world."
+    "The air feels crisp, the wind hums gently, and the sun bathes the clouds in hues of pink and blue, creating a tranquil haven above the world."
 
-    Lars narration "Soon enough, the familiar figure of the slender magician comes into view. His silhouette, somewhat hunched at the neck but always rising to the occasion, is cross-legged at the top of a cloud."
+    "Soon enough, the familiar figure of the slender magician comes into view. His silhouette, somewhat hunched at the neck but always rising to the occasion, is cross-legged at the top of a cloud."
 
-    Lars narration "Wilting flowers have blossomed around him, bowing down in a withering manner mirroring the posture of Master Sylvian himself."
+    "Wilting flowers have blossomed around him, bowing down in a withering manner mirroring the posture of Master Sylvian himself."
 
     show bg_7 at end_pan
 
@@ -528,7 +528,7 @@ label S3_sylvian_bad_end:
     show lars serious
     Lars "Can you hear me?"
     
-    Lars narration "I observe his back shrinking even more, without any response coming my way."
+    "I observe his back shrinking even more, without any response coming my way."
 
     show lars serious
     Lars "If you don't answer, I might just dive into the cloud you're lounging on the count of three!"
@@ -551,11 +551,11 @@ label S3_sylvian_bad_end:
         easein 0.2 yoffset 10
         easeout 0.2 yoffset 0
     
-    Lars narration "Determined, I leap off Spotsy's back, ready to embrace the uncertainty of landing on the cloud's flowery spots."
+    "Determined, I leap off Spotsy's back, ready to embrace the uncertainty of landing on the cloud's flowery spots."
     
-    Lars narration "Yet, before I can experience the leap of fate, a flurry of petals swirl beneath my dragon-riding boots, guiding my descent."
+    "Yet, before I can experience the leap of fate, a flurry of petals swirl beneath my dragon-riding boots, guiding my descent."
 
-    Lars narration "The petals gracefully direct me towards Master Sylvian, aligning with my steps. As soon as he concludes his incantation, the petals disassemble, leaving me standing seamlessly on the cloud, unfazed by the unconventional landing."
+    "The petals gracefully direct me towards Master Sylvian, aligning with my steps. As soon as he concludes his incantation, the petals disassemble, leaving me standing seamlessly on the cloud, unfazed by the unconventional landing."
 
     show sylvian with dissolve
     show sylvian at center with move
@@ -617,13 +617,13 @@ label S3_sylvian_bad_end:
     show lars sad
     Lars "Are you upset with me, Master? Did I do something wrong?"
 
-    Lars narration "His back, crooked and hunched, still remains turned towards me, amplifying the sense that I'm speaking to an impassive wall."
+    "His back, crooked and hunched, still remains turned towards me, amplifying the sense that I'm speaking to an impassive wall."
     
     show sylvian mad with dissolve
     show lars sad
     Sylvian "Certainly not; it's just a product of your imagination."
 
-    Lars narration "That peculiar expression resurfaces once more. An awkward smile concealing a hidden joke meant solely for his own amusement."
+    "That peculiar expression resurfaces once more. An awkward smile concealing a hidden joke meant solely for his own amusement."
 
     show lars sad
     Sylvian "I'm just getting upset on my own."
@@ -713,14 +713,14 @@ label S3_sylvian_bad_end:
     hide sylvian with dissolve 
     show black_feather with dissolve
 
-    Lars narration "I can see his feathers falling as he walks away, leaving a trail of imprints in the cloud. I try catching them at first, but then I realize he's pulling them himself, intentionally shedding them."
+    "I can see his feathers falling as he walks away, leaving a trail of imprints in the cloud. I try catching them at first, but then I realize he's pulling them himself, intentionally shedding them."
     
-    Lars narration "I start picking them up one by one but the distace between us keeps getting wider and wider. Each feather feels like a piece of something lost, and the air is heavy with the unspoken weight of the moment."
+    "I start picking them up one by one but the distace between us keeps getting wider and wider. Each feather feels like a piece of something lost, and the air is heavy with the unspoken weight of the moment."
     
     show lars sad
     Lars "You have to stop Master, you're hurting yourself..."
     
-    Lars narration "He gracefully turns back and pulls a single feather from the folds of his wings, idly twirling it between his fingers as if lost in thought."
+    "He gracefully turns back and pulls a single feather from the folds of his wings, idly twirling it between his fingers as if lost in thought."
 
     hide black_feather with dissolve
     
@@ -761,9 +761,9 @@ label S3_sylvian_bad_end:
     show lars sad
     Sylvian "It was the {i}jealousy{/i} and looks of {i}hatred{/i} from my fellow magicians and academics, those whom I yearned to share my thoughts with."
 
-    Lars narration "His voice starts shaking a little, and I can sense a sob that he's trying to hold down, but his attempts are futile as tears prickle in the corner of his eyes."
+    "His voice starts shaking a little, and I can sense a sob that he's trying to hold down, but his attempts are futile as tears prickle in the corner of his eyes."
 
-    Lars narration "Here was the descendent whom I had admired as a wise and poetic leader. Yet, all this time, he held such sorrows in his heart, hidden away from everyone."
+    "Here was the descendent whom I had admired as a wise and poetic leader. Yet, all this time, he held such sorrows in his heart, hidden away from everyone."
 
     voice "audio/voice/sylvian/sylvian_125_take02.ogg"
     show lars sad
@@ -865,9 +865,9 @@ label S3_sylvian_bad_end:
     show lars sad
     Sylvian "I suppose it was an unattainable goal to desire more. I dreamt of it and lost what was already in my grasp."
 
-    Lars narration "His eyes drop. Everything happened so quickly, in a way I never saw coming. Maybe he'd made up his mind before I could react, or perhaps my choices led us here. I just stare at him, feeling utterly helpless."
+    "His eyes drop. Everything happened so quickly, in a way I never saw coming. Maybe he'd made up his mind before I could react, or perhaps my choices led us here. I just stare at him, feeling utterly helpless."
 
-    Lars narration "I wish for him to meet my gaze once more, but I fear he won't lift his head again."
+    "I wish for him to meet my gaze once more, but I fear he won't lift his head again."
 
     show sylvian sad with dissolve:
         xzoom -1.0
@@ -888,9 +888,9 @@ label S3_sylvian_neutral_end:
     play music "track_9_bad_ending.ogg" fadeout 2.0 fadein 2.0
     
     show sylvian blush at center with dissolve
-    Lars narration "I should move past his comment."
+    "I should move past his comment."
 
-    Lars narration "There are more pressing matters at hand."
+    "There are more pressing matters at hand."
 
     show sylvian sad with dissolve
     show lars
@@ -925,9 +925,9 @@ label S3_sylvian_neutral_end:
     show lars
     Sylvian "...for nothing?"
 
-    Lars narration "If my eyes weren't mistaken, it almost seemed like Master Sylvian was pouting. His eyes squinted in contemplation, and his petite beard scrunched up."
+    "If my eyes weren't mistaken, it almost seemed like Master Sylvian was pouting. His eyes squinted in contemplation, and his petite beard scrunched up."
 
-    Lars narration "A subtle furrow creased his brow, casting an endearing yet troubled expression across his features."
+    "A subtle furrow creased his brow, casting an endearing yet troubled expression across his features."
 
     show lars
     Sylvian "Tell me [Lars], is that really what you mean?"
@@ -940,21 +940,21 @@ label S3_sylvian_neutral_end:
     show lars
     Lars "Haha, what are you talking about, Master? Or were you planning on doing a secret confession since the beginning or something?"
 
-    Lars narration "The lack of a response urges me to stick to my earlier strategy and pass over his comment again."
+    "The lack of a response urges me to stick to my earlier strategy and pass over his comment again."
 
     show lars
     Lars "Or could it be- is that why you sorted the gossip deal beforehand?"
 
-    Lars narration "A heavy silence lingers, seems like we're in quite an awkward situation..."
+    "A heavy silence lingers, seems like we're in quite an awkward situation..."
 
     show lars serious
     Sylvian "I-I-I...need to leave— I need to get out of here!"
 
     hide sylvian sad with moveoutright
     
-    Lars narration "He flutters his large swan wings open causing his feathers to ruffle. They catch the cold hues of the afternoon sun as he lifts off the ground, soaring into the sky."
+    "He flutters his large swan wings open causing his feathers to ruffle. They catch the cold hues of the afternoon sun as he lifts off the ground, soaring into the sky."
     
-    Lars narration "The sudden display captures Zephyr's attention, prompting him to shout out."
+    "The sudden display captures Zephyr's attention, prompting him to shout out."
 
     voice "audio/voice/zephyr/zephyr_094_take02.ogg"
     show zephyr sad with dissolve:
@@ -974,18 +974,18 @@ label S3_sylvian_neutral_end:
     hide zephyr sad with dissolve
     show spotsy with dissolve
 
-    Lars narration "But before he has the chance to grumble any further, I swiftly move to the spot where Spotsy is resting."
+    "But before he has the chance to grumble any further, I swiftly move to the spot where Spotsy is resting."
     
-    Lars narration "Smoothly climbing onto her back, I feel the afternoon air gently bristling against my fur."
+    "Smoothly climbing onto her back, I feel the afternoon air gently bristling against my fur."
 
     show smoke
-    Lars narration "Spotsy responds with a subtle shiver and releases a puff of smoke as if bracing herself for the impending journey."
+    "Spotsy responds with a subtle shiver and releases a puff of smoke as if bracing herself for the impending journey."
 
     voice "audio/voice/zephyr/zephyr_097_take02.ogg"
     show lars serious
     Zephyr "Ouch, were you planning on blinding me with that glitter-bomb breath of yours?!"
 
-    Lars narration "Now's not the time to humor him, unfortunately."
+    "Now's not the time to humor him, unfortunately."
 
     hide smoke
     hide spotsy
@@ -1003,14 +1003,14 @@ label S3_sylvian_neutral_end:
     hide zephyr sad with moveoutbottom
 
     play sound sfx_smack
-    Lars narration "A thwacking sound instantly rings in the air and I look back to see that our not-so-friendly ghost has been knocked to the ground looking completely unconscious."
+    "A thwacking sound instantly rings in the air and I look back to see that our not-so-friendly ghost has been knocked to the ground looking completely unconscious."
 
     show spotsy with dissolve
     show lars serious
     Lars "Normally, I'd have to give you a scolding for smacking people like that, Spotsy. But there's something more important at stake now."
 
     show smoke
-    Lars narration "She murmurs and wags her tail back and forth- most likely the instrument of the crime behind Zephyr's unexpected tumble."
+    "She murmurs and wags her tail back and forth- most likely the instrument of the crime behind Zephyr's unexpected tumble."
 
     show lars serious
     Lars "Can you please follow after Master Sylvian?"
@@ -1025,20 +1025,20 @@ label S3_sylvian_neutral_end:
     scene bg black with fade
     show bg_4 at up_pan
 
-    Lars narration "Spotsy instantly fluffs up her wings, taking flight. The ocean gradually shrinks beneath us as we ascend into the sky."
+    "Spotsy instantly fluffs up her wings, taking flight. The ocean gradually shrinks beneath us as we ascend into the sky."
     
     show bg_4 at end_pan
 
     scene bg black with fade
     show bg_7 at pan
 
-    Lars narration "We glide through billowy clouds, soft as cotton candy, as the world below turns into a distant patchwork of greens and blues."
+    "We glide through billowy clouds, soft as cotton candy, as the world below turns into a distant patchwork of greens and blues."
 
-    Lars narration "The air feels crisp, the wind hums gently, and the sun bathes the clouds in hues of pink and blue, creating a tranquil haven above the world."
+    "The air feels crisp, the wind hums gently, and the sun bathes the clouds in hues of pink and blue, creating a tranquil haven above the world."
 
-    Lars narration "Soon enough, the familiar figure of the slender magician comes into view. His silhouette, somewhat hunched at the neck but always rising to the occasion, is cross-legged at the top of a cloud."
+    "Soon enough, the familiar figure of the slender magician comes into view. His silhouette, somewhat hunched at the neck but always rising to the occasion, is cross-legged at the top of a cloud."
 
-    Lars narration "Wilting flowers have blossomed around him, bowing down in a withering manner mirroring the posture of Master Sylvian himself."
+    "Wilting flowers have blossomed around him, bowing down in a withering manner mirroring the posture of Master Sylvian himself."
 
     show bg_7 at end_pan
 
@@ -1050,7 +1050,7 @@ label S3_sylvian_neutral_end:
     show lars serious
     Lars "Can you hear me?"
     
-    Lars narration "I observe his back shrinking even more, without any response coming my way."
+    "I observe his back shrinking even more, without any response coming my way."
 
     show lars serious
     Lars "If you don't answer, I might just dive into the cloud you're lounging on the count of three!"
@@ -1073,11 +1073,11 @@ label S3_sylvian_neutral_end:
         easein 0.2 yoffset 10
         easeout 0.2 yoffset 0
     
-    Lars narration "Determined, I leap off Spotsy's back, ready to embrace the uncertainty of landing on the cloud's flowery spots."
+    "Determined, I leap off Spotsy's back, ready to embrace the uncertainty of landing on the cloud's flowery spots."
     
-    Lars narration "Yet, before I can experience the leap of fate, a flurry of petals swirl beneath my dragon-riding boots, guiding my descent."
+    "Yet, before I can experience the leap of fate, a flurry of petals swirl beneath my dragon-riding boots, guiding my descent."
 
-    Lars narration "The petals gracefully direct me towards Master Sylvian, aligning with my steps. As soon as he concludes his incantation, the petals disassemble, leaving me standing seamlessly on the cloud, unfazed by the unconventional landing."
+    "The petals gracefully direct me towards Master Sylvian, aligning with my steps. As soon as he concludes his incantation, the petals disassemble, leaving me standing seamlessly on the cloud, unfazed by the unconventional landing."
 
     show sylvian with dissolve
     show sylvian at center with move
@@ -1139,13 +1139,13 @@ label S3_sylvian_neutral_end:
     show lars sad
     Lars "Are you upset with me, Master? Did I do something wrong?"
 
-    Lars narration "His back, crooked and hunched, still remains turned towards me, amplifying the sense that I'm speaking to an impassive wall."
+    "His back, crooked and hunched, still remains turned towards me, amplifying the sense that I'm speaking to an impassive wall."
     
     show sylvian mad with dissolve
     show lars sad
     Sylvian "Certainly not; it's just a product of your imagination."
 
-    Lars narration "That peculiar expression resurfaces once more. An awkward smile concealing a hidden joke meant solely for his own amusement."
+    "That peculiar expression resurfaces once more. An awkward smile concealing a hidden joke meant solely for his own amusement."
 
     show lars sad
     Sylvian "I'm just getting upset on my own."
@@ -1193,7 +1193,7 @@ label S3_sylvian_neutral_end:
     show lars 
     Sylvian "Then again, even the title of a {i}'friend'{/i} might be too much for a coward like me."
 
-    Lars narration "Coward? Does Master Sylvian really think of himself like that...?"
+    "Coward? Does Master Sylvian really think of himself like that...?"
 
     show lars 
     Sylvian "Amidst the certainty of truth, lies have found a sanctuary in the hearts of those who chose to believe, even when confronted with undeniable facts."
@@ -1236,14 +1236,14 @@ label S3_sylvian_neutral_end:
     hide sylvian with dissolve 
     show black_feather with dissolve
 
-    Lars narration "I can see his feathers falling as he walks away, leaving a trail of imprints in the cloud. I try catching them at first, but then I realize he's pulling them himself, intentionally shedding them."
+    "I can see his feathers falling as he walks away, leaving a trail of imprints in the cloud. I try catching them at first, but then I realize he's pulling them himself, intentionally shedding them."
     
-    Lars narration "I start picking them up one by one but the distace between us keeps getting wider and wider. Each feather feels like a piece of something lost, and the air is heavy with the unspoken weight of the moment."
+    "I start picking them up one by one but the distace between us keeps getting wider and wider. Each feather feels like a piece of something lost, and the air is heavy with the unspoken weight of the moment."
     
     show lars sad
     Lars "You have to stop Master, you're hurting yourself..."
     
-    Lars narration "He gracefully turns back and pulls a single feather from the folds of his wings, idly twirling it between his fingers as if lost in thought."
+    "He gracefully turns back and pulls a single feather from the folds of his wings, idly twirling it between his fingers as if lost in thought."
 
     hide black_feather with dissolve
     
@@ -1284,9 +1284,9 @@ label S3_sylvian_neutral_end:
     show lars sad
     Sylvian "It was the {i}jealousy{/i} and looks of {i}hatred{/i} from my fellow magicians and academics, those whom I yearned to share my thoughts with."
 
-    Lars narration "His voice starts shaking a little, and I can sense a sob that he's trying to hold down, but his attempts are futile as tears prickle in the corner of his eyes."
+    "His voice starts shaking a little, and I can sense a sob that he's trying to hold down, but his attempts are futile as tears prickle in the corner of his eyes."
 
-    Lars narration "Here was the descendent whom I had admired as a wise and poetic leader. Yet, all this time, he held such sorrows in his heart, hidden away from everyone."
+    "Here was the descendent whom I had admired as a wise and poetic leader. Yet, all this time, he held such sorrows in his heart, hidden away from everyone."
 
     voice "audio/voice/sylvian/sylvian_125_take02.ogg"
     show lars sad
@@ -1394,7 +1394,7 @@ label S3_sylvian_good_end:
     play music "track_8_neutral_ending.ogg" fadeout 2.0 fadein 2.0
     
     show sylvian blush at center with dissolve    
-    Lars narration "I should stay silent for now."
+    "I should stay silent for now."
 
     show lars
     Lars "..."
@@ -1403,7 +1403,7 @@ label S3_sylvian_good_end:
     show lars
     Sylvian "Don't you...wish to know more?"
 
-    Lars narration "A wistful sigh escapes his lips, followed by a subtle smile."
+    "A wistful sigh escapes his lips, followed by a subtle smile."
 
     voice "audio/voice/lars/lars_135_take01.ogg"
     show lars
@@ -1511,13 +1511,13 @@ label S3_sylvian_good_end:
     show lars serious
     Lars "Why entertain such thoughts when I'm telling you myself? So, just listen to me, and don't let those negative thoughts confuse your mind!"
 
-    Lars narration "It may be a tad late, but my ears are curling up from the embarrassment of it all."
+    "It may be a tad late, but my ears are curling up from the embarrassment of it all."
 
     show sylvian blush with dissolve
     show lars happy
     Sylvian "[Lars]..."
 
-    Lars narration "Despite his academic brilliance, he seems to struggle with recognizing his own worth. It's time for me to be straightforward with him."
+    "Despite his academic brilliance, he seems to struggle with recognizing his own worth. It's time for me to be straightforward with him."
 
     voice "audio/voice/sylvian/sylvian_105_take02.ogg"
     show lars happy
@@ -1539,7 +1539,7 @@ label S3_sylvian_good_end:
         show lars blush
         Sylvian "It's time for me to show you what truly reflects in my heart."
 
-        Lars narration "His hands are clenched tight, and the rhythmic rise and fall of his Adam's apple mirrors his palpable anxiety."
+        "His hands are clenched tight, and the rhythmic rise and fall of his Adam's apple mirrors his palpable anxiety."
 
         show sylvian blush
         show lars blush
@@ -1573,7 +1573,7 @@ label S3_sylvian_good_end:
         show lars blush
         Sylvian "Yet, I fear you might see me as someone who has lost his mind."
 
-        Lars narration "His unexpected boldness takes me by surprise. Whether it's the influence of the earlier drink or a newfound resolve, his declaration resonates within me. My heart pounds louder, with my tail mirroring its pulse."
+        "His unexpected boldness takes me by surprise. Whether it's the influence of the earlier drink or a newfound resolve, his declaration resonates within me. My heart pounds louder, with my tail mirroring its pulse."
 
     if options["CS3"]==2:
 
@@ -1597,9 +1597,9 @@ label S3_sylvian_good_end:
 
 
     show sylvian sad with dissolve
-    Lars narration "Soon enough though, an awkward silence envelops the air. Even someone as clueless as Zephyr turns back to look at us and see what's going on."
+    "Soon enough though, an awkward silence envelops the air. Even someone as clueless as Zephyr turns back to look at us and see what's going on."
     
-    Lars narration "But before he has the chance to say anything, A sigh escapes Master Sylvian as he slowly shakes his head, lifting his gaze to the expanse of the stars."
+    "But before he has the chance to say anything, A sigh escapes Master Sylvian as he slowly shakes his head, lifting his gaze to the expanse of the stars."
 
     show lars sad
     Sylvian "..."
@@ -1624,9 +1624,9 @@ label S3_sylvian_good_end:
     show lars sad
     Sylvian "It was the {i}jealousy{/i} and looks of {i}hatred{/i} from my fellow magicians and academics, those whom I yearned to share my thoughts with."
 
-    Lars narration "His voice starts shaking a little, and I can sense a sob that he's trying to hold down, but his attempts are futile as tears prickle in the corner of his eyes."
+    "His voice starts shaking a little, and I can sense a sob that he's trying to hold down, but his attempts are futile as tears prickle in the corner of his eyes."
 
-    Lars narration "Here was the descendent whom I had admired as a wise and poetic leader. Yet, all this time, he held such sorrows in his heart, hidden away from everyone."
+    "Here was the descendent whom I had admired as a wise and poetic leader. Yet, all this time, he held such sorrows in his heart, hidden away from everyone."
 
     voice "audio/voice/sylvian/sylvian_125_take02.ogg"
     show lars sad
@@ -1702,17 +1702,17 @@ label S3_sylvian_good_end:
 
     hide sylvian with dissolve
 
-    Lars narration "I hold my breath in anticipation when suddenly...he wraps me in a solid embrace."
+    "I hold my breath in anticipation when suddenly...he wraps me in a solid embrace."
     
     play music "track_7_good_ending.ogg" fadeout 2.0 fadein 2.0
     scene bg black with fade
     show cg_lars_sylvian_ge at slow_pan
 
-    Lars narration "His touch, though sweaty and trembling, carries an irresistible loveliness."
+    "His touch, though sweaty and trembling, carries an irresistible loveliness."
     
-    Lars narration "The subtle bump on his middle finger from his days in academia and the grazings and minor calluses of his palm from his magical experiments all seem to capture my attention."
+    "The subtle bump on his middle finger from his days in academia and the grazings and minor calluses of his palm from his magical experiments all seem to capture my attention."
 
-    Lars narration "As our fingers entwine, he bestows upon them a gentle kiss, his eyes closing with grace."
+    "As our fingers entwine, he bestows upon them a gentle kiss, his eyes closing with grace."
 
     voice "audio/voice/sylvian/sylvian_137_take01.ogg"
     Sylvian "What a joy it is to lean on you at this moment."
@@ -1733,11 +1733,11 @@ label S3_sylvian_good_end:
 
     scene bg black with fade
 
-    Lars narration "The fear of meeting his glistening eyes holds me back. I know it will stir my own emotions, yet, for the moment, I must play the role of the steady anchor for this newfound love."
+    "The fear of meeting his glistening eyes holds me back. I know it will stir my own emotions, yet, for the moment, I must play the role of the steady anchor for this newfound love."
 
-    Lars narration "He kisses my fingers again, a subtle execution with reverent trembling and closed eyes. There's a slow sensuality about him, and as his gaze creeps up to meet mine, a charged connection lingers in the air."
+    "He kisses my fingers again, a subtle execution with reverent trembling and closed eyes. There's a slow sensuality about him, and as his gaze creeps up to meet mine, a charged connection lingers in the air."
 
-    Lars narration "Yet, in the same breath, I feel the beads of sweat on the palm of his hand and the gentle flutter of his long lashes as he rests his head on my chest."
+    "Yet, in the same breath, I feel the beads of sweat on the palm of his hand and the gentle flutter of his long lashes as he rests his head on my chest."
 
     show cg_lars_sylvian_ge with fade:
         xalign 0.5
@@ -1754,13 +1754,13 @@ label S3_sylvian_good_end:
 
     Sylvian "Haha, looks like I'll have to work on appreciating myself more then."
 
-    Lars narration "He leans in and rests his head on my chest, seeing as how I was taller than him.  I want to ruffle those wings of his. I wonder how that would feel."
+    "He leans in and rests his head on my chest, seeing as how I was taller than him.  I want to ruffle those wings of his. I wonder how that would feel."
 
-    Lars narration "I bring up my hand to the top of his wings, delicately brushing the tip of a wing feather. I sense a slight tension, prompting me to scoot closer to his side, where I feel the warmth emanating from his body."
+    "I bring up my hand to the top of his wings, delicately brushing the tip of a wing feather. I sense a slight tension, prompting me to scoot closer to his side, where I feel the warmth emanating from his body."
 
-    Lars narration "My hand continues its journey, gliding from the notch to the upcurved edge of his barbs where the shafts converge. At times, I flutter my touch along the inner vanes of his feathers, punctuating the sensation with gentle kisses."
+    "My hand continues its journey, gliding from the notch to the upcurved edge of his barbs where the shafts converge. At times, I flutter my touch along the inner vanes of his feathers, punctuating the sensation with gentle kisses."
 
-    Lars narration "It's a breathtaking experience, a privilege to touch these magnificent wings and witness his face squirm and flush with each tender movement."
+    "It's a breathtaking experience, a privilege to touch these magnificent wings and witness his face squirm and flush with each tender movement."
 
     show lars narration
     Lars "You're so beautiful..."
@@ -1771,11 +1771,11 @@ label S3_sylvian_good_end:
     show lars narration
     Lars "...kiss you, Master?"
 
-    Lars narration "He almost seems to stagger from my question, staying in silence for a brief moment before recovering his composure."
+    "He almost seems to stagger from my question, staying in silence for a brief moment before recovering his composure."
 
     Sylvian "That would be a dream, but not right now. My heart is beating far too loudly for me to keep calm and share a proper first kiss with you. Let's take it slow, shall we?"
 
-    Lars narration "No other words are needed as I gently cup him in my arms. The gesture seemed to have appeased him as a flurry of blossoms rained and enveloped us."
+    "No other words are needed as I gently cup him in my arms. The gesture seemed to have appeased him as a flurry of blossoms rained and enveloped us."
 
     scene bg black with fade
     show bg_5 with fade
@@ -1790,7 +1790,7 @@ label S3_sylvian_good_end:
     show sylvian serious funny with dissolve
     show sylvian serious funny at right with move
     show lars serious
-    Zephyr "I've been acting like a third wheel all this time, hehe. You guys just focus on your lovey-dovey confession scene. I'm gathering gossip material as is."
+    Zephyr "I've been acting like a third wheel all this time, hehe. You guys just focus on your lovey-dovey confession scene. I'm gathering gossip material as it is."
 
     voice "audio/voice/zephyr/zephyr_100_take02.ogg"
     show zephyr at shake
@@ -1802,9 +1802,9 @@ label S3_sylvian_good_end:
 
     hide zephyr with moveoutleft
 
-    Lars narration "Looks like we're all alone for good this time."
+    "Looks like we're all alone for good this time."
     
-    Lars narration "Master Sylvian seems to have the same idea as well as he quickly hurries to close the distance between us."
+    "Master Sylvian seems to have the same idea as well as he quickly hurries to close the distance between us."
 
     show sylvian blush with dissolve
     show sylvian blush at center with move
@@ -1814,7 +1814,7 @@ label S3_sylvian_good_end:
         parallel:
             linear 3.0 zoom 1.50
 
-    Lars narration "I lift his chin, fixing him with a somewhat serious gaze."
+    "I lift his chin, fixing him with a somewhat serious gaze."
 
     voice "audio/voice/lars/lars_167_take02.ogg"
     show lars sad
@@ -1877,19 +1877,19 @@ label claude_route:
     show lars
     Zephyr "Did you pick someone already? I need something big to spark my gossip debut if I plan to pay off my debt and renovation costs with your confession shenanigan."
 
-    Lars narration "I grab Sir Claude's hand in mine and interlace our fingers as I raise them up for Zephyr to see."
+    "I grab Sir Claude's hand in mine and interlace our fingers as I raise them up for Zephyr to see."
 
     show sylvian sad
     show claude smile 
     with dissolve
 
-    Lars narration "Out of the corner of my eye, I catch Master Sylvian donning a sullen expression, his silhouette gradually slipping into the shadows."
+    "Out of the corner of my eye, I catch Master Sylvian donning a sullen expression, his silhouette gradually slipping into the shadows."
     
-    Lars narration "I notice a few black feathers cascading from his retreat, leaving behind a trail, much like footprints fading away."
+    "I notice a few black feathers cascading from his retreat, leaving behind a trail, much like footprints fading away."
     
     hide sylvian sad with dissolve
     show claude smile at center_right with move
-    Lars narration "A sense of unease flickers within me, but my immediate focus shifts to Sir Claude."
+    "A sense of unease flickers within me, but my immediate focus shifts to Sir Claude."
 
     voice "audio/voice/claude/claude_138_take_02.ogg"
     show lars blush
@@ -1956,7 +1956,7 @@ label claude_route:
     show lars serious
     Lars "Before we get started on anything, didn't you promise that you'd unfreeze the others?"
 
-    Lars narration "I don't want to risk getting the other guild members hurt, or have anyone else suffering from the time freeze's effects."
+    "I don't want to risk getting the other guild members hurt, or have anyone else suffering from the time freeze's effects."
 
     show lars serious
     Zephyr "Fine, I wouldn't dishonor my family by breaking my oaths, but you better cough up a scoop worthy of my undivided attention!"
@@ -1976,7 +1976,7 @@ label claude_route:
     scene bg black with fade
     show bg_4 at up_pan
 
-    Lars narration "The sun is gradually sinking towards the horizon, casting cold hues across the sky as late afternoon approaches."
+    "The sun is gradually sinking towards the horizon, casting cold hues across the sky as late afternoon approaches."
 
     show zephyr sad at center_3left with dissolve:
         yalign 0
@@ -1998,7 +1998,7 @@ label claude_route:
     hide zephyr with moveoutleft
     show claude at center with move
 
-    Lars narration "I shoot a glance at Sir Claude and bite my lips in frustration. I chose him as my partner, but with Zephyr so close by, I'm unsure of our next move."
+    "I shoot a glance at Sir Claude and bite my lips in frustration. I chose him as my partner, but with Zephyr so close by, I'm unsure of our next move."
 
     show lars
     Lars "There's not much time, we have to do something."
@@ -2007,9 +2007,9 @@ label claude_route:
     show lars
     Claude "I could do a skydiving trick from up here. The tabloids would have a field day if I were to fall off under these conditions."
 
-    Lars narration "I cross my arms, determined to make Sir Claude understand the gravity of the situation. However, the more serious I try to be, the more my anxiety seems to rise."
+    "I cross my arms, determined to make Sir Claude understand the gravity of the situation. However, the more serious I try to be, the more my anxiety seems to rise."
 
-    Lars narration "I should at least avoid giving him any more ammunition for teasing me. Best to keep my tail perfectly still. As for my ears, well, I can only hope they won't start drooping and betray my inner turmoil."
+    "I should at least avoid giving him any more ammunition for teasing me. Best to keep my tail perfectly still. As for my ears, well, I can only hope they won't start drooping and betray my inner turmoil."
 
     Lars "Zephyr would be quite upset if we only got noticed for your publicity stunt rather than a confession or comedy routine."
 
@@ -2019,7 +2019,7 @@ label claude_route:
     show lars 
     Claude "Unless I resort to my old jokes or something."
 
-    Lars narration "Ugh, at this rate, we're going to be renovation minions."
+    "Ugh, at this rate, we're going to be renovation minions."
 
     show lars 
     Claude "Now, picture this - {i}\"The Renovation Duo\"{/i} - I'll tell my terrible jokes, and you can loudly groan as we paint walls and fix leaky pipes for a rundown castle."
@@ -2029,7 +2029,7 @@ label claude_route:
     Lars "Imagine what would become of your family legacy if word got out about our current dilemma..."
 
     show claude shocked with dissolve
-    Lars narration "Sir Claude, as he always does, theatrically places a hand on his chest, feigning deep offense at my comments. Despite my attempt to maintain seriousness, I couldn't help but crack a smile at his playful antics."
+    "Sir Claude, as he always does, theatrically places a hand on his chest, feigning deep offense at my comments. Despite my attempt to maintain seriousness, I couldn't help but crack a smile at his playful antics."
 
     show lars
     Claude "Tsk, tsk, Captain, you should know that all publicity is good publicity, it's the standard industry cliché."
@@ -2038,11 +2038,11 @@ label claude_route:
     show lars
     Claude "It's because I only ever seek to be the greatest merchant there is that I will use every tool at my disposal to achieve it."
 
-    Lars narration "Hmph, the same audacious statements, as always. Even under pressure, Sir Claude remains the unwavering bold merchant and adventurer that he is."
+    "Hmph, the same audacious statements, as always. Even under pressure, Sir Claude remains the unwavering bold merchant and adventurer that he is."
 
-    Lars narration "It was a quality of his that I deeply admired and aspired to learn from."
+    "It was a quality of his that I deeply admired and aspired to learn from."
 
-    Lars narration "In a realm where courage and determination were paramount, witnessing someone like him fearlessly chasing after his dreams was truly inspiring, and it ignited a fire within me to pursue my own aspirations with equal fervor."
+    "In a realm where courage and determination were paramount, witnessing someone like him fearlessly chasing after his dreams was truly inspiring, and it ignited a fire within me to pursue my own aspirations with equal fervor."
 
     show claude sad with dissolve
     Lars "Really? I didn't know our noble scion liked being the center of attention. You always seem to be hiding that you're the only heir of the infamous Dupont merchant family."
@@ -2065,11 +2065,11 @@ label claude_route:
         parallel:
             linear 3.0 zoom 1.50
 
-    Lars narration "His voice is a soft whisper that caresses my ear, and I can savor the sweetness of his breath. It’s a mysterious and enticing flavor, like a rare fruit from a faraway land."
+    "His voice is a soft whisper that caresses my ear, and I can savor the sweetness of his breath. It’s a mysterious and enticing flavor, like a rare fruit from a faraway land."
     
-    Lars narration "I can't believe how quickly he closed the gap between us. Did he do it while I was lost in my rambling? Now, his forehead is almost touching mine, and his eyes..."
+    "I can't believe how quickly he closed the gap between us. Did he do it while I was lost in my rambling? Now, his forehead is almost touching mine, and his eyes..."
 
-    Lars narration "His piercing golden orbs, which melt into the afternoon sunlight, are fixed directly on me. Why's he looking at me like that? Ugh, this isn't good for my heart."
+    "His piercing golden orbs, which melt into the afternoon sunlight, are fixed directly on me. Why's he looking at me like that? Ugh, this isn't good for my heart."
 
     show claude blush with dissolve
     show lars blush 
@@ -2087,9 +2087,9 @@ label claude_route:
     show lars blush
     Claude "But then, you'll have to satisfy my curiosity as well – what's the reason behind that little wagging tail you're trying to hide so adorably?"
 
-    Lars narration "My embarrassment skyrockets as the heat rushes to my cheeks. A quick glance at my tail confirms my nerves, as it wags uncontrollably behind me. Desperately, I begin  searching for a way to divert his attention."
+    "My embarrassment skyrockets as the heat rushes to my cheeks. A quick glance at my tail confirms my nerves, as it wags uncontrollably behind me. Desperately, I begin  searching for a way to divert his attention."
 
-    Lars narration "The line blurs between his teasing and genuine flirtation, leaving me defenseless against his charm, even when he playfully passes it off as a joke. Succumbing to his allure is something I'd rather avoid, having witnessed how easily others have fallen for him."
+    "The line blurs between his teasing and genuine flirtation, leaving me defenseless against his charm, even when he playfully passes it off as a joke. Succumbing to his allure is something I'd rather avoid, having witnessed how easily others have fallen for him."
 
     hide claude smile with dissolve
     show claude_lars_banter with dissolve
@@ -2121,7 +2121,7 @@ label claude_route:
     show lars
     Claude "Ah, my dear Captain, I'll oblige to your lie. You always know how to spin an intriguing tale, after all."
 
-    Lars narration "In the blink of an eye, Sir Claude's hand cups one side of my cheek, and a rush of self-consciousness floods my senses. His touch, though cold and scaly, carries an irresistible sensation."
+    "In the blink of an eye, Sir Claude's hand cups one side of my cheek, and a rush of self-consciousness floods my senses. His touch, though cold and scaly, carries an irresistible sensation."
 
     show claude blush with dissolve
     pause 1.0
@@ -2154,20 +2154,21 @@ label claude_route:
     Lars "It's more like, I'm the only one who can keep up with your reckless antics in the first place."
 
     show bg_4:
-        subpixel True
-        linear 2.0 blur 10
+        linear 2.0 blur 0
     show claude blush at center:
         parallel:
-            linear 1.0 yalign -0.1
+            linear 2.0 zoom 1.0
         parallel:
-            linear 3.0 zoom 1.50
+            linear 1.0 yalign 0.5
+            linear 1.0 ypos 0.5
     
     show lars blush
     Claude "Haha that's right. Maybe...it's time to confess my secret after all, better seize the moment while it lasts before my antics become too much for you."
     
     show claude blush with dissolve:
-        zoom 1.0
-    Lars narration "Though well-known for his love of humor and jest, this time, his response carries an unmistakable sincerity. What could he possibly mean, though?"
+        zoom 1.0 
+
+    "Though well-known for his love of humor and jest, this time, his response carries an unmistakable sincerity. What could he possibly mean, though?"
     
     hide claude blush with dissolve
 
@@ -2200,7 +2201,7 @@ label C3_claude_good_end:
     
     show claude blush at center with dissolve:
         xzoom -1.0
-    Lars narration "I should poke further about his comment."
+    "I should poke further about his comment."
 
     show lars
     Lars "What do you mean, Sir Claude?"
@@ -2215,7 +2216,7 @@ label C3_claude_good_end:
         show claude serious with dissolve
         Lars "I distinctly recall our little chat about gifts, where I asked about Master Sylvian's secret, not that I'm the least bit interested in yours."
         
-        Lars narration "A little white lie wouldn't hurt anyone, now would it?"
+        "A little white lie wouldn't hurt anyone, now would it?"
         
         Lars "But do go on—"
 
@@ -2242,7 +2243,7 @@ label C3_claude_good_end:
         show lars blush
         Claude "After all, your close bond with dragons is the reason behind your sincere way of talking, isn’t that right? I’ve admired that for some time now…"
 
-        Lars narration "He admires something about me? He's certainly teased me so much till now that I've grown accustomed to not receiving any honest praise from him."
+        "He admires something about me? He's certainly teased me so much till now that I've grown accustomed to not receiving any honest praise from him."
         
         Lars "Well, yes, you’re right. My parents would always tell me to be direct with my words, as dragons can have trouble reading your intentions if you're not straightforward or heartfelt in your interactions."
         
@@ -2261,7 +2262,7 @@ label C3_claude_good_end:
     show claude with dissolve
     Claude "Now, I need you to listen to me carefully, [Lars]"
 
-    Lars narration "He rarely ever calls me by my name like this, so witnessing this side of him is..."
+    "He rarely ever calls me by my name like this, so witnessing this side of him is..."
 
     show lars
     Claude "You remember how I've always skirted around the fact that I'm a Dupont heir?"
@@ -2285,11 +2286,11 @@ label C3_claude_good_end:
     show lars sad
     Claude "The burden of being the Dupont family heir, with its myriad of expectations, it all felt like a shallow act that I had to uphold, and I...I felt imprisoned in that superficial world."
 
-    Lars narration "His voice cracks and trembles, and I notice a muscle in his jaw twitch as he quiveringly attempts to speak up. The urge to reach out and subtly brush his cheek or offer a comforting hug to reassure him tugs at me." 
+    "His voice cracks and trembles, and I notice a muscle in his jaw twitch as he quiveringly attempts to speak up. The urge to reach out and subtly brush his cheek or offer a comforting hug to reassure him tugs at me." 
     
-    Lars narration "Yet, at the same time, I'm wholly captivated, giving him my unwavering attention, determined not to disrupt the fragile flow of his confession."
+    "Yet, at the same time, I'm wholly captivated, giving him my unwavering attention, determined not to disrupt the fragile flow of his confession."
 
-    Lars narration "His furrowed brows unveil the weight of unpleasant memories, and as much as I yearn to unravel the tangled threads, he begins to shake his head in dismay."
+    "His furrowed brows unveil the weight of unpleasant memories, and as much as I yearn to unravel the tangled threads, he begins to shake his head in dismay."
     
     voice "audio/voice/claude/claude_145_take_02.ogg"
     show lars blush
@@ -2297,9 +2298,9 @@ label C3_claude_good_end:
 
     show claude blush:
         linear 1.0 zoom 1.1
-    Lars narration "Drawing closer, he delicately runs his fingers through my hair with a tender touch. The scabrous texture of his fingernails traces a deliberate path downward, following the curve of my ear."
+    "Drawing closer, he delicately runs his fingers through my hair with a tender touch. The scabrous texture of his fingernails traces a deliberate path downward, following the curve of my ear."
     
-    Lars narration "In its wake, a lingering tingle persists, imprinting the sensation on my skin."
+    "In its wake, a lingering tingle persists, imprinting the sensation on my skin."
 
     voice "audio/voice/claude/claude_146_take_02.ogg"
     show claude blush with dissolve
@@ -2310,9 +2311,9 @@ label C3_claude_good_end:
     show lars happy
     Claude "I stopped seeing you as just the guild's pilot or my work partner."
 
-    Lars narration "A tightening sensation grips my chest, each heartbeat resonating like the rhythmic murmur of a dragon. A flush of warmth colors my cheeks, and my tingling ears gently droop under the weight of his words."
+    "A tightening sensation grips my chest, each heartbeat resonating like the rhythmic murmur of a dragon. A flush of warmth colors my cheeks, and my tingling ears gently droop under the weight of his words."
 
-    Lars narration "I'm hesitant to raise my head, yet, the same hand that had been tenderly caressing my hair and tracing my ear gently takes my chin, coaxing it upwards."
+    "I'm hesitant to raise my head, yet, the same hand that had been tenderly caressing my hair and tracing my ear gently takes my chin, coaxing it upwards."
 
     voice "audio/voice/lars/lars_178_take01.ogg"
     show lars happy
@@ -2324,7 +2325,7 @@ label C3_claude_good_end:
 
     show claude sad with dissolve:
         linear 1.0 zoom 1.0
-    Lars narration "He releases my chin and retreats, leaving behind a noticeable chill in his departure."
+    "He releases my chin and retreats, leaving behind a noticeable chill in his departure."
 
     voice "audio/voice/claude/claude_149_take_01.ogg"
     show lars sad
@@ -2372,7 +2373,7 @@ label C3_claude_good_end:
     show lars happy
     Claude "Today's events have only served to highlight this matter."
 
-    Lars narration "My heart leaps with excitement at his words. The prospect of being with him is undeniably thrilling, and the uncertainty of what lies ahead fills me with a delightful, if somewhat anxious, anticipation."
+    "My heart leaps with excitement at his words. The prospect of being with him is undeniably thrilling, and the uncertainty of what lies ahead fills me with a delightful, if somewhat anxious, anticipation."
 
     show lars happy
     Lars "..."
@@ -2396,7 +2397,7 @@ label C3_claude_good_end:
     Lars "You've always been the adventurous type, haven't you? Just being content with the present, while wonderful, doesn't seem entirely like you. Are you sure you're ready to let go of all those grand aspirations?"
 
     show claude shocked with dissolve
-    Lars narration "His face registers a stunned expression, his mouth hanging open as if he can't quite believe the words I'm saying. Perhaps he was in the process of firming up his resolve to let go of his goals, but I can't allow him to have his way that easily."
+    "His face registers a stunned expression, his mouth hanging open as if he can't quite believe the words I'm saying. Perhaps he was in the process of firming up his resolve to let go of his goals, but I can't allow him to have his way that easily."
 
     show lars blush
     Lars "Regardless of your status as the heir to a prominent family or my unwavering partner who never spared me in teasing, you've always been Claude to me."
@@ -2466,7 +2467,7 @@ label C3_claude_good_end:
     show lars happy
     Claude "Who knew I'd find such a remarkable discovery so close by."
 
-    Lars narration "I never expected to be {i}this{/i} affected by his flirtations, but the sincerity in his voice is stirring something within me."
+    "I never expected to be {i}this{/i} affected by his flirtations, but the sincerity in his voice is stirring something within me."
     
     show lars happy
     Lars "..."
@@ -2483,7 +2484,7 @@ label C3_claude_good_end:
     show lars happy
     Claude "Then tell me, should I follow my desire to make you mine? Or do you want me to treat you gently?"
 
-    Lars narration "Before I can respond, he takes my hand and pulls me closer to him."
+    "Before I can respond, he takes my hand and pulls me closer to him."
 
     hide claude blush with dissolve
 
@@ -2499,13 +2500,13 @@ label C3_claude_good_end:
     show lars narration
     Lars "Claude..."
 
-    Lars narration "We stand closely together, our faces mere inches apart. Our lips are naturally drawn toward each other, and with a gentle lift of my chin, he pulls me even closer."
+    "We stand closely together, our faces mere inches apart. Our lips are naturally drawn toward each other, and with a gentle lift of my chin, he pulls me even closer."
     
-    Lars narration "Our eyes lock and a kiss is shared to seal the moment."
+    "Our eyes lock and a kiss is shared to seal the moment."
 
-    Lars narration "My ponytail is likely tousled, gripped by his hand at the back of my head. His fingers glide through my already unruly hair, moving down to my nape." 
+    "My ponytail is likely tousled, gripped by his hand at the back of my head. His fingers glide through my already unruly hair, moving down to my nape." 
     
-    Lars narration "With his other hand on my waist, he pulls me towards him, his rough and scaly fingers brushing against the softness of my fur."
+    "With his other hand on my waist, he pulls me towards him, his rough and scaly fingers brushing against the softness of my fur."
     
     scene bg black with fade
 
@@ -2519,9 +2520,9 @@ label C3_claude_good_end:
     show lars narration
     Lars "Bring it on."
 
-    Lars narration "Our breathing becomes deep, and in another shared moment of passion, our bodies press against each other, his silky hair brushing against me."
+    "Our breathing becomes deep, and in another shared moment of passion, our bodies press against each other, his silky hair brushing against me."
     
-    Lars narration "For a few blissful moments, or perhaps even longer, it's just him and me, cocooned in our own world."
+    "For a few blissful moments, or perhaps even longer, it's just him and me, cocooned in our own world."
 
     voice "audio/voice/claude/claude_167_take_01.ogg"
     Claude "You're the one who challenged me. Might as well see this through to the end, so we can determine who wins."
@@ -2545,15 +2546,15 @@ label C3_claude_good_end:
     show lars sad
     Lars "Aren't you worried about what he might publish with your name? What if—"
 
-    Lars narration "Yet before I can finish my sentence, his fingers encircle my face, firm and possessive, as he presses a weighty, fervent kiss upon my lips. His forked tongue prying the opening with an unexpected intensity."
+    "Yet before I can finish my sentence, his fingers encircle my face, firm and possessive, as he presses a weighty, fervent kiss upon my lips. His forked tongue prying the opening with an unexpected intensity."
 
     show zephyr with dissolve:
         xzoom -1.0
     hide zephyr with moveoutleft
 
-    Lars narration "The audacity of his actions, especially with Zephyr so close, leaves me dumbfounded. But what really gets me is his mischievously childish grin that creates a warm flutter within me."
+    "The audacity of his actions, especially with Zephyr so close, leaves me dumbfounded. But what really gets me is his mischievously childish grin that creates a warm flutter within me."
     
-    Lars narration "I'm surely going to lose my sanity at this rate."
+    "I'm surely going to lose my sanity at this rate."
 
     voice "audio/voice/claude/claude_168_take_01_1.ogg"
     show claude smile at center with move
@@ -2623,9 +2624,9 @@ label C3_claude_neutral_end:
     show claude blush at center with dissolve:
         xzoom -1.0
         
-    Lars narration "I should move past his comment."
+    "I should move past his comment."
 
-    Lars narration "He probably meant it as a joke, like always. It would be best to steer the conversation before I get swept up in his flirty act."
+    "He probably meant it as a joke, like always. It would be best to steer the conversation before I get swept up in his flirty act."
 
     show claude with dissolve
     show lars serious
@@ -2646,6 +2647,9 @@ label C3_claude_neutral_end:
     show lars
     Claude "Not at all, dressing up and formalities tend to dull my momentum."
 
+    show claude smile:
+        zoom 1.0
+
     show lars
     Claude "I'd rather envision the way I'll disrupt the party. That spontaneous thrill and unscripted excitement!"
 
@@ -2660,7 +2664,7 @@ label C3_claude_neutral_end:
     show lars
     Claude "Leaving something in an ambiguous state or surrendering to simple pleasures doesn't sit well with me; it feels like I'm betraying the very essence of who I am."
 
-    Lars narration "He chuckles, his eyes holding a playful glint. I didn't realize they had a friendly competition going on."
+    "He chuckles, his eyes holding a playful glint. I didn't realize they had a friendly competition going on."
     
     Lars "Then again, you act like everyone is your rival, don't you? Whether it's Master Sylvian, Rory, or even me—"
 
@@ -2678,13 +2682,14 @@ label C3_claude_neutral_end:
     show lars
     Claude "If so, [Lars]. I need you to listen to me carefully."
 
-    Lars narration "The air around us takes on a charged intensity. He seldom reveals his vulnerabilities, so witnessing this side of him is like catching a glimpse of something rare, like the way his Adam's apple bobs with a subtle tension and the way he calls my name..."
+    "The air around us takes on a charged intensity. He seldom reveals his vulnerabilities, so witnessing this side of him is like catching a glimpse of something rare, like the way his Adam's apple bobs with a subtle tension and the way he calls my name..."
     
-    Lars narration "There's a desperate look in his eyes, and as his silver braids blow in the evening sky, capturing the fading light, the atmosphere crackles with a blend of stress and excitement that I can almost taste."
+    "There's a desperate look in his eyes, and as his silver braids blow in the evening sky, capturing the fading light, the atmosphere crackles with a blend of stress and excitement that I can almost taste."
     
     show lars
     Claude "..."
 
+    show claude sad with dissolve
     show lars sad
     Claude "You know what? I don't think I'm ready to share my secret with you yet, Captain."
 
@@ -2701,18 +2706,18 @@ label C3_claude_neutral_end:
     show lars serious
     Claude "Well, if you don't understand it yourself, perhaps we're not on the same page yet when it comes to our feelings."
 
-    Lars narration "His expression shifts to a melancholic tone, accompanied by a wistful sigh. A few strands of hair lose their perfect arrangement as his fingers comb through them."
+    "His expression shifts to a melancholic tone, accompanied by a wistful sigh. A few strands of hair lose their perfect arrangement as his fingers comb through them."
 
-    Lars narration "I've never witnessed him so troubled before."
+    "I've never witnessed him so troubled before."
 
-    Lars narration "While I've always treasured our partnership, I had no idea that Sir Claude's feelings ran so deep."
+    "While I've always treasured our partnership, I had no idea that Sir Claude's feelings ran so deep."
 
     Lars "I promise it'll be okay, just tell me what's on your mind. Maybe it's something I can help with."
     
     show lars
     Claude "..."
 
-    Lars narration "Sir Claude's pained face looks pale and drawn. His eyes are lifeless, and his lips tight. He seems like a broken man, and I'm the one who broke him. Now he's merely a shell of his former self."
+    "Sir Claude's pained face looks pale and drawn. His eyes are lifeless, and his lips tight. He seems like a broken man, and I'm the one who broke him. Now he's merely a shell of his former self."
     
     show claude serious with dissolve
     show lars sad
@@ -2741,11 +2746,11 @@ label C3_claude_neutral_end:
     show lars sad
     Claude "The burden of being the Dupont family heir, with its myriad of expectations, it all felt like a shallow act that I had to uphold, and I...I felt imprisoned in that superficial world."
     
-    Lars narration "His voice cracks and trembles, and I notice a muscle in his jaw twitch as he quiveringly attempts to speak up. The urge to reach out and subtly brush his cheek or offer a comforting hug to reassure him tugs at me." 
+    "His voice cracks and trembles, and I notice a muscle in his jaw twitch as he quiveringly attempts to speak up. The urge to reach out and subtly brush his cheek or offer a comforting hug to reassure him tugs at me." 
     
-    Lars narration "Yet, at the same time, I'm wholly captivated, giving him my unwavering attention, determined not to disrupt the fragile flow of his confession."
+    "Yet, at the same time, I'm wholly captivated, giving him my unwavering attention, determined not to disrupt the fragile flow of his confession."
 
-    Lars narration "His furrowed brows unveil the weight of unpleasant memories, and as much as I yearn to unravel the tangled threads, he begins to shake his head in dismay."
+    "His furrowed brows unveil the weight of unpleasant memories, and as much as I yearn to unravel the tangled threads, he begins to shake his head in dismay."
     
     voice "audio/voice/claude/claude_145_take_02.ogg"
     show lars 
@@ -2753,9 +2758,9 @@ label C3_claude_neutral_end:
 
     show claude blush:
         linear 1.0 zoom 1.1
-    Lars narration "Drawing closer, he delicately runs his fingers through my hair with a tender touch. The scabrous texture of his fingernails traces a deliberate path downward, following the curve of my ear."
+    "Drawing closer, he delicately runs his fingers through my hair with a tender touch. The scabrous texture of his fingernails traces a deliberate path downward, following the curve of my ear."
     
-    Lars narration "In its wake, a lingering tingle persists, imprinting the sensation on my skin."
+    "In its wake, a lingering tingle persists, imprinting the sensation on my skin."
 
     voice "audio/voice/claude/claude_146_take_02.ogg"
     show claude blush with dissolve
@@ -2766,9 +2771,9 @@ label C3_claude_neutral_end:
     show lars 
     Claude "I stopped seeing you as just the guild's pilot or my work partner."
 
-    Lars narration "A tightening sensation grips my chest, each heartbeat resonating like the rhythmic murmur of a dragon. A flush of warmth colors my cheeks, and my tingling ears gently droop under the weight of his words."
+    "A tightening sensation grips my chest, each heartbeat resonating like the rhythmic murmur of a dragon. A flush of warmth colors my cheeks, and my tingling ears gently droop under the weight of his words."
 
-    Lars narration "I'm hesitant to raise my head, yet, the same hand that had been tenderly caressing my hair and tracing my ear gently takes my chin, coaxing it upwards."
+    "I'm hesitant to raise my head, yet, the same hand that had been tenderly caressing my hair and tracing my ear gently takes my chin, coaxing it upwards."
 
     voice "audio/voice/lars/lars_178_take01.ogg"
     show lars
@@ -2780,7 +2785,7 @@ label C3_claude_neutral_end:
 
     show claude sad with dissolve:
         linear 1.0 zoom 1.0
-    Lars narration "He releases my chin and retreats, leaving behind a noticeable chill in his departure."
+    "He releases my chin and retreats, leaving behind a noticeable chill in his departure."
 
     voice "audio/voice/claude/claude_149_take_01.ogg"
     show lars sad
@@ -2833,11 +2838,11 @@ label C3_claude_neutral_end:
     show lars sad
     Claude "Well, at least I'll have the chance to put these feelings to rest once and for all."
 
-    Lars narration "In an attempt to offer some comfort, my hand tentatively reaches out to him."
+    "In an attempt to offer some comfort, my hand tentatively reaches out to him."
     
-    Lars narration "Yet, he firmly pushes it away, and the gravity of the situation bears down on me. Here I am, standing with someone I truly admire -despite our recent clash- who has just confessed his feelings."
+    "Yet, he firmly pushes it away, and the gravity of the situation bears down on me. Here I am, standing with someone I truly admire -despite our recent clash- who has just confessed his feelings."
 
-    Lars narration "However, I know deep down that I can't reciprocate those feelings."
+    "However, I know deep down that I can't reciprocate those feelings."
 
     show lars sad
     Lars "I'm sorry..."
@@ -2873,6 +2878,9 @@ label C3_claude_neutral_end:
         linear 1.0  yalign 0
     show lars serious
     Zephyr "Hey, I know you two had your heartfelt exchange, but I'm in the mood for a grand, dramatic confession. This subtle stuff won't cut it; it's barely a snack when I was hoping for a feast."
+
+    show claude smile at center_2right:
+        zoom 1
 
     voice "audio/voice/zephyr/zephyr_107_take01.ogg"
     show lars serious
@@ -2937,7 +2945,7 @@ label C3_claude_neutral_end:
     show zephyr sad at center with move:
         yalign 0
 
-    Lars narration "Before I can ask any more questions, he jumps off Spotsy's back into the sea below."
+    "Before I can ask any more questions, he jumps off Spotsy's back into the sea below."
 
     show lars serious
     Lars "{size=*2.0}SIR CLAUUUUDE!!!" with vpunch
@@ -2964,40 +2972,40 @@ label C3_claude_neutral_end:
     show zephyr at jp:
         linear 1.0 xalign 2.0
 
-    Lars narration "Panic surges through me as Zephyr's heartless laughter echoes in my ears."
+    "Panic surges through me as Zephyr's heartless laughter echoes in my ears."
     
-    Lars narration "Ignoring the unsettling sound, I quickly seize the reins from him and spur Spotsy toward Sir Claude's descending form, determined to reach him in time."
+    "Ignoring the unsettling sound, I quickly seize the reins from him and spur Spotsy toward Sir Claude's descending form, determined to reach him in time."
 
     show bg_4:
         linear 10 blur 50
     
-    Lars narration "The biting chill of the wind stings my face as I race to reach Sir Claude."
+    "The biting chill of the wind stings my face as I race to reach Sir Claude."
     
-    Lars narration "Time seems to slow as his figure plummets downward, and desperation fuels my actions."
+    "Time seems to slow as his figure plummets downward, and desperation fuels my actions."
     
-    Lars narration "My fingers claw at the air as I stretch out, desperately trying to catch him, but he's falling too fast."
+    "My fingers claw at the air as I stretch out, desperately trying to catch him, but he's falling too fast."
 
-    Lars narration "In a split-second decision, I jump from Spotsy's back, the world spinning as I dive headfirst to intercept him. The wind roars in my ears, and the world blurs into a disorienting whirl as we plunge into the frigid sea."
+    "In a split-second decision, I jump from Spotsy's back, the world spinning as I dive headfirst to intercept him. The wind roars in my ears, and the world blurs into a disorienting whirl as we plunge into the frigid sea."
 
     play sound sfx_splash
     show bg_black with fade
-    Lars narration "The impact is brutal, the cold water envelops us in a merciless embrace."
+    "The impact is brutal, the cold water envelops us in a merciless embrace."
     
-    Lars narration "My fur becomes waterlogged, dragging me down as I struggle to keep both of us afloat. Sir Claude's weight pulls me deeper, and my lungs burn for air."
+    "My fur becomes waterlogged, dragging me down as I struggle to keep both of us afloat. Sir Claude's weight pulls me deeper, and my lungs burn for air."
 
     show bg_6 with fade:
         blur 40
-    Lars narration "My consciousness...is fading..."
+    "My consciousness...is fading..."
 
     show bg black with fade
-    Lars narration "I'm...slipping away..."
+    "I'm...slipping away..."
 
     show bg_6 with fade:
         linear 0.5 blur 20
-    Lars narration "What's that scaly tail...why's it wrapping around me...?"
+    "What's that scaly tail...why's it wrapping around me...?"
 
     show bg black with fade
-    Lars narration "Sir Claude's presence surfaces in my fading awareness as he breathes life into me once more."
+    "Sir Claude's presence surfaces in my fading awareness as he breathes life into me once more."
 
     show bg_6 with fade:
         linear 0.5 blur 0
@@ -3014,7 +3022,7 @@ label C3_claude_neutral_end:
         parallel:
             linear 1.0 blur 0.0
 
-    Lars narration "Amidst the chaos of the waves, I catch a glimpse of his eyes— those yellow orbs resembling the sun breaking through stormy clouds."
+    "Amidst the chaos of the waves, I catch a glimpse of his eyes— those yellow orbs resembling the sun breaking through stormy clouds."
 
     show lars sad
     show claude sad:
@@ -3050,12 +3058,12 @@ label C3_claude_neutral_end:
         parallel:
             linear 1.0 yoffset 0
     
-    Lars narration "I can barely make out his words..."
+    "I can barely make out his words..."
 
     show bg_black with dissolve
     pause 1.0
 
-    Lars narration "With every ounce of strength left in me, I try to fight back the encroaching black spell that threatens to take me. My arms tighten around Sir Claude, and I hold onto him for dear life."
+    "With every ounce of strength left in me, I try to fight back the encroaching black spell that threatens to take me. My arms tighten around Sir Claude, and I hold onto him for dear life."
 
     window hide
     pause 1.0
@@ -3070,15 +3078,15 @@ label C3_claude_neutral_end:
     show claude sad at center:
         xzoom -1.0
     with dissolve
-    Lars narration "We tumble ashore in a tangled mess of limbs, drenched in salty waves. My fur clings to his rough scales, and a turbulent mix of relief and exasperation engulfs me."
+    "We tumble ashore in a tangled mess of limbs, drenched in salty waves. My fur clings to his rough scales, and a turbulent mix of relief and exasperation engulfs me."
 
-    Lars narration "What was I thinking? I had overlooked the fundamental fact that Sir Claude is a descendant of lizards, equally adept on land and in the sea. I should have reined in my impulsiveness before plunging us into potential disaster."
+    "What was I thinking? I had overlooked the fundamental fact that Sir Claude is a descendant of lizards, equally adept on land and in the sea. I should have reined in my impulsiveness before plunging us into potential disaster."
 
-    Lars narration "It's embarrassing. While I'm thankful that we're both safe, the fear of losing him drove me to the edge."
+    "It's embarrassing. While I'm thankful that we're both safe, the fear of losing him drove me to the edge."
 
-    Lars narration "How could I save him? What should I do to save him? These thoughts raced through my mind before the realization hit me: he didn't need me to leap after him."
+    "How could I save him? What should I do to save him? These thoughts raced through my mind before the realization hit me: he didn't need me to leap after him."
 
-    Lars narration "Come to think of it, that was probably his plan all along, indulging in an impulsive leap for the sake of some gossip material, and I didn't even see through it!"
+    "Come to think of it, that was probably his plan all along, indulging in an impulsive leap for the sake of some gossip material, and I didn't even see through it!"
 
     show lars serious
     Lars "Why in Divonia's name would you pull such a stunt? Have you lost your mind? You could have—"
@@ -3097,11 +3105,11 @@ label C3_claude_neutral_end:
     show lars serious
     Claude "Come on, humor me a bit. Share some of the excitement about our future as, you know, {i}just friends{/i}."
 
-    Lars narration "He extends his hand toward me, a subtle invitation for a fist bump. It's an odd shift from the usual playful flirtations and spontaneous embraces he's known for."
+    "He extends his hand toward me, a subtle invitation for a fist bump. It's an odd shift from the usual playful flirtations and spontaneous embraces he's known for."
 
-    Lars narration "Perhaps it's the coolness of his hand or the way his eyes glisten under the soft, setting sun that makes me realize he's barely holding it together."
+    "Perhaps it's the coolness of his hand or the way his eyes glisten under the soft, setting sun that makes me realize he's barely holding it together."
 
-    Lars narration "Perhaps one final question will bring me peace of mind..."
+    "Perhaps one final question will bring me peace of mind..."
 
     show lars sad
     Lars "Sir Claude, are you truly satisfied with how things have become between us?"
@@ -3124,7 +3132,7 @@ label C3_claude_neutral_end:
     show lars sad
     Claude "For now, my only ambition is to remain friends with you, because straining our relationship would be too painful."
 
-    Lars narration "He appears quite determined, and I can't help but feel a tinge of sadness. My actions today seem to have influenced this outcome, and I have no choice but to accept it with a heavy heart."
+    "He appears quite determined, and I can't help but feel a tinge of sadness. My actions today seem to have influenced this outcome, and I have no choice but to accept it with a heavy heart."
 
     Lars "Same here, Sir Claude. But no more antics like that."
 
@@ -3149,9 +3157,9 @@ label C3_claude_bad_end:
     show claude blush at center with dissolve:
         xzoom -1.0
     
-    Lars narration "I should stay silent for now."
+    "I should stay silent for now."
 
-    Lars narration "Master Sylvian and Rory might get in trouble if we stall for too long."
+    "Master Sylvian and Rory might get in trouble if we stall for too long."
 
     show claude with dissolve
     show lars serious
@@ -3178,9 +3186,9 @@ label C3_claude_bad_end:
     show lars serious
     Lars "Ugh, enough of this. You only ever know how to flirt and act like a showman."
 
-    Lars narration "I'm a dragon pilot for Div's sake, a responsible person who is supposed to take care of the people around him."
+    "I'm a dragon pilot for Div's sake, a responsible person who is supposed to take care of the people around him."
     
-    Lars narration "I can't just sit back and watch innocent people get dragged into this mess just because Sir Claude wants to have some fun."
+    "I can't just sit back and watch innocent people get dragged into this mess just because Sir Claude wants to have some fun."
 
     show lars serious
     Lars "If you don't start acting seriously about this, we'll never be able to save the enslaved humans, and Zephyr is going to continue suspending time for Div knows how long."
@@ -3195,9 +3203,9 @@ label C3_claude_bad_end:
     show lars serious
     Claude "Hmm? Is that what this is? A ploy to show me that you wanted {i}Sylvian{/i} to come along instead?"
 
-    Lars narration "Tension tightens his expression, a silent storm brewing in his golden eyes. As his fingers thread through tightly braided silver hair, unraveling a few strands, the disheveled tendrils mirror the chaos within— a poignant departure from his usual confidence."
+    "Tension tightens his expression, a silent storm brewing in his golden eyes. As his fingers thread through tightly braided silver hair, unraveling a few strands, the disheveled tendrils mirror the chaos within— a poignant departure from his usual confidence."
 
-    Lars narration "Venom drips from his words, catching me off guard. I never expected such a strong undercurrent of negative feelings from someone usually so charismatic and positive."
+    "Venom drips from his words, catching me off guard. I never expected such a strong undercurrent of negative feelings from someone usually so charismatic and positive."
 
     show lars serious
     Lars "I only mentioned him as an example, Sir Claude. What's going on with you? Why are you so riled up?"
@@ -3268,7 +3276,7 @@ label C3_claude_bad_end:
     show lars serious
     Claude "Oh, so now my head is {i}clouded{/i}, huh? My brain is lost on its own little adventure, isn't it?"
 
-    Lars narration "My fur unruffles, and an electric charge courses through my body. A ringing sensation pounds in my head, and it's difficult to restrain the words that spill from my mouth."
+    "My fur unruffles, and an electric charge courses through my body. A ringing sensation pounds in my head, and it's difficult to restrain the words that spill from my mouth."
 
     show lars serious
     Lars "Do you always have to act like such a spoiled kid? Didn't your parents give you enough affection as is? Why do you have to cling to me so much?"
@@ -3292,11 +3300,11 @@ label C3_claude_bad_end:
     show lars sad
     Claude "You deliberately used my family name to hurt me, didn't you? Even though you know better than anyone else."
 
-    Lars narration "Why did I say such a thing? Was it just anger talking, or did I truly mean what I said? "
+    "Why did I say such a thing? Was it just anger talking, or did I truly mean what I said? "
 
-    Lars narration "It doesn't matter now; I can't take back my words. I've hurt the person I admired, and guilt is staining my honor."
+    "It doesn't matter now; I can't take back my words. I've hurt the person I admired, and guilt is staining my honor."
     
-    Lars narration "Sir Claude's pained face looks pale and drawn. His eyes are lifeless, and his lips tight. He seems like a broken man, and I'm the one who broke him. Now he's merely a shell of his former self."
+    "Sir Claude's pained face looks pale and drawn. His eyes are lifeless, and his lips tight. He seems like a broken man, and I'm the one who broke him. Now he's merely a shell of his former self."
     
     show claude serious with dissolve
     show lars sad
@@ -3325,17 +3333,17 @@ label C3_claude_bad_end:
     show lars sad
     Claude "The burden of being the Dupont family heir, with its myriad of expectations, it all felt like a shallow act that I had to uphold, and I...I felt imprisoned in that superficial world."
     
-    Lars narration "His voice cracks and trembles, and I notice a muscle in his jaw twitch as he quiveringly attempts to speak up. The urge to shut my eyes, sparing myself from witnessing this pitiful scene, tugs at me." 
+    "His voice cracks and trembles, and I notice a muscle in his jaw twitch as he quiveringly attempts to speak up. The urge to shut my eyes, sparing myself from witnessing this pitiful scene, tugs at me." 
     
-    Lars narration "Will we finally be able to get over this hurdle and be done with the confession?"
+    "Will we finally be able to get over this hurdle and be done with the confession?"
 
-    Lars narration "His furrowed brows unveil the weight of unpleasant memories, an irritating habit I've grown weary of."
+    "His furrowed brows unveil the weight of unpleasant memories, an irritating habit I've grown weary of."
     
     voice "audio/voice/claude/claude_145_take_02.ogg"
     show lars sad
     Claude "However, with you [Lars], it was a rare chance to shed the mask and simply be myself, the playful companion who loved to tease his partner in crime."
 
-    Lars narration "My heart quickens its pace, a sense of dread sparking through every fiber of my being while he absentmindedly strokes his braids."
+    "My heart quickens its pace, a sense of dread sparking through every fiber of my being while he absentmindedly strokes his braids."
     
     voice "audio/voice/claude/claude_146_take_02.ogg"
     show lars sad
@@ -3345,9 +3353,9 @@ label C3_claude_bad_end:
     show lars sad
     Claude "I stopped seeing you as just the guild's pilot or my work partner."
 
-    Lars narration "A heavy weight settles on my chest, and my heart races, each beat echoing my growing unease. Weariness seeps into my bones as I find myself in an awkward role– the unwilling recipient of Sir Claude's love confession."
+    "A heavy weight settles on my chest, and my heart races, each beat echoing my growing unease. Weariness seeps into my bones as I find myself in an awkward role– the unwilling recipient of Sir Claude's love confession."
 
-    Lars narration "I really don't want to look at him right now."
+    "I really don't want to look at him right now."
 
     voice "audio/voice/lars/lars_178_take01.ogg"
     show lars serious
@@ -3408,11 +3416,11 @@ label C3_claude_bad_end:
     show lars sad
     Claude "Well, at least I'll have the chance to put these feelings to rest once and for all."
 
-    Lars narration "In an attempt to offer some comfort, my hand tentatively reaches out to him."
+    "In an attempt to offer some comfort, my hand tentatively reaches out to him."
     
-    Lars narration "Yet, he firmly pushes it away, and the gravity of the situation bears down on me. Here I am, standing with someone I truly admire -despite our recent clash- who has just confessed his feelings."
+    "Yet, he firmly pushes it away, and the gravity of the situation bears down on me. Here I am, standing with someone I truly admire -despite our recent clash- who has just confessed his feelings."
 
-    Lars narration "However, I know deep down that I can't reciprocate those feelings."
+    "However, I know deep down that I can't reciprocate those feelings."
 
     show lars sad
     Lars "I'm sorry..."
@@ -3506,7 +3514,7 @@ label C3_claude_bad_end:
     show zephyr sad at center with move:
         yalign 0
 
-    Lars narration "Before I can ask any more questions, he jumps off Spotsy's back into the sea below."
+    "Before I can ask any more questions, he jumps off Spotsy's back into the sea below."
 
     show lars serious
     Lars "{size=*2.0}SIR CLAUUUUDE!!!" with vpunch
@@ -3534,40 +3542,40 @@ label C3_claude_bad_end:
     show zephyr at jp:
         linear 1.0 xalign 2.0
 
-    Lars narration "Panic surges through me as Zephyr's heartless laughter echoes in my ears."
+    "Panic surges through me as Zephyr's heartless laughter echoes in my ears."
     
-    Lars narration "Ignoring the unsettling sound, I quickly seize the reins from him and spur Spotsy toward Sir Claude's descending form, determined to reach him in time."
+    "Ignoring the unsettling sound, I quickly seize the reins from him and spur Spotsy toward Sir Claude's descending form, determined to reach him in time."
 
     show bg_4:
         linear 10 blur 50
     
-    Lars narration "The biting chill of the wind stings my face as I race to reach Sir Claude."
+    "The biting chill of the wind stings my face as I race to reach Sir Claude."
     
-    Lars narration "Time seems to slow as his figure plummets downward, and desperation fuels my actions."
+    "Time seems to slow as his figure plummets downward, and desperation fuels my actions."
     
-    Lars narration "My fingers claw at the air as I stretch out, desperately trying to catch him, but he's falling too fast."
+    "My fingers claw at the air as I stretch out, desperately trying to catch him, but he's falling too fast."
 
-    Lars narration "In a split-second decision, I jump from Spotsy's back, the world spinning as I dive headfirst to intercept him. The wind roars in my ears, and the world blurs into a disorienting whirl as we plunge into the frigid sea."
+    "In a split-second decision, I jump from Spotsy's back, the world spinning as I dive headfirst to intercept him. The wind roars in my ears, and the world blurs into a disorienting whirl as we plunge into the frigid sea."
 
     play sound sfx_splash
     show bg_black with fade
-    Lars narration "The impact is brutal, the cold water envelops us in a merciless embrace."
+    "The impact is brutal, the cold water envelops us in a merciless embrace."
     
-    Lars narration "My fur becomes waterlogged, dragging me down as I struggle to keep both of us afloat. Sir Claude's weight pulls me deeper, and my lungs burn for air."
+    "My fur becomes waterlogged, dragging me down as I struggle to keep both of us afloat. Sir Claude's weight pulls me deeper, and my lungs burn for air."
 
     show bg_6 with fade:
         blur 40
-    Lars narration "My consciousness...is fading..."
+    "My consciousness...is fading..."
 
     show bg black with fade
-    Lars narration "I'm...slipping away..."
+    "I'm...slipping away..."
 
     show bg_6 with fade:
         linear 0.5 blur 20
-    Lars narration "What's that scaly tail...why's it wrapping around me...?"
+    "What's that scaly tail...why's it wrapping around me...?"
 
     show bg black with fade
-    Lars narration "Sir Claude's presence surfaces in my fading awareness as he breathes life into me once more."
+    "Sir Claude's presence surfaces in my fading awareness as he breathes life into me once more."
 
     show bg_6 with fade:
         linear 0.5 blur 0
@@ -3584,7 +3592,7 @@ label C3_claude_bad_end:
         parallel:
             linear 1.0 blur 0.0
 
-    Lars narration "Amidst the chaos of the waves, I catch a glimpse of his eyes— those yellow orbs resembling the sun breaking through stormy clouds."
+    "Amidst the chaos of the waves, I catch a glimpse of his eyes— those yellow orbs resembling the sun breaking through stormy clouds."
 
     show lars sad
     show claude sad:
@@ -3620,12 +3628,12 @@ label C3_claude_bad_end:
         parallel:
             linear 1.0 yoffset 0
     
-    Lars narration "I can barely make out his words..."
+    "I can barely make out his words..."
 
     show bg_black with dissolve
     pause 1.0
 
-    Lars narration "With every ounce of strength left in me, I try to fight back the encroaching black spell that threatens to take me. My arms tighten around Sir Claude, and I hold onto him for dear life."
+    "With every ounce of strength left in me, I try to fight back the encroaching black spell that threatens to take me. My arms tighten around Sir Claude, and I hold onto him for dear life."
 
     window hide
     pause 1.0
@@ -3641,15 +3649,15 @@ label C3_claude_bad_end:
         xzoom -1.0
     with dissolve
 
-    Lars narration "We tumble ashore in a tangled mess of limbs, drenched in salty waves. My fur clings to his rough scales, and a turbulent mix of relief and exasperation engulfs me."
+    "We tumble ashore in a tangled mess of limbs, drenched in salty waves. My fur clings to his rough scales, and a turbulent mix of relief and exasperation engulfs me."
 
-    Lars narration "What was I thinking? I had overlooked the fundamental fact that Sir Claude is a descendant of lizards, equally adept on land and in the sea. I should have reined in my impulsiveness before plunging us into potential disaster."
+    "What was I thinking? I had overlooked the fundamental fact that Sir Claude is a descendant of lizards, equally adept on land and in the sea. I should have reined in my impulsiveness before plunging us into potential disaster."
 
-    Lars narration "It's embarrassing. While I'm thankful that we're both safe, the fear of losing him drove me to the edge."
+    "It's embarrassing. While I'm thankful that we're both safe, the fear of losing him drove me to the edge."
 
-    Lars narration "How could I save him? What should I do to save him? These thoughts raced through my mind before the realization hit me: he didn't need me to leap after him."
+    "How could I save him? What should I do to save him? These thoughts raced through my mind before the realization hit me: he didn't need me to leap after him."
 
-    Lars narration "Come to think of it, that was probably his plan all along, indulging in an impulsive leap for the sake of some gossip material, and I didn't even see through it!"
+    "Come to think of it, that was probably his plan all along, indulging in an impulsive leap for the sake of some gossip material, and I didn't even see through it!"
 
     show lars serious
     Lars "Why in Divonia's name would you pull such a stunt? Have you lost your mind? You could have—"
@@ -3669,15 +3677,15 @@ label C3_claude_bad_end:
     show lars serious
     Claude "I may trust you with my life in the future as a fellow guild member, but I can no longer trust you with my heart as a friend or my partner in crime."
 
-    Lars narration "He breaks away from his stagnant position and slowly begins to walk away. Is this how it all ends?"
+    "He breaks away from his stagnant position and slowly begins to walk away. Is this how it all ends?"
 
-    Lars narration "The partner I've worked alongside for so long, my dearest friend, just walking away without a word or challenge?"
+    "The partner I've worked alongside for so long, my dearest friend, just walking away without a word or challenge?"
 
-    Lars narration "A part of me yearns to reach out, to call his name, but the risk of causing misunderstandings or giving false hope holds me back."
+    "A part of me yearns to reach out, to call his name, but the risk of causing misunderstandings or giving false hope holds me back."
 
-    Lars narration "So, I remain rooted to my spot, watching his retreating form."
+    "So, I remain rooted to my spot, watching his retreating form."
 
-    Lars narration "Perhaps one final question will bring me peace of mind..."
+    "Perhaps one final question will bring me peace of mind..."
 
     show lars sad
     Lars "Sir Claude, are you truly satisfied with how things have become between us?"
@@ -3705,7 +3713,7 @@ label C3_claude_bad_end:
     show lars sad
     Claude "I might as well claim the victory of having the last word since I didn't succeed in having the best one."
 
-    Lars narration "Looks like he had achieved what he sought after all– another victory in his competitive mind."
+    "Looks like he had achieved what he sought after all– another victory in his competitive mind."
 
     show lars sad
     Claude "Goodbye, [Lars]...take care of yourself."
