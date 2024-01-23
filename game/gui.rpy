@@ -441,7 +441,7 @@ init python:
 
         ## Font sizes.
         gui.text_size = 45
-        gui.name_text_size = 60
+        gui.name_text_size = 70
         gui.notify_text_size = 38
         gui.interface_text_size = 45
         gui.button_text_size = 45
