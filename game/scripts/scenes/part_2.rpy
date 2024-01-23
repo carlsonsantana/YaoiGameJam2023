@@ -67,7 +67,7 @@ label sylvian_route:
 
     voice "audio/voice/sylvian/sylvian_091_take01.ogg"
     show lars
-    Sylvian "My dear junior..."
+    Sylvian "My dear junior...  "
 
     voice "audio/voice/rory/rory_049_take02.ogg"
     show lars
@@ -133,7 +133,7 @@ label sylvian_route:
     show sylvian blush at center with move
     
     show lars
-    Lars "..."
+    Lars "...  "
     
     "I shoot a glance at Master Sylvian and bite my lips in frustration. I chose him as my partner, but with Zephyr so close by, I'm unsure of our next move."
 
@@ -195,7 +195,7 @@ label sylvian_route:
 
     "I'm momentarily entranced by the display, but my attention swiftly shifts to the vial he seemingly conjures from thin air."
 
-    "As per his signature touch, the vial houses an arrangement of flowers, all sharing a captivating purplish hue. Though I can't discern the specific ingredients within. I wonder what he's planning on using it for..."
+    "As per his signature touch, the vial houses an arrangement of flowers, all sharing a captivating purplish hue. Though I can't discern the specific ingredients within. I wonder what he's planning on using it for...  "
     
     hide vial with dissolve
     show sylvian with dissolve
@@ -211,7 +211,7 @@ label sylvian_route:
     "Wearing an awkward grin, he lets out a hesitant laugh. Today has shown me sides of him that I'd never imagined before."
 
     show lars
-    Sylvian "Haha, of course not! I-I don't know...what I would— or what I should do if you grew to despise someone like me because of what I might say for a {i}supposed{/i} confession."
+    Sylvian "Haha, of course not! I-I don't know...  what I would— or what I should do if you grew to despise someone like me because of what I might say for a {i}supposed{/i} confession."
 
     show sylvian serious funny with dissolve
     show lars
@@ -243,7 +243,7 @@ label sylvian_route:
 
     Lars "Got it. I won't talk about it if you don't want to."
 
-    "I cross my arms in confusion. So, there really isn't a need for us to work together if Master Sylvian already has his plan set...he seems to have a better grasp of the situation, having planned this far ahead without informing me."
+    "I cross my arms in confusion. So, there really isn't a need for us to work together if Master Sylvian already has his plan set...  he seems to have a better grasp of the situation, having planned this far ahead without informing me."
 
     "I should at least avoid giving him any extra burdens to shoulder. Not to mention, I brought him along without discussing it first. Good thing he seemed excited enough to come along though."
 
@@ -267,7 +267,7 @@ label sylvian_route:
 
     "Hearing that is making me somewhat embarrassed. I'm sure he simply wanted to see if I was doing a good job or not, so I hope I haven't disappointed him."
 
-    Lars "Speaking of which, Master. I did bring you along like this, but to think you had a plan of your own..."
+    Lars "Speaking of which, Master. I did bring you along like this, but to think you had a plan of your own...  "
 
     Lars "What kind of academic gossip tale will you be telling him? Will you be needing my help—"
 
@@ -291,7 +291,7 @@ label sylvian_route:
             linear 3.0 zoom 1.50
     
     show lars blush
-    Sylvian "Not necessarily. Perhaps I should suggest— or, if I may, show you— an alternative where we could...uhm, if that's okay with you, of course...share a love confession?"
+    Sylvian "Not necessarily. Perhaps I should suggest— or, if I may, show you— an alternative where we could...  uhm, if that's okay with you, of course...  share a love confession?"
 
     show sylvian blush at jp
     show lars blush
@@ -343,13 +343,13 @@ label S3_sylvian_bad_end:
     "It might get him a bit ruffled up but I can't contain my curiosity. It wouldn't hurt to tease him a little."
 
     show lars blush
-    Lars "How long have you harbored these romantic thoughts, Master? I recall you mentioning that entertaining the idea of such a relationship between you and me was, as you put it...{i}unethical{/i}."
+    Lars "How long have you harbored these romantic thoughts, Master? I recall you mentioning that entertaining the idea of such a relationship between you and me was, as you put it...  {i}unethical{/i}."
 
     show sylvian sad at center:
     with dissolve
 
     show lars blush
-    Sylvian "Oh, did I really say that? Y-you can dismiss— um...I mean, feel free to forget what I just said. It was rather foolish— an error on my part to make such a bold declaration."
+    Sylvian "Oh, did I really say that? Y-you can dismiss— um...  I mean, feel free to forget what I just said. It was rather foolish— an error on my part to make such a bold declaration."
 
     show lars blush
     Lars "Pfft, are you feeling alright? Did the concoction not calm your nerves like you wanted?"
@@ -361,7 +361,7 @@ label S3_sylvian_bad_end:
     Sylvian "No, nothing of the sort. I-I was simply taken aback because I didn't anticipate your reaction. I suppose it's because I've become accustomed to how you always manage to say the right thing."
 
     show lars blush
-    Sylvian "It's a bit difficult for my heart when you openly point out the things I keep trying to keep concealed..."
+    Sylvian "It's a bit difficult for my heart when you openly point out the things I keep trying to keep concealed...  "
 
     show lars blush
     Lars "There's a limit to discretion, Master. I mean, not everyone is oblivious enough to not notice how you treat me differently than the others."
@@ -374,7 +374,7 @@ label S3_sylvian_bad_end:
     Sylvian "{size=*2.0}[Lars]!" with vpunch
 
     show lars sad
-    Sylvian "Y-you can't -you m-musn't- say such a thing out loud! Or better yet, why would y-you...or no, my mind can't take this anymore-"
+    Sylvian "Y-you can't -you m-musn't- say such a thing out loud! Or better yet, why would y-you...  or no, my mind can't take this anymore-"
     
     show sylvian sad at shake
     pause 0.5
@@ -399,7 +399,7 @@ label S3_sylvian_bad_end:
     Lars "More or Less. This just means that I brought you along for nothing. You could say I shouldn't have taken your hand back there."
 
     show lars
-    Sylvian "{size=*0.90}...for nothing?"
+    Sylvian "{size=*0.90}...  for nothing?"
 
     "If my eyes weren't mistaken, it almost seemed like Master Sylvian was pouting. His eyes squinted in contemplation, and his petite beard scrunched up."
 
@@ -415,7 +415,7 @@ label S3_sylvian_bad_end:
     "Contrary to my expectations, praising him doesn't seem to work. Instead of the anticipated joy, his pout deepens. The corners of his eyes seem to glisten as tears start to well up."
 
     show lars
-    Sylvian "I suppose...it was my mistake to have expected more, I shouldn't have indulged in my greed."
+    Sylvian "I suppose...  it was my mistake to have expected more, I shouldn't have indulged in my greed."
 
     Lars "Haha, what are you talking about, Master? Or were you planning on doing a secret confession since the beginning or something?"
 
@@ -423,10 +423,10 @@ label S3_sylvian_bad_end:
 
     Lars "Or could it be- is that why you sorted the gossip deal beforehand?"
 
-    "A heavy silence lingers, seems like we're in quite an awkward situation..."
+    "A heavy silence lingers, seems like we're in quite an awkward situation...  "
 
     show lars serious
-    Sylvian "I-I-I...need to leave— I need to get out of here!"
+    Sylvian "I-I-I...  need to leave— I need to get out of here!"
 
     hide sylvian sad with moveoutright
     
@@ -560,7 +560,7 @@ label S3_sylvian_bad_end:
     show sylvian with dissolve
     show sylvian at center with move
     show lars serious
-    Sylvian "Why..."
+    Sylvian "Why...  "
 
     show lars serious
     Sylvian "Why are you here, [Lars]?"
@@ -570,7 +570,7 @@ label S3_sylvian_bad_end:
     Lars "I was worried for you! You know how I felt, suddenly seeing you fly off like that in the middle of our talk?! Even that ghost-faced Zephyr's soul, if he had one in the first place, left him because of what you did." with vpunch
 
     show lars sad
-    Lars "You didn't need to run away like that..."
+    Lars "You didn't need to run away like that...  "
 
     show sylvian sad with dissolve
     show lars sad
@@ -605,14 +605,14 @@ label S3_sylvian_bad_end:
     if options["CS3"]==1:
 
         show lars sad
-        Sylvian "It's unfortunate that I couldn't mirror what's in my heart as I vowed to do for you..."
+        Sylvian "It's unfortunate that I couldn't mirror what's in my heart as I vowed to do for you...  "
 
     show lars
-    Lars "To start off...shouldn't we get back on land? I don't want to keep Spotsy flying for too long."
+    Lars "To start off...  shouldn't we get back on land? I don't want to keep Spotsy flying for too long."
 
     show sylvian sad at jp
     show lars
-    Sylvian "I don't think I'm ready to descend yet..."
+    Sylvian "I don't think I'm ready to descend yet...  "
 
     show lars sad
     Lars "Are you upset with me, Master? Did I do something wrong?"
@@ -633,7 +633,7 @@ label S3_sylvian_bad_end:
 
     show sylvian sad with dissolve
     show lars sad
-    Sylvian "I-I...don't have the courage to say it out loud."
+    Sylvian "I-I...  don't have the courage to say it out loud."
 
     show lars sad
     Sylvian "I shouldn't say it to you of all people."
@@ -651,7 +651,7 @@ label S3_sylvian_bad_end:
         xzoom 1.0
 
     show lars blush
-    Sylvian "..."
+    Sylvian "...  "
 
     show lars blush
     Sylvian "The truth is, [Lars], I can't help but be utterly petrified of the thought of losing you."
@@ -677,10 +677,10 @@ label S3_sylvian_bad_end:
     Sylvian "It's a gentle reminder that our aspirations may not always align with our destiny. It is wiser to accept this truth gracefully than to diminish the value of what eludes our grasp."
 
     show lars sad
-    Sylvian "That's...what held me back from loving you the way you deserve."
+    Sylvian "That's...  what held me back from loving you the way you deserve."
 
     show lars sad
-    Lars "Why do your words sound so cruel...when you're saying them softly?"
+    Lars "Why do your words sound so cruel...  when you're saying them softly?"
 
     show lars sad
     Sylvian "Amidst the certainty of truth, lies have found a sanctuary in the hearts of those who chose to believe, even when confronted with undeniable facts."
@@ -693,7 +693,7 @@ label S3_sylvian_bad_end:
 
     show sylvian sad at jp
     show lars
-    Sylvian "Do you...truly mean that?"
+    Sylvian "Do you...  truly mean that?"
 
     Lars "Of course, when push comes to shove, all you do is run away. It's quite frustrating I have to say."
 
@@ -701,14 +701,14 @@ label S3_sylvian_bad_end:
         xzoom -1.0
 
     show lars
-    Sylvian "So that's what this is all about..."
+    Sylvian "So that's what this is all about...  "
 
     show sylvian sad at right with move
     show lars
-    Sylvian "It's clear to me now..."
+    Sylvian "It's clear to me now...  "
 
     show lars
-    Sylvian "That's why...I don't think I have the heart to accept your pity, [Lars]. It would be devastating to know that you're wasting your time on someone like me."
+    Sylvian "That's why...  I don't think I have the heart to accept your pity, [Lars]. It would be devastating to know that you're wasting your time on someone like me."
 
     hide sylvian with dissolve 
     show black_feather with dissolve
@@ -718,7 +718,7 @@ label S3_sylvian_bad_end:
     "I start picking them up one by one but the distace between us keeps getting wider and wider. Each feather feels like a piece of something lost, and the air is heavy with the unspoken weight of the moment."
     
     show lars sad
-    Lars "You have to stop Master, you're hurting yourself..."
+    Lars "You have to stop Master, you're hurting yourself...  "
     
     "He gracefully turns back and pulls a single feather from the folds of his wings, idly twirling it between his fingers as if lost in thought."
 
@@ -739,7 +739,7 @@ label S3_sylvian_bad_end:
     Sylvian "Some things are just out of our control, [Lars]. Even my escape from the realm of academia was such a tale."
 
     show lars sad
-    Sylvian "..."
+    Sylvian "...  "
 
     voice "audio/voice/sylvian/sylvian_120_take04.ogg"
     show lars sad
@@ -747,15 +747,15 @@ label S3_sylvian_bad_end:
 
     voice "audio/voice/sylvian/sylvian_121_take02.ogg"
     show lars sad
-    Sylvian "It was the one place where I could marvel over the many intricacies of life without feeling...overwhelmed by my lack of knowledge. I would read the many scrolls, books, journals, and whatever I could get my hands on, even in the private library of the Archmage of Divonia who seldom grants people his audience."
+    Sylvian "It was the one place where I could marvel over the many intricacies of life without feeling...  overwhelmed by my lack of knowledge. I would read the many scrolls, books, journals, and whatever I could get my hands on, even in the private library of the Archmage of Divonia who seldom grants people his audience."
 
     voice "audio/voice/sylvian/sylvian_122_take03.ogg"
     show lars sad
-    Sylvian "However...things started to change once I started getting the attention of other academics for my {i}cursed{/i} achievements."
+    Sylvian "However...  things started to change once I started getting the attention of other academics for my {i}cursed{/i} achievements."
 
     voice "audio/voice/sylvian/sylvian_123_take04.ogg"
     show lars sad
-    Sylvian "Suddenly, it wasn't the endless nights of poring over my notes, hunching my back, and using my feathers as quills to jot down whatever came to mind that wore me out. Instead..."
+    Sylvian "Suddenly, it wasn't the endless nights of poring over my notes, hunching my back, and using my feathers as quills to jot down whatever came to mind that wore me out. Instead...  "
 
     voice "audio/voice/sylvian/sylvian_124_take03.ogg"
     show lars sad
@@ -767,11 +767,11 @@ label S3_sylvian_bad_end:
 
     voice "audio/voice/sylvian/sylvian_125_take02.ogg"
     show lars sad
-    Sylvian "I, who had earned their scorn, was ostracized and couldn't show my face in public anymore because of...because of the nasty slurs they would throw at me."
+    Sylvian "I, who had earned their scorn, was ostracized and couldn't show my face in public anymore because of...  because of the nasty slurs they would throw at me."
 
     voice "audio/voice/sylvian/sylvian_126_take02.ogg"
     show lars sad
-    Sylvian "They were intelligent descendants, of course, and would never resort to physical violence if they could do what was needed with their words..."
+    Sylvian "They were intelligent descendants, of course, and would never resort to physical violence if they could do what was needed with their words...  "
 
     voice "audio/voice/sylvian/sylvian_127_take01.ogg"
     show lars sad
@@ -779,10 +779,10 @@ label S3_sylvian_bad_end:
 
     voice "audio/voice/sylvian/sylvian_128_take02.ogg"
     show lars sad
-    Sylvian "No voice to hear, but the very ripples of the water I moved on. No one to touch or embrace except...the very wind that seemed to caress my feathers with the breeze. Only through flowers was I able to express myself and find a new path to choose."
+    Sylvian "No voice to hear, but the very ripples of the water I moved on. No one to touch or embrace except...  the very wind that seemed to caress my feathers with the breeze. Only through flowers was I able to express myself and find a new path to choose."
     
     show lars sad
-    Lars "..."
+    Lars "...  "
 
     voice "audio/voice/sylvian/sylvian_129_take02.ogg"
     show sylvian with dissolve
@@ -806,13 +806,13 @@ label S3_sylvian_bad_end:
 
     show sylvian sad with dissolve
     show lars
-    Sylvian "But there's no point to it anymore..."
+    Sylvian "But there's no point to it anymore...  "
 
     show lars blush
     Lars "Awe, are you saying that because I teased you about your love confession idea earlier? I mean, I appreciate that you trusted me enough to share your thoughts, but I guess, seeing my choices today-"
 
     show lars sad
-    Sylvian "I don't think I can bear to listen to you, [Lars]..."
+    Sylvian "I don't think I can bear to listen to you, [Lars]...  "
 
     show sylvian sad with dissolve:
         xzoom -1.0
@@ -821,7 +821,7 @@ label S3_sylvian_bad_end:
     Sylvian "I don't think I can bear to listen to anyone from this point on."
 
     show lars sad
-    Sylvian "I...I think I'd prefer some time alone to gather my thoughts."
+    Sylvian "I...  I think I'd prefer some time alone to gather my thoughts."
 
     show lars serious
     Lars "What're you talking about? Who's going to take care of the guild without you? What's going to happen to Zephyr and the rest of the people captured by him?"
@@ -838,7 +838,7 @@ label S3_sylvian_bad_end:
 
     voice "audio/voice/sylvian/sylvian_148_take04.ogg"
     show lars serious
-    Sylvian "Ah, no need to worry. The Archmage will have silenced him long before any reputable gossip columns consider his story. He doesn't tolerate his academics engaging in such...{i}activities{/i}."
+    Sylvian "Ah, no need to worry. The Archmage will have silenced him long before any reputable gossip columns consider his story. He doesn't tolerate his academics engaging in such...  {i}activities{/i}."
 
     voice "audio/voice/lars/lars_196_take01.ogg"
     show lars serious
@@ -857,10 +857,10 @@ label S3_sylvian_bad_end:
     Sylvian "They are capable members of the guild, after all."
 
     show sylvian sad with dissolve
-    Sylvian "Much better than their pathetic excuse of a guild leader..."
+    Sylvian "Much better than their pathetic excuse of a guild leader...  "
 
     show lars sad
-    Lars "Master..."
+    Lars "Master...  "
 
     show lars sad
     Sylvian "I suppose it was an unattainable goal to desire more. I dreamt of it and lost what was already in my grasp."
@@ -872,10 +872,10 @@ label S3_sylvian_bad_end:
     show sylvian sad with dissolve:
         xzoom -1.0
     show lars sad
-    Sylvian "Who knows...if this feeling will eventually pass or not."
+    Sylvian "Who knows...  if this feeling will eventually pass or not."
 
     show lars sad
-    Sylvian "Who knows...if I'll ever be worthy of love again."
+    Sylvian "Who knows...  if I'll ever be worthy of love again."
 
     $ renpy.choice_for_skipping()
     $ persistent.ending[2] = 1
@@ -897,7 +897,7 @@ label S3_sylvian_neutral_end:
     Lars "We can discuss that later, Master Sylvian."
 
     show lars
-    Sylvian "Oh, is that so? Y-you can dismiss— um...I mean, feel free to forget what I just said. It was rather foolish— an error on my part to make such a bold declaration."
+    Sylvian "Oh, is that so? Y-you can dismiss— um...  I mean, feel free to forget what I just said. It was rather foolish— an error on my part to make such a bold declaration."
 
     Lars "Are you feeling alright? Did the tonic not calm your nerves like you wanted?"
 
@@ -909,7 +909,7 @@ label S3_sylvian_neutral_end:
     Lars "You should just outright tell me what you want instead of looking for things that may not exist."
 
     show lars
-    Sylvian "..."
+    Sylvian "...  "
 
     show sylvian sad with dissolve:
         xzoom -1.0
@@ -923,7 +923,7 @@ label S3_sylvian_neutral_end:
     Lars "This just means that I brought you along for nothing. You could say I shouldn't have taken your hand back there."
 
     show lars
-    Sylvian "...for nothing?"
+    Sylvian "...  for nothing?"
 
     "If my eyes weren't mistaken, it almost seemed like Master Sylvian was pouting. His eyes squinted in contemplation, and his petite beard scrunched up."
 
@@ -935,7 +935,7 @@ label S3_sylvian_neutral_end:
     Lars "Come on, Master. It's really not that serious."
 
     show lars
-    Sylvian "I suppose...it was my mistake to have expected more, I shouldn't have indulged in my greed."
+    Sylvian "I suppose...  it was my mistake to have expected more, I shouldn't have indulged in my greed."
 
     show lars
     Lars "Haha, what are you talking about, Master? Or were you planning on doing a secret confession since the beginning or something?"
@@ -945,10 +945,10 @@ label S3_sylvian_neutral_end:
     show lars
     Lars "Or could it be- is that why you sorted the gossip deal beforehand?"
 
-    "A heavy silence lingers, seems like we're in quite an awkward situation..."
+    "A heavy silence lingers, seems like we're in quite an awkward situation...  "
 
     show lars serious
-    Sylvian "I-I-I...need to leave— I need to get out of here!"
+    Sylvian "I-I-I...  need to leave— I need to get out of here!"
 
     hide sylvian sad with moveoutright
     
@@ -1082,7 +1082,7 @@ label S3_sylvian_neutral_end:
     show sylvian with dissolve
     show sylvian at center with move
     show lars serious
-    Sylvian "Why..."
+    Sylvian "Why...  "
 
     show lars serious
     Sylvian "Why are you here, [Lars]?"
@@ -1092,7 +1092,7 @@ label S3_sylvian_neutral_end:
     Lars "I was worried for you! You know how I felt, suddenly seeing you fly off like that in the middle of our talk?! Even that ghost-faced Zephyr's soul, if he had one in the first place, left him because of what you did." with vpunch
 
     show lars sad
-    Lars "You didn't need to run away like that..."
+    Lars "You didn't need to run away like that...  "
 
     show sylvian sad with dissolve
     show lars sad
@@ -1127,14 +1127,14 @@ label S3_sylvian_neutral_end:
     if options["CS3"]==1:
 
         show lars sad
-        Sylvian "It's unfortunate that I couldn't mirror what's in my heart as I vowed to do for you..."
+        Sylvian "It's unfortunate that I couldn't mirror what's in my heart as I vowed to do for you...  "
 
     show lars
-    Lars "To start off...shouldn't we get back on land? I don't want to keep Spotsy flying for too long."
+    Lars "To start off...  shouldn't we get back on land? I don't want to keep Spotsy flying for too long."
 
     show sylvian sad at jp
     show lars
-    Sylvian "I don't think I'm ready to descend yet..."
+    Sylvian "I don't think I'm ready to descend yet...  "
 
     show lars sad
     Lars "Are you upset with me, Master? Did I do something wrong?"
@@ -1155,7 +1155,7 @@ label S3_sylvian_neutral_end:
 
     show sylvian sad with dissolve
     show lars sad
-    Sylvian "I-I...don't have the courage to say it out loud."
+    Sylvian "I-I...  don't have the courage to say it out loud."
 
     show lars sad
     Sylvian "I shouldn't say it to you of all people."
@@ -1173,7 +1173,7 @@ label S3_sylvian_neutral_end:
         xzoom 1.0
 
     show lars blush
-    Sylvian "..."
+    Sylvian "...  "
 
     show lars blush
     Sylvian "The truth is, [Lars], I can't help but be utterly petrified of the thought of losing you."
@@ -1185,15 +1185,15 @@ label S3_sylvian_neutral_end:
     Lars "Is this what's it all about? I'm your friend, aren't I? We already talked about this, you shouldn't be undermining yourself like this."
 
     show lars 
-    Sylvian "Ah, just as a friend, is that right..."
+    Sylvian "Ah, just as a friend, is that right...  "
 
     show lars 
-    Sylvian "Well, I suppose it's my fault too since I never had the courage to state what was in my heart...that's precisely why I hesitated to speak of it."
+    Sylvian "Well, I suppose it's my fault too since I never had the courage to state what was in my heart...  that's precisely why I hesitated to speak of it."
 
     show lars 
     Sylvian "Then again, even the title of a {i}'friend'{/i} might be too much for a coward like me."
 
-    "Coward? Does Master Sylvian really think of himself like that...?"
+    "Coward? Does Master Sylvian really think of himself like that...  ?"
 
     show lars 
     Sylvian "Amidst the certainty of truth, lies have found a sanctuary in the hearts of those who chose to believe, even when confronted with undeniable facts."
@@ -1215,10 +1215,10 @@ label S3_sylvian_neutral_end:
 
     show sylvian sad at right with move
     show lars sad
-    Sylvian "Is that so..."
+    Sylvian "Is that so...  "
 
     show lars sad
-    Sylvian "You know [Lars]...In my pursuit of profound truths, I found myself chasing the distant winds, oblivious to the wisdom carried by the nearby breeze."
+    Sylvian "You know [Lars]...  In my pursuit of profound truths, I found myself chasing the distant winds, oblivious to the wisdom carried by the nearby breeze."
 
     show sylvian sad with dissolve:
         xzoom 1.0
@@ -1228,10 +1228,10 @@ label S3_sylvian_neutral_end:
 
     show sylvian sad at center with move
     show lars sad
-    Sylvian "Such is the nature of existence, where I must accept what is, for I cannot alter the course of destiny. I should have...simply been satisfied with what was in the palm of my hand instead of yearning for more."
+    Sylvian "Such is the nature of existence, where I must accept what is, for I cannot alter the course of destiny. I should have...  simply been satisfied with what was in the palm of my hand instead of yearning for more."
 
     show lars sad
-    Sylvian "That's why...I don't think I have the heart to accept your pity, [Lars]. This is the fate that I must accept for I am worthy of no other"
+    Sylvian "That's why...  I don't think I have the heart to accept your pity, [Lars]. This is the fate that I must accept for I am worthy of no other"
 
     hide sylvian with dissolve 
     show black_feather with dissolve
@@ -1241,7 +1241,7 @@ label S3_sylvian_neutral_end:
     "I start picking them up one by one but the distace between us keeps getting wider and wider. Each feather feels like a piece of something lost, and the air is heavy with the unspoken weight of the moment."
     
     show lars sad
-    Lars "You have to stop Master, you're hurting yourself..."
+    Lars "You have to stop Master, you're hurting yourself...  "
     
     "He gracefully turns back and pulls a single feather from the folds of his wings, idly twirling it between his fingers as if lost in thought."
 
@@ -1262,7 +1262,7 @@ label S3_sylvian_neutral_end:
     Sylvian "Some things are just out of our control, [Lars]. Even my escape from the realm of academia was such a tale."
 
     show lars sad
-    Sylvian "..."
+    Sylvian "...  "
 
     voice "audio/voice/sylvian/sylvian_120_take04.ogg"
     show lars sad
@@ -1270,15 +1270,15 @@ label S3_sylvian_neutral_end:
 
     voice "audio/voice/sylvian/sylvian_121_take02.ogg"
     show lars sad
-    Sylvian "It was the one place where I could marvel over the many intricacies of life without feeling...overwhelmed by my lack of knowledge. I would read the many scrolls, books, journals, and whatever I could get my hands on, even in the private library of the Archmage of Divonia who seldom grants people his audience."
+    Sylvian "It was the one place where I could marvel over the many intricacies of life without feeling...  overwhelmed by my lack of knowledge. I would read the many scrolls, books, journals, and whatever I could get my hands on, even in the private library of the Archmage of Divonia who seldom grants people his audience."
 
     voice "audio/voice/sylvian/sylvian_122_take03.ogg"
     show lars sad
-    Sylvian "However...things started to change once I started getting the attention of other academics for my {i}cursed{/i} achievements."
+    Sylvian "However...  things started to change once I started getting the attention of other academics for my {i}cursed{/i} achievements."
 
     voice "audio/voice/sylvian/sylvian_123_take04.ogg"
     show lars sad
-    Sylvian "Suddenly, it wasn't the endless nights of poring over my notes, hunching my back, and using my feathers as quills to jot down whatever came to mind that wore me out. Instead..."
+    Sylvian "Suddenly, it wasn't the endless nights of poring over my notes, hunching my back, and using my feathers as quills to jot down whatever came to mind that wore me out. Instead...  "
 
     voice "audio/voice/sylvian/sylvian_124_take03.ogg"
     show lars sad
@@ -1290,11 +1290,11 @@ label S3_sylvian_neutral_end:
 
     voice "audio/voice/sylvian/sylvian_125_take02.ogg"
     show lars sad
-    Sylvian "I, who had earned their scorn, was ostracized and couldn't show my face in public anymore because of...because of the nasty slurs they would throw at me."
+    Sylvian "I, who had earned their scorn, was ostracized and couldn't show my face in public anymore because of...  because of the nasty slurs they would throw at me."
 
     voice "audio/voice/sylvian/sylvian_126_take02.ogg"
     show lars sad
-    Sylvian "They were intelligent descendants, of course, and would never resort to physical violence if they could do what was needed with their words..."
+    Sylvian "They were intelligent descendants, of course, and would never resort to physical violence if they could do what was needed with their words...  "
 
     voice "audio/voice/sylvian/sylvian_127_take01.ogg"
     show lars sad
@@ -1302,10 +1302,10 @@ label S3_sylvian_neutral_end:
 
     voice "audio/voice/sylvian/sylvian_128_take02.ogg"
     show lars sad
-    Sylvian "No voice to hear, but the very ripples of the water I moved on. No one to touch or embrace except...the very wind that seemed to caress my feathers with the breeze. Only through flowers was I able to express myself and find a new path to choose."
+    Sylvian "No voice to hear, but the very ripples of the water I moved on. No one to touch or embrace except...  the very wind that seemed to caress my feathers with the breeze. Only through flowers was I able to express myself and find a new path to choose."
     
     show lars sad
-    Lars "..."
+    Lars "...  "
 
     voice "audio/voice/sylvian/sylvian_129_take02.ogg"
     show sylvian with dissolve
@@ -1333,7 +1333,7 @@ label S3_sylvian_neutral_end:
 
     Lars "I wouldn't say that. I appreciate your trust in sharing your thoughts with me. However, considering my choices today, I don't think I'm ready to embrace the romantic aspect of your affection."
 
-    Lars "For now, I believe it's best that we maintain our relationship as Master and Junior...It's a given that I'd want to remain as your friend too."
+    Lars "For now, I believe it's best that we maintain our relationship as Master and Junior...  It's a given that I'd want to remain as your friend too."
 
     show lars
     Sylvian "{size=*0.75}Of course, it should have been like this from the start."
@@ -1360,7 +1360,7 @@ label S3_sylvian_neutral_end:
 
     voice "audio/voice/sylvian/sylvian_148_take04.ogg"
     show lars serious
-    Sylvian "Ah, no need to worry. The Archmage will have silenced him long before any reputable gossip columns consider his story. He doesn't tolerate his academics engaging in such...{i}activities{/i}."
+    Sylvian "Ah, no need to worry. The Archmage will have silenced him long before any reputable gossip columns consider his story. He doesn't tolerate his academics engaging in such...  {i}activities{/i}."
 
     voice "audio/voice/lars/lars_196_take01.ogg"
     show lars serious
@@ -1382,7 +1382,7 @@ label S3_sylvian_neutral_end:
 
     show sylvian sad with dissolve
     show lars
-    Sylvian "Indeed, what an outcome...couldn't have wished for a better one..."
+    Sylvian "Indeed, what an outcome...  couldn't have wished for a better one...  "
 
     $ renpy.choice_for_skipping()
     $ persistent.ending[1] = 1
@@ -1397,11 +1397,11 @@ label S3_sylvian_good_end:
     "I should stay silent for now."
 
     show lars
-    Lars "..."
+    Lars "...  "
 
     voice "audio/voice/sylvian/sylvian_092_take04.ogg"
     show lars
-    Sylvian "Don't you...wish to know more?"
+    Sylvian "Don't you...  wish to know more?"
 
     "A wistful sigh escapes his lips, followed by a subtle smile."
 
@@ -1412,7 +1412,7 @@ label S3_sylvian_good_end:
     voice "audio/voice/sylvian/sylvian_093_take01.ogg"
     show sylvian blush with dissolve
     show lars
-    Sylvian "...It's simply amazing—"
+    Sylvian "...  It's simply amazing—"
 
     voice "audio/voice/sylvian/sylvian_094_take03.ogg"
     show lars blush
@@ -1452,7 +1452,7 @@ label S3_sylvian_good_end:
 
     voice "audio/voice/lars/lars_140_take02.ogg"
     show lars blush
-    Lars "You don't need me to tell you this, but...none of the things we do would ever be possible without you."
+    Lars "You don't need me to tell you this, but...  none of the things we do would ever be possible without you."
 
     voice "audio/voice/sylvian/sylvian_100_take03.ogg"
     show sylvian sad with dissolve
@@ -1496,11 +1496,11 @@ label S3_sylvian_good_end:
     voice "audio/voice/sylvian/sylvian_103_take03.ogg"
     show sylvian blush at center with move
     show lars blush
-    Sylvian "Makes me want you for myself even more..."
+    Sylvian "Makes me want you for myself even more...  "
 
     voice "audio/voice/lars/lars_145_take01.ogg"
     show lars happy
-    Lars "Master...I-I feel the same way—"
+    Lars "Master...  I-I feel the same way—"
 
     voice "audio/voice/sylvian/sylvian_104_take03.ogg"
     show sylvian sad with dissolve
@@ -1515,7 +1515,7 @@ label S3_sylvian_good_end:
 
     show sylvian blush with dissolve
     show lars happy
-    Sylvian "[Lars]..."
+    Sylvian "[Lars]...  "
 
     "Despite his academic brilliance, he seems to struggle with recognizing his own worth. It's time for me to be straightforward with him."
 
@@ -1525,7 +1525,7 @@ label S3_sylvian_good_end:
 
     voice "audio/voice/sylvian/sylvian_106_take01.ogg"
     show lars happy
-    Sylvian "But...what if I told you I don't want to be only your friend anymore? What if I want to reach out for something more?"
+    Sylvian "But...  what if I told you I don't want to be only your friend anymore? What if I want to reach out for something more?"
 
     if options["CS3"]==1:
 
@@ -1593,7 +1593,7 @@ label S3_sylvian_good_end:
 
         show sylvian sad with dissolve
         show lars sad
-        Sylvian "I was simply scolding myself..."
+        Sylvian "I was simply scolding myself...  "
 
 
     show sylvian sad with dissolve
@@ -1602,7 +1602,7 @@ label S3_sylvian_good_end:
     "But before he has the chance to say anything, A sigh escapes Master Sylvian as he slowly shakes his head, lifting his gaze to the expanse of the stars."
 
     show lars sad
-    Sylvian "..."
+    Sylvian "...  "
 
     voice "audio/voice/sylvian/sylvian_120_take04.ogg"
     show lars sad
@@ -1610,15 +1610,15 @@ label S3_sylvian_good_end:
 
     voice "audio/voice/sylvian/sylvian_121_take02.ogg"
     show lars sad
-    Sylvian "It was the one place where I could marvel over the many intricacies of life without feeling...overwhelmed by my lack of knowledge. I would read the many scrolls, books, journals, and whatever I could get my hands on, even in the private library of the Archmage of Divonia who seldom grants people his audience."
+    Sylvian "It was the one place where I could marvel over the many intricacies of life without feeling...  overwhelmed by my lack of knowledge. I would read the many scrolls, books, journals, and whatever I could get my hands on, even in the private library of the Archmage of Divonia who seldom grants people his audience."
 
     voice "audio/voice/sylvian/sylvian_122_take03.ogg"
     show lars sad
-    Sylvian "However...things started to change once I started getting the attention of other academics for my {i}cursed{/i} achievements."
+    Sylvian "However...  things started to change once I started getting the attention of other academics for my {i}cursed{/i} achievements."
 
     voice "audio/voice/sylvian/sylvian_123_take04.ogg"
     show lars sad
-    Sylvian "Suddenly, it wasn't the endless nights of poring over my notes, hunching my back, and using my feathers as quills to jot down whatever came to mind that wore me out. Instead..."
+    Sylvian "Suddenly, it wasn't the endless nights of poring over my notes, hunching my back, and using my feathers as quills to jot down whatever came to mind that wore me out. Instead...  "
 
     voice "audio/voice/sylvian/sylvian_124_take03.ogg"
     show lars sad
@@ -1630,11 +1630,11 @@ label S3_sylvian_good_end:
 
     voice "audio/voice/sylvian/sylvian_125_take02.ogg"
     show lars sad
-    Sylvian "I, who had earned their scorn, was ostracized and couldn't show my face in public anymore because of...because of the nasty slurs they would throw at me."
+    Sylvian "I, who had earned their scorn, was ostracized and couldn't show my face in public anymore because of...  because of the nasty slurs they would throw at me."
 
     voice "audio/voice/sylvian/sylvian_126_take02.ogg"
     show lars sad
-    Sylvian "They were intelligent descendants, of course, and would never resort to physical violence if they could do what was needed with their words..."
+    Sylvian "They were intelligent descendants, of course, and would never resort to physical violence if they could do what was needed with their words...  "
 
     voice "audio/voice/sylvian/sylvian_127_take01.ogg"
     show lars sad
@@ -1642,10 +1642,10 @@ label S3_sylvian_good_end:
 
     voice "audio/voice/sylvian/sylvian_128_take02.ogg"
     show lars sad
-    Sylvian "No voice to hear, but the very ripples of the water I moved on. No one to touch or embrace except...the very wind that seemed to caress my feathers with the breeze. Only through flowers was I able to express myself and find a new path to choose."
+    Sylvian "No voice to hear, but the very ripples of the water I moved on. No one to touch or embrace except...  the very wind that seemed to caress my feathers with the breeze. Only through flowers was I able to express myself and find a new path to choose."
     
     show lars sad
-    Lars "..."
+    Lars "...  "
 
     voice "audio/voice/sylvian/sylvian_129_take02.ogg"
     show sylvian with dissolve
@@ -1663,7 +1663,7 @@ label S3_sylvian_good_end:
     voice "audio/voice/sylvian/sylvian_133_take01.ogg"
     show sylvian blush at jp
     show lars blush
-    Sylvian "Hahahaha![Lars], what would I do without you..." with vpunch
+    Sylvian "Hahahaha![Lars], what would I do without you...  " with vpunch
 
     voice "audio/voice/sylvian/sylvian_134_take01.ogg"
     show lars blush
@@ -1684,7 +1684,7 @@ label S3_sylvian_good_end:
 
     voice "audio/voice/lars/lars_157_take02.ogg"
     show lars
-    Lars "But the key is to overcome those doubts. You're the one who spends the entire day with...well, yourself. So, finding your self-worth from within just makes sense."
+    Lars "But the key is to overcome those doubts. You're the one who spends the entire day with...  well, yourself. So, finding your self-worth from within just makes sense."
 
     voice "audio/voice/lars/lars_158_take01.ogg"
     show sylvian blush with dissolve
@@ -1693,16 +1693,16 @@ label S3_sylvian_good_end:
 
     voice "audio/voice/lars/lars_159_take02.ogg"
     show lars blush
-    Lars "But...you have to make the final decision yourself on what you want {i}us{/i} to be."
+    Lars "But...  you have to make the final decision yourself on what you want {i}us{/i} to be."
 
     voice "audio/voice/sylvian/sylvian_136_take01.ogg"
     show sylvian blush at shake
     show lars blush
-    Sylvian "I..."
+    Sylvian "I...  "
 
     hide sylvian with dissolve
 
-    "I hold my breath in anticipation when suddenly...he wraps me in a solid embrace."
+    "I hold my breath in anticipation when suddenly...  he wraps me in a solid embrace."
     
     play music "track_7_good_ending.ogg" fadeout 2.0 fadein 2.0
     scene bg black with fade
@@ -1726,10 +1726,10 @@ label S3_sylvian_good_end:
 
     voice "audio/voice/lars/lars_161_take02.ogg"
     show lars narration
-    Lars "Shhh...there's no need to reminisce on the bad memories."
+    Lars "Shhh...  there's no need to reminisce on the bad memories."
 
     voice "audio/voice/sylvian/sylvian_139_take03.ogg"
-    Sylvian "Do...do I really deserve to be spoiled by you like this? Is it fine to cherish this moment and aim to have even more momentous occasions like this with you, by my side?"
+    Sylvian "Do...  do I really deserve to be spoiled by you like this? Is it fine to cherish this moment and aim to have even more momentous occasions like this with you, by my side?"
 
     scene bg black with fade
 
@@ -1745,7 +1745,7 @@ label S3_sylvian_good_end:
         zoom 2.0
         linear 20.0 zoom 1.0
 
-    Sylvian "Hearing such a declaration...seems like I might start to like myself, just a little bit."
+    Sylvian "Hearing such a declaration...  seems like I might start to like myself, just a little bit."
 
     Sylvian "I tend to like the things that the person I love is fond of."
 
@@ -1763,13 +1763,13 @@ label S3_sylvian_good_end:
     "It's a breathtaking experience, a privilege to touch these magnificent wings and witness his face squirm and flush with each tender movement."
 
     show lars narration
-    Lars "You're so beautiful..."
+    Lars "You're so beautiful...  "
 
     show lars narration
-    Lars "Can I..."
+    Lars "Can I...  "
 
     show lars narration
-    Lars "...kiss you, Master?"
+    Lars "...  kiss you, Master?"
 
     "He almost seems to stagger from my question, staying in silence for a brief moment before recovering his composure."
 
@@ -1823,7 +1823,7 @@ label S3_sylvian_good_end:
     voice "audio/voice/sylvian/sylvian_148_take04.ogg"
     show sylvian with dissolve
     show lars sad
-    Sylvian "Ah, no need to worry. The Archmage will have silenced him long before any reputable gossip columns consider his story. He doesn't tolerate his academics engaging in such...{i}activities{/i}."
+    Sylvian "Ah, no need to worry. The Archmage will have silenced him long before any reputable gossip columns consider his story. He doesn't tolerate his academics engaging in such...  {i}activities{/i}."
 
     voice "audio/voice/lars/lars_196_take01.ogg"
     show lars serious
@@ -1850,11 +1850,11 @@ label S3_sylvian_good_end:
 
     voice "audio/voice/sylvian/sylvian_152_take01.ogg"
     show lars happy
-    Sylvian "Thank you, [Lars]..."
+    Sylvian "Thank you, [Lars]...  "
 
     voice "audio/voice/sylvian/sylvian_153_take03.ogg"
     show lars happy
-    Sylvian "I...I love you, my everlasting bloom."
+    Sylvian "I...  I love you, my everlasting bloom."
 
     $ renpy.choice_for_skipping()
     $ persistent.ending[0] = 1
@@ -2026,7 +2026,7 @@ label claude_route:
 
     Lars "We should strive to leave an impression on Zephyr that goes beyond shoddy repair work."
 
-    Lars "Imagine what would become of your family legacy if word got out about our current dilemma..."
+    Lars "Imagine what would become of your family legacy if word got out about our current dilemma...  "
 
     show claude shocked with dissolve
     "Sir Claude, as he always does, theatrically places a hand on his chest, feigning deep offense at my comments. Despite my attempt to maintain seriousness, I couldn't help but crack a smile at his playful antics."
@@ -2067,7 +2067,7 @@ label claude_route:
 
     "His voice is a soft whisper that caresses my ear, and I can savor the sweetness of his breath. It’s a mysterious and enticing flavor, like a rare fruit from a faraway land."
     
-    "I can't believe how quickly he closed the gap between us. Did he do it while I was lost in my rambling? Now, his forehead is almost touching mine, and his eyes..."
+    "I can't believe how quickly he closed the gap between us. Did he do it while I was lost in my rambling? Now, his forehead is almost touching mine, and his eyes...  "
 
     "His piercing golden orbs, which melt into the afternoon sunlight, are fixed directly on me. Why's he looking at me like that? Ugh, this isn't good for my heart."
 
@@ -2094,7 +2094,7 @@ label claude_route:
     hide claude smile with dissolve
     show claude_lars_banter with dissolve
     show lars narration
-    Lars "{i}Then I suppose{/i}...you wouldn't mind if the headlines read something like this–" with vpunch
+    Lars "{i}Then I suppose{/i}...  you wouldn't mind if the headlines read something like this–" with vpunch
 
     show lars narration
     Lars "{i}'Claude Dupont, the shining star of the Commerce Guild 'Custodes Sylvae', scion of the infamous merchant family, tragically falls to his death.'{/i}"
@@ -2163,7 +2163,7 @@ label claude_route:
             linear 1.0 ypos 0.5
     
     show lars blush
-    Claude "Haha that's right. Maybe...it's time to confess my secret after all, better seize the moment while it lasts before my antics become too much for you."
+    Claude "Haha that's right. Maybe...  it's time to confess my secret after all, better seize the moment while it lasts before my antics become too much for you."
     
     show claude blush with dissolve:
         zoom 1.0 
@@ -2262,7 +2262,7 @@ label C3_claude_good_end:
     show claude with dissolve
     Claude "Now, I need you to listen to me carefully, [Lars]"
 
-    "He rarely ever calls me by my name like this, so witnessing this side of him is..."
+    "He rarely ever calls me by my name like this, so witnessing this side of him is...  "
 
     show lars
     Claude "You remember how I've always skirted around the fact that I'm a Dupont heir?"
@@ -2272,7 +2272,7 @@ label C3_claude_good_end:
     voice "audio/voice/claude/claude_142_take_01_1.ogg"
     show claude sad with dissolve
     show lars
-    Claude "Well, the truth is, I've avoided mentioning it because..."
+    Claude "Well, the truth is, I've avoided mentioning it because...  "
     
     voice "audio/voice/claude/claude_142_take_01_2.ogg"
     show lars sad
@@ -2284,7 +2284,7 @@ label C3_claude_good_end:
 
     voice "audio/voice/claude/claude_144_take_01.ogg"
     show lars sad
-    Claude "The burden of being the Dupont family heir, with its myriad of expectations, it all felt like a shallow act that I had to uphold, and I...I felt imprisoned in that superficial world."
+    Claude "The burden of being the Dupont family heir, with its myriad of expectations, it all felt like a shallow act that I had to uphold, and I...  I felt imprisoned in that superficial world."
 
     "His voice cracks and trembles, and I notice a muscle in his jaw twitch as he quiveringly attempts to speak up. The urge to reach out and subtly brush his cheek or offer a comforting hug to reassure him tugs at me." 
     
@@ -2305,7 +2305,7 @@ label C3_claude_good_end:
     voice "audio/voice/claude/claude_146_take_02.ogg"
     show claude blush with dissolve
     show lars blush
-    Claude "But, over time, my feelings changed..."
+    Claude "But, over time, my feelings changed...  "
 
     voice "audio/voice/claude/claude_147_take_02.ogg"
     show lars happy
@@ -2321,7 +2321,7 @@ label C3_claude_good_end:
 
     voice "audio/voice/claude/claude_148_take_02.ogg"
     show lars happy
-    Claude "Relationships have always come easily to me, but you...you're the only person who's made me feel this way."
+    Claude "Relationships have always come easily to me, but you...  you're the only person who's made me feel this way."
 
     show claude sad with dissolve:
         linear 1.0 zoom 1.0
@@ -2333,7 +2333,7 @@ label C3_claude_good_end:
 
     voice "audio/voice/claude/claude_150_take_02.ogg"
     show lars sad
-    Claude "All the efforts I've put into building my own legacy as a merchant, the bravado and arrogance...eh, it would all be meaningless if I realized I had let slip the chance to build something meaningful with you."
+    Claude "All the efforts I've put into building my own legacy as a merchant, the bravado and arrogance...  eh, it would all be meaningless if I realized I had let slip the chance to build something meaningful with you."
 
     voice "audio/voice/claude/claude_151_take_02_1.ogg"
     show claude smile with dissolve
@@ -2362,7 +2362,7 @@ label C3_claude_good_end:
 
     voice "audio/voice/claude/claude_155_take_01.ogg"
     show claude with dissolve
-    Claude "Mhm, close. There's one thing you're missing though..."
+    Claude "Mhm, close. There's one thing you're missing though...  "
 
     voice "audio/voice/claude/claude_157_take_01.ogg"
     show claude smile with dissolve
@@ -2376,7 +2376,7 @@ label C3_claude_good_end:
     "My heart leaps with excitement at his words. The prospect of being with him is undeniably thrilling, and the uncertainty of what lies ahead fills me with a delightful, if somewhat anxious, anticipation."
 
     show lars happy
-    Lars "..."
+    Lars "...  "
 
     voice "audio/voice/claude/claude_159_take_01_1.ogg"
     show claude sad with dissolve
@@ -2413,7 +2413,7 @@ label C3_claude_good_end:
 
     show claude blush with dissolve
     show lars blush
-    Claude "...you've rendered me speechless."
+    Claude "...  you've rendered me speechless."
 
     show lars blush
     Claude "[Lars], you have an uncanny ability to see through the layers I've built around myself."
@@ -2422,7 +2422,7 @@ label C3_claude_good_end:
     Lars "Courtesy of spending so much time as your partner."
 
     show lars
-    Claude "You always have a way of making me question my perspective, my ambitions..."
+    Claude "You always have a way of making me question my perspective, my ambitions...  "
 
     show lars
     Lars "It's not just about having you question them. It's about cherishing every layer, every facet of who you are, without expecting you to change for me or anyone else."
@@ -2452,7 +2452,7 @@ label C3_claude_good_end:
 
     voice "audio/voice/claude/claude_161_take_01.ogg"
     show lars happy
-    Claude "That's what I love about you..."
+    Claude "That's what I love about you...  "
 
     voice "audio/voice/lars/lars_191_take01.ogg"
     show lars happy
@@ -2470,7 +2470,7 @@ label C3_claude_good_end:
     "I never expected to be {i}this{/i} affected by his flirtations, but the sincerity in his voice is stirring something within me."
     
     show lars happy
-    Lars "..."
+    Lars "...  "
     
     voice "audio/voice/claude/claude_164_take_02.ogg"
     show lars happy
@@ -2498,7 +2498,7 @@ label C3_claude_good_end:
     Claude "Call me Claude just like you did a little while ago, won't you, my darling fox?"
 
     show lars narration
-    Lars "Claude..."
+    Lars "Claude...  "
 
     "We stand closely together, our faces mere inches apart. Our lips are naturally drawn toward each other, and with a gentle lift of my chin, he pulls me even closer."
     
@@ -2670,7 +2670,7 @@ label C3_claude_neutral_end:
 
     show claude sad with dissolve
     show lars sad
-    Claude "Let's...end the conversation here, Captain. I don't want to spoil the mood with my personal issues, and I can tell you're not that enthusiastic about it either."
+    Claude "Let's...  end the conversation here, Captain. I don't want to spoil the mood with my personal issues, and I can tell you're not that enthusiastic about it either."
 
     show lars 
     Lars "Come on! You can't just decide that on your own. Spill the juicy details! I already know you've got something up your sleeve."  
@@ -2682,12 +2682,12 @@ label C3_claude_neutral_end:
     show lars
     Claude "If so, [Lars]. I need you to listen to me carefully."
 
-    "The air around us takes on a charged intensity. He seldom reveals his vulnerabilities, so witnessing this side of him is like catching a glimpse of something rare, like the way his Adam's apple bobs with a subtle tension and the way he calls my name..."
+    "The air around us takes on a charged intensity. He seldom reveals his vulnerabilities, so witnessing this side of him is like catching a glimpse of something rare, like the way his Adam's apple bobs with a subtle tension and the way he calls my name...  "
     
     "There's a desperate look in his eyes, and as his silver braids blow in the evening sky, capturing the fading light, the atmosphere crackles with a blend of stress and excitement that I can almost taste."
     
     show lars
-    Claude "..."
+    Claude "...  "
 
     show claude sad with dissolve
     show lars sad
@@ -2715,7 +2715,7 @@ label C3_claude_neutral_end:
     Lars "I promise it'll be okay, just tell me what's on your mind. Maybe it's something I can help with."
     
     show lars
-    Claude "..."
+    Claude "...  "
 
     "Sir Claude's pained face looks pale and drawn. His eyes are lifeless, and his lips tight. He seems like a broken man, and I'm the one who broke him. Now he's merely a shell of his former self."
     
@@ -2727,12 +2727,12 @@ label C3_claude_neutral_end:
     Claude "You remember how I've always skirted around the fact that I'm a Dupont heir?"
 
     show lars serious
-    Lars "I do, but...what does that have to do with anything right now?"
+    Lars "I do, but...  what does that have to do with anything right now?"
 
     voice "audio/voice/claude/claude_142_take_01_1.ogg"
     show claude sad with dissolve
     show lars serious
-    Claude "Well, the truth is, I've avoided mentioning it because..."
+    Claude "Well, the truth is, I've avoided mentioning it because...  "
     
     voice "audio/voice/claude/claude_142_take_01_2.ogg"
     show lars sad
@@ -2744,7 +2744,7 @@ label C3_claude_neutral_end:
 
     voice "audio/voice/claude/claude_144_take_01.ogg"
     show lars sad
-    Claude "The burden of being the Dupont family heir, with its myriad of expectations, it all felt like a shallow act that I had to uphold, and I...I felt imprisoned in that superficial world."
+    Claude "The burden of being the Dupont family heir, with its myriad of expectations, it all felt like a shallow act that I had to uphold, and I...  I felt imprisoned in that superficial world."
     
     "His voice cracks and trembles, and I notice a muscle in his jaw twitch as he quiveringly attempts to speak up. The urge to reach out and subtly brush his cheek or offer a comforting hug to reassure him tugs at me." 
     
@@ -2765,7 +2765,7 @@ label C3_claude_neutral_end:
     voice "audio/voice/claude/claude_146_take_02.ogg"
     show claude blush with dissolve
     show lars 
-    Claude "But, over time, my feelings changed..."
+    Claude "But, over time, my feelings changed...  "
 
     voice "audio/voice/claude/claude_147_take_02.ogg"
     show lars 
@@ -2781,7 +2781,7 @@ label C3_claude_neutral_end:
 
     voice "audio/voice/claude/claude_148_take_02.ogg"
     show lars
-    Claude "Relationships have always come easily to me, but you...you're the only person who's made me feel this way."
+    Claude "Relationships have always come easily to me, but you...  you're the only person who's made me feel this way."
 
     show claude sad with dissolve:
         linear 1.0 zoom 1.0
@@ -2793,7 +2793,7 @@ label C3_claude_neutral_end:
 
     voice "audio/voice/claude/claude_150_take_02.ogg"
     show lars sad
-    Claude "All the efforts I've put into building my own legacy as a merchant, the bravado and arrogance...eh, it would all be meaningless if I realized I had let slip the chance to build something meaningful with you."
+    Claude "All the efforts I've put into building my own legacy as a merchant, the bravado and arrogance...  eh, it would all be meaningless if I realized I had let slip the chance to build something meaningful with you."
 
     voice "audio/voice/claude/claude_151_take_02_1.ogg"
     show claude smile with dissolve
@@ -2832,7 +2832,7 @@ label C3_claude_neutral_end:
     Claude "Still calling me that obnoxious title even in this situation. Won't you humor me and call me by my name for once?"
 
     show lars sad
-    Lars "..."
+    Lars "...  "
 
     show claude sad with dissolve
     show lars sad
@@ -2845,7 +2845,7 @@ label C3_claude_neutral_end:
     "However, I know deep down that I can't reciprocate those feelings."
 
     show lars sad
-    Lars "I'm sorry..."
+    Lars "I'm sorry...  "
 
     show lars sad
     Claude "I'm sorry too, [Lars]."
@@ -2863,7 +2863,7 @@ label C3_claude_neutral_end:
     Claude "So I'm sorry things turned out this way."
 
     show lars sad
-    Lars "..."
+    Lars "...  "
     
     if options["CS3"]==2:
 
@@ -2887,7 +2887,7 @@ label C3_claude_neutral_end:
     Zephyr "Honestly, if you're not up to the task, you might as well just leap off this dragon's back; you're just extra baggage right now. Come on, give me the theatrics, the flair! THE SCOOP!"
 
     show lars serious
-    Claude "Skydiving right off Spotsy at this very moment...that doesn't sound too bad."
+    Claude "Skydiving right off Spotsy at this very moment...  that doesn't sound too bad."
 
     show lars serious
     Claude "We could descend to the Earth realm together, you and I."
@@ -2995,14 +2995,14 @@ label C3_claude_neutral_end:
 
     show bg_6 with fade:
         blur 40
-    "My consciousness...is fading..."
+    "My consciousness...  is fading...  "
 
     show bg black with fade
-    "I'm...slipping away..."
+    "I'm...  slipping away...  "
 
     show bg_6 with fade:
         linear 0.5 blur 20
-    "What's that scaly tail...why's it wrapping around me...?"
+    "What's that scaly tail...  why's it wrapping around me...  ?"
 
     show bg black with fade
     "Sir Claude's presence surfaces in my fading awareness as he breathes life into me once more."
@@ -3034,7 +3034,7 @@ label C3_claude_neutral_end:
             linear 1.0 yoffset 200
     
     show lars sad
-    Lars  "Claude..."
+    Lars  "Claude...  "
 
     show lars sad
     Claude "What a joy to hear you call my name."
@@ -3058,7 +3058,7 @@ label C3_claude_neutral_end:
         parallel:
             linear 1.0 yoffset 0
     
-    "I can barely make out his words..."
+    "I can barely make out his words...  "
 
     show bg_black with dissolve
     pause 1.0
@@ -3109,7 +3109,7 @@ label C3_claude_neutral_end:
 
     "Perhaps it's the coolness of his hand or the way his eyes glisten under the soft, setting sun that makes me realize he's barely holding it together."
 
-    "Perhaps one final question will bring me peace of mind..."
+    "Perhaps one final question will bring me peace of mind...  "
 
     show lars sad
     Lars "Sir Claude, are you truly satisfied with how things have become between us?"
@@ -3243,7 +3243,7 @@ label C3_claude_bad_end:
     Claude "Drop the 'Sir' once and for all! It's clear you don't even bother to hear me out, do you?"
 
     show lars sad  
-    Lars "I never intended to hurt you or make you feel this way..."
+    Lars "I never intended to hurt you or make you feel this way...  "
 
     show claude serious:
         blur 0.0
@@ -3283,7 +3283,7 @@ label C3_claude_bad_end:
 
     show claude sad with dissolve
     show lars serious
-    Claude "I...I didn't expect that from you [Lars]."
+    Claude "I...  I didn't expect that from you [Lars]."
 
     show claude sad:
         parallel:
@@ -3295,7 +3295,7 @@ label C3_claude_bad_end:
     Lars "You don't expect much from anyone aside from yourself, now do you?"
 
     show lars sad
-    Claude "I didn't imagine I'd ever say this but I'm...disappointed in you [Lars]."
+    Claude "I didn't imagine I'd ever say this but I'm...  disappointed in you [Lars]."
 
     show lars sad
     Claude "You deliberately used my family name to hurt me, didn't you? Even though you know better than anyone else."
@@ -3314,12 +3314,12 @@ label C3_claude_bad_end:
     Claude "You remember how I've always skirted around the fact that I'm a Dupont heir?"
 
     show lars serious
-    Lars "I do, but...what does that have to do with anything right now?"
+    Lars "I do, but...  what does that have to do with anything right now?"
 
     voice "audio/voice/claude/claude_142_take_01_1.ogg"
     show claude sad with dissolve
     show lars serious
-    Claude "Well, the truth is, I've avoided mentioning it because..."
+    Claude "Well, the truth is, I've avoided mentioning it because...  "
     
     voice "audio/voice/claude/claude_142_take_01_2.ogg"
     show lars sad
@@ -3331,7 +3331,7 @@ label C3_claude_bad_end:
 
     voice "audio/voice/claude/claude_144_take_01.ogg"
     show lars sad
-    Claude "The burden of being the Dupont family heir, with its myriad of expectations, it all felt like a shallow act that I had to uphold, and I...I felt imprisoned in that superficial world."
+    Claude "The burden of being the Dupont family heir, with its myriad of expectations, it all felt like a shallow act that I had to uphold, and I...  I felt imprisoned in that superficial world."
     
     "His voice cracks and trembles, and I notice a muscle in his jaw twitch as he quiveringly attempts to speak up. The urge to shut my eyes, sparing myself from witnessing this pitiful scene, tugs at me." 
     
@@ -3347,7 +3347,7 @@ label C3_claude_bad_end:
     
     voice "audio/voice/claude/claude_146_take_02.ogg"
     show lars sad
-    Claude "But, over time, my feelings changed..."
+    Claude "But, over time, my feelings changed...  "
 
     voice "audio/voice/claude/claude_147_take_02.ogg"
     show lars sad
@@ -3363,7 +3363,7 @@ label C3_claude_bad_end:
 
     voice "audio/voice/claude/claude_148_take_02.ogg"
     show lars sad
-    Claude "Relationships have always come easily to me, but you...you're the only person who's made me feel this way."
+    Claude "Relationships have always come easily to me, but you...  you're the only person who's made me feel this way."
 
     voice "audio/voice/claude/claude_149_take_01.ogg"
     show lars sad
@@ -3371,7 +3371,7 @@ label C3_claude_bad_end:
 
     voice "audio/voice/claude/claude_150_take_02.ogg"
     show lars sad
-    Claude "All the efforts I've put into building my own legacy as a merchant, the bravado and arrogance...it would all be meaningless if I realized I had let slip the chance to build something meaningful with you."
+    Claude "All the efforts I've put into building my own legacy as a merchant, the bravado and arrogance...  it would all be meaningless if I realized I had let slip the chance to build something meaningful with you."
 
     voice "audio/voice/claude/claude_151_take_02_1.ogg"
     show claude smile with dissolve
@@ -3410,7 +3410,7 @@ label C3_claude_bad_end:
     Claude "Still calling me that obnoxious title even in this situation. Won't you humor me and call me by my name for once?"
 
     show lars sad
-    Lars "..."
+    Lars "...  "
 
     show claude sad with dissolve
     show lars sad
@@ -3423,7 +3423,7 @@ label C3_claude_bad_end:
     "However, I know deep down that I can't reciprocate those feelings."
 
     show lars sad
-    Lars "I'm sorry..."
+    Lars "I'm sorry...  "
 
     show lars sad
     Claude "I'm sorry too, [Lars]."
@@ -3439,7 +3439,7 @@ label C3_claude_bad_end:
     Claude "So I'm sorry things turned out this way."
 
     show lars sad
-    Lars "..."
+    Lars "...  "
 
     if options["CS3"]==2:
 
@@ -3460,7 +3460,7 @@ label C3_claude_bad_end:
     Zephyr "Honestly, if you're not up to the task, you might as well just leap off this dragon's back; you're just extra baggage right now. Come on, give me the theatrics, the flair! THE SCOOP!"
 
     show lars serious
-    Claude "Skydiving right off Spotsy at this very moment...that doesn't sound too bad."
+    Claude "Skydiving right off Spotsy at this very moment...  that doesn't sound too bad."
 
     show lars serious
     Claude "We could descend to the Earth realm together, you and I."
@@ -3498,7 +3498,7 @@ label C3_claude_bad_end:
     Claude "Don't worry Captain."
 
     show lars sad
-    Claude "Did you forget that I'm a lizard descendent? I'll be fine, so..."
+    Claude "Did you forget that I'm a lizard descendent? I'll be fine, so...  "
 
     show lars sad
     Claude "Don't catch me."
@@ -3565,14 +3565,14 @@ label C3_claude_bad_end:
 
     show bg_6 with fade:
         blur 40
-    "My consciousness...is fading..."
+    "My consciousness...  is fading...  "
 
     show bg black with fade
-    "I'm...slipping away..."
+    "I'm...  slipping away...  "
 
     show bg_6 with fade:
         linear 0.5 blur 20
-    "What's that scaly tail...why's it wrapping around me...?"
+    "What's that scaly tail...  why's it wrapping around me...  ?"
 
     show bg black with fade
     "Sir Claude's presence surfaces in my fading awareness as he breathes life into me once more."
@@ -3604,7 +3604,7 @@ label C3_claude_bad_end:
             linear 1.0 yoffset 200
     
     show lars sad
-    Lars  "Claude..."
+    Lars  "Claude...  "
 
     show lars sad
     Claude "What a joy to hear you call my name."
@@ -3628,7 +3628,7 @@ label C3_claude_bad_end:
         parallel:
             linear 1.0 yoffset 0
     
-    "I can barely make out his words..."
+    "I can barely make out his words...  "
 
     show bg_black with dissolve
     pause 1.0
@@ -3685,7 +3685,7 @@ label C3_claude_bad_end:
 
     "So, I remain rooted to my spot, watching his retreating form."
 
-    "Perhaps one final question will bring me peace of mind..."
+    "Perhaps one final question will bring me peace of mind...  "
 
     show lars sad
     Lars "Sir Claude, are you truly satisfied with how things have become between us?"
@@ -3702,7 +3702,7 @@ label C3_claude_bad_end:
     show claude sad with dissolve
     show claude sad at shake
     show lars sad
-    Claude "I'll walk away from this like the coward that I am, a small lizard who couldn't achieve what he wanted. Staying with you would only remind me of the failure that I am, you even said it yourself..."
+    Claude "I'll walk away from this like the coward that I am, a small lizard who couldn't achieve what he wanted. Staying with you would only remind me of the failure that I am, you even said it yourself...  "
 
     show lars sad
     Lars "But I didn't mean it like that; it was just the heat of the moment. I'm sorry about that."
@@ -3716,7 +3716,7 @@ label C3_claude_bad_end:
     "Looks like he had achieved what he sought after all– another victory in his competitive mind."
 
     show lars sad
-    Claude "Goodbye, [Lars]...take care of yourself."
+    Claude "Goodbye, [Lars]...  take care of yourself."
 
     $ renpy.choice_for_skipping()
     $ persistent.ending[5] = 1

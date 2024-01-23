@@ -76,7 +76,7 @@ define gui.text_size = 42
 define gui.name_text_size = 70
 
 ## The size of text in the game's user interface.
-define gui.interface_text_size = 42
+define gui.interface_text_size = 40
 
 ## The size of labels in the game's user interface.
 define gui.label_text_size = 42
@@ -147,7 +147,7 @@ define gui.dialogue_width = 1260
 ## The horizontal alignment of the dialogue text. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
 define gui.dialogue_text_xalign = 0.0
-define gui.dialogue_text_size = 36
+define gui.dialogue_text_size = 42
 
 ## Buttons #####################################################################
 ##

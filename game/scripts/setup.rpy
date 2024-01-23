@@ -1,3 +1,10 @@
+transform up_pan:
+    zoom 1.5
+    subpixel True
+    xalign 0.0
+    yalign 0.5
+    linear 25.0 yalign 0.0
+    
 transform pan:
     zoom 1.5
     subpixel True
@@ -5,12 +12,12 @@ transform pan:
     yalign 0.5
     linear 25.0 xalign 1.0
 
-transform up_pan:
-    zoom 1.5
+transform slow_pan:
+    zoom 1.2
     subpixel True
     xalign 0.0
     yalign 0.5
-    linear 15.0 yalign 0.0
+    linear 60.0 xalign 1.0
 
 transform end_pan:
     parallel:
@@ -77,6 +84,7 @@ define center_3left = Position(xalign=0.3, yalign = 1.0)
 define center_left = Position(xalign=0.4, yalign = 1.0)
 
 define center_right = Position(xalign=0.6, yalign = 1.0)
+define center_1right = Position(xalign=0.7, yalign = 1.0)
 define center_2right = Position(xalign=0.8, yalign = 1.0)
 define center_3right = Position(xalign=0.85, yalign = 1.0)
 define right_far = Position(xalign=2.0, yalign = 1.0)
@@ -93,8 +101,7 @@ define audio.sfx_clap = "sfx_clap.ogg"
 define audio.sfx_smack = "sfx_smack.ogg"
 define audio.sfx_splash = "sfx_splash.ogg"
 
-
-#Other Images
+#Other images
 image smoke:
     "images/smoke.png" #with dissolve(0.5, alpha=True)
     alpha 0.00

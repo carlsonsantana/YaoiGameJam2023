@@ -877,7 +877,7 @@ screen preferences():
                 xalign 100
                 xsize 400
                 xspacing 80
-                yspacing -290
+                yspacing -420
                 if renpy.variant("pc") or renpy.variant("web"):
                     vbox:
                         style_prefix "check"
@@ -914,6 +914,12 @@ screen preferences():
 
                     null height 10
 
+                    label _("Auto-Forward Time")
+
+                    bar value Preference("auto-forward time")
+
+                    null height 10
+
                     if config.has_music:
                         label _("Music Volume")
 
@@ -932,7 +938,7 @@ screen preferences():
                             if config.sample_sound:
                                 textbutton _("Test") action Play("sound", config.sample_sound)
 
-                        null height 70
+                        null height 50
                 vbox:
                     align (0.0, 0.5)
                     if renpy.variant("small"):
@@ -1175,7 +1181,7 @@ screen help():
 
     use game_menu(_("Help"), scroll="viewport"):
         vbox:
-            xpos 200
+            xpos 250
 
         style_prefix "help"
 
@@ -1183,6 +1189,7 @@ screen help():
             spacing 23
 
             hbox:
+                xpos 200
 
                 textbutton _("Keyboard") action SetScreenVariable("device", "keyboard")
                 textbutton _("Mouse") action SetScreenVariable("device", "mouse")
@@ -1202,7 +1209,7 @@ screen keyboard_help():
 
     hbox:
         label _("Enter")
-        text _("Advances dialogue and activates the interface.")
+        text _("Advances dialogue.")
 
     hbox:
         label _("Space")
@@ -1223,10 +1230,6 @@ screen keyboard_help():
     hbox:
         label _("Tab")
         text _("Toggles dialogue skipping.")
-
-    hbox:
-        label "H"
-        text _("Hides the user interface.")
 
     hbox:
         label "S"
@@ -1308,7 +1311,7 @@ style help_button_text:
     properties gui.button_text_properties("help_button")
 
 style help_label:
-    xsize 375
+    xsize 380
     right_padding 30
 
 style help_label_text:
@@ -1897,7 +1900,7 @@ screen lstend:
     style_prefix "about"
 
     label "Ending List":
-        xpos 1030
+        xpos 1040
         ypos 46
         #text_style "gui_accent_text"
         text_size 70
