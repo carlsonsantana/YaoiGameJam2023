@@ -872,6 +872,7 @@ screen preferences():
             xpos 60
             if renpy.variant("small"):
                 xpos 175
+                ypos -20
 
             grid 2 2:
                 xalign 100
@@ -898,7 +899,7 @@ screen preferences():
                     ## Additional vboxes of type "radio_pref" or "check_pref" can be
                     ## added here, to add additional creator-defined preferences.
                 if not (renpy.variant("pc") or renpy.variant("web")):
-                    null height (39 * gui.pref_spacing)
+                    null height (46 * gui.pref_spacing)
 
                 vbox:
                     align (0.0,0.0)
