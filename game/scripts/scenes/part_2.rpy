@@ -3144,6 +3144,7 @@ label C3_claude_neutral_end:
             linear 1.0 yoffset 200
     
     show lars sad
+
     Lars  "Claude..."
 
     show lars sad
@@ -3242,6 +3243,7 @@ label C3_claude_neutral_end:
     show lars sad
     Claude "For now, my only ambition is to remain friends with you, because straining our relationship would be too painful."
 
+    play music "2nd_bad_ending_MIX_loop_2nd_ver.ogg" fadeout 2.0 fadein 2.0 
     "He appears quite determined, and I can't help but feel a tinge of sadness. My actions today seem to have influenced this outcome, and I have no choice but to accept it with a heavy heart."
 
     Lars "Same here, Sir Claude. But no more antics like that."

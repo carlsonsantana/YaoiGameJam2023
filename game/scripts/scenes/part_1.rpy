@@ -11,6 +11,7 @@ label part_1:
 
     "We could even offer complementary earthling-made meals by the human chefs who were transported to our realm upon their death."
     
+    jump test
     show bg_1 at end_pan
 
     Lars "But then again, embarking on artifact hunts and historical expeditions wouldn't make sense if the sole purpose of our guild, {i}'Custodes Sylvae'{/i}, was commerce."
@@ -182,6 +183,7 @@ label C_1_End:
     show lars serious
     Lars "She doesn't even have any spots. You're bad at naming as always, Sir-"
 
+    $ voice_tag="claude"
     voice "audio/voice/claude/claude_12_take_01_COUGH.ogg"
     show claude serious
     "He lets out an intrusive cough."
@@ -233,6 +235,7 @@ label C_1_End:
     show lars serious
     Lars "You're starting to irritate her, Sir-"
     
+    $ voice_tag="claude"
     voice "audio/voice/claude/claude_12_take_02_COUGH.ogg"
     show claude serious with dissolve
     "Another intrusive cough."
@@ -298,6 +301,7 @@ label C_1_End:
     voice "audio/voice/lars/lars_020_take01.ogg"
     Lars "You said it yourself; one has to admire their bravery. Since descending into Divonia is a grand leap of faith into the unknown."
 
+    $ voice_tag="claude"
     voice "audio/voice/claude/claude_22_take_01.ogg"
     show claude smile
     "A muffled chuckle escapes him."

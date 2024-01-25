@@ -871,7 +871,7 @@ screen preferences():
         vbox:
             xpos 50
             if renpy.variant("small"):
-                xpos 155
+                xpos 175
 
             grid 2 2:
                 xalign 100
@@ -898,7 +898,7 @@ screen preferences():
                     ## Additional vboxes of type "radio_pref" or "check_pref" can be
                     ## added here, to add additional creator-defined preferences.
                 if not (renpy.variant("pc") or renpy.variant("web")):
-                    null height (37 * gui.pref_spacing)
+                    null height (39 * gui.pref_spacing)
 
                 vbox:
                     align (0.0,0.5)
@@ -910,7 +910,7 @@ screen preferences():
 
                     label _("Auto-Forward / Skip Speed")
 
-                    bar value FieldValue(persistent, "skip_delay", range=200, style="slider",offset=12, action=Function(autoforward_fastforward_bar)) bar_invert True
+                    bar value FieldValue(persistent, "skip_delay", range=200, style="slider",offset=12, action=Function(autoforward_fastforward_bar)) bar_invert True 
 
                     null height 10
 
@@ -936,7 +936,7 @@ screen preferences():
                 vbox:
                     align (0.0, 0.5)
                     if renpy.variant("small"):
-                        align (-0.8, 0.5)
+                        align (-2.0, 0.5)
 
                     if config.has_voice:
                         label _("Voice Volume")

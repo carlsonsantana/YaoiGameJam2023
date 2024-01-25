@@ -84,7 +84,7 @@ label splashscreen:
             preferences.set_mixer("music", 0.4)
             preferences.set_mixer("sfx", 0.5)
     return
-
+        
 # The game starts here.
 label start:
     call lattr from _call_lattr
