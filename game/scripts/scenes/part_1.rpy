@@ -11,7 +11,6 @@ label part_1:
 
     "We could even offer complementary earthling-made meals by the human chefs who were transported to our realm upon their death."
     
-    jump test
     show bg_1 at end_pan
 
     Lars "But then again, embarking on artifact hunts and historical expeditions wouldn't make sense if the sole purpose of our guild, {i}'Custodes Sylvae'{/i}, was commerce."
