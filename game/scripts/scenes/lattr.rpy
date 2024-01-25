@@ -13,7 +13,7 @@ label lattr:
         if player_name == "":
             player_name = "Lars"
 
-        Lars_name = player_name
+        lars_name = player_name
 
     #scene bg_1 #at bg_size
 
