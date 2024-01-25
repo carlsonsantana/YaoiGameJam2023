@@ -441,7 +441,7 @@ init python:
 
         ## Font sizes.
         gui.text_size = 45
-        gui.name_text_size = 60
+        gui.name_text_size = 70
         gui.notify_text_size = 38
         gui.interface_text_size = 45
         gui.button_text_size = 45
@@ -459,7 +459,7 @@ init python:
         gui.choice_button_text_size = 45
 
         gui.navigation_spacing = 30
-        gui.pref_button_spacing = 15
+        gui.pref_button_spacing = 10
 
         gui.history_height = 285
         gui.history_text_width = 1035
