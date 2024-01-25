@@ -869,16 +869,15 @@ screen preferences():
     #use game_menu(_("Preferences"), scroll="viewport"):
     use game_menu(_("Preferences")):
         vbox:
-            xpos 60
+            xpos 50
             if renpy.variant("small"):
                 xpos 175
-                ypos -20
 
             grid 2 2:
                 xalign 100
-                xsize 400
+                xsize 550
                 xspacing 80
-                yspacing -420
+                yspacing -280
                 if renpy.variant("pc") or renpy.variant("web"):
                     vbox:
                         style_prefix "check"
@@ -899,25 +898,19 @@ screen preferences():
                     ## Additional vboxes of type "radio_pref" or "check_pref" can be
                     ## added here, to add additional creator-defined preferences.
                 if not (renpy.variant("pc") or renpy.variant("web")):
-                    null height (46 * gui.pref_spacing)
+                    null height (39 * gui.pref_spacing)
 
                 vbox:
-                    align (0.0,0.0)
+                    align (0.0,0.5)
                     label _("Text Speed")
 
                     bar value Preference("text speed")
 
                     null height 10
 
-                    label _("Auto-Forward Time")
+                    label _("Auto-Forward / Skip Speed")
 
-                    bar value Preference("auto-forward time")
-
-                    null height 10
-
-                    label _("Auto-Forward Time")
-
-                    bar value Preference("auto-forward time")
+                    bar value FieldValue(persistent, "skip_delay", range=200, style="slider",offset=12, action=Function(autoforward_fastforward_bar)) bar_invert True 
 
                     null height 10
 
@@ -939,7 +932,7 @@ screen preferences():
                             if config.sample_sound:
                                 textbutton _("Test") action Play("sound", config.sample_sound)
 
-                        null height 50
+                        null height 60
                 vbox:
                     align (0.0, 0.5)
                     if renpy.variant("small"):

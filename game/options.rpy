@@ -84,7 +84,7 @@ define config.intra_transition = dissolve
 
 ## A transition that is used after a game has been loaded.
 
-define config.after_load_transition = dissolve
+define config.after_load_transition = Dissolve(.2)
 
 
 ## Used when entering the main menu after the game has ended.
@@ -128,6 +128,17 @@ default preferences.text_cps = 60
 
 default preferences.afm_time = 15
 
+#skip
+default persistent.skip_delay = 12 
+
+init python:
+    def recursive_update():
+        config.skip_delay = persistent.skip_delay
+
+    config.interact_callbacks.append(recursive_update)
+
+    def autoforward_fastforward_bar():
+        preferences.afm_time = round(((persistent.skip_delay / 16) + 5), 0)
 
 ## Save directory ##############################################################
 ##
