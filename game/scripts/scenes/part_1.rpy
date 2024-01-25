@@ -81,7 +81,7 @@ label playfully_surprise_him:
 
     voice "audio/voice/claude/claude_06_take_01.ogg"
     show lars
-    Claude "Although... "
+    Claude "Although..."
 
     show bg_1:
         subpixel True
@@ -125,11 +125,11 @@ label resist_the_urge_to_surprise_him:
     pause 0.5
     voice "audio/voice/claude/claude_08_take_03.ogg"
     show lars serious
-    Claude "What a boring reaction. I expected more spunk from you... "
+    Claude "What a boring reaction. I expected more spunk from you..."
    
     voice "audio/voice/lars/lars_008_take02.ogg"
     show lars serious
-    Lars "Ugh, nevermind then. Hmph!"
+    Lars "Ugh, never mind then. Hmph!"
 
     "Speaking with the playful sass that defines him, Sir Claude effortlessly slips into his act as soon as he wakes up."
 
@@ -159,7 +159,7 @@ label C_1_End:
     Lars "I promised I'd do it if you stopped insisting on {i}Captain{/i} this and {i}Captain{/i} that."
 
     show lars serious
-    Claude "... "
+    Claude "..."
 
     voice "audio/voice/claude/claude_10_take_01.ogg"
     show claude smile
@@ -168,9 +168,9 @@ label C_1_End:
 
     "Switching up the conversation whenever it works against his word, what else did I expect."
 
-    "Then again, his exceptional gift for conversation as a merchant just had a way of clicking with my piloting skills, though I wouldn't admit that outloud."
+    "Then again, his exceptional gift for conversation as a merchant just had a way of clicking with my piloting skills, though I wouldn't admit that out loud."
 
-    "Whether it was going on expeditions, dealing in trades, or connecting with the quirky passengers we often had... "
+    "Whether it was going on expeditions, dealing in trades, or connecting with the quirky passengers we often had..."
 
     "We always made an efficient team. Maybe even the best among all the guild members."
 
@@ -223,6 +223,7 @@ label C_1_End:
 
     hide smoke
     hide spotsy
+    with dissolve
     
     pause 0.5
     show claude at center 
@@ -264,9 +265,9 @@ label C_1_End:
     "His sudden change of topic leaves me slightly bewildered. I withdraw my hand from Spotsy's head, and she shakes her head as if still searching for my comforting touch."
 
     show claude smile
-    "In contrast, a mischievous grin adorns Sir Claude's face, as if his previous mood drop near Spotsy never happened in the first place."
+    "In contrast, a mischievous grin now graces Sir Claude's face, as though the earlier dip in his mood near Spotsy never happened."
 
-    "Maybe the problem wasn't the seats after all... "
+    "Maybe the problem wasn't the seats after all..."
 
     voice "audio/voice/lars/lars_016_take02.ogg"
     show claude
@@ -295,7 +296,7 @@ label C_1_End:
     Claude "Tsk, tsk, tsk! Already thinking of replacing me with someone else, are you, Captain?"
 
     voice "audio/voice/lars/lars_020_take01.ogg"
-    Lars "You said it yourself, one has to admire their bravery. Since descending into Divonia is a grand leap of faith into the unknown."
+    Lars "You said it yourself; one has to admire their bravery. Since descending into Divonia is a grand leap of faith into the unknown."
 
     voice "audio/voice/claude/claude_22_take_01.ogg"
     show claude smile
@@ -308,7 +309,7 @@ label C_1_End:
     voice "audio/voice/claude/claude_23_take_03.ogg"
     show claude sad
     show lars
-    Claude "Ah, how gladly I would take their place if I could... "
+    Claude "Ah, how gladly I would take their place if I could..."
 
     voice "audio/voice/claude/claude_24_take_03.ogg"
     show lars 
@@ -354,7 +355,7 @@ label C_1_End:
     show lars
     Claude "I've had my fill of it thanks to a {i}certain{/i} family name."
     
-    "As is his custom, Sir Claude deftly redirects the conversation whenever his family is brought up."
+    "As is his custom, Sir Claude deftly redirects the conversation whenever the topic of his family is brought up."
 
     "I used to wonder if he was doing so to maintain his privacy as a renowned heir with a diamond spoon, but despite the many years we spent together as partners, the sentiment never changed."
 
@@ -388,7 +389,7 @@ label C_1_End:
 
     "Question is, what if it turns out to be hazardous or a curse?"
     
-    "Then again, he'd certainly enjoy tackling something like that instead of dwelling on any potential dangers... "
+    "Then again, he'd certainly enjoy tackling something like that instead of dwelling on any potential dangers..."
     
     voice "audio/voice/lars/lars_028_take.ogg"
     show lars narration
@@ -429,7 +430,7 @@ label apologize_for_teasing_him:
 
     voice "audio/voice/claude/claude_34_take_02.ogg"
     show lars 
-    Claude "Oh, how it pains me to witness my most faithful, loyal, and devoted companion trying to replace me with some unknown human whilst {i}MOCKING{/i} my skills... "
+    Claude "Oh, how it pains me to witness my most faithful, loyal, and devoted companion trying to replace me with some unknown human whilst {i}MOCKING{/i} my skills..."
 
     voice "audio/voice/claude/claude_35_take_03.ogg"
     show claude shocked at right with move
@@ -473,7 +474,7 @@ label apologize_for_teasing_him:
 
     Lars "That's about it, nothing else seems to come."
 
-    "Or at least, not that I'm going to tell you outloud."
+    "Or at least, not that I'm going to tell you out loud."
 
     show bg_1:
         linear 2.0 blur 0
@@ -664,6 +665,8 @@ label C_2_End:
     show lars
     Claude "Let's not forget, the true essence of a discovery is experienced by the first person who ascertains it and not those who come later. Be it the second or the last to follow."
 
+    show claude:
+        zoom 1.0
     show lars
     Claude "If you don't seize this moment now, who knows when you'll get another chance like this? It will certainly be a captivating story to delight your future passengers."
 
@@ -723,7 +726,7 @@ label C_2_End:
     voice "audio/voice/sylvian/sylvian_003_take01.ogg"
     show sylvian
     show lars
-    Sylvian "Nevermind him [Lars]. It's best to let the spotlight find its own stage rather than chasing after it."
+    Sylvian "Never mind him [Lars]. It's best to let the spotlight find its own stage rather than chasing after it."
 
     voice "audio/voice/lars/lars_044_take02.ogg"
     Lars "Thank you, Master. I wish you could have joined us on the ride too. Sir Claude here almost caused us to plummet to our doom... multiple times I must say."
@@ -734,7 +737,7 @@ label C_2_End:
     Claude "Eh, I did promise to reward you later, didn't I? Drum roll please ~"
 
     play sound sfx_drum_roll
-    "Tension fills the air as the anticipation builds up, drawing everyone's attention. Then, in a dramatic display, he spreads his arms wide, showcasing a grand reveal which is... "
+    "Tension fills the air as the anticipation builds up, drawing everyone's attention. Then, in a dramatic display, he spreads his arms wide, showcasing a grand reveal which is..."
 
     stop sound fadeout 2.0
     "... nothing?"
@@ -798,7 +801,7 @@ label ask_Sylvian_grab_cargo:
     voice "audio/voice/sylvian/sylvian_006_take02.ogg"
     show sylvian sad
     show lars
-    Sylvian "{size=*0.85}I also wanted to spend some time with you... "
+    Sylvian "{size=*0.85}I also wanted to spend some time with you..."
 
     voice "audio/voice/sylvian/sylvian_007_take02.ogg"
     show sylvian serious funny
@@ -833,7 +836,7 @@ label ask_Sylvian_grab_cargo:
 
     "His hands gently encircle my waist, drawing me closer to him as he whispers the last part of his sentence."
 
-    "His eyes, akin to pools of molten sunlight, meet mine and a mischievous spark dances within them."
+    "His eyes, reminiscent of pools reflecting molten sunlight, lock onto mine, harboring a mischievous spark that dances within them."
 
     "While I usually dismiss this as him being more touchy-feely than usual, his last comment makes me think otherwise."
 
@@ -886,7 +889,7 @@ label ask_Sylvian_grab_cargo:
 
     show sylvian sad with dissolve
     show lars
-    Sylvian "... "
+    Sylvian "..."
 
     hide sylvian sad with dissolve
     
@@ -916,7 +919,7 @@ label ask_Sylvian_grab_cargo:
     show lars
     Claude "{i}Rory rory rory rory rory rory rory rory roryyyy~{/i}"
 
-    "Nevermind. I stand corrected."
+    "Never mind. I stand corrected."
 
     "A figure emerges from where Master Sylvian stood just a few seconds ago, and to my pleasant surprise, it is none other than my childhood best friend. "
 
@@ -975,7 +978,7 @@ label ask_Sylvian_grab_cargo:
     show rory angry
     voice "audio/voice/rory/rory_005_take03.ogg"
     show lars serious
-    Rory "It's just RORY! Call me 'little' one more time, and you'll find more of your receding hairline gracing puppet Alex... "
+    Rory "It's just RORY! Call me 'little' one more time, and you'll find more of your receding hairline gracing puppet Alex..."
 
     voice "audio/voice/claude/claude_58_take_02.ogg"
     show lars serious
@@ -1080,7 +1083,7 @@ label tell_Claude_grab_cargo:
 
     "It's unfortunate that I'm not well-versed in flower languages; otherwise, I would be able to decipher the heartfelt messages he wishes to convey through these enchanting floral gifts."
 
-    "Nonetheless, I can't help but feel treasured whenever he gives me gifts. After all, I've noticed that he hasn't given this kind of gift to anyone else, and the thought warms my heart for some reason... "
+    "Nonetheless, I can't help but feel treasured whenever he gives me gifts. After all, I've noticed that he hasn't given this kind of gift to anyone else, and the thought warms my heart for some reason..."
 
     hide sylvian_bouquet
     show claude at center_2left
@@ -1163,7 +1166,7 @@ label tell_Claude_grab_cargo:
 
     voice "audio/voice/claude/claude_65_take_03.ogg"
     show lars serious
-    Claude "Mhm, sure sure sure, whatever."
+    Claude "Mhm, sure, sure, sure, whatever."
 
     voice "audio/voice/sylvian/sylvian_018_take02.ogg"
     show lars serious
@@ -1174,7 +1177,7 @@ label tell_Claude_grab_cargo:
     Lars "That's exactly what I said!"
 
     show lars
-    Claude "Hmph... "
+    Claude "Hmph..."
    
     hide lars
     hide claude with dissolve
@@ -1214,7 +1217,7 @@ label tell_Claude_grab_cargo:
     show rory at jp
     voice "audio/voice/rory/rory_012_take03.ogg"
     show lars 
-    Rory "I feel like something is missing but I don't know what exactly... "
+    Rory "I feel like something is missing but I don't know what exactly..."
 
     voice "audio/voice/sylvian/sylvian_019_take02.ogg"
     show sylvian serious funny
@@ -1284,7 +1287,7 @@ label tell_Claude_grab_cargo:
     
     show claude smile at center_1left
     with moveinleft
-    "Speak of the devil, Sir Claude makes his entrance with the grande and ornate box held tightly by his tail. His eyes glimmer with a mixture of anticipation and excitement."
+    "Speak of the devil, Sir Claude makes his entrance with the large ornate box held tightly by his tail. His eyes glimmer with a mixture of anticipation and excitement."
 
     hide sylvian
     hide claude
@@ -1339,7 +1342,7 @@ label CS_1_End:
     Sylvian "If there's one thing my academic days have taught me, it's to not overwork when there's an easier alternative available."
     
     show lars
-    Sylvian "No one will truly appreciate your effort if you're the sole person assigning value to it... "
+    Sylvian "No one will truly appreciate your effort if you're the sole person assigning value to it..."
 
     hide sylvian sad 
     hide claude smile
@@ -1428,7 +1431,7 @@ label accept_his_offer:
     show lars narration
     Lars "My parents wouldn't let me live this down if they ever heard such rumors since they raised me to give my all to take care of those around me considering—"
     
-    Sylvian "Oh my, such an interesting result... "
+    Sylvian "Oh my, such an interesting result..."
 
     show lars narration
     Lars "Haha, nothing to worry about! But did you know, Master Sylvian? I was researching Spotsy and as part of the {i}Roseate Flame{/i} species, the intense temperature generated through their breathing process can cause the air pockets under their scales to expand—"
@@ -1463,7 +1466,7 @@ label accept_his_offer:
 
     voice "audio/voice/sylvian/sylvian_025_take01.ogg"
     show lars
-    Sylvian "Breathe for 3 seconds... hold it for 6... now release it for 9 seconds... "
+    Sylvian "Breathe for 3 seconds... hold it for 6... now release it for 9 seconds..."
 
     "Obediently, I follow Master's instructions, allowing my breath to gradually slow down. Despite my heart still thumping in my chest, each measured inhale and exhale brings a sense of calm that envelops me, grounding me in the present moment."
 
@@ -1477,7 +1480,7 @@ label accept_his_offer:
 
     voice "audio/voice/sylvian/sylvian_028_take01.ogg"
     show lars
-    Sylvian "I mean, who wouldn't want to be praised by someone they admire... I mean, not that I admire you in {i}that{/i} way, but ughhh... nevermind!"
+    Sylvian "I mean, who wouldn't want to be praised by someone they admire... I mean, not that I admire you in {i}that{/i} way, but ughhh... never mind!"
 
     "Suddenly, he takes hold of the tips of my fingers, as if he's shying away from holding my hand fully. I'm sure my ears are flushed all the way from the sweetness of his shy gesture."
 
@@ -1497,7 +1500,8 @@ label accept_his_offer:
 
     "Was that Sir Claude?"
 
-    show sylvian blush at right with move
+    show sylvian blush at right with move:
+        zoom 1.0
 
     show claude at center_1left
     show rory at center_left
@@ -1552,7 +1556,7 @@ label accept_his_offer:
     show sylvian sad with dissolve
     show claude smile with dissolve
     show lars
-    Sylvian "Ah, what a joy to be  just a {i}friend{/i} to you... "
+    Sylvian "Ah, what a joy to be  just a {i}friend{/i} to you..."
 
     voice "audio/voice/sylvian/sylvian_033_take04.ogg"
     show lars
@@ -1666,7 +1670,7 @@ label S_1_End:
     Claude "We have no idea about its origins yet, but that's the fun part of it."
 
     show lars
-    Claude "Not to mention, I could never let go of such a mysterious prize, I need to uncover its secrets all for myself... "
+    Claude "Not to mention, I could never let go of such a mysterious prize, I need to uncover its secrets all for myself..."
 
     "Sir Claude's expression undergoes a striking transformation, shifting from one of casual curiosity and playful mirth to that of intense obsession."
     
@@ -1681,6 +1685,9 @@ label S_1_End:
     show lars
     Claude "Boss Sylvian, you have quite the reputation in the academic world for your discoveries and inventions."
     
+    show claude:
+        zoom 1.0
+
     show lars
     Claude "If someone were to understand the potential behind this artifact, it would be none other than you."
 
@@ -1713,6 +1720,9 @@ label S_1_End:
     show lars serious
     Lars "Sir Claude, that's not like you—"
 
+    show claude:
+        zoom 1.0
+
     show lars serious
     Rory "Look, I think we all have something to bring to this conversation, but you don't. Especially when all you ever have to add is self-inserted praise and narcissism."
 
@@ -1737,7 +1747,7 @@ label S_1_End:
 
     show sylvian with dissolve
     show lars
-    Sylvian "Let us embrace empathy's grace and refrain from jesting, for each soul carries its own unique beauty. Whether it be descendents of lizards, foxes, swans, or bulls."
+    Sylvian "Let us embrace empathy's grace and refrain from jesting, for each soul carries its own unique beauty. Whether it be descendants of lizards, foxes, swans, or bulls."
 
     show lars
     Rory "Sorry, Mentor. Looks like I've overstepped a bit."
@@ -1829,14 +1839,14 @@ label poke_further_and_ask:
     Lars "I'm sorry if it sounds like I'm trying to, you know, suck up to you or ask for something."
     
     voice "audio/voice/lars/lars_066_take01.ogg"
-    Lars "That's really not my intention at all. It's just— well... "
+    Lars "That's really not my intention at all. It's just— well..."
     
     voice "audio/voice/lars/lars_066_take02.ogg"
-    Lars "I tend to be pretty straightforward, especially when dealing with stray dragons. I mean, not that I'm saying you're anything like a stray dragon! I guess what I'm trying to say is, ugh... "
+    Lars "I tend to be pretty straightforward, especially when dealing with stray dragons. I mean, not that I'm saying you're anything like a stray dragon! I guess what I'm trying to say is, ugh..."
 
     voice "audio/voice/sylvian/sylvian_036_take03.ogg"
     show lars
-    Sylvian "Heh! Frogive me, I just- haha... " with vpunch
+    Sylvian "Heh! Forgive me, I just- haha..." with vpunch
 
     voice "audio/voice/sylvian/sylvian_037_take03.ogg"
     show lars
@@ -1877,7 +1887,7 @@ label poke_further_and_ask:
     Sylvian "But I do appreciate your efforts, I just hope that I can be the recipient of your more {i}endearing{/i} efforts as well."
 
     show lars blush
-    Lars "Did I hear him right? I can't believe he'd say something like that... "
+    Lars "Did I hear him right? I can't believe he'd say something like that..."
 
     jump S_2_End
 
@@ -1905,7 +1915,7 @@ label joke_about_his_statement:
     hide sylvian_upset with dissolve
     show sylvian sad at center with dissolve
 
-    "In an instant, the atmosphere shifts, and a wave of melancholy washes over Master Sylian. His hands, once tranquil, now tremble slightly, and the furrow on his brow deepens as if he's grappling with memories etched on his face."
+    "In an instant, the atmosphere shifts, and a wave of melancholy washes over Master Sylvian. His hands, once tranquil, now tremble slightly, and the furrow on his brow deepens as if he's grappling with memories etched on his face."
 
     "His jaw tightens, a silent struggle playing out in the subtle lines that trace his expression. It's as if he's transported himself back to moments he'd rather keep buried, and the weight of untold stories lingers in the air."
 
@@ -1927,7 +1937,7 @@ label S_2_End:
     show lars
     Sylvian "EVERYONE! Steadfast now."
 
-    "Nevermind, he was probably feeling sentimental."
+    "Never mind, he was probably feeling sentimental."
 
     show sylvian serious funny at right
     with move
@@ -2006,7 +2016,7 @@ label S_2_End:
     Sylvian "If you feel inspired by this artifact, then by all means, go ahead."
 
     show lars
-    Claude "Not you too, Boss... "
+    Claude "Not you too, Boss..."
 
     show claude smile
     show lars
@@ -2211,7 +2221,7 @@ label CS_2_End:
         zoom 1.0
 
     show lars
-    Claude "Let it be known that I'm only helping out because I want to spend some more time with Captain [Lars] over here. Otherwise, I'd be indulging in a cool shade at my family's own tradepost."
+    Claude "Let it be known that I'm only helping out because I want to spend some more time with Captain [Lars] over here. Otherwise, I'd be indulging in a cool shade at my family's own trade post."
     
     show lars
     Claude "After all, who knows what new trinkets await to be blessed by my presence when I'm there."
@@ -2235,7 +2245,8 @@ label CS_2_End:
 
     Lars "—Claude, but what use would I have for them? They'll only get lost during dragon riding."
 
-    show claude shocked
+    show claude shocked:
+        zoom 1.0
     "Ever the showman, he raises his eyebrows in mock shock, pausing with a light gasp. His forked tongue makes its appearance as his mouth gnaws open."
 
     show lars
@@ -2270,7 +2281,7 @@ label CS_2_End:
 
     show rory
     show lars
-    Rory "Now! Let me think this through... "
+    Rory "Now! Let me think this through..."
 
     show lars
     Rory "Earrings? Nah, not good. They'd be gone with the wind before you know it!"
@@ -2285,7 +2296,8 @@ label CS_2_End:
     show lars
     Claude "How about a ring then? It could be the perfect accessory to keep on without it getting in the way."
 
-    show claude blush
+    show claude blush:
+        zoom 1.0
     show lars
     Claude "What about it, Captain? Are you up for it?"
 
@@ -2365,7 +2377,7 @@ label ask_Master_Sylvian_about:
     Sylvian "Moreover, the delicate balance of our guild relationship as Boss and member makes my feelings for you... well, somewhat unethical. I'd feel like I'm abusing my power as the leader."
 
     show lars blush
-    Lars "... "
+    Lars "..."
 
     hide sylvian with dissolve
 
@@ -2446,7 +2458,7 @@ label ask_Sir_Claude_about:
     show lars serious
     Claude "Anyways, I have no qualms about covering the cost for the ring either."
 
-    "Sounds like he's getting bored by my protests... "
+    "Sounds like he's getting bored by my protests..."
 
     voice "audio/voice/lars/lars_080_take01.ogg"
     show lars serious
@@ -2455,7 +2467,7 @@ label ask_Sir_Claude_about:
     voice "audio/voice/claude/claude_74_take_01.ogg"
     show claude blush
     show lars blush
-    Claude "You could ask for all the gold in this realm, and it would be yours to possess. I'd love to spoil you senseless, you know?"
+    Claude "You could ask for all the gold in this realm, and it would be yours to possess. I'd love to spoil you senseless; you know?"
 
     voice "audio/voice/claude/claude_75_take_02.ogg"
     show lars serious
@@ -2470,7 +2482,7 @@ label ask_Sir_Claude_about:
     show lars
     Claude "Need I remind you about Boss Sylvian's so-called {i}gifts?{/i}"
 
-    "Master's presents are purely gestures of appreciation, but rings usually mean a lot more... "
+    "Master's presents are purely gestures of appreciation, but rings usually mean a lot more..."
     
     show lars
     voice "audio/voice/lars/lars_084_take02.ogg"
@@ -2478,7 +2490,7 @@ label ask_Sir_Claude_about:
     Lars "Although... some of my human passengers did mention gifting rings as accessories, is that what you meant?"
 
     show lars
-    Claude "... "
+    Claude "..."
     
     voice "audio/voice/claude/claude_77_take_01.ogg"
     show lars
@@ -2500,7 +2512,7 @@ label ask_Sir_Claude_about:
     voice "audio/voice/claude/claude_80_take_03.ogg"
     show claude shocked
     show lars serious
-    Claude "That's not what I meant... "
+    Claude "That's not what I meant..."
 
     show claude sad
     "He takes a deep breath, preparing himself as if he's about to reveal a significant secret."
@@ -2531,7 +2543,7 @@ label ask_Sir_Claude_about:
     "Hearing Claude's earnest plea, I realize that this situation is more complex than I initially thought. His vulnerability and honesty tug at my heart. I nod, silently agreeing to have this crucial conversation in a more intimate setting."
 
     show lars blush
-    Lars "... "
+    Lars "..."
 
     hide claude blush with dissolve
     
@@ -2607,7 +2619,7 @@ label CS_3_End:
     
     "Yet, after riding countless dragons and becoming accustomed to their scales, a few feathers or fur become manageable obstacles."
 
-    "Now that I'm thinking about it... "
+    "Now that I'm thinking about it..."
 
     show bg_3 at end_pan
 
@@ -2722,7 +2734,7 @@ label look_back_at_Master_Sylvian:
         parallel:
             linear 3.0 zoom 1.50
     
-    "Meanwhile, Master Sylvian regards me with a kind look as he reaches out and gently rubs my ears, soothing my embarrassment. He's become the sole focus in my line of sight right now... "
+    "Meanwhile, Master Sylvian regards me with a kind look as he reaches out and gently rubs my ears, soothing my embarrassment. He's become the sole focus in my line of sight right now..."
 
     show bg_3:
         xalign 0.5
@@ -2740,7 +2752,7 @@ label look_back_at_Master_Sylvian:
 
     voice "audio/voice/claude/claude_90_take_02.ogg"
     show lars serious
-    Claude "Mhm, quite the focused look you've got there Captain."
+    Claude "Mhm, quite the focused look you've got there, Captain."
 
     show sylvian blush at right with move:
         zoom 1.0
@@ -2828,13 +2840,13 @@ label look_back_at_Master_Sylvian:
     voice "audio/voice/claude/claude_101_take_03.ogg"
     show claude shocked at jp
     show lars serious
-    Claude "Tsk tsk tsk, outing me like this just because you couldn't handle what I said?"
+    Claude "Tsk, tsk, tsk, outing me like this just because you couldn't handle what I said?"
 
     show lars serious
     Rory "Uhm, Mentor, I don't understand what's going on here. But can we stop bickering for a second?"
 
     show lars serious
-    Lars "Rory's right, it's not like you two to argue like this... "
+    Lars "Rory's right, it's not like you two to argue like this..."
 
     show lars serious
     Claude "It seems that some things—"
@@ -2850,6 +2862,7 @@ label look_back_at_Master_Sylvian:
         zoom 1.0
 
     show rory at jp
+    show lars
     Rory "Ahem, we have more important things to do right now. The show isn't going to start itself."
 
     jump CS_4_End
@@ -2918,18 +2931,14 @@ label look_back_at_Sir_Claude:
 
     show claude smile at center_1left with move:
         zoom 1.0
-
     show rory zorder 3 at center_left:
         zoom 1.0
     show sylvian sad zorder 2 at right:
         zoom 1.0
 
-    show rory at jp
-    Rory "Ahem, guys, we have more important things to do right now."
-
 label CS_4_End:
 
-    Rory "Try to gather the kids while I set everything up at the stall."
+    Rory "Anyways, try to gather the kids while I set everything up at the stall."
 
     hide rory
     hide claude
@@ -3026,7 +3035,7 @@ label CS_4_End:
     show lars
     Sylvian "Success without heart can be empty and hollow, Claude. While I understand you want to distinguish yourself from your family legacy for the sake of your {i}ambitions{/i}, I can't help but worry about the path you're choosing."
 
-    "Family legacy... "
+    "Family legacy..."
 
     "It was certainly true that Sir Claude had the tendency to act out against his family's wishes from time to time but according to the rumor mills, he didn't have a reason to."
 
@@ -3041,7 +3050,7 @@ label CS_4_End:
     show sylvian sad
     
     show lars
-    Claude "With all due respect {i}Boss{/i}, but, isn't that lack of ambition precisely why you're here with us today instead of boasting around the academia halls as the next possible Archmage of Divonia?"
+    Claude "With all due respect {i}Boss{/i}, but isn't that lack of ambition precisely why you're here with us today instead of boasting around the academia halls as the next possible Archmage of Divonia?"
 
     show lars
     Claude "While I appreciate your presence in our guild and your support for my endeavors, it seems you've relinquished all your desires, merely allowing yourself to be carried along by the whims of your flowery path."
@@ -3075,7 +3084,7 @@ label CS_4_End:
     Claude "Isn't that right, Captain?"
 
     show lars serious
-    Lars "... "
+    Lars "..."
 
     show lars serious
     Sylvian "Your statements hold grains of truth, Claude."
@@ -3095,7 +3104,7 @@ label CS_4_End:
 
     show claude_sylvian_fight with dissolve
 
-    Sylvian "However... "
+    Sylvian "However..."
 
     Sylvian "Amidst our pursuit of them, let us not overlook the tranquility of mediocrity."
 
@@ -3130,7 +3139,7 @@ label CS_4_End:
         Lars "I don't want to sound conceited, but if I were the person you're in love with, I'd like to think that you would have told me about it by now."
 
         show lars sad
-        Lars "But then again, you're secretive about your history as well... "
+        Lars "But then again, you're secretive about your history as well..."
 
         show sylvian sad
         Sylvian "I'm sorry but I can't tell you any more about it with Claude here."
@@ -3191,15 +3200,16 @@ label agree_with_Master_Sylvian:
 
     voice "audio/voice/sylvian/sylvian_062_take03.ogg"
     show lars
-    Sylvian "Phew, thankfully, Claude's influence hasn't rubbed off on you too much."
+    Sylvian "Thankfully, Claude's influence hasn't rubbed off on you too much."
 
     voice "audio/voice/sylvian/sylvian_063_take02.ogg"
-    show sylvian blush with dissolve
+    show sylvian blush
     show lars
     Sylvian "I'm always impressed by how well you articulate your words, my dear junior. Perhaps we can delve into these philosophies and {i}other matters{/i} when we find some time to ourselves later."
 
     voice "audio/voice/lars/lars_099_take01.ogg"
-    show sylvian sad with dissolve
+    show sylvian sad
+    show claude smile
     show lars blush
     Lars "I would love to spend time with you but Spotsy needs me more after we're done with this, don't you think so?"
 
@@ -3208,10 +3218,10 @@ label agree_with_Master_Sylvian:
 
     voice "audio/voice/sylvian/sylvian_064_take02.ogg"
     show lars
-    Sylvian "I can't deny that I am a bit disappointed... "
+    Sylvian "I can't deny that I am a bit disappointed..."
 
     voice "audio/voice/sylvian/sylvian_065_take03.ogg"
-    show sylvian with dissolve
+    show sylvian
     show lars blush
     Sylvian "However, it's one of the things that I like seeing you do, [Lars]."
 
@@ -3248,6 +3258,8 @@ label agree_with_Sir_Claude:
     Claude "Glad to see that you've learnt a few things about my motto of life, Captain. It's not complete, but I'll teach more later, {i}in private{/i}."
 
     voice "audio/voice/lars/lars_099_take01.ogg"
+    show claude
+    show sylvian mad
     show lars blush
     Lars "I would love to spend time with you but Spotsy needs me more after we're done with this, don't you think so?"
 
@@ -3256,6 +3268,8 @@ label agree_with_Sir_Claude:
     Lars "She's had a long flight after all and I'm the only person who can take care of her."
 
     voice "audio/voice/claude/claude_89_take_02.ogg"
+    show claude smile
+    show sylvian sad
     show lars blush
     Claude "At this rate, I don't think I'll ever be able to compete with your love for dragons, Captain. But I'll do my best to win you over, and spoil you rotten the same way you do for your dragons."
 
@@ -3289,6 +3303,8 @@ label CS_5_End:
 
     play music "track_4_time_stop.ogg" fadeout 2.0 fadein 2.0
 
+    "Whoa, hold on a second— what just happened here?"
+    
     "It's such an eerie scene... the children, once animated, have now come to an abrupt standstill, their vibrant expressions frozen in unnatural stillness."
 
     "A surreal silence blankets not just them but everyone around us; it appears as though the world beyond our group has been caught in the grips of time."
@@ -3298,12 +3314,11 @@ label CS_5_End:
     show sylvian serious funny
     show rory angry
     show claude shocked
-    with dissolve
 
     show lars serious
     Rory "Is this a joke? Was there a surprise flash mob that I wasn't aware of?"
 
-    show rory angry with dissolve
+    show rory angry
     show lars serious
     Rory "{bt}{size=*2.0}Claudyyyyyy.{/bt}" with vpunch
 
@@ -3319,14 +3334,16 @@ label CS_5_End:
     show lars serious
     Lars "What do you think is going on, Master?"
 
-    "Acting on instinct, my hand reaches out, grasping at the figures frozen in time, attempting to break the eerie stillness that envelops them. I shake them gently, yet with a growing sense of urgency, hoping to shatter the rigid spell that holds them captive."
+    "Acting on instinct, my hand reaches out, grasping at the figures frozen in time, attempting to break the eerie stillness that envelops them."
+    
+    "I shake them gently, yet with a growing sense of urgency, hoping to shatter the rigid spell that holds them captive."
 
     "Alas, my efforts yield no response, and the unnatural stillness persists,"
 
     show lars sad
     Lars "Kids, come on. We're getting really worried over here. Why're you standing frozen like this?"
 
-    show claude serious with dissolve
+    show claude serious
     show lars sad
     Claude "What could have suddenly happened? Everything was fine up until a few minutes ago."
 
@@ -3343,21 +3360,26 @@ label CS_5_End:
     show blink_necklace
     with dissolve
 
-    Lars "The necklace I'm wearing grows warmer, its temperature gradually rising. Intrigued and compelled, I shift my attention towards it. It appears Rory has noticed it too."
+    "The necklace I'm wearing grows warmer, its temperature gradually rising. Intrigued and compelled, I shift my attention towards it. It appears Rory has noticed it too."
 
     show lars
     Rory "Hold up! What's happening to the artifact right now? Take a look."
 
-    Lars "Instantly, everyone's gaze fixates on me."
+    "Instantly, everyone's gaze fixates on me."
 
     show lars
-    Rory "It's blinking and shining like crazy! Do you think it has something to do with what's going on? Maybe a weird spell that suddenly got activated?"
+    Rory "It's blinking and shining like crazy! Do you think it has something to do with what's going on?"
 
     show lars
-    Rory "It's as if we're the only people moving and everyone else is frozen in time. Don't you find it weird?"
+    Claude "What on earth could this piece of jewelry possibly have to do with anything?"
 
     show lars
-    Rory "What's going on, Mentor? Can't you do something about this?"
+    Rory "I don't know, but seriously, look around. It's like we're the only ones capable of moving, and everyone else is frozen in time. Weird, right?"
+
+    "Was my earlier premonition about the necklace actually on the mark?"
+
+    show lars sad
+    Lars "What's going on, Mentor? Can't you do something about this?"
 
     show lars
     Claude "Calm down little Rory—"
@@ -3366,7 +3388,7 @@ label CS_5_End:
     Rory "Claude, what the heck did you bring with yourself?! If anything goes wrong, I'm holding you responsible!"
 
     show lars
-    Claude "... "
+    Claude "..."
 
     hide blink_necklace
     hide normal_necklace 
@@ -3398,7 +3420,6 @@ label CS_5_End:
 
     show rory
     show claude
-    with dissolve
 
     show lars
     Sylvian "The brave person is not the one who feels no fear, but the one who conquers that fear. Let's do our best to figure this out."
@@ -3406,25 +3427,25 @@ label CS_5_End:
     show lars
     Lars "Me too! I'm the strongest one among us, I'll try to protect us in case something goes south."
 
-    show claude shocked with dissolve
+    show claude shocked
     show lars serious
     Claude "Wait! Can anyone else see that shadow over there?"
 
     "It appears Sir Claude spotted an approaching figure before any of us did, courtesy of his lizard-sharp eyesight."
 
-    show sylvian serious funny with dissolve
+    show sylvian serious funny
     show lars serious
     Claude "I think that it's watching us. Stay on guard."
 
     "As the tension in the air grows, I sense the presence of an unknown observer. It sends a chill down my spine, and I can feel my ears perk up."
 
     "A bead of sweat rolls down my forehead, and my ginger fur seems to prickle, almost as if it senses the imminent danger and excitement that lay ahead."
-
-    show claude serious with dissolve
+    
     voice "audio/voice/zephyr/zephyr_001_take01.ogg"
-    show lars serious
+    show claude serious
     $ zephyr_name = "Unknown"
-    Zephyr "Looks like some interesting Divs have entered my domain while I was occupied."
+    show lars serious
+    Zephyr "Muahahaha, oh, looks like some interesting Divs have entered my domain while I was occupied."
 
     $ renpy.choice_for_skipping()
     show rory:
@@ -3448,13 +3469,14 @@ label CS_5_End:
         linear 1.5 xalign 0.0
 
     voice "audio/voice/zephyr/zephyr_002_take01.ogg"
-    show lars serious
     $ zephyr_name = "Unknown"
+    show lars serious
     Zephyr "I was frozen in anticipation for what would come next, but I have work to do after this. My castle isn't going to clean up after itself!"
 
     show zephyr happy at jp
     voice "audio/voice/zephyr/zephyr_003_take02.ogg"
     $ zephyr_name = "Unknown"
+    show lars serious
     Zephyr "Get it? {i}frozen in anticipation{/i}. {bt}Hehehehehe~{/bt}"
 
     show sylvian serious funny at center_left
@@ -3472,9 +3494,11 @@ label CS_5_End:
         xalign 0
         yalign 0
     
-    "Even with the shield in place, my predator instincts stay sharp. The tension in the air is palpable, and I'm acutely aware of the figure's every move. Time seems to slow down as I focus intently on its enigmatic presence, poised to react if any threat arises."
+    "Even with the shield in place, my predator instincts stay sharp. The tension in the air is palpable, and I'm acutely aware of the figure's every move."
+    
+    "Time seems to slow down as I focus intently on its enigmatic presence, poised to react if any threat arises."
 
-    show rory angry with dissolve
+    show rory angry
     "With Rory by my side, her cutting tools poised for self-defense, we form a united front against the unknown creature."
 
     show sylvian serious funny at center_right
@@ -3495,13 +3519,13 @@ label CS_5_End:
     Zephyr "Times not running away after all. You know?"
 
     show lars serious
-    Sylvian "... "
+    Sylvian "..."
 
     show lars serious
-    Lars "... "
+    Lars "..."
 
     show lars serious
-    Claude "... "
+    Claude "..."
 
     voice "audio/voice/rory/rory_022_take03.ogg"
     show rory with dissolve
@@ -3525,31 +3549,34 @@ label CS_5_End:
     
     voice "audio/voice/zephyr/zephyr_007_take02.ogg"
     $ zephyr_name = "Unknown"
-    Zephyr "After all, it's been some time since I could speak with someone without them being brainwashed or stuck in time."
+    show lars serious
+    Zephyr "It's been some time since I could speak with someone without them being brainwashed or stuck in time."
 
     voice "audio/voice/lars/lars_110_take02.ogg"
+    show lars serious
     Lars "Huh? What're you talking about?"
 
     show zephyr happy at shake
     voice "audio/voice/zephyr/zephyr_008_take02.ogg"
-    show lars serious
     $ zephyr_name = "Unknown"
+    show lars serious
     Zephyr "Ah, the inquisitive one speaks. Hmm, I'll call you Scouty from now on since you look the part as well."
 
     voice "audio/voice/lars/lars_111_take01.ogg"
+    show lars serious
     Lars "My name is [Lars], not Scouty!"
 
     voice "audio/voice/zephyr/zephyr_009_take01.ogg"
-    show lars serious
     $ zephyr_name = "Unknown"
-    Zephyr "My brain cells will only acknowledge you as Scouty from here on out."
+    show lars serious
+    Zephyr "Ah no no, my brain cells will only acknowledge you as Scouty from here on out."
 
     voice "audio/voice/zephyr/zephyr_010_take02.ogg"
     show lars serious
     $ zephyr_name = "Unknown"
     Zephyr "You're all destined to be new additions to my castle renovation army, so sparing the effort of using two names at once seems reasonable."
 
-    "But you only have to remember one, which is {i}[Lars]{/i}! But who knows what may happen if I say that outloud."
+    "But you only have to remember one, which is {i}[Lars]{/i} ! But who knows what may happen if I say that out loud."
 
     voice "audio/voice/zephyr/zephyr_011_take02.ogg"
     show lars serious
@@ -3575,30 +3602,20 @@ label CS_5_End:
     Lars "But how is that even related to what I asked—"
 
     voice "audio/voice/claude/claude_108_take_03.ogg"
-    show claude shocked with dissolve
+    show claude shocked
     show lars serious
     Claude "Hey now, when did I—"
-
-    show rory angry with dissolve
-    show rory angry at jp
-    show claude shocked at jp
-
-    show rory angry:
-        zoom 1.0
-
-    show claude shocked:
-        zoom 1.0
 
     voice "audio/voice/rory/rory_024_take02.ogg"
     show lars serious
     Rory "—ever interrupt you?" with vpunch
 
-    show zephyr sad with dissolve
+    show zephyr sad
     show zephyr sad at shake
     voice "audio/voice/zephyr/zephyr_014_take02.ogg"
     show lars serious
     $ zephyr_name = "Unknown"
-    Zephyr "Scouty, and the other two, I need my main character moment over here, stop blabbering so much."
+    Zephyr "Hey, Scouty, and the other two, I need my main character moment over here, stop blabbering so much."
 
     "I take a deep breath, frustration bubbling up within me as I watch the scene unfold. The figure's words are becoming increasingly difficult to make sense of."
 
@@ -3606,18 +3623,19 @@ label CS_5_End:
 
     "Come on, someone has to say something."
 
-    show zephyr with dissolve
+    show zephyr
     voice "audio/voice/zephyr/zephyr_015_take01.ogg"
-    show lars serious
     $ zephyr_name = "Unknown"
-    Zephyr "As I was saying—"
+    show lars serious
+    Zephyr "Ehem, as I was saying—"
 
-    show sylvian serious funny at jp
+    show sylvian
+    show sylvian at jp
     voice "audio/voice/sylvian/sylvian_067_take01.ogg"
     show lars serious
     Sylvian "Enough banter, who exactly are you?"
 
-    show sylvian serious funny:
+    show sylvian:
         zoom 1.0
 
     "Relief washes over me as Master Sylvian speaks up."
@@ -3633,12 +3651,12 @@ label CS_5_End:
     voice "audio/voice/zephyr/zephyr_016_take01.ogg"
     $ zephyr_name = "Unknown"
     show lars serious
-    Zephyr "Impressive words, especially considering your current disadvantage but I'll humor you this time."
+    Zephyr "{bt}Ooooh{/bt}, impressive words, especially considering your current disadvantage but I'll humor you this time."
 
     voice "audio/voice/zephyr/zephyr_017_take01.ogg"
     $ zephyr_name = "Unknown"
     show lars serious
-    Zephyr "Since Smarty asked, it's time for the cliché introduction séance, the kind they do for video games and TV shows."
+    Zephyr "Since Smarty asked, it's time for the cliché introduction séance, the kind they do for games and puppet shows."
 
     voice "audio/voice/zephyr/zephyr_018_take01.ogg"
     $ zephyr_name = "Unknown"
@@ -3655,7 +3673,6 @@ label CS_5_End:
     show rory at right
     show sylvian at center_right
     show claude at center_left
-    with dissolve
 
     voice "audio/voice/zephyr/zephyr_020_take02.ogg"
     $ zephyr_name = "Unknown"
@@ -3674,6 +3691,7 @@ label CS_5_End:
     Rory "But then again, I can't see if you have knees or not."
 
     voice "audio/voice/sylvian/sylvian_069_take03.ogg"
+    show sylvian serious funny
     show lars 
     Sylvian "I don't think that's an issue we need to be discussing right now, my dear juniors."
 
@@ -3691,7 +3709,7 @@ label CS_5_End:
     voice "audio/voice/zephyr/zephyr_022_take02.ogg"
     $ zephyr_name = "Unknown"
     show lars
-    Zephyr "Hmph, don't underestimate me. I could wipe your minds clean right now since you've already heard my voice, and even learnt of my grandiose plan —though not completely— and what else... "
+    Zephyr "Hey, don't underestimate me. I could wipe your minds clean right now since you've already heard my voice, and even learnt of my grandiose plan —though not completely— and what else..."
 
     voice "audio/voice/zephyr/zephyr_023_take01.ogg"
     $ zephyr_name = "Unknown"
@@ -3750,13 +3768,15 @@ label are_you_the_person:
     show lars serious
     Rory "Come on, [Lars]! He can't actually lack that many brain cells to spell out his plan like that—"
 
+    show rory:
+        zoom 1.0
     show zephyr at shake
     voice "audio/voice/zephyr/zephyr_024_take02.ogg"
     show lars serious
     Zephyr "Exactly what do I get in exchange for all this talking and sharing my top-secret agenda? Huh?"
 
     voice "audio/voice/claude/claude_109_take_02.ogg"
-    show claude smile with dissolve
+    show claude smile
     show lars serious
     Claude "I'm sure we can reach a compromise if we settle this down like proper negotiators. Threatening someone won't get you on their side, after all. It will only provoke them to attack."
 
@@ -3769,8 +3789,13 @@ label are_you_the_person:
     Zephyr "I'll call you Slicky from now on to match those lizard descendent traits of yours since you think you're so—"
 
     voice "audio/voice/claude/claude_110_take_02.ogg"
+    show claude serious
     show lars serious
-    Claude "Shadowy figure, calls himself weird titles for attention, keeps talking about freezing time and brainwashing everyone. I think it's fairly obvious we have a deal-breaking villain on our hands. Unless you're not actually the person behind this."
+    Claude "Shadowy figure, calls himself weird titles for attention, keeps talking about freezing time and brainwashing everyone. I think it's fairly obvious we have a deal-breaking villain on our hands."
+    
+    voice "audio/voice/claude/claude_110_take_03.ogg"
+    show lars serious
+    Claude "Unless...you're not actually the person behind this."
 
     show zephyr at shake
     voice "audio/voice/zephyr/zephyr_027_take01.ogg"
@@ -3778,10 +3803,11 @@ label are_you_the_person:
     Zephyr "Of course, I am! I wouldn't brandish my family name with such buffoonery if I didn't have a grandiose endgame in mind."
 
     voice "audio/voice/claude/claude_111_take_02.ogg"
+    show claude smile
     show lars serious
     Claude "Are you sure about that? Maybe you're just a random kid messing with some kind of weird spell."
 
-    show zephyr sad with dissolve
+    show zephyr sad
 
     show zephyr sad at jp
     voice "audio/voice/zephyr/zephyr_028_take01.ogg"
@@ -3789,18 +3815,18 @@ label are_you_the_person:
     Zephyr "K-K-Kid?! I'm older than all of you combined! I mean, I've been sleeping for a few centuries but ugh that's not the point! Let me start from the beginning since you're so quick to make me out to be a low-class villain, Slicky." with vpunch
 
     voice "audio/voice/claude/claude_112_take_03.ogg"
-    show claude shocked with dissolve
+    show claude shocked
     show lars serious
     Claude "So you're not a villain?"
 
-    show zephyr with dissolve
     voice "audio/voice/zephyr/zephyr_029_take02.ogg"
+    show zephyr
     show lars serious
     Zephyr "Of course, I'm not; I'm the maestro of mischief, the virtuoso of vexation, the puppeteer of pandemonium, the curator of calamity, pulling strings to unveil the grand tapestry of turmoil—"
 
     voice "audio/voice/claude/claude_113_take_03.ogg"
+    show claude
     show lars serious
-    show claude with dissolve
     Claude "Okay, okay, we get it! Now on to answering the question."
 
     voice "audio/voice/zephyr/zephyr_030_take02.ogg"
@@ -3825,52 +3851,48 @@ label are_you_the_person:
     Rory "Seems like we have a delusional con-artist here."
 
     voice "audio/voice/zephyr/zephyr_033_take02.ogg"
-    show zephyr sad with dissolve
+    show zephyr sad
     show lars serious
     Zephyr "I'm not lying!"
 
     voice "audio/voice/rory/rory_031_take03.ogg"
-    show rory angry with dissolve
+    show rory angry:
+        zoom 1.0
     show lars serious
     Rory "You're clearly not using it responsibly, now, are you?"
 
     voice "audio/voice/zephyr/zephyr_034_take01.ogg"
-    show zephyr happy with dissolve
+    show zephyr happy
     show lars serious
-    Zephyr "Hold on there, bull woman, unless you want to be called Speedy or—"
+    Zephyr "Hold on there, bull woman, unless you want to be called Speedy or ah—"
 
-    show claude smile with dissolve
+    show claude smile
     show lars serious
     Claude "I insist you call her Smally, since she fits the size standard."
 
-    show rory angry at jp
     voice "audio/voice/rory/rory_032_take01.ogg"
     show lars serious
     Rory "Ernest Jones called from Earth and said he wants his god complex back."
 
     voice "audio/voice/zephyr/zephyr_035_take02.ogg"
-    show zephyr sad with dissolve
+    show zephyr sad
     show lars serious
     Zephyr "Quit trying to shadow my lore explanation, you two." with vpunch
 
     voice "audio/voice/rory/rory_033_take03.ogg"
-    show rory with dissolve
+    show rory
     show lars serious
     Rory "Hehe, {i}shadow... {/i}"
 
     voice "audio/voice/zephyr/zephyr_036_take01.ogg"
-    show zephyr happy with dissolve
+    show zephyr happy
     show lars serious
     Zephyr "I've decided to use the artifact for my personal gain since my present situation calls for it. But it'll all be worth it when my castle is renovated."
 
     voice "audio/voice/sylvian/sylvian_070_take04.ogg"
-    show sylvian serious funny with dissolve
+    show sylvian serious funny
     show lars serious
     Sylvian "Were there never any countermeasures set up in the case of someone misusing the artifact?"
-
-    voice "audio/voice/rory/rory_034_take01.ogg"
-    show lars serious
-    Rory "Mentor, shouldn't we use some discretion here?"
 
     voice "audio/voice/zephyr/zephyr_037_take01.ogg"
     show lars serious
@@ -3880,7 +3902,7 @@ label are_you_the_person:
     show lars serious
     Zephyr "Basically, the same necklace but with a different colored gemstone and the opposite ability—"
 
-    show claude shocked with dissolve
+    show claude shocked
 
     show sylvian serious funny at jp
     show claude shocked at jp
@@ -3897,6 +3919,12 @@ label are_you_the_person:
 
     show zephyr:
         zoom 1.0
+    show sylvian serious funny:
+        zoom 1.0
+    show claude shocked:
+        zoom 1.0
+    show rory:
+        zoom 1.0
 
     voice "audio/voice/sylvian/sylvian_072_take02.ogg"
     show lars serious
@@ -3907,7 +3935,7 @@ label are_you_the_person:
     Zephyr "I'm not an all-knowing encyclopedia, now am I? I have no clue about its current whereabouts. It might have been pilfered while I was in my centuries-long slumber; it wasn't there when I woke up."
 
     voice "audio/voice/zephyr/zephyr_041_take01.ogg"
-    show zephyr sad with dissolve
+    show zephyr sad
     show lars serious
     Zephyr "Hmph, it's not like you'll believe me anyways."
 
@@ -3957,12 +3985,12 @@ label how_come_you:
     Rory "Is that why you settled on the title of “Omniscient Lord of Bankruptcy”? Then why would you need two titles like “Malevolent Architect of Debt”?"
 
     voice "audio/voice/zephyr/zephyr_048_take02.ogg"
-    show zephyr happy with dissolve
+    show zephyr happy
     show lars serious
     Zephyr "Shush, you can't cut in while I'm laying down my sob story." with vpunch
 
     voice "audio/voice/zephyr/zephyr_049_take02.ogg"
-    show zephyr sad with dissolve
+    show zephyr sad
     show lars serious
     Zephyr "Like I said, I couldn't find anyone and the castle was completely empty."
 
@@ -3979,15 +4007,14 @@ label how_come_you:
     Zephyr "Can you fathom such impertinence?"
 
     voice "audio/voice/claude/claude_114_take_03.ogg"
-    show claude shocked with dissolve
+    show claude serious
     show lars serious
     Claude "But how could you? No money, no family, not even a proper place to sleep in, you- you'd be knee-deep in debt by this point if you decided to hire people."
 
     voice "audio/voice/zephyr/zephyr_053_take02.ogg"
     show lars serious
-    Zephyr "T-That's ugh... totally—not what happened. Hahaha... "
+    Zephyr "T-That's ugh... totally—not what happened. Hahaha..."
 
-    show lars serious
     "So, that's what happened, isn't it?"
 
     voice "audio/voice/zephyr/zephyr_054_take02.ogg"
@@ -3999,7 +4026,7 @@ label how_come_you:
     Rory "I mean, I hardly blame them at this point."
 
     voice "audio/voice/claude/claude_116_take_01.ogg"
-    show claude with dissolve
+    show claude
     show lars serious
     Claude "Long story short, you just wanted free labor."
 
@@ -4030,11 +4057,7 @@ label how_come_you:
     show lars serious
     Zephyr "Ahem! So, instead of finding descendants looking for compensation, I decided to hire newly transported humans!"
 
-    "HE DID WHAT???"
-    
-    show sylvian serious funny
-    show claude shocked
-    with dissolve
+    "HE DID WHAT EXACTLY???"
 
     show sylvian serious funny at jp
     show rory at jp
@@ -4055,7 +4078,11 @@ label how_come_you:
 
     voice "audio/voice/sylvian/sylvian_073_take01.ogg"
     show lars serious
-    Sylvian "You keep mentioning your castle and innocently slaving away unknowing humans. But where is this castle of yours? None of my maps, scrolls, or academic documents have ever pointed to the existence of a secret and perished household like the one you're describing."
+    Sylvian "You keep mentioning your castle and innocently slaving away unknowing humans. But where is this castle of yours?"
+    
+    voice "audio/voice/sylvian/sylvian_073_take02.ogg"
+    show lars serious
+    Sylvian "None of my maps, scrolls, or academic documents have ever pointed to the existence of a secret and perished household like the one you're describing."
 
     voice "audio/voice/sylvian/sylvian_074_take01.ogg"
     show lars serious
@@ -4065,8 +4092,8 @@ label how_come_you:
     "He's right! We've been walking around this issue for some time now and haven't learnt one single coherent thing. Just bits and pieces that aren't helping us get out of this mess."
 
     voice "audio/voice/zephyr/zephyr_061_take02.ogg"
-    show claude serious with dissolve
-    show zephyr sad with dissolve
+    show claude serious
+    show zephyr sad
     show lars serious
     Zephyr "I think you're undermining my generosity here; I gave you so much information for nothing. I could even wipe your brains clean."
     
@@ -4074,7 +4101,6 @@ label how_come_you:
     show lars serious
     Zephyr "After all, I'm only mentioning these because I haven't had the chance to properly speak with someone for a long time now so you mustn't think that I enjoy talking to people, okay? OKAY?"
 
-    show lars serious
     "He definitely enjoys talking with people."
 
     voice "audio/voice/lars/lars_116_take02.ogg"
@@ -4083,7 +4109,7 @@ label how_come_you:
 
     voice "audio/voice/lars/lars_117_take01.ogg"
     show lars serious
-    Lars "You woke up, broke and homeless. You decided to use free labor from the descendants to clean up the mess in your castle. However, you couldn't pay their wages properly. You then decided to slave away unsuspecting humans since they were ignorant about the rules of the realm."
+    Lars "You woke up, broke, and homeless. You decided to use free labor from the descendants to clean up the mess in your castle. But, you couldn't pay them properly. Now you're slaving away unsuspecting humans who were ignorant about our realm."
 
     voice "audio/voice/lars/lars_118_take01.ogg"
     show lars serious
@@ -4092,7 +4118,11 @@ label how_come_you:
     show zephyr at shake
     voice "audio/voice/zephyr/zephyr_063_take01.ogg"
     show lars serious
-    Zephyr "How could I bring them back to my castle without explaining the situation to them? They would get suspicious and run away from now. You know how hard I've worked to manually capture the humans and brainwash them to fix up my home? Or do you want me to be homeless?"
+    Zephyr "Well, how could I bring them back to my castle without explaining the situation to them? They would get suspicious and run away from now. You know how hard I've worked to manually capture the humans and brainwash them to fix up my home?"
+    
+    voice "audio/voice/zephyr/zephyr_063_take02.ogg"
+    show lars serious
+    Zephyr "Or do you want me to be homeless?"
 
     voice "audio/voice/zephyr/zephyr_064_take02.ogg"
     show lars serious
@@ -4107,7 +4137,7 @@ label how_come_you:
     Zephyr "I didn't want to, okay? But what other choice did I have?"
 
     voice "audio/voice/rory/rory_038_take01.ogg"
-    show rory angry with dissolve
+    show rory angry
     show lars serious
     Rory "Literally, anything besides making a house-renovating army of human zombie servants."
 
@@ -4121,13 +4151,15 @@ label how_come_you:
 
     voice "audio/voice/zephyr/zephyr_068_take01.ogg"
     show lars serious
-    Zephyr "Rumor has it that news and gossip about transported humans fetch quite the price these days, rivaling even celebrities and renowned descendants. If I could secure some scandalous scoops, I'd amass enough wealth to renovate my abode without the hassle of this extra business."
+    Zephyr "Rumor has it that news and gossip about transported humans fetch quite the price these days, rivaling even celebrities and renowned descendants."
+    
+    voice "audio/voice/zephyr/zephyr_068_take02.ogg"
+    show lars serious
+    Zephyr "If I could secure some scandalous scoops, I'd amass enough wealth to renovate my abode without the hassle of this extra business."
 
     jump menu_g1
 
 label G_1_End:
-
-    play music "track_1_intro.ogg" fadeout 2.0 fadein 2.0
 
     show claude 
     show sylvian
@@ -4135,28 +4167,7 @@ label G_1_End:
     show zephyr
     with dissolve
 
-    show zephyr sad with dissolve
-    show zephyr sad at shake
-    voice "audio/voice/zephyr/zephyr_071_take02.ogg"
-    show lars
-    Zephyr "Ugh, I'm getting tired of this interview session."
-
-    voice "audio/voice/claude/claude_122_take_01.ogg"
-    show claude smile with dissolve
-    show claude smile at jp
-    show lars
-    Claude "Where's the proof that you haven't been speaking gibberish so far?"
-
-    voice "audio/voice/claude/claude_123_take_01.ogg"
-    show lars
-    Claude "Merchants always need to showcase their credibility, same goes for someone who's exchanging our time with childish bluffs."
-
-    voice "audio/voice/zephyr/zephyr_072_take02.ogg"
-    show lars
-    Zephyr "This group is going to be the death of me, I swear."
-
     voice "audio/voice/sylvian/sylvian_075_take03.ogg"
-    show sylvian serious funny with dissolve
     show lars
     Sylvian "This is going to take us even longer if we continue at this pace. Rory, could you come here for a second?"
 
@@ -4169,14 +4180,14 @@ label G_1_End:
 
     "However, before I have more time to analyze what was going on, Rory chirps back to our side."
 
-    show sylvian with dissolve
     show rory at right
 
     voice "audio/voice/rory/rory_039_take02.ogg"
     show lars
-    Rory "You can't die on us yet {bt}Ghostyyyy{/bt}; I'm planning to give you a timeless puppet show after all!"
+    Rory "You can't die on us yet {i}Ghostyyyy{/i}; I'm planning to give you a timeless puppet show after all!"
 
-    show zephyr with dissolve
+    "What? Puppet show?"
+
     show zephyr at shake
     voice "audio/voice/zephyr/zephyr_073_take02.ogg"
     show lars
@@ -4190,7 +4201,7 @@ label G_1_End:
     Rory "You mentioned that you wanted to be entertained, right? So why don't I keep you occupied— I mean, uh— keep you \"strung along\" for a private show."
 
     show rory at shake
-    show claude smile with dissolve
+    show claude smile
     voice "audio/voice/rory/rory_041_take02.ogg"
     show lars
     Rory "I'm sure a person of your caliber is also familiar with these kinds of VIP events, aren't you? Because it would be totally embarrassing if you didn't."
@@ -4217,7 +4228,7 @@ label G_1_End:
     Rory "So, why don't we go around the corner where I have my stall set up?"
 
     voice "audio/voice/zephyr/zephyr_075_take01.ogg"
-    show zephyr sad with dissolve
+    show zephyr sad
     show lars
     Zephyr "Huh, what about my new army additions here?"
 
@@ -4228,12 +4239,12 @@ label G_1_End:
     Rory "They can't do anything when the time is frozen like this, so why don't we have some fun without any worries?"
 
     show lars
-    Zephyr "... "
+    Zephyr "..."
 
     "Is he going to accept?"
 
     show lars
-    "Everyone" "... "
+    "Everyone" "..."
 
     voice "audio/voice/zephyr/zephyr_076_take01.ogg"
     show lars
@@ -4249,7 +4260,9 @@ label G_1_End:
     hide rory
     with dissolve
 
-    show claude at center_2left:
+    play music "track_1_intro.ogg" fadeout 2.0 fadein 2.0
+
+    show claude at center_2left with move:
         xzoom 1.0
     
     show sylvian at center_2right with move
@@ -4260,14 +4273,14 @@ label G_1_End:
     show lars
     Lars "That was part of your plan all along?"
 
-    show claude serious with dissolve
+    show claude serious
     show lars
     Claude "Look, Captain, we don't have much time to lavish praise on our precious {i}Boss{/i} and little Rory right now."
 
     show lars sad
     Lars "I'm a bit worried about Rory, though. Maybe I should have convinced Zephyr to let me go with her—"
 
-    show claude smile with dissolve
+    show claude smile
     show lars sad
     Claude "Pfft, she's perfectly fine taking care of her own, and that's coming from me."
 
@@ -4277,7 +4290,7 @@ label G_1_End:
     show lars serious
     Lars "How so? Isn't there even a tiny bit of doubt in your mind?"
 
-    show claude shocked with dissolve
+    show claude shocked
     show claude shocked at jp
     show lars
     Claude "I do believe what he's saying, or more so, I want his story to be true. I've been waiting for a thrilling adventure like this for quite a long time now, and the opportunity is now within my grasp."
@@ -4286,12 +4299,12 @@ label G_1_End:
     Sylvian "I also think we have to believe what he says. Most notably what he mentioned about the necklace."
 
     show lars
-    Claude "But he didn't even know that we have his so-called counter-artifact with us. Especially with how [Lars] has been hiding the necklace under his clothing all this time."
+    Claude "But he didn't even know that we have his so-called counter-artifact with us. Especially with how Captain [Lars] has been hiding the necklace under his clothing all this time."
 
-    show claude smile with dissolve
+    show claude smile
     Claude "I'd probably miss it too without these handy lizard eyes."
 
-    show sylvian sad with dissolve
+    show sylvian sad
     Claude "Speaking of eyes, if I happen to overlook something crucial, I might just have to attribute it to being too captivated by your presence, Captain. Gotta take responsibility, you know?"
 
     hide claude smile
@@ -4336,16 +4349,18 @@ label G_1_End:
     Sylvian "Supposedly, he's been sleeping for centuries, using his family's time freeze artifact on himself for some unbeknownst reason."
 
     show lars
-    Sylvian "After all, a man is not what he thinks he is, he is what he hides."
+    Sylvian "After all, a person is not what they think they are, they are what they hide."
+
+    "What they hide, huh? Zephyr already laid out their entire plan before us, so I can't quite decipher what the master is alluding to."
 
     show lars
     Sylvian "This mysterious person can easily be related to us as well when you consider how the artifact fell into our hands in the first place."
 
-    show claude shocked with dissolve
+    show claude shocked
     show lars
     Claude "I did think it was suspicious how the merchant was trying to get rid of the box so quickly. No one would try to sell something to the Dupont family at a loss in profits."
 
-    show sylvian sad with dissolve
+    show sylvian sad
     show lars sad
     Lars "I'm sorry too. I messed up big time. I shouldn't have put any of you in this situation. What kind of dragon pilot am I if I can't ensure the safety of those around me?"
 
@@ -4353,8 +4368,6 @@ label G_1_End:
 
     show sylvian 
     show claude 
-    with dissolve
-
     show lars
     Sylvian "Now that we're aware, let's approach this with caution to avoid falling for any more tricks. Before our young Lord arrives, we should gather all the information we can for now."
 
@@ -4371,34 +4384,33 @@ label G_1_End:
     show shining_necklace 
     with dissolve
 
-    Lars "The heat it emitted during our earlier encounter with Zephyr may have subsided, but its enchanting radiance remains."
+    "The heat it emitted during our earlier encounter with Zephyr may have subsided, but its enchanting radiance remains."
 
-    Lars "Now that I think about it, he mentioned not knowing the whereabouts of the artifact, despite being in charge of the two couple necklaces all this time. My question is, why did this variable suddenly exempt us from the time freeze effect? Could it be related to the artifact?"
-
-    show lars
-    Sylvian "If it was related to the presence of the artifact in a known area, then why wasn't anyone else near the seashore also affected by its counteracting abilities? The weird shadow also said something similar."
-
-    show lars
-    Claude "Perhaps... it's related to touching the artifact."
+    "Now that I think about it, he mentioned not knowing the whereabouts of the artifact, despite being in charge of the two couple necklaces all this time."
+    
+    "But the question is, why did this variable suddenly exempt us from the time freeze effect? Could it be related to the artifact?"
 
     show lars
-    Claude "Think about it, we all experienced this phenomenon after holding the necklace."
+    Claude "If it was related to the presence of the artifact in a known area, then why wasn't anyone else near the seashore also affected by its counteracting abilities? The weird shadow also said something similar."
 
     show lars
-    Claude "Not to mention, we were the only people who touched the artifact after opening the box."
+    Sylvian "Perhaps... it's related to touching the artifact."
 
-    hide shining_necklace
+    show lars
+    Sylvian "We all experienced this phenomenon after holding the necklace."
+
+    Lars "Not to mention, we were the only people who touched the artifact after opening the box."
+
+    hide shining_necklace with dissolve
+
     show claude smile at center_2left 
     show sylvian serious funny at center_2right 
     with dissolve
 
     show lars
-    Lars "Quite the detective, aren't you? I didn't realize I had a master of deduction by my side."
+    Claude "Quite the detective, aren't you? I didn't realize I had a master of deduction by my side."
 
-    show lars
-    Claude "Oh, Captain, you'll uncover even more intriguing talents if you choose to stick around with me."
-
-    show sylvian sad with dissolve
+    show sylvian sad
     show lars 
     Sylvian "Enough flirting, Claude."
 
@@ -4409,7 +4421,7 @@ label G_1_End:
     show lars serious
     Lars serious "His plan to renovate his castle seems utterly absurd to me, though."
 
-    show sylvian serious funny with dissolve
+    show sylvian serious funny
     show lars
     Claude "Mhm, hiring descendants only to realize he can't pay his way through. Going for humans and not even offering to inform them of the rules around here. It's both malicious and strangely naive at the same time."
 
@@ -4427,20 +4439,17 @@ label G_1_End:
 
     Lars "But how are we supposed to do that? He already wants to stop us by adding us to his zombie human army since he believes we'll spoil his plans."
 
-    Lars "Also, I can't figure out why he's giving all this info to us, knowing it's going to work against him. Does he have another plan in mind?"
+    Lars "I can't figure out why he's giving all this info to us either, knowing it's going to work against him. Does he have another plan in mind?"
 
     show claude smile at jp
     show lars
-    Claude "Like I said, he's probably just a naive kid. But we can use that to our advantage."
+    Claude "Like Boss said, he's probably just a naive kid. But we can use that to our advantage."
 
     show lars
     Sylvian "Fortunately for us, a threatening tongue reveals a wayward start."
 
     show lars
     Sylvian "For in loose words, a tale unfolds, of inner battles and stories untold."
-
-    show lars
-    Claude "I'd like to think that one of his screws is missing."
 
     Lars "So I'm assuming we're going to act unaware of why we're not affected by the time suspension?"
 
@@ -4450,11 +4459,15 @@ label G_1_End:
     Lars "What if he notices though?"
 
     show lars
-    Claude "He's more preoccupied with being entertained than trying to figure out why we're moving around freely. Do you recall him even questioning us about it?"
+    Sylvian "He's more preoccupied with being entertained than trying to figure out why we're moving around freely. Do you recall him even questioning us about it?"
 
-    Lars "Now that you mention it... "
+    Lars "Now that you mention it..."
 
-    "Speak of the devil, Zephyr's black particles coalesce once more and he and Rory appear side-by-side. My initial worry dissipates as they emerge with grins plastered across their faces."
+    play music "track_5_zephyr_theme.ogg" fadeout 2.0 fadein 2.0
+
+    "Speak of the devil, Zephyr's black particles coalesce once more and he and Rory appear side-by-side."
+    
+    "My initial worry dissipates as they emerge with grins plastered across their faces."
 
     $ renpy.choice_for_skipping()
     show sylvian zorder 1 with dissolve:
@@ -4490,13 +4503,13 @@ label G_1_End:
     show lars
     Sylvian "I'm glad to see you back safely, my dear junior."
 
-    show claude smile with dissolve
+    show claude smile
     show lars
     Claude "Can't say I share the sentiment."
 
-    show rory angry with dissolve
+    show rory angry
     show lars
-    Rory "Well, you're a few degrees short of cold-blooded, so I don't blame you."
+    Rory "Well, you're a few degrees short of cold-blooded, so I don't blame you, you fake—"
 
     show zephyr zorder 3
     show lars
@@ -4506,7 +4519,7 @@ label G_1_End:
     show claude at center_2right
     with move
     
-    "Master Sylvian's steady voice resonates with unwavering conviction as he faces Zephyr."
+    "Master Sylvian's steady voice resonates with unwavering conviction as he moves forward to face Zephyr."
 
     show sylvian serious funny with dissolve
     show lars serious
@@ -4518,19 +4531,19 @@ label G_1_End:
     Zephyr "Here's the fact, Smarty. I don't understand the mechanics of it either and I don't really have to."
 
     show lars serious
-    Zephyr "What I do know is that you guys can escape the effects of my family heirloom either because you're special in some way or there's a variable that I'm not aware of, like the counter artifact."
+    Zephyr "What I do know is that you guys can escape the effects of my family heirloom either because you're special in some way or there's a variable that I'm not aware of..."
 
-    "Oh no, is he catching on to us?"
+    "Oh no, is he catching on to our counter artifact?"
 
     "I grasp the gemstone beneath my piloting gear, my fingers wrapping around it tightly. It's as if I'm seeking reassurance that our hidden card remains securely in our possession"
 
     "Looking over my shoulder, I notice my tail wagging at full speed. The rhythmic swaying is almost involuntary, a physical manifestation of the heightened anxiety stirred by Zephyr's comments."
 
-    show sylvian with dissolve
+    show sylvian
     show lars serious
     Zephyr "{i}But{/i}... enough of that imaginary scenario because I don't really care why you're not affected."
 
-    show claude smile with dissolve
+    show claude smile
     show lars serious
     Claude "Told you so, Captain."
 
@@ -4545,14 +4558,26 @@ label G_1_End:
 
     "That's literally what we're trying to do here though!"
 
-    show zephyr sad with dissolve
+    show zephyr sad
     show lars serious
     Zephyr "However, I can't keep time frozen forever. I need to teach my new minions what they need to do."
+
+    show sylvian at center_right
+    show claude smile at center_left
+    show rory at right
+    with move
 
     show lars serious
     Claude "Before that, I possess a proposition that might pique your interest."
 
-    show zephyr happy with dissolve
+    show sylvian:
+        zoom 1.0 
+    show claude smile:
+        zoom 1.0  
+    show rory:
+        zoom 1.0 
+
+    show zephyr happy
     show lars serious
     Zephyr "Hmm? What is it Slicky?"
 
@@ -4560,7 +4585,10 @@ label G_1_End:
     Claude "It appears you're seeking some amusement, considering your remarks about the lackluster nature of your current {i}companions{/i}. We could be the very diversion you yearn for."
 
     show lars serious
-    Zephyr "That won't do. I can't leave you guys alone; you might spoil my plans or decide to play around with the artifact when I'm not looking, especially since I gave you the description for it. Got it, Scouty? Slicky? Smarty?"
+    Zephyr "That won't do. I can't leave you guys alone; you might spoil my plans or decide to play around with the artifact when I'm not looking, especially since I gave you the description for it."
+    
+    show lars serious
+    Zephyr "Got it, Scouty? Slicky? Smarty?"
 
     show lars serious
     Lars "Why do I feel like we've become Earthling pets of some sort with all these weird nicknames?"
@@ -4569,9 +4597,9 @@ label G_1_End:
     Zephyr "I've been surrounded by so many brainwashed humans during the castle renovations that my brain cells are rotting by the lack of creativity and putrid repeated phrases. You could say their antics are rubbing off on me."
 
     show lars serious
-    Zephyr "Anywho, how can you convince me that you won't be an obstacle to my plan until my castle is restored?"
+    Zephyr "Any who, how can you convince me that you won't be an obstacle to my plan until my castle is restored?"
 
-    show rory with dissolve
+    show rory at jp
     show lars serious
     Rory "We'll pinky promise."
 
@@ -4591,11 +4619,11 @@ label G_1_End:
     show lars serious
     Zephyr "Somehow, I really doubt—"
 
-    show sylvian sad with dissolve
+    show sylvian sad
+    show claude shocked
     show lars serious
     Sylvian "[Lars]! What're you trying to do?"
 
-    show claude shocked with dissolve
     show lars serious
     Claude "I'm not a fan of what you're trying to pull here, Captain. Especially since it's without me."
 
@@ -4604,29 +4632,28 @@ label G_1_End:
 
     show zephyr at shake
     show lars serious
-    Zephyr "... "
+    Zephyr "..."
 
     show lars serious
     Lars "You just need to give us a few minutes and listen to our case."
 
     show zephyr at shake
     show lars serious
-    Zephyr "... "
+    Zephyr "..."
 
     show lars
     Zephyr "Ugh fine! But just for a little. It's not like I wanted to repay you back for listening to me, okay? OKAY?"
 
-    show lars
     "He's definitely repaying us for listening to him."
 
     Lars "Master Sylvian, you're the smartest person amongst us—"
 
     show claude shocked at jp
     show lars
-    Claude "I'm hurt that you're not even considering me Captain... "
+    Claude "I'm hurt that you're not even considering me Captain..."
 
     show lars
-    Claude "You should have at least hesitated a bit... "
+    Claude "You should have at least hesitated a bit..."
 
     Lars "We need you to come up with a plan!"
 
@@ -4648,10 +4675,12 @@ label G_1_End:
     show lars
     Claude "Sorry, Captain. But I'm siding with Boss on this one."
 
+    "Not you too Sir Claude..."
+
     show lars
     Claude "Just to clarify, my reasons are a bit different."
 
-    show claude smile with dissolve
+    show claude smile
     show lars
     Claude "Boss Sylvian might want to divert his attention from us and discreetly find a solution to maintain his current peace and order. But I'm more inclined to jump right into the heart of the matter."
 
@@ -4702,7 +4731,7 @@ label speak_with_Master_Sylvian:
     Sylvian "He basically admitted to slaving away humans and descendants alike just for some castle renovations."
 
     voice "audio/voice/sylvian/sylvian_079_take03.ogg"
-    show sylvian serious funny with dissolve
+    show sylvian serious funny
     show lars
     Sylvian "Does any of that sound rational to you?"
 
@@ -4711,12 +4740,12 @@ label speak_with_Master_Sylvian:
     Lars "No, but shouldn't we aim to ruin his plan for the same reason? He's robbing unsuspecting humans of their freedom. As members of {i}'Custodes Sylvae',{/i} our duty is to rescue them—"
 
     voice "audio/voice/sylvian/sylvian_080_take03.ogg"
-    show sylvian sad with dissolve
+    show sylvian sad
     show lars serious
     Sylvian "We're just a merchant guild, [Lars]. I understand your sentiments, but we can't rush into things like this."
 
     voice "audio/voice/sylvian/sylvian_082_take02.ogg"
-    show sylvian with dissolve
+    show sylvian
     show lars sad
     Sylvian "An opportunity will arise if we give it time. Once we have more information about the artifact, we can start devising a plan, whatever it may be."
 
@@ -4725,7 +4754,7 @@ label speak_with_Master_Sylvian:
     show lars sad
     Sylvian "I can't let him get his hands on any of my valuable guild members, {i}especially{/i} not you."
 
-    "Master Sylvian? What's with the sudden declaration? It almost sounded like... "
+    "Master Sylvian? What's with the sudden declaration? It almost sounded like..."
 
     voice "audio/voice/sylvian/sylvian_084_take03.ogg"
     show lars blush
@@ -4744,7 +4773,7 @@ label speak_with_Master_Sylvian:
     Lars "Let's just talk it out with the others for now. Alright?"
 
     voice "audio/voice/sylvian/sylvian_086_take02.ogg"
-    show sylvian sad with dissolve
+    show sylvian sad
     Sylvian "I suppose this conversation can wait for another time."
 
     show sylvian sad at right
@@ -4753,7 +4782,7 @@ label speak_with_Master_Sylvian:
 
     voice "audio/voice/sylvian/sylvian_087_take02.ogg"
     show lars
-    Sylvian "{size=*0.75}It's been so long that I've reached out for a piece of my own accord that I've forgotten how to clench what's already in the palm of my hand."
+    Sylvian "{size=*0.85}It's been so long that I've reached out for a piece of my own accord that I've forgotten how to clench what's already in the palm of my hand."
 
     "I hope he didn't say anything too serious."
 
@@ -4792,16 +4821,18 @@ label speak_with_Sir_Claude:
     Claude "I could take a more subtle approach and talk to the merchant again, inquire about possible tools or learn the story behind our artifact."
 
     voice "audio/voice/claude/claude_131_take_02.ogg"
+    show claude smile
     show lars
     Claude "But I can't risk losing my seat in this interesting show."
 
-    "Sir Claude... "
+    "Sir Claude..."
 
-    voice "audio/voice/claude/claude_133_take_02.ogg"
-    show claude blush with dissolve
+    voice "audio/voice/claude/claude_132_take_02.ogg"
+    show claude blush
     show lars blush
     Claude "I would go on ahead on my own but I don't want to leave my duo behind either."
 
+    voice "audio/voice/claude/claude_133_take_02.ogg"
     show lars blush
     Claude "It would be no fun without you by my side, [Lars]."
 
@@ -4828,10 +4859,6 @@ label speak_with_Sir_Claude:
     show lars blush
     Claude "Adventures favor the bold and fortunate."
 
-    voice "audio/voice/claude/claude_136_take_01.ogg"
-    show lars blush
-    Claude "We'll end up misusing our lifetime of luck if we don't take up this chance."
-
     show lars blush
     "Alright, Alright, I get it. Time to get a move on now."
 
@@ -4843,14 +4870,14 @@ label speak_with_Sir_Claude:
     "What a riot, everyone else can hear you making such a loud declaration!"
     
     show lars blush
-    "Not even a lick of embarrassment either, that's just how self-assured he is... "
+    "Not even a lick of embarrassment either, just how self-assured can someone be..."
 
 label CS_6_End:
 
     scene bg black with fade
     show bg_3 with fade
 
-    play music "track_1_intro.ogg" fadeout 2.0 fadein 2.0
+    play music "track_5_zephyr_theme.ogg" fadeout 2.0 fadein 2.0
     
     show sylvian zorder 1 at center_1right
     show claude zorder 2 at center_left:
@@ -4868,7 +4895,7 @@ label CS_6_End:
 
     "I stride purposefully towards him and hold my tail straight as a sign of readiness."
 
-    show claude smile with dissolve
+    show claude smile
     show lars serious
     Claude "You can't stop now, Captain."
 
@@ -4884,9 +4911,9 @@ label CS_6_End:
     Zephyr "Hurry up now, I don't have all day."
 
     show lars serious
-    Lars "{size=*1.25}Young Lord Zephyr!" with vpunch
+    Lars "{size=*1.25}Lord Zephyr!" with vpunch
 
-    show zephyr sad with dissolve
+    show zephyr sad
     show zephyr sad at jp
     show lars serious
     Zephyr "Yikes, are you attempting to blast a hole through my non-existent eardrums or something?"
@@ -4898,12 +4925,9 @@ label CS_6_End:
 
     "I share a meaningful look with my fellow guild members, and it's clear that they are all equally puzzled. The silence that follows my suggestion serves as confirmation."
 
-    show claude serious with dissolve
-    show sylvian serious funny with dissolve
-    show lars serious
-    Rory "I don't think it's too late to come back just as confidently, [Lars]... "
-
-    show zephyr happy with dissolve
+    show claude serious
+    show sylvian serious funny
+    show zephyr happy
     show lars serious
     Zephyr "What're you trying to scheme Slicky? Are you trying to trick me with this sudden suggestion?"
 
@@ -4913,21 +4937,21 @@ label CS_6_End:
 
     Lars "Hence, the best we can do is reach a compromise that suits both our interests."
 
-    show claude blush with dissolve
+    show claude blush
     show lars blush
     Claude "That's the kind of negotiation skill I'd like to see."
 
-    show claude smile with dissolve
+    show claude smile
     show lars
     Zephyr "... and your idea of a compromise is for me to have you all entertain me and give me a scoop?"
 
-    show sylvian with dissolve
+    show sylvian
     Lars "You like to be entertained, don't you? At your disposal, there is a famous merchant, puppet-master, magician, and a dragon pilot."
 
     Lars "You can earn a column's worth of gossip material and earn your funds without hurting anyone. Didn't you say that you dislike brainwashing and kidnapping people as well?"
 
     show lars
-    Zephyr "Hmm, such insolence!" with vpunch
+    Zephyr "Hmph, such insolence!" with vpunch
 
     show zephyr at shake
     show lars
@@ -4935,7 +4959,7 @@ label CS_6_End:
 
     Lars "I don't need to. We're the only ones aware of your situation and still willing to listen. That's why we're the best suited to cater to your interests."
 
-    show sylvian blush with dissolve
+    show sylvian blush
     show lars blush
     Sylvian "Great work, my dear junior. I knew I could trust you."
 
@@ -4950,45 +4974,41 @@ label CS_6_End:
     show sylvian 
     show claude shocked
     show rory
-    with dissolve
 
     show rory at jp
     show claude shocked at jp
     show sylvian at jp
-    "Everyone" "{size=*1.5}WHAAAAT????" with vpunch
-
-    show claude shocked:
-        zoom 1.0
-
-    show rory:
-        zoom 1.0
-
-    show sylvian:
-        zoom 1.0
+    "Everyone" "{size=*1.5}WHAT????" with vpunch
         
     Lars "After all, I'm a dragon pilot, so we already share quite a few common interests, especially considering that you're a supposed dragon descendent."
 
+    show claude shocked:
+        zoom 1.0
+    show rory:
+        zoom 1.0
+    show sylvian:
+        zoom 1.0
+        
     "Please, take the bait!"
 
     show zephyr sad with dissolve
-    show zephyr sad with shake
+    show zephyr sad at shake
     show lars serious
-    Zephyr "... "
+    Zephyr "..."
 
-    show zephyr sad with shake
+    show zephyr sad at shake
     show lars serious
-    Zephyr "... two."
+    Zephyr "...two."
 
     show lars serious
     Lars "Hmm, what?"
 
     show lars serious
-    Zephyr "I'd like two of you to take on the role of my personal  entertainers."
+    Zephyr "I'll have two of you to take on the role of my personal  entertainers."
 
     show sylvian sad
     show claude serious
     show rory angry
-    with dissolve
 
     show lars serious
     Zephyr "I'll take you to my castle and the rest of you can prance around as it."
@@ -4998,12 +5018,6 @@ label CS_6_End:
 
     show lars serious
     Zephyr "You have to keep me well entertained though considering I'm a huge fan of confessions and duo comedy routines."
-    
-    show lars serious
-    Rory "So you're trying to {i}ice-olate{/i} us."
-
-    show zephyr at shake
-    Zephyr "Finally! Somehow who understands my sense of humor."
 
     show lars serious
     Lars "But that's not what I told you, it's only supposed to be me. Here's the deal: no touching their hair, no messing with furs, feathers, scales, anything!"
@@ -5011,7 +5025,9 @@ label CS_6_End:
     show lars serious
     Lars "Also, you can't take us to your castle. Who knows how risky it could be when it's not fully renovated yet?"
 
-    "If he does go after the other guild members, he'll notice that we don't have any special powers to counteract the artifacts' time suspension effect. We could all get caught without any counter measures! I don't want to risk going to an unknown location either."
+    "If he does go after the other guild members, he'll notice that we don't have any special powers to counteract the artifacts' time suspension effect."
+    
+    "We could all get caught without any counter measures! I don't want to risk going to an unknown location either."
 
     show claude at jp
     show lars serious
@@ -5020,7 +5036,7 @@ label CS_6_End:
     show claude:
         zoom 1.0
 
-    show sylvian sad with dissolve
+    show sylvian sad
     show lars serious
     Sylvian "Forget the plan, we didn't discuss this self-sacrificing scenario, [Lars]! You mustn't risk—"
 
@@ -5039,21 +5055,23 @@ label CS_6_End:
     show lars serious
     Zephyr "Pick between Smarty and Slicky over there, since I already had Speedy entertain me."
 
-    show sylvian:
+    show sylvian sad:
         zoom 1.0
 
-    Lars "... "
+    Lars "..."
 
     show sylvian sad at shake
-    Sylvian "[Lars], I can't leave you alone like this, otherwise... "
+    Sylvian "[Lars], I can't leave you alone like this, otherwise..."
 
     show lars sad
     Lars "Master—"
 
-    show sylvian serious funny with dissolve
-    show claude shocked with dissolve
+    show sylvian serious funny
+    show claude shocked
     show lars sad
     Sylvian "Let us go to his castle together."
+
+    'What???' with vpunch
 
     show lars sad
     Sylvian "Even though I disagree with this hasty approach, I'll do my best to assist you with my knowledge and magical prowess."
@@ -5061,9 +5079,9 @@ label CS_6_End:
 
     if options["CS6"]==1:
 
-        show sylvian blush with dissolve
+        show sylvian blush
         show lars blush
-        Sylvian "You're a cherished member of my guild, one of the few things I've gotten right—a rare and perfectly fitted puzzle piece that I won't jeopardize or let slip away, even if it means disrupting my current state of peace."
+        Sylvian "You're a cherished member of my guild, one of the few things I've gotten right— a rare and perfectly fitted puzzle piece that I won't jeopardize or let slip away, even if it means disrupting my current state of peace."
 
         "The intensity of Master Sylvian's gaze pins me, and my heart skips a beat in response. The heat in his stare seems to sear through me, and I can't help but feel the weight of his words hanging in the air."
 
@@ -5073,27 +5091,16 @@ label CS_6_End:
 
         "Why he departed academia and how it caused him to abandon his past and establish the guild for us, alongside the rationale behind his motto of life to keep things uncomplicated and go with the flow."
 
-        "Most importantly, I wonder why he wants me to be safe within his sight... "
-
+        "Most importantly, I wonder why he wants me to be safe within his sight..."
 
 
     show claude smile with dissolve
     show lars
     Claude "Captain, didn't we talk about our future plans together? What kind of a duo would we be if one left the other behind?"
 
-    show lars
-    Claude "In a world of limitless horizons and uncharted trails, I am a wanderer at heart, forever seeking new thrills and adventures."
-
-    show lars
-    Claude "Yet, amidst the uncertainty that lies ahead, I want you to choose me to walk by your side."
-
-    show lars
-    Claude "I'll make the journey worthwhile for you with my charm and experience."
-
-
     if options["CS6"]==2:
 
-        show claude blush with dissolve
+        show claude blush
         show claude blush at shake
         show lars blush
         Claude "Plus, we'll make quite the successful team if we tackle this mystery together."
@@ -5105,11 +5112,11 @@ label CS_6_End:
 
         "I can't believe that I was this important to him as his guild member."
 
-        "Perhaps there's a chance to uncover more about him in the future—"
+        "Perhaps there's a chance to uncover more about him in the future."
 
         "His relationship with his family and his motivations for distancing himself from them, alongside the reason behind his affinity for challenges and ambition."
 
-        "Most importantly, I wonder why he wants me as his partner in this venture... "
+        "Most importantly, I wonder why he wants me as his partner in this venture..."
 
     
     "It looks like I'm stuck in a dilemma. Who will I choose?"
