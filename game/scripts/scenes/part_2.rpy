@@ -635,7 +635,7 @@ label S3_sylvian_bad_end:
     show lars sad
     Lars "No, it's okay. Just tell me what you need me to do."
 
-    show sylvian sad with dissolve
+    show sylvian sad
     show lars sad
     Sylvian "I-I... don't have the courage to say it out loud."
 
@@ -657,7 +657,7 @@ label S3_sylvian_bad_end:
     show lars
     Sylvian "..."
 
-    #sad
+    play music "track_10_bad_ending_2.ogg" fadeout 2.0 fadein 2.0
 
     show lars blush
     Sylvian "The truth is, [Lars], I can't help but be utterly petrified of the thought of losing you."
@@ -868,7 +868,7 @@ label S3_sylvian_bad_end:
     show lars serious
     Sylvian "They are capable members of the guild, after all."
 
-    #sad
+    play music "track_10_bad_ending_2.ogg" fadeout 2.0 fadein 2.0
 
     show sylvian sad
     Sylvian "Much better than their pathetic excuse of a guild leader..."
@@ -1197,7 +1197,7 @@ label S3_sylvian_neutral_end:
     show lars blush
     Sylvian "..."
 
-    #sad
+    play music "track_10_bad_ending_2.ogg" fadeout 2.0 fadein 2.0
 
     show lars blush
     Sylvian "The truth is, [Lars], I can't help but be utterly petrified of the thought of losing you."
@@ -1536,7 +1536,7 @@ label S3_sylvian_good_end:
     show lars happy
     Lars "Master... I-I feel the same way—"
 
-    #sad 
+    play music "track_10_bad_ending_2.ogg" fadeout 2.0 fadein 2.0 
 
     voice "audio/voice/sylvian/sylvian_104_take03.ogg"
     show sylvian sad
@@ -2331,7 +2331,7 @@ label C3_claude_good_end:
 
     "He rarely ever calls me by my name like this, so witnessing this side of him is..."
 
-    #sad
+    play music "track_10_bad_ending_2.ogg" fadeout 2.0 fadein 2.0
 
     show lars
     Claude "You remember how I've always skirted around the fact that I'm a Dupont heir?"
@@ -2812,7 +2812,7 @@ label C3_claude_neutral_end:
     show lars sad
     Claude "You know what, maybe it's time to confess, just so I can this over with once and for all."
 
-    #sad
+    play music "track_10_bad_ending_2.ogg" fadeout 2.0 fadein 2.0
 
     show claude sad
     show lars sad
@@ -3390,7 +3390,7 @@ label C3_claude_bad_end:
     show lars serious
     Lars "Do you always have to act like such a spoiled kid? Didn't your parents give you enough affection as is? Why do you have to cling to me so much?"
 
-    #sad 
+    play music "track_10_bad_ending_2.ogg" fadeout 2.0 fadein 2.0 
 
     show claude sad
     show lars serious
@@ -3790,7 +3790,7 @@ label C3_claude_bad_end:
 
     "Perhaps one final question will bring me peace of mind..."
 
-    #sad
+    play music "track_10_bad_ending_2.ogg" fadeout 2.0 fadein 2.0
 
     show lars sad
     Lars "Sir Claude, are you truly satisfied with how things have become between us?"

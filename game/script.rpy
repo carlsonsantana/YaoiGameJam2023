@@ -63,12 +63,7 @@ init python:
         elif options["CS6"]==2:
             relations["claude"]+=1
 
-image eileen animated:
-    "eileen_happy.png"
-    pause 1.0
-    "eileen_vhappy.png"
-    pause 1.0
-    repeat
+
 
 label splashscreen:
     scene black
