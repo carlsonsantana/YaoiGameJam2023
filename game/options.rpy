@@ -203,6 +203,13 @@ init python:
     build.classify('token.json', None)
     build.classify('README.md', None)
 
+    build.classify('game/**.png', 'archive')
+    build.classify('game/**.jpg', 'archive')
+    build.classify('game/**.rpyc', 'archive')
+    build.classify('game/**.ogg', 'archive')
+    build.classify('game/**.ogv', 'archive')
+
+
     ## To archive files, classify them as 'archive'.
 
     # build.classify('game/**.png', 'archive')
