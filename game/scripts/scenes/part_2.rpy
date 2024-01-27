@@ -2665,10 +2665,7 @@ label C3_claude_good_end:
 
     voice "audio/voice/claude/claude_170_take_02.ogg"
     show lars sad
-    Claude "Awe, leave the worrying to big Boss Sylvian and our little Rory back at the guild."
-    
-    show lars sad
-    Claude "I'm sure they're orchestrating a plan to aid the trapped individuals, all the while scheming my punishment for spiriting you away."
+    Claude "Awe, leave the worrying to big Boss Sylvian and our little Rory back at the guild. I'm sure they're orchestrating a plan to aid the trapped individuals, all the while scheming my punishment for spiriting you away."
 
     show bg_4:
         subpixel True
