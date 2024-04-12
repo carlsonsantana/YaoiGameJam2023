@@ -23,13 +23,84 @@ define gui.show_name = False
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "1.1"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+{size=+10}{b}Credits{/b}{/size}
+
+{b}Director & Producer{/b}
+
+Deniz G. Lerosi
+
+{b}Script{/b}
+
+Deniz G. Lerosi | Writer, Script Markup
+
+Eriszsz | Editor, Proofreader, Script Markup
+
+{b}Programming{/b}
+
+hechelion | Lead Programmer - Full Release (GUI, Script & Assets)
+
+Deniz G. Lerosi | Programming & Polishing - Full Release (GUI, Script & Assets)
+
+Carlsonsantana | Programmer for Android Version - Full Release
+
+Ylvanaar | Programming Assitance - Full Release (Script Tags Checking)
+
+turnipxenon | Lead Programmer - Demo Release (GUI, Script & Assets)
+
+{b}Art{/b}
+
+pchila | Lead Artist (Character Concepts & Sprites, CG Art, BG Art), Game Icon Design
+
+Deniz G. Lerosi | Lead Designer (GUI, Itch Page & Banner,  Character Cards)
+
+_nurami_ | Game Icon BG Artist, Main Menu Artist
+
+Jeb | BG Artist
+
+aokanio | Chibi Artist
+
+TsunamiJuria | Promo Video
+
+{b}Audio{/b}
+
+Rico | Soundtrack Composer
+
+Kathryn Stanley | Audio Engineer (Mastering/Leveling)
+
+Ryan X. Messcher | Audio Engineer (Cutting- Sylvian, Zephyr)
+
+WhileUW82Die | Audio Engineer (Cutting- Lars, Claude, Rory), SFX Editor/Designer
+
+{b}Voice Director{/b}
+
+Deniz G. Lerosi
+
+{b}Voice Talents{/b}
+
+Miles Garnica | Lars
+
+Sam Trout | Sylvian
+
+Corey Wilder | Claude
+
+Ray O' Hare | Zephyr
+
+Kaylee Dankese | Rory
+
+{b}Casting{/b}
+
+Anna ‘Lavinnia’ Kończak
+
+Deniz G. Lerosi
+
+Phebe Fabacher
 """)
 
 
@@ -129,7 +200,7 @@ default preferences.text_cps = 60
 default preferences.afm_time = 15
 
 #skip
-default persistent.skip_delay = 12 
+default persistent.skip_delay = 12
 
 init python:
     def recursive_update():
