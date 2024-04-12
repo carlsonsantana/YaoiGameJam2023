@@ -400,6 +400,8 @@ screen navigation():
             ## Help isn't necessary or relevant to mobile devices.
             textbutton _("Help") action ShowMenu("help")
 
+        textbutton "About" action ShowMenu("about")
+
         textbutton "Gallery" action ShowMenu("gallery")
 
         textbutton "Ending list" action ShowMenu("lstend")
