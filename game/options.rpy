@@ -34,71 +34,71 @@ define gui.about = _p("""
 
 {b}Director & Producer{/b}
 
-Deniz G. Lerosi
+{a=https://deniz-g-lerosi.itch.io/}Deniz G. Lerosi{/a}
 
 {b}Script{/b}
 
-Deniz G. Lerosi | Writer, Script Markup
+{a=https://deniz-g-lerosi.itch.io/}Deniz G. Lerosi{/a} | Writer, Script Markup
 
-Eriszsz | Editor, Proofreader, Script Markup
+{a=https://eriszsz.itch.io/}Eriszsz{/a} | Editor, Proofreader, Script Markup
 
 {b}Programming{/b}
 
-hechelion | Lead Programmer - Full Release (GUI, Script & Assets)
+{a=https://hechelion.itch.io/}hechelion{/a} | Lead Programmer - Full Release (GUI, Script & Assets)
 
-Deniz G. Lerosi | Programming & Polishing - Full Release (GUI, Script & Assets)
+{a=https://deniz-g-lerosi.itch.io/}Deniz G. Lerosi{/a} | Programming & Polishing - Full Release (GUI, Script & Assets)
 
-Carlsonsantana | Programmer for Android Version - Full Release
+{a=https://carlsonsantana.itch.io/}Carlsonsantana{/a} | Programmer for Android Version - Full Release
 
-Ylvanaar | Programming Assitance - Full Release (Script Tags Checking)
+{a=https://ylvanaar.itch.io/}Ylvanaar{/a} | Programming Assitance - Full Release (Script Tags Checking)
 
-turnipxenon | Lead Programmer - Demo Release (GUI, Script & Assets)
+{a=https://turnipxenon.itch.io/}turnipxenon{/a} | Lead Programmer - Demo Release (GUI, Script & Assets)
 
 {b}Art{/b}
 
-pchila | Lead Artist (Character Concepts & Sprites, CG Art, BG Art), Game Icon Design
+{a=https://pchila.itch.io/}pchila{/a} | Lead Artist (Character Concepts & Sprites, CG Art, BG Art), Game Icon Design
 
-Deniz G. Lerosi | Lead Designer (GUI, Itch Page & Banner,  Character Cards)
+{a=https://deniz-g-lerosi.itch.io/}Deniz G. Lerosi{/a} | Lead Designer (GUI, Itch Page & Banner,  Character Cards)
 
-_nurami_ | Game Icon BG Artist, Main Menu Artist
+{a=https://itch.io/profile/nuraxoxo}_nurami_{/a} | Game Icon BG Artist, Main Menu Artist
 
-Jeb | BG Artist
+{a=https://jeblyfish.itch.io/}Jeb{/a} | BG Artist
 
-aokanio | Chibi Artist
+{a=https://aokanio.itch.io/}aokanio{/a} | Chibi Artist
 
-TsunamiJuria | Promo Video
+{a=https://tsunamijuria.itch.io/}TsunamiJuria{/a} | Promo Video
 
 {b}Audio{/b}
 
-Rico | Soundtrack Composer
+{a=https://itch.io/profile/ricorico}Rico{/a} | Soundtrack Composer
 
-Kathryn Stanley | Audio Engineer (Mastering/Leveling)
+{a=https://kathrynstanley.carrd.co/}Kathryn Stanley{/a} | Audio Engineer (Mastering/Leveling)
 
-Ryan X. Messcher | Audio Engineer (Cutting- Sylvian, Zephyr)
+{a=https://www.ryanxmesschermusic.com/}Ryan X. Messcher{/a} | Audio Engineer (Cutting- Sylvian, Zephyr)
 
-WhileUW82Die | Audio Engineer (Cutting- Lars, Claude, Rory), SFX Editor/Designer
+{a=https://itch.io/profile/whileuw82die}WhileUW82Die{/a} | Audio Engineer (Cutting- Lars, Claude, Rory), SFX Editor/Designer
 
 {b}Voice Director{/b}
 
-Deniz G. Lerosi
+{a=https://deniz-g-lerosi.itch.io/}Deniz G. Lerosi{/a}
 
 {b}Voice Talents{/b}
 
-Miles Garnica | Lars
+{a=https://twitter.com/milesgvo}Miles Garnica{/a} | Lars
 
-Sam Trout | Sylvian
+{a=https://twitter.com/SoundsTrout}Sam Trout{/a} | Sylvian
 
-Corey Wilder | Claude
+{a=https://twitter.com/WilderCorey}Corey Wilder{/a} | Claude
 
-Ray O' Hare | Zephyr
+{a=https://twitter.com/ray_ohare}Ray O' Hare{/a} | Zephyr
 
-Kaylee Dankese | Rory
+{a=https://twitter.com/bearpuff4}Kaylee Dankese{/a} | Rory
 
 {b}Casting{/b}
 
-Anna ‘Lavinnia’ Kończak
+{a=https://lavinnia.itch.io/}Anna ‘Lavinnia’ Kończak{/a}
 
-Deniz G. Lerosi
+{a=https://deniz-g-lerosi.itch.io/}Deniz G. Lerosi{/a}
 
 Phebe Fabacher
 """)
