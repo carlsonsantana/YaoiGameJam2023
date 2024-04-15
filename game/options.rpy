@@ -29,78 +29,25 @@ define config.version = "1.1"
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""
-{size=+10}{b}Credits{/b}{/size}
+define gui.about = _p("""{size=+10}{b}Credits{/b}{/size}
 
-{b}Director & Producer{/b}
+Feel free to support this game by visiting our itch.io page.
 
-{a=https://deniz-g-lerosi.itch.io/}Deniz G. Lerosi{/a}
+{b}Director & Producer{/b}: {a=https://deniz-g-lerosi.itch.io/}Deniz G. Lerosi{/a}
 
-{b}Script{/b}
+{b}Script{/b}: {a=https://deniz-g-lerosi.itch.io/}Deniz G. Lerosi{/a} (Writer, Script Markup) and {a=https://eriszsz.itch.io/}Eriszsz{/a} (Editor, Proofreader, Script Markup)
 
-{a=https://deniz-g-lerosi.itch.io/}Deniz G. Lerosi{/a} | Writer, Script Markup
+{b}Programming{/b}: {a=https://hechelion.itch.io/}hechelion{/a} (Lead Programmer - Full Release [GUI, Script & Assets]), {a=https://deniz-g-lerosi.itch.io/}Deniz G. Lerosi{/a} (Programming & Polishing - Full Release [GUI, Script & Assets]), {a=https://carlsonsantana.itch.io/}Carlsonsantana{/a} (Programmer for Android Version - Full Release), {a=https://ylvanaar.itch.io/}Ylvanaar{/a} (Programming Assitance - Full Release [Script Tags Checking]), and {a=https://turnipxenon.itch.io/}turnipxenon{/a} (Lead Programmer - Demo Release [GUI, Script & Assets])
 
-{a=https://eriszsz.itch.io/}Eriszsz{/a} | Editor, Proofreader, Script Markup
+{b}Art{/b}: {a=https://pchila.itch.io/}pchila{/a} (Lead Artist [Character Concepts & Sprites, CG Art, BG Art], Game Icon Design), {a=https://deniz-g-lerosi.itch.io/}Deniz G. Lerosi{/a} (Lead Designer [GUI, Itch Page & Banner, Character Cards]), {a=https://itch.io/profile/nuraxoxo}_nurami_{/a} (Game Icon BG Artist, Main Menu Artist), {a=https://jeblyfish.itch.io/}Jeb{/a} (BG Artist), {a=https://aokanio.itch.io/}aokanio{/a} (Chibi Artist), and {a=https://tsunamijuria.itch.io/}TsunamiJuria{/a} (Promo Video)
 
-{b}Programming{/b}
+{b}Audio{/b}: {a=https://itch.io/profile/ricorico}Rico{/a} (Soundtrack Composer), {a=https://kathrynstanley.carrd.co/}Kathryn Stanley{/a} (Audio Engineer [Mastering/Leveling]), {a=https://www.ryanxmesschermusic.com/}Ryan X. Messcher{/a} (Audio Engineer [Cutting- Sylvian, Zephyr]), and {a=https://itch.io/profile/whileuw82die}WhileUW82Die{/a} (Audio Engineer [Cutting- Lars, Claude, Rory], SFX Editor/Designer)
 
-{a=https://hechelion.itch.io/}hechelion{/a} | Lead Programmer - Full Release (GUI, Script & Assets)
+{b}Voice Director{/b}: {a=https://deniz-g-lerosi.itch.io/}Deniz G. Lerosi{/a}
 
-{a=https://deniz-g-lerosi.itch.io/}Deniz G. Lerosi{/a} | Programming & Polishing - Full Release (GUI, Script & Assets)
+{b}Voice Talents{/b}: {a=https://twitter.com/milesgvo}Miles Garnica{/a} (Lars), {a=https://twitter.com/SoundsTrout}Sam Trout{/a} (Sylvian), {a=https://twitter.com/WilderCorey}Corey Wilder{/a} (Claude), {a=https://twitter.com/ray_ohare}Ray O' Hare{/a} (Zephyr), and {a=https://twitter.com/bearpuff4}Kaylee Dankese{/a} (Rory)
 
-{a=https://carlsonsantana.itch.io/}Carlsonsantana{/a} | Programmer for Android Version - Full Release
-
-{a=https://ylvanaar.itch.io/}Ylvanaar{/a} | Programming Assitance - Full Release (Script Tags Checking)
-
-{a=https://turnipxenon.itch.io/}turnipxenon{/a} | Lead Programmer - Demo Release (GUI, Script & Assets)
-
-{b}Art{/b}
-
-{a=https://pchila.itch.io/}pchila{/a} | Lead Artist (Character Concepts & Sprites, CG Art, BG Art), Game Icon Design
-
-{a=https://deniz-g-lerosi.itch.io/}Deniz G. Lerosi{/a} | Lead Designer (GUI, Itch Page & Banner,  Character Cards)
-
-{a=https://itch.io/profile/nuraxoxo}_nurami_{/a} | Game Icon BG Artist, Main Menu Artist
-
-{a=https://jeblyfish.itch.io/}Jeb{/a} | BG Artist
-
-{a=https://aokanio.itch.io/}aokanio{/a} | Chibi Artist
-
-{a=https://tsunamijuria.itch.io/}TsunamiJuria{/a} | Promo Video
-
-{b}Audio{/b}
-
-{a=https://itch.io/profile/ricorico}Rico{/a} | Soundtrack Composer
-
-{a=https://kathrynstanley.carrd.co/}Kathryn Stanley{/a} | Audio Engineer (Mastering/Leveling)
-
-{a=https://www.ryanxmesschermusic.com/}Ryan X. Messcher{/a} | Audio Engineer (Cutting- Sylvian, Zephyr)
-
-{a=https://itch.io/profile/whileuw82die}WhileUW82Die{/a} | Audio Engineer (Cutting- Lars, Claude, Rory), SFX Editor/Designer
-
-{b}Voice Director{/b}
-
-{a=https://deniz-g-lerosi.itch.io/}Deniz G. Lerosi{/a}
-
-{b}Voice Talents{/b}
-
-{a=https://twitter.com/milesgvo}Miles Garnica{/a} | Lars
-
-{a=https://twitter.com/SoundsTrout}Sam Trout{/a} | Sylvian
-
-{a=https://twitter.com/WilderCorey}Corey Wilder{/a} | Claude
-
-{a=https://twitter.com/ray_ohare}Ray O' Hare{/a} | Zephyr
-
-{a=https://twitter.com/bearpuff4}Kaylee Dankese{/a} | Rory
-
-{b}Casting{/b}
-
-{a=https://lavinnia.itch.io/}Anna ‘Lavinnia’ Kończak{/a}
-
-{a=https://deniz-g-lerosi.itch.io/}Deniz G. Lerosi{/a}
-
-Phebe Fabacher
+{b}Casting{/b}: {a=https://lavinnia.itch.io/}Anna ‘Lavinnia’ Kończak{/a}, {a=https://deniz-g-lerosi.itch.io/}Deniz G. Lerosi{/a}, and Phebe Fabacher
 """)
 
 
