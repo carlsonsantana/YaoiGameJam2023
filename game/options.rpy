@@ -31,7 +31,7 @@ define config.version = "1.1"
 
 define gui.about = _p("""{size=+10}{b}Credits{/b}{/size}
 
-Feel free to support this game by visiting our itch.io page.
+Feel free to support this game by visiting our {a=https://deniz-g-lerosi.itch.io/love-amidst-the-timeless-rift}itch.io page{/a}.
 
 {b}Director & Producer{/b}: {a=https://deniz-g-lerosi.itch.io/}Deniz G. Lerosi{/a}
 
