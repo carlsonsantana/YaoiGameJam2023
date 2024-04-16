@@ -474,8 +474,8 @@ screen main_menu():
     style_prefix "main_menu"
 
     imagebutton:
-        xpos 1300
-        ypos 120
+        xpos 1034
+        ypos 61
         #background "gui/btn_start.png"
         hover "gui/btn_start_hover.png"
         idle "gui/btn_start.png"
@@ -483,8 +483,8 @@ screen main_menu():
         action Start()
 
     imagebutton:
-        xpos 0
-        ypos 840
+        xpos 114
+        ypos 28
         #background "gui/btn_start.png"
         hover "gui/btn_load_hover.png"
         idle "gui/btn_load.png"
@@ -492,17 +492,8 @@ screen main_menu():
         action ShowMenu("load")
 
     imagebutton:
-        xpos 500
-        ypos 840
-        #background "gui/btn_start.png"
-        hover "gui/btn_extras_hover.png"
-        idle "gui/btn_extras.png"
-        hover_sound "audio/sfx_cursorhover4.ogg"
-        action ShowMenu("gallery")
-
-    imagebutton:
-        xpos 1010
-        ypos 840
+        xpos 46
+        ypos 230
         #background "gui/btn_start.png"
         hover "gui/btn_options_hover.png"
         idle "gui/btn_options.png"
@@ -510,8 +501,26 @@ screen main_menu():
         action ShowMenu("preferences")
 
     imagebutton:
-        xpos 1500
-        ypos 840
+        xpos 31
+        ypos 436
+        #background "gui/btn_start.png"
+        hover "gui/btn_gallery_hover.png"
+        idle "gui/btn_gallery.png"
+        hover_sound "audio/sfx_cursorhover4.ogg"
+        action ShowMenu("gallery")
+
+    imagebutton:
+        xpos 27
+        ypos 641
+        #background "gui/btn_start.png"
+        hover "gui/btn_endings_hover.png"
+        idle "gui/btn_endings.png"
+        hover_sound "audio/sfx_cursorhover4.ogg"
+        action ShowMenu("lstend")
+
+    imagebutton:
+        xpos 80
+        ypos 846
         #background "gui/btn_start.png"
         hover "gui/btn_exit_hover.png"
         idle "gui/btn_exit.png"
