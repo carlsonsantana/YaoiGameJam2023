@@ -404,7 +404,7 @@ screen navigation():
 
         textbutton "Gallery" action ShowMenu("gallery")
 
-        textbutton "Ending list" action ShowMenu("lstend")
+        textbutton "Endings" action ShowMenu("lstend")
 
         if _in_replay:
 
@@ -1908,7 +1908,7 @@ screen lstend:
     # A grid of buttons.
     style_prefix "about"
 
-    label "Ending List":
+    label "Endings":
         xpos 1040
         ypos 46
         #text_style "gui_accent_text"
